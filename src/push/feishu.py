@@ -25,12 +25,20 @@ class FeishuPlatform(PushPlatform):
         return bool(webhook)
 
     async def send(self, content: str, title: str = None, metadata: Dict = None):
-        """发送到飞书（忽略 metadata）"""
+        """发送到飞书，优先渲染 metadata 的 lead/highlights"""
         chunks = self._split_content(content, limit=8000)
 
         async with aiohttp.ClientSession() as session:
-            for chunk in chunks:
-                payload = self._build_payload(chunk, title)
+            for i, chunk in enumerate(chunks):
+                payload = self._build_payload(
+                    chunk,
+                    title,
+                    metadata=metadata,
+                    is_first=(i == 0),
+                    is_multi=(len(chunks) > 1),
+                    index=i + 1,
+                    total=len(chunks),
+                )
                 async with session.post(self.webhook_url, json=payload) as resp:
                     if resp.status != 200:
                         text = await resp.text()
@@ -39,32 +47,61 @@ class FeishuPlatform(PushPlatform):
                     if data.get("code") != 0:
                         raise RuntimeError(f"飞书推送失败: {data.get('msg')}")
 
-    def _build_payload(self, content: str, title: str = None) -> Dict:
-        """
-        构建飞书卡片消息 payload，支持 Markdown，
-        参考  https://open.feishu.cn/document/feishu-cards/card-json-v2-structure
-        """
+    def _build_payload(
+        self,
+        content: str,
+        title: str = None,
+        metadata: Dict = None,
+        is_first: bool = True,
+        is_multi: bool = False,
+        index: int = 1,
+        total: int = 1,
+    ) -> Dict:
+        """构建飞书卡片消息 payload，首屏突出标题/导语/要点。"""
+        metadata = metadata or {}
+        lead = (metadata.get("lead") or "").strip()
+        highlights = metadata.get("highlights") or []
+        display_title = title or "AI Daily"
+        if is_multi:
+            display_title = f"{display_title}（{index}/{total}）"
 
-        header = {}
-        if title:
-            header = {
-                "title": {"content": title, "tag": "plain_text"},
-                "template": "blue",
+        elements = []
+        if is_first and lead:
+            elements.append(
+                {
+                    "tag": "markdown",
+                    "content": f"> {lead}",
+                    "text_align": "left",
+                }
+            )
+        if is_first and highlights:
+            bullet_lines = [f"- **速览**：{item}" for item in highlights[:3] if item]
+            if bullet_lines:
+                elements.append(
+                    {
+                        "tag": "markdown",
+                        "content": "\n".join(bullet_lines),
+                        "text_align": "left",
+                    }
+                )
+        elements.append(
+            {
+                "tag": "markdown",
+                "content": content,
+                "text_align": "left",
             }
+        )
 
         return {
             "msg_type": "interactive",
             "card": {
-                "schema": "2.0",  # 【重点1】显式声明使用 V2 版本结构
-                "header": header,
-                "body": {  # 【重点2】V2 中，所有的内容元素都必须放在 body 里面
-                    "elements": [
-                        {
-                            "tag": "markdown",
-                            "content": content,
-                            "text_align": "left",  # 可选：left / center / right
-                        },
-                    ],
+                "schema": "2.0",
+                "header": {
+                    "title": {"content": display_title, "tag": "plain_text"},
+                    "template": "blue",
+                },
+                "body": {
+                    "elements": elements,
                 },
             },
         }
