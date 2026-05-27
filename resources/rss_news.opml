@@ -1,28 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Global and China News Feeds</title>
+    <title>Curated China and World Hot News Feeds</title>
   </head>
   <body>
-    <outline text="联合早报" title="联合早报" type="rss" category="中国" xmlUrl="https://www.zaobao.com.sg/realtime/china/rss.xml" />
-    <outline text="联合早报国际" title="联合早报国际" type="rss" category="国际" xmlUrl="https://www.zaobao.com.sg/realtime/world/rss.xml" />
-    <outline text="纽约时报国际" title="纽约时报国际" type="rss" category="国际" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/World.xml" />
-    <outline text="纽约时报中国" title="纽约时报中国" type="rss" category="中国" xmlUrl="https://rss.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml" />
-    <outline text="路透世界" title="路透世界" type="rss" category="国际" xmlUrl="https://feeds.reuters.com/Reuters/worldNews" />
-    <outline text="路透商业" title="路透商业" type="rss" category="国际" xmlUrl="https://feeds.reuters.com/reuters/businessNews" />
+    <outline text="联合早报 中国" title="联合早报 中国" type="rss" category="中国" xmlUrl="https://www.zaobao.com.sg/realtime/china/rss.xml" />
+    <outline text="联合早报 国际" title="联合早报 国际" type="rss" category="国际" xmlUrl="https://www.zaobao.com.sg/realtime/world/rss.xml" />
+    <outline text="新华社 World" title="新华社 World" type="rss" category="国际" xmlUrl="http://www.xinhuanet.com/english/rss/worldrss.xml" />
+    <outline text="中国日报 China" title="中国日报 China" type="rss" category="中国" xmlUrl="http://www.chinadaily.com.cn/rss/china_rss.xml" />
+    <outline text="财新国际" title="财新国际" type="rss" category="财经" xmlUrl="https://www.caixinglobal.com/feed/rss/" />
+    <outline text="Reuters World" title="Reuters World" type="rss" category="国际" xmlUrl="https://feeds.reuters.com/Reuters/worldNews" />
+    <outline text="Reuters Business" title="Reuters Business" type="rss" category="财经" xmlUrl="https://feeds.reuters.com/reuters/businessNews" />
+    <outline text="AP Top News" title="AP Top News" type="rss" category="国际" xmlUrl="https://apnews.com/hub/ap-top-news?output=rss" />
     <outline text="BBC World" title="BBC World" type="rss" category="国际" xmlUrl="http://feeds.bbci.co.uk/news/world/rss.xml" />
     <outline text="BBC Asia" title="BBC Asia" type="rss" category="亚洲" xmlUrl="http://feeds.bbci.co.uk/news/world/asia/rss.xml" />
-    <outline text="半岛国际" title="半岛国际" type="rss" category="国际" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml" />
     <outline text="NPR World" title="NPR World" type="rss" category="国际" xmlUrl="https://feeds.npr.org/1004/rss.xml" />
-    <outline text="卫报国际" title="卫报国际" type="rss" category="国际" xmlUrl="https://www.theguardian.com/world/rss" />
-    <outline text="AP Top News" title="AP Top News" type="rss" category="国际" xmlUrl="https://apnews.com/hub/ap-top-news?output=rss" />
-    <outline text="华尔街日报世界" title="华尔街日报世界" type="rss" category="国际" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" />
-    <outline text="中国日报" title="中国日报" type="rss" category="中国" xmlUrl="http://www.chinadaily.com.cn/rss/china_rss.xml" />
-    <outline text="财新国际" title="财新国际" type="rss" category="中国" xmlUrl="https://www.caixinglobal.com/feed/rss/" />
-    <outline text="FT World" title="FT World" type="rss" category="国际" xmlUrl="https://www.ft.com/world?format=rss" />
-    <outline text="CNBC World" title="CNBC World" type="rss" category="国际" xmlUrl="https://www.cnbc.com/id/100727362/device/rss/rss.html" />
-    <outline text="日经亚洲" title="日经亚洲" type="rss" category="亚洲" xmlUrl="https://asia.nikkei.com/rss/feed/nar" />
-    <outline text="澎湃要闻" title="澎湃要闻" type="rss" category="中国" xmlUrl="https://www.thepaper.cn/rss_newsDetail_forward_25434" />
-    <outline text="新华社国际" title="新华社国际" type="rss" category="国际" xmlUrl="http://www.xinhuanet.com/english/rss/worldrss.xml" />
+    <outline text="Guardian World" title="Guardian World" type="rss" category="国际" xmlUrl="https://www.theguardian.com/world/rss" />
+    <outline text="FT World" title="FT World" type="rss" category="财经" xmlUrl="https://www.ft.com/world?format=rss" />
+    <outline text="WSJ World" title="WSJ World" type="rss" category="国际" xmlUrl="https://feeds.a.dj.com/rss/RSSWorldNews.xml" />
+    <outline text="CNBC Top News" title="CNBC Top News" type="rss" category="财经" xmlUrl="https://www.cnbc.com/id/100003114/device/rss/rss.html" />
+    <outline text="Al Jazeera" title="Al Jazeera" type="rss" category="国际" xmlUrl="https://www.aljazeera.com/xml/rss/all.xml" />
+    <outline text="Nikkei Asia" title="Nikkei Asia" type="rss" category="亚洲" xmlUrl="https://asia.nikkei.com/rss/feed/nar" />
   </body>
 </opml>
