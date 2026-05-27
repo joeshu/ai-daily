@@ -875,6 +875,79 @@
       "score": 70,
       "summary": "日本高市早苗称追加预算不会增加赤字国债。",
       "fetched_at": "2026-05-28T00:02:51.638557+08:00"
+    },
+    {
+      "title": "Republicans stare down inflation abyss with midterms fast approaching",
+      "link": "https://www.cnbc.com/2026/05/27/election-economy-congress-inflation-republicans.html",
+      "published": "2026-05-27T23:38:24+08:00",
+      "source": "CNBC Top News",
+      "content": "Republicans are struggling to find a clear message to battle high prices as President Trump pushes for funding for a White House ballroom.",
+      "tags": [
+        "美国中期选举",
+        "通胀",
+        "共和党"
+      ],
+      "score": 85,
+      "summary": "共和党在通胀高企和中期选举临近时缺乏有效信息，特朗普推动白宫舞厅资金。",
+      "fetched_at": "2026-05-28T00:12:41.766875+08:00"
+    },
+    {
+      "title": "Jamie Dimon says JPMorgan Chase could spend $20 billion on acquisition: 'We are on the lookout'",
+      "link": "https://www.cnbc.com/2026/05/27/jamie-dimon-jpmorgan-chase-acquisition-target-size.html",
+      "published": "2026-05-27T23:51:16+08:00",
+      "source": "CNBC Top News",
+      "content": "A $20 billion deal would be among the largest in JPMorgan's history and could invite regulatory scrutiny given its position as the largest U.S. bank by assets.",
+      "tags": [
+        "摩根大通",
+        "并购"
+      ],
+      "score": 80,
+      "summary": "摩根大通CEO表示可能进行200亿美元收购，可能成为该行史上最大交易。",
+      "fetched_at": "2026-05-28T00:12:41.766966+08:00"
+    },
+    {
+      "title": "Alabama asks Supreme Court to allow congressional map that dilutes Black vote",
+      "link": "https://www.cnbc.com/2026/05/27/alabama-supreme-court-redistricting-black-vote-midterms.html",
+      "published": "2026-05-28T00:08:54+08:00",
+      "source": "CNBC Top News",
+      "content": "",
+      "tags": [
+        "阿拉巴马州",
+        "最高法院",
+        "选区划分"
+      ],
+      "score": 70,
+      "summary": "阿拉巴马州请求最高法院允许削弱黑人投票权的选区地图。",
+      "fetched_at": "2026-05-28T00:12:41.767022+08:00"
+    },
+    {
+      "title": "Boeing CEO says company met requirements to increase 737 Max production to 47 jets per month",
+      "link": "https://www.cnbc.com/2026/05/27/boeing-ortberg-737-max-production.html",
+      "published": "2026-05-27T22:41:51+08:00",
+      "source": "CNBC Top News",
+      "content": "Boeing CEO Kelly Ortberg said the company has met FAA requirements to ramp up its production of 737 Max aircraft to 47 per month.",
+      "tags": [
+        "波音",
+        "737 Max",
+        "FAA"
+      ],
+      "score": 80,
+      "summary": "波音CEO称公司已满足FAA要求，计划将737 Max月产量提升至47架。",
+      "fetched_at": "2026-05-28T00:12:41.767068+08:00"
+    },
+    {
+      "title": "Abercrombie shares jump 13% on earnings beat even as Iran conflict hits sales",
+      "link": "https://www.cnbc.com/2026/05/27/abercrombie-fitch-anf-earnings-q1-2026.html",
+      "published": "2026-05-27T22:55:42+08:00",
+      "source": "CNBC Top News",
+      "content": "Abercrombie & Fitch saw sales in Europe, Middle East and Africa decline by 10%, thanks in large part to the conflict in the Middle East.",
+      "tags": [
+        "Abercrombie",
+        "财报"
+      ],
+      "score": 70,
+      "summary": "Abercrombie & Fitch一季度业绩超预期，股价涨13%，但中东冲突致EMEA销售降10%。",
+      "fetched_at": "2026-05-28T00:12:41.767113+08:00"
     }
   ]
 }
