@@ -2,6 +2,11 @@ name: ai-daily-fetch
 
 on:
   workflow_dispatch:
+    inputs:
+      clear_cache:
+        description: 'Clear existing news-data before fetch'
+        required: false
+        default: 'false'
   schedule:
     - cron: '0 */2 * * *'
 
@@ -34,6 +39,12 @@ jobs:
           AI_DAILY_CONFIG_JSON: ${{ secrets.AI_DAILY_CONFIG_JSON }}
         run: |
           printf '%s' "$AI_DAILY_CONFIG_JSON" > config.json
+
+      - name: Optionally clear old cache
+        if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.clear_cache == 'true' }}
+        run: |
+          rm -f news-data/fetch-*.json news-data/push-*.md news-data/notify-*.md
+          mkdir -p news-data
 
       - name: Run fetch
         env:
