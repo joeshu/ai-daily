@@ -8,6 +8,12 @@
     <outline text="中国日报 China" title="中国日报 China" type="rss" category="中国" xmlUrl="http://www.chinadaily.com.cn/rss/china_rss.xml" />
     <outline text="澎湃 中国" title="澎湃 中国" type="rss" category="中国" xmlUrl="https://www.thepaper.cn/rss_newsDetail_forward_25434" />
     <outline text="中国新闻网" title="中国新闻网" type="rss" category="中国" xmlUrl="https://www.chinanews.com.cn/rss/china.xml" />
+    <outline text="央视新闻" title="央视新闻" type="rss" category="中国" xmlUrl="https://rsshub.app/cctv/xinwen" />
+    <outline text="财联社热门" title="财联社热门" type="rss" category="中国热点" xmlUrl="https://rsshub.app/cls/telegraph" />
+    <outline text="百度热搜" title="百度热搜" type="rss" category="中国热点" xmlUrl="https://rsshub.app/baidu/top" />
+    <outline text="微博热搜" title="微博热搜" type="rss" category="中国热点" xmlUrl="https://rsshub.app/weibo/search/hot" />
+    <outline text="今日头条热榜" title="今日头条热榜" type="rss" category="中国热点" xmlUrl="https://rsshub.app/toutiao/hotboard" />
+    <outline text="知乎热榜" title="知乎热榜" type="rss" category="中国热点" xmlUrl="https://rsshub.app/zhihu/hotlist" />
     <outline text="财新国际" title="财新国际" type="rss" category="财经" xmlUrl="https://www.caixinglobal.com/feed/rss/" />
     <outline text="新华社 World" title="新华社 World" type="rss" category="国际" xmlUrl="http://www.xinhuanet.com/english/rss/worldrss.xml" />
     <outline text="Reuters World" title="Reuters World" type="rss" category="国际" xmlUrl="https://feeds.reuters.com/Reuters/worldNews" />
