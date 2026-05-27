@@ -28,7 +28,10 @@ jobs:
         run: uv sync
 
       - name: Prepare config
-        run: cp config.json.example config.json
+        env:
+          AI_DAILY_CONFIG_JSON: ${{ secrets.AI_DAILY_CONFIG_JSON }}
+        run: |
+          printf '%s' "$AI_DAILY_CONFIG_JSON" > config.json
 
       - name: Run push
         env:
