@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "date": "2026-05-27"
+  },
+  "entries": [
+    {
+      "title": "Process financial documents using Amazon Bedrock Data Automation",
+      "link": "https://aws.amazon.com/blogs/machine-learning/process-financial-documents-using-amazon-bedrock-data-automation/",
+      "published": "2026-05-28T05:28:53+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "Financial institutions process thousands of documents daily, including tax forms, loan statements, and purchase orders. Each has a unique format, structure, and field names, making it challenging to create automation workflows using optical character recognition (OCR) software. [Amazon Bedrock Data Automation](https://aws.amazon.com/bedrock/bda/) (BDA) helps solve these challenges by automating the extraction, validation, and analysis of data from financial documents. BDA goes beyond simple OCR by using foundation models that can:\n\n* Understand document context\n* Recognize relationships between different sections\n* Extract structured, actionable data\n* Validate information across multiple sources\n\nWhile foundation models like Anthropic Claude can [extract content](https://docs.anthropic.com/en/docs/build-with-claude/pdf-support) from PDFs, Amazon Bedrock Data Automation offers [custom extractions](https://aws.amazon.com/blogs/machine-learning/scalable-intelligent-document-processing-using-amazon-bedrock-data-automation/) with industry-leading accuracy at a lower cost, along with features such as visual grounding with confidence scores for explainability and built-in hallucination mitigation.\n\nIn this post, we explore how Amazon Bedrock Data Automation can accurately extract information from four common types of financial documents: bank statements, W-2 forms, 1099-B tax forms, and vendor contracts. We highlight the complexity in the documents, detail the custom extraction created in Amazon Bedrock Data Automation, and describe the outcomes of the extraction process.\n\n## Solution overview\n\nAmazon Bedrock Data Automation lets you configure output based on your processing needs using blueprints. A blueprint in Amazon Bedrock Data Automation is a configuration template that defines how data should be extracted from documents. It specifies:\n\n* The document type being processed\n* The data fields to be extracted\n* The validation rules for the extracted data\n* The structure and format of the output\n\nThink of it as a map that tells Amazon Bedrock Data Automation exactly what information to look for and how to process it. When using a blueprint for extraction, you can use a catalog blueprint or a custom created blueprint. A custom blueprint allows organizations to create extraction patterns for their specific needs. In this post, we created custom blueprints and used the BDA console to generate and validate the output.\n\n![Solution architecture diagram showing the Amazon Bedrock Data Automation workflow](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-1.png)\n\n## How to develop blueprints for 4 types of financial documents\n\nThe following sections walk you through creating custom blueprints for bank statements, W-2 forms, 1099-B forms, and vendor contracts.\n\n### Prerequisites\n\n* Active AWS account with appropriate IAM permissions ([sample policy from BDA workshop](https://github.com/aws-samples/sample-document-processing-with-amazon-bedrock-data-automation))\n* Model access must be granted (request access through AWS console)\n* Set up Amazon Bedrock Data Automation using the [Getting started with Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html) guide\n* Sample financial documents for testing\n\nIf you are not familiar with how custom blueprints are created, follow the instructions from the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/bda-blueprints-console.html). For our evaluation, we uploaded the documents on the BDA console, refined the AI-generated prompts, and downloaded the results. Typically, a single custom blueprint suffices for a specific document type when extracting consistent fields. However, if workflow requirements vary or document formats change significantly, multiple custom blueprints might need to be created to accommodate these differences. After a blueprint is created, you can use it as a part of the workflow for consistent downstream processing. For the same blueprint, if the input document has different data, then BDA might return slightly different output (for example, some bank statements might have total debits and credits). However, because BDA output is structured JSON, it is straightforward to create appropriate rules based on downstream processing workflows (for example, discard total if the workflow is to categorize individual debit and credit transactions for accounting).\n\nThe following screenshot illustrates the blueprint prompt for one of the document types.\n\n![Blueprint prompt configuration in the Amazon Bedrock Data Automation console](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-2-1.jpeg)\n\nThe next section describes the four documents tried as a part of this project and extraction achieved using custom blueprints based on needs. Output is available in JSON, CSV, and raw data formats, highlighting the solution’s adaptability to diverse integration and reporting needs.\n\n### Financial document types and custom blueprints\n\nAmazon Bedrock Data Automation provides built-in blueprints for common document types including bank statements and W-2 forms. These built-in blueprints offer comprehensive extraction out of the box. In this post, we use custom blueprints to demonstrate how organizations can tailor extraction to their specific workflow requirements. For example, you can extract only transaction data from bank statements for automated accounting, or group W-2 fields into logical structures (federal tax, state tax, code-amount pairs) that align with downstream tax processing systems. Custom blueprints also serve as the approach for document types that don’t have built-in blueprints, such as 1099-B forms and vendor contracts shown later in this post.\n\n**1. Bank Statements** – Documents from banks detailing an account’s financial activity, including deposits, withdrawals, and fees, over a specific period, typically a month.\n\nBank statements present a complex challenge: they contain numerous monthly transactions, often spanning multiple pages, with varying formats and details. In many workflows, the critical task is to precisely capture transaction data, including dates, amounts, descriptions, and reference numbers, which can then feed directly into automated accounting workflows like [categorizing transactions](https://quickbooks.intuit.com/learn-support/en-us/help-article/banking/categorize-match-online-bank-transactions-online/L1bTafTz3_US_en_US) in an accounting ledger. This automated extraction minimizes manual data entry errors and streamlines the reconciliation process. As part of our evaluation process, we selected the following bank statement for a trial of the extraction process:\n\n![Sample bank statement used for extraction testing](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-3.png)\n\n*Account Statement generated using Amazon Nova Pro Foundational Model*\n\n**Tailored blueprint instructions for Amazon Bedrock Data Automation:**\n\n```\nCreate a transaction log blueprint with the following structure:\n\nMain Field:\n- Transactions: [TRANSACTION_DETAILS]\n\nCustom Type:\n1. TRANSACTION_DETAILS type containing:\n   - Date\n   - Description\n   - Debit: number\n   - Credit: number\n```\n\n**Extraction results from table.csv:**\n\n![Extraction results showing transaction data in CSV format](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-4.png)\n\nUpon review, we can confirm that the system successfully extracted the transactions accurately.\n\n**2. Form W-2** – Reports income and tax withheld for an individual or a business.\n\nW-2 tax forms present unique extraction challenges because of their standardized yet complex structure. As part of our evaluation process, we used the following W-2 for a trial of the extraction process:\n\n![Sample W-2 form used for extraction testing](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-5.png)\n\n*W2 generated using Amazon Nova Pro Foundational Model*\n\n**Tailored blueprint instructions for Amazon Bedrock Data Automation:**\n\n```\nCreate a detailed W2 form blueprint with the following structure:\n\nMain Fields:\n- employer_info: EmployerInfo\n- employee_general_info: EmployeeInfo\n- federal_tax_info: FederalTaxInfo\n- federal_wage_info: FederalWageInfo\n- filing_info: FilingInfo\n- state_taxes_table: [StateTaxInfo]\n- codes: [CodeAmount]\n- nonqualified_plans_income: number\n- other\n\nCustom Types:\n1. EmployerInfo type containing:\n   - ein\n   - employer_name\n   - employer_address\n   - employer_zip_code: number\n   - control_number\n\n2. EmployeeInfo type containing:\n   - ssn\n   - first_name\n   - employee_last_name\n   - employee_name_suffix\n   - employee_address\n   - employee_zip_code: number\n\n3. FederalWageInfo type containing:\n   - wages_tips_other_compensation: number\n   - social_security_wages: number\n   - medicare_wages_tips: number\n   - social_security_tips: number\n\n4. FederalTaxInfo type containing:\n   - federal_income_tax: number\n   - social_security_tax: number\n   - medicare_tax: number\n   - allocated_tips: number\n\n5. StateTaxInfo type containing:\n   - state_name\n   - employer_state_id_number: number\n   - state_wages_and_tips: number\n   - state_income_tax: number\n   - local_wages_tips: number\n   - local_income_tax: number\n   - locality_name\n\n6. CodeAmount type containing:\n   - code\n   - amount: number\n\n7. FilingInfo type containing:\n   - omb_number\n   - verification_code\n```\n\n**Extraction results from result.json:**\n\n![W-2 extraction results showing employer and employee information in JSON format](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-6.png)\n\n![W-2 extraction results showing tax and code information in JSON format](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-7.png)\n\nUpon review, we can confirm that the system successfully extracted the transactions accurately. Several extraction complexities were specifically verified in the project:\n\n* There is no specific grouping on the form for Federal Tax and State Tax information but they need to be processed together so extraction results should bring them together.\n* In a single Box 12 of W2 there can be up to 26 codes to report certain compensation and benefit amounts. It is important to extract code and value as a pair.\n* Employers can put just about anything in box 14. It helps catch items that don’t have their own dedicated box on the W-2, so these should be grouped separately.\n\n**3. IRS Form 1099-B: Proceeds from Broker and Barter Exchange Transactions** – This tax document tracks:\n\n* Securities trading activity\n* Broker-facilitated transactions\n* Barter exchange participation\n\nAs part of our evaluation process, we used the following 1099-B for a trial of the extraction process:\n\n![Sample 1099-B form used for extraction testing](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-8.png)\n\n*1099-B statement generated using Amazon Nova Pro Foundational Model*\n\n**Tailored blueprint instructions for Amazon Bedrock Data Automation:**\n\n```\nCreate a financial transaction blueprint with the following structure:\n\nTRANSACTION_DETAILS type containing:\n- security_description\n- quantity_sold: number\n- date_acquired\n- date_sold_or_disposed\n- proceeds: number\n- cost_or_other_basis: number\n- gainloss_amount: number\n- additional_information\n```\n\n**Extraction results from table.csv:**\n\n![1099-B extraction results showing transaction details in CSV format](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-9.png)\n\nA significant validation of BDA’s contextual understanding capabilities is that the system accurately identified and extracted ‘TSLA’ as the security descriptor across the stock transactions, even if it appeared as a common descriptor for the transactions. This consistent extraction demonstrates BDA’s ability to maintain contextual accuracy throughout the document processing.\n\n**4. Vendor contract** – This extraction process is applicable to a wide range of vendor contracts. The specific details to be captured need to be tailored to each company’s unique operational workflows and requirements.\n\nAs part of our evaluation process, we selected the following vendor contract for a trial of the extraction process:\n\n![Sample vendor contract page 1](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-10.png)\n\n![Sample vendor contract page 2](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-11.png)\n\n![Sample vendor contract page 3](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-12.png)\n\n![Sample vendor contract page 4](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-13.png)\n\n**Tailored blueprint instructions for Amazon Bedrock Data Automation:**\n\n```\nCreate an agreement blueprint with the following structure:\n\nMain Fields:\n- PARTICIPANT_DETAILS: PARTICIPANT_DETAILS\n- effective_date\n- time_period\n- participant_requirements: PARTICIPANT_REQUIREMENTS\n- confidentiality_obligations\n- TERM_AND_TERMINATION: TERM_AND_TERMINATION\n\nCustom Types:\n1. PARTICIPANT_DETAILS type containing:\n   - participant_name\n   - participant_authorized_representative\n\n2. PARTICIPANT_REQUIREMENTS type containing:\n   - assigned_resources\n   - participant_obligations\n   - participant_restrictions\n\n3. TERM_AND_TERMINATION type containing:\n   - term\n   - termination_conditions\n```\n\n**Extraction results from result.json:**\n\n![Vendor contract extraction results in JSON format](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-14.png)\n\nThe system successfully identified and extracted the blueprint-specified elements present within the contract.\n\n## Conclusion\n\nIn this post, we demonstrated how you can use Amazon Bedrock Data Automation to accurately extract key information from financial documents including bank statements, W-2 forms, 1099-B forms, and vendor contracts to automate downstream processing. You learned how to:\n\n* Create custom blueprints for different document types\n* Extract structured data from complex financial documents\n* Validate Amazon Bedrock Data Automation outputs for downstream processing\n\nTo learn more about implementing document processing with Amazon Bedrock, review the [Amazon Bedrock Data Automation documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/bda.html). For production workflows involving sensitive information, follow your organization’s cybersecurity and legal guidelines to verify compliance with all applicable regulations, including but not limited to GDPR in Europe or any other regional or industry-specific requirements.\n\n---\n\n## About the authors\n\n![Shivanshu Upadhyay](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2024/07/29/shivanshu.jpg)\n\n### Shivanshu Upadhyay\n\nShivanshu is a Principal Solutions Architect in the AWS Industries group. In this role, he helps the most advanced adopters of AWS transform their industry by effectively using data and AI.\n\n![Ayu Shah](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/05/ML-19347-15.jpeg)\n\n### Ayu Shah\n\nAyu is a Sr. Solutions Architect at Amazon Web Services (AWS). He helps digital-native customers design and implement generative AI and machine learning (ML) solutions on AWS. Ayu is a builder who enjoys helping customers achieve their business goals and solve complex challenges using AWS services and best practices. He also brings extensive expertise in networking and security.",
+      "tags": [
+        "Amazon Bedrock",
+        "文档处理",
+        "金融AI"
+      ],
+      "score": 75,
+      "summary": "AWS博客介绍使用Bedrock Data Automation自动提取金融文档数据。",
+      "fetched_at": "2026-05-28T07:10:15.910457+08:00"
+    },
+    {
+      "title": "#557. Shopify 创始人：AI 时代的公司、产品与长期主义",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a1739247460cabdeb56e435",
+      "published": "2026-05-28T07:00:00+08:00",
+      "source": "跨国串门儿计划",
+      "content": "📝 本期播客简介\n\n本期我们克隆了：Jack Altman 主持的科技与创业访谈节目[《Uncapped》**Tobi Lütke – Building Shopify and the Future of AI | Ep. 50**](https://www.youtube.com/watch?v=tH95ZCciOqk)\n\n本期嘉宾 Tobi Lütke 是 Shopify 的创始人兼 CEO。他带领 Shopify 从一家加拿大创业公司成长为全球电商基础设施的重要玩家，也亲历了互联网、移动时代、云软件与 AI 的多轮技术浪潮。在这期对话中，Tobi 和 Jack Altman 深入聊到：为什么二十年之后他仍然热爱 Shopify；什么样的问题值得一个人投入一生；AI 如何改变公司组织、产品开发、小企业创业和人才标准；为什么伟大的产品必须“不一样”；以及创始人如何用长期积累的信用推动公司穿越重大转型。\n\n这不是一场单纯关于 AI 的访谈，更像是一堂关于长期创业、产品哲学、组织节奏和未来判断的深度课。Tobi 的核心观点非常鲜明：成功的公式并不复杂，关键是弄清楚代价并愿意付出；客户不负责告诉你该做什么功能，客户负责告诉你他们正在经历什么问题；而产品团队真正的责任，是爱上这些问题，并用理想的方式解决它们。\n\n👨‍⚕️ 本期嘉宾\n\nTobi Lütke，Shopify 创始人兼 CEO。Tobi 出生于德国，后移居加拿大，最初因想开一家滑雪板网店而开始搭建电商工具，最终创办 Shopify。他长期以工程师、产品思考者和创始人 CEO 的身份带领公司发展，推动 Shopify 成为服务全球数百万商家的电商基础设施平台。\n\n⏱️ 时间戳\n\n00:00 开场 & 播客简介\n\n长期主义与创始人的热爱\n\n02:02 二十年后仍然热爱 Shopify：创始人如何保持能量\n\n03:09 “美丽的问题”：为什么一个好问题可以占据一生\n\n04:25 成功的简单公式：弄清代价，并愿意付出代价\n\n05:33 如何甩掉职业生涯里的“藤壶”\n\n产品哲学：做不一样的东西\n\n06:23 CEO 的外界期待与真正想做的事\n\n07:08 不要做更好的相机，要让人变成更好的摄影师\n\n08:20 伟大产品来自高温熔炉，而不是室温妥协\n\n10:22 工具制造者心态：为什么 Shopify 会自己做 HR 软件\n\n11:18 原创与不同：如果想好很多，就必须不一样\n\n12:00 重新定义失败：成功发现了某个行不通的东西\n\n反模仿与公司文化\n\n12:28 湾区的从众趋势：原创性如何被职业化稀释\n\n13:04 保持距离的优势：不要被行业先验判断绑架\n\n14:15 高光剪辑的陷阱：你以为别人做到了，其实未必\n\n15:44 公司应该像“格格不入的玩具之岛”\n\n16:10 保留差异性，而不是收敛到同一种正确答案\n\nAI 转型与创始人信用\n\n16:23 Shopify 如何推动全员 AI 化\n\n17:19 为什么组织常常选择善意谎言，而不是艰难真相\n\n17:59 创始人信用：创始人在场时，公司能做到什么\n\n18:52 用一篇 memo 加速多年文化变化\n\n19:59 无限 token 与 tinkering：让所有人真正开始使用 AI\n\n21:15 token 使用量、排行榜与 AI 成本\n\n22:52 为什么 Shopify 愿意大规模购买 AI token\n\n23:47 token 需求、GPU 供应与没人知道的未来价格\n\nAI 时代的组织与节奏\n\n24:10 小团队成为基本单元：三到五个人的高杠杆组织\n\n24:55 Agent harness 如何把客户反馈带回产品团队\n\n25:30 每个人都能在更多技能上达到“十分里的七分”\n\n25:49 Parkinson's Law：工作会膨胀到填满时间\n\n26:02 领导者的职责：压缩时间窗口，制造合理压力\n\n26:52 六周 review cycle 与 Shopify 的节奏管理\n\n27:10 为什么季度、半年计划可能让团队变慢\n\nAI 与小企业的未来\n\n27:26 年轻人对 AI 的焦虑，与创业者看到的机会\n\n27:51 Shopify 商家眼中的 AI：终于把电脑修好了\n\n29:00 AI 让电脑真正能和普通人一起工作\n\n29:43 小企业主应该设定更大的目标\n\n30:05 每 46 秒，一个 Shopify 商家拿到第一笔订单\n\n30:33 降低创业障碍，为什么会长出更多真实生意\n\n31:31 “帮我做一个生意”：AI 版图灵测试\n\n32:06 Shopify Collective 与无产品创业\n\n32:54 Shopify 的产品愿景：成为 AI 的外骨骼\n\n33:25 从数字产品到按需印刷、3D 打印和制造业\n\n从数字基础设施到物理世界\n\n35:04 软件之外，什么真正提高人类生活水平\n\n36:07 过去三十年，人类也在建设现代奇观\n\n36:45 浏览器、Linux 与开源世界的复杂度\n\n37:37 为什么浏览器是世界奇观级别的发明\n\n38:27 如果浏览器今天才被发明，可能根本无法上架\n\n39:39 AI 是过去所有软件基础设施的 bootstrapper\n\n40:09 iPhone 作为实体奇观，让人更容易感知技术进步\n\n40:42 软件基础建设接近尾声，人才将进入物理世界\n\n预测 AI 与重新设计工作\n\n41:02 CEO 需要多远地判断 AI 的未来\n\n41:27 Tobi 的预测方法：收集数据点，拟合未来曲线\n\n42:05 AI memo 的意义：给公司一个提前起跑机会\n\n42:45 客户不负责告诉你需求，客户负责告诉你问题\n\n43:25 产品责任：爱上客户的问题，并找到理想解法\n\n44:24 边做边学，才能看见 AI 的真实轨迹\n\n45:07 AI 编程能力被高估还是低估\n\n46:17 把非编程任务转化成编程环境，为什么会增强 AI 能力\n\n47:02 最被低估的事：公司根本没有用够 AI\n\n47:20 如果 AI 一直存在，我们还会这样设计工作吗？\n\nAI 时代的人才与招聘\n\n47:55 AI 是否改变了优秀人才的定义\n\n48:45 年轻实习生也是老师：他们对 AI 更原生\n\n49:20 流体智力、晶体智力与工具采用速度\n\n49:45 编程不是打字，真正重要的是理解问题和判断方向\n\n50:39 招聘不是销售，而是让公司真的值得加入\n\n51:10 少官僚、多创造空间，让人爱上使命\n\n上市公司与长期资本\n\n51:40 长期保持私有，是优势还是遗憾\n\n52:10 股票是一张票：让普通人参与自己相信的旅程\n\n53:32 上市带来的严谨性、数据驱动和责任感\n\n54:08 Shopify 上市后的认可度与大客户信任\n\n54:40 为什么有些顶尖人才只愿意加入上市公司\n\n阅读、注意力与个人习惯\n\n54:55 Tobi 推荐的短书：《Parkinson's Law》《The Lessons of History》\n\n55:20 《What Is Intelligence?》与预测能力的意义\n\n56:07 如果一本书抓不住你，也许是作者的问题\n\n56:46 Kindle 的价值：因为它不够“智能”，所以适合读书\n\n57:12 阅读需要仪式，也需要专门留出的时间\n\n🌟 精彩内容\n\n💡 成功的公式：弄清代价，然后愿意付出\n\nTobi 认为，成功并不是一个复杂到不可理解的东西。很多人其实直觉上知道自己想要的结果，但没有认真面对它真正需要付出的代价。这个代价通常不是钱，而是时间、不适、长期专注和持续学习。\n\n“成功真的很简单。你只要弄清楚它的代价是什么，然后愿意付出这个代价。”\n\n🛠️ 好产品不是让工具更强，而是让用户更强\n\nTobi 分享了 Kathy Sierra 对他影响很深的一句话：不要做更好的相机，要让人变成更好的摄影师。对他来说，Shopify 的使命不是堆功能，而是创造能激发用户抱负、技能和自我期待的工具。\n\n“你可以激发人们，让他们成为更好的自己。”\n\n🚀 伟大的产品必须不一样\n\nTobi 认为，如果一个产品只是沿着别人已经走过的路做同一件事，它最多只能好一点点，不可能好很多。真正巨大的产品跃迁，必须从不同的假设、不同的路径开始。即使最后证明走不通，也会产生重要学习。\n\n“如果你想做出很棒的东西，或者好很多的东西，它就必须不一样。”\n\n🤖 Shopify 的 AI 转型：不告诉员工反而不公平\n\n当 Tobi 看到 AI 已经能够显著提高个人 impact 时，他选择直接告诉全公司：AI 会改变绩效和工作方式。Shopify 为员工提供充足 token，鼓励大家 tinkering，并把 AI 纳入公司“在变化中成长”的文化。\n\n“如果我们要按照这个事实行动，就应该告诉大家。”\n\n⚙️ AI 让小团队重新成为高杠杆组织\n\nTobi 押注三到五人的小团队。因为 AI 让每个人可以跨越更多技能边界，客户反馈、研究、代码、文档和运营都可以被 agent 辅助。团队越小，沟通成本越低，节奏越快。\n\n“现在每个人在每项技能上都能达到十分里的七分。这真的非常有帮助，因为它让团队可以变得更小。”\n\n🏪 对小企业来说，AI 是“终于把电脑修好了”\n\nTobi 观察到，Shopify 商家对 AI 的感受和媒体叙事非常不同。他们不是首先想到被替代，而是觉得电脑终于变得可用：可以直接对话、自动完成复杂设置、帮助自己扩大生意。\n\n“他们会说，你们终于把电脑修好了。”\n\n🧠 客户告诉你问题，不负责告诉你答案\n\nTobi 强调，产品团队不能把客户需求当作直接照抄的功能清单。客户最重要的作用，是让你理解他们正在经历的问题。真正的产品责任，是团队爱上这些问题，并找到理想的解决方式。\n\n“客户的工作，是告诉我们他们正在经历什么问题。然后我们爱上这些问题，把这些问题当成我们自己的问题。”\n\n🌍 软件奇观之后，AI 会把创造力带回物理世界\n\nTobi 认为，过去几十年人类并没有停止建设伟大基础设施，只是很多奇观是数字形态的，比如浏览器、Linux、开源生态和互联网服务。AI 将成为这些软件基础设施之上的下一层，让更多人才进入机器人、制造、住房、交通和其他物理世界问题。\n\n“我们过去建的所有软件，其实都是 AI 的 bootstrapper。”\n\n📚 阅读的关键：给书留出仪式和空间\n\nTobi 分享自己喜欢短而密度高的书，并通过 Kindle 和夜间固定阅读时间保持读书习惯。他也提醒，如果一本书无法让你读下去，不一定是读者出了问题，也可能是作者没能抓住你。\n\n“让你一直读下去，其实是作者的工作。”\n\n🌐 播客信息补充\n\n本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的\n\n使用 AI 进行翻译，因此可能会有一些地方不通顺；\n\n如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight",
+      "tags": [
+        "AI时代",
+        "创业",
+        "长期主义"
+      ],
+      "score": 80,
+      "summary": "Shopify创始人Tobi分享AI如何改变组织、产品开发与小企业未来。",
+      "fetched_at": "2026-05-28T07:10:15.910537+08:00"
+    },
+    {
+      "title": "Claude Cowork is Claude Code but for everything.",
+      "link": "https://x.com/adocomplete/status/2059744967275495534",
+      "published": "2026-05-28T05:14:03+08:00",
+      "source": "Ado(@adocomplete)",
+      "content": "Claude Cowork is Claude Code but for everything.\n\n![austin lau](https://pbs.twimg.com/profile_images/2004952307088478208/6Orxxs_5_normal.jpg)\n\naustin lau@helloitsaustin\n\n[x.com/i/article/2055…](http://x.com/i/article/2055337562475220992)\n\n[🔗 View Quoted Tweet](https://x.com/helloitsaustin/status/2059714747290001761)\n\n💬1🔄0❤️13👀1950📊4",
+      "tags": [
+        "Claude",
+        "AI助手"
+      ],
+      "score": 65,
+      "summary": "推文称Claude Cowork将Claude Code功能扩展到所有场景。",
+      "fetched_at": "2026-05-28T07:10:15.910600+08:00"
+    },
+    {
+      "title": "Absolutely it is",
+      "link": "https://x.com/amasad/status/2059755245706662344",
+      "published": "2026-05-28T05:54:53+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "Absolutely it is\n\n![Rexan Wong](https://pbs.twimg.com/profile_images/2050494347523833856/XoYEiZ1o_normal.jpg)\n\nRexan Wong@rexan\\_wong\n\nNOW IS THE BEST TIME IN HISTORY TO START A COMPANY  \n  \nheres what the CEOs of [@stripe](https://x.com/stripe) + [@Replit](https://x.com/Replit) just said:  \n  \n> new business creation on stripe is up 2x YoY in march (even bigger spike than covid lockdowns)  \n> 20% of startups charge their first customer within 30 days (was 8% in 2020)  \n> time to hit $1M / $10M / $100M ARR is down ~2x vs the SaaS boom era  \n> avg revenue per business is UP even tho 2x more are being created  \n> \"great stagnation\" is officially over  \n  \nand on what to actually build:  \n  \n> vertical SaaS for industries software hasnt touched (ice skating rinks, yoga studios, etc)  \n> domain experts > silicon valley grads. one teacher built magicschool ai on replit, went 0 → $10M ARR in months, now a $500M company  \n> find the janky 1990s incumbent w no mobile, no ai, no collab and just build the good version  \n> look for whats popular w young ppl but low status (crypto was this 10 yrs ago)  \n  \nmost builders are still scared the labs will eat everything  \n  \nbut patrick said it best: if 1 company owns the whole economy, by definition no one else has money to pay them. self-defeating  \n  \nthe moat in software was never the code  \n  \nit was always coordination, distribution, and knowing what to build  \n  \nif u been sitting on an idea theres legit no better time  \n  \nstrong believer of if you show up everyday and dabble with the tools, tech, and biz - it gna compound\n\n![Tweet Image](https://pbs.twimg.com/media/HJWjJ3vbkAAIbul.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/rexan_wong/status/2059732190834094368)\n\n💬7🔄6❤️77👀12945📊14",
+      "tags": [
+        "创业",
+        "AI趋势"
+      ],
+      "score": 85,
+      "summary": "Replit CEO引用数据称现在是最佳创业时机，AI加速公司成长。",
+      "fetched_at": "2026-05-28T07:10:15.910656+08:00"
+    },
+    {
+      "title": "把 tweets 变成 Markdown\n\nhttps://t.co/2Okv7wbV9S",
+      "link": "https://x.com/dingyi/status/2059771703950266703",
+      "published": "2026-05-28T07:00:17+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "把 tweets 变成 Markdown  \n  \n[tweet.md](https://tweet.md/)\n\n💬0🔄0❤️0👀48",
+      "tags": [
+        "工具",
+        "Markdown"
+      ],
+      "score": 60,
+      "summary": "推文介绍tweet.md工具可将推文转为Markdown。",
+      "fetched_at": "2026-05-28T07:10:15.910712+08:00"
+    },
+    {
+      "title": "Look back at last week’s I/O announcements with @NotebookLM.\n\nYou can listen to an audio overview, w...",
+      "link": "https://x.com/GoogleAI/status/2059748312236921149",
+      "published": "2026-05-28T05:27:20+08:00",
+      "source": "Google AI(@GoogleAI)",
+      "content": "Look back at last week’s I/O announcements with [@NotebookLM](https://x.com/NotebookLM).  \n  \nYou can listen to an audio overview, watch the video recap, and even check out our detailed slide deck summarizing all of the biggest news and launches.  \n  \nCheck it out here: [blog.google/innovation-and…](https://blog.google/innovation-and-ai/products/notebooklm/notebooklm-google-io-2026/?linkId=62068662)\n\n💬9🔄3❤️47👀5597📊13",
+      "tags": [
+        "Google AI",
+        "NotebookLM"
+      ],
+      "score": 75,
+      "summary": "Google AI官方推文介绍通过NotebookLM回顾I/O大会内容。",
+      "fetched_at": "2026-05-28T07:10:15.910765+08:00"
+    },
+    {
+      "title": "Gemini Omni is available to all Google AI Plus, Pro, and Ultra subscribers globally on the web and i...",
+      "link": "https://x.com/GeminiApp/status/2059754290630320482",
+      "published": "2026-05-28T05:51:05+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "Gemini Omni is available to all Google AI Plus, Pro, and Ultra subscribers globally on the web and in the Gemini app.\n\n💬1🔄1❤️27👀3665📊4",
+      "tags": [
+        "Gemini Omni",
+        "发布"
+      ],
+      "score": 80,
+      "summary": "Google Gemini App宣布Gemini Omni向订阅用户全球开放。",
+      "fetched_at": "2026-05-28T07:10:15.910817+08:00"
+    },
+    {
+      "title": "Easily transform your videos into new visual styles with Gemini Omni.\n\nJust upload a video or photo ...",
+      "link": "https://x.com/GeminiApp/status/2059754264248139968",
+      "published": "2026-05-28T05:50:59+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "Easily transform your videos into new visual styles with Gemini Omni.  \n  \nJust upload a video or photo and ask Gemini to apply a look or style to your final output.\n\n💬15🔄10❤️99👀5733📊27",
+      "tags": [
+        "Gemini Omni",
+        "视频处理"
+      ],
+      "score": 75,
+      "summary": "推文展示Gemini Omni可将视频转化为新视觉风格。",
+      "fetched_at": "2026-05-28T07:10:15.910867+08:00"
+    },
+    {
+      "title": "🇰🇪 Nairobi showed up ready to build\n\nCreators, founders, and marketers spent the day turning ideas...",
+      "link": "https://x.com/HeyGen/status/2059761919364677655",
+      "published": "2026-05-28T06:21:24+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "🇰🇪 Nairobi showed up ready to build  \n  \nCreators, founders, and marketers spent the day turning ideas into polished AI videos with HeyGen, from product explainers and ads to social content and storytelling  \n  \nBig thanks to everyone who came together to create, learn, and share ideas\n\n![Tweet Image](https://pbs.twimg.com/media/HJW-dFjaYAAF4QO.jpg)![Tweet Image](https://pbs.twimg.com/media/HJW-eAjaMAA9TtT.jpg)![Tweet Image](https://pbs.twimg.com/media/HJW-fv4bcAARp-M.jpg)![Tweet Image](https://pbs.twimg.com/media/HJW-gdKboAARk-3.jpg)\n\n💬0🔄0❤️4👀151",
+      "tags": [
+        "HeyGen",
+        "活动"
+      ],
+      "score": 65,
+      "summary": "HeyGen在内罗毕举办AI视频创作工作坊。",
+      "fetched_at": "2026-05-28T07:10:15.910917+08:00"
+    },
+    {
+      "title": "Grab a notebook (or, you know…a Notion page). New Academy path: Notion AI.\n\nLearn to turn docs, meet...",
+      "link": "https://x.com/NotionHQ/status/2059762818858336290",
+      "published": "2026-05-28T06:24:59+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Grab a notebook (or, you know…a Notion page). New Academy path: Notion AI.  \n  \nLearn to turn docs, meetings, and connected tools into context, so Custom Agents can run workflows end to end.  \n  \nFinish the path, earn a badge → [ntn.so/academy-ai](https://ntn.so/academy-ai)\n\n![Tweet Image](https://pbs.twimg.com/media/HJW-_wCbMAAEBsz.jpg)\n\n💬0🔄0❤️4👀379📊1",
+      "tags": [
+        "Notion AI",
+        "教程"
+      ],
+      "score": 70,
+      "summary": "Notion推出AI Academy路径，教用户用Custom Agents。",
+      "fetched_at": "2026-05-28T07:10:15.910967+08:00"
+    },
+    {
+      "title": "Let's settle this once and for all...\n\nLight Mode or Dark Mode?",
+      "link": "https://x.com/NotionHQ/status/2059750534454845512",
+      "published": "2026-05-28T05:36:10+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Let's settle this once and for all...  \n  \nLight Mode or Dark Mode?\n\n![Tweet Image](https://pbs.twimg.com/media/HJW0H6KaEAA1reT.jpg)![Tweet Image](https://pbs.twimg.com/media/HJW0I28bsAAnBAU.jpg)\n\n💬47🔄4❤️75👀5597📊46",
+      "tags": [
+        "Notion",
+        "社区"
+      ],
+      "score": 30,
+      "summary": "Notion发起浅色模式或深色模式投票。",
+      "fetched_at": "2026-05-28T07:10:15.911038+08:00"
+    },
+    {
+      "title": "Example: Before this, I wouldn't even have dared to build my own coding agent. Where would I get the...",
+      "link": "https://x.com/omarsar0/status/2059758671609966841",
+      "published": "2026-05-28T06:08:30+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "Example: Before this, I wouldn't even have dared to build my own coding agent. Where would I get the tokens to do it? I regularly get rate-limited with my current max subscriptions as it is. Intelligence/tokens will get cheaper, and so you build with that future in mind. Connects well with my earlier tweet: [x.com/omarsar0/statu…](https://x.com/omarsar0/status/2059657791141212186?s=20)\n\n💬0🔄0❤️2👀887📊1",
+      "tags": [
+        "AI Agent",
+        "开发"
+      ],
+      "score": 65,
+      "summary": "用户分享因成本降低而敢于构建自主编码Agent。",
+      "fetched_at": "2026-05-28T07:10:15.911092+08:00"
+    },
+    {
+      "title": "The thing is, the lower the barrier to entry in terms of cost, the more I feel like I can build in t...",
+      "link": "https://x.com/omarsar0/status/2059757874583159177",
+      "published": "2026-05-28T06:05:20+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "The thing is, the lower the barrier to entry in terms of cost, the more I feel like I can build in terms of complexity. It feels like it unlocks other things that were just simply not possible with these expensive subscriptions. Local AI models will truly change the world. Making AI more accessible is the best gift to humanity.\n\n💬1🔄1❤️5👀1212📊2",
+      "tags": [
+        "AI成本",
+        "本地模型"
+      ],
+      "score": 65,
+      "summary": "推文认为降低AI成本能解锁更复杂构建，本地模型将改变世界。",
+      "fetched_at": "2026-05-28T07:10:15.911141+08:00"
+    },
+    {
+      "title": "It's crazy that this is even possible today. \n\nIt inspired me to build my own self-improving coding ...",
+      "link": "https://x.com/omarsar0/status/2059750598384250985",
+      "published": "2026-05-28T05:36:25+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "It's crazy that this is even possible today.   \n  \nIt inspired me to build my own self-improving coding agent with simple read, write, bash,...   \n  \nI already used the coding agent to build an entire production-grade application in 24 hrs.  \n  \nI don't know, man. This feels so strange.\n\n![Tweet Image](https://pbs.twimg.com/media/HJWx9voWkAMWQOj.jpg)\n\n💬8🔄4❤️31👀3601📊13",
+      "tags": [
+        "编码Agent",
+        "AI应用"
+      ],
+      "score": 65,
+      "summary": "用户用AI Agent在24小时内构建完整生产级应用。",
+      "fetched_at": "2026-05-28T07:10:15.911189+08:00"
+    },
+    {
+      "title": "东亚社会的耻感文化深深地影响了东亚的公司",
+      "link": "https://x.com/oran_ge/status/2059761258564575290",
+      "published": "2026-05-28T06:18:47+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "东亚社会的耻感文化深深地影响了东亚的公司\n\n![Baye](https://pbs.twimg.com/profile_images/1807439424009175040/F2mBMzcN_normal.jpg)\n\nBaye@waylybaye\n\n原来这叫耻感文化\n\n![Tweet Image](https://pbs.twimg.com/media/HJUNaHUasAAAI4Q.png)\n\n[🔗 View Quoted Tweet](https://x.com/waylybaye/status/2059567497570042042)\n\n💬0🔄1❤️1👀472📊1",
+      "tags": [
+        "东亚文化"
+      ],
+      "score": 50,
+      "summary": "推文讨论东亚耻感文化对公司的影响。",
+      "fetched_at": "2026-05-28T07:10:15.911237+08:00"
+    },
+    {
+      "title": "如果大公司的工作量是固定的\n用人干8小时能干完，用 AI 干4小时能干完\n那用 AI 其实是额外增加了 token 消耗成本\n结果就只有裁员省成本，or 不用 AI省成本\n如果不能在业务上找到新业务方...",
+      "link": "https://x.com/oran_ge/status/2059760321083097134",
+      "published": "2026-05-28T06:15:03+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "如果大公司的工作量是固定的  \n用人干8小时能干完，用 AI 干4小时能干完  \n那用 AI 其实是额外增加了 token 消耗成本  \n结果就只有裁员省成本，or 不用 AI省成本  \n如果不能在业务上找到新业务方向，提升工作量，提升预期收益  \n那 AI 带来的就只有负面影响，或一点点降本  \n找机会这件事，就是纯纯的人类的责任了  \n因为所谓机会，需要的是整个世界的 context\n\n💬0🔄0❤️0👀622",
+      "tags": [
+        "AI成本",
+        "大公司"
+      ],
+      "score": 65,
+      "summary": "推文认为固定工作量下使用AI只会增加成本，需拓展业务方向。",
+      "fetched_at": "2026-05-28T07:10:15.911285+08:00"
+    },
+    {
+      "title": "AI 行业发展到了新阶段\n最近海内外都开始有一些反思的声音出现了：\n1. model+harness才是产品（而不会吃掉一切）\n2. 完全自动化就是在骗自己，珍贵的东西都无法完全自动化，离不开人的参与...",
+      "link": "https://x.com/oran_ge/status/2059757975632511370",
+      "published": "2026-05-28T06:05:44+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "AI 行业发展到了新阶段  \n最近海内外都开始有一些反思的声音出现了：  \n1. model+harness才是产品（而不会吃掉一切）  \n2. 完全自动化就是在骗自己，珍贵的东西都无法完全自动化，离不开人的参与  \n3. 慢工出细活的耐心，是AI时代的新奢侈品，欲速则不达，慢就是快  \n4. AI 的成本支出很大，算 ROI 有时候不如人\n\n💬3🔄0❤️5👀836📊3",
+      "tags": [
+        "AI反思",
+        "行业趋势"
+      ],
+      "score": 70,
+      "summary": "推文总结AI行业新阶段反思：模型+产品、自动化局限、耐心价值、成本考量。",
+      "fetched_at": "2026-05-28T07:10:15.911333+08:00"
+    }
+  ]
+}
