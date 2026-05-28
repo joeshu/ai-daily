@@ -1437,6 +1437,208 @@
       "score": 65,
       "summary": "中文解读Claude Opus 4.8模型卡要点。",
       "fetched_at": "2026-05-29T05:55:21.714739+08:00"
+    },
+    {
+      "title": "Training Azerbaijani language models on Amazon SageMaker AI",
+      "link": "https://aws.amazon.com/blogs/machine-learning/training-azerbaijani-language-models-on-amazon-sagemaker-ai/",
+      "published": "2026-05-29T05:54:06+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "*This solution builds on open source tools including PyTorch, Hugging Face Transformers, and Liger Kernels. The authors would also like to thank Aiham Taleb, Arefeh Ghahvechi, Manav Choudhary, Rohit Thekkanal, Daz Akbarov, Jamila Jamilova, Ross Povelikin, Almas Moldakanov, Christelle Xu, and Ivan Khvostishkov for their contributions in making this project possible.*\n\n[Azercell Telecom LLC](https://www.azercell.com/en/), Azerbaijan’s leading telecommunications provider, wanted to build an Azerbaijani large language model (LLM) on [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/ai/) for telecom use cases and a customer-facing chatbot. The challenge: adapting foundation models (FMs) to a morphologically rich language with limited training data and no existing blueprint for efficient LLM training in Azerbaijani. In a six-week collaboration, Azercell worked with the [AWS Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/) to establish a production-ready framework on Amazon SageMaker AI that delivered a 23% higher training throughput and 58% lower peak GPU memory usage through kernel-level optimizations on an [ml.p5.48xlarge](https://aws.amazon.com/ec2/instance-types/p5/) instance. The framework also achieved a 2× improvement in tokens per word using a custom tokenizer, effectively doubling the amount of Azerbaijani text that fits within the model’s context window. If you work with low-resource or morphologically complex languages, this post walks through the approach so you can evaluate similar techniques.\n\n## Solution overview\n\nThe framework implements three sequential stages, each producing artifacts that feed the next.\n\n* **Stage 1: Tokenizer development** builds an efficient tokenizer for Azerbaijani. We evaluated three approaches (baseline English-optimized tokenizers, vocabulary extension, and custom monolingual tokenizers) measuring encoding efficiency through standardized metrics. The custom monolingual tokenizer achieved the strongest results, halving the tokens per word compared to the baseline.\n* **Stage 2: Continued pre-training (CPT)** adapts an FM ([Llama 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B)) to understand Azerbaijani using distributed training and Liger Kernel optimizations on Amazon SageMaker AI training jobs. This allows for larger batch sizes and higher throughput on the same hardware. While distributed training wasn’t required for this 1B-scale proof-of-concept, it will be essential as Azercell scales to larger models.\n* **Stage 3: Supervised fine-tuning with Low-Rank Adaptation (LoRA)** transforms the pre-trained model into a conversational assistant. After CPT, the model can predict Azerbaijani tokens but can’t engage in dialogue. Stage 3 applies LoRA, a parameter-efficient fine-tuning method that significantly reduces trainable parameters.\n\nThe training stages (CPT and LoRA fine-tuning) were run as Amazon SageMaker AI training jobs launched from [Amazon SageMaker Unified Studio](https://aws.amazon.com/sagemaker/unified-studio/), each pointing to a custom training script. Each job provisions fresh [Amazon Elastic Compute Cloud (Amazon EC2)](https://aws.amazon.com/ec2/) instances and terminates after completion, so you pay only for actual compute time with no idle cluster cost.\n\nThe following diagram illustrates the modular architecture, where each stage can be optimized independently. Tokenizer improvements benefit every subsequent training stage, and CPT configurations transfer across fine-tuning tasks.\n\n![AWS Cloud architecture diagram showing a machine learning training pipeline with Amazon S3 storage, SageMaker AI Training Jobs and Notebook Instances, TensorBoard monitoring, and CloudWatch — featuring a three-step workflow for custom tokenizer training, continued pre-training, and LoRA fine-tuning.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-1.png)\n\nFigure 1. The training pipeline architecture. Operators launch training jobs from Amazon SageMaker AI Notebook Instances. Training data and model artifacts are stored in Amazon Simple Storage Service (Amazon S3). Training metrics are tracked with TensorBoard in Amazon SageMaker AI, and system metrics are captured through Amazon CloudWatch.\n\n## Developing an Azerbaijani tokenizer\n\nLanguages like Azerbaijani are morphologically rich, with single words encoding grammatical meaning through suffixes that English would express using multiple words. However, standard English-optimized tokenizers fragment these complex word forms. For example, splitting “kitablardan” (meaning from the books) into multiple subword tokens as illustrated in Figure 2, which reduces the actual content that fits within a fixed-size context window.\n\n![Side-by-side comparison of an English-optimized tokenizer producing 4 incorrect tokens versus a custom Azerbaijani tokenizer producing 3 morphologically correct tokens for the word \"kitablardan.\"](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-2.jpeg)\n\nFigure 2. Comparison of baseline and custom tokenization for Azerbaijani text, showing reduced token fragmentation.\n\nTo address this, we trained a custom tokenizer on Azerbaijani text using a Byte-Level Byte-Pair Encoding (BBPE) algorithm, which iteratively merges the most frequent byte pairs into vocabulary entries. Starting from raw bytes rather than predefined character sets provides full coverage of Azerbaijani-specific characters without requiring manual alphabet definitions. We experimented with vocabulary sizes ranging from 50k–100k tokens to find the right balance: too small and the tokenizer over-fragments words, too large and rare tokens lack sufficient training signal.\n\nWe trained custom tokenizers using the [Hugging Face tokenizers](https://huggingface.co/docs/tokenizers/index) library with the same configuration as the native Llama 3.2 tokenizer, varying only vocabulary size. After training and evaluating multiple tokenizers with different vocabulary sizes, we selected a final vocabulary of 100k tokens. To verify that the custom tokenizer didn’t sacrifice modeling quality, we compared models after continued pre-training using Bits-Per-Byte (BPB) rather than perplexity, because BPB normalizes for vocabulary differences by measuring prediction quality at the byte level. The model using the custom tokenizer achieved a BPB of 0.5795 on the validation set, compared to the baseline’s 0.6830, confirming that improved encoding efficiency came without a quality trade-off.\n\nBeyond preserving modeling quality, the custom tokenizer delivers substantial practical efficiency gains. Encoding efficiency can be quantified through fertility score—the average number of tokens per word, where lower values indicate more efficient encoding. The baseline Llama 3.2 tokenizer averaged 3.22 tokens per Azerbaijani word, while the custom monolingual tokenizer achieved 1.59—a 2× improvement in encoding efficiency. With Llama 3.2’s 128k-token context window, this translates to real capacity differences: approximately 40k words with the baseline tokenizer versus 80k with the optimized one—effectively doubling the content the model considers at once.\n\n## Continued pre-training\n\nContinued pre-training adapts the FM (Llama 3.2 1B) to understand Azerbaijani. The primary bottleneck for this stage is GPU memory: optimizing memory utilization directly determines how much of the hardware investment translates into training throughput. We benchmarked on both [ml.p4d.24xlarge](https://aws.amazon.com/ec2/instance-types/p4/) (8× NVIDIA A100 GPUs) and [ml.p5.48xlarge](https://aws.amazon.com/ec2/instance-types/p5/) (8× NVIDIA H100 GPUs) instances. The following sections describe the two optimization approaches benchmarked: distributed training with [PyTorch’s Fully Sharded Data Parallel (FSDP)](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html) and Liger Kernel integration.\n\n### Distributed training with Fully Sharded Data Parallel (FSDP)\n\nA model’s memory footprint includes not just weights, but also gradients, optimizer states, and activations. These components can exceed 100 GB for larger models like Llama 3.1 8B in mixed precision. We developed and validated the distributed training setup on the 1B model so that scaling to larger architectures requires only a configuration change, not a re-architecture of the pipeline. Standard Distributed Data Parallel (DDP) replicates the full model on each GPU, which limits the batch size and model scale you can achieve. FSDP shards parameters, gradients, and optimizer states across GPUs, dynamically gathering only what is needed during each computation step. This reduced per-GPU model state memory from 9.23 GB to 1.17 GB on ml.p4d.24xlarge, freeing headroom for larger batch sizes.\n\n### Liger Kernel integration\n\n[Liger Kernels](https://github.com/linkedin/Liger-Kernel) are memory-efficient, [Triton](https://triton-lang.org/)-based implementations of common LLM operations that fuse multiple operations into single GPU kernel launches, reducing intermediate memory allocations while producing numerically equivalent results. They support several popular model architectures including Llama. We recommend that you verify compatibility with your architecture before adoption.\n\nIntegration requires minimal code changes: a single function call patches the model with optimized kernels before instantiation, and Liger Kernels work with PyTorch FSDP without modifications to the distributed training setup. We validated correct execution with [PyTorch Profiler](https://docs.pytorch.org/tutorials/recipes/recipes/profiler_recipe.html), confirming fused operations in the trace. The following table summarizes the cumulative impact of each optimization step across both instance types. Note that DDP memory and throughput on p5 instances weren’t benchmarked because FSDP was the target configuration.\n\n|  |  |  |  |\n| --- | --- | --- | --- |\n| **Metric** | **DDP** | **FSDP** | **FSDP + Liger** |\n| Max batch size per GPU on ml.p4d.24xlarge (8× NVIDIA A100 GPUs) | 2 | 4 | 14 |\n| Max batch size per GPU on ml.p5.48xlarge (8× NVIDIA H100 GPUs) | 4 | 10 | 18 |\n| Peak GPU memory incl. activations (GB) on ml.p5.48xlarge | — | 64 | 27 |\n| Training throughput per GPU (tokens/s) on ml.p5.48xlarge | — | 63,771 | 78,319 |\n\nOn ml.p4d.24xlarge, the full optimization stack delivered a 7× increase in maximum batch size over DDP. On ml.p5.48xlarge, peak GPU memory dropped 58% and per-GPU throughput increased 23% when adding Liger Kernels to FSDP.\n\n### Pre-training setup\n\nEach tokenizer configuration from Stage 1 was carried through CPT end-to-end to compare convergence behavior and downstream quality. With the custom Azerbaijani tokenizer (100k vocabulary), the training corpus amounts to approximately 2.5B tokens.\n\nThe custom training script supports configurable context windows, BFloat16 mixed precision, cosine learning rate scheduling with [AdamW](https://docs.pytorch.org/docs/stable/generated/torch.optim.AdamW.html#torch.optim.AdamW), and automatic checkpointing to Amazon S3 for fault tolerance. We set the context window to 2,048 tokens because over 90% of training samples fell below this length after tokenization, though the configuration supports up to the model’s native 128k-token limit.\n\nWhen new tokens are added to the vocabulary, CPT follows a two-phase approach. In the first phase, the model backbone is frozen and only the embedding layer is trained. This adapts the new token representations to the model’s existing internal space without disrupting pre-trained knowledge. In the second phase, the parameters are unfrozen for full training, allowing the model to deeply learn Azerbaijani language patterns. The following table shows the training configuration using the Azerbaijani custom tokenizer (100k vocabulary). Training used two ml.p4d.24xlarge instances (16 NVIDIA A100 GPUs total) with FSDP and Liger Kernel optimizations.\n\n|  |  |  |\n| --- | --- | --- |\n| **Parameter** | **Phase 1: Embedding Adaptation** | **Phase 2: Full Training** |\n| Frozen backbone | Yes | No |\n| Learning rate | 0.0032 | 0.0024 |\n| Batch size per GPU | 14 | 14 |\n| Steps | 5,000 | 15,000 |\n| Training time | ~11,400 seconds (~3.2 hours) | ~43,000 seconds (~11.9 hours) |\n\nA lower learning rate in the full-training phase preserves the knowledge acquired during embedding adaptation. With an effective batch size of 224 (14 per GPU × 16 GPUs) and a 2,048-token context window, each training step processes approximately 450k tokens, yielding an estimated per-epoch time of approximately 4.3 hours on this configuration. On ml.p5.48xlarge, higher per-GPU throughput and larger batch sizes would reduce per-epoch time further.\n\n## Supervised fine-tuning with LoRA\n\nAfter CPT, the model can fluently predict the next Azerbaijani token, but it has no concept of conversational structure. Given a question, it generates plausible continuations rather than helpful answers. LoRA bridges this gap efficiently by freezing the pre-trained weights and training small low-rank decomposition matrices injected into the model’s attention and feed-forward layers. Instead of updating a full weight matrix, LoRA trains two smaller matrices whose product approximates the full update—reducing trainable parameters to a small fraction of the total. The following table summarizes the LoRA fine-tuning configuration.\n\n|  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- |\n| **Parameter** | **Rank** | **Alpha** | **Dropout** | **Target modules** | **Max sequence length** |\n| **Value** | 64 | 28 | 0.05 | q, k, v, o projections; gate, up, down projections | 1,024 |\n\nThis compact footprint meant fine-tuning ran on a single [ml.g5.8xlarge](https://aws.amazon.com/ec2/instance-types/g5/) instance (1× NVIDIA A10G GPU), completing in minutes. Fine-tuning used approximately 2,000 single-turn Azerbaijani question-answer pairs using Hugging Face’s [SFTTrainer](https://huggingface.co/docs/trl/sft_trainer) with a learning rate of 1e-4—higher than CPT’s learning rates because LoRA adapters are randomly initialized and benefit from stronger gradient updates.\n\nTraining used a Llama-style chat template with assistant-only loss masking: the model is penalized only for predicting the assistant’s response tokens and the end-of-turn token (<|eot\\_id|>), while user prompts and template delimiters are excluded from the loss. As a result, the model focuses its learning capacity on generating appropriate responses rather than memorizing user input patterns.\n\n## Results and validation\n\nContinued pre-training used approximately 2.5B tokens with the custom Azerbaijani tokenizer, and fine-tuning used 2,000 question-answer pairs. The framework delivered measurable improvements across four dimensions:\n\n* **2× encoding efficiency through custom tokenization** The custom monolingual tokenizer halved the fertility score (from 3.22 to 1.59 tokens per word), effectively doubling the Azerbaijani content that fits within the model’s 128k-token context window. A BPB score of 0.5795 versus the baseline’s 0.6830 confirmed this gain didn’t sacrifice modeling quality.\n* **Significant memory and throughput optimization Fully Sharded Data Parallel (FSDP)** sharding and Liger Kernel integration allowed larger batch sizes on the same hardware, up to 7× on ml.p4d.24xlarge and 4.5× on ml.p5.48xlarge over their respective DDP baselines—while reducing peak GPU memory by 58% and increasing per-GPU throughput by 23%.\n* **Production-ready, scalable infrastructure** Validated configurations across ml.p4d.24xlarge and ml.p5.48xlarge instances give Azercell a flexible foundation that scales as training requirements grow, with the distributed setup designed so that moving to larger models requires only a configuration change.\n* **Coherent Azerbaijani language generation** The off-the-shelf Llama 3.2 1B drifts into repetitive, incoherent output when prompted in Azerbaijani, a common failure mode for underrepresented languages. The fine-tuned model produces concise, semantically coherent responses that demonstrate clear Azerbaijani language understanding. This is illustrated in the following table for a sample prompt provided by Azercell.\n\n|  |  |  |\n| --- | --- | --- |\n| **Prompt** | **Azerbaijani output** | **English translation** |\n| **Input prompt** | Yeni bir dil öyrənmək yalnız ünsiyyət imkanlarını genişləndirmir.**..** | Learning a new language not only expands communication opportunities… |\n| **Llama 3.2 1B** | **Yeni bir dil öyrənmək yalnız ünsiyyət imkanlarını genişləndirmir**. Bu, əksinə, dili öyrənən insanlara yeni bir dil öyrənmək üçün fərqli məqsədlərlə yanaşı, onların özü də yeni bir dil öyrənməyə başlayır.  Dil öyrənməsi, həmçinin, yeni bir dil öyrənməyə olan istiqamətlərin və təcrübələrinin genişləndirilməsinə səbəb olur. Yeni bir dil öyrənməyə olan istiqamətləri və təcrübələrinin genişləndirilməsindən sonra, yeni bir dil öyrənməyə olan istiqamətlərin və təcrübələrinin genişləndirilməsi… | **Learning a new language not only expands communication opportunities**. On the contrary, it also leads people who learn a language to approach language learning with different goals, and they themselves begin the process of learning a new language. Language learning also contributes to the expansion of directions and experiences related to learning a new language. After expanding these directions and experiences, the development of approaches and experiences in learning a new language continues… |\n| **Fine-tuned Llama 3.2 1B** | **Yeni bir dil öyrənmək yalnız ünsiyyət imkanlarını genişləndirmir**, həm də yeni dostlar və əlaqələr yaradır. | **Learning a new language not only expands communication opportunities** but also creates new friendships and connections. |\n\n## Conclusion\n\nIn this post, we showed how Azercell and the AWS Generative AI Innovation Center built a framework for training Azerbaijani language models on Amazon SageMaker AI. The three-stage pipeline (custom tokenization, continued pre-training with FSDP and Liger Kernel optimizations, and LoRA fine-tuning) transforms a general-purpose foundation model into an Azerbaijani conversational assistant while maximizing GPU utilization. Azercell now operates the framework independently, with a methodology that supports larger corpora, scaled architectures, and expanded use cases. To learn more, explore the following resources:\n\n* [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/ai/) – managed machine learning service for training and deployment\n* [AWS Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/) – collaborative AI development programs\n* [Distributed training in Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/distributed-training.html) – distributed training concepts\n* [PyTorch FSDP tutorial](https://pytorch.org/tutorials/intermediate/FSDP_tutorial.html) – implementation guide\n* [Liger Kernels](https://github.com/linkedin/Liger-Kernel) – memory-efficient kernel implementations\n* [Hugging Face Tokenizers](https://huggingface.co/docs/tokenizers) – tokenizer training library\n* [Llama 3.2 1B](https://huggingface.co/meta-llama/Llama-3.2-1B) – base model\n\nTo explore implementing a similar solution, reach out to your AWS account team or visit the [AWS Generative AI Innovation Center](https://aws.amazon.com/ai/generative-ai/innovation-center/). If you’re training LLMs for low-resource languages or optimizing GPU utilization on SageMaker AI, we’d love to hear from you. Share your thoughts and questions in the comments.\n\n---\n\n## About the authors\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-3.jpeg)\n\n**Aleksei Iancheruk** is a Data Scientist at the AWS Generative AI Innovation Center (GenAIIC). He specializes in search and retrieval systems, recommender systems, and AI agents. With experience spanning both large enterprises and startups/scaleups, he has designed and shipped production AI systems across diverse technical environments.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-4.png)\n\n**Debby Wehner** is a Machine Learning Engineer at the AWS GenAIIC, specializing in large language model customization and optimization. Previously at Amazon, she built AI-powered shopping applications as a full-stack software engineer. She holds a PhD in Computational Geophysics from the University of Cambridge, as well as a BSc and MSc from Freie Universität Berlin.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-5.png)\n\n**Hanno Bever** is a Senior Machine Learning Engineer in the AWS GenAIIC. In his six years at Amazon, he has helped customers across various industries run machine learning workloads on AWS. He specializes in scaling distributed model training and optimizing inference on AWS Trainium and GPU instances.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-6.jpeg)\n\n**Sabir Mardanov** leads Azercell’s Data & AI organization, shaping the AI strategy behind the company’s transformation from a traditional telco to a tech-centric leader. His work has delivered measurable impact across efficiency, revenue, and productivity. He oversees the development of scalable AI capabilities while embedding strong governance and a data-driven culture across the enterprise.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/14/ML-20305-image-7.jpeg)\n\n**Irada Bunyatova** is a Senior Data Scientist at Azercell, specializing in speech technologies, large language models and agentic AI systems. She designs and deploys production-grade AI solutions across diverse business applications. She holds an MSc&T in Artificial Intelligence and Advanced Visual Computing from École Polytechnique.",
+      "tags": [
+        "AWS",
+        "SageMaker",
+        "低资源语言"
+      ],
+      "score": 75,
+      "summary": "AWS博客介绍在SageMaker上训练阿塞拜疆语言模型的方法与优化。",
+      "fetched_at": "2026-05-29T07:16:12.793448+08:00"
+    },
+    {
+      "title": "Ultracode. Nice.",
+      "link": "https://x.com/adocomplete/status/2060131990284972449",
+      "published": "2026-05-29T06:51:56+08:00",
+      "source": "Ado(@adocomplete)",
+      "content": "Ultracode. Nice.\n\n![Tweet Image](https://pbs.twimg.com/media/HJcPF45agAANcCF.jpg)\n\n💬1🔄0❤️3👀146📊2",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 20,
+      "summary": "无意义的推文，仅附一张图片。",
+      "fetched_at": "2026-05-29T07:16:12.793531+08:00"
+    },
+    {
+      "title": "Generate images, video, audio and remix them.\n\nDraw something and make it real.\n\nPoint-click edit, m...",
+      "link": "https://x.com/amasad/status/2060122956429472027",
+      "published": "2026-05-29T06:16:02+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "Generate images, video, audio and remix them.  \n  \nDraw something and make it real.  \n  \nPoint-click edit, move things around, drag them, drop them.  \n  \nInvite a friend and cook some marketing, websites, or art.  \n  \nAll on Replit Canvas!\n\n![Replit ⠕](https://pbs.twimg.com/profile_images/2031733558952464384/ERrHv3jK_normal.jpg)\n\nReplit ⠕@Replit\n\nThe best design work doesn't happen in a chat box. You need space to explore ideas, create variants, and iterate  \n  \nMeet the new Replit Canvas  \n  \nYour agentic design tool to build beautiful websites, apps, marketing assets and more\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060097492709228544/vid/avc1/1920x1080/QZ89uOHsHHV66tm5.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Replit/status/2060097656207413613/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/Replit/status/2060097656207413613)\n\n💬5🔄2❤️40👀3654📊8",
+      "tags": [
+        "Replit",
+        "Canvas",
+        "AI设计工具"
+      ],
+      "score": 82,
+      "summary": "Replit CEO宣布Canvas产品，支持生成与编辑图片、视频、音频。",
+      "fetched_at": "2026-05-29T07:16:12.793590+08:00"
+    },
+    {
+      "title": "crazy that this was announced on the day tokenmaxxing died.",
+      "link": "https://x.com/GaryMarcus/status/2060127844559134725",
+      "published": "2026-05-29T06:35:28+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "crazy that this was announced on the day tokenmaxxing died.\n\n![Bloomberg TV](https://pbs.twimg.com/profile_images/1631751904475709441/fhQng3ic_normal.jpg)\n\nBloomberg TV@BloombergTV\n\nAnthropic raised $65 billion in a funding round that valued the artificial intelligence company at $965 billion including the new investment, eclipsing rival OpenAI’s value for the first time. [@EdLudlow](https://x.com/EdLudlow) reports on \"Bloomberg The Close\" [bloom.bg/4wRXsrv](https://bloom.bg/4wRXsrv)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060101067107454978/vid/avc1/1280x720/o5iZ5yFGE6YLBfcM.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/BloombergTV/status/2060101321038979434/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/BloombergTV/status/2060101321038979434)\n\n💬1🔄2❤️8👀1544📊2",
+      "tags": [
+        "Anthropic",
+        "融资"
+      ],
+      "score": 85,
+      "summary": "Gary Marcus评论Anthropic获650亿美元融资，估值9650亿美元。",
+      "fetched_at": "2026-05-29T07:16:12.793644+08:00"
+    },
+    {
+      "title": "F Scott Fitzgerald, writing about someone who may as well have been Peter Thiel:  “They were careles...",
+      "link": "https://x.com/GaryMarcus/status/2060124674986541283",
+      "published": "2026-05-29T06:22:52+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "F Scott Fitzgerald, writing about someone who may as well have been Peter Thiel: “They were careless people, Tom and Daisy- they smashed up things and creatures and then retreated back into their money or their vast carelessness or whatever it was that kept them together, and let other people clean up the mess they had made.”\n\n![Leading Report](https://pbs.twimg.com/profile_images/1945229821505568768/z05xtDu4_normal.jpg)\n\nLeading Report@LeadingReport\n\nPeter Thiel has temporarily relocated his family to Argentina, enrolled his children in school there, and bought property, partly due to Thiel’s concerns about the United States’ future, per NYT.\n\n[🔗 View Quoted Tweet](https://x.com/LeadingReport/status/2060080326047613256)\n\n💬2🔄11❤️23👀1880📊6",
+      "tags": [
+        "非AI",
+        "闲聊"
+      ],
+      "score": 50,
+      "summary": "Gary Marcus引用小说评论Peter Thiel搬迁至阿根廷。",
+      "fetched_at": "2026-05-29T07:16:12.793721+08:00"
+    },
+    {
+      "title": "H100 price: down\nH200 price: down \ntokenmaxxing: dead\nRoI for most customers: AWOL\n\nyou can’t defy g...",
+      "link": "https://x.com/GaryMarcus/status/2060124032360431627",
+      "published": "2026-05-29T06:20:19+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "H100 price: down  \nH200 price: down   \ntokenmaxxing: dead  \nRoI for most customers: AWOL  \n  \nyou can’t defy gravity forever\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJcH4mPWsAQs364.jpg)](https://video.twimg.com/tweet_video/HJcH4mPWsAQs364.mp4)\n\n💬4🔄2❤️29👀1298📊7",
+      "tags": [
+        "硬件价格",
+        "tokenmaxxing"
+      ],
+      "score": 75,
+      "summary": "Gary Marcus指出GPU价格下跌，tokenmaxxing时代结束。",
+      "fetched_at": "2026-05-29T07:16:12.793783+08:00"
+    },
+    {
+      "title": "and see, perhaps further reflection of the death of tokenmaxxing",
+      "link": "https://x.com/GaryMarcus/status/2060122295826296854",
+      "published": "2026-05-29T06:13:25+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "and see, perhaps further reflection of the death of tokenmaxxing\n\n![Thierry from arvy 🇨🇭](https://pbs.twimg.com/profile_images/1651137004967534593/-xGFqI_x_normal.jpg)\n\nThierry from arvy 🇨🇭@ThierryBorgeat\n\nThe price to rent an Nvidia H200 just collapsed from $7/hr to $4/hr in three weeks.  \n  \nA -40% drop in the cost of the single most strategic asset in tech.  \n  \nWhen the underlying commodity that powers your entire thesis loses 40% of its value in a month, that usually means one of two things: supply finally caught up, or demand was never as deep as the headlines said.  \n  \nEither way, somebody is selling.  \n  \nSo why is the AI trade still pricing in scarcity?\n\n![Tweet Image](https://pbs.twimg.com/media/HJbkEPoXAAMDoAy.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/ThierryBorgeat/status/2060084646101012618)\n\n💬0🔄2❤️13👀1911📊2",
+      "tags": [
+        "H200",
+        "价格下降"
+      ],
+      "score": 72,
+      "summary": "Gary Marcus指出Nvidia H200租金三个月内下跌40%。",
+      "fetched_at": "2026-05-29T07:16:12.793833+08:00"
+    },
+    {
+      "title": "tokenmaxxing is officially over",
+      "link": "https://x.com/GaryMarcus/status/2060120410843492782",
+      "published": "2026-05-29T06:05:55+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "tokenmaxxing is officially over\n\n![Techmeme](https://pbs.twimg.com/profile_images/1191943129823399936/ZvfTRAlg_normal.jpg)\n\nTechmeme@Techmeme\n\nSources: Amazon has shut down an internal leaderboard that tracked employees' use of AI tools after workers tried to boost their scores with needless tasks ([@rafeuddin\\_](https://x.com/rafeuddin_) / Financial Times)  \n  \n(Visit Techmeme dot com for the link and full context!)\n\n[🔗 View Quoted Tweet](https://x.com/Techmeme/status/2060112888308896057)\n\n💬6🔄22❤️185👀12894📊22",
+      "tags": [
+        "Amazon",
+        "AI工具",
+        "tokenmaxxing"
+      ],
+      "score": 82,
+      "summary": "Gary Marcus转述Amazon关闭内部AI使用排行榜，宣布tokenmaxxing结束。",
+      "fetched_at": "2026-05-29T07:16:12.793882+08:00"
+    },
+    {
+      "title": "Litness increases.",
+      "link": "https://x.com/pmarca/status/2060112024173191288",
+      "published": "2026-05-29T05:32:36+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Litness increases.\n\n![Tarek Mansour](https://pbs.twimg.com/profile_images/1976468079056924674/G9C2O5oq_normal.jpg)\n\nTarek Mansour@mansourtarek\\_\n\nThe American Power Index (KPOW) is live.  \n  \nOne number, oscillating between Republicans and Democrats throughout the endless contest for power.\n\n![Tweet Image](https://pbs.twimg.com/media/HJbjSVAXsAQUS50.png)\n\n[🔗 View Quoted Tweet](https://x.com/mansourtarek_/status/2060083855369916579)\n\n💬4🔄0❤️42👀22811📊6",
+      "tags": [
+        "政治",
+        "非AI"
+      ],
+      "score": 60,
+      "summary": "Marc Andreessen转发美国权力指数。",
+      "fetched_at": "2026-05-29T07:16:12.793930+08:00"
+    },
+    {
+      "title": "Notion 🤝 Hex",
+      "link": "https://x.com/NotionHQ/status/2060129933943607330",
+      "published": "2026-05-29T06:43:46+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Notion 🤝 Hex\n\n![Hex](https://pbs.twimg.com/profile_images/1801018093550141440/D2H1FncZ_normal.jpg)\n\nHex@\\_hex\\_tech\n\nYour data shows what happened. Your team's docs, tickets, and trackers show why — and what to do next.  \n  \nNow the Hex agent can use both.   \n  \nIntroducing Hex as an MCP client, in public beta.  \n  \n→Connect any MCP-enabled tool  \n→Starting with connectors for [@NotionHQ](https://x.com/NotionHQ) & [@linear](https://x.com/linear) (with more coming soon 👀)  \n→Individual auth, no extra config  \n  \nLearn more:[hex.tech/blog/mcp-clien…](http://hex.tech/blog/mcp-client/)L\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060127191455903744/vid/avc1/3840x2160/VW1NsBs0_270jRjH.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/_hex_tech/status/2060127647209017783/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/_hex_tech/status/2060127647209017783)\n\n💬0🔄0❤️5👀350📊1",
+      "tags": [
+        "Notion",
+        "Hex",
+        "MCP"
+      ],
+      "score": 75,
+      "summary": "Notion与Hex集成，Hex成为MCP客户端并支持Notion连接器。",
+      "fetched_at": "2026-05-29T07:16:12.793977+08:00"
+    },
+    {
+      "title": "Claude Opus 4.8 is now available on Poe.\n\nAnthropic’s latest flagship model is built for enterprise-...",
+      "link": "https://x.com/poe_platform/status/2060125216517263530",
+      "published": "2026-05-29T06:25:01+08:00",
+      "source": "Poe(@poe_platform)",
+      "content": "Claude Opus 4.8 is now available on Poe.  \n  \nAnthropic’s latest flagship model is built for enterprise-grade knowledge work, codebase-scale migrations, multi-agent coordination, and long-running autonomous tasks, with sharper judgment and improved honesty.  \n  \nTry it today at: [poe.com/Claude-Opus-4.8](https://poe.com/Claude-Opus-4.8)\n\n![Tweet Image](https://pbs.twimg.com/media/HJcI7hdWMAM5xc6.jpg)\n\n💬0🔄0❤️3👀144📊1",
+      "tags": [
+        "Claude Opus 4.8",
+        "Poe",
+        "AI模型"
+      ],
+      "score": 85,
+      "summary": "Poe宣布提供Claude Opus 4.8模型，面向企业级知识工作。",
+      "fetched_at": "2026-05-29T07:16:12.794025+08:00"
+    },
+    {
+      "title": "President and Head of AI at Replit, @pirroh is the architect of Replit Agent and former Head of Appl...",
+      "link": "https://x.com/Replit/status/2060119190137168072",
+      "published": "2026-05-29T06:01:04+08:00",
+      "source": "Replit ⠕(@Replit)",
+      "content": "President and Head of AI at Replit, [@pirroh](https://x.com/pirroh) is the architect of Replit Agent and former Head of Applied Research at Google X.  \n  \nSee him take the stage with [@refikanadol](https://x.com/refikanadol) on day two of Vibecon.  \n  \nNYC, June 17–18.  \n  \nGet your tickets at [vibecon.ai](http://vibecon.ai)\n\n![Tweet Image](https://pbs.twimg.com/media/HJcDfG8WsAEZjN0.jpg)\n\n💬0🔄0❤️8👀1066📊1",
+      "tags": [
+        "Replit",
+        "活动"
+      ],
+      "score": 65,
+      "summary": "Replit宣传Vibecon活动，AI负责人将出席演讲。",
+      "fetched_at": "2026-05-29T07:16:12.794071+08:00"
+    },
+    {
+      "title": ".@CentralComs builds AI agents for residential property management companies that automate maintenan...",
+      "link": "https://x.com/ycombinator/status/2060126958307188924",
+      "published": "2026-05-29T06:31:56+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": ".[@CentralComs](https://x.com/CentralComs) builds AI agents for residential property management companies that automate maintenance coordination, leasing workflows, and back-office end-to-end, so management teams run more smoothly and earn more with the same team size.  \n  \n[ycombinator.com/launches/QZ1-c…](https://www.ycombinator.com/launches/QZ1-centralcoms-ai-agents-built-for-residential-property-managers)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060122982144786432/vid/avc1/1920x1080/EjA6F6bxo0szK2MD.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2060126958307188924/video/1)\n\n💬3🔄1❤️13👀2065📊5",
+      "tags": [
+        "AI代理",
+        "物业管理",
+        "YC"
+      ],
+      "score": 72,
+      "summary": "Y Combinator推出CentralComs AI代理，自动化物业管理工作流程。",
+      "fetched_at": "2026-05-29T07:16:12.794117+08:00"
+    },
+    {
+      "title": "We took Claude Opus 4.8 for a test drive in the Code Arena: Frontend. Check out some of the outputs ...",
+      "link": "https://x.com/arena/status/2060122770743390252",
+      "published": "2026-05-29T06:15:18+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "We took Claude Opus 4.8 for a test drive in the Code Arena: Frontend. Check out some of the outputs on YouTube: [youtube.com/watch?v=TwbuM-…](https://www.youtube.com/watch?v=TwbuM-Owg4A)  \n  \nCode Arena: Frontend evaluates models on agentic frontend coding tasks from real users building apps and websites (HTML and React). Head over to Arena and try it for yourself in Battle Mode.  \n  \nScores for Opus 4.8 coming soon.\n\n💬1🔄0❤️5👀1602📊2",
+      "tags": [
+        "Claude Opus 4.8",
+        "评测",
+        "Code Arena"
+      ],
+      "score": 85,
+      "summary": "lmarena.ai测试Claude Opus 4.8在Code Arena中的前端编码能力。",
+      "fetched_at": "2026-05-29T07:16:12.794163+08:00"
     }
   ]
 }
