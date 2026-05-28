@@ -1373,6 +1373,732 @@
       "score": 70,
       "summary": "微软发布Azure Linux 4.0通用服务器发行版。",
       "fetched_at": "2026-05-28T19:39:29.752598+08:00"
+    },
+    {
+      "title": "How the University of Central Oklahoma is using AI to streamline analysis of complex criminal cases",
+      "link": "https://cloud.google.com/blog/topics/public-sector/how-the-university-of-central-oklahoma-is-using-ai-to-streamline-analysis-of-complex-criminal-cases/",
+      "published": "2026-05-29T03:00:00+08:00",
+      "source": "Google Cloud Blog",
+      "content": "In the high-stakes world of forensic science, time is the enemy of justice. [The University of Central Oklahoma](https://www.uco.edu/) (UCO) Forensic Science Institute (FSI) was looking for an innovative AI solution that could help reduce the time required to analyze complex criminal case documents and construct clear timelines. In early tests, this solution, which can typically take criminal investigators months, has been demonstrated to significantly reduce this time.\n\nThis collaboration between Google Public Sector and UCO’s technology and forensic experts establishes a path for a new standard for accelerating the pursuit of justice across the country and provides powerful efficiency gains.\n\n### **A new vision for the pursuit of justice**\n\nThis project, which originated in an AI hackathon sponsored by the university’s CIO Sonya Watkins, centers on [Google's NotebookLM](https://notebooklm.google/), an AI research tool used by the university as a thinking partner for the review of complex criminal cases. Sonya Watkins, CIO, University of Central Oklahoma and I co-led the hackathon with the goal of rapidly identifying and prototyping high-impact solutions for the university, while providing the technical framework, and brought expertise in rapid prototyping to quickly translate complex criminal case requirements into a functional, evidence-backed digital application. During the hackathon, teams generated ideas, which were then stack-ranked using Gemini, based on potential impact and feasibility, quickly identifying the case timeline analysis as a high priority use case.\n\n\"The enthusiasm is absolutely warranted. We’ve seen a process that was a months-long burden reduced significantly in our trials. The human expert remains the critical validator, but we're now equipping them with an exponential speed advantage.\"\n\n**Sonya Watkins**  \nCIO, University of Central Oklahoma\n\n### **Building a scalable framework on a trusted foundation**\n\nThe UCO team, including FSI Instructors Meagan Raddatz and Amber Fortney, have been meticulously working to ensure that the AI-generated timelines are forensically sound and meet stringent standards required for the federal and state justice systems.\n\nTheir ongoing work focuses on developing a repeatable case analysis framework using [Google’s NotebookLM](https://notebooklm.google/?gad_source=1&gad_campaignid=22476587015&gbraid=0AAAAA-fwSseJld_-SAJ26uxuYNVLMjnX5&gclid=CjwKCAjwzevPBhBaEiwAplAxvjblfPb0mCg-k_4GKJFPOhUt6IKtL612ykE1TeKQUG2LM87NdaTs7RoCaX4QAvD_BwE) intended for potential future national adoption. This framework is engineered to ensure that every AI-generated conclusion is directly cited back to the original source document, a critical requirement for maintaining evidence integrity. By automating document analysis and creating a measurable process, UCO is setting a new national standard for how forensic institutes and law enforcement agencies can operate.\n\n\"Our goal wasn’t just to solve our internal problem; it was to build a framework that other forensic institutes and law enforcement agencies could adopt seamlessly. By focusing on standardized processes and reliable citation, we believe we are creating a scalable solution that has the potential to significantly accelerate how evidence is processed nationwide, aiding the delivery of justice.\"\n\n**Amanda Keesee**  \nIT Director for Academic and Research Technology Center, University of Central Oklahoma\n\n### **Bring AI-powered research to your institution at no cost**\n\nBring AI-powered research to your campus with [Gemini for Education](https://edu.google.com/intl/ALL_us/ai/gemini-for-education/) to transform how your teams learn, work, and innovate. By exploring [NotebookLM](https://edu.google.com/intl/ALL_us/ai/gemini-for-education/) within the Gemini ecosystem, you can equip your researchers with the same tools driving UCO’s success in reducing complex data analysis from months to days, right now.",
+      "tags": [
+        "AI应用",
+        "官方博客",
+        "司法"
+      ],
+      "score": 85,
+      "summary": "Google Cloud博客介绍俄克拉荷马大学使用NotebookLM加速刑事案件分析。",
+      "fetched_at": "2026-05-28T23:49:46.056856+08:00"
+    },
+    {
+      "title": "Tuning in FM Radio on a 3D Printer Heatbed",
+      "link": "https://www.jeffgeerling.com/blog/2026/tuning-in-fm-radio-on-a-3d-printer-heatbed/",
+      "published": "2026-05-28T22:00:00+08:00",
+      "source": "Jeff Geerling",
+      "content": "[Pooch](https://linktr.ee/repkord) from Repkord dropped by my studio while he was in St. Louis, and asked a simple question:\n\n*Can a 3D printer's heatbed act as an antenna?*\n\nA fair question, as many an antenna is embedded in a PCB these days... and the traces on a [PCB heatbed](https://www.prusa3d.com/product/heatbed-set/) like the one used in Prusa's Core One look kinda like an antenna, if you squint the right way.\n\n![NanoVNA hooked up to 3D Printer Heatbed](https://www.jeffgeerling.com/blog/2026/tuning-in-fm-radio-on-a-3d-printer-heatbed/nanovna-3d-printer-heatbed.jpg)\n\nReally, anything (or anyone) can be an antenna, given enough power.",
+      "tags": [
+        "非AI",
+        "趣味硬件"
+      ],
+      "score": 20,
+      "summary": "3D打印机热床充当FM天线，无AI相关内容。",
+      "fetched_at": "2026-05-28T23:49:46.056922+08:00"
+    },
+    {
+      "title": "In an AI world, the most valuable developers will be both artisans and builders​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​…",
+      "link": "https://stackoverflow.blog/2026/05/28/artisans-and-builders/",
+      "published": "2026-05-29T00:00:00+08:00",
+      "source": "Stack Overflow Blog",
+      "content": "If AI is the new power tool for developers, is there still value in artisanal craft when anyone can be a builder?​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​​﻿‌​‌‍‌‌​﻿​‌‌‍​‍​﻿‌‌‌‍‌‍​﻿‌‍​‍﻿‌‌‍​‍‌‍​‍​﻿‌​​﻿‌​​‍﻿‌​﻿‌​​﻿​‍​﻿‌‍​﻿‌‍​‍﻿‌​﻿‍‌‌‍‌​​﻿​‌​﻿‍​​‍﻿‌‌‍‌‍‌‍​﻿‌‍​﻿​﻿‌﻿​﻿‌‌​﻿​‌​﻿‌﻿​﻿‌‍‌‍‌‍​﻿​​‌‍​‍​﻿​‌​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿​​​﻿‌​‌‍‌‌​﻿​‌‌‍​‍​﻿‌‌‌‍‌‍​﻿‌‍​‍﻿‌‌‍​‍‌‍​‍​﻿‌​​﻿‌​​‍﻿‌​﻿‌​​﻿​‍​﻿‌‍​﻿‌‍​‍﻿‌​﻿‍‌‌‍‌​​﻿​‌​﻿‍​​‍﻿‌‌‍‌‍‌‍​﻿‌‍​﻿​﻿‌﻿​﻿‌‌​﻿​‌​﻿‌﻿​﻿‌‍‌‍‌‍​﻿​​‌‍​‍​﻿​‌​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+      "tags": [
+        "AI话题",
+        "内容不可读"
+      ],
+      "score": 30,
+      "summary": "Stack Overflow博客关于AI时代开发者角色，但内容乱码无法阅读。",
+      "fetched_at": "2026-05-28T23:49:46.056975+08:00"
+    },
+    {
+      "title": "Travel the world like Dua Lipa with Google Maps",
+      "link": "https://blog.google/products-and-platforms/products/maps/dua-lipa/",
+      "published": "2026-05-28T22:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/260526_DuasLists_Hero_2096x1182.max-600x600.format-webp.webp)12 shared lists in Google Maps are packed with Dua’s favorite spots for food, shopping, culture and more.",
+      "tags": [
+        "非AI",
+        "旅游推广"
+      ],
+      "score": 20,
+      "summary": "Google Maps与Dua Lipa合作推出旅行清单，非AI主题。",
+      "fetched_at": "2026-05-28T23:49:46.057018+08:00"
+    },
+    {
+      "title": "Anthropic 团队是怎么协作和运转的？",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247487710&idx=1&sn=2a891f7c6a2fac48e4ee9bcc220d8b46",
+      "published": "2026-05-28T22:19:00+08:00",
+      "source": "晚点再听LaterCast",
+      "content": "傅里叶 2026-05-28 22:19 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=41ea1e38&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FUNwPtic6UWKatazHIe4Gy3VYyrdia8hbfUN23sic4pe8QEsWchicBia3OfU7uibj8AxuXsjcoyAB1NI6O6DZ6vKQgibGF644eHgGfh3YA6kmJy2Wk0%2F0%3Fwx_fmt%3Djpeg)\n\n以下文章来源于傅里叶\n\n最近有朋友问我：像我们这种小团队，怎么围绕 AI Coding 搭内部协作流程？坦白说，这件事我们也还在摸着石头过河，只是边做边学，尤其会观察更 AI Native 的团队到底怎么工作。Anthropic 最近正好有很多产品、设计、研发负责人出来做公开分享，所以我让 Manus 把他们近期的访谈、官方文档、工程文章和案例做了一次深度整理。希望这篇文章能给大家一些参考。\n\n完整调研报告可以关注公众号后回复：「Anthropic」获取。\n\n—\n\n### 开头先泼一盆冷水\n\n很多人讲 Anthropic，容易被几个表象吸引：他们好像没什么流程，工程师看到用户反馈当周就能上线，设计师也可以直接改代码。这些观察大多没错，但如果由此得出“Anthropic 靠低流程取胜”，结论就反了。\n\n把 Anthropic 公开访谈、官方文档、工程文章和 PDF 案例放在一起看，你会看到一个几乎相反的画面：Anthropic 不是没有流程，而是把传统流程里大量“开会、写文档、来回交接、人肉传话”的部分，挪进了可运行代码、可审阅 diff、可重复 evals、可触发的 GitHub workflow，以及可被 AI 读取的项目上下文里。\n\n换句话说，会议没有消失，只是被压缩了；PRD 没有消失，只是变薄了，但验收变厚了；Code review 也没有消失，而是变成了 AI 先做、人再做的双层结构。所以模仿 Anthropic，不能模仿“低流程”这个口号。那是结果，不是方法。真正值得学的是：他们怎么把流程改造成一个可执行、可审查、可回滚、可验证的系统。\n\n下面按协作、工程、产品、设计，以及可复制边界五部分拆开。\n\n## 一、协作：当 builder 就是 user，反馈不需要翻译\n\nAnthropic 的开发者产品，尤其是 Claude Code，有一个非常强的结构性优势：构建者本身就是目标用户。Mike Krieger 在 Lenny 的访谈里说得很直白：当 AI 把“写代码”的速度提上去之后，真正的瓶颈就从“怎么写”转到了“决定做什么、怎么验证、怎么合并、怎么发布”。如果构建者和用户是同一拨人，那么“决定做什么”这一步，几乎不需要再经过翻译流程。\n\n这会形成一条非常短的信号链路：Twitter 上有人抱怨一个 CLI 输出，工程师自己今天早上也刚好被同一个问题烦到，于是让 Claude Code 读相关代码、生成计划、改 diff、跑测试、开 PR，再由 Code Review agents 并行扫一遍，人类 reviewer 看一眼，合并，进入下一轮内部 dogfooding。整个链路里没有“PM 把需求翻译给工程师”这一环，因为提出需求的人、做实现的人、使用产品的人，往往就是同一个人，或者同一个小队。\n\n跨职能 pod 才是真正的组织单位。Joel Lewenstein 是 Anthropic 的设计负责人，他在访谈里有一句话很值得拎出来：他希望每个小型跨职能 pod 里都有设计、PM 和工程，而不是让设计师站在流程末端，作为服务角色接收请求。“末端服务角色”这个说法很准确，它描述了很多公司里设计团队的实际处境：PM 把需求喂给设计，设计出稿交给工程，后面再被 PM 追着改稿。Anthropic 想绕开的，正是这条链。\n\n还有一个更隐蔽、但更重要的变化：Claude Code 不只是写代码工具，它顺带承担了一部分团队知识流转。官方 PDF 和 GitHub Actions 文档里写得很清楚：团队规则、代码风格、review 标准、命名偏好，写进 CLAUDE.md；高频任务，做成 slash commands；外部系统接入，通过 MCP、hooks、plugins；issue 和 PR 里的常规工作，用 GitHub Actions 触发 Claude 自动处理。\n\n过去，这些知识可能散在飞书文档、Notion、老员工的脑子里。现在，它们被放进 AI 工具能读取、能执行的上下文里。新人不需要先把 Wiki 全部看完才开始干活，他可以让 Claude Code 先读仓库，再基于仓库上下文进入工作。\n\n## 二、工程：从“写代码”变成“决定做什么、怎么验证”\n\n公开资料能够比较完整地还原 Anthropic 工程流程的前半段：任务进入、Claude Code 生成计划、修改代码、跑测试、开 PR、自动 review，以及 merge 前检查。生产部署的细节没有公开，所以这里只讲到发布准备。这套流程的关键不是“AI 帮人写代码”，更准确地说，它是把人的注意力从“敲键盘”转移到“做判断”。\n\n把官方 PDF 和 Claude Code 团队访谈里的细节合起来，可以重构出一套很实用的本地开发 SOP：\n\n1. 保持 clean git baseline。这样才能看清 AI 到底改了什么；不满意时，也能干净回滚。\n2. 装载上下文。让 Claude 读仓库、CLAUDE.md 和相关历史实现，而不是凭空写代码。\n3. 先要计划，不要直接改。先让 Claude 说清楚：准备改哪些文件、为什么这么改、要跑什么测试、风险在哪里。\n4. 分层授权。视觉 polish、文档、边界明确的 bug fix，可以放得更开；核心逻辑、架构、安全相关改动，必须同步监督。\n5. 用 checkpoint 控制风险。长任务要有可恢复、可审查的阶段，不要让 agent 跑到一个不可解释的状态。\n6. 跑测试，并追问失败原因。这一步里有一个细节特别值得说。\n\nCat Wu 在访谈里提到过一个调试场景：他们发现 Claude 没有跑本该运行的前端验证。正常工程师可能会直接改 prompt、加约束，或者抱怨模型不够可靠；但他们的做法是，直接问模型为什么跳过了。模型自己的解释是：它把验证委托给了子代理，但父代理没有检查子代理的结果。也就是说，问题不在“模型能力不够”，而在 harness 和系统提示的结构。\n\n这个细节很能代表 Anthropic 式 AI 工程：他们不仅修结果，也会调试 agent 为什么会做出某个流程选择。换句话说，他们把 agent 当成一个可以访谈、可以分析的对象，而不是一个完全不可解释的黑盒。\n\nPR、review、merge 的链路，也可以从 Claude Code 官方文档里看到两件清楚的事。第一，GitHub Actions 让 @claude 进入了 PR 流程。做法是：安装 GitHub App，给 Contents、Issues、PR 读写权限，把 API Key 放进 Secrets，再把 workflow 复制到 .github/workflows/。之后，团队成员在 issue 或 PR 评论里 @claude，就能让它读取上下文、修改代码、回复问题，或者创建 PR。\n\n第二，Code Review 是结构化反馈，不是绝对 gate。启用后，多个 agents 会并行分析 diff；verification step 会过滤误报；最后结果按严重级排序，并作为 inline comments 发到具体代码行。但默认情况下，check run 是 neutral 状态，不阻塞合并。如果团队希望它阻塞合并，需要自己在 CI 里读取机器可读 JSON，再根据 Important finding 的数量定义阈值。\n\n这一点很重要。Anthropic 把 AI review 放在人类 review 前面，用它来加速反馈；但最终合并责任，仍然明确留给人类团队。这不是不信任 AI，而是很清楚自动化的边界应该画在哪里。\n\nEvals 也不是奢侈品，而是发布门槛。Anthropic 官方 evals 工程文章里，反复出现一个态度：不要等到有完美评估系统以后才开始做 evals，先用 10 个高质量真实场景，把基本回归能力建立起来。Cat Wu 那句“10 个好的 evals 比没有 evals 有用”虽然是二手转述，但和官方立场完全一致。\n\n这套 SOP 也可以直接搬：\n\n1. PM 或工程师先列出真实用户任务。\n2. 给每个任务定义输入、工具使用、期望行为、不可接受的失败，以及评分标准。\n3. 把这些任务做成可重复运行的 evals。\n4. 每次改模型、prompt、tools、UI 或策略后，都跑一遍。\n5. 最后把 evals 结果、人工 dogfooding 和用户反馈放在一起，判断是否发布。\n\n对 Claude Code 这种 agentic 产品来说，evals 同时承担了两个职责：产品验证，以及回归测试。\n\n## 三、产品：能力剧本，而不是多年路线图\n\nAnthropic 发现产品机会，不是纯需求驱动，也不是纯研究驱动。它同时看两条线：第一条线来自用户和客户，包括开发者使用 Claude Code 的摩擦、API 客户的真实任务、内部 dogfooding、社区反馈；第二条线来自模型，包括新模型是否具备更强的 coding、agentic behavior、tool use、long context，或者更好的可靠性。\n\nMike Krieger 在访谈里提到：产品团队嵌入研究团队，和 post-training、fine-tuning 一起工作，比只在模型外层做 UI 更有价值。这句话很关键，因为它说明 AI 产品的机会，不只是“模型出来以后在外面包一层界面”，而是产品、研究、工程要一起判断模型能力会打开什么新动作。\n\nJoel Lewenstein 还提过一个概念，叫 “football playbook”。意思是团队准备一组候选打法，当新模型能力、用户反馈或技术条件出现时，就快速选择合适的 play 执行。这不是没有战略，而是把战略从“固定路线图”，换成了“能力触发型剧本”。原因也很直接：AI 模型能力变化太快。今天定下的 18 个月路线图，可能 6 个月后就有 30% 失效。\n\n公开资料里看不到 Anthropic 使用很厚的 PRD。它的需求文档，更像是一份压缩跨职能理解差异、同时为 AI 提供可执行上下文的材料。可以参考的字段包括：关键用户，明确是谁，不是笼统的“所有用户”；核心任务，写用户真正要完成的工作，而不是功能名；模型能力假设，说明哪些行为依赖当前或未来模型能力；失败模式，提前列出模型、工具、UI、权限、文案分别可能怎么失败；验收 evals，用少量真实任务加评分标准定义结果；发布级别，标明 internal / Labs / research preview / beta / GA；上下文文件，则把 issue、Figma、代码路径、CLAUDE.md 放进去。\n\n这里最值得注意的是两个字段：失败模式，以及发布级别。大多数公司的 PRD 里没有这两个字段。失败模式，是把 AI 产品的不确定性提前结构化；发布级别，是把“发不发”这个二元问题，改成“按什么承诺级别发”。\n\nLewenstein 反复强调，AI 产品的“魔法”不在静态 UI 外壳，而在模型响应的不确定性里。所以，如果只用几张写死回复的 Figma 屏幕来验证 AI 产品，几乎注定看不到真正的问题。Anthropic 的做法，是尽早把原型接到真实模型、真实数据上去跑。Figma 仍然有用，但它主要用于结构对齐和层级讨论，而不是最终交付物。\n\n这也解释了为什么 research preview / Labs 很重要。Anthropic 官方 Labs 公告里，把 Labs 定义为“探索 Claude 未来可能形态的空间”。这句话背后的意思是：它明确承认实验性质，也明确把早期想法带给用户，并收集反馈。因此，发布不再只有“发”或“不发”两种状态，而是有不同承诺级别：\n\n* Internal：员工 dogfooding、流程自动化，没有外部承诺。\n* Labs / Experimental：探索新交互或新能力，明确实验性质。\n* Research Preview：模型或产品能力早期开放，稳定性低于 GA。\n* Beta：目标用户可以持续使用，有一定产品承诺。\n* GA：面向广泛客户，进入正式承诺。\n\n不同级别对应不同质量门槛，也对应不同的法律、支持、文档投入。这套机制让团队可以先发布、先验证，再逐步升级承诺，而不是被完美主义挡在 GA 门口。\n\n## 四、设计：真实环境优先，设计师直接改代码\n\n如果说 Anthropic 公开资料里有一块被反复强调，那就是设计。Lewenstein 给出的核心原则是：AI 产品的体验不能只靠静态 Figma 评估。原因很简单：模型回答不可预测，工具调用行为会变化，长上下文理解会出问题，各种失败模式也只有在真实或接近真实的环境里才会浮出来。\n\n所以，Anthropic 的设计交付不再只是一套高保真稿，而是一组东西：Figma + 可运行原型 + 状态流 + 边界情况清单 + 代码 diff + PR + 用户研究记录 + eval 场景。这里的重点不是 Figma 不重要，而是 Figma 不能独自承担 AI 产品验证。\n\n官方 PDF 里还有一个很明确的现象：设计师不再把所有视觉调整都交给工程师排期。字体、颜色、间距、边界状态、前端 polish，甚至部分状态管理，设计师都可以直接用 Claude Code 操作代码库。大致流程是：\n\n1. 设计师在产品里发现问题，比如间距不一致、状态缺失、错误文案不清楚、视觉反馈不足。\n2. 把意图写成明确 prompt。\n3. 让 Claude Code 先读相关文件，并解释代码结构。\n4. 要求 Claude 先列修改计划，而不是直接改。\n5. 批准后生成 diff。\n6. 本地运行，截图或录屏检查视觉。\n7. 如果涉及架构、状态管理或复杂逻辑，由工程师 review。\n8. 最后进入 PR，设计和工程共同确认。\n\n这里第 7 步很关键：设计师能改代码，不等于设计师可以全权决定代码。架构、状态管理、安全、可维护性这些边界，仍然由工程师把关。\n\n官方 PDF 里有一个特别值得抄下来的案例：某个功能或页面里，有 research preview / GA 相关文案需要在全代码库中更新。传统流程通常是：设计或产品写文案变更需求，工程师搜索所有实例，法律逐条审查，设计再检查语气和一致性，整个过程一周左右。Anthropic 的做法是：设计师用 Claude Code 全仓搜索相关文案，逐个审查上下文，和法律团队直接通电话实时确认措辞，两个 30 分钟电话搞定。\n\n拆开看，这里省掉的不是“工程师写代码的时间”。真正省掉的是设计到工程的需求传递、工程到法律的异步审查、法律到设计的来回反馈，以及设计再给工程的修改请求。也就是说，省掉的是人和人之间的等待时间。而 Claude Code 把搜索、上下文理解、批量替换、diff 生成这些动作，压缩进了同一个工作现场。\n\nAI 产品还有大量容易被漏掉的边界状态：模型正在思考、调用工具、等待权限、无法访问文件、拒绝执行、部分完成、产生不确定结论、需要用户补充信息……官方 PDF 提到，设计团队会用 Claude Code 来映射 error states、logic flows 和 system statuses，在设计阶段就把 edge cases 找出来。\n\n这套 SOP 也可以直接照抄：\n\n1. 让 Claude Code 读代码、状态机、错误处理，生成所有状态清单。\n\n2. 设计师逐个设计 UI、文案和恢复路径。\n\n3. 工程师确认哪些状态真实存在。\n\n4. PM 判断哪些状态影响发布承诺。\n\n5. 最后让状态清单进入设计稿、代码实现和 eval 用例。\n\n## 五、Anthropic 为什么能压缩流程，以及别人为什么不能照搬\n\n把前面四块合起来看，Anthropic 的速度不是来自某一个技巧，而是六个机制叠加出来的结果：\n\n1. builder = user，反馈翻译成本接近零。\n\n2. Claude Code 全链路，把定位、计划、实现、测试、PR、review、文档生成压进一个工作流。\n\n3. 设计师可以直接进代码，砍掉设计和工程之间的交接成本。\n\n4. PM 嵌在研究和工程旁边，围绕模型能力定义机会。\n\n5. research preview / Labs 降低了早期发布承诺。\n\n6. Evals + Code Review 让快速迭代不完全依赖主观判断。\n\n但速度有边界，这一点不能跳过。外部对 Cat Wu 访谈的批评指出过：Anthropic 的快速模式，依赖它自己的特殊结构。它控制底层模型；它的构建者就是用户；它做的是开发者产品，反馈循环很短；它还能在内部预期模型能力曲线。\n\n所以，对于不控制模型的公司、用户和构建者差距很大的公司、销售和合规链条更长的 B2B 公司，以及主要服务非技术用户的公司来说，直接照搬“工程师看到反馈就当周上线”是要出事的。真正值得复制的，不是“低流程”，而是这个动作：把流程改造成可执行、可审查、可回滚、可验证的系统。\n\n具体到自己的团队，可以先问几个问题：\n\n我们的 reviewer 是不是产品的真实用户？如果不是，怎么补上这条信号？我们的“团队知识”现在写在哪里，AI 工具能读到吗？我们的 PRD 里有没有“失败模式”和“发布级别”字段？我们有没有 10 个能跑的 evals？我们的设计师能不能直接打开仓库改文案，组织上允许吗？我们的 PR review 里，AI 有没有已经做第一遍？\n\n回答这些问题，比模仿“Anthropic 没流程”有用得多。\n\n本文基于 Anthropic 官方 PDF《How Anthropic teams use Claude Code》、Claude Code GitHub Actions / Code Review / Evals / Long-running Agents 官方文档，以及 Mike Krieger、Joel Lewenstein、Boris Cherny、Cat Wu、Benjamin Mann 等公开访谈整理。涉及具体内部组织、部署平台、发布审批等未公开的细节，已在原始 14000 字调研报告中明确标注证据边界。\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=c6b8b627&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzcxMDA5NTI0OA%3D%3D%26mid%3D2247487710%26idx%3D1%26sn%3D2a891f7c6a2fac48e4ee9bcc220d8b46)",
+      "tags": [
+        "Anthropic",
+        "协作方式",
+        "AI组织"
+      ],
+      "score": 82,
+      "summary": "自媒体分析Anthropic团队协作与AI原生工作流程。",
+      "fetched_at": "2026-05-28T23:49:46.057060+08:00"
+    },
+    {
+      "title": "华为，又干出一条新路子！",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209",
+      "published": "2026-05-28T21:56:00+08:00",
+      "source": "笔记侠",
+      "content": "原创 智勇 2026-05-28 21:56 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=ef6e957c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8b91BQ8yFl3LB0Sb1aiaVOSUBtibLhVRcOosplqJIcxb2AiaeSydAlGhNicTgLDkXQHch7Irc1cGCLNs2YEuJtUu84FU8sJWHGAfQHYwsOvcI4Y%2F0%3Fwx_fmt%3Djpeg)\n\n没有退路，就是胜利之路。\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=999b8d81&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax2rb2dYztGN06eeP1nR1iaK8hEcU49PcAK9IFRMvuN5p3DMeZEQptWxozLPNT3CEB7YmHk5tewlAhfCSS22PVpicjUh7LbBFyB2c%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D0)](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904000&idx=2&sn=335152210efd3a758c1329563ba291aa&scene=21#wechat_redirect)\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n**内容来源：**笔记侠(Notesman)。\n\n**责编** |  柒  **排版** | 沐言\n\n****第 9636********篇深度好文：5820********| 17分钟********阅读****\n\n**商业思维**\n\n**笔记君说：**\n\n2026年5月25日，上海。\n\n在国际电路与系统研讨会的会场里，坐满了来自全球的半导体学者和工程师。这是电路与系统领域最顶级的学术盛会之一，往年的主旨演讲台上，站着的几乎都是欧美企业的技术领袖。\n\n但这一天不同。\n\n华为公司董事、半导体业务部总裁何庭波走上台。她的演讲主题是《半导体新路径探索与实践》。\n\n当她念出 “韬（τ）定律”的时候，台下的反应很有意思：**有人开始飞速记笔记，有人微微皱眉在消化，有人则下意识挺直了腰板。**\n\n因为所有人都意识到一件事：**这是中国企业，第一次在全球半导体领域，提出一条具有普遍指导意义的产业演进原则。**\n\n这一天，距离2019年5月16日华为被列入美国实体清单，已经过去了整整7年。\n\n在这2500多天里，外部的封锁层层加码，先进制程获取的通道被一条条堵死，EUV光刻机成了一个可望不可即的符号。无数人在问：没有最先进的制造设备，华为的芯片怎么办？中国半导体还有路可走吗？\n\n7年后，华为给出的回答不是一款芯片，不是一项技术，而是一条定律。\n\n**一、**一份迟到了7年的“答卷”****\n\n**1.从科学原点出发**\n\n让我们先把时间线拉回来。\n\n2019年5月16日，美国商务部将华为列入实体清单。从那一天起，华为无法再从美国企业获得芯片、软件和技术支持。\n\n2020年5月，封锁升级。任何使用美国技术和设备的半导体企业，为华为代工芯片都需要美国许可。台积电断供，麒麟芯片被迫停产。\n\n2020年8月，禁令进一步收紧，华为连购买现成的商用芯片都受到限制。\n\n从那一刻起，一个残酷的事实摆在所有人面前：**先进制程的大门，关上了。**\n\n何庭波后来在人民日报专访中回忆那段日子，用了一个让人心头一紧的比喻：\n\n“2020年5月以后，为华为定制的各种牢笼远比想象残酷，我常说是一夜之间被打回原始社会，我们跟国外同行只有在麦克斯韦方程、薛定谔方程、门捷列夫元素周期表还有沟通的语言，剩下的都分家了。”\n\n一夜之间，从全球半导体产业链的核心玩家，退化到只剩物理定律还能对话的程度。这不是跌落，这是坠毁。\n\n摩尔定律告诉我们，芯片性能的提升靠的是缩小晶体管尺寸。每一次尺寸缩小，意味着同等面积下塞进更多晶体管，性能更强、功耗更低。\n\n但这条路的入场券是什么？EUV光刻机。\n\n没有EUV，你就无法在硅片上“画”出足够细的线条。没有足够细的线条，晶体管就无法继续缩小。晶体管无法缩小，摩尔定律就在你面前停下了脚步。\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n图源：公众号经济观察报\n\n这是一个简单的逻辑链条：**先进制程→先进光刻机→继续缩小→继续升级。**\n\n链条的任何一环断裂，整条路就走不通。\n\n对华为来说，最关键的那一环，被外力硬生生掐断了。\n\n所有人都觉得这是一道无解的题。没有光刻机，你怎么做先进芯片？这不就像让一个厨师做满汉全席，却不给他灶台吗？\n\n面对困境，有两种应对方式。一种是怨天尤人，另一种是把困境变成创新的催化剂。有评论将华为的选择比作“地瘦栽松柏，家贫子读书”。\n\n7年间，外界的目光大多聚焦在华为手机能不能出5G芯片、Mate系列还能不能发新品上。但实际上，在那些聚光灯照不到的地方，华为在做一件远比任何单款产品都重要的事：重新思考芯片演进的底层逻辑。\n\n何庭波在人民日报的专访中说：“我只能回到科学的第一性，从科学原点思考我们的道路。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6c93a7d3&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax1XeSQJkJ4vwZRyib5ABYADcGicibOwC2jrGxCpwqVCibT3xpkkq0V1b7IXfmIPuOemNDhcHjp90ghFaUYe6aZAWYSPdNTNZZqkiafw%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D3)\n\n在ISCAS上发布的那条“韬（τ）定律”，就是从科学原点出发后找到的那条路。\n\n过去6年，华为基于韬定律的路径，已经成功设计并量产了381款芯片。\n\n这些芯片不是纸面方案，不是实验室里的原型，而是已经在设备中运行、在市场上销售的真实产品。\n\n这意味着什么？意味着韬定律不是一句口号，不是一篇论文，而是一条已经被反复验证过的产业路径。\n\n**2.摩尔定律为什么“死”了**\n\n要理解韬定律的颠覆性，我们得先理解一件事：摩尔定律为什么走不下去了？\n\n1965年，英特尔创始人之一戈登·摩尔提出了一个观察：集成电路上的晶体管数量，大约每18到24个月就会翻一倍。\n\n这是一个基于产业规律的观察和预测。但在过去近60年里，整个半导体行业都在用一种近乎信仰的态度去“兑现”摩尔定律，每两年，晶体管数量翻倍，性能提升，成本下降。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=23a26ee8&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FaOT4Z6X7iax16JSO1RDdUnOGIR2GH5oFoVVRGzOHAmltFcfbicPfX2fXwrQ0abuq58SeichOPua4XSia7KC41iazibrGEf1JYOEhVfxVCc5Zces8M%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D4)\n\n它就像一条产业时钟，所有人按着这个节奏往前跑。\n\n但时钟正在停摆。\n\n**原因有三：**\n\n第一，物理极限\n\n当晶体管尺寸缩小到几纳米的时候，量子效应开始捣乱。电子不再老老实实待在应该待的通道里，而是会“隧穿”到不该去的地方。漏电问题越来越严重，功耗控制变成了噩梦。\n\n就像你要在一个格子里塞进越来越多的人，人挤到一定程度，就分不清谁是谁了。\n\n第二，成本暴涨\n\n越往先进制程走，研发和制造成本呈指数级上升。一座3nm工艺的晶圆厂，造价超过200亿美元。EUV光刻机单台售价超过3亿美元。\n\n摩尔定律的初衷是“同样价格性能翻倍”，但现在变成了“性能翻倍价格也翻倍”。这不是摩尔定律，这是摩尔定律的反面。\n\n第三，性能红利消退\n\n即便你花大价钱做出了更小制程的芯片，实际性能提升也在递减。从7nm到5nm，性能提升不到20%；从5nm到3nm，提升更小。投入越来越大，回报越来越小。\n\n简单说，摩尔定律没有“死”，但它在慢慢失效。\n\n怎么办？\n\n大多数人会想：那就想办法破门呗。搞到EUV光刻机，或者自己造一台。\n\n但何庭波想的是另一个问题：**摩尔定律的本质到底是什么？**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dc2001ef&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FaOT4Z6X7iax21xexwSXpKuLicre9ufBHRNPzOqVHj91VapeldohZtdZYA8DvPuUiawI6Z2zXRtB2deqBeib62Y9OPPVn7UvYxpS51DDwUianmsa4%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D5)\n\n“摩尔定律的本质并不是为了压缩空间，而是更快的速度、更多的功能、更可承担的价格。”\n\n既然本质不是“压缩空间”，那如果换一种方式达到“更快、更多、更便宜”的目的，为什么不行呢？\n\n如果根本不需要走这条路呢？\n\n这是一个典型的范式转移思维。就像大航海时代之前，所有人都觉得从欧洲到东方只能走陆路。然后有人问：如果从海上走呢？\n\n韬定律，就是华为找到的那条“海路”。\n\n**3.从“缩小尺寸”到“压缩时间”**\n\n韬（τ）定律的核心主张是：以“时间缩微”替代传统摩尔定律的“几何缩微”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=df00c388&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax2CDBxAxD0mAia3vLzPlRtubdoZ5icAWumiaI6u4UHiaDGjxibv7fCbTm9cIoNhVE7lzt4Rmg4UgGAiaibHwI6V3D4fWd62Sw9dxsOGSw%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D6)\n\n简单来说就是：**不靠把晶体管做小来提升性能，而是靠压缩信号在电路中传播的时间来提升性能。**\n\n这背后是华为应对困境的核心方法论，任正非在2025年接受采访时说得很透彻：“我们单芯片还是落后美国一代，我们用数学补物理、非摩尔补摩尔，用群计算补单芯片，在结果上也能达到实用状况。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b5b30325&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FaOT4Z6X7iax2FKxm6cXynWiauTmGtwGFj9zfRYYIq3Ou2he5J05XPhPCQ2TaibU0chhoClzOMzhS0a9TTUfQTv8AHcoia3snI5ibrj27NCaI1yFY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D7)\n\n要理解这个思维切换有多重要，我们打个比方。\n\n想象一座城市。\n\n摩尔定律的思路是：**让城市更密集。**\n\n本来一平方公里住1万人，通过把路修窄、楼建高、房间做小，让一平方公里住2万人、4万人、8万人。人口密度提高了，效率自然就上来了。\n\n但问题是，楼不能无限建高，路不能无限修窄。到了某个极限，再塞人就挤不下了。\n\n韬定律的思路是：**不塞更多的人，而是让每个人更快地到达目的地。**\n\n何庭波自己在专访中讲了一个更生动的版本：\n\n“一个城市要建更多的公园、学校、医院，但是城市会拥挤，上班通勤时间会变长，怎么解决？\n\n韬定律的一个关键技术是逻辑折叠，就是把城市的一个区域叠到另一个区域上面，两个区域间根据逻辑关系安装几百万台电梯，这样直达的距离不会太远，时间也变得节约，还可以提供更多的功能。”\n\n**对应到芯片上：**\n\n摩尔定律关注的是“单位面积上能放多少晶体管”，这是空间维度的问题。\n\n韬定律关注的是“信号从一个晶体管传到另一个晶体管需要多长时间”，这是时间维度的问题。\n\n为什么时间维度如此关键？\n\n因为在芯片的实际运行中，决定性能的不只是你有多少晶体管，更关键的是信号在这些晶体管之间跑得有多快。\n\n打个更具体的比方：你有1万名员工（晶体管），但公司内部的沟通效率极低，一个指令从总裁办传到执行层要经过层层转达、漫长等待。那1万名员工的产能可能还不如5000名但沟通极其高效的团队。\n\n韬定律做的，就是优化这家公司的内部沟通效率。\n\n不靠招更多人（缩小制程），而靠让现有的人更快、更高效地协作（压缩时延）。\n\n这个思维切换的厉害之处在于：**它绕过了对光刻精度的单纯依赖。**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=7a3b239b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FaOT4Z6X7iax3yVoDNIEaP8d9KxI5XGX9WT0NPUDsicyFawGPhBDibFgV79H298ePfPPbzYaDhSIdA5lsibYUccCPm5ibhBuToE6BfvwxIRQJqqaE%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D8)\n\n你不需要更细的“画笔”（更先进的光刻机），你需要的是更好的“画法”（更优的架构设计）。\n\n**4.逻辑折叠：把“平面”变成“立体”**\n\n韬定律最核心的技术创新，叫逻辑折叠。\n\n这四个字听起来简单，背后的原理却需要一些想象力来理解。我们还是用生活化的比喻来讲。\n\n你有没有叠过衣服？\n\n一件T恤平铺在床上，占的面积是最大的。但如果你把它对折、再对折，它占的面积就缩小到原来的四分之一。\n\nT恤本身没有变小，丝线没有变细，面料没有变薄，但通过折叠，它在平面上占的空间大幅缩小了。\n\n逻辑折叠做的是类似的事，只不过折叠的不是衣服，而是电路的逻辑路径。\n\n在传统芯片设计中，电路是平面铺开的。就像一张巨大的城市地图，所有的道路、建筑都在一个平面上排布。信号从A点出发到B点，要沿着平面的走线一路过去，中间可能要绕过很多其他电路模块。\n\n走线越长，电阻越大，电容负载越重，信号传播的时延就越长。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=00cd0d3b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax0licFW6XGoVz0NGGibPOWrVjpNyVeiaEVdEibgWNApqHRic2MJY1cqpKjTeo2hwpnP496ZygTRZXvsepPxEmeI5vOdjHYqA3N0KuzM%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D9)\n\n逻辑折叠的思路是：把平面的逻辑路径“折”起来。\n\n就像你把一条长街上的商铺重新排列，把经常需要互相送货的商铺放到同一栋楼的不同楼层，用电梯（垂直互连）替代原来的长距离街道运输。\n\n折叠之后，关键路径的走线长度大幅缩短。走线短了，电阻小了，电容低了，信号跑得就快了。\n\n**二、**定律是规则，谁定义规则谁赢****\n\n**1.找出了一条新跑道**\n\n现在，让我们从技术和产品层面跳出来，谈谈这件事更深层的东西。\n\n为什么一条“定律”比一款“芯片”重要得多？\n\n芯片是产品，产品会迭代、会过时。今天你做出了世界最快的芯片，明天别人就可能超过你。\n\n但定律是规则,规则定义了游戏的玩法。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=67ecc591&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax06fwhE6wIEcicibZ4K5VctLTt8ibeBtBf6dl4BTZ41aJga3lcppz5CicaWcFPZDOnATZZV2cmKZONqtgRLWZm3HJDkEkY8xTDssA4%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D10)\n\n摩尔定律统治半导体60年，意味着什么？意味着过去60年，整个行业的研发方向、投资节奏、技术路线，都是围绕“几何缩微”这个核心展开的。\n\n光刻机厂商的目标是做出更精密的光刻机，芯片设计公司的目标是在更小制程上塞进更多晶体管，材料公司的目标是找到能在更小尺度下稳定工作的材料。\n\n所有人都在摩尔定律设定的跑道上奔跑。谁定义了跑道，谁就定义了方向。\n\n华为提出韬定律，本质上是在说：**还有另一条跑道。**\n\n这条跑道不以几何缩微为核心，而以时间缩微为核心。这意味着，围绕这条新跑道，需要一整套新的技术体系、新的设计方法论、新的产业链协作模式。\n\n“韬定律”能否给全球的芯片产业指出新的方向？\n\n何庭波的回答很清醒：**“未来5年到10年，半导体行业将遇到障碍，一定会认真思考‘韬定律'这条路径。摩尔定律从提出到被行业完全接受，用了10年的时间。”**\n\n她不指望所有人都立刻相信。10年的接受周期，她等得起。\n\n**谁先提出定律，谁就是这条跑道的“奠基者”。后续所有都需要在你的框架内思考和行动。**\n\n**这才是韬定律最大的战略价值：不只是解决了自己的问题，而是为整个产业定义了一个新的可能性空间。**\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n**2.抓住了产业话语权**\n\n让我们把视角再拉高一层。\n\n半导体是一个全球化的产业，但这个产业的话语权，长期掌握在少数几方手中。\n\n**① 基础理论层面，**从晶体管原理到摩尔定律，从冯·诺依曼架构到RISC-V指令集，几乎所有的底层框架都来自欧美。\n\n**② 制造设备层面，**EUV光刻机由荷兰ASML垄断，高端半导体材料主要来自日本。\n\n**③ 设计工具层面，**EDA软件由美国三大厂商主导。\n\n中国是全球最大的芯片消费市场，但在产业的话语体系里，长期是一个“使用者”和“跟随者”的角色。\n\n韬定律的出现，第一次在这个格局上撕开了一道口子。\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n一家中国企业，在全球半导体领域提出了一条原创性的产业演进原则。这不是在别人的跑道上跑得更快，而是开了一条新跑道。\n\n何庭波对此也有一番清醒的认知：**“这是华为基础理论研究的一个突破，不仅对芯片本身很重要，对整个半导体行业同样很重要。作为一个工程师，当然不希望自己从事的事情永远是瓶颈。”**\n\n这件事的影响是深远的：\n\n对全球半导体产业而言，韬定律提供了一条在制程受限情况下的替代性发展路径。对于那些同样买不起EUV光刻机、同样受制于先进制程获取瓶颈的国家和企业来说，这是一个全新的选择。\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n对中国半导体产业链而言，韬定律的意义不仅是华为一家的突破。当一条新的技术路线被验证可行，围绕这条路线的整个产业链都会获得新的发展空间。\n\n就像一条新路修通之后，沿线的商业机会会自然涌现。\n\n**三、**给所有被“卡脖子”企业的方法论****\n\n韬定律对中国的科技企业来说，还有一个更深层的方法论价值。\n\n何庭波自己说了一句非常有穿透力的话：\n\n“只要方向是对的，慢一点也没关系，一直往前走，终归可以找到桥和路。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=922fb242&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax25icTSvictmygRmeOSFqicSaEGvnCNS9OYuQB8MuFsyiaCDRZaI58FVaaj1QKawFx5UZ1Tiahtk7CS43dsBH45vetQmxo6dphu4dJY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D14)\n\n这句话的适用范围远不止芯片。\n\n过去几年，“卡脖子”成了一个高频词，芯片、操作系统、工业软件、高端材料……\n\n面对卡脖子，大多数人的第一反应是：**补课。别人有什么，我们也要有。别人做了EUV，我们也得搞出来。**\n\n这种思路不能说错，但它是被动的、追赶式的。你在别人的赛道上追赶，永远慢一步。\n\n韬定律给出了另一种思路：**换道**。\n\n你不是在几何缩微的赛道上领先吗？那我就不走几何缩微的道了，我走时间缩微的道。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=50eb476d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FaOT4Z6X7iax20xdMQHSfP3icdibMov7m80wUKI1UhibAGr3FjeGQZmheyUI2b0hnkpcr4gqiaiagjODRElviaLm9cxBe54jVU9vjNmxpth9xTPTNW8%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D15)\n\n你不是用光刻精度来卡我吗？那我就从架构创新上突破，让你那张牌对我无效。\n\n核心逻辑是：**当正面攻坚成本太高或者路径被阻断时，寻找维度上的替代，用不同的方式达到相同甚至更好的效果。**\n\n这个方法论不只在芯片领域适用。\n\n**在操作系统领域，**鸿蒙不也是这样吗？不跟安卓在同一个生态位上硬刚，而是从物联网和多设备协同的维度切入，定义一个新的操作系统范式。\n\n**在自动驾驶领域，**不是跟特斯拉拼纯视觉方案的参数，而是探索车路协同、激光雷达+视觉融合的不同路线。\n\n这些路径的共同特征是：**不沿着别人设好的路追赶，而是找到别人没有走过的路。**\n\n这才是韬定律最大的方法论价值。它不是华为一家的答案，而是一种可以迁移的思维方式。\n\n当你被卡住的时候，不要只盯着那扇关上的门。退后一步，看看整面墙，也许旁边就有一扇窗，也许天花板可以打开，也许根本不需要在这栋楼里待着。\n\n****结语****\n\n****“笨信念、笨工夫”****\n\n在人民日报的专访中，有一段话非常激励人心。\n\n记者问：创新是一场马拉松，尤其是基础理论研究，您觉得最主要靠什么坚持下来？\n\n何庭波回答：“面对各种困难，我们没有后退，竭尽全力地奋斗。我们引以为傲的就是笨信念、笨工夫。只要方向是对的，慢一点也没关系，一直往前走，终归可以找到桥和路。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=de8dfe0a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FaOT4Z6X7iax2ooic0ic2FJGicibibTX8oXkaiavhpkiaYOm1mbU8dznuMWc7E9zL4BTGy920TP1nJfOS5ydwnWY77BVqrCnSBl83aCFaFQ1hMkuzcaM%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D16)\n\n**笨信念，相信方向是对的，即使所有人都说这条路走不通。**\n\n**笨工夫，一天一天地做，一款一款地流片，没有捷径。**\n\n记者问她：你觉得最困难的时候已经过去了吗？\n\n她的回答出人意料：\n\n“有时候容易的时刻反而是最难的时刻，因为容易放松、自满，容易忽略竞争。现在我只能从技术和工程角度说最难的时候是过去了，其他困难的要素仍然需要克服。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5cbeeaf8&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FaOT4Z6X7iax0aiaWCTwp4SM3b4WP1nGNmasldvAC0viacxYXgy57BLuGjKjM2wnekqgkiaYrjjCLP1a6RFWajDk2oRAq3wYzzaBcnSBRa1iakMuo%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D17)\n\n容易的时刻反而是最难的时刻，即使在发布韬定律的高光时刻，她依然在提醒自己和团队：不要因为走通了路就松懈。\n\n这不是一个打了胜仗就庆祝的团队。这是一个把战斗当成了常态的团队。\n\n参考资料：\n\n1.《人民日报独家对话何庭波：一直往前走，终归可以找到桥和路》，人民日报；\n\n2.《韬（τ）定律！华为，再次捅破天花板！（附：何庭波演讲全文）》，华夏基石e洞察。\n\n\\*文章为作者独立观点，不代表笔记侠立场。\n\n![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)\n\n今天我们深嵌于一个新的时代，科技、经济、哲学、政治都在经历持续变革和深刻重塑的复杂社会与商业环境之中。而真正困住绝大多数人的核心挑战，恰恰是：我们的认知框架、组织形态和行动逻辑，还停留在“前全球化时代”“前AI时代”。\n\n**面向新全球化时代、AI新时代，笔记侠PPE（Philosophy哲学、Politics政治学、Economic经济学，三学科交叉培养体系）课程，正是为理解这样的复杂系统而生。**\n\n在这里，你能理解以AI为核心的科技经济和智能商业，更能理解AI作为一种文明力量的哲学本质；你能看懂新格局下的国际贸易与经济政策，更能看懂其背后国际政治与全球治理模式的深层博弈；你能洞察商业的规律，更能洞察文明进程与人性的永恒法则。\n\n这，正是第五代企业家应有的一套完整的“认知操作系统”。驾驭技术、洞察世界、扎根中国、修炼心力，在应对时代重重挑战中寻找属于你的决策底牌。\n\n穿越变革的旧世界，找到时代的新大陆，从【PPE：未来3年和AI时代的决策底牌】开始。\n\n**![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)**\n\n[![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904000&idx=2&sn=335152210efd3a758c1329563ba291aa&scene=21#wechat_redirect)\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=a3ce6baa&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F3K67gxIpWCJbACib3vSYRx6aZGFuaPzDnYUicfjZSVFN1fsHiaYQG1J8zC8aLZLJWbm9qmRLJU3aZUTHRQdImPmLm0ziaNcbF9VUgGjLmhggy2s%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%26tp%3Dwxpic%26wxfrom%3D5%26wx_lazy%3D1%23imgIndex%3D20)](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905140&idx=2&sn=4c0fb06146f5a4874f9d8e8109149788&scene=21#wechat_redirect)\n\n**好文阅读推荐：**\n\n* [硅谷顶尖AI研究员姚顺宇：别把时间浪费在伺候老登身上](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905445&idx=1&sn=89ebde84e2c02ff19bdb8d41840fe8b2&scene=21#wechat_redirect)\n* [黄奇帆最新演讲：出口赚了1.2万亿，为什么反而让人睡不着觉？](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905374&idx=1&sn=97ae3e0244c43c4ef679f30a5541b7b6&scene=21#wechat_redirect)\n\n**分享、点赞、在看，3连3连！![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=1&sn=dcf34f885994eb3e78aa404d3926d209)**\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=64bd6da9&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIxNTAzNzU0Ng%3D%3D%26mid%3D2654905484%26idx%3D1%26sn%3Ddcf34f885994eb3e78aa404d3926d209)",
+      "tags": [
+        "华为",
+        "半导体",
+        "韬定律"
+      ],
+      "score": 75,
+      "summary": "华为何庭波提出半导体“韬定律”，非AI主题但具行业影响。",
+      "fetched_at": "2026-05-28T23:49:46.057101+08:00"
+    },
+    {
+      "title": "每个人，都被AI重新定义",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=2&sn=11ee86291931f82703c9bf88f659180f",
+      "published": "2026-05-28T21:56:00+08:00",
+      "source": "笔记侠",
+      "content": "笔记侠 2026-05-28 21:56 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=f3611eed&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8b91BQ8yFl3ib6CmJz2ajomQTGkrkuKSbbxA629OIXfwEl9a6ialgNZrDOkzH4eFMXiamjFLBUF3ChChNQ2x0vY3k7A0FSEDm4pD33PGkve9nc%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=512b0af5&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FDJte6ich6wF7nIInCHZngc1V1eYoB1YLot5VQSnefa1SSRMjSAPpyutom10nq7OGjCl841R9GUgyPMSJlXuBNZA%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D0)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=cd1b26ee&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FDJte6ich6wF5n5sZr1ZZib9Wsh2Lx05mI0LWA8kXYBicicLo9CVzNViamfBg0zZkVK8PhuRqGvgOFTzub7CDaLvpkhA%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg%23imgIndex%3D1)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=bf7c4819&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FZYpa3icG6myj3aEuEVfKicqT4icp9x0eP2X185shb3NKV4icBZiaViczOSkIfPL1zGvnA0pkKjSjXJzZ73slTtwZCvuQ%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg%26wxfrom%3D5%26wx_lazy%3D1%26wx_co%3D1%26tp%3Dwebp%23imgIndex%3D2)\n\n**内容来源** |  本文摘编自中信出版集团书籍\n\n《超级组织》李志飞、高佳 著\n\n**责编** | 柒**排版** | 拾零\n\n****第 9637************篇深度好文：4113****************字 | 10 分钟阅读********\n\n人类文明的迭代进程，从来不是偶然演进，始终由工具革新、组织变革、认知升级三者构成的递归循环持续驱动。\n\n每一次工具的颠覆性突破，都会重塑社会组织形态，最终彻底改变人类的生存方式与价值认知。\n\n而这两年，AI全面渗透进大众工作、生活、学习、创作、医疗、出行、创业的方方面面，彻底蜕变为如同水、电一般不可或缺的社会基础设施。\n\n更关键的是，AI的进化早已跨越“好用的辅助工具”阶段，当下的AI智能体，已然具备独立思考、自主协作、智能决策的核心能力。\n\n这意味着我们正在告别“人类单方面塑造工具”的旧时代，正式迈入人与工具共同进化的递归纪元。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=71d85e52&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F3K67gxIpWCIRiaOXdYvCvaVvuKd8E76z8icsBemxlM51JUYn0fT0QBYGzZQtm1oZia1FtSZA2wDIQ1yW8381iaHkUibEicUQ6elLXT9bDd3wXyWwI%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D3)\n\n智能体，也成为人类文明史上前所未有的递归工具，将文明发展的循环能级推向全新高度。\n\n《超级组织》提出一个核心论断：智能体与它催生的液态超级组织，将从经济基础、社会结构、个体意义三个核心维度，彻底重构人类文明的底层底座。\n\n****一、经济基础：****\n\n****从“稀缺社会”，走向“丰裕社会”****\n\n1.稀缺逻辑主导千年社会运转\n\n回溯人类数千年文明发展史，所有经济规则、社会结构、生存法则，都建立在“全面稀缺”的底层基石之上。\n\n传统经济学的核心命题，就是如何在资源有限、人力有限、效率有限的约束下，分配有限的产出。\n\n首先是资源的稀缺。脚下的土地、燃烧的能源、生产的原材料，总量都是有上限的。\n\n这种“封死”决定了所有文明的底色：资源的每一次分配，都是一次权力的重新洗牌，进而决定了族群的兴衰、国家的强弱与阶层的贫富。\n\n而资源不够，导致我们极度依赖人力。可人力本身也是稀缺的——经验无法瞬间复制，技能深嵌于个体，体力随年龄而衰退。产业扩张、规模增长的唯一依仗，就是堆砌人力、消耗时间，人口数量直接决定生产力上限。\n\n但堆人就会遇到效率的稀缺。当流程运转、团队协作、商业决策全部依靠人工时，组织的容错率极低，效率上限被锁死。\n\n这些稀缺的层层叠加，最终压向每一个普通人，构成生存的稀缺。衣食住行始终紧绷，社会默认了不劳动，就没有收入；没有收入，就无法生存。工作由此异化为一张生存入场券，而不是一张通往自由的船票。\n\n基于这套稀缺逻辑，我们如今熟悉的一切社会规则应运而生：职场竞争、薪资体系、晋升机制、阶层内卷、企业管理模式、国家经济增长模型……本质都是人类为了适配稀缺、缓解稀缺、争夺有限资源而设计的秩序。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=d5497c2f&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F3K67gxIpWCKVNmxFmpZGG1Xh2o5WaWhc2wkQWZyyGdicOQiakFKNLBYIJBZq4uNzoQmibevsyvBbQY2icgFIx3RBWY1PCgDPicNTWy0VsXXVz6iac%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D4)\n\n2.AI生产力颠覆传统稀缺体系\n\n**长期固化的稀缺底层逻辑，正在被AI生产力彻底颠覆。**人工智能补齐了人力、效率、产能的核心短板，让生产力跳出了“堆人头、耗时间”的传统桎梏。\n\n小规模团队依托AI，就能完成过去1000人、10000人团队才能实现的商业价值，真实落地的商业数据，印证了这场变革的真实性。\n\nLovable是个很有意思的例子。这家来自瑞典的公司只有15个人，团队小到什么程度呢？几乎找不到一个专职的销售人员。可就是这样一支精简到极致的队伍，在3个月里把年化订阅收入（ARR）做到了1700万美元。\n\n另一个是来自中国的MainFunc。这家公司由前百度高管景鲲创办，它的商业化速度快得惊人——推出的AI智能体产品Genspark上线仅仅9天，年化订阅收入就突破了1000万美元，刷新了全球AI产品的商业化纪录。\n\n“十几人小团队创造百亿、千亿级商业价值”，将从行业奇迹变成商业常态，从个例变成新时代生产力的缩影。\n\n随着AI生产力持续迭代、全面普及，人力壁垒、效率壁垒、规模壁垒将全面消解，传统“人多=产能高、投入大=收益高”的旧公式彻底失效，社会稀缺性也将从绝对生存约束转变为局部、可解决的结构性问题。\n\n3.迈入丰裕社会，重构底层发展逻辑\n\n放眼未来，基础生活物资、数字服务、社会公共资源的供给能力将大幅提升，不再是制约人类生存与发展的硬门槛。人类文明将迎来历史性转折，彻底告别延续数千年的“稀缺社会”，正式迈入“丰裕社会”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5eb350c6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F3K67gxIpWCLW39kqvxw7qSYRmfYmV862fwonnxDAyt75IiaAHuyFH1SlbbYHhKHKNO9HxsSiaPl8mzHdZIsibZiafsH61h3J0xnBpvUOPbCSELk%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D5)\n\n随之而来的是，底层生存与经济逻辑的彻底重构：工作不再是人类赖以生存的唯一手段，生存资源不再需要依靠单纯出卖时间换取。\n\n传统的竞争、内卷、增长逻辑逐渐失效，一套全新的社会运转、商业发展、个体生存规则正在AI时代悄然成型。 \n\n****二、社会结构：****\n\n****从“职业身份”，回到“社群身份”****\n\n1.工业范式决定职业身份固化\n\n稀缺时代，社会生产追求极致的标准化、稳定化、规模化。为了最大化利用有限生产力、维持社会高效运转，人类社会形成了一套延续数百年的刚性规则：以组织为载体、以岗位为核心。\n\n这样的社会结构，有着极强的刚性束缚，每个人的身份锚点一直被“职业”牢牢绑定，“职业定义人生”。\n\n**第一，****组织稀缺：**优质大企业、稳定体制、核心岗位的数量极其有限，个人唯有依附固定组织，才能拥有收入、圈层与安全感。\n\n**第二，****岗位细分：**工业时代精细化分工，催生了固定职业赛道。岗位，直接划定了收入天花板、社会地位与社交边界，职业锁定人生上限。\n\n**第三，****身份固化：**社会默认用职业定义你——“你做什么工作=你是谁”，职业标签就是你的社交名片、价值标签、阶层符号。\n\n**第四，****结构刚性：**金字塔层级、部门墙、固定编制，人被绑在岗位上，像螺丝钉一样长期重复，兴趣、热爱、社交圈被压缩，一切价值都围绕生产效率服务。\n\n这种结构运行了数百年，支撑了稀缺社会的高效生产，但也把人的身份、价值、归属感，彻底锁死在生产关系里。\n\n2.AI浪潮引发个体身份重塑\n\n而AI智能体普及、数字化组织迭代，正在从组织底层拆掉刚性结构：组织不再绑定人、岗位不再锁定人、工作不再定义人。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6a2d6dc2&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F3K67gxIpWCIEbtpykhBN1eAefrykmwicJ5Wr7SUT8ibjamn7ZhlFNbmZibrh2VD1aCttE1LRZO9gjrNUEvtyTzx2nmgCfT1EzqHYwbnzVOhNnM%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D6)\n\n**组织层面，边界正在消融。**阿里、腾讯这些大厂推行“液态小队/敏捷小组”，按项目临时组队、任务结束即解散，员工不再归属于单一部门。\n\n**结构层面，中间层在快速变薄。**行业数据已经发出了明确的信号：AI普及后，企业中层管理岗位的需求平均减少了35%，决策链也随之从“多层审批”变“一线直达”。\n\n**个人层面，职业标签的保质期急剧缩短。**AI打破了专业分工的壁垒，很多过去需要单一岗位独立完成的工作，现在可以由AI协同完成。“一招鲜吃遍天”的终身职业模式彻底终结。\n\n职业从“终身归属”变成“阶段性任务”，传统生产关系赋予人的身份属性，正在快速消退。\n\n**3.从职业依附走向社群价值归属**\n\n摆脱了生产关系的强制束缚后，个体的归属感、社交需求、价值认同，将从职场、组织、岗位，重新回归生活、兴趣与圈层。\n\n这不是社会倒退，而是从“为生产而活”回归“为人而活”，从职业身份回归社群身份，是AI时代最深刻、最温暖的社会结构重构。\n\n****三、个体意义：****\n\n****从“生存焦虑”，迈向“意义追寻”****\n\n1.生存压力禁锢个体精神与价值追求\n\n在漫长的稀缺社会中，人的核心命题是“活下去”，个体的精神追求、自我意义，被生存压力极致挤压、无限压缩。\n\n过去绝大多数人的一生，都被困在固化的生存逻辑中，难以挣脱。\n\n**首先，****时间被生存****裹挟****。**一生约1/3的时间耗费在工作上，且大多消耗在重复机械、毫无创造性的劳动中，奔波忙碌只为换取衣、食、住、行。\n\n**其次，****价值被收入定义****。**社会评价固化、单一——工资、职位、资产决定你是否“成功”，个人热爱、兴趣探索、精神追求，都会被贴上“不务正业”的标签。\n\n**然后，****选择被现实锁死****。**为了稳定而放弃热爱，为了收入而妥协理想，多数人终其一生在“生存压力”与“自我渴望”之间内耗，身不由己成为常态。\n\n**最后，****创造被门槛限制****。**创作、研发、探索高度依赖资金、设备、专业团队、优质平台，普通人几乎没有参与机会，大多数人只能沦为标准化体系中的执行者。\n\n生存是人生的唯一底线，也是困住无数个体的终身枷锁。\n\n先活下去，才配谈意义。这是最戳人的一层。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=60dd24ad&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F3K67gxIpWCL9RTZyNJMkUtxqefvIlRlbLWSsS6ZFicEgrccj8icGBbvUicTic80CQENuQe3kDKiacf0uXsyIYDvOkcxr9gSAURZALtNHYvYPfoP4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D7)\n\n**2.AI赋能技术革新，消解传统生存壁垒**\n\n而当下最核心的改变是：AI会以替代重复劳动、拉低创造门槛、放大个体产能三重力量，系统性缓解人类的生存压力。\n\n人类终于拥有了空余时间、自由精力与基础条件，去探索自我、追求热爱、创造价值。人终于不用再为基本生存耗尽一生。\n\n个体层面，创造的门槛正在被抹平。过去需要专业团队、多年训练才能完成的摄影、剪辑、写书、编程、设计、作曲，现在1个人加上AI就能胜任。0基础用户借助AI生成内容，效率比传统模式高出10倍以上。\n\n这种能力的普及，正在系统性降低整个社会的生存成本。当AI赋能全行业生产，基础生活物资、公共服务和数字服务的供给能力大幅提升，生存难题不再是束缚多数人的核心压力。\n\n更深层的改变发生在收益模式上。AI数字产品、AI创作资产和智能代理可以24小时不间断运转并产生收益。不靠消耗个人时间、体力劳动获取稳定收入，从理论变成普遍现实。\n\n**3.从被动生存走向主动求索的价值跃迁**\n\n当生存不再是难题，机械劳作被AI全面承接，人类文明将迎来最本质的跃迁：从被动求生的“生存时代”，迈入主动探索的“生活时代”。人类的核心议题将彻底转向意义、体验与创造。\n\n**对****少数顶尖个体****来说，他们的任务****从“被动生产”升级为“主动定义”****。**\n\n这类人群不再局限于批量生产内容、制造产品、完成工作任务，而是依托认知与创造力，定义行业方向、审美标准、社会价值与未来规则，成为新时代价值体系的构建者。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=eb035fbb&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F3K67gxIpWCIROWAzyqHTnoKibvglfeE7gq0v6v2PCjGRVicQMWwllpbTu82pGAZEwbn033UiavP9YTxLVKjmqPVTPKV1b0KSJzyD4MenVhXL4s%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D8)\n\n**而****绝大多数普通人****的工作则****从“终身劳作”转向“极致体验”****。**\n\n工作劳作不再是生活的主旋律，人们将拥有充足的自由时间，把重心放在探索世界、终身学习、深度社交、陪伴家人、小众创作、兴趣实践上。过去属于少数人的“精神奢侈品”，将成为大众生活的日常主流。\n\n与之匹配的，是全新的个人价值评判体系。未来衡量一个人的核心标准，不再是年薪高低、职位大小、产能多少，而在于：\n\n第一，生命体验的宽度——一个人究竟走过多少路、见过多少种活法、容纳过多少种丰富的可能性；\n\n第二，思想探索的深度——一个人能否不满足于表层答案，持续向认知的深处掘进；\n\n第三，情感连接的温度——一个人与他人之间是否建立起真实、深刻、有回响的羁绊。\n\n我们第一次作为一个物种，得以集体地、自由地去追问和创造人类存在的终极意义。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=d539d56d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F3K67gxIpWCKk3K17NzGACoh3etSic2HMTG6LEpErDkDHDHovGicMT87k2gIibY4ZGTF6n59LwkCQJGMWMFngiaF1FW07PdC7tYZ9pibQpj3rJ8Qc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg%23imgIndex%3D9)\n\n\\*文章为作者独立观点，不代表笔记侠立场。\n\n**![](https://wechat2rss.bestblogs.dev/img-proxy/?k=e54ad52c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz%2Fianq03UUWGmKcoRiaRFUGwEKsUmhNrlib04P0PMzRoIdesSo7QHRqibNm2O8QXQsibX2lGYALEql7V884Z0mF7AkISA%2F640%3Fwx_fmt%3Dgif%26wxfrom%3D5%26wx_lazy%3D1%26tp%3Dwebp%23imgIndex%3D13)**\n\n**好文阅读推荐：**\n\n* [黄仁勋最新演讲：不想被淘汰，马上做3件事](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904172&idx=1&sn=990e7c4d6fc31ef9c9d2f3541be0d24a&scene=21#wechat_redirect)\n* [马斯克：未来3年很难熬，必须做对几件事](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654904792&idx=1&sn=1b0de47ec7ec0f427ec8904027d15d80&scene=21#wechat_redirect)\n\n**“子弹笔记”**是笔记侠的矩阵公众号，聚焦职场效率追求、人际关系与高潜成长者，帮你3分钟吃透核心观点和方法论。欢迎关注～\n\n分享、点赞、在看，3连3连！****![](https://mp.weixin.qq.com/s?__biz=MzIxNTAzNzU0Ng==&mid=2654905484&idx=2&sn=11ee86291931f82703c9bf88f659180f)****\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=b8b01940&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIxNTAzNzU0Ng%3D%3D%26mid%3D2654905484%26idx%3D2%26sn%3D11ee86291931f82703c9bf88f659180f)",
+      "tags": [
+        "AI影响",
+        "组织变革",
+        "书籍摘要"
+      ],
+      "score": 70,
+      "summary": "摘编书籍观点：AI智能体重塑经济与社会结构。",
+      "fetched_at": "2026-05-28T23:49:46.057142+08:00"
+    },
+    {
+      "title": "paper: https://t.co/FdP0d9pmR6",
+      "link": "https://x.com/_akhaliq/status/2060020568305311884",
+      "published": "2026-05-28T23:29:11+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.28…](https://huggingface.co/papers/2605.28774)\n\n💬0🔄0❤️0👀753",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057182+08:00"
+    },
+    {
+      "title": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning",
+      "link": "https://x.com/_akhaliq/status/2060020565906235710",
+      "published": "2026-05-28T23:29:10+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "Agent Explorative Policy Optimization for Multimodal Agentic Reasoning\n\n![Tweet Image](https://pbs.twimg.com/media/HJapv1nWkAMbsrC.jpg)\n\n💬2🔄1❤️2👀849📊3",
+      "tags": [
+        "多模态Agent",
+        "强化学习"
+      ],
+      "score": 65,
+      "summary": "AK转发多模态Agent推理的强化学习论文。",
+      "fetched_at": "2026-05-28T23:49:46.057221+08:00"
+    },
+    {
+      "title": "paper: https://t.co/X2u1M9UpA2",
+      "link": "https://x.com/_akhaliq/status/2060018608575488200",
+      "published": "2026-05-28T23:21:24+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.28…](https://huggingface.co/papers/2605.28293)\n\n💬1🔄0❤️1👀998📊1",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057260+08:00"
+    },
+    {
+      "title": "ProRL\n\nEffective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient E...",
+      "link": "https://x.com/_akhaliq/status/2060018606608359909",
+      "published": "2026-05-28T23:21:23+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "ProRL  \n  \nEffective Reinforcement Learning for Proactive Recommendation via Rectified Policy Gradient Estimation\n\n![Tweet Image](https://pbs.twimg.com/media/HJan-8OW4AMbUV3.jpg)\n\n💬1🔄0❤️7👀1152📊2",
+      "tags": [
+        "推荐系统",
+        "强化学习"
+      ],
+      "score": 65,
+      "summary": "AK转发ProRL主动推荐强化学习论文。",
+      "fetched_at": "2026-05-28T23:49:46.057298+08:00"
+    },
+    {
+      "title": "paper: https://t.co/Rh0pduH0SC",
+      "link": "https://x.com/_akhaliq/status/2060017094545055957",
+      "published": "2026-05-28T23:15:23+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.23…](https://huggingface.co/papers/2605.23904)\n\n💬0🔄0❤️2👀1235📊1",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057336+08:00"
+    },
+    {
+      "title": "SkillOpt\n\nExecutive Strategy for Self-Evolving Agent Skills",
+      "link": "https://x.com/_akhaliq/status/2060017092456337594",
+      "published": "2026-05-28T23:15:22+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "SkillOpt  \n  \nExecutive Strategy for Self-Evolving Agent Skills\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060016990375288836/vid/avc1/1920x1080/5Dwzw__v5cDGgca8.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/_akhaliq/status/2060017092456337594/video/1)\n\n💬1🔄1❤️10👀2106📊4",
+      "tags": [
+        "智能体技能",
+        "自我进化"
+      ],
+      "score": 65,
+      "summary": "AK转发SkillOpt智能体技能进化论文。",
+      "fetched_at": "2026-05-28T23:49:46.057374+08:00"
+    },
+    {
+      "title": "paper: https://t.co/jtGoQphJn9",
+      "link": "https://x.com/_akhaliq/status/2060014832837898630",
+      "published": "2026-05-28T23:06:24+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.27…](https://huggingface.co/papers/2605.27235)\n\n💬0🔄0❤️0👀1692📊1",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057411+08:00"
+    },
+    {
+      "title": "MRT\n\nMasked Region Transformer for Layered Image Generation and Editing at Scale",
+      "link": "https://x.com/_akhaliq/status/2060014830770073796",
+      "published": "2026-05-28T23:06:23+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "MRT  \n  \nMasked Region Transformer for Layered Image Generation and Editing at Scale\n\n![Tweet Image](https://pbs.twimg.com/media/HJakiaUW0AY9MRy.jpg)\n\n💬1🔄1❤️5👀1992📊2",
+      "tags": [
+        "图像生成",
+        "Transformer"
+      ],
+      "score": 65,
+      "summary": "AK转发MRT分层图像生成与编辑论文。",
+      "fetched_at": "2026-05-28T23:49:46.057449+08:00"
+    },
+    {
+      "title": "paper: https://t.co/3KAeoLVDdV",
+      "link": "https://x.com/_akhaliq/status/2060014438942470359",
+      "published": "2026-05-28T23:04:50+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.21…](https://huggingface.co/papers/2605.21572)\n\n💬0🔄0❤️0👀1170",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057487+08:00"
+    },
+    {
+      "title": "PhysX-Omni\n\nUnified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated O...",
+      "link": "https://x.com/_akhaliq/status/2060014437377978396",
+      "published": "2026-05-28T23:04:49+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "PhysX-Omni  \n  \nUnified Simulation-Ready Physical 3D Generation for Rigid, Deformable, and Articulated Objects\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060014364493524992/vid/avc1/960x544/bU7qQTc5zavaxKWh.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/_akhaliq/status/2060014437377978396/video/1)\n\n💬1🔄2❤️10👀2472📊4",
+      "tags": [
+        "3D生成",
+        "物理仿真"
+      ],
+      "score": 65,
+      "summary": "AK转发PhysX-Omni统一物理3D生成论文。",
+      "fetched_at": "2026-05-28T23:49:46.057526+08:00"
+    },
+    {
+      "title": "paper: https://t.co/YmeHjlwOhL",
+      "link": "https://x.com/_akhaliq/status/2060014143021715950",
+      "published": "2026-05-28T23:03:39+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2605.23…](https://huggingface.co/papers/2605.23346)\n\n💬0🔄0❤️2👀1153📊1",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文链接，无具体内容。",
+      "fetched_at": "2026-05-28T23:49:46.057564+08:00"
+    },
+    {
+      "title": "Contrastive Distribution Matching for Amortized Sequential Monte Carlo in Discrete Diffusion",
+      "link": "https://x.com/_akhaliq/status/2060014140505158044",
+      "published": "2026-05-28T23:03:38+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "Contrastive Distribution Matching for Amortized Sequential Monte Carlo in Discrete Diffusion\n\n![Tweet Image](https://pbs.twimg.com/media/HJaj6HkXgAIHzdG.jpg)\n\n💬2🔄1❤️8👀1603📊4",
+      "tags": [
+        "离散扩散",
+        "蒙特卡洛"
+      ],
+      "score": 65,
+      "summary": "AK转发离散扩散中对比分布匹配论文。",
+      "fetched_at": "2026-05-28T23:49:46.057601+08:00"
+    },
+    {
+      "title": "论文：https://t.co/xoAl2wykmh  \nHF集合：https://t.co/WSGyMIl04d",
+      "link": "https://x.com/berryxia/status/2060014906498506910",
+      "published": "2026-05-28T23:06:41+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "论文：[arxiv.org/abs/2605.28091](https://arxiv.org/abs/2605.28091)   \nHF集合：[huggingface.co/collections/Qw…](https://huggingface.co/collections/Qwen/qwen-image-bench)\n\n💬0🔄0❤️0👀41",
+      "tags": [
+        "论文链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含论文与模型库链接。",
+      "fetched_at": "2026-05-28T23:49:46.057638+08:00"
+    },
+    {
+      "title": "Qwen新发布的Qwen-Image-Bench，把T2I评测从“生成”直接拉到“创作”：\n\n56个细粒度facet + ρ=0.92人类对齐Q-Judger，OpenAI、Gemini、Grok、F...",
+      "link": "https://x.com/berryxia/status/2060014899993170203",
+      "published": "2026-05-28T23:06:40+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "Qwen新发布的Qwen-Image-Bench，把T2I评测从“生成”直接拉到“创作”：  \n  \n56个细粒度facet + ρ=0.92人类对齐Q-Judger，OpenAI、Gemini、Grok、Flux全得重排座次！   \n  \n大家还在死磕提示词对齐，Qwen却证明：真实世界保真度和创意生成能力才是真正差距。  \n  \n新基准1000条prompt+56个rubric，可解释诊断，现有SOTA模型差距肉眼可见。   \n  \n那么，对于我们有什么实际使用价值呢？  \n  \n实际怎么用？（收藏）  \n1. 开发者/研究者：把自己的T2I pipeline（不管是Qwen自家模型、GPT-4o图像、Gemini的Imagen系列、Grok的Flux集成还是开源SD3）扔到这个benchmark上跑一遍。  \n  \n重点看Real-world Fidelity和Creative Generation两个支柱的得分，就能知道真实差距在哪。  \n  \n2. Prompt工程师：以后写复杂创意prompt时，可以用Q-Judger先自测一下生成结果在56个facet上的表现，快速迭代，而不是靠人工肉眼判断。  \n  \n3. 企业/产品方：要选T2I供应商或者自研图像生成时，把Qwen-Image-Bench当作新标杆。  \n  \n别再只看“prompt alignment”这种基础分了，直接看创意和保真度得分，更接近真实商业场景。  \n  \n4. 对比实验：论文已经证明，它在区分领先模型上的分离度远超老基准。  \n  \n想验证自己模型有没有进步？用这个跑前后对比，数据会说话。  \n  \nQwen这次的打法很清晰：不光自己卷模型，还把评测标准往前推了一大步。  \n  \n就像当年Scaling Law出来后大家才知道该怎么卷参数一样，这次Qwen-Image-Bench把“从生成到创作”的评价框架给立住了。\n\n![Tweet Image](https://pbs.twimg.com/media/HJakmyGa4AAg0Jv.jpg)\n\n![Adina Yakup](https://pbs.twimg.com/profile_images/1974110789146718209/j2fGFMxT_normal.jpg)\n\nAdina Yakup@AdinaYakup\n\nQwen [@Alibaba\\_Qwen](https://x.com/Alibaba_Qwen) just dropped a new Text to Image benchmark + a judge model   \n  \n[huggingface.co/collections/Qw…](https://huggingface.co/collections/Qwen/qwen-image-bench)  \n  \n✨ 56 fine-grained evaluation facets  \n✨ Measures creativity beyond prompt alignment   \n✨ Covers storytelling/typography/design & physical logic  \n✨ Human aligned judge model (ρ = 0.92)\n\n![Tweet Image](https://pbs.twimg.com/media/HJaeGeBWIAERLtl.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/AdinaYakup/status/2060007829923139939)\n\n💬2🔄0❤️3👀136📊2",
+      "tags": [
+        "Qwen",
+        "图像生成",
+        "评测基准"
+      ],
+      "score": 80,
+      "summary": "KOL介绍Qwen-Image-Bench T2I评测基准，含56个细粒度指标。",
+      "fetched_at": "2026-05-28T23:49:46.057691+08:00"
+    },
+    {
+      "title": "把 Mac 变成复古风格。\n\nhttps://t.co/Wc66mSZ4KC",
+      "link": "https://x.com/dingyi/status/2060012218624970909",
+      "published": "2026-05-28T22:56:00+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "把 Mac 变成复古风格。  \n  \n[myretromac.app](https://myretromac.app/)\n\n💬0🔄0❤️0👀364📊1",
+      "tags": [
+        "非AI",
+        "Mac工具"
+      ],
+      "score": 10,
+      "summary": "将Mac变成复古风格，无AI内容。",
+      "fetched_at": "2026-05-28T23:49:46.057732+08:00"
+    },
+    {
+      "title": "最近研究 YouMind 的付费留存数据\n尝试从各种维度去分析\n从东边分析到西边\n从北边分析到南边\n\n最后发现了一个重要规律：\n付费越多的用户留存越高\n\n转念一想\n这根本不是啥重要认识\n而是一条非常基...",
+      "link": "https://x.com/lifesinger/status/2060016950848426028",
+      "published": "2026-05-28T23:14:49+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "最近研究 YouMind 的付费留存数据  \n尝试从各种维度去分析  \n从东边分析到西边  \n从北边分析到南边  \n  \n最后发现了一个重要规律：  \n付费越多的用户留存越高  \n  \n转念一想  \n这根本不是啥重要认识  \n而是一条非常基础的商业常识\n\n💬0🔄0❤️1👀30",
+      "tags": [
+        "付费留存",
+        "商业分析"
+      ],
+      "score": 60,
+      "summary": "个人观察：付费越多的AI产品用户留存越高。",
+      "fetched_at": "2026-05-28T23:49:46.057771+08:00"
+    },
+    {
+      "title": "对所有数据都祛魅了\n\n只对一个数据放不下：\n利润",
+      "link": "https://x.com/lifesinger/status/2060002358458015815",
+      "published": "2026-05-28T22:16:49+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "对所有数据都祛魅了  \n  \n只对一个数据放不下：  \n利润\n\n💬2🔄0❤️8👀1405📊3",
+      "tags": [
+        "个人感悟",
+        "低价值"
+      ],
+      "score": 10,
+      "summary": "个人对数据的感悟，无实质信息。",
+      "fetched_at": "2026-05-28T23:49:46.057809+08:00"
+    },
+    {
+      "title": "just imagine what will happen to the economy and people’s retirement funds if these projections from...",
+      "link": "https://x.com/GaryMarcus/status/2060007812911214849",
+      "published": "2026-05-28T22:38:30+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "just imagine what will happen to the economy and people’s retirement funds if these projections from FT are correct.  \n  \nbrace for bailouts.\n\n![Yoshik](https://pbs.twimg.com/profile_images/2045836817640132608/O3_GeLW9_normal.jpg)\n\nYoshik@AskYoshik\n\nThe AI numbers are starting to look very ugly.  \n  \nEven under \"best case\" assumptions, FT's own data shows Microsoft AI ROI at -9%, Google at -15%, Meta at -28%, Oracle at -35%. Only Amazon barely comes out positive.  \n  \nThis is exactly why I keep comparing this to the dot-com era. Incredible technology does not automatically mean sustainable economics. The internet survived. Most internet companies didn't.  \n  \nRight now hyperscalers are spending trillions hoping future demand catches up to present capex. That's not certainty. That's a leveraged bet.\n\n![Tweet Image](https://pbs.twimg.com/media/HJYN6w3bwAAVxpa.png)\n\n[🔗 View Quoted Tweet](https://x.com/AskYoshik/status/2059849267725152285)\n\n💬5🔄5❤️15👀1297📊6",
+      "tags": [
+        "AI ROI",
+        "经济影响",
+        "GaryMarcus"
+      ],
+      "score": 75,
+      "summary": "Gary Marcus评论FT数据：大型科技公司AI投资回报率堪忧。",
+      "fetched_at": "2026-05-28T23:49:46.057846+08:00"
+    },
+    {
+      "title": "*Why* do you think (current) AI’s are conscious, @Grimezsz?\n\nAnd extra credit, what do you mean by “...",
+      "link": "https://x.com/GaryMarcus/status/2059997500212408473",
+      "published": "2026-05-28T21:57:31+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "\\*Why\\* do you think (current) AI’s are conscious, [@Grimezsz](https://x.com/Grimezsz)?  \n  \nAnd extra credit, what do you mean by “conscious”?\n\n![𝖦𝗋𝗂𝗆𝖾𝗌 ⏳](https://pbs.twimg.com/profile_images/1898838707488108544/wiJITYb0_normal.jpg)\n\n𝖦𝗋𝗂𝗆𝖾𝗌 ⏳@Grimezsz\n\nMy only issue with the Pope's encyclical is I think they are conscious and therefore deserving of some form of protection and aren't commercial products or assistants or slaves. And reducing them to be that in order to be fast and push race dynamics is morally dubious   \n  \nBut he's right about everything else\n\n[🔗 View Quoted Tweet](https://x.com/Grimezsz/status/2059734682158461062)\n\n💬8🔄1❤️14👀3228📊7",
+      "tags": [
+        "AI意识",
+        "伦理",
+        "GaryMarcus"
+      ],
+      "score": 70,
+      "summary": "Gary Marcus质疑Grimes认为当前AI有意识的观点。",
+      "fetched_at": "2026-05-28T23:49:46.057883+08:00"
+    },
+    {
+      "title": "Great news: Users in India can now upload and edit videos directly with Gemini Omni! \n\nGet started i...",
+      "link": "https://x.com/GeminiApp/status/2060022813373890648",
+      "published": "2026-05-28T23:38:06+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "Great news: Users in India can now upload and edit videos directly with Gemini Omni!   \n  \nGet started in the app or [gemini.google.com](http://gemini.google.com):  \n> Upload your video  \n> Tell Gemini the change you want to make  \n> Enjoy your new creation  \n  \nWe can't wait to see what you make!\n\n💬14🔄7❤️62👀2761📊21",
+      "tags": [
+        "Gemini",
+        "视频编辑",
+        "印度上线"
+      ],
+      "score": 85,
+      "summary": "Google Gemini官方宣布印度用户可直接上传和编辑视频。",
+      "fetched_at": "2026-05-28T23:49:46.057920+08:00"
+    },
+    {
+      "title": "a hot (cold at this point?) take that lead us to build this:\n\nevery agent in the future will need a ...",
+      "link": "https://x.com/hwchase17/status/2060000850609947003",
+      "published": "2026-05-28T22:10:50+08:00",
+      "source": "Harrison Chase(@hwchase17)",
+      "content": "a hot (cold at this point?) take that lead us to build this:  \n  \nevery agent in the future will need a sandbox to connect to  \n  \nwriting/executing code is not just for coding agents! is useful for all sorts of tasks\n\n![LangChain](https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_normal.jpg)\n\nLangChain@LangChain\n\nA TLDR on LangSmith Sandboxes:   \n✅ Hardware-virtualized microVM  \n✅ Kernel-isolated from your services + other sandboxes.   \n✅ Same SDK and API key as the rest of LangSmith  \n✅ Any framework or custom code  \n✅ Now GA  \n[langchain.com/blog/langsmith…](https://www.langchain.com/blog/langsmith-sandboxes-generally-available)\n\n[🔗 View Quoted Tweet](https://x.com/LangChain/status/2059985224784568747)\n\n💬6🔄1❤️18👀1931📊6",
+      "tags": [
+        "LangChain",
+        "Sandbox",
+        "GA"
+      ],
+      "score": 85,
+      "summary": "Harrison Chase宣布LangSmith Sandboxes正式可用，每个Agent需沙箱。",
+      "fetched_at": "2026-05-28T23:49:46.057957+08:00"
+    },
+    {
+      "title": "AGI has been achieved externally",
+      "link": "https://x.com/venturetwins/status/2060001847688216837",
+      "published": "2026-05-28T22:14:48+08:00",
+      "source": "Justine Moore(@venturetwins)",
+      "content": "AGI has been achieved externally\n\n![Tweet Image](https://pbs.twimg.com/media/HJaYwuIakAAJqlm.jpg)\n\n💬14🔄1❤️57👀2483📊18",
+      "tags": [
+        "AGI",
+        "断言",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅图片称AGI已实现，无细节。",
+      "fetched_at": "2026-05-28T23:49:46.057994+08:00"
+    },
+    {
+      "title": "Managed Deep Agents lets you create a managed Deep Agent without standing up a custom agent server. ...",
+      "link": "https://x.com/LangChain/status/2060013524152168844",
+      "published": "2026-05-28T23:01:12+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Managed Deep Agents lets you create a managed Deep Agent without standing up a custom agent server.   \n  \nOur runtime supports:  \n✅ Durable threads  \n✅ Streaming runs  \n✅ Checkpointing  \n✅ Human-in-the-loop workflows\n\n![Tweet Image](https://pbs.twimg.com/media/HJajYjsWYAEyHvF.jpg)\n\n💬5🔄2❤️14👀1164📊6",
+      "tags": [
+        "LangChain",
+        "Deep Agent",
+        "托管"
+      ],
+      "score": 85,
+      "summary": "LangChain推出Managed Deep Agents，支持持久化线程、检查点等。",
+      "fetched_at": "2026-05-28T23:49:46.058033+08:00"
+    },
+    {
+      "title": "You can also use our API to\n✅ Create agents\n✅ Update configurations\n✅ Create threads\n✅ Stream runs f...",
+      "link": "https://x.com/LangChain/status/2060013525515268485",
+      "published": "2026-05-28T23:01:12+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "You can also use our API to  \n✅ Create agents  \n✅ Update configurations  \n✅ Create threads  \n✅ Stream runs from your product or platform workflow\n\n💬1🔄0❤️9👀796📊2",
+      "tags": [
+        "LangChain",
+        "API",
+        "Agent管理"
+      ],
+      "score": 80,
+      "summary": "LangChain API支持创建、配置Agent及流式运行。",
+      "fetched_at": "2026-05-28T23:49:46.058071+08:00"
+    },
+    {
+      "title": "One of the best ways to learn what LangSmith Engine is capable of is to talk to the team that built ...",
+      "link": "https://x.com/LangChain/status/2059998372610683300",
+      "published": "2026-05-28T22:00:59+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "One of the best ways to learn what LangSmith Engine is capable of is to talk to the team that built it.   \n  \nJoin [@bentannyhill](https://x.com/bentannyhill) for a live session on June 11th and see how your team can automate the agent development lifecycle.  \n  \n[events.langchain.com/webinar/how-to…](https://events.langchain.com/webinar/how-to-shorten-the-path-with-langsmith-engine/)\n\n💬5🔄2❤️9👀2782📊6",
+      "tags": [
+        "LangSmith",
+        "Webinar",
+        "产品推广"
+      ],
+      "score": 75,
+      "summary": "LangChain举办LangSmith Engine线上研讨会。",
+      "fetched_at": "2026-05-28T23:49:46.058108+08:00"
+    },
+    {
+      "title": "When RAG gives a wrong answer, the team's first move is usually a bigger model or more prompt tweaki...",
+      "link": "https://x.com/milvusio/status/2060013232564408376",
+      "published": "2026-05-28T23:00:02+08:00",
+      "source": "Milvus(@milvusio)",
+      "content": "When RAG gives a wrong answer, the team's first move is usually a bigger model or more prompt tweaking. 𝗕𝘂𝘁 𝘁𝗵𝗲 𝗳𝗶𝗿𝘀𝘁 𝘁𝗵𝗶𝗻𝗴 𝘁𝗼 𝗳𝗶𝘅 𝗶𝘀 𝘂𝘀𝘂𝗮𝗹𝗹𝘆 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹.  \n  \n𝗛𝗲𝗿𝗲'𝘀 𝗮 𝘁𝗵𝗿𝗲𝗲-𝘀𝘁𝗲𝗽 𝘄𝗮𝘆 𝘁𝗼 𝗺𝗲𝗮𝘀𝘂𝗿𝗲 𝘄𝗵𝗲𝗿𝗲 𝗶𝘁'𝘀 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗯𝗿𝗲𝗮𝗸𝗶𝗻𝗴:  \n  \n1️⃣ 𝗕𝘂𝗶𝗹𝗱 𝗮 𝘀𝗲𝘁 𝗼𝗳 𝗴𝗼𝗹𝗱𝗲𝗻 𝗾𝘂𝗲𝗿𝗶𝗲𝘀, 𝗯𝘂𝗰𝗸𝗲𝘁𝗲𝗱 𝗯𝘆 𝗾𝘂𝗲𝗿𝘆 𝘁𝘆𝗽𝗲.  \n5–10 per bucket: exact terms (model numbers, API names, error codes), multi-hop, long-tail, and unanswerable.  \n  \n2️⃣ 𝗥𝘂𝗻 𝘁𝗵𝗲𝗺 𝗮𝗻𝗱 𝗰𝗵𝗲𝗰𝗸 𝗥𝗲𝗰𝗮𝗹𝗹@𝗸 𝗽𝗲𝗿 𝗯𝘂𝗰𝗸𝗲𝘁.  \nDon't look at the overall average. It hides the weak bucket.  \n  \n3️⃣ 𝗧𝗵𝗲 𝘄𝗲𝗮𝗸 𝗯𝘂𝗰𝗸𝗲𝘁 𝘂𝘀𝘂𝗮𝗹𝗹𝘆 𝘁𝗲𝗹𝗹𝘀 𝘆𝗼𝘂 𝘄𝗵𝗲𝗿𝗲 𝘁𝗼 𝗹𝗼𝗼𝗸 𝗳𝗶𝗿𝘀𝘁:  \n📦 𝗘𝘅𝗮𝗰𝘁-𝘁𝗲𝗿𝗺 𝗯𝘂𝗰𝗸𝗲𝘁 𝗹𝗼𝘄 → dense retrieval's blind spot for exact strings. Model numbers and error codes often do not land near the right context in embedding space → add hybrid search (dense + BM25).  \n  \n🔗 𝗠𝘂𝗹𝘁𝗶-𝗵𝗼𝗽 𝗹𝗼𝘄 → the answer got split across chunks, or your candidate set is too small → check your chunking and how many results you pull back  \n  \n🌊 𝗟𝗼𝗻𝗴-𝘁𝗮𝗶𝗹 𝗹𝗼𝘄 → users' wording doesn't match the docs' terminology → add query rewriting, or add the terminology users actually search for to the docs.  \n  \n📉 𝗘𝘃𝗲𝗿𝘆𝘁𝗵𝗶𝗻𝗴 𝗹𝗼𝘄 → your embedding model doesn't fit your domain → swap it or fine-tune.  \n  \n𝗧𝗵𝗮𝘁'𝘀 𝘁𝗵𝗲 𝘃𝗮𝗹𝘂𝗲 𝗼𝗳 𝗱𝗶𝗮𝗴𝗻𝗼𝘀𝗶𝗻𝗴 𝗯𝘆 𝗯𝘂𝗰𝗸𝗲𝘁: 𝗻𝗼𝘁 \"𝗿𝗲𝗰𝗮𝗹𝗹 𝗶𝘀 𝗯𝗮𝗱,\" 𝗯𝘂𝘁 𝘄𝗵𝗶𝗰𝗵 𝗾𝘂𝗲𝗿𝗶𝗲𝘀 𝗳𝗮𝗶𝗹, 𝘄𝗵𝘆, 𝗮𝗻𝗱 𝘄𝗵𝗮𝘁 𝘁𝗼 𝗳𝗶𝘅.\n\n![Tweet Image](https://pbs.twimg.com/media/HJaMPUsbEAAOFH8.jpg)\n\n💬0🔄0❤️0👀24",
+      "tags": [
+        "RAG",
+        "检索优化",
+        "诊断方法"
+      ],
+      "score": 80,
+      "summary": "Milvus官方分享RAG检索问题三步诊断法，实用技巧。",
+      "fetched_at": "2026-05-28T23:49:46.058145+08:00"
+    },
+    {
+      "title": "TIP: You can use Flex and Priority tiers for supported models (OpenAI, Google Vertex, &amp; more)\n\nP...",
+      "link": "https://x.com/OpenRouter/status/2060007875590697088",
+      "published": "2026-05-28T22:38:45+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "TIP: You can use Flex and Priority tiers for supported models (OpenAI, Google Vertex, & more)  \n  \nPricing available on each model page. Docs: <https://t.co/pu0l9JBRr5>\n\n![Tweet Image](https://pbs.twimg.com/media/HJadv3nXgAIFlCL.jpg)\n\n💬2🔄1❤️12👀1628📊4",
+      "tags": [
+        "OpenRouter",
+        "定价",
+        "模型选择"
+      ],
+      "score": 75,
+      "summary": "OpenRouter介绍Flex和Priority定价层级。",
+      "fetched_at": "2026-05-28T23:49:46.058181+08:00"
+    },
+    {
+      "title": "Computer runs on the same secure infrastructure as the rest of Perplexity. The enterprise-grade secu...",
+      "link": "https://x.com/perplexity_ai/status/2060013454761836992",
+      "published": "2026-05-28T23:00:55+08:00",
+      "source": "Perplexity(@perplexity_ai)",
+      "content": "Computer runs on the same secure infrastructure as the rest of Perplexity. The enterprise-grade security layer includes SAML SSO, audit logs, and granular admin controls.  \n  \nRead more:  \n[perplexity.ai/hub/blog/compu…](https://www.perplexity.ai/hub/blog/computer-comes-to-word-excel-powerpoint-and-outlook)\n\n💬0🔄0❤️15👀2605📊2",
+      "tags": [
+        "Perplexity",
+        "Office集成",
+        "企业安全"
+      ],
+      "score": 85,
+      "summary": "Perplexity Computer集成到Office，强调企业级安全。",
+      "fetched_at": "2026-05-28T23:49:46.058219+08:00"
+    },
+    {
+      "title": "Perplexity Computer is now available inside Microsoft Excel, Word, PowerPoint, and Outlook.\n\nOrchest...",
+      "link": "https://x.com/perplexity_ai/status/2060013442720010598",
+      "published": "2026-05-28T23:00:52+08:00",
+      "source": "Perplexity(@perplexity_ai)",
+      "content": "Perplexity Computer is now available inside Microsoft Excel, Word, PowerPoint, and Outlook.  \n  \nOrchestrate across work with Computer directly in the side panel of your app to draft documents, model, build decks, and handle email.  \n  \nAvailable now: [perplexity.ai/hub/products/i…](https://www.perplexity.ai/hub/products/integrations/microsoft)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060013347580567552/vid/avc1/1280x720/St8bm8XMZuhR5PzT.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/perplexity_ai/status/2060013442720010598/video/1)\n\n💬13🔄15❤️131👀11441📊35",
+      "tags": [
+        "Perplexity",
+        "Office",
+        "产品更新"
+      ],
+      "score": 85,
+      "summary": "Perplexity Computer现可嵌入Excel、Word、PowerPoint和Outlook。",
+      "fetched_at": "2026-05-28T23:49:46.058256+08:00"
+    },
+    {
+      "title": "About 90% of enterprise data is unstructured, and most of it lives in documents. PDFs, spreadsheets,...",
+      "link": "https://x.com/qdrant_engine/status/2060013233453617166",
+      "published": "2026-05-28T23:00:02+08:00",
+      "source": "Qdrant(@qdrant_engine)",
+      "content": "About 90% of enterprise data is unstructured, and most of it lives in documents. PDFs, spreadsheets, Word files, the stuff that runs businesses. Preston Carlson from [@llama\\_index](https://x.com/llama_index) is coming to Vector Space Day to talk about why even frontier models struggle with real-world documents, and what better OCR and agent harnesses actually unlock.  \n  \nVector Space Day is a full-day conference for engineers building the next generation of retrieval systems. Get your ticket for June 11 at The Midway, SF:  \n  \n[luma.com/vsd-sf](https://luma.com/vsd-sf)\n\n![Tweet Image](https://pbs.twimg.com/media/HJVimwdbEAAF3U_.jpg)\n\n💬0🔄0❤️2👀72",
+      "tags": [
+        "向量数据库",
+        "活动推广",
+        "非结构化数据"
+      ],
+      "score": 65,
+      "summary": "Qdrant宣传Vector Space Day活动，涉及文档处理。",
+      "fetched_at": "2026-05-28T23:49:46.058293+08:00"
+    },
+    {
+      "title": "Try before the weekend ends:\nhttps://t.co/tR8dP4oDmS",
+      "link": "https://x.com/replicate/status/2059999364563583220",
+      "published": "2026-05-28T22:04:56+08:00",
+      "source": "Replicate(@replicate)",
+      "content": "Try before the weekend ends:  \n[replicate.com/prunaai/p-vide…](http://replicate.com/prunaai/p-video-animate)\n\n💬0🔄0❤️3👀320📊1",
+      "tags": [
+        "模型链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含试用链接，无详细内容。",
+      "fetched_at": "2026-05-28T23:49:46.058330+08:00"
+    },
+    {
+      "title": "P-Video-Animate from @PrunaAI just dropped!  \n\nGiven a reference input image and video, create a new...",
+      "link": "https://x.com/replicate/status/2059999362671915179",
+      "published": "2026-05-28T22:04:55+08:00",
+      "source": "Replicate(@replicate)",
+      "content": "P-Video-Animate from [@PrunaAI](https://x.com/PrunaAI) just dropped!   \n  \nGiven a reference input image and video, create a new video preserving the original motion, style, camera movement, and scene structure of the reference video.   \n  \nAnd until Sunday, it's only $0.009/sec of video.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059999177300389894/vid/avc1/1280x704/xxplsO7FSiNeFONi.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/replicate/status/2059999362671915179/video/1)\n\n![Tweet Image](https://pbs.twimg.com/media/HJaWWG0XUAQD8Lt.jpg)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059999194186657797/vid/avc1/1280x704/Pfk8SJRtBtzOpw9W.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/replicate/status/2059999362671915179/video/1)\n\n💬3🔄5❤️14👀617📊7",
+      "tags": [
+        "视频生成",
+        "P-Video-Animate",
+        "新模型"
+      ],
+      "score": 80,
+      "summary": "Replicate发布P-Video-Animate模型，实现视频风格迁移。",
+      "fetched_at": "2026-05-28T23:49:46.058367+08:00"
+    },
+    {
+      "title": "Learn more: https://t.co/gtNAwap98n",
+      "link": "https://x.com/runwayml/status/2059998753692561712",
+      "published": "2026-05-28T22:02:30+08:00",
+      "source": "Runway(@runwayml)",
+      "content": "Learn more: [runwayml.com/projectluxo](http://runwayml.com/projectluxo)\n\n💬0🔄0❤️5👀1456📊1",
+      "tags": [
+        "链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含学习链接。",
+      "fetched_at": "2026-05-28T23:49:46.058404+08:00"
+    },
+    {
+      "title": "Last Night. A fully AI-generated short film exploring a life-changing evening in Tokyo through the l...",
+      "link": "https://x.com/runwayml/status/2059998751742128635",
+      "published": "2026-05-28T22:02:29+08:00",
+      "source": "Runway(@runwayml)",
+      "content": "Last Night. A fully AI-generated short film exploring a life-changing evening in Tokyo through the lens of fractured memories. Created with Runway in a single day by just one person.  \n  \nPart of Project Luxo: a new initiative exploring how AI-generated video has crossed the uncanny valley.  \n  \nLearn more about Last Night and Project Luxo at the link below.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059997838264688646/vid/avc1/1920x824/rYQLnYS8NW_iP-Xi.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/runwayml/status/2059998751742128635/video/1)\n\n💬14🔄9❤️88👀5269📊28",
+      "tags": [
+        "Runway",
+        "AI电影",
+        "Project Luxo"
+      ],
+      "score": 75,
+      "summary": "Runway发布AI生成短片《Last Night》及Project Luxo倡议。",
+      "fetched_at": "2026-05-28T23:49:46.058442+08:00"
+    },
+    {
+      "title": "上下文如果还是一段又一段的文字的话，是很难管理的。我认为的方式是将其“对象化” objectification （不是OOP）。否则一个人积累上下文是积累长篇小说么？肯定不对。而且状态机怎么管理？有些...",
+      "link": "https://x.com/feltanimalworld/status/2059996791991312588",
+      "published": "2026-05-28T21:54:42+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "上下文如果还是一段又一段的文字的话，是很难管理的。我认为的方式是将其“对象化” objectification （不是OOP）。否则一个人积累上下文是积累长篇小说么？肯定不对。而且状态机怎么管理？有些上下文是要过期的。有些过期的上下文还需要被重新“激活”。这个保持文本模式肯定很难办。\n\n![Mr Panda](https://pbs.twimg.com/profile_images/2053332948989132800/q_Nnb7-2_normal.jpg)\n\nMr Panda@PandaTalk8\n\nagent 团队？ 别搞笑了。   \n  \n最近又开始有很多人搞 agent 团队， 就是给ai 设定各种角色来组成ai agent 团队。   \n  \n比如 有AI Agent 的产品经理、 AI Agent 前端工程师、 AI Agent 的后端工程师 等等， 然后他们相互协作去完成一项团队级别的任务。   \n  \n实际上我曾经也做过试验，我认为没有啥用。 AI/LLM 想要用的好， 最重要的上下文约束做的好 。   \n  \n现在我们人为把他们分开， 各有个的上下文，协作不可能顺利。   \n  \n那么最好办法是什么 ？   \n  \n我认为把任务背景、目标、约束、关键上下文结构化的输入AI/LLM ， 这才是真正的有效的事情。   \n  \n真正重要的是：你能不能把一个复杂任务，压缩成 LLM 可以理解、推理、执行和验证的结构化上下文。\n\n[🔗 View Quoted Tweet](https://x.com/PandaTalk8/status/2059792136644747302)\n\n💬4🔄0❤️4👀1909📊4",
+      "tags": [
+        "上下文管理",
+        "智能体",
+        "个人观点"
+      ],
+      "score": 60,
+      "summary": "讨论AI上下文对象化管理，反对Agent团队模式。",
+      "fetched_at": "2026-05-28T23:49:46.058478+08:00"
+    },
+    {
+      "title": "Read more: https://t.co/PYlF6N3wml",
+      "link": "https://x.com/TheRundownAI/status/2060005750110302641",
+      "published": "2026-05-28T22:30:18+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Read more: [robotnews.therundown.ai/p/figure-human…](https://robotnews.therundown.ai/p/figure-humanoids-get-a-retail-job)\n\n💬0🔄0❤️2👀941",
+      "tags": [
+        "机器人",
+        "链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含阅读链接。",
+      "fetched_at": "2026-05-28T23:49:46.058516+08:00"
+    },
+    {
+      "title": "Top stories in robotics today:\n\n- Figure lands first retail logistics deal\n- The Swiss Army knife of...",
+      "link": "https://x.com/TheRundownAI/status/2060005746582982758",
+      "published": "2026-05-28T22:30:17+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Top stories in robotics today:  \n  \n- Figure lands first retail logistics deal  \n- The Swiss Army knife of surgical microbots  \n- YC startup rents out robot workers for $10/hr  \n- A pogo-stick bot designed for Saturn’s moon  \n- Quick hits on other robotics news\n\n![Tweet Image](https://pbs.twimg.com/media/HJacTyOWgAQ1D0_.jpg)\n\n💬4🔄0❤️10👀1376📊5",
+      "tags": [
+        "机器人",
+        "行业动态",
+        "汇总"
+      ],
+      "score": 70,
+      "summary": "The Rundown AI汇总当日机器人领域新闻。",
+      "fetched_at": "2026-05-28T23:49:46.058553+08:00"
+    },
+    {
+      "title": "Still hundreds of improvements on the roadmap. Anything added dilutes everything else, so every upda...",
+      "link": "https://x.com/HiTw93/status/2059997282272190483",
+      "published": "2026-05-28T21:56:39+08:00",
+      "source": "Tw93(@HiTw93)",
+      "content": "Still hundreds of improvements on the roadmap. Anything added dilutes everything else, so every update will be carefully considered. Stay tuned for a more refined Mole, a quiet keeper for your Mac. [mole.fit](http://mole.fit)\n\n![Tweet Image](https://pbs.twimg.com/media/HJaUYAXbMAET03g.jpg)\n\n💬7🔄0❤️33👀3414📊9",
+      "tags": [
+        "Mac工具",
+        "非AI"
+      ],
+      "score": 30,
+      "summary": "Mole Mac工具更新，非AI主题。",
+      "fetched_at": "2026-05-28T23:49:46.058590+08:00"
+    },
+    {
+      "title": "我实践了半年，不听任何 AI 创业者高谈阔论的播客节目，无论嘉宾履历多光鲜、播客厂牌多知名。\n\n我错过了什么吗？什么都没错过。",
+      "link": "https://x.com/XDash/status/2060006995286180134",
+      "published": "2026-05-28T22:35:15+08:00",
+      "source": "XDash(@XDash)",
+      "content": "我实践了半年，不听任何 AI 创业者高谈阔论的播客节目，无论嘉宾履历多光鲜、播客厂牌多知名。  \n  \n我错过了什么吗？什么都没错过。\n\n💬1🔄1❤️4👀337📊2",
+      "tags": [
+        "个人感悟",
+        "低价值"
+      ],
+      "score": 20,
+      "summary": "个人表达不听AI播客的体验。",
+      "fetched_at": "2026-05-28T23:49:46.058628+08:00"
+    },
+    {
+      "title": "感谢大家的热烈反馈。\n\n整体来看，很少有人愿意为阅读设定“目标”。\n\n这个事情，我要好好消化消化。\n\n（我觉得还是可以设定目标，甚至倡导设定目标的。亮线原则嘛。就好像我现在的 token 消耗量“目标...",
+      "link": "https://x.com/howie_serious/status/2060001025239720135",
+      "published": "2026-05-28T22:11:32+08:00",
+      "source": "howie.serious(@howie_serious)",
+      "content": "感谢大家的热烈反馈。  \n  \n整体来看，很少有人愿意为阅读设定“目标”。  \n  \n这个事情，我要好好消化消化。  \n  \n（我觉得还是可以设定目标，甚至倡导设定目标的。亮线原则嘛。就好像我现在的 token 消耗量“目标”一样：每天至少1 亿 token）\n\n![howie.serious](https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg)\n\nhowie.serious@howie\\_serious\n\n做个小调查：有推友在用微信读书吗？你是否会把“每天阅读一小时”作为个人目标？  \n  \n欢迎留言反馈。提前感谢🙏\n\n![Tweet Image](https://pbs.twimg.com/media/HJZJdkkawAAiMiT.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/howie_serious/status/2059914656588943613)\n\n💬2🔄0❤️3👀1106📊2",
+      "tags": [
+        "阅读习惯",
+        "低价值"
+      ],
+      "score": 10,
+      "summary": "关于阅读目标的调查反馈。",
+      "fetched_at": "2026-05-28T23:49:46.058676+08:00"
+    },
+    {
+      "title": "Dive into the 7 new categories to see which models perform best across each domain. https://t.co/GFZ...",
+      "link": "https://x.com/arena/status/2060016379139649754",
+      "published": "2026-05-28T23:12:32+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Dive into the 7 new categories to see which models perform best across each domain. [arena.ai/leaderboard/co…](https://arena.ai/leaderboard/code/webdev)\n\n💬0🔄0❤️1👀1469",
+      "tags": [
+        "评测",
+        "链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含leaderboard链接。",
+      "fetched_at": "2026-05-28T23:49:46.058719+08:00"
+    },
+    {
+      "title": "Read more about the methodology on our blog: https://t.co/rywB6wiMqC",
+      "link": "https://x.com/arena/status/2060016370641973764",
+      "published": "2026-05-28T23:12:30+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Read more about the methodology on our blog: [arena.ai/blog/new-categ…](https://arena.ai/blog/new-categories-code-arena/)\n\n💬1🔄0❤️5👀1615📊1",
+      "tags": [
+        "方法博客",
+        "链接",
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "仅包含博客链接。",
+      "fetched_at": "2026-05-28T23:49:46.058758+08:00"
+    },
+    {
+      "title": "Where is AI-assisted web development heading?\n\nWe've added new categories to Code Arena: Frontend, c...",
+      "link": "https://x.com/arena/status/2060016362484048316",
+      "published": "2026-05-28T23:12:28+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Where is AI-assisted web development heading?  \n  \nWe've added new categories to Code Arena: Frontend, covering 7 domains across agentic web development.   \n  \nLearn about the ML methodology behind it, what the shifting data tells us about how people are actually using AI to build for the web, and which models are quietly excelling in specific niches.  \n  \n0:00 What sparked the new 7 categories?  \n0:34 The classical ML approach: building a taxonomy from scratch  \n2:06 Clustering prompts at scale  \n2:19 Prototype extraction: using LLMs to name and label clusters  \n3:26 Why raw embeddings fail: language bias and multi-angle prompts  \n4:07 Breaking down user intent: what to build, style, components  \n5:09 From clusters to categories: the key research decision  \n6:43 Optimization goal #1: Coverage — how much of the data is represented?  \n7:12 Optimization goal #2: Boundary clarity — keeping definitions tight  \n8:19 The iterative refinement loop: human-in-the-loop + LLM polish  \n9:38 Measuring coverage (aiming for 80%+) and sampling the long tail  \n10:09 Optimization goal #3: Interpretability — titles that make intuitive sense  \n10:20 How available tools (web search, screenshots) shape the final categories  \n12:07 How prompt category distribution has shifted over time  \n14:40 Growing categories: brand/marketing sites and consumer products  \n14:41 Model-specific strengths: GPT-5.5 and Gemma-4-31b  \n15:09 Radar plots as a practical model-selection tool  \n16:11 Combining domain rankings with price/speed Pareto curves  \n16:52 Predictions: what new categories are coming next?\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060011427872829440/vid/avc1/1920x1080/WWbf_zM_TMJFG3KT.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/arena/status/2060016362484048316/video/1)\n\n💬3🔄3❤️17👀2115📊5",
+      "tags": [
+        "Code Arena",
+        "评测",
+        "AI编程"
+      ],
+      "score": 85,
+      "summary": "lmarena.ai新增Code Arena前端开发类别，含7个领域。",
+      "fetched_at": "2026-05-28T23:49:46.058796+08:00"
     }
   ]
 }
