@@ -710,6 +710,403 @@
       "score": 30,
       "summary": "长文链接，无具体信息。",
       "fetched_at": "2026-05-28T10:56:22.238952+08:00"
+    },
+    {
+      "title": "Announcing the newest cohort of the Google for Startups Accelerator: Middle East, North Africa & Turkey",
+      "link": "https://cloud.google.com/blog/topics/startups/meet-the-newest-cohort-of-our-mena-t-startup-accelerator/",
+      "published": "2026-05-28T15:00:00+08:00",
+      "source": "Google Cloud Blog",
+      "content": "Google’s mission is to organize the world’s information and make it universally accessible. In high-growth, technically ambitious markets like the Middle East, North Africa, and Türkiye (MENA-T), we fulfill this mission by supporting AI-First startups building the next generation of information-driven services on a global scale. In a region known for its resilience, we want to help founders flourish in any conditions.\n\nThe newest cohort of 15 companies in the [Google for Startups Accelerator: MENA-T program](https://startup.google.com/programs/accelerator/middle-east-north-africa-turkey/?_gl=1*1dl8uuf*_up*MQ..*_ga*NTQ3MDg4MC4xNzc3NjE3MzU4*_ga_GCB35PQ9X3*czE3Nzc2MTczNTgkbzEkZzAkdDE3Nzc2MTczNjQkajU0JGwwJGgw) starts on June 1. They follow on the success of our sixth group, which concluded in November 2025 and set a new benchmark for the region. \n\nOver the course of the fall 2025 program, 14 AI-first startups from 8 different countries received more than 230 hours of specialized 1:1 mentorship from Google experts. This support allowed them to achieve measurable technical and business milestones, including refining their business strategies, accelerating AI/ML initiatives with Google Cloud, and enhancing overall product design.\n\nWe’re supplementing the 2026 program with additional resources, focus, and training to help these startups navigate the uncertain geopolitics that can affect the region and the world at any time.\n\n### Introducing the newest Google for Startups Accelerator: Middle East, North Africa, Turkey cohort\n\nWith a record breaking volume of applications, we are seeing more and more startups leveraging AI technology and addressing meaningful challenges with their business. Please join us in welcoming the 15 companies selected to participate in this cohort:\n\n* [**BioTwin**](https://biotwin.ai/) creates virtual twins from health data to detect risks and recommend preventative actions.\n* [**Coral**](https://coral.li/) replaces manual sustainability processes with real-time enterprise overviews.\n* [**Each::labs**](https://eachlabs.ai/) builds the next generation of AI-native tools to streamline complex developer workflows.\n* [**Hakeem**](https://hakeem.ae/)translates clinical studies into real-time, patient-specific guidance for clinicians.\n* [**inveon.ai**](https://inveon.ai/) deploys agentic AI to provide autonomous digital employees for e-commerce.\n* [**Jusoor Labs**](https://jusoorlabs.com/) uses AI to analyze science experiment interactions and improve learning outcomes.\n* [**Openfarming**](https://openfarming.earth/) automates distributor workflows to reduce waste and protect margins.\n* [**Plusfinity**](https://plusfinity.ai/) builds AI-native learning infrastructure for scalable, interactive education.\n* [**Promake**](https://promake.ai/) empowers the manufacturing sector with AI-driven design and production optimization tools.\n* [**Qanooni**](https://qanooni.ai/) transforms manual legal work into structured, searchable workflows.\n* [**Repzo**](https://repzoapp.com/) uses AI to turn complex field data into natural language reports for field teams.\n* [**RFxAI**](https://rfxai.com/) streamlines procurement and sales through AI-driven response evaluation.\n* [**Tapper**](https://tapper.ai/) applies machine learning to detect anomalies and block invalid traffic.\n* [**TruBuild**](https://trubuild.io/) analyzes unstructured construction data for faster, objective tender evaluation.\n* [**Woliz**](https://woliz.com/) uses voice AI to make digital ordering accessible for nanostore owners.\n\n### A curriculum designed for impact\n\nStarting June 1st, founders will participate in a three-month program specifically tailored to help startups navigate their unique challenges. The curriculum provides intensive technical support, including comprehensive stack audits and one-on-one mentorship from global experts. \n\nBy balancing advanced technical training — focused on AI security and generative design — with strategic business modeling and go-to-market planning, we empower founders to scale their innovations securely. This holistic approach is designed to help startups maintain momentum and drive the region’s sustained digital growth and long-term resilience.\n\nThe program has already demonstrated significant impact for the fall cohort, with a number of startups accelerating their growth and development.\n\n**COGNNA**, a provider of an agentic security operations center (SOC) suite, is among those seeing sustained growth. With improvements made during the accelerator, their platform now allows analysts to work 80% faster, and subsequently have closed a $9.2-million Series  A funding round. \n\nBy using BigQuery to ingest petabytes of data and Google Kubernetes Engine to scale investigations, the startup has transformed its security operations and dramatically improved efficiency. \"Google is shaping the future of COGNNA by enabling us to scale with global markets,\" said Ziyad Alshehri, co-founder and CTO of COGNNA.\n\n![image2](https://storage.googleapis.com/gweb-cloudblog-publish/images/image2_WAd9XYx.max-1000x1000.jpg)\n\n**Smart Bricks, a** UAE-based startup for AI-powered real estate investing, recently closed a $5 million pre-seed round led by a16z Speedrun. Smart Bricks uses Google’s machine learning pipelines to automate 99% of manual real estate investment workflows across Dubai, London, and New York.\n\n“The Google for Startups Accelerator played a key role in accelerating our technical development,” Mohamed Mohamed, founder and CEO of Smart Bricks, said. “Access to Google’s AI and cloud stack has been instrumental in building and scaling our agentic AI models, particularly given the scale and complexity of the data we’re working with. And infrastructure like Gemini Enterprise Agent Platform and BigQuery allowed us to significantly speed up our development cycles, improve model performance, and bring a much more robust, data-driven platform to market faster.”\n\n![image1](https://storage.googleapis.com/gweb-cloudblog-publish/images/image1_q2e7Aks.max-1000x1000.png)\n\n### **Google’s commitment to MENA-T growth**\n\nWe continue to support founders across the region, providing the specialized resources and cloud infrastructure needed to ensure that innovation continues to scale. Our goal is to ensure that the region’s digital economy continues its acceleration toward a more secure and innovative future.\n\nWe are excited to see how this new cohort will shape the future of the MENA-T ecosystem.",
+      "tags": [
+        "AI创业",
+        "Google加速器",
+        "中东"
+      ],
+      "score": 70,
+      "summary": "Google公布中东及土耳其创业加速器新一批15家AI初创公司。",
+      "fetched_at": "2026-05-28T15:59:24.641603+08:00"
+    },
+    {
+      "title": "[AINews] Cognition raises $1B in $26B Series D",
+      "link": "https://www.latent.space/p/ainews-cognition-raises-1b-in-26b",
+      "published": "2026-05-28T15:26:09+08:00",
+      "source": "Latent Space",
+      "content": "We last [wrote about](https://swyx.io/cognition) **[Cognition](https://swyx.io/cognition) in [September’s $10B Series C](https://news.smol.ai/frozen-issues/25-09-08-cog-smol.html)** when Smol.ai also joined Cognition and AINews was eventually [moved here to Latent Space](https://www.latent.space/p/2026). 8 months later, it is [worth 2.5x more](https://x.com/cognition/status/2059660758531940856), and officially the largest [remaining independent agent lab](https://x.com/swyx/status/2059717021944926238) in AI, a thesis we [mapped out last year](https://x.com/swyx/status/1990886806250782876). With official ARR disclosures (now [projecting >$1B ARR by EOY](https://www.youtube.com/watch?v=VuyOy5WN980)) you can map out the growth, which looks oddly similar to the [WTF Happened in 2025 charts](https://www.latent.space/p/wtf2025) (this [isn’t a coincidence](https://x.com/swyx/status/2057119153337545096)):\n\n[![](https://substackcdn.com/image/fetch/$s_!l_fo!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc283a27b-c506-4ee9-8b9a-47650b429a01_2534x1694.png)](https://substackcdn.com/image/fetch/$s_!l_fo!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc283a27b-c506-4ee9-8b9a-47650b429a01_2534x1694.png)\n\nIn the enterprise SaaS business, ARR is a trailing indicator of utilization, as are the logos of some of the toughest/most discerning customers in the enterprise and startup ecosystem (including [Exa and Modal](https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa), featured last week)\n\n[![](https://substackcdn.com/image/fetch/$s_!i6tW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1563dd3-9a40-45b1-9060-7ec196bf8e77_1316x1616.png)](https://substackcdn.com/image/fetch/$s_!i6tW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa1563dd3-9a40-45b1-9060-7ec196bf8e77_1316x1616.png)\n\nWe will release more on the Cognition podcast tomorrow.\n\n> AI News for 5/26/2026-5/27/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews’ website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!\n\n---\n\n# **AI Twitter Recap**\n\n**Inference Efficiency, Serving Architectures, and Cost Curves**\n\n* **Inference optimization is increasingly architectural, not just kernel-level**: [EAGLE 3.1](https://x.com/EagleCorp/status/2059485457227149334) improves speculative decoding robustness by stabilizing hidden-state feedback and reducing attention drift at deeper decode steps, with explicit emphasis on **long-context acceptance length** and real-world serving reliability; the team also highlighted collaboration with [vLLM](https://x.com/vllm_project) and TorchSpec. At the kernel/system layer, Perplexity open-sourced a rebuilt [Unigram tokenizer](https://x.com/perplexity_ai/status/2059664738087469511) that cuts CPU utilization **5–6×** and reaches **63 µs at 514 tokens** with zero heap allocations, while [Qwen3.5 on TokenSpeed](https://x.com/Alibaba_Qwen/status/2059674574397313277) reportedly hits **580 tokens/s** for agentic workloads via joint optimization across Alibaba, LightSeek, NVIDIA, Mooncake, and FlashAttention-4 contributors. Supporting libraries also improved: [MaxSim v2](https://x.com/ErikKaum/status/2059659837219156453) adds backprop and reports **10.33× faster on H200** and **11.94× on A100** versus naïve PyTorch.\n* **Price cuts are being justified by structural KV-cache and attention changes**: Several posts converged on the same theme: recent API price cuts from Chinese labs look sustainable because they reflect **lower serving cost per token**, not temporary subsidy. [@kimmonismus](https://x.com/kimmonismus/status/2059578380329394292) summarized how **DeepSeek V4-Pro** uses hybrid attention with **Compressed Sparse Attention** and **Heavily Compressed Attention** to bring **1M-token KV cache to ~10% of V3.2** and single-token inference FLOPs to **27%**, while still routing **49B active params** out of **1.6T total**. Xiaomi’s MiMo similarly reduces cache traffic using SWA plus hierarchical cache management. That was corroborated directly by [@\\_LuoFuli](https://x.com/_LuoFuli/status/2059618247553745204), who said MiMo’s deepest input-cache-hit price cut comes from **5× cached token capacity**, roughly **80% lower caching cost**, and an architectural **1:7 Full:SWA sparsity ratio**. The broader takeaway: long-context inference economics are now being pushed by **attention design + cache hierarchy + routing**, not just cheaper hardware.\n\n**Agents, Harnesses, Memory, and Continual Learning**\n\n* **The stack is shifting from “model quality” to “model-harness-memory fit”**: A substantial cluster of tweets focused on practical agent engineering. LangChain shipped [Deep Agents v0.6](https://x.com/LangChain/status/2059634226836746483) with **Delta Channels**, cutting checkpoint storage for a 200-turn coding session from **5.3 GB to 129 MB**, and also launched [computer use in Fleet](https://x.com/LangChain/status/2059685293322858809), plus [Context Hub](https://x.com/hwchase17/status/2059687279199924462) for versioned agent context/skills. [LangSmith Engine](https://x.com/LangChain/status/2059654417478012938) was framed as automating the eval → diagnosis → fix loop, with multiple practitioners emphasizing its value for turning trace feedback into reusable online/offline evaluators. In parallel, [@Vtrivedy10](https://x.com/Vtrivedy10/status/2059712077925658717) made the clearest formulation of the day: **task-harness fit** matters as much as model quality, and bespoke vertical systems outperform generic harnesses by narrowing tools, prompts, and context to the task.\n* **Continual learning is re-emerging as a product category, not just a research topic**: The biggest announcement here was [Trajectory’s launch](https://x.com/rronak_/status/2059644771262730624): a platform for using **product usage signals and agent traces** to continuously post-train large agentic models, with **$15M in funding** and design partners including Clay, Harvey, Decagon, Mercor, and Rogo. Baseten said it supports these deployments with [FP8/NVFP4 quantization and autoscaled H100 infra](https://x.com/baseten/status/2059651376565936510#m), including a cited overnight deployment of a **397B-parameter model**. The same trend appeared in open tooling: [an open-source memory-centric agent](https://x.com/hwchase17/status/2059487107144655356) built on LangChain/LangGraph was praised by multiple builders for explicit retrieval/storage/reasoning/learning separation, and [RLM’s minimal training harness](https://x.com/a1zhang/status/2059633834094678173) shows small teams can now RL-tune long-context agents in **a day on 8×A100**. The throughline is that “post-deployment learning” is moving from aspiration to infra.\n\n**Benchmarks, Scaling Laws, and Training Methods**\n\n* **New benchmarks are increasingly about long-horizon, messy, real-world workflows**: [DeepSWE](https://x.com/_philschmid/status/2059564676569076021) was highlighted as a SWE/agent benchmark with **113 tasks across 91 repos in 5 languages**, using a minimalist bash-only harness and shorter prompts that nevertheless require **5.5× more code** and touch **7 files on average** than SWE-Bench Pro. In enterprise operations, Artificial Analysis and IBM launched [ITBench-AA](https://x.com/ArtificialAnlys/status/2059698327235805258), an SRE benchmark over Kubernetes incident response where **all frontier models scored below 50%**; **Claude Opus 4.7** led at **47%**, **GPT-5.5** followed at **46%**, and **GLM-5.1 Reasoning** led open weights at **40%**. Another useful reliability angle came from [AgingBench](https://x.com/omarsar0/status/2059689897523642510), which frames deployed agent degradation as a lifespan problem caused by compression, interference, and memory updates.\n* **Training efficiency research remains active across both theory and systems**: Sakana AI’s [DiffusionBlocks](https://x.com/hardmaru/status/2059648995132367277) was one of the most technically interesting releases: it reinterprets forward passes as diffusion-like denoising steps so deep nets can be trained **one block at a time**, dramatically reducing memory while matching end-to-end performance across **ViTs, DiTs, masked diffusion, autoregressive transformers, and recurrent-depth transformers**. On the RL systems side, Snowflake introduced [ZoRRo](https://x.com/StasBekman/status/2059718503318655314), claiming **up to 3.5× faster long-context RL** and **3.2× longer context windows** by eliminating redundant rollout computation, alongside the specialized [Arctic-Text2SQL-R2](https://x.com/dwarak/status/2059686825086902398#m) enterprise SQL model. On the theory front, [Tiberiu Musat’s preprint](https://x.com/Tiberiu_Musat_/status/2059562156102746148) argues minimum neural weight norm matches minimum program length up to a log factor for fixed-precision networks, while [Unified Neural Scaling Law](https://x.com/ethanCaballero/status/2059686905105563907) proposes a multivariate functional form intended to extrapolate neural scaling behavior more accurately than prior fits.\n\n**Model and Modality Releases: Biology, Vision, OCR, and Embedded AI**\n\n* **Protein modeling had a standout day**: [ESMFold2](https://x.com/alexrives/status/2059611151860683097) was announced as an open scientific engine for protein structure prediction and design, with strong reported results on **protein interactions and antibodies**, plus an accompanying atlas of **6.8B proteins** and **1.1B predicted structures**. The release emphasized both practical design outcomes—miniprotein binders and single-chain antibodies across five therapeutic targets—and mechanistic interpretability findings about emergent protein representations. The release was echoed by [@proteinrosh](https://x.com/proteinrosh/status/2059633089702240598) and contextualized by [@cgeorgiaw](https://x.com/cgeorgiaw/status/2059694583856927201), who noted the atlas exceeds AlphaFold DB in scale.\n* **A wave of smaller but practical multimodal/open releases landed**: Google DeepMind shared the white paper for [Gemini Embedding 2](https://x.com/mseyed/status/2059504005387284629), described as a **native multimodal embedding model** supporting unified representations over text, image, audio, and video. NVIDIA’s [LocateAnything](https://x.com/wildmindai/status/2059600079804088790) combines **Qwen2.5-3B + Moon-ViT** for high-speed grounding, with a claimed **10× speedup** for dense object detection. Hugging Face integrated Roboflow’s [RF-DETR](https://x.com/mervenoyann/status/2059647988373373253), positioning it as real-time detection/segmentation that outperforms YOLO-style systems. For document pipelines, [Surya OCR 2](https://x.com/VikParuchuri/status/2059675773712167423) ships as a **650M** model with **83.3% OLMOCR bench**, **87% on an internal 91-language benchmark**, and **5 pages/s on RTX 5090**; [LiteParse v2](https://x.com/jerryjliu0/status/2059710330016817501) rewrites parsing in Rust for **up to 100× speedups** and edge/browser deployment via WASM. On-device AI also got a nod with Google’s new [Coral board](https://x.com/googlegemma/status/2059740184930074758) for local speech, vision, and control demos.\n\n**Developer Platforms, Enterprise Controls, and Coding-Agent Productization**\n\n* **Coding agents are consolidating into full product stacks with enterprise controls**: OpenAI continued tightening Codex’s product surface: [GPT-5.2 and GPT-5.3-Codex are being sunset in Codex in favor of GPT-5.5](https://x.com/thsottiaux/status/2059650685948551384), while enterprise features now include [private MCP connectivity over outbound-only HTTPS](https://x.com/OpenAIDevs/status/2059703536825565499), [Workload Identity Federation](https://x.com/OpenAIDevs/status/2059703600662925635), and [expanded Admin API controls](https://x.com/OpenAIDevs/status/2059703665276145920) for spend alerts, allowlists, retention policies, and hosted tool management. OpenAI also published a concrete case study on [self-improving tax agents with Codex](https://x.com/OpenAIDevs/status/2059638868983562640), centered on tracing reviewer corrections back into evals and fixes.\n* **Competition in coding agents is now visibly about reliability, workflow breadth, and enterprise adoption**: [Claude Code](https://x.com/ClaudeDevs/status/2059701677981413812) shared a reliability/performance update and easier bug-report capture, while GitHub kept pushing the “agentized IDE” direction with [Copilot Dev Days](https://x.com/code/status/2059664796178354617) and [MCP positioning](https://x.com/code/status/2059666498285629707). The biggest commercial datapoint was [Cognition](https://x.com/cognition/status/2059660758531940856): **>$1B raised at a $26B valuation**, **enterprise usage up >10× YTD**, and **$492M run-rate revenue**, paired with a growing customer list and strong endorsements from users like [Exa](https://x.com/nityasnotes/status/2059768072110776370). Meanwhile, smaller infra/product moves suggest the ecosystem is broadening: [Cua Driver for Windows](https://x.com/trycua/status/2059688960838828391) brings background computer use to Windows agents; [Cloudflare’s agent platform](https://x.com/brandonjcarl/status/2059624598644109363) was repeatedly praised for “fractional computing” economics; and [Grok Build’s worktree support](https://x.com/theskory/status/2059729539287167068) targets multi-agent code swarms at repo scale.\n\n**Top tweets (by engagement)**\n\n* **Cognition’s scale-up**: [Cognition](https://x.com/cognition/status/2059660758531940856) announced **>$1B raised**, **$26B valuation**, and **$492M run-rate revenue**, one of the clearest signals yet that coding agents are converting into large enterprise businesses.\n* **Claude Code reliability push**: [Anthropic’s ClaudeDevs](https://x.com/ClaudeDevs/status/2059701677981413812) posted a high-engagement update on responsiveness, reliability, and better feedback collection—evidence that product quality and trust are now central battlegrounds.\n* **Sakana AI’s DiffusionBlocks**: [@hardmaru](https://x.com/hardmaru/status/2059648995132367277) drew major attention to block-wise training that can match end-to-end performance while dramatically lowering memory requirements.\n* **ESMFold2 release**: [@alexrives](https://x.com/alexrives/status/2059611151860683097) announced one of the day’s most substantive science releases: open protein modeling at atlas scale with therapeutic design implications.\n* **OpenAI enterprise controls + MCP**: [@OpenAIDevs](https://x.com/OpenAIDevs/status/2059703536825565499) on private MCP and related admin/security updates reflects where frontier APIs are competing for large-org adoption.\n\n---\n\n# **AI Reddit Recap**\n\n## **/r/LocalLlama + /r/localLLM Recap**\n\n### **1. Low-Bit Local AI on Consumer Hardware**\n\n* **[PrismML just released Binary and Ternary Bonsai Image 4B: 1-bit/ternary text-to-image diffusion transformers that can even run 100% locally in your browser on WebGPU.](https://www.reddit.com/r/LocalLLaMA/comments/1togflk/prismml_just_released_binary_and_ternary_bonsai/)** (Activity: 759): **PrismML released Binary and Ternary Bonsai Image 4B, described as** `1-bit`**/ternary text-to-image diffusion-transformer variants with ~**`3GB` **checkpoints, Apache-2.0 licensing, and a WebGPU browser demo ([HF collection](https://huggingface.co/collections/prism-ml/bonsai-image), [demo](https://huggingface.co/spaces/webml-community/bonsai-image-webgpu)). The post compares them to FLUX.2 Klein 4B at ~**`16GB`**; a top technical comment claims Bonsai Image is primarily a quantized/post-trained derivative of FLUX.2 Klein 4B, with insufficient attribution outside the whitepaper.** The main debate is attribution/branding: one commenter argues PrismML is rebranding quantized/fine-tuned base models as “Bonsai” while minimizing credit to original labs, comparing it to releasing a quant of Qwen as a new model. Another commenter asks whether it can run on CPU with `16GB` RAM, but no technical answer is provided in the supplied comments.\n\n  + A commenter alleges **PrismML’s “Bonsai-Image” is not a newly trained base model**, but a **binary/ternary quantization of** `FLUX.2 Klein 4B` with additional post-training to recover quality. They argue the project’s HF demo/model pages and GitHub omit clear attribution to the original FLUX model/team, with the original model reportedly mentioned only in the whitepaper.\n  + A technical usability note says the browser/WebGPU model requires roughly `~2 GB` **to download**, which is relevant for fully local inference despite the 1-bit/ternary compression claims. Another user asks whether it can run on **CPU with 16 GB RAM**, but no concrete benchmark or compatibility answer is provided in the thread.\n* **[Got tired of OOM errors on my 4GB GPU. Wrote a custom Rust bare-metal engine and hit 66.8 TPS with a 4B model (BitNet 1.58b on RTX 3050).](https://www.reddit.com/r/LocalLLM/comments/1to6enj/got_tired_of_oom_errors_on_my_4gb_gpu_wrote_a/)** (Activity: 390): **OP claims a custom Rust/C++ LLM inference engine, Cluaiz, runs** `prism-ml/Bonsai-4B-gguf` **with** `1.58-bit` **quantization on an RTX 3050 4GB, reaching** `66.8 tokens/s`**, and reports** `~30–33 TPS` **for Gemma/Qwen 4B variants without OOM via dynamic KV-cache management. No reproducible repo or benchmark artifacts were provided in the post yet; commenters pointed to the apparent project links ([GitHub](https://github.com/cluaiz/cluaiz), [site](https://cluaiz.com/)) and questioned vague claims like** ***“direct-to-silicon”*** **access, noting this may simply mean ahead-of-time native compilation rather than any unusual GPU/driver-level mechanism. The attached Reddit video could not be independently accessed due to Reddit** `HTTP 403` **restrictions.** Top comments were strongly skeptical, characterizing the writeup and repo language as pseudo-technical/AI-generated and arguing the stated achievements amount to basic native compilation plus a single-machine demo. Commenters also challenged the project’s licensing/copyright wording under Apache 2.0 and asked for concrete implementation details behind the claimed low-level hardware access.\n\n  + Commenters challenged the technical claims in the linked repo ([github.com/cluaiz/cluaiz](https://github.com/cluaiz/cluaiz), [cluaiz.com](https://cluaiz.com/)), arguing that descriptions like **“direct silicon access”**, “bare-metal engine,” and “copyrighted Apache licensed software” appear to be marketing or LLM-generated pseudo-technical language rather than concrete implementation details. One commenter asked whether “direct silicon access” merely means **ahead-of-time native compilation in Rust**, rather than any real low-level GPU programming beyond normal CUDA/driver APIs.\n  + Several commenters argued that the claimed outcome should be compared against existing tooling, especially **llama.cpp**, which already supports low-memory inference and quantized models on consumer GPUs. The critique was that OOM issues on a `4GB` RTX 3050 are often solvable through proper llama.cpp configuration rather than writing a new engine, so the claimed `66.8 TPS` with a `4B` BitNet 1.58b model needs reproducible benchmarks and configuration details to be meaningful.\n\n### **2. Qwen 3.5/3.6 Local Model Releases and Coding Tests**\n\n* **[Qwen3.5 35B A3B uncensored heretic Native MTP Preserved is Out Now With the Full 785 MTPs Preserved and Retained, Available in Safetensors, GGUFs. NVFP4, NVFP4 GGUFs and GPTQ-Int4 Formats](https://www.reddit.com/r/LocalLLaMA/comments/1tnzalm/qwen35_35b_a3b_uncensored_heretic_native_mtp/)** (Activity: 602): **llmfan46 released** `Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved`**, a decensored derivative of** `Qwen/Qwen3.5-35B-A3B` **made with Heretic v1.3.0 / Magnitude-Preserving Orthogonal Ablation-style edits targeting** `attn.o_proj`**,** `attn.out_proj`**, and** `mlp.down_proj`**, while preserving all** `785` **native MTP tensors. The model card reports refusals reduced from** `92/100` **to** `14/100`**, KL divergence** `0.0487` **vs base, and MMLU dropping only from** `84.12%` **to** `83.72%` **over** `7,021` **questions; releases include [Safetensors](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved), [GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GGUF), [NVFP4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4), [NVFP4 GGUF](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-NVFP4-GGUF), and [GPTQ-Int4](https://huggingface.co/llmfan46/Qwen3.5-35B-A3B-uncensored-heretic-v2-Native-MTP-Preserved-GPTQ-Int4) variants. The author argues Qwen3.5 and Qwen3.6 both use the** `qwen35` **architecture but are tuned for different regimes—Qwen3.5 for general assistance, Qwen3.6 for agentic/coding—and notes abliteration KL/quality behavior differs substantially between the families.** Commenters appreciated the unusual availability of an **NVFP4 GGUF** build, with one noting they could not find comparable releases even from Unsloth. Another tester agreed with the author’s positioning, describing Qwen3.6 as closer to *“3.5 coder+”* rather than a simple across-the-board successor to Qwen3.5.\n\n  + One commenter highlighted the practical value of the **NVFP4 GGUF** build, noting that this format is hard to find elsewhere: *“I seriously can’t find anyone else doing that, not even Unsloth.”* This is technically relevant because NVFP4 GGUF availability can matter for users targeting newer NVIDIA-oriented low-precision inference workflows while still using GGUF-based runtimes.\n  + A tester compared **Qwen3.5** and **Qwen3.6**, arguing that 3.6 feels more like *“3.5 coder+”* than a straightforward general upgrade. They suggested the short time between releases makes a broad capability leap unlikely, implying 3.6 may be more specialized toward coding rather than a simple successor to 3.5.\n* **[Okay 27B made me a believer](https://www.reddit.com/r/LocalLLaMA/comments/1to73op/okay_27b_made_me_a_believer/)** (Activity: 541): **OP reports that a** `27B` **Qwen-family model used via Opencode generated a near-complete HTML5 Breakout-style game in one shot from three reference files describing console APIs, gamepad controls, and a TypeScript shader. The output was immediately playable, with working controls, sound, metadata, save/stat/heartbeat API integration, and only required one follow-up for customization plus one glitch fix; a commenter recommends enabling MTP/speculative decoding with** `2–3` **draft tokens for speed. Another heavy user says the model performs best below** `64K` **context, degrades noticeably past** `64K`**, and “really drops off” after** `128K`**, recommending periodic summarization-to-file and session resets for long agentic coding tasks.** Commenters characterize the dense `27B` as unusually strong for local coding—*near-Sonnet class* for web-app one-shots—while one user found `35B A3B` less capable despite its size/routing advantages. The main caution is that long-context agentic runs can induce loops or “stupidity,” so users should manage context aggressively.\n\n  + A commenter recommended enabling **MTP/speculative decoding** for better throughput, suggesting an MTP value of `2` or `3` as a practical speed/quality tradeoff. This is a deployment-level optimization rather than a model-quality claim, useful for users running the 27B model locally.\n  + One user reported that the 27B model’s effective reasoning quality drops noticeably with long contexts: **best below** `64K` **tokens**, degraded past `64K`, and *“really drops off after* `128K`*.”* Their workaround for long-horizon agentic tasks is to periodically summarize state into a file, restart the harness/session, and reload the summary to recover model quality and avoid loops.\n  + A benchmark operator said **Qwen 27B** was such an outlier that they rechecked their methodology, placing it *roughly on par with GPT-5.2 or Sonnet 4.5* in their rankings while noting it struggles at larger context sizes, likely due to parameter-count limits. They linked their data at [gertlabs.com/rankings](https://gertlabs.com/rankings).\n\n[Read more](https://www.latent.space/p/ainews-cognition-raises-1b-in-26b)",
+      "tags": [
+        "Cognition",
+        "融资",
+        "AI代理"
+      ],
+      "score": 85,
+      "summary": "Cognition以260亿美元估值完成10亿美元D轮融资，AI代理实验室领先。",
+      "fetched_at": "2026-05-28T15:59:24.641676+08:00"
+    },
+    {
+      "title": "对话云鲸创始人张峻彬：2 年之后，扫地机器人就有「手」干更多活了",
+      "link": "https://www.ifanr.com/1667261?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-05-28T15:14:14+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-T.jpg)\n\n在硬件行业，规模很容易被当作一种衡量成功的标准，但它有时也是一种幻觉。\n\n规模是看起来像更大的销量、更高的市场份额、更快的发布节奏，也像一场所有人都必须参加的军备竞赛：更多 SKU、更宽价格带、更密集的营销投放，以及更激烈的渠道争夺。尤其是在清洁电器这个行业，过去几年，扫地机器人、洗地机、吸尘器、除螨仪不断交叉生长，国补、价格战、出海、AI 和具身智能又轮番成为关键词。\n\n另外一家总部位于苏州的清洁电器品牌制造了巨大的声量，深圳本地硬件品牌大疆和影石之间的竞争也有尖锐的摩擦啸叫，相较之下，云鲸，以及云鲸创始人张峻彬在行业的喧嚣期显得相当谨慎和沉默。\n\n十年前，「产品经理」张峻彬需要解决的问题是「如何做出一台好用的扫地机器人」，但现在，造产品的快感不再单纯，他的职责已经从「造一台机器」，变成了「让一家公司成为一台更高效的机器」。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-1-1.jpg)\n\n### 规模很重要，但不能强求\n\n过去两年，国补刺激带来了阶段性的高基数；另一方面，线上红利不再像早期那样明显，线下渠道开始重新回到家电行业的主航道。张峻彬提到，今年1-4月 线上虽然有所下降，但线下增长维稳，云鲸线下增长了 150% 以上。在他看来，随着国补退却，线下业态正在回归，清洁行业的大盘仍然会继续增长：\n\n> 随着国补退却以后，整个线下业态是在逐步回升的，回升速度比想象快。云鲸线下增长了 150% 以上。所以，整个线下业态回归到家电逻辑。\n\n早期的扫地机器人，更像互联网消费电子产品，线上种草、线上转化、线上爆发，早期的云鲸 J1 就是这样获得爆发的。但当品类逐渐进入更广泛的家庭用户，尤其是进入下沉市场和传统家电消费场景，它也会重新回到家电行业的基本面：渠道、服务、口碑、价格体系、终端体验，以及长期复购。\n\n但这并不意味着企业应该立刻把油门踩到底。\n\n张峻彬对规模的态度很明确，规模不是不要，而是要等组织效率匹配之后再要：\n\n> 在这个阶段，你的精力可能要聚焦在组织效率提升的事情上。你会发现当效率不高的时候，要砸大钱就得花费精力去盯着，这个精力就特别不划算。\n\n所以他给出的阶段性选择是：\n\n> 我现在阶段性很简单，就是加速组织体系的效率化改革，在这个过程中肯定是以利润优先，当到达一个阶段以后，我就会以规模优先，是一种战略的阶段性的选择的不同。\n\n这背后其实是非常朴素的商业规律：如果组织本身还在漏水，越大的规模，可能只是越大的浪费。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-3.jpg)\n\n张峻彬在采访里举了一个具体例子：以前云鲸从前端需求到后端生产，沟通时间很长，经常出现生产完之后，前端不要了的情况。后来补齐这个前后端配合的漏洞后，库存周转率得到明显提升。\n\n消费者并不关心公司经营和治理，只在乎产品本身，但 CEO 如果沉迷产品，对供应链，库存周转，研发效率不投入足够精力，那并不算是合格的 CEO。\n\n在宣传中，这样枯燥的库存周转效率提升几乎没有意义，但是相比于 AI 概念、具身智能概念，这更加接近一家公司真正的经营内核。\n\n过去很多消费硬件公司在扩张时都会遇到类似的问题：产品能打，组织跟不上；渠道铺开了，价格体系乱了；SKU 多了，资源被摊薄；营销声量上去了，但用户心智没有真正建立起来。\n\n张峻彬显然也意识到了这一点。\n\n他提到，2025 年云鲸其实做了更多 SKU，但多 SKU 并没有带来和预期成正比的收益，所以今年反而调整策略：\n\n> 我们做了很多 SKU，围绕扫地机和洗地机，但是会发现多 SKU 并没有带来预期成正比的收益。所以我们今年就调整了策略，聚焦研发，打磨最好的产品。\n\n规模不是目的地，它更像一面放大镜。组织健康时，它放大优势；组织粗糙时，它也会放大漏洞。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-4.jpg)\n\n对于品类扩张，他也没有把资金视为核心瓶颈，而是把问题指向「管理者的带宽」：\n\n> 首先资金肯定不是一个问题。但是你的精力不足以覆盖这件事情的时候，可能就又会跑偏。可能是组织选错了人，还不如别那么快开始。\n\n创业公司容易相信单点突破，相信一款爆品可以改写命运；但到了新的阶段，公司更需要系统能力。这就是很多企业家说的，创始人的上限就是公司的上限。\n\n当产品经理张峻彬足够优秀的时候，就有云鲸的梦幻开局：大学毕业就创业，花了 3 年打磨第一款产品 J1，预期只卖 1 万台，结果卖了几十万台。\n\n但当企业经营者张峻彬自己的管理者带宽没有升级的时候，就需要花费代价来学习规模很重要，但规模不能强求。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-6.jpg)\n\n### 张峻彬开始找属于自己的那枚「硬币」\n\n云鲸的变化，首先发生在张峻彬自己身上。\n\n过去外界对他的典型印象，是在于产品打磨能力。这个标签很好理解：云鲸早期的崛起，来自对用户痛点的敏感捕捉，以及对应的产品方案。从自动洗拖布到基站维护，云鲸一直试图把用户不愿意做但又绕不开的家务细节交给机器。\n\n不过新的阶段，张峻彬开始接管一个更复杂的系统。\n\n他在采访中直接说，自己过去一直专注产品和研发，对营销看得很少，直到去年 9、10 月份开始接全球营销，才发现过去对商业增长的理解需要更新：\n\n> 我之前一直以为产品和营销是加法逻辑，产品 + 营销，就是产品做得特别好，营销稍微少看一点，也还不错。但后面发现产品和营销是乘法逻辑，产品 X 营销，这意味着产品和营销都必须做得足够好，才能真正把公司带到一个新的高度。\n\n很多产品型创始人都会经历类似转变：早期相信好产品会自己说话，后来发现，在一个信息过载、渠道碎片化、竞争高度同质化的市场里，好产品也需要被准确表达、被有效触达。\n\n张峻彬用了一个比喻：找到云鲸自己的「硬币」。\n\n在接管营销之后，他与许多行业人士沟通，有一个营销例子让他记忆深刻：卡萨帝当年在洗衣机上立一个硬币而不倒，来展示直驱电机工作时的平稳和安静。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-23.jpg)\n\n▲ 10 多年前，卡萨帝洗衣机做的立硬币营销案例\n\n用户也许并不懂底层技术，但看到洗衣机上立着的硬币，就知道这台洗衣机震动极小，颠覆认知地小。\n\n在汽车领域，也有在汽车上摆香槟塔连续过减速带，通过香槟杯不倒，香槟酒不洒来表现底盘素质的优秀。\n\n张峻彬说：\n\n> 这段时间我带领大家梳理云鲸的产品真正的竞争力是什么，以及找到那个硬币的传播方式，在这个事情上我做得相对多一些。\n\n在他看来，云鲸并不缺产品创新，但相对内敛。很多功能是「人有我优」，但如果讲不清楚，技术优势就很容易被淹没在参数和卖点里。尤其在清洁电器行业，用户购买决策又非常现实和具象：扫得干不干净、拖得干不干净、会不会缠毛、需不需要手动清理、售后麻不麻烦。\n\n技术本身并不直接构成心智，能被用户感知的技术才构成心智。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-7.jpg)\n\n▲ 云鲸扫地机器人的视觉能力可以帮助识别物体规划路线\n\n张峻彬接手营销，并不意味着云鲸从产品与技术导向转向营销导向，只是创始人意识到，产品力必须经过商业系统的翻译，才会变成真实的市场结果。\n\n这件事此前不是他擅长的：\n\n> 这些事确实在我能力圈之外，但不代表我不能快速迭代和学习，这是两码事。我以前看营销和销售确实少，去年9、10 月份接了之后，其实是在疯狂地学。10 月份基本上每天干到凌晨三四点，高强度学习、高强度接触业务。\n\n「创始人自我更新」是一种新的叙事方式，一个创始人承认自己原来的能力结构不够用了，于是重新进入一线，重新学习一套新系统，左右脑互博，文理思维碰撞是常见的现象。\n\n在张峻彬看来，营销和技术的差异很明显：\n\n> 做技术，很多地方是数理化、理工科那套逻辑，有清晰的对错边界。但营销里，第一性原理的东西也很多，不可量化的地方更多。\n\n但他也可以把营销拆成了自己熟悉的逻辑：\n\n> 搭建清晰的财务系统去监控和调整，是一个数学优化的逻辑，背后是对业务的深刻理解……公司现在产品特别多，不同产品对应的人群卡位、生命周期、资源配置和组织能力都不一样，这本质上就是个数学优化问题。\n\n这仍然是工程师和产品经理的思考方式：面对营销这样看似开放、感性、不确定的系统，他试图先找到里面能被结构化、数据化、模型化的部分。\n\n这也是张峻彬个人成长路径的一部分：\n\n> 我觉得肯定是我在经历一个成长，从最早是一个工程师，到一个产品经理，再到一个组织的管理者，到跨领域的组织的管理者，到逐步的思考战略。\n\n他说，云鲸早期三到四年打磨第一款产品时，他更多扮演的是产品经理和系统工程师角色，并不认为那时自己已经是一个成熟的管理者，团队从 200 人扩展到 1000 人的时候，他的管理半径没有跟上。\n\n现在云鲸是近 2000 人规模了。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-13.jpg)\n\n▲ 学生时期的张峻彬就是机器人爱好者\n\n### 很少谈具身智能，但不代表投入很少\n\n在过去一两年，AI 和具身智能几乎成为一级市场最热的方向，许多还没有被市场验证的项目，也能拿到很高估值。对于扫地机器人公司来说，它们天然可以把自己放进家庭机器人、空间智能、具身智能的叙事里。\n\n不过把营销纳入自己管理范围的张峻彬并没有急着把云鲸包装成一家「具身智能公司」。\n\n当被问到为什么没有明确说自己是一家具身智能公司时，张峻彬说：\n\n> 没有对外说，不代表没有在做。但是云鲸一直以来都比较低调，我们希望把产品的很多东西做好，我们再去做这件事情。\n\n他进一步解释说：\n\n> 挂上了具身这个头衔之后，是不是对用户就更有价值？我现在判断好像也不一定会。但不代表我们没有在做具身的产品，这是两码事。一个是宣传端，一个是产品端。产品端的东西我们是非常激进地在做。\n\n这是云鲸对具身智能的态度：宣传端克制，产品端激进。\n\n克制的原因也很现实。对一家已经在用户心中建立「清洁」认知的公司来说，过早把自己推向一个更宏大的 AI 叙事，未必一定是好事。张峻彬担心的是，用户会觉得云鲸不聚焦：\n\n> 我们确实没有说云鲸是一家具身智能公司。因为我担心给用户产生一种想法，就是云鲸是不是不聚焦了？我们还是希望把产品做好。\n\n但宣传端克制不等于技术和产品端保守。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-12.jpg)\n\n▲学生时期的张峻彬\n\n事实上，云鲸已经设立了具身事业部。目前公司有三个事业部：手持清洁、扫地机和具身事业部，具身智能事业部的产品量产时间暂时保密，但「肯定不会那么远」，并且「肯定是有整机形态出来的」。\n\n更具体的信息，来自空间清洁方向。\n\n在回应何时「从平面清洁走向空间清洁」的问题时，张峻彬透露：\n\n> 我们一直有具身的团队在做空间收纳、空间清洁的工作。某种意义上我们对于特定的、立体表面的清洁做得还是比较好的。比如说清洁马桶、立面瓷砖等等。对于很大种类物体的抓取和收纳，现在做得还是很不错的。\n\n这是之前他接受爱范儿专访提到的产品愿景，云鲸的产品未来一定会具备空间清洁能力，但是空间清洁能力对于整体产品技术的要求是量级程度的提升，至少目前来看，他们开始攻克一些具体的场景和任务了。\n\n张峻彬也直接提到了机械臂产品的时间判断：\n\n> 我觉得在两年后可能有一个带机械臂的产品，真正能解决扫地机解决不了的很多事情的产品形态进入家庭。\n\n从去年开始，带机械臂的扫地机器人就出现在了一些行业展会上，云鲸的认知是，给扫地机器人装上机械臂并不难，难的是这个机械臂能够做什么？\n\n当然，张峻彬认为在扫地机器人基础上做形态创新是合理的乃至必要的。\n\n真正的家庭机器人，不太可能一开始就以科幻电影里的仿人机器人形态出现。它更可能长在一个已经成熟的家电品类上，先解决一个明确、高频、有支付意愿的任务，再逐步增加能力。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/YJ-5.jpg)\n\n张峻彬自己也提到，任何一个具身产品要真正突破大规模生产，都需要在一个成熟产品形态上做加法。就像 iPhone 首先仍然是一台手机，用户为它买单的基础功能依旧成立；具身产品也需要找到类似扫地机这样的基础品类，再在上面增加机械臂、视觉、交互和空间操作能力。他说：\n\n> 任何一个具身产品要真正的突破大规模生产，一定是他要赋予一个像手机一样的行业，或者是像扫地机一样的东西去做加法，这个过程中才有机会做大规模的量的突破。\n\n相比很多从零开始定义家庭机器人的创业公司，扫地机器人公司已经拥有几个关键基础：它们熟悉家庭空间，拥有真实用户数据，理解清洁任务，也已经建立了供应链、服务和渠道体系。更重要的是，扫地机器人本身就是目前最接近普通家庭的机器人产品。\n\n从平面清洁到空间清洁，从地面移动到物体操作，从路径规划到任务理解，扫地机再往前一步，是迥异于一些人形机器人的路线。即便踏出这一步也并不简单，张峻彬也提到，这里面牵涉大量算法、产品定义和机电系统创新。机械臂不是简单装上去就能解决问题，家庭环境比工厂复杂得多：物体种类多、摆放不规则、用户容错率低、成本敏感，安全性要求也更高。\n\n但他的判断是，这件事「越来越近了」。云鲸内部做具身智能的逻辑是，先去做技术储备和知识储备，摸索技术的天花板，然后再做产品力。\n\n现在云鲸到了开始做产品定义的阶段了。\n\n产品可以是一种「时间状态」，在它之前是技术，之后是营销，现在的张峻彬不再只关心如何做出好产品，也开始关心好产品如何被用户理解；不再只关心规模增长，也开始关心规模增长之前组织是否健康；不再只把自己放在产品经理的位置上，也开始进入营销、战略、价值观和全球经营这些更复杂的系统。\n\n张峻彬在谈 IPO 时有一句话，是对这种状态的另一重理解：\n\n> 我个人觉得 IPO 不是终点，只是一个开始，我希望在开始的那一刻，它会有特别好的，我们内部叫二次创业，就是希望在那一刻是一个二次创业的状态，最好的组织，最好的人才，最好的业务。\n\n**[刘学文](https://www.ifanr.com/author/owen)**\n\n稳中向好。\n\n[邮箱](mailto:owenliu@ifanr.com)\n[新浪微博](http://weibo.com/u/1731822990)\n[1](https://www.ifanr.com/5)\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "云鲸",
+        "扫地机器人",
+        "创始人访谈"
+      ],
+      "score": 70,
+      "summary": "云鲸创始人谈组织效率优先于规模扩张，聚焦产品打磨。",
+      "fetched_at": "2026-05-28T15:59:24.641730+08:00"
+    },
+    {
+      "title": "极狐问道 V9 发布，卓驭从 SUV、轿车到 MPV 完成全品类舱驾一体量产验证",
+      "link": "https://www.ifanr.com/1667242?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-05-28T14:18:57+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/wp-content/uploads/2026/05/ZY-TT.jpg)\n\n过去几年，智能汽车行业习惯用「功能」讲故事，因为功能对应场景和体验，场景则更容易被人们所理解和记住。\n\n城市 NOA、自动泊车、大模型座舱、哨兵模式，每一个新功能都像一块被放上展台的积木。但当这些积木越来越多，积木下面那块底板，或者说，技术底座才显得更加重要。\n\n这块底板，就是电子电气架构。\n\n5 月 27 日，北汽极狐问道 V9 上市，作为极狐汽车的第一辆 MPV，它自然是想和市面上主流的 MPV 一较高下，所以它也有大空间、后轮辅助转向、磁流变悬架、第三排体验这些产品层面的看点，19.48 万元的起售价也具有不错的竞争力。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/ZY-2.jpg)\n\n除了这些防守项特色项之外，它也有一些激进的地方，比如它可以算作是卓驭舱驾一体方案的一次新场景验证：从 SUV 到轿车，再到 MPV，舱驾一体开始从技术概念走向跨品类复制。\n\n此前，卓驭与北汽极狐已经在阿尔法 T5 和阿尔法 S5 上完成了两次量产落地。2025 年 10 月，双方在阿尔法 T5 上实现 8775 舱驾一体方案量产；2026 年 3 月，这套方案又落到阿尔法 S5；如今问道 V9 上市，舱驾一体第一次进入双方合作下的 MPV 场景。\n\n单点首发可以制造声量，连续量产才更接近工程能力，对卓驭来说，问道 V9 是一次平台化能力的展示，在同一条技术路线，能不能跨越不同车身形式、不同轴距、不同用户需求，保持稳定适配和持续迭代。\n\n传统智能汽车大多采用座舱域和智驾域分立架构。\n\n座舱负责屏幕、语音、娱乐、交互；智驾负责感知、决策、规划、控制。两套系统各自运行，中间通过网关和线束沟通。早期功能不复杂时，这种方式足够清晰，也方便供应链分工。但当智能汽车越来越像一个移动计算平台，分立架构的局限就开始浮出水面。\n\n比方说，典型的泊车场景。\n\n用户坐进车里，说一句「开始泊车」。在传统架构下，语音指令先由座舱系统识别，再跨域传给辅助驾驶系统，辅助驾驶系统再调取感知信息、规划路径、控制车辆动作。这个过程合情合理，因为底层电子电气架构就是这样的，可一旦链路变长，用户感受到的就是半秒到一秒的迟疑。\n\n这半秒在在用户眼里是「这车怎么慢半拍」，工程师眼里其实是通信延迟。卓驭做舱驾一体正是在减少这种系统之间的「隔空喊话」。把座舱域和辅助驾驶域的运算融合到一颗芯片上，让数据直连、算力共享、任务调度集中完成。\n\n一个不太恰当的比喻是，座舱和智驾不再像两个部门靠邮件沟通，更像在同一张桌子上协作。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/ZY-3-1.jpg)\n\n具体来讲，问道 V9 搭载的高通骁龙 8775 舱驾一体方案，将座舱与辅助驾驶整合到单芯片架构中。驻车时，更多算力可以调给座舱，用于语音、多屏、影像和泊车交互；行车时，算力优先保障辅助驾驶。\n\n这套方案通过虚拟化与隔离技术，让智能座舱和辅助驾驶运行在两套独立操作系统中，辅助驾驶系统处于安全隔离环境，不被座舱 UI 渲染等任务干扰。同时，高效液冷设计保证芯片在高负载状态下依然稳定可控。\n\n因为汽车的电子电气架构一直从分散式往域集中式再到中央计算式的方向演进，所以舱驾一体已经是一种行业共识，不过共识落地比共识建立往往更难更久，比如在芯片端，其实只有高通一家在主推舱驾一体，智驾芯片除了英伟达之外，许多国产品牌都开始做自研了，但座舱芯片主流依旧选择高通。\n\n所以汽车行业里有很多技术听起来宏大且美好，落地时却会被工程细节慢慢磨平。芯片算力是否够用，系统隔离是否安全，热管理能不能扛住长期高负载，不同车型之间能不能快速适配，供应链、主机厂、软件团队之间能不能配合，这些问题可以磨灭很多技术热情。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/ZY-1-1.jpg)\n\n卓驭这一次的特别之处在于，它用三款量产车完成了一条连续路线。\n\n阿尔法 T5 是 SUV，阿尔法 S5 是轿车，问道 V9 是 MPV。三个品类的车身结构、用户场景、动态特性都不一样。SUV 更看重综合通过性与家庭使用，轿车更敏感于操控和效率，MPV 则把大车驾驶、乘坐舒适、多人出行和泊车便利摆在更前面。能在一款车上跑通，说明方案可行；能在多款车、多品类上连续落地，才说明它接近可复制。\n\nMPV 用户对智能化的要求，和轿车、SUV 有一些微妙差别。MPV 用户的第一反应往往更朴素：这么大的车，好不好开？家里人坐着晕不晕？自动泊车靠不靠谱？\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/ZY-4-1.jpg)\n\n所以 MPV 也可以说是舱驾一体的一块好试金石，因为它不能只让驾驶员觉得「炫」，还要让全车人觉得「稳」。它需要座舱响应快，也需要智驾动作平顺；需要泊车好用，也需要底盘提前读懂路面；需要应对复杂城市路况，也不能用过于激进的动作打扰后排乘员。\n\n传统感知系统更多被理解为「看车、看人、看障碍物」。问道 V9 所搭载的卓驭惯导双目技术，还可以感知前方 25 米路面起伏，并将路况信息实时传递给底盘。配合智能预瞄磁流变悬架，车辆可以提前调整悬架软硬，让底盘从被动承压转向主动适配。\n\n无保护左转、环岛、窄路、鬼探头、行人横穿、加塞，这些都是城市辅助驾驶的高频难题。对于一辆 MPV 来说，系统需要判断准确，也要动作自然。急刹、急打、犹豫、顿挫，都会被后排乘客放大感知。卓驭高悟性端到端模型通过多模态信息融合、强化学习和全链路神经网络一体化，让系统具备更强的防御性驾驶能力。它追求的不是机械完成动作，而是更接近人类老司机的节奏：提前观察，留出余量，找准时机，平稳通过。\n\n这些都是舱驾一体在 MPV 上的一些落地价值。理论上来说，座舱交互、感知系统、智驾模型、底盘控制之间的协同越紧密，车辆越容易形成一种完整的性格：大车不慌，乘坐不晃，复杂路况下也不显得手忙脚乱。\n\n手机行业证明了，决定长期体验的往往不是某一个功能长板，而是芯片、系统、生态和开发者环境。汽车行业也在走向类似路径。现在的汽车行业常说「软件定义汽车」，但软件要真正定义汽车，先要有适合软件生长的土壤。舱驾一体就是这样的土壤之一。\n\n**[刘学文](https://www.ifanr.com/author/owen)**\n\n稳中向好。\n\n[邮箱](mailto:owenliu@ifanr.com)\n[新浪微博](http://weibo.com/u/1731822990)\n[1](https://www.ifanr.com/5)\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "极狐",
+        "卓驭",
+        "舱驾一体"
+      ],
+      "score": 75,
+      "summary": "极狐MPV搭载卓驭舱驾一体方案，实现SUV/轿车/MPV全品类验证。",
+      "fetched_at": "2026-05-28T15:59:24.641778+08:00"
+    },
+    {
+      "title": "源：https://t.co/O7NnTsIIPF",
+      "link": "https://x.com/FinanceYF5/status/2059891321691918476",
+      "published": "2026-05-28T14:55:36+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/rileybrown/sta…](https://x.com/rileybrown/status/2059711832936378630)\n\n![Riley Brown](https://pbs.twimg.com/profile_images/1898571530956873728/JALEVTSb_normal.jpg)\n\nRiley Brown@rileybrown\n\nThis is a huge update...  \n  \nOn the recent update to codex, the apps you use in browser stay signed in...  \n  \nIf you watched the latest [@lennysan](https://x.com/lennysan)[@danshipper](https://x.com/danshipper) podcast you know how significant this is.   \n  \nIm serious, this could entirely replace web browsers for me.   \n  \nInstead of having scattered tabs on your computer, you now have them organized by task (thread).   \n  \nPrediction: Soon, OpenAI will release multiple browser tabs per session, and will learn what tabs you open for what task...\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059708484887670791/vid/avc1/3438x2136/Mj0plTsaZFafIDST.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/rileybrown/status/2059711832936378630/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/rileybrown/status/2059711832936378630)\n\n💬0🔄0❤️0👀446",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "浏览器"
+      ],
+      "score": 80,
+      "summary": "Codex更新支持浏览器应用保持登录，标签页按任务整理，或取代浏览器。",
+      "fetched_at": "2026-05-28T15:59:24.641824+08:00"
+    },
+    {
+      "title": "仍然有些限制🤭",
+      "link": "https://x.com/FinanceYF5/status/2059891309968761016",
+      "published": "2026-05-28T14:55:33+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "仍然有些限制🤭\n\n![Tweet Image](https://pbs.twimg.com/media/HJY0OzKagAA3T3s.jpg)\n\n💬1🔄0❤️0👀427📊1",
+      "tags": [
+        "限制",
+        "无实质"
+      ],
+      "score": 30,
+      "summary": "一条关于某些限制的简短推文，无详细信息。",
+      "fetched_at": "2026-05-28T15:59:24.641868+08:00"
+    },
+    {
+      "title": "🤯Codex 更新让浏览器应用保持登录，标签页按任务（对话线程）整理\n\n可能彻底取代浏览器。\n\n有人预测 OpenAI 很快会支持多标签，并能学习你的任务习惯。",
+      "link": "https://x.com/FinanceYF5/status/2059891295456579594",
+      "published": "2026-05-28T14:55:30+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "🤯Codex 更新让浏览器应用保持登录，标签页按任务（对话线程）整理  \n  \n可能彻底取代浏览器。  \n  \n有人预测 OpenAI 很快会支持多标签，并能学习你的任务习惯。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059891259901460480/vid/avc1/1158x720/3T_PUMmPlSrYDMk3.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2059891295456579594/video/1)\n\n💬2🔄0❤️1👀662📊2",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "浏览器"
+      ],
+      "score": 80,
+      "summary": "Codex更新使浏览器应用保持登录，标签页按任务整理，可能取代浏览器。",
+      "fetched_at": "2026-05-28T15:59:24.641913+08:00"
+    },
+    {
+      "title": "源：https://t.co/SBVIdHFUHG",
+      "link": "https://x.com/FinanceYF5/status/2059890114873155835",
+      "published": "2026-05-28T14:50:48+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/testingcatalog…](https://x.com/testingcatalog/status/2059645806685077618)\n\n![🚨 AI News | TestingCatalog](https://pbs.twimg.com/profile_images/1899962463115751424/i-6MBWau_normal.jpg)\n\n🚨 AI News | TestingCatalog@testingcatalog\n\nANTHROPIC 🔥: Voice mode on Claude mobile apps is about to get an upgrade with 18 new supported languages!   \n  \n> Claude will be able to change language on the fly   \n> All languages have 1-2 new voices   \n> Voice Mode UI will get a new look  \n> A new push-to-talk functionality will be added  \n> It is powered by Claude Haiku 4.5, but still TTS  \n  \nSoon? 👀\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059645211186233346/vid/avc1/3840x2156/kb0QBagP2z_v_Gkm.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/testingcatalog/status/2059645806685077618/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/testingcatalog/status/2059645806685077618)\n\n💬0🔄0❤️0👀415",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "语音模式"
+      ],
+      "score": 82,
+      "summary": "Claude移动语音模式将新增18种语言支持，切换语言、新声音、新UI。",
+      "fetched_at": "2026-05-28T15:59:24.641958+08:00"
+    },
+    {
+      "title": "阅读全部内容：https://t.co/n0VbskLHJm",
+      "link": "https://x.com/FinanceYF5/status/2059890103317856372",
+      "published": "2026-05-28T14:50:46+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "阅读全部内容：[testingcatalog.com/anthropic-plan…](https://www.testingcatalog.com/anthropic-plans-expanding-claude-voice-mode-to-more-languages/)\n\n💬1🔄0❤️0👀534📊1",
+      "tags": [
+        "Claude",
+        "语音",
+        "链接"
+      ],
+      "score": 20,
+      "summary": "链接至TestingCatalog上Claude语音模式升级文章。",
+      "fetched_at": "2026-05-28T15:59:24.642003+08:00"
+    },
+    {
+      "title": "ANTHROPIC 🔥：Claude 移动端的语音模式即将升级，新增支持 18 种语言！\n\n&gt; Claude 能随时无缝切换语言\n&gt; 每种语言都有 1–2 个新声音\n&gt; 语音模式的...",
+      "link": "https://x.com/FinanceYF5/status/2059890091666067510",
+      "published": "2026-05-28T14:50:43+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "ANTHROPIC 🔥：Claude 移动端的语音模式即将升级，新增支持 18 种语言！  \n  \n> Claude 能随时无缝切换语言  \n> 每种语言都有 1–2 个新声音  \n> 语音模式的界面也会焕然一新  \n> 新增“按住说话”功能  \n> 底层由 Claude Haiku 4.5 驱动，不过仍然是文本转语音  \n  \n是不是马上要来了？👀\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059890059835588608/vid/avc1/1282x720/NW0YHNNwfj1u5gDW.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2059890091666067510/video/1)\n\n💬5🔄0❤️2👀726📊4",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "语音模式"
+      ],
+      "score": 82,
+      "summary": "Claude移动语音升级：18种语言、无缝切换、新声音和新UI。",
+      "fetched_at": "2026-05-28T15:59:24.642047+08:00"
+    },
+    {
+      "title": "源：https://t.co/MX15vAsLXw",
+      "link": "https://x.com/FinanceYF5/status/2059889876406071536",
+      "published": "2026-05-28T14:49:52+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/sourceryy/stat…](http://x.com/sourceryy/status/2059736902127800734)\n\n![Tweet Image](https://pbs.twimg.com/media/HJYy7W3bYAAj1d9.png)\n\n![sourcery](https://pbs.twimg.com/profile_images/1983214024767553537/IenNgEX1_normal.jpg)\n\nsourcery@sourceryy\n\n.[@ashleevance](https://x.com/ashleevance) says [@elonmusk](https://x.com/elonmusk) \"has no time zone.\"  \n  \n\"We were at Neuralink filming something for a movie I'm making and were there until 1AM. Then he went straight from there back to xAI.\"  \n  \n\"Then I had a friend who met with him at 4AM.\"  \n  \n\"He lives life constantly like that.\"\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059713345054441472/vid/avc1/1920x1080/de-KID4BaVAyWt5Y.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/sourceryy/status/2059736902127800734/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/sourceryy/status/2059736902127800734)\n\n💬0🔄0❤️0👀595",
+      "tags": [
+        "Elon Musk",
+        "Neuralink",
+        "xAI"
+      ],
+      "score": 70,
+      "summary": "Ashlee Vance称Musk无时区概念，凌晨工作后直接去xAI。",
+      "fetched_at": "2026-05-28T15:59:24.642092+08:00"
+    },
+    {
+      "title": "Ashlee Vance 说，ElonMusk “根本没有时区这个概念”。\n\n“我们当时在 Neuralink 为我在拍的一部电影取景，一直待到凌晨 1 点。然后他直接从那里又去了 xAI。”\n\n“接...",
+      "link": "https://x.com/FinanceYF5/status/2059889862199943588",
+      "published": "2026-05-28T14:49:48+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Ashlee Vance 说，ElonMusk “根本没有时区这个概念”。  \n  \n“我们当时在 Neuralink 为我在拍的一部电影取景，一直待到凌晨 1 点。然后他直接从那里又去了 xAI。”  \n  \n“接着，我有个朋友在凌晨 4 点见到了他。”  \n  \n“他的生活一直就是这样，从不停歇。”\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059889843891781632/vid/avc1/1280x720/ivtdWh4sTpP3HLvl.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2059889862199943588/video/1)\n\n💬5🔄0❤️2👀982📊5",
+      "tags": [
+        "Elon Musk",
+        "Neuralink",
+        "xAI"
+      ],
+      "score": 70,
+      "summary": "Musk常工作到凌晨1点后直接去xAI，生活不停歇。",
+      "fetched_at": "2026-05-28T15:59:24.642136+08:00"
+    },
+    {
+      "title": "在法律领域，高准确率的模型让团队敢于信任AI。\n\n合规本质上是运营约束下的法律推理，核心任务相同：解读法规、套用规则、识别例外、标注模糊地带。\n\n全文来自 a16z 的 jamdac和 astrang...",
+      "link": "https://x.com/FinanceYF5/status/2059889426206269683",
+      "published": "2026-05-28T14:48:04+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "在法律领域，高准确率的模型让团队敢于信任AI。  \n  \n合规本质上是运营约束下的法律推理，核心任务相同：解读法规、套用规则、识别例外、标注模糊地带。  \n  \n全文来自 a16z 的 jamdac和 astrange：[a16z.news/p/everything-e…](https://a16z.news/p/everything-everywhere-is-compliance)\n\n💬0🔄0❤️0👀372",
+      "tags": [
+        "AI合规",
+        "a16z",
+        "法律AI"
+      ],
+      "score": 80,
+      "summary": "a16z文章：高准确率模型使团队信任AI合规，核心任务是法规解读。",
+      "fetched_at": "2026-05-28T15:59:24.642179+08:00"
+    },
+    {
+      "title": "https://t.co/lLJ5qRxdfI",
+      "link": "https://x.com/FinanceYF5/status/2059889414541898215",
+      "published": "2026-05-28T14:48:01+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "[x.com/FinanceYF5/sta…](https://x.com/FinanceYF5/status/2059549669068607975)\n\n![AI Will](https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg)\n\nAI Will@FinanceYF5\n\n1/ 🧭 合规：AI 最大的沉睡机会  \n  \n美国每年 400 亿美元的合规人力，仍然挡不住 TD Bank 漏检 92% 交易、被罚 30 亿美元。  \n  \n更多人不等于更好结果——这个巨型市场，AI 刚刚找到破门点。👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJT9gqjaYAAUpg7.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/FinanceYF5/status/2059549669068607975)\n\n💬1🔄0❤️0👀576📊1",
+      "tags": [
+        "AI合规",
+        "转载"
+      ],
+      "score": 30,
+      "summary": "转发自己关于AI合规机会的帖子，重复内容。",
+      "fetched_at": "2026-05-28T15:59:24.642222+08:00"
+    },
+    {
+      "title": "合规繁琐、官僚，且往往依赖纸质流程，因此长期以来一直依赖人工，人力投入巨大。\n\n这种摩擦在历史上让合规领域成了初创公司的坟场。\n\n但 AI 或许终于能从\"够好到可以试点\"发展到\"够好到可以信任\"。",
+      "link": "https://x.com/FinanceYF5/status/2059889402558718305",
+      "published": "2026-05-28T14:47:59+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "合规繁琐、官僚，且往往依赖纸质流程，因此长期以来一直依赖人工，人力投入巨大。  \n  \n这种摩擦在历史上让合规领域成了初创公司的坟场。  \n  \n但 AI 或许终于能从\"够好到可以试点\"发展到\"够好到可以信任\"。\n\n![Tweet Image](https://pbs.twimg.com/media/HJYyfqrb0AANOrh.jpg)\n\n💬1🔄0❤️0👀449📊1",
+      "tags": [
+        "AI合规",
+        "初创公司"
+      ],
+      "score": 75,
+      "summary": "合规领域长期依赖人工，AI从'够好试点'发展到'够好信任'。",
+      "fetched_at": "2026-05-28T15:59:24.642264+08:00"
+    },
+    {
+      "title": "以上就是全部\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/FbqeDLfLJu",
+      "link": "https://x.com/FinanceYF5/status/2059888344860180508",
+      "published": "2026-05-28T14:43:46+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "以上就是全部  \n  \n如果您喜欢这个主题：  \n  \n1.关注我（[@FinanceYF5](https://x.com/FinanceYF5)）  \n2. 点赞+转发下面第一条帖子  \n  \n[x.com/FinanceYF5/sta…](https://x.com/FinanceYF5/status/2059888134134129070)\n\n![AI Will](https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg)\n\nAI Will@FinanceYF5\n\n🤯 Y Combinator 的 CEO，回斯坦福上了一堂课。  \n  \n课程标题：一个创始人，如何变成 1000 倍工程师。  \n  \n他讲的不是预测。  \n是他过去六个月，一个人亲手做出来的事。  \n  \n为什么这堂课值得认真看👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJYxVzlaUAARm1V.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/FinanceYF5/status/2059888134134129070)\n\n💬0🔄0❤️0👀308",
+      "tags": [
+        "推广",
+        "关注"
+      ],
+      "score": 10,
+      "summary": "要求关注和转发的推广帖，无实质内容。",
+      "fetched_at": "2026-05-28T15:59:24.642322+08:00"
+    },
+    {
+      "title": "观看完整视频：\nhttps://t.co/3RPobgNjQq",
+      "link": "https://x.com/FinanceYF5/status/2059888241067880502",
+      "published": "2026-05-28T14:43:22+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "观看完整视频：  \n[youtube.com/watch?v=Lri2LN…](https://www.youtube.com/watch?v=Lri2LNYtERM&list=PLoROMvodv4rN447WKQ5oz_YdYbS74M5IA)\n\n💬1🔄0❤️0👀229📊1",
+      "tags": [
+        "YC",
+        "课程",
+        "链接"
+      ],
+      "score": 20,
+      "summary": "YC CEO斯坦福课程视频链接。",
+      "fetched_at": "2026-05-28T15:59:24.642367+08:00"
+    },
+    {
+      "title": "🤯 Y Combinator 的 CEO，回斯坦福上了一堂课。\n\n课程标题：一个创始人，如何变成 1000 倍工程师。\n\n他讲的不是预测。\n是他过去六个月，一个人亲手做出来的事。\n\n为什么这堂课值得...",
+      "link": "https://x.com/FinanceYF5/status/2059888134134129070",
+      "published": "2026-05-28T14:42:56+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "🤯 Y Combinator 的 CEO，回斯坦福上了一堂课。  \n  \n课程标题：一个创始人，如何变成 1000 倍工程师。  \n  \n他讲的不是预测。  \n是他过去六个月，一个人亲手做出来的事。  \n  \n为什么这堂课值得认真看👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJYxVzlaUAARm1V.jpg)\n\n💬1🔄1❤️4👀993📊2",
+      "tags": [
+        "YC",
+        "AI工程",
+        "效率"
+      ],
+      "score": 75,
+      "summary": "YC CEO斯坦福课程：创始人如何变成1000倍工程师，基于自身实践。",
+      "fetched_at": "2026-05-28T15:59:24.642410+08:00"
+    },
+    {
+      "title": "以上就是全部\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/zWUcj00pOc",
+      "link": "https://x.com/FinanceYF5/status/2059887105300652237",
+      "published": "2026-05-28T14:38:51+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "以上就是全部  \n  \n如果您喜欢这个主题：  \n  \n1.关注我（[@FinanceYF5](https://x.com/FinanceYF5)）  \n2. 点赞+转发下面第一条帖子  \n  \n[x.com/FinanceYF5/sta…](https://x.com/FinanceYF5/status/2059886472443142593)\n\n![AI Will](https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg)\n\nAI Will@FinanceYF5\n\n🚀 7月18-19，旧金山 Palace of Fine Arts  \n  \nOpenAI、Anthropic、Google DeepMind科学家同台。  \n刚融资$650M的AI labs联创田渊栋在台上。  \n5届峰会，79,000人社区，500+ VC、200+展商在场。  \n第二日世界杯决赛大屏现场直播⚽️ 🏆  \n  \nGenAI Summit SF 2026，一个Thread讲清楚👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJYv1B7bAAAWSBP.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/FinanceYF5/status/2059886472443142593)\n\n💬0🔄0❤️0👀32",
+      "tags": [
+        "推广",
+        "峰会"
+      ],
+      "score": 10,
+      "summary": "推广GenAI Summit的帖文，请求关注和转发。",
+      "fetched_at": "2026-05-28T15:59:24.642452+08:00"
+    },
+    {
+      "title": "🏢 如果你是AI公司：\n\n200+展位，Amazon、Tesla、Perplexity、LangChain、UNITREE都在展商名单里。\n\n官方数据显示：去年Gold赞助商pipeline达到目标...",
+      "link": "https://x.com/FinanceYF5/status/2059886564772336116",
+      "published": "2026-05-28T14:36:42+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "🏢 如果你是AI公司：  \n  \n200+展位，Amazon、Tesla、Perplexity、LangChain、UNITREE都在展商名单里。  \n  \n官方数据显示：去年Gold赞助商pipeline达到目标的4倍。  \n  \n观众票+展位，专属码 WILL 均享15%折扣👇  \nLum[luma.com/genaisummit26?…](http://luma.com/genaisummit26?coupon=WILL)4U  \nEventbrit[eventbrite.com/e/198554516303…](http://eventbrite.com/e/1985545163032/?discount=WILL)aE  \n  \n早鸟截止6月1日。\n\n![Tweet Image](https://pbs.twimg.com/media/HJYv6kRa8AA5nQG.png)\n\n💬1🔄0❤️0👀57📊1",
+      "tags": [
+        "推广",
+        "GenAI Summit"
+      ],
+      "score": 10,
+      "summary": "GenAI Summit展位推广，含折扣码。",
+      "fetched_at": "2026-05-28T15:59:24.642495+08:00"
+    },
+    {
+      "title": "🚀 7月18-19，旧金山 Palace of Fine Arts\n\nOpenAI、Anthropic、Google DeepMind科学家同台。\n刚融资$650M的AI labs联创田渊栋在台上。...",
+      "link": "https://x.com/FinanceYF5/status/2059886472443142593",
+      "published": "2026-05-28T14:36:20+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "🚀 7月18-19，旧金山 Palace of Fine Arts  \n  \nOpenAI、Anthropic、Google DeepMind科学家同台。  \n刚融资$650M的AI labs联创田渊栋在台上。  \n5届峰会，79,000人社区，500+ VC、200+展商在场。  \n第二日世界杯决赛大屏现场直播⚽️ 🏆  \n  \nGenAI Summit SF 2026，一个Thread讲清楚👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJYv1B7bAAAWSBP.jpg)\n\n💬1🔄0❤️0👀138📊1",
+      "tags": [
+        "推广",
+        "GenAI Summit"
+      ],
+      "score": 10,
+      "summary": "GenAI Summit SF 2026大会介绍，含演讲嘉宾。",
+      "fetched_at": "2026-05-28T15:59:24.642537+08:00"
+    },
+    {
+      "title": "直接看老马的中文推还有点不习惯，以为是戏仿账号。",
+      "link": "https://x.com/geekbb/status/2059885965964128725",
+      "published": "2026-05-28T14:34:19+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "直接看老马的中文推还有点不习惯，以为是戏仿账号。\n\n![Tweet Image](https://pbs.twimg.com/media/HJYvN_lbwAA213Z.jpg)\n\n💬4🔄0❤️2👀1053📊4",
+      "tags": [
+        "Elon Musk",
+        "中文推",
+        "吐槽"
+      ],
+      "score": 10,
+      "summary": "用户评论Elon Musk发中文推不习惯，疑似戏仿。",
+      "fetched_at": "2026-05-28T15:59:24.642579+08:00"
+    },
+    {
+      "title": "📢Qwen3.7-Max just hit #3 on ITbench-AA — a fresh benchmark testing how well models handle real-worl...",
+      "link": "https://x.com/Alibaba_Qwen/status/2059891171405787169",
+      "published": "2026-05-28T14:55:00+08:00",
+      "source": "Qwen(@Alibaba_Qwen)",
+      "content": "📢Qwen3.7-Max just hit #3 on ITbench-AA — a fresh benchmark testing how well models handle real-world enterprise IT tasks, agentic-style.  \n  \n🔧Agentic era, go with Qwen.🏃🏃\n\n![Artificial Analysis](https://pbs.twimg.com/profile_images/2042402069320290304/A8C1lP07_normal.jpg)\n\nArtificial Analysis@ArtificialAnlys\n\nArtificial Analysis and IBM Research are launching ITBench-AA, the first in a new series of benchmarks evaluating models on agentic enterprise IT tasks, starting with Site Reliability Engineering tasks where frontier models score below 50%  \n  \nITBench-AA’s SRE tasks benchmark model performance on Kubernetes incident response, where models must diagnose live systems by reading logs, tracing dependencies, and identifying root-cause entities across complex infrastructure. The underlying ITBench dataset has been developed by [@IBM](https://x.com/IBM)'s Software Innovation Lab, leveraging IBM’s deep expertise in enterprise IT operations  \n  \nArtificial Analysis has worked closely with IBM over the last 6 months to develop a implementation of the dataset for frontier AI evaluation, beginning with Site Reliability Engineering (SRE) and expanding to Financial Operations (FinOps) and Chief Information Security Officer (CISO) tasks over time  \n  \nITBench-AA SRE overview:  \n➤ 59 SRE tasks in total: 40 public tasks and 19 brand new, held-out tasks  \n➤ Each task provides a Kubernetes incident snapshot containing alerts, events, traces, metrics, logs, and application topology. The model must identify the minimal set of independent root-cause Kubernetes entities responsible for the incident  \n➤ Faults span typical SRE failure modes including infrastructure, service, application, and chaos-injected incidents, such as resource quota exhaustion, rollout failures, connection pool exhaustion, and network partitions  \n  \nMethodology details:  \n➤ Agentic harness: each task is solved by the model running in our open-source Stirrup reference harness, with shell access to a sandboxed file system containing the relevant logs and snapshots. 100-turn cap per task, 3 repeats per task  \n➤ Models submit a list of root-cause entities (Kubernetes Deployments, Services, Pods, etc.) they believe caused the incident. Each submission is compared against a ground-truth set of root causes provided by IBM Research  \n➤ Scoring uses average precision at full recall: if a model misses any of the ground-truth root causes, it scores 0.0 for that repeat. If it identifies all of them, it is awarded a score equal to its precision - the share of its submitted entities that are actual root causes, i.e. true positives / (true positives + false positives). The headline score is the average across 59 tasks × 3 repeats.  \n➤ The harness (Stirrup) is held constant across all evaluated models, allowing an apples-to-apples comparison between models.  \n  \nKey findings:  \n➤ Claude Opus 4.7 (Adaptive Reasoning, Max Effort) leads at 47%, followed by GPT-5.5 (xhigh) at 46% and Qwen3.7 Max at 42%  \n➤ All frontier models score below 50%, making ITBench-AA SRE one of the least saturated agentic benchmarks in our suite. For context, frontier models score considerably higher on Terminal-Bench  \n➤ Turn counts vary nearly 3x and longer trajectories do not translate to higher accuracy. GPT-5.5 (xhigh) averages 31 turns per task at 46%, while Gemini 3.1 Pro Preview averages 83 turns at 30%. Models that over-investigate tend to surface upstream fault-injection mechanisms or co-occurring symptoms as false positives  \n➤ GLM-5.1 (Reasoning) leads open weights models at 40%, effectively tied with Gemini 3.5 Flash (high). DeepSeek V4 Pro (Reasoning, Max Effort) follows at 38%, with Gemma 4 31B (Reasoning) at 37%, ahead of Gemini 3.1 Pro Preview at 30%\n\n![Tweet Image](https://pbs.twimg.com/media/HJWB_nJaIAA6MUJ.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/ArtificialAnlys/status/2059698327235805258)\n\n💬17🔄8❤️113👀6012📊22",
+      "tags": [
+        "Qwen",
+        "ITbench-AA",
+        "排名"
+      ],
+      "score": 88,
+      "summary": "Qwen3.7-Max在ITbench-AA企业IT任务基准测试中排名第三。",
+      "fetched_at": "2026-05-28T15:59:24.642620+08:00"
+    },
+    {
+      "title": "因为听大佬劝，没有第一时间升级 Google Antigravity 新版本，怕之前的配置都因升级丢失。\n\n过了两周了，来了新的升级推送，忍不住点了 update and restart。\n\n升级完一...",
+      "link": "https://x.com/XDash/status/2059876631330853149",
+      "published": "2026-05-28T13:57:14+08:00",
+      "source": "XDash(@XDash)",
+      "content": "因为听大佬劝，没有第一时间升级 Google Antigravity 新版本，怕之前的配置都因升级丢失。  \n  \n过了两周了，来了新的升级推送，忍不住点了 update and restart。  \n  \n升级完一看，WTF，界面变成 Codex 了？感觉我对 VSCode 这类 IDE 布局的最后一点残存回忆渠道被切断了。\n\n💬2🔄0❤️0👀396📊2",
+      "tags": [
+        "Google",
+        "Codex",
+        "吐槽"
+      ],
+      "score": 30,
+      "summary": "用户升级Google Antigravity后发现界面变成Codex，表示不满。",
+      "fetched_at": "2026-05-28T15:59:24.642662+08:00"
+    },
+    {
+      "title": "在飞机上尝试把最近认知的变化写出来，希望早十年能懂这些道理。\n\n北京飞上海太快了，纯手打字不如 AI 快，还被 obsidian 卡了半天，难受。\n\n所以来不及做更多打磨，也没写 hook 纯意识流随...",
+      "link": "https://x.com/oran_ge/status/2059896871569743881",
+      "published": "2026-05-28T15:17:39+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "在飞机上尝试把最近认知的变化写出来，希望早十年能懂这些道理。  \n  \n北京飞上海太快了，纯手打字不如 AI 快，还被 obsidian 卡了半天，难受。  \n  \n所以来不及做更多打磨，也没写 hook 纯意识流随便写。  \n  \n前面看着有点不够吸引人，但后面应该对得起大家的时间。\n\n![Orange AI](https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png)\n\nOrange AI@oran\\_ge\n\n[x.com/i/article/2059…](http://x.com/i/article/2059839164837982208)\n\n[🔗 View Quoted Tweet](https://x.com/oran_ge/status/2059839801335951673)\n\n💬1🔄0❤️2👀1059📊1",
+      "tags": [
+        "个人",
+        "杂感"
+      ],
+      "score": 10,
+      "summary": "用户在飞机上写认知变化，无实质AI内容。",
+      "fetched_at": "2026-05-28T15:59:24.642704+08:00"
+    },
+    {
+      "title": "黄仁勋说：生成内容很重要，但真正干活才是有价值的。而现在我们已经能非常出色地完成生产性工作了。这就是Agentic AI。\n\n我现在每天的工作状态就是这样。AI不再是帮我写东西的工具，它在帮我执行任务...",
+      "link": "https://x.com/FuSheng_0306/status/2059888355773743467",
+      "published": "2026-05-28T14:43:49+08:00",
+      "source": "傅盛(@FuSheng_0306)",
+      "content": "黄仁勋说：生成内容很重要，但真正干活才是有价值的。而现在我们已经能非常出色地完成生产性工作了。这就是Agentic AI。  \n  \n我现在每天的工作状态就是这样。AI不再是帮我写东西的工具，它在帮我执行任务。  \n  \n从“帮我写”到“替我干”，这是两个完全不同的时代。很多人还在第一个时代里，以为自己已经在用AI了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059888289168109568/vid/avc1/1934x1080/d3JpVASSJkFSHwGZ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/FuSheng_0306/status/2059888355773743467/video/1)\n\n💬3🔄0❤️5👀509📊4",
+      "tags": [
+        "黄仁勋",
+        "Agentic AI",
+        "观点"
+      ],
+      "score": 75,
+      "summary": "傅盛引用黄仁勋：生成内容不如执行任务重要，Agentic AI时代。",
+      "fetched_at": "2026-05-28T15:59:24.642746+08:00"
+    },
+    {
+      "title": "Cloudflare Adds Support for Claude Managed Agents",
+      "link": "https://www.infoq.com/news/2026/05/cloudflare-claude-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-05-28T14:23:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/05/cloudflare-claude-agents/en/headerimage/generatedHeaderImage-1779863264544.jpg)\n\nCloudflare recently added support for Claude Managed Agents, allowing developers to run and manage Claude agents within Cloudflare. Developers can connect agents to private systems, choose their runtime environment, and monitor agent activity using Cloudflare services.\n\n*By Renato Losio*",
+      "tags": [
+        "Cloudflare",
+        "Claude",
+        "代理"
+      ],
+      "score": 82,
+      "summary": "Cloudflare支持Claude Managed Agents，开发者可运行和管理Claude代理。",
+      "fetched_at": "2026-05-28T15:59:24.642788+08:00"
     }
   ]
 }
