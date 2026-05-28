@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-05-27"
+    "date": "2026-05-28"
   },
   "entries": [
     {
@@ -241,6 +241,475 @@
       "score": 70,
       "summary": "推文总结AI行业新阶段反思：模型+产品、自动化局限、耐心价值、成本考量。",
       "fetched_at": "2026-05-28T07:10:15.911333+08:00"
+    },
+    {
+      "title": "【第3706期】Node.js Stream 没有在做背压控制，正在悄悄吃掉内存",
+      "link": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279174&idx=1&sn=8b6d812bae24d88634f0fb0ec25c3422",
+      "published": "2026-05-28T09:00:00+08:00",
+      "source": "前端早读课",
+      "content": "Durgesh 2026-05-28 09:00 福建\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2f53eb4c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FyuwWKyW2JcxPvNu8B9fZicD56hHTuoyuviaicQmIbAuva3s2flKrFicLbmyBzDIUxPqt3b3As9ql291sbTULw6URUUZqgZrYsktPOnp5C1wXsQc%2F0%3Fwx_fmt%3Djpeg)\n\n用了流不等于安全。Node.js 的背压只是协作协议 —— 消费者可以喊停，但生产者不听也没人拦。\n\n前言\n\n用了流不等于安全。Node.js 的背压只是协作协议 —— 消费者可以喊停，但生产者不听也没人拦。运行时只会默默缓冲，直到进程崩溃。本文拆解从被忽视的返回值到 `.pipe()` 错误黑洞的每一个陷阱。\n\n今日前端早读课文章由 @@Durgesh Rajubhai Pawar 分享，@飘飘编译。\n\n译文从这开始～～\n\n一个寻常的周三下午。你正埋头审查一个 PR，Slack 突然弹出一条来自平台团队的消息：\"嘿，你们导出服务的 Pod 一直被 OOM 杀掉。内存会爬升到 3.8GB 左右，然后 Kubernetes 就把它重启了。现在一天要发生好几次，能看看吗？\"\n\n你打开代码。写得很干净。一个数据库游标通过管道接入一个 transform 流，将每一行格式化为 CSV，再通过管道输出到 HTTP 响应。教科书级别的流式处理。六个月前就通过了代码评审，有集成测试，在生产环境一直运行良好。\n\n你添加了 `process.memoryUsage()` 日志，观察了几个请求。堆内存没有骤增，而是缓慢攀升 —— 稳稳当当，像一个排水口只开了半缝的浴缸在慢慢注水。每个请求都多积攒一点，垃圾回收器永远差那么一口气追不上。在正常流量模式下，Pod 会在问题暴露之前自行回收。没人注意到。\n\n[【第3686期】从 Node.js 到 Bun：一次 5 倍吞吐量跃迁的全程实录](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278944&idx=1&sn=bd4a7e4187c77a8f821007ae28b8ec88&scene=21#wechat_redirect)\n\n但销售团队刚签下一家物流公司，对方每天早上 9:15 导出 200 万行数据。三个并发请求，每个都拉取足够大的数据集，让那条缓慢的爬升曲线变成一道陡坡。Pod 撞上内存上限，消失了。\n\n流从来没有在做背压控制。你的 transform 对每一行都调用了 `.write()`，完全无视那个请求生产者慢下来的 `false` 返回值。Node.js 忠实地执行了你的指令：盲目地缓冲每一个数据块，直到进程崩溃。\n\n这种故障模式在正常负载下几乎不可见。它能顺利通过代码评审，通过所有测试，安静地潜伏在生产环境中，直到某个数据集大到足以将它暴露。这甚至不是什么新型 bug。历史上著名的沃尔玛内存泄漏事件 ——Node.js 生产事故中最广为人知的案例之一 —— 让工程团队花了数周才定位，最终追溯到 Node.js 核心 C++ 代码中一处缺失的背压声明，导致磁盘读取速度超过网络写入速度时出现无声的缓冲区堆积。\n\n那是运行时本身的 bug。而你面对的情况更糟：这是正确行为。运行时在完美地执行你的代码所要求的事情。\n\n[【第3679期】Worker 线程拯救 Node.js 心跳：Inngest Connect 架构演进](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278851&idx=1&sn=345f03042da9e8e147067ba61f53d100&scene=21#wechat_redirect)\n\n#### 你以为 Stream 在做什么 vs. 它们实际在做什么\n\n大多数开发者脑中的心智模型是这样的：流 \"逐块\" 处理数据，所以你永远不会把整个文件加载到内存里。你把一个 readable 管道接到一个 writable，Node.js 处理流控，一切保持轻量。这是你 2019 年在某个教程里读到的，此后再没质疑过。\n\n这个心智模型在技术上没错，但极度不完整。而它告诉你的和实际发生的之间的那道裂缝，恰恰就是你的内存泄漏藏身之处。\n\n流不会保护你免于内存耗尽。它们给你提供自我保护的工具。这两者有天壤之别。Node.js 中的背压是一种协作协议。消费者可以发出 \"我扛不住了，慢点\" 的信号。但这个信号仅仅是一个建议。如果生产者无视它，没有任何东西会阻止它。Node.js 不会抛出错误，不会暂停你的代码，不会终止流。它只会继续接收数据，继续分配堆内存，继续运行 —— 直到 V8 引擎耗尽空间，进程崩溃。\n\n这让人意外。大家以为只要用了流，就是安全的。以为运行时在底层做了什么聪明的事情来防止内存失控增长。并没有。运行时在精确地执行你的指令：接收数据并缓冲。\n\n把它想象成一根带压力表的水管。压力表就在那里，就装在管上，告诉你压力在攀升。但如果没人去读压力表、去拧阀门，水压就会一直升高直到管道爆裂。流是管道，背压是压力表，而你的代码才是拧阀门的那只手。\n\n问题在于，绝大多数流式代码从来不碰阀门。开发者调用 `.write()`，看到数据被接受了，就继续处理下一个块。这个方法永远接受数据，永远不抛异常，永远不阻塞。它只是静悄悄地返回一个布尔值，告诉你该继续还是该等等。而几乎没人检查这个布尔值。\n\n教程不强调这一点。API 不强制你处理它。代码在开发环境中运行得完美无缺 —— 数据集小，消费者快。故障只在生产者持续快于消费者、缓冲区增长超出容器承受上限时才会显现。\n\n[【第3668期】从 Web Streams 到 Async Iterable：重新思考 JavaScript 流式 API](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278731&idx=1&sn=732699cc260b5c65c1a0f7f2a93080eb&scene=21#wechat_redirect)\n\n那么，压力表是什么？是一个几乎没人检查的布尔返回值。\n\n#### highWaterMark 的谎言\n\n大多数开发者在文档中看到 `highWaterMark` 时，会形成一个合理的假设：这是内存上限。当缓冲区达到这个数值时，Node.js 停止接受数据。也许会抛异常，也许会暂停。总之，运行时会保护你。\n\n以上全部不成立。\n\n`highWaterMark` 是一个建议性阈值。当内部缓冲区达到这个值时，`.write()` 返回 `false`。仅此而已。你刚写入的那个块把缓冲区推过了阈值，于是流告诉你：停下来，等它排空。没有异常，没有自动暂停，没有熔断器。如果你无视那个 `false` 继续调用 `.write()`，Node.js 就继续缓冲。你推入的每一个块都会被添加到一个没有上限的内部队列中，直到 V8 堆耗尽空间、进程死亡。\n\n下面是危险模式的样子。这种代码每天都在通过代码评审：\n\n```\n // 有问题：完全忽略背压  \n for await (const row of databaseCursor) {  \n   const csv = formatRowAsCSV(row);  \n   writable.write(csv); // 返回值？什么返回值？  \n }\n```\n\n看起来没毛病。简洁、可读，逐行处理。但 `.write()` 在前几百行之后就已经在返回 `false` 了，没人在听。内部缓冲区膨胀到数百兆字节，而循环还在不停地往里塞数据。\n\n修复方法只需要多四行：\n\n```\n import { once } from \"node:events\";  \n // 修复版：尊重背压  \n for await (const row of databaseCursor) {  \n   const csv = formatRowAsCSV(row);  \n   const ok = writable.write(csv);  \n   if (!ok) await once(writable, \"drain\");  \n }\n```\n\n检查返回值。如果是 `false`，就停下来等待 `drain` 事件 —— 它在缓冲区被刷空、writable 准备好接收更多数据时触发。然后继续。就这样，这就是全部模式。\n\nNode.js 还通过 `writable.writableNeedDrain` 以编程方式暴露了这个状态。如果你深陷回调链中，手边没有 `.write()` 的返回值，这个属性会告诉你流当前是否处于背压状态。它在 `.write()` 返回 `false` 时变为 `true`，在 `drain` 触发时翻转回来。同一个信号，不同的访问方式。\n\n检查与忽略那个布尔值之间的差距，就是一个稳定运行在 80MB 内存的服务与一个爬升到 4GB 后被编排器击杀的服务之间的差距。\n\n对于像这种 CSV 导出这样的密集写入循环 —— 每行一次 `.write()` 调用，成千上万个小块 ——`writable.cork()` 是一个互补的优化手段。cork 告诉 Node.js 将后续所有写入批量存放在内存中，暂不刷入底层资源。调用 `writable.uncork()` 时，所有数据通过一次系统调用一并刷出。这不改变背压行为 —— 你仍然要检查布尔值并 await drain—— 但它减少了上下文切换，在每秒写入大量小块的场景中可以显著提升吞吐量。循环前 cork，每批处理后 uncork：\n\n```\n import { once } from \"node:events\";  \n writable.cork();  \n for await (const row of databaseCursor) {  \n   const ok = writable.write(formatRowAsCSV(row));  \n   if (!ok) {  \n     writable.uncork(); // 刷出已有数据  \n     await once(writable, \"drain\");  \n     writable.cork();   // 重新开始批量缓冲  \n   }  \n }  \n writable.uncork(); // 刷出最后一批\n```\n\n#### Node.js 22 的变局\n\n情况最近变得更加危险了。在 Node.js 22 中，默认的 `highWaterMark` 从 16KB 提升到了 64KB（PR #52037，由 Node.js 核心协作者 Robert Nagy 提交）。从吞吐量的角度看，这个改动合情合理：更少的上下文切换，更少的系统调用，大负载下更好的性能。但这也意味着 Node.js 现在要缓冲 4 倍的数据之后，才会发出第一个背压信号。\n\n[【第3676期】Node.js 终于有了虚拟文件系统：node:vfs 来了](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278813&idx=1&sn=80c81e8f0c210a87af8d57d50eb75cea&scene=21#wechat_redirect)\n\n如果你运行在资源受限的容器中 ——256MB 或 512MB 的 Pod—— 这个 4 倍的放大系数举足轻重。在你的代码收到第一个 \"该减速了\" 的提示之前，你已经烧掉了更大一块内存天花板。而如果你的代码本来就在无视这个提示，那崩溃只会来得更快。\n\n如果你需要在容器化环境中恢复旧的行为，Node.js 提供了 `setDefaultHighWaterMark()` 来全局还原阈值：\n\n```\n import { setDefaultHighWaterMark } from \"node:stream\";  \n // 在资源受限的容器中恢复 Node 22 之前的默认值  \n setDefaultHighWaterMark(false, 16 * 1024); // 字节模式流设为 16KB\n```\n\n这是一剂猛药 —— 它会影响进程中的每一个流。如果需要精准控制，请直接在关键的流上单独设置 `highWaterMark`。\n\n#### objectMode 陷阱\n\n还有一个坑。当流运行在 `objectMode` 下时，`highWaterMark` 计数的不是字节，而是对象个数。默认值是 16，也就是说缓冲 16 个对象后背压信号才会触发。\n\n还记得销售团队那个导出任务的数据库游标吗？它很可能是以对象形式逐行产出数据的。如果每一行包含 50KB 的关联 JSON 数据，`highWaterMark` 为 16 就意味着每个流缓冲 800KB 的数据，而不是 16KB。当 transform 将这些行序列化后，字符串块打到 writable 端，内存占用进一步叠加。标签上写着 \"16\"，但你的堆上扛着的可能是几个 GB。\n\n#### 两面派的 Transform 流\n\n心智模型在 Transform 流面前进一步崩塌。一个 Transform 流有两面 ——readable 端和 writable 端 —— 它们拥有独立的 `highWaterMark` 设置。你完全可能遇到这样的情况：一个 Transform 在其 readable 端完美地遵守背压（等待下游 HTTP 响应排空），但在 writable 端却继续盲目地接收数据，因为它内部的对象队列还没触及上限。它就像一架手风琴，会伸展膨胀来吸收压力，掩盖问题，直到它自身的缓冲区爆炸。\n\n```\n // 有问题：'objectMode' 在两端都创建了巨大的 16 对象缓冲区  \n const csvTransform = new Transform({  \n   objectMode: true,  \n   transform(row, enc, cb) {  \n     this.push(formatToCSV(row));  \n     cb();  \n   }  \n });\n```\n\n修复方法：不让手风琴伸展。当从对象桥接到字符串时，为两端分别显式配置限制。这样一来，下游缓冲区一满，Transform 就会立刻向上游施加背压。\n\n```\n // 修复版：用显式的非对称限制收紧手风琴  \n const csvTransform = new Transform({  \n   writableObjectMode: true,  \n   writableHighWaterMark: 4, // 4 个未转换的行之后就暂停数据库  \n   readableObjectMode: false,  \n   readableHighWaterMark: 1024 * 4, // 下游严格限制 4KB 字符串缓冲  \n   transform(row, enc, cb) {  \n     this.push(formatToCSV(row));  \n     cb();  \n   }  \n });\n```\n\n#### 握手的另一半\n\n目前为止讨论的都是 writable 端的背压：`.write()` 返回 `false`，你 await `drain`，生产者减速。但 Readable 流有一个对称的机制，每当你实现自定义数据源时 —— 数据库游标适配器、API 分页器、文件尾部追踪器 —— 它都至关重要。\n\n`readable.push()` 在 readable 自身的内部缓冲区触及其 `highWaterMark` 时返回 `false`。这是停止从上游数据源拉取的信号，直到 Node.js 再次调用 `_read()`—— 而这发生在消费者拉取更多数据、缓冲区排空之时。\n\n```\n import { Readable } from \"node:stream\";  \n class DatabaseCursorReadable extends Readable {  \n   constructor(cursor, opts) {  \n     super(opts);  \n     this.cursor = cursor;  \n   }  \n   async _read() {  \n     const row = await this.cursor.next();  \n     if (!row) {  \n       this.push(null); // 发出流结束信号  \n       return;  \n     }  \n     // push() 在 readable 缓冲区满时返回 false。  \n     // 停止拉取，直到消费者触发下一次 _read() 调用。  \n     if (!this.push(formatRow(row))) return;  \n   }  \n }\n```\n\n如果你无视 `push()` 的返回值继续拉取，内存会在源头端堆积 —— 此时 writable 甚至还没有登场。而且 readable 的 `highWaterMark` 控制着它预拉取的激进程度：一个阈值为 64KB 的 readable 会在消费者开口要之前，就尝试预先排好 64KB 的数据等着。加上 writable 端的缓冲区，你同时在内存中承担着两个阈值的重量。\n\n完整的心智模型是：writable 说 \"别再往我这发数据了\"；readable 说 \"别再从源头拉数据了\"。你的自定义流需要尊重这个握手的两半。\n\n#### 为什么 `.pipe()` 正在悄悄搞垮你的生产服务\n\n`.pipe()` 是 Node.js 中连接流的原始方式。它在内部处理背压 —— 当 writable 的缓冲区满时暂停 readable，`drain` 之后再恢复。对于简单场景 —— 一个 readable 管道接到一个 writable—— 它能正常工作。背压正确传导，数据到达该去的地方。\n\n问题在于除此之外的一切。\n\n`.pipe()` 不会传播错误。 如果管道链中间的某个 transform 抛出异常，源流继续读取，目标流保持打开，文件描述符泄漏，套接字悬挂，没有任何东西被清理。你得到的是零提示 —— 一切看起来风平浪静。\n\n`.pipe()` 之所以如此根深蒂固，部分原因在于它的人体工学设计。它返回目标流，从而实现了开发者难以抗拒的链式调用语法：\n\n```\n // 有问题：错误消失，资源泄漏——但语法多优雅啊  \n readStream  \n   .pipe(transformStream)  \n   .pipe(writeStream);\n```\n\n正是这种链式写法让人们一再伸手去用它。读起来像 Unix 管道，感觉很声明式。而它把一个灾难性的缺陷藏在了漂亮的语法背后。\n\n假设 `transformStream` 遇到一条格式错误的记录并抛出异常。会发生什么？`readStream` 继续往一个已死的 transform 里泵数据。`writeStream` 保持打开，等待永远不会到来的数据。`readStream` 背后的文件描述符被锁死。`writeStream` 背后的套接字持续占用。如果这是一个 HTTP 响应，客户端会一直挂起直到超时触发。你可以用 `lsof` 验证：文件句柄还在那里，被一条半死不活的流链握着不放。\n\n要让 `.pipe()` 安全，唯一的办法是给链中的每一个流单独挂上错误监听器。没人能始终如一地做到这一点，而当你的链增长到三四个流时，那些样板代码会变成一坨比它所服务的功能还难维护的烂泥。\n\n虽然基于回调的 `pipeline()` 从 Node 10 就已存在，但现代的、基于 Promise 的 `node:stream/promises` API 是在 Node 15 落地的。到 2026 年，这套简洁的异步 API 已经作为标准存在了超过五年，继续使用老旧的 `.pipe()` 绝对没有任何借口：\n\n```\n import { pipeline } from \"node:stream/promises\";  \n // 修复版：任何一个流出错，所有流都会被销毁  \n await pipeline(readStream, transformStream, writeStream);\n```\n\n`pipeline()` 做的恰恰是 `.pipe()` 从一开始就该做的事。如果链中任何一个流出错，它会销毁全部。文件描述符关闭，套接字释放。错误以 rejected promise 的形式传播，你只需在一个地方捕获。无需逐流绑定监听器，无需担心孤儿资源。\n\n它对正常路径的处理同样到位：当最后一个流完成时，上游的一切按顺序被清理干净。\n\n规则是这样的：如果你的 `.pipe()` 链包含两个以上的流，或者链中任何一个流可能出错，你就承担着 `pipeline()` 可以免费消除的风险。 一个跑一次就退出的脚本里写 `readStream.pipe(writeStream)` 不会伤到你。但一旦你身处服务器中，处理并发请求，链里有 transform 或网络套接字，`.pipe()` 就是一颗定时炸弹。默认用 `pipeline()`，只在有明确、狭窄的理由时才去碰 `.pipe()`。\n\n[【第3668期】从 Web Streams 到 Async Iterable：重新思考 JavaScript 流式 API](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651278731&idx=1&sn=732699cc260b5c65c1a0f7f2a93080eb&scene=21#wechat_redirect)\n\n#### Async/Await 救不了你\n\n如果你已经从回调迁移到了 Promise，你大概内心暗暗自信：async/await 帮你搞定了时序和流程控制。对于控制流来说确实如此。对于数据量，差得远了。\n\n陷阱来了。你用 `for await...of` 来消费一个 readable 流。异步迭代器一次拉取一个块，等待它到达，然后给你下一个。感觉很安全。感觉你正在以恰到好处的节奏处理数据。在读取端，确实如此。\n\n但当你在循环里调用 `writable.write(chunk)` 时，一切就崩了。\n\n```\n // 有问题：读取有节奏，写入没有  \n for await (const chunk of readable) {  \n   writable.write(chunk);  \n }\n```\n\n异步迭代器控制的是你读得多快，它对你写得多快毫无约束。如果 `writable.write()` 返回 `false`，你的循环不会暂停。它不知道自己该暂停。它只会从 readable 抓取下一个块，塞进一个已经满了的缓冲区。你又回到了无限制的内存增长，只不过现在它看起来更正确了，因为你用的是现代语法。\n\n修复方法是把背压检查加回来。\n\n```\n import { once } from \"node:events\";  \n // 修复版：读取和写入都有节奏  \n for await (const chunk of readable) {  \n   const ok = writable.write(chunk);  \n   if (!ok) await once(writable, \"drain\");  \n }\n```\n\n这一个 `await` 做了两件事。它暂停了循环，进而暂停了迭代器，进而阻止了 readable 继续拉取数据 —— 一切一起慢下来。但它同时也将执行权交还给事件循环，这才使得 I/O 回调 —— 网络刷新、磁盘写入 —— 能够真正取得进展并最终触发 `drain` 事件。没有这个让出，for 循环会独占当前 tick，`drain` 永远无法触发。`await` 不仅仅是流控工具；它是让系统喘口气的机制。\n\n核心误区在于，人们以为 Promise 和背压解决的是同一个问题。Promise 管理的是你的代码何时运行。背压管理的是有多少数据在堆积。async/await 只解决了其中一个。\n\n#### 流动模式陷阱\n\n还有一种方式会让你意外绕过本文讲的所有防护。给 readable 流挂上 `data` 事件监听器会将其切入流动模式：\n\n```\n // 这会静默地放弃背压控制。  \n // Node.js 以源头能产出的最快速度推送数据。  \n readable.on(\"data\", (chunk) => {  \n   writable.write(chunk); // 这里返回的 'false' 毫无意义  \n });\n```\n\n在流动模式下，Node.js 不会等待下游就绪就发射下一个块。`data` 事件以 readable 源头能产出的最快速度触发。writable 仍然返回 `false`，但你不是在一个可以用 `await` 暂停的循环里 —— 你是在一个不会自动停止的事件发射器里，除非你显式调用 `readable.pause()` 并在 `drain` 时 `resume`。\n\n如果你已经在 `for await` 循环中正确应用了 drain 模式，你是安全的 —— 异步迭代器内部使用的是暂停模式。但如果你在别处用 `.on('data', ...)` 写了一个处理器，你就悄无声息地放弃了本文描述的所有保护。\n\n#### 暂停的隐性代价：连接饥荒\n\n假设你修好了 writable 端的背压。你尊重了布尔值，等待了 drain，成功暂停了上游的数据库游标。内存曲线走平了。Pod 不再崩溃。问题解决了，对吧？\n\n没那么简单。通过尊重背压来修复内存泄漏，往往会暴露出第二个架构层面的瓶颈：资源饥荒。\n\n当 Node.js 流暂停、等待一个缓慢的下游客户端排空时，那个数据库连接到底怎么了？它保持打开。数据库游标被悬挂在中间状态。如果你的查询持有读锁，这些锁保持活跃。如果你的下游 HTTP 客户端在时断时续的 3G 网络上下载，花了五分钟才排空，你就把数据库连接池里的一个 worker 绑死了整整五分钟。\n\nNode.js 处理数千个并发挂起的 HTTP 请求效率极高。你的 Postgres 或 MySQL 连接池可做不到。如果你的连接池大小是 20，只需要 20 个在酒店 Wi-Fi 上发起大量导出的用户，就能彻底耗尽你的数据库连接池。你的内存使用完美平稳 —— 流在做它们该做的事 —— 但你的应用完全停止服务新请求。每个需要数据库连接的 API 端点都卡住了。健康检查开始失败。负载均衡器开始把流量路由到其他 Pod，而那些 Pod 也撞上了自己的连接池上限。这场级联故障与内存无关，全是因为一个你忘了保护的有限资源。\n\n这就是背压的隐性权衡。你用确定性的连接饥荒换掉了不可控的内存耗尽。内存泄漏是戏剧性的 ——Pod 崩溃，Slack 群炸锅。连接饥荒是阴险的 —— 延迟攀升，请求排队，整个系统缓慢退化，直到有人发现 p99 延迟翻了三倍。\n\n要在生产规模下修复这个问题，你不能只检查一个布尔值。你必须将流的背压与以下策略结合：\n\n* 严格的查询超时：强制限制游标可以保持打开的时长。如果下游客户端在这个时间窗口内跟不上，杀掉查询，返回部分结果或错误。一个死掉的请求好过一个死掉的连接池。\n* 专用的 worker 池：将重型导出任务隔离到单独的数据库副本和连接池中，使其不会饿死主 API。你的导出服务和结账 API 永远不该争抢同一组 20 个连接。\n* 基于队列的卸载：对于超大规模导出，完全绕过实时 HTTP 流。通过后台 worker 写入 S3，然后给用户发一个预签名 URL。用户拿到文件，数据库收回连接，没有人的流需要做背压 —— 因为根本就没有流。\n\n你止住了血。那四行修复 —— 检查布尔值，await drain—— 把内存从攀升到 3.8GB 拉平到了 180MB。从 `.pipe()` 切换到 `pipeline()` 堵上了错误传播的缺口。你知道了 `highWaterMark` 是建议而非限制。你理解了 async/await 只节制读取，不节制写入。你也知道了修复内存泄漏会将压力向上游推入数据库连接池，而那里需要自己的一套防线。\n\n#### 结语\n\n这就是基础。这些是每一个流式服务在谈论其他任何事情之前必须做对的底层机制。但它们不是全貌。正确的背压代码在客户端中途断开连接时仍然可能泄漏，在超时关闭了管道的错误一端时仍然可能泄漏，在 `pipeline()` 本身无法完全清理一个仍在推送数据的源时仍然可能泄漏。\n\n关于本文  \n译者：@飘飘  \n作者：@Durgesh Rajubhai Pawar  \n原文：<https://frontendmasters.com/blog/your-node-js-streams-arent-backpressuring-theyre-silently-eating-your-memory/>\n\n这期前端早读课  \n对你有帮助，帮” 赞 “一下，  \n期待下一期，帮” 在看” 一下。\n\n[阅读原文](https://frontendmasters.com/blog/your-node-js-streams-arent-backpressuring-theyre-silently-eating-your-memory/)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=5489a56a&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMjM5MTA1MjAxMQ%3D%3D%26mid%3D2651279174%26idx%3D1%26sn%3D8b6d812bae24d88634f0fb0ec25c3422)",
+      "tags": [
+        "Node.js",
+        "Stream",
+        "背压控制"
+      ],
+      "score": 75,
+      "summary": "分析Node.js流背压机制及内存泄漏陷阱，非AI主题。",
+      "fetched_at": "2026-05-28T10:56:22.237197+08:00"
+    },
+    {
+      "title": "以上就是全部\n\n如果您喜欢这个主题：\n\n1.关注我（@FinanceYF5）\n2. 点赞+转发下面第一条帖子\n\nhttps://t.co/5V6z6wrNoH",
+      "link": "https://x.com/FinanceYF5/status/2059821420063142372",
+      "published": "2026-05-28T10:17:50+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "以上就是全部  \n  \n如果您喜欢这个主题：  \n  \n1.关注我（[@FinanceYF5](https://x.com/FinanceYF5)）  \n2. 点赞+转发下面第一条帖子  \n  \n[x.com/FinanceYF5/sta…](https://x.com/FinanceYF5/status/2059821201191735366)\n\n![AI Will](https://pbs.twimg.com/profile_images/1896818103016935424/ucw3T2uW_normal.jpg)\n\nAI Will@FinanceYF5\n\n一个Pitch Deck的进化论  \n  \n1/ 🚀 同一支团队，12周，两套Deck。  \n  \n前后对比，能看出一家startup是怎么学会\"讲故事\"的。  \n  \na16z speedrun公开了Concorda从申请到Demo Day的完整演变过程。  \n  \n一个Thread讲清楚👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJX0d4AaEAAGnHC.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/FinanceYF5/status/2059821201191735366)\n\n💬0🔄0❤️0👀196",
+      "tags": [
+        "无实质内容"
+      ],
+      "score": 30,
+      "summary": "求互动和关注的推文，无信息价值。",
+      "fetched_at": "2026-05-28T10:56:22.237282+08:00"
+    },
+    {
+      "title": "阅读全文：\nhttps://t.co/2cFzl8TRV3",
+      "link": "https://x.com/FinanceYF5/status/2059821302719115614",
+      "published": "2026-05-28T10:17:22+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "阅读全文：  \n[substack.com/home/post/p-19…](https://substack.com/home/post/p-198575788)\n\n![Tweet Image](https://pbs.twimg.com/media/HJX0j2GaYAAROZy.png)\n\n💬1🔄0❤️0👀171📊1",
+      "tags": [
+        "链接分享"
+      ],
+      "score": 40,
+      "summary": "仅链接到Substack文章，无实质摘要。",
+      "fetched_at": "2026-05-28T10:56:22.237345+08:00"
+    },
+    {
+      "title": "一个Pitch Deck的进化论\n\n1/ 🚀 同一支团队，12周，两套Deck。\n\n前后对比，能看出一家startup是怎么学会\"讲故事\"的。\n\na16z speedrun公开了Concorda从申...",
+      "link": "https://x.com/FinanceYF5/status/2059821201191735366",
+      "published": "2026-05-28T10:16:58+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "一个Pitch Deck的进化论  \n  \n1/ 🚀 同一支团队，12周，两套Deck。  \n  \n前后对比，能看出一家startup是怎么学会\"讲故事\"的。  \n  \na16z speedrun公开了Concorda从申请到Demo Day的完整演变过程。  \n  \n一个Thread讲清楚👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJX0d4AaEAAGnHC.jpg)\n\n💬1🔄0❤️0👀661📊2",
+      "tags": [
+        "Pitch Deck",
+        "a16z"
+      ],
+      "score": 60,
+      "summary": "关于Pitch Deck演变的案例，非AI主题。",
+      "fetched_at": "2026-05-28T10:56:22.237401+08:00"
+    },
+    {
+      "title": "源：https://t.co/vzwrFZr0i3",
+      "link": "https://x.com/FinanceYF5/status/2059820730486018344",
+      "published": "2026-05-28T10:15:06+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/minchoi/status…](https://x.com/minchoi/status/2059651369796083884)\n\n![Min Choi](https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg)\n\nMin Choi@minchoi\n\nWe are cooked.  \n  \nAI can fake crowd size now 💀  \n  \nNothing is real anymore.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059649251466981378/vid/avc1/1080x1350/-Hfw7aEhSiU5MI5w.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/minchoi/status/2059651369796083884/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/minchoi/status/2059651369796083884)\n\n💬0🔄0❤️0👀249",
+      "tags": [
+        "AI伪造",
+        "虚假内容"
+      ],
+      "score": 75,
+      "summary": "转述AI可伪造人群规模的视频，KOL转述。",
+      "fetched_at": "2026-05-28T10:56:22.237454+08:00"
+    },
+    {
+      "title": "现在，人工智能可以伪造人群规模了 💀\n\n一切都不再真实了。",
+      "link": "https://x.com/FinanceYF5/status/2059820718905536837",
+      "published": "2026-05-28T10:15:03+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "现在，人工智能可以伪造人群规模了 💀  \n  \n一切都不再真实了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059820699259490304/vid/avc1/720x900/Ro1LqoHCyZykx3R8.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2059820718905536837/video/1)\n\n💬1🔄0❤️2👀588📊1",
+      "tags": [
+        "AI伪造",
+        "视频生成"
+      ],
+      "score": 75,
+      "summary": "直接发布AI伪造人群规模的视频演示。",
+      "fetched_at": "2026-05-28T10:56:22.237509+08:00"
+    },
+    {
+      "title": "源：https://t.co/ZhiEJs3ZjB",
+      "link": "https://x.com/FinanceYF5/status/2059817787032490381",
+      "published": "2026-05-28T10:03:24+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/HMGnewsroom/st…](https://x.com/HMGnewsroom/status/2059064033169547450)\n\n![Hyundai Motor Group](https://pbs.twimg.com/profile_images/2015595454315302912/sfEcwW-r_normal.jpg)\n\nHyundai Motor Group@HMGnewsroom\n\nAtlas takes its first steps into the world of football  \nFrom basic drills to celebrations - every step is a beginning  \n  \nNext Starts Now\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059062638496382976/vid/avc1/1920x1080/Q964h-jvF2S6nOg1.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/HMGnewsroom/status/2059064033169547450/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/HMGnewsroom/status/2059064033169547450)\n\n💬0🔄0❤️0👀457",
+      "tags": [
+        "Atlas",
+        "足球",
+        "Boston Dynamics"
+      ],
+      "score": 85,
+      "summary": "转述官方视频：Atlas机器人踢足球，具技术展示价值。",
+      "fetched_at": "2026-05-28T10:56:22.237561+08:00"
+    },
+    {
+      "title": "Atlas的新爱好：足球。\n\n从基础动作到庆祝动作，Boston Dynamics把训练拍成了连续剧。\n\n第一集已经上线——你很难不想看它会不会在世界杯上出现。",
+      "link": "https://x.com/FinanceYF5/status/2059817775322022106",
+      "published": "2026-05-28T10:03:21+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Atlas的新爱好：足球。  \n  \n从基础动作到庆祝动作，Boston Dynamics把训练拍成了连续剧。  \n  \n第一集已经上线——你很难不想看它会不会在世界杯上出现。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059817754560221184/vid/avc1/1280x720/CNTLM5Anr3SxXnaa.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2059817775322022106/video/1)\n\n💬1🔄0❤️0👀511📊1",
+      "tags": [
+        "Atlas",
+        "足球",
+        "机器人"
+      ],
+      "score": 85,
+      "summary": "直接发布Atlas踢足球视频，来自官方内容转述。",
+      "fetched_at": "2026-05-28T10:56:22.237612+08:00"
+    },
+    {
+      "title": "最近鹅厂发了 一堆新产品啊！\n今天又来了~\n\nTencent直接把创意工作最烦人的痛点一次性干掉了。\n再也不用在Midjourney、Runway、Figma、Blender之间来回切。\n\n他们刚刚推...",
+      "link": "https://x.com/berryxia/status/2059817278691291643",
+      "published": "2026-05-28T10:01:23+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "最近鹅厂发了 一堆新产品啊！  \n今天又来了~  \n  \nTencent直接把创意工作最烦人的痛点一次性干掉了。  \n再也不用在Midjourney、Runway、Figma、Blender之间来回切。  \n  \n他们刚刚推出Miora，一个真正的AI创意Agent studio，现在国际版公测。  \n  \n所有东西（图像、视频、UI/UX、3D）都在同一个画布上生成，agent自己理解上下文、自己调用工具、自己图像修复、本地编辑、拆背景，还能记住你的喜好。  \n  \n内置一堆专业Agent：品牌、故事板、插画、UI/UX、视频、3D……  \n  \n也安排了对应的SKILLS商店：你可以用官方的、自己造的、还能分享给社区。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059815275806220288/vid/avc1/3840x2160/22J9KREBr5Ov1_J_.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2059817278691291643/video/1)\n\n![Tencent AI](https://pbs.twimg.com/profile_images/2003780428591960064/H6DEq1-G_normal.jpg)\n\nTencent AI@TencentAI\\_News\n\nMeet Miora ✨your AI creative agent studio, now in international beta.  \n  \n💡 Here's the idea: Images, video, UI/UX, 3D - all generated right there, on the same canvas  \n  \n🪄No tool-switching. No context loss. The whole creative project lives in one place.  \n  \nThe agents aren't basic:  \n  \n\\* they understand design context, reason through problems, call tools on their own  \n  \n\\* inpaint, edit locally, split backgrounds  \n  \n\\* skills system: use ours, build yours, share with the community  \n  \n\\* they read what's on your canvas and remember what you like  \n  \n\\* a crew of built-in Specialists, each owning their craft: brand, storyboards, illustration, UI/UX, video, 3D  \n[miora.design](https://miora.design/)WAQ\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059803805953454080/vid/avc1/3840x2160/rtAboU1AMd-DTXrH.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TencentAI_News/status/2059804356371996808/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/TencentAI_News/status/2059804356371996808)\n\n💬0🔄0❤️0👀16",
+      "tags": [
+        "腾讯",
+        "Miora",
+        "AI创意"
+      ],
+      "score": 88,
+      "summary": "介绍腾讯Miora AI创意Agent studio国际版公测，KOL转述官方。",
+      "fetched_at": "2026-05-28T10:56:22.237681+08:00"
+    },
+    {
+      "title": "OpenCode &amp; Mimo V2.5 限时免费。\n需要的去冲吧~",
+      "link": "https://x.com/berryxia/status/2059806744197628288",
+      "published": "2026-05-28T09:19:31+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "OpenCode & Mimo V2.5 限时免费。  \n需要的去冲吧~\n\n![Tweet Image](https://pbs.twimg.com/media/HJXnFqEbUAAAb11.jpg)\n\n![OpenCode](https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_normal.png)\n\nOpenCode@opencode\n\nOpenCode x MiMo V2.5 - Free for a limited time  \n  \n1M context • reasoning • text • image\n\n[🔗 View Quoted Tweet](https://x.com/opencode/status/2059696100626297225)\n\n💬0🔄0❤️0👀345",
+      "tags": [
+        "OpenCode",
+        "Mimo",
+        "限时免费"
+      ],
+      "score": 75,
+      "summary": "OpenCode和Mimo V2.5限时免费信息，KOL分享。",
+      "fetched_at": "2026-05-28T10:56:22.237741+08:00"
+    },
+    {
+      "title": "AI Native的公司竟然都已经完全Agent化了？\n是夸大还是真实如此？\n\n50百万人在用自然语言造软件，却一行代码都没写过。\n\n这就是Replit + Claude正在发生的真实故事。\n\nMic...",
+      "link": "https://x.com/berryxia/status/2059804642197049847",
+      "published": "2026-05-28T09:11:10+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "AI Native的公司竟然都已经完全Agent化了？  \n是夸大还是真实如此？  \n  \n50百万人在用自然语言造软件，却一行代码都没写过。  \n  \n这就是Replit + Claude正在发生的真实故事。  \n  \nMichele Catasta 16岁时就立志要让每个人都能轻松创建软件，今天Replit已经让5000多万人通过自然语言在平台上构建真实应用。  \n  \n他们和Claude的合作紧密到新模型一发布，当天就能上线新版Replit Agent。  \n  \n编程的门槛彻底消失了，普通人只要用对话，就能把脑子里的想法变成能跑的网站、App和工具。  \n  \n这才是AI真正改变世界的样子：不再是取代程序员，更像是让“不会写代码”的人也能成为创造者。\n\n![Claude](https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg)\n\nClaude@claudeai\n\nMichele Catasta ([@pirroh](https://x.com/pirroh)) is President and Head of AI [@replit](https://x.com/replit), the platform where anyone can build software in natural language.  \n  \nAt 16, he set out to make software open to everyone. Today, over 50 million people are building on Replit with Claude:\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059679776365785088/vid/avc1/1920x1080/XOeH60j_C1cdsZQv.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/claudeai/status/2059682187947946009/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/claudeai/status/2059682187947946009)\n\n💬4🔄0❤️7👀415📊4",
+      "tags": [
+        "Replit",
+        "Claude",
+        "自然语言编程"
+      ],
+      "score": 85,
+      "summary": "介绍Replit与Claude合作，5000万人用自然语言构建应用，KOL转述。",
+      "fetched_at": "2026-05-28T10:56:22.237795+08:00"
+    },
+    {
+      "title": "这个抠像效果看着不错，动态人物都识别的很干净啊，这样以后做抠像什么的真的岂不是爽死了。",
+      "link": "https://x.com/berryxia/status/2059803494111134148",
+      "published": "2026-05-28T09:06:36+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "这个抠像效果看着不错，动态人物都识别的很干净啊，这样以后做抠像什么的真的岂不是爽死了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059689393397645312/vid/avc1/1920x1080/bYoqKNOU-IhPODYT.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/higgsfield/status/2059690191187824681/video/1)\n\n💬0🔄0❤️0👀345",
+      "tags": [
+        "抠像",
+        "AI图像处理"
+      ],
+      "score": 70,
+      "summary": "评论AI抠像效果，动态人物识别干净。",
+      "fetched_at": "2026-05-28T10:56:22.237848+08:00"
+    },
+    {
+      "title": "好久没钓鱼了",
+      "link": "https://x.com/dingyi/status/2059814753753821355",
+      "published": "2026-05-28T09:51:21+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "好久没钓鱼了\n\n![Tweet Image](https://pbs.twimg.com/media/HJXuloxacAAPrmE.jpg)\n\n💬1🔄0❤️4👀316📊1",
+      "tags": [
+        "无关"
+      ],
+      "score": 0,
+      "summary": "个人生活感慨，与AI无关。",
+      "fetched_at": "2026-05-28T10:56:22.237901+08:00"
+    },
+    {
+      "title": "100 张排版构图的高清 PNG 图片，设计师找灵感、学排版可以直接用。\n\nhttps://t.co/cX63rEot7U",
+      "link": "https://x.com/geekbb/status/2059813381310411239",
+      "published": "2026-05-28T09:45:54+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "100 张排版构图的高清 PNG 图片，设计师找灵感、学排版可以直接用。  \n  \n[github.com/nevertoday/100…](https://github.com/nevertoday/100-layout-compositions)\n\n![Tweet Image](https://pbs.twimg.com/media/HJXtMdpawAAX5Qm.jpg)\n\n💬0🔄5❤️13👀1115📊6",
+      "tags": [
+        "排版",
+        "设计资源"
+      ],
+      "score": 50,
+      "summary": "分享100张排版构图高清PNG，非AI主题。",
+      "fetched_at": "2026-05-28T10:56:22.237950+08:00"
+    },
+    {
+      "title": "Apple: https://t.co/wU3MdaoFWP\n\nYouTube: https://t.co/D4T5e1sgln\n\nTranscript: https://t.co/u8bmzMiO2...",
+      "link": "https://x.com/naval/status/2059812433431236961",
+      "published": "2026-05-28T09:42:08+08:00",
+      "source": "Naval(@naval)",
+      "content": "Apple: [apple.co/4uCfBYQ](http://apple.co/4uCfBYQ)  \n  \nYouTube: [youtu.be/aiyf-5jmYf0](http://youtu.be/aiyf-5jmYf0)  \n  \nTranscript: [nav.al/tokens](http://nav.al/tokens)\n\n💬7🔄1❤️29👀22209📊12",
+      "tags": [
+        "Naval",
+        "播客"
+      ],
+      "score": 70,
+      "summary": "Naval播客链接，主题涉及AI和token。",
+      "fetched_at": "2026-05-28T10:56:22.237999+08:00"
+    },
+    {
+      "title": "New podcast, new format. Three founders join us.\n\nWaste Tokens, Save Time\n\n00:00 Three Frontier Foun...",
+      "link": "https://x.com/naval/status/2059812430633673045",
+      "published": "2026-05-28T09:42:07+08:00",
+      "source": "Naval(@naval)",
+      "content": "New podcast, new format. Three founders join us.  \n  \nWaste Tokens, Save Time  \n  \n00:00 Three Frontier Founders   \n  \n01:27 AI Software Factories   \n  \n04:15 Waste Tokens, Save Time   \n  \n05:47 Models Instructing Humans  \n  \n09:30 Is Pure Software Dead?  \n  \n12:04 You Don't Get Stuck Anymore  \n  \nWith [@rauchg](https://x.com/rauchg), [@maxhodak\\_](https://x.com/maxhodak_), and [@bscholl](https://x.com/bscholl).\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059811428194979840/vid/avc1/1920x1080/zvNCEa9d8WVe9vu8.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/naval/status/2059812430633673045/video/1)\n\n💬42🔄48❤️523👀46672📊150",
+      "tags": [
+        "AI软件工厂",
+        "播客"
+      ],
+      "score": 80,
+      "summary": "Naval播客讨论AI软件工厂、模型指导人类等话题。",
+      "fetched_at": "2026-05-28T10:56:22.238047+08:00"
+    },
+    {
+      "title": "Never manually create slides again.\n\nHere's a quick video showing how you can use my /slides skill t...",
+      "link": "https://x.com/petergyang/status/2059801947503530365",
+      "published": "2026-05-28T09:00:28+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "Never manually create slides again.  \n  \nHere's a quick video showing how you can use my /slides skill to create a beautiful animated presentation in minutes.  \n  \nHTML really is the solution to everything.  \n  \n📌 Watch the full tutorial here:[youtu.be/vbChRIIlSPE](https://youtu.be/vbChRIIlSPE)C\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059801872618397696/vid/avc1/1274x720/slJP8c-U29oC17SN.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/petergyang/status/2059801947503530365/video/1)\n\n![Peter Yang](https://pbs.twimg.com/profile_images/1454103621516206083/_klMwpkk_normal.jpg)\n\nPeter Yang@petergyang\n\nI got tired of making PowerPoint slides so I built an AI skill to do it for me.  \n  \nHere's my new tutorial on how to build a /slides skill that turns a rough outline into a beautiful HTML deck in minutes.  \n  \nI walk through how to:  \n  \n→ Use 12 slide formats and 3 templates  \n→ Add live charts and subtle animations  \n→ Get AI to screenshot each slide and fix layout issues itself  \n  \n📌 Watch now:[youtu.be/vbChRIIlSPE](https://youtu.be/vbChRIIlSPE)2\n\n[🔗 View Quoted Tweet](https://x.com/petergyang/status/2059642246614647259)\n\n💬10🔄4❤️50👀9303📊22",
+      "tags": [
+        "AI幻灯片",
+        "技能"
+      ],
+      "score": 80,
+      "summary": "展示AI技能自动生成HTML幻灯片教程。",
+      "fetched_at": "2026-05-28T10:56:22.238095+08:00"
+    },
+    {
+      "title": "这个世界会把所有你曾经未做对的决策\n变着法儿的重复出现\n直到你能决策正确..",
+      "link": "https://x.com/yangyi/status/2059812777422884866",
+      "published": "2026-05-28T09:43:30+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "这个世界会把所有你曾经未做对的决策  \n变着法儿的重复出现  \n直到你能决策正确..\n\n💬0🔄0❤️4👀561📊1",
+      "tags": [
+        "无关"
+      ],
+      "score": 0,
+      "summary": "人生感悟，与AI无关。",
+      "fetched_at": "2026-05-28T10:56:22.238144+08:00"
+    },
+    {
+      "title": "豆包大学 👩‍🎓\n\n真的，豆包办学、办厂吧，你们从小养起来的用户，你们得管啊 😂",
+      "link": "https://x.com/shao__meng/status/2059813854637621462",
+      "published": "2026-05-28T09:47:47+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "豆包大学 👩‍🎓  \n  \n真的，豆包办学、办厂吧，你们从小养起来的用户，你们得管啊 😂\n\n![Box (mainnet arc)](https://pbs.twimg.com/profile_images/1938488713031651334/PWEMZVCL_normal.jpg)\n\nBox (mainnet arc)@BoxMrChen\n\n家人们我要上北大了\n\n![Tweet Image](https://pbs.twimg.com/media/HJV6sEKa4AALNHV.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/BoxMrChen/status/2059687313144463534)\n\n💬1🔄0❤️0👀416📊1",
+      "tags": [
+        "豆包"
+      ],
+      "score": 40,
+      "summary": "调侃豆包大学，非正式信息。",
+      "fetched_at": "2026-05-28T10:56:22.238191+08:00"
+    },
+    {
+      "title": "最近真的是经常捶胸顿足\n为什么那些最基本的道理\n以前从来没有人教过我们\n要活了四十年之后自己去领悟\n\n我们自以为的推理，并不是为了探求真理，而是为了找理由支持我们的直觉的情感反应。\n我们自以为的理性决...",
+      "link": "https://x.com/oran_ge/status/2059809645351645510",
+      "published": "2026-05-28T09:31:03+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "最近真的是经常捶胸顿足  \n为什么那些最基本的道理  \n以前从来没有人教过我们  \n要活了四十年之后自己去领悟  \n  \n我们自以为的推理，并不是为了探求真理，而是为了找理由支持我们的直觉的情感反应。  \n我们自以为的理性决策，只不过是身体在环境分压力之下产生的激素，然后大脑再去帮我们找补道理。  \n  \n人类的吵架，从来没有谁对谁错，屁股决定脑袋是最基本的真理。  \n人类的辩论，从来都是可笑的表演，辩论家就算有完美的理论也无法作出伟大的产品。  \n  \n人是如此奇妙的会自我欺骗的生物。\n\n![Tweet Image](https://pbs.twimg.com/media/HJXp5jCa4AAouRw.jpg)![Tweet Image](https://pbs.twimg.com/media/HJXp5kjbMAA2z8T.jpg)\n\n💬2🔄1❤️9👀1460📊3",
+      "tags": [
+        "无关"
+      ],
+      "score": 0,
+      "summary": "人生感悟，与AI无关。",
+      "fetched_at": "2026-05-28T10:56:22.238239+08:00"
+    },
+    {
+      "title": "都已经2026年了\nobsidian 的移动端，做了5年了\n依然是一个基本不可用的状态\n这是一家估值3.5亿美金的公司…\n\n这真的太疯狂了…",
+      "link": "https://x.com/oran_ge/status/2059805806884004334",
+      "published": "2026-05-28T09:15:48+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "都已经2026年了  \nobsidian 的移动端，做了5年了  \n依然是一个基本不可用的状态  \n这是一家估值3.5亿美金的公司…  \n  \n这真的太疯狂了…\n\n![Tweet Image](https://pbs.twimg.com/media/HJXmbrIasAAGS46.jpg)\n\n💬18🔄0❤️12👀7920📊16",
+      "tags": [
+        "无关"
+      ],
+      "score": 0,
+      "summary": "吐槽Obsidian移动端，非AI主题。",
+      "fetched_at": "2026-05-28T10:56:22.238288+08:00"
+    },
+    {
+      "title": "这个访谈太好了，身边很多朋友的想法被验证。\n\n1. AI越强，人越忙，Every过去一年员工翻倍。\n\n2. AI 自动化创造了新工作：管理自动化。\n\n3. 每个Agent都需要一个人照料。\n\n4. 真...",
+      "link": "https://x.com/vista8/status/2059823832819712199",
+      "published": "2026-05-28T10:27:26+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "这个访谈太好了，身边很多朋友的想法被验证。  \n  \n1. AI越强，人越忙，Every过去一年员工翻倍。  \n  \n2. AI 自动化创造了新工作：管理自动化。  \n  \n3. 每个Agent都需要一个人照料。  \n  \n4. 真正跑起来的模式是全公司共用一个Agent，专人维护，以后再分化个人Agent。  \n  \n5. CLI时代已经结束了，GUI才是主战场。  \n  \n6. SaaS不会死，Agent会给它带来更多用户，Dan现在会买SaaS股票。  \n  \n7. AI嵌进SaaS是错误方向，应该反过来  \n  \n8. . PM和全栈设计师迎来最好的时代  \n  \n9. AI只是裁员借口，是过度招聘的修正。  \n  \n大规模失业不会来，但不用AI的人会被用AI的人替代，这两件事不矛盾。\n\n![向阳乔木](https://pbs.twimg.com/profile_images/1960882043249942533/h4J39ERy_normal.jpg)\n\n向阳乔木@vista8\n\n[x.com/i/article/2059…](http://x.com/i/article/2059821245093560320)\n\n[🔗 View Quoted Tweet](https://x.com/vista8/status/2059822354969325611)\n\n💬1🔄0❤️3👀554📊2",
+      "tags": [
+        "AI工作",
+        "自动化"
+      ],
+      "score": 80,
+      "summary": "分享访谈观点：AI越强人越忙，Agent需专人照料。",
+      "fetched_at": "2026-05-28T10:56:22.238336+08:00"
+    },
+    {
+      "title": "https://t.co/o6CEQEW0V4",
+      "link": "https://x.com/vista8/status/2059822354969325611",
+      "published": "2026-05-28T10:21:33+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "[x.com/i/article/2059…](http://x.com/i/article/2059821245093560320)\n\n💬1🔄0❤️3👀1110📊2",
+      "tags": [
+        "链接"
+      ],
+      "score": 70,
+      "summary": "指向同一访谈的链接。",
+      "fetched_at": "2026-05-28T10:56:22.238385+08:00"
+    },
+    {
+      "title": "详细的MCP 7月份版本的更新说明：https://t.co/B7V9ebK2cF",
+      "link": "https://x.com/vista8/status/2059812722758590526",
+      "published": "2026-05-28T09:43:17+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "详细的MCP 7月份版本的更新说明：[blog.modelcontextprotocol.io/posts/2026-07-…](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/)\n\n💬0🔄1❤️2👀1111📊1",
+      "tags": [
+        "MCP",
+        "协议更新"
+      ],
+      "score": 85,
+      "summary": "MCP 7月版本更新说明链接，官方博客。",
+      "fetched_at": "2026-05-28T10:56:22.238434+08:00"
+    },
+    {
+      "title": "好久没听到MCP了，据说新的版本7.28号发布。\n\n有几个Feature还挺关键：\n\n① 服务器能下发 HTML 界面让用户交互了\n② 长任务有了正式的管理机制\n③ 授权更严，安全性更好 \n\n现在你还...",
+      "link": "https://x.com/vista8/status/2059812644081766518",
+      "published": "2026-05-28T09:42:58+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "好久没听到MCP了，据说新的版本7.28号发布。  \n  \n有几个Feature还挺关键：  \n  \n① 服务器能下发 HTML 界面让用户交互了  \n② 长任务有了正式的管理机制  \n③ 授权更严，安全性更好   \n  \n现在你还在用的刚需 MCP 是啥？我感觉几乎没有了\n\n💬8🔄0❤️6👀2194📊8",
+      "tags": [
+        "MCP",
+        "新特性"
+      ],
+      "score": 85,
+      "summary": "MCP新版关键特性：HTML界面、长任务管理、授权加强。",
+      "fetched_at": "2026-05-28T10:56:22.238487+08:00"
+    },
+    {
+      "title": "可学习参考的agent.md 写法 https://t.co/iDL2qutVvW",
+      "link": "https://x.com/vista8/status/2059810030397038948",
+      "published": "2026-05-28T09:32:35+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "可学习参考的agent.md 写法 [github.com/zeke/agents.md…](https://github.com/zeke/agents.md/blob/main/AGENTS.md)\n\n💬0🔄1❤️6👀772📊2",
+      "tags": [
+        "agent.md",
+        "实践"
+      ],
+      "score": 70,
+      "summary": "分享可参考的agent.md写法链接。",
+      "fetched_at": "2026-05-28T10:56:22.238535+08:00"
+    },
+    {
+      "title": "如果你不会写 Agents.md ，可以直接抄作业。\n\n或把高手的Agents 内容粘贴给你的Codex或Claude Code。\n\n让学习其中有价值的内容，合并到自己的Agents文件。\n\n比如有几...",
+      "link": "https://x.com/vista8/status/2059809889472684061",
+      "published": "2026-05-28T09:32:01+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "如果你不会写 Agents.md ，可以直接抄作业。  \n  \n或把高手的Agents 内容粘贴给你的Codex或Claude Code。  \n  \n让学习其中有价值的内容，合并到自己的Agents文件。  \n  \n比如有几条就很实用：  \n  \n① 当用户纠正、反驳、表达不满，或本次任务暴露出可复用教训时，完成当前任务后提出一条精简规则更新建议。  \n  \n先判断作用域：全局、项目或不沉淀；提出 diff，等用户确认后再改。  \n  \n② 说话直接，不奉承。不同意时给具体理由；不确定的技术事实要验证或明确说不知道，不能编造模型名、API、CLI 参数、环境变量或版本信息。  \n  \nAgent 文件地址见评论\n\n![Tweet Image](https://pbs.twimg.com/media/HJXpSDnaMAAHlsb.jpg)\n\n💬6🔄1❤️16👀1366📊11",
+      "tags": [
+        "Agents",
+        "最佳实践"
+      ],
+      "score": 70,
+      "summary": "教如何编写Agents.md文件，含实用规则。",
+      "fetched_at": "2026-05-28T10:56:22.238583+08:00"
+    },
+    {
+      "title": "打开终端输入安装命令：curl -fsSL https://t.co/LCon375xvc | bash\n\n演示视频：https://t.co/beN661Mm1T",
+      "link": "https://x.com/vista8/status/2059805559642272222",
+      "published": "2026-05-28T09:14:49+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "打开终端输入安装命令：curl -fsSL [plannotator.ai/install.sh](https://plannotator.ai/install.sh) | bash  \n  \n演示视频：[youtube.com/watch?v=a\\_AT7c…](https://www.youtube.com/watch?v=a_AT7cEN_9I)\n\n![Tweet Image](https://pbs.twimg.com/media/HJXmDLEaoAAo2VD.jpg)\n\n💬0🔄0❤️0👀1171",
+      "tags": [
+        "Plannotator",
+        "安装"
+      ],
+      "score": 75,
+      "summary": "AI编程辅助插件Plannotator安装命令及演示。",
+      "fetched_at": "2026-05-28T10:56:22.238634+08:00"
+    },
+    {
+      "title": "这个AI编程辅助插件有意思：Plannotator\n\nAI生成技术文档和方案后，你说用Plannotator标注下。\n\n文档会发到本地浏览器界面，在网页里能批注、删除、编辑替换 AI 给的方案。\n\n文...",
+      "link": "https://x.com/vista8/status/2059805242313863565",
+      "published": "2026-05-28T09:13:33+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "这个AI编程辅助插件有意思：Plannotator  \n  \nAI生成技术文档和方案后，你说用Plannotator标注下。  \n  \n文档会发到本地浏览器界面，在网页里能批注、删除、编辑替换 AI 给的方案。  \n  \n文档还能分享给同事，大家一起Review标注问题。  \n  \n确定没问题了，点击Approve执行。  \n  \n支持Codex、Claude Code、PI、Gemini等所有工具。  \n  \n对用 Cli 编程的人来说，大段技术方案文档，用网页来仔细查看，像飞书文档一样划线点评，再交给AI执行。  \n  \n这样感觉更方便、更靠谱。  \n  \n安装指令见评论区\n\n![Tweet Image](https://pbs.twimg.com/media/HJXkOzhaYAAH0Ga.jpg)\n\n💬6🔄3❤️11👀2461📊12",
+      "tags": [
+        "Plannotator",
+        "AI编程"
+      ],
+      "score": 75,
+      "summary": "介绍Plannotator：AI生成文档后可在网页批注。",
+      "fetched_at": "2026-05-28T10:56:22.238711+08:00"
+    },
+    {
+      "title": "哥哥们，都白嫖了，去点个 star 和点个赞吧！",
+      "link": "https://x.com/op7418/status/2059825869812822282",
+      "published": "2026-05-28T10:35:31+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "哥哥们，都白嫖了，去点个 star 和点个赞吧！\n\n💬0🔄0❤️2👀118",
+      "tags": [
+        "无价值"
+      ],
+      "score": 10,
+      "summary": "请求点star和点赞，无信息。",
+      "fetched_at": "2026-05-28T10:56:22.238762+08:00"
+    },
+    {
+      "title": "在这里：https://t.co/TjJONbEXHr",
+      "link": "https://x.com/op7418/status/2059814870833578412",
+      "published": "2026-05-28T09:51:49+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "在这里：[github.com/op7418/guizang…](https://github.com/op7418/guizang-social-card-skill)\n\n💬0🔄0❤️0👀583📊1",
+      "tags": [
+        "链接"
+      ],
+      "score": 40,
+      "summary": "指向GitHub项目链接。",
+      "fetched_at": "2026-05-28T10:56:22.238810+08:00"
+    },
+    {
+      "title": "发布了：https://t.co/iw3hiDZ34r",
+      "link": "https://x.com/op7418/status/2059814776340193459",
+      "published": "2026-05-28T09:51:26+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "发布了：[x.com/op7418/status/…](https://x.com/op7418/status/2059812895803011449?s=20)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n[x.com/i/article/2059…](http://x.com/i/article/2059811469081141248)\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2059812895803011449)\n\n💬1🔄1❤️7👀1412📊3",
+      "tags": [
+        "链接"
+      ],
+      "score": 30,
+      "summary": "发布内容链接，无实质摘要。",
+      "fetched_at": "2026-05-28T10:56:22.238857+08:00"
+    },
+    {
+      "title": "发布了：https://t.co/iw3hiDZ34r",
+      "link": "https://x.com/op7418/status/2059814732568396081",
+      "published": "2026-05-28T09:51:16+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "发布了：[x.com/op7418/status/…](https://x.com/op7418/status/2059812895803011449?s=20)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n[x.com/i/article/2059…](http://x.com/i/article/2059811469081141248)\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2059812895803011449)\n\n💬0🔄0❤️3👀838📊1",
+      "tags": [
+        "链接"
+      ],
+      "score": 30,
+      "summary": "重复发布链接。",
+      "fetched_at": "2026-05-28T10:56:22.238906+08:00"
+    },
+    {
+      "title": "https://t.co/qH6VfrJLqy",
+      "link": "https://x.com/op7418/status/2059812895803011449",
+      "published": "2026-05-28T09:43:58+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "[x.com/i/article/2059…](http://x.com/i/article/2059811469081141248)\n\n💬12🔄4❤️39👀4101📊22",
+      "tags": [
+        "链接"
+      ],
+      "score": 30,
+      "summary": "长文链接，无具体信息。",
+      "fetched_at": "2026-05-28T10:56:22.238952+08:00"
     }
   ]
 }
