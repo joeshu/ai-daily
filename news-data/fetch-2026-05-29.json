@@ -2877,6 +2877,721 @@
       "score": 82,
       "summary": "爆料iOS 27中Siri将接入ChatGPT、Gemini等多种AI模型。",
       "fetched_at": "2026-05-29T19:28:36.638747+08:00"
+    },
+    {
+      "title": "Winning under CMS TEAM: Building the learning health system to realize success in VBC today and tomorrow",
+      "link": "https://www.databricks.com/blog/winning-under-cms-team-building-learning-health-system-realize-success-vbc-today-and-tomorrow",
+      "published": "2026-05-29T21:53:00+08:00",
+      "source": "Databricks",
+      "content": "Starting January 1, 2026, over 700 hospitals across the United States faced a new...",
+      "tags": [
+        "非AI",
+        "医疗",
+        "CMS"
+      ],
+      "score": 70,
+      "summary": "Databricks博客讨论医疗系统在VBC下的成功，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.680828+08:00"
+    },
+    {
+      "title": "It's hard to justify buying a Framework 12",
+      "link": "https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/",
+      "published": "2026-05-29T22:00:00+08:00",
+      "source": "Jeff Geerling",
+      "content": "My nephew just graduated high school, and wants a laptop. When he decides what computer to buy, price (or more precisely, *value*) is the most important attribute.\n\nApple's MacBook Neo upended the 'value laptop' equation—Apple's not supposed to be both the cheapest option *and* the best value... but it seems like that's squarely where the Neo landed for the good-but-cheap laptop category.\n\n![MacBook Neo on top of Framework 12](https://www.jeffgeerling.com/blog/2026/its-hard-to-justify-framework-12/macbook-neo-and-framework-12.jpeg)\n\nMy nephew is also my godson, and to kick off his computing journey, I thought I'd let him choose from a Framework 12 I bought to test, or the MacBook Neo I bought a couple months ago to use around the studio.",
+      "tags": [
+        "非AI",
+        "硬件",
+        "笔记本"
+      ],
+      "score": 70,
+      "summary": "Jeff Geerling比较Framework 12与MacBook Neo，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.680916+08:00"
+    },
+    {
+      "title": "Best of the Heap: First post of the past​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿…",
+      "link": "https://stackoverflow.blog/2026/05/29/best-of-the-heap-first-post-of-the-past/",
+      "published": "2026-05-29T22:00:00+08:00",
+      "source": "Stack Overflow Blog",
+      "content": "Let's take a moment to shout out all the articles we’re seen posted so far and encourage folks reading to reach out about your own.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿‌‍​﻿‍​‌‍‌‍​﻿​‌​﻿‌‍​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿‌​​﻿​‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍​‍‌‍‌​​﻿‍‌​﻿​​​‍﻿‌​﻿‌﻿​﻿‌‌‌‍​‌​﻿​﻿​﻿‍‌​﻿​‌​﻿​‍‌‍‌​​﻿​‌​﻿‌​​﻿‌‌​﻿‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌​﻿‌‍​﻿‌‍​﻿‍​‌‍‌‍​﻿​‌​﻿‌‍​﻿​​‌‍​‍​‍﻿‌‌‍​‍‌‍​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿‌​​﻿​‌‌‍‌‍​﻿‌‌​‍﻿‌‌‍​‍‌‍‌​​﻿‍‌​﻿​​​‍﻿‌​﻿‌﻿​﻿‌‌‌‍​‌​﻿​﻿​﻿‍‌​﻿​‌​﻿​‍‌‍‌​​﻿​‌​﻿‌​​﻿‌‌​﻿‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+      "tags": [
+        "低价值",
+        "乱码"
+      ],
+      "score": 30,
+      "summary": "Stack Overflow博客内容混乱，无实质信息。",
+      "fetched_at": "2026-05-29T23:02:35.680989+08:00"
+    },
+    {
+      "title": "Gemini Flash Gets Pricey, AI Act Delays, Agents Drive Online Traffic",
+      "link": "https://www.deeplearning.ai/the-batch/issue-355",
+      "published": "2026-05-29T22:00:34+08:00",
+      "source": "deeplearning.ai",
+      "content": "![AI Engineering Department with diverse employees working on laptops in an office setting, labeled Forward-Deployed Engineer.](https://charonhub.deeplearning.ai/content/images/2026/05/2026.05.29-LETTER-1.webp)\n> The Batch AI News and Insights: One of the new, buzzy jobs in Silicon Valley is the AI Forward Deployed Engineer (FDE), an engineer who is embedded within a client organization to help customize solutions, such as building and tuning agentic workflows that suit the client’s particular needs.\n\nDear friends,\n\nOne of the new, buzzy jobs in Silicon Valley is the AI Forward Deployed Engineer (FDE), an engineer who is embedded within a client organization to help customize solutions, such as building and tuning agentic workflows that suit the client’s particular needs. I’ve heard from people who are wondering anew about the FDE career path since OpenAI and Anthropic started building [new](https://openai.com/index/openai-launches-the-deployment-company/) [teams](https://www.blackstone.com/news/press/anthropic-partners-with-blackstone-hellman-friedman-and-goldman-sachs-to-launch-enterprise-ai-services-firm/) to place FDEs within client organizations.\n\nThe rise of FDEs for AI workloads is one way AI is creating new jobs (and why the jobpolcalyse narrative of upcoming job market collapse is [false](https://www.deeplearning.ai/the-batch/ai-will-not-destroy-the-job-market)). However, I believe there will be far more AI Engineer jobs, as I explain below.\n\nThe FDE role was pioneered about two decades ago by Palantir, which sent engineers to government locations to work on secure, air-gapped networks. In addition to having good technical skills, FDEs need communication skills and sometimes business skills. For example, they may need to speak with clients to understand their needs, formulate a strategy to prioritize projects, explain complex technology, and respectfully push back if a client asks for something unrealistic. They’re enjoying a resurgence because of the amount of work involved in taking an off-the-shelf LLM and building it into a custom agentic workflow that fits particular business needs.\n\nHowever, I believe the number of AI Engineer jobs will be far larger. A company might accept a few FDEs to be embedded within its organization. But most companies will want far more of their own employees working on their projects. While my organizations do hire FDEs, we hire far more AI Engineers! Also, a common client concern is that it is hard to find vendor-neutral FDEs — they are, after all, there to deeply integrate a particular vendor’s product into a company. In this moment when it’s hard to predict which AI service will be the best one in a year’s time, optionality (the ability to pick whatever vendor turns out to fit best in the future) is very valuable. In contrast, letting FDEs tightly bind a company’s processes significantly reduces optionality.\n\n![AI Engineering Department with diverse employees working on laptops in an office setting, labeled Forward-Deployed Engineer.](https://charonhub.deeplearning.ai/content/images/2026/05/2026.05.29-LETTER.webp)\n\nRight now, I see surging demand for AI Engineers who can build software applications using AI software components (like LLM prompts, agentic frameworks, evals, etc.) and effectively use AI coding agents (like Claude Code, Codex, Antigravity CLI, and OpenCode). As the AI Engineer role matures, I expect it to fragment into more specialized roles, like the generic Software Engineer role from decades ago fragmented into frontend, backend, mobile, data engineering, devops, and so on.\n\nWhat will be the future, specialized AI engineering roles? I don’t know. Perhaps there will be AI FDEs, LLMOps Engineers, Evals Engineers, AI Data Engineers, Harness Engineers, and other roles we don’t have names for yet. But for now, I see a lot of AI engineers who are [generalists](https://www.deeplearning.ai/the-batch/ai-native-software-development-needs-generalists) create a lot of value. Skilled AI Engineers are in very high demand! As our field continues to mature over the coming decade, I look forward to new specializations within AI Engineering that create even more job opportunities.\n\nKeep building!\n\nAndrew\n\n---\n\n## A MESSAGE FROM [DEEPLEARNING.AI](http://deeplearning.ai/)\n\n![Discover Ambient's skills coach launching June 2026. Track 139 signals weekly to enhance skills effectively.](https://charonhub.deeplearning.ai/content/images/2026/05/ambient_ad_batch.webp)\n\nAmbient, from Kian Katanforoosh and Workera, measures your skills in the flow of work. You already measure other things that matter: sleep, steps, stress. Why not your skills? [Join the waitlist](http://www.workera.ai/platform/ai-agent/ambient/join-waitlist?utm_term=Batch&utm_content=Batch)\n\n# News\n\n![Gemini 3.5 Flash shows improved performance, surpassing previous model scores in most benchmarks.](https://charonhub.deeplearning.ai/content/images/2026/05/GEMINI3.5FLASH.webp)\n\n# Gemini 3.5 Flash Pairs Smarts With Speed\n\nGoogle’s faster model brings substantive gains at a substantially higher price, part of a rising trend in prices per token.\n\n**What’s new:** Google [launched](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/) Gemini 3.5 Flash, an update of its mid-tier multimodal model. The new version offers improvements in agentic capabilities, visual understanding, and speed at a price three times that of its predecessor Gemini 3 Flash.\n\n* **Input/output:** Text, images, audio, video in (up to 1 million tokens), text out (up to 64,000 tokens, [204 tokens per second](https://artificialanalysis.ai/models#speed))\n* **Architecture:** Mixture-of-experts transformer\n* **Features:** Adjustable reasoning levels (minimal, low, medium, high), *thought preservation*(which holds reasoning tokens in the context to retain reasoning across multi-turn conversations, similar to Kimi K2.6’s *preserved thinking* feature), tool use (computer use not yet available)\n* **Performance:** Tops Artificial Analysis’s APEX-Agents-AA benchmark and MMMU-Pro multimodal benchmark Flash; trails leading models on overall intelligence, knowledge, and coding\n* **Availability/price:** Free via Gemini app, Google AI Studio, Google Antigravity (within a compute limit that refreshes every 5 hours up to a weekly limit), Google Search AI mode; Gemini Enterprise, Gemini Enterprise Agent Platform, API $1.50/$0.15/$9.00 per million input/cached/output tokens\n* **Undisclosed:** Parameter count, training data and methods, architectural details\n\n**How it works:** Google disclosed few details about how it built Gemini 3.5 Flash.\n\n* Gemini 3.5 Flash is “based on” Gemini 3 Flash, which itself is based on Gemini 3 Pro, according to its [model card](https://deepmind.google/models/model-cards/gemini-3-5-flash/).\n* It’s a mixture-of-experts transformer that was multimodally pretrained on text, code, images, audio, and video scraped from the web alongside licensed materials, Google user data, and synthetic data.\n* It was fine-tuned via reinforcement learning on datasets that covered multi-step reasoning, solving problems, and proving theorems.\n\n**Performance:** Gemini 3.5 Flash performs just behind the first rank of multimodal models. It makes substantial gains over its predecessor in agentic capability and speed according to independent tests, including some state-of-the-art measures. On the Artificial Analysis Intelligence Index, it came in either fifth or seventh (depending on the reasoning levels of various models) behind Qwen 3.7 Max set to reasoning (level unspecified), but — except Qwen 3.7 Max, which debuted the same week — every model that scores higher on intelligence runs substantially slower.\n\n* According to Artificial Analysis, on MMMU-Pro, which measures visual reasoning across multiple academic disciplines, Gemini 3.5 Flash set to high reasoning achieved 84 percent accuracy, the highest recorded, with Gemini 3.1 Pro Preview (82 percent) in second place.\n* On APEX-Agents-AA, which tests long-running agentic tasks drawn from investment banking, management consulting, and corporate law, Gemini 3.5 Flash (47.1 percent accuracy) took the top spot on the first attempt, nearly 10 percentage points ahead of second-place GPT-5.5 (37.7 percent accuracy). On GDPval-AA (real-world agentic tasks), Gemini 3.5 Flash set to high reasoning (1,656 Elo) exceeded Gemini 3.1 Pro Preview set to an unspecified level of reasoning (1,314 Elo), and behind GPT-5.5 set to xhigh (1,769 Elo).\n* On ARC-AGI-2 (a test of abstract visual reasoning), Gemini 3.5 Flash set to high reasoning scored 72.1 percent on the [ARC Prize leaderboard](https://arcprize.org/leaderboard), behind Gemini 3.1 Pro Preview (77.1 percent) and GPT-5.5 set to xhigh reasoning (85.0 percent).\n* On AA-Omniscience, a knowledge benchmark that awards points for correct answers and penalizes hallucinated guesses, Gemini 3.5 Flash set to reasoning (23) trails Gemini 3.1 Pro Preview set to reasoning (33) and Claude Opus 4.7 set to max reasoning (26).\n* As of May 24, 2026, on Arena.ai’s leaderboards, which rank models in blind head-to-head human comparisons, Gemini 3.5 Flash [ranked](https://arena.ai/leaderboard) ninth in the Text Arena (1,480 Elo) and tenth in the WebDev coding arena (1,506 Elo). Anthropic’s Claude Opus 4.6 and 4.7 models occupy the top three positions in both arenas. Within the Text Arena’s category breakdowns, Gemini 3.5 Flash ranked first (1,521 Elo) in math but 31st in coding (1,507 Elo).\n\n**Behind the news:** Google debuted Gemini 3.5 Flash at Google I/O 2026, its annual gathering for developers. Here are other AI-related announcements from that event:\n\n* Google overhauled [Antigravity](https://antigravity.google/blog/introducing-google-antigravity-2-0), its AI coding tool, to emphasize managing agents and de-emphasize its resemblance to popular IDEs like Microsoft’s VSCode. Antigravity’s command-line version replaces the open-source Gemini CLI.\n* The company introduced Omni, a family of multimodal models, beginning with [Omni Flash](https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/), a lightweight model that can generate video from text, image, audio, and video, or any combination of these inputs. Omni Flash is available to Google AI Plus, Pro and Ultra subscribers through the Gemini app and Google Flow, but not yet in the API.\n* Gemini 3.5 Flash enables [Google Search](https://www.cnn.com/2026/05/19/tech/google-search-bar-updates-2026) to permit more conversational, chatbot-like search queries, power agents to do online research on users’ behalf, and replace Search’s traditional ten top links with more AI-generated summaries that answer users’ questions with cited sources.\n\n**Why it matters:** Gemini 3.5 Flash changes what “Flash” means. Introduced as a smaller, faster model tier after Gemini Ultra, Pro, and Nano, for now, Flash is Google’s mid-tier multimodal model, more akin to Anthropic’s Sonnet than Haiku. The model’s speed may be worth the additional tokens it generates for developers who build agents that require multiple turns as well as low-latency applications like chatbots, search, and image and video analysis.\n\n**We’re thinking:** Google [said](https://www.youtube.com/watch?v=wYSncx9zLIU) Gemini 3.5 Flash often runs at less than half the cost of competing models. But Artificial Analysis found that, running the tests in the Intelligence Index, it actually costs more than Gemini 3.1 Pro. The Flash designation no longer implies a clear cost advantage for developers who run agentic workloads. Anthropic, OpenAI, and Google have raised per-token prices on their newer flagship and Flash-tier models. Gemini 3.5 Flash fits the pattern.\n\n---\n\n![An arm juggles three EU star-adorned rings, representing the EU balancing new AI regulatory amendments.](https://charonhub.deeplearning.ai/content/images/2026/05/AIACTDELAY-2.webp)\n\n# Europe Pauses Some AI Regulations\n\nThe European Union weakened some provisions of its landmark AI Act and delayed others after businesses and policymakers argued the law made European companies less competitive.\n\n**What’s new:** The European Parliament and member states agreed to [amend](https://www.europarl.europa.eu/news/en/press-room/20260427IPR42011/ai-act-deal-on-simplification-measures-ban-on-nudifier-apps) the AI Act to delay restrictions that target applications the union considers to pose significant threats to safety, health, or individual rights, among other changes. The [amendments](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX%3A52025PC0836) await formal adoption by the union’s council and parliament. The EU characterized the amendments as “safer and simpler rules for both citizens and businesses.”\n\n**How it works:** The amendments generally streamline the EU AI Office’s oversight and enforcement responsibilities. They also extend deadlines for AI developers to comply with certain provisions and simplify others.\n\n* Requirements for AI systems deemed to be “high-risk” — including those used in law enforcement, critical infrastructure, employment, migration, and personal identification — are delayed to December 2027 from a previous deadline of August 2026. They would give developers until August 2027 to implement supervised sandbox environments to isolate new models from the wider world during testing. They would also extend deadlines for AI-driven products including machinery and toys until August 2028 and for watermarking of AI generated output and other transparency requirements to around December 2026.\n* The revisions would adjust the ways personal data can be used in training and deployment of AI systems. Under existing EU law, some categories of personal data can be used only when “strictly necessary.” The revisions would allow for personal data to be used to detect and mitigate bias.\n* They also carved out or clarified exemptions for some products. For instance, the AI Act would not affect industrial machinery, which is already regulated by product-safety laws. Further, lighter compliance requirements and administrative burdens would apply in some cases to smaller companies (fewer than 50 employees with either annual worldwide revenue up to €10 million or total assets up to €10 million) and “small mid-cap” companies (roughly between 250 and 749 employees with either annual worldwide revenue up to €150 million or total assets up to €129 million).\n* The amendments strengthen the AI Act in one notable area: They ban generation of sexually explicit images of children and non-consensual nude images of real people.\n\n**Behind the news:** In 2024, the EU [passed](https://www.deeplearning.ai/the-batch/the-ai-act-moves-closer-to-approval) the world's most stringent law to regulate AI. The law entered into force the same year, with certain provisions to be phased in over subsequent years. It was criticized as imposing unreasonable burdens without improving safety virtually from the moment the legislative process began.\n\n* In 2023, executives at 163 companies signed a letter that [argued](https://www.computerworld.com/article/1630701/businesses-and-tech-firms-criticize-proposed-eu-ai-act.html) the legislation was “bureaucratic.” In 2025, 110 companies urged policymakers to postpone the implementation timeline [writing](https://aichampions.eu/) because the regulations were “unclear, overlapping and increasingly complex.” Companies such as German industrial and software firms Siemens and SAP [lobbied](https://www.reuters.com/technology/siemens-sap-call-eu-revise-its-ai-regulations-faz-2025-07-13/?ref=eutechloop.com) for revisions, saying that regulations were holding them back.\n* Two early reports influenced the amendments. A [report](https://economie.fgov.be/en/publication/much-more-market) published in April 2024 by Enrico Letta, Italy’s former Prime Minister, argued that the EU was fragmented into 27 national markets that prevented European firms from scaling the way American and Chinese companies can. A September 2024 [report](https://commons.wikimedia.org/wiki/File%3AThe_future_of_European_competitiveness_A_competitiveness_strategy_for_Europe.pdf) about Europe’s competitiveness framed the region’s stagnating GDP growth as an “existential challenge” and focused on closing the innovation gap, decarbonization, and reducing dependencies.\n* In early 2025, the European Commission — the executive arm of the EU — [announced](https://commission.europa.eu/law/law-making-process/better-regulation/simplification-implementation-enforcement/simplification_en) its intention to reduce regulatory burdens, simplify rules, and boost economic competitiveness.\n* In February 2026, the European Commission [withdrew](https://www.europarl.europa.eu/legislative-train/theme-a-europe-fit-for-the-digital-age/file-ai-liability-directive) its proposed AI Liability Directive, a controversial proposed law, separate from the AI Act, that would have introduced EU-wide standards for lawsuits over AI-induced harms.\n\n**The public responds:** Immediate reaction to the amendments was mixed. The AI industry generally welcomed the added flexibility while consumer groups expressed concern over the potential weakening of safety standards. Some media reports framed them as watering down the law to appease business interests. The European Consumer Organization [said](https://www.beuc.eu/press-releases/ai-omnibus-risks-creating-dangerous-regulatory-loopholes-and-weakening-consumer) the deal makes the digital environment less safe and creates dangerous loopholes for AI companies.\n\n**Why it matters:** In both its original and updated forms, the AI Act aims to mitigate AI-induced “systemic risks,” a concept borrowed from finance and infrastructure regulation that refers to failures capable of rippling across industries or large parts of the economy. The idea that AI poses systemic risks remains speculative, whereas overregulation poses the economic risk of stifling innovation and blocking beneficial technology. The revisions aim to balance risks and benefits by easing burdens on developers, giving companies additional runway to understand and comply with requirements, and clearing the way for ongoing innovation in critical industries such as manufacturing and semiconductors.\n\n**We’re thinking:** Many provisions of the original AI Act were [unclear](https://www.deeplearning.ai/the-batch/experts-debate-definitions-in-european-unions-ai-act), overly broad, or unnecessarily burdensome. These revisions appear to make the law less burdensome while retaining helpful elements. This is a good step for European competitiveness.\n\n---\n\n![Doughnut chart shows 77% of agentic traffic in 2025 went to product search pages.](https://charonhub.deeplearning.ai/content/images/2026/05/TRAFFIC.webp)\n\n# Agents Surf the AI-Written Web\n\n AI-driven activity on the internet rose sharply last year, a study shows.\n\n**What happened:** AI-driven traffic, or internet interactions that were generated by or on behalf of AI systems, nearly tripled in 2025, according to a [report](https://www.humansecurity.com/learn/resources/2026-state-of-ai-traffic-cyberthreat-benchmarks/) by the cybersecurity firm Human Security. The volume of activity by crawlers that collected data en masse to train AI systems and bots that scraped data points such as prices for immediate use multiplied by single digits. Traffic by AI agents and agentic browsers ballooned (although it remained a tiny percentage of the total). More than 95 percent of AI-driven traffic involved activities the authors designated retailing and ecommerce, streaming and media, or travel and hospitality.\n\n**How it works:** The [2026 State of AI Traffic and Cyberthreat Benchmark Report](https://www.humansecurity.com/wp-content/uploads/HUMAN_Report_2026-State-of-AI-Traffic-and-Cyberthreat-Benchmark.pdf) is based on an analysis of over 1 quadrillion internet interactions observed in 2025 by Human Security, which serves around 1,200 customers in more than 200 countries and territories.\n\n* AI-driven traffic nearly tripled, while automated traffic, which includes both AI-driven and conventional bot traffic, grew more than 23 percent. Human traffic grew by around 3 percent.\n* The rise in AI-driven traffic includes crawlers that collect training data (68 percent of AI-driven traffic for the year, more than 2x the previous year’s volume), scrapers that collect data for immediate use (32 percent for the year, a 7x increase in volume), and agents that execute browser-style tasks (1.7 percent in December, nearly 80x growth year over year).\n* Of the agentic interactions, 77 percent took place on product and search pages. The rest involved account pages, authentication, and completing transactions, in that order.\n* OpenAI was responsible for around 69 percent of automated traffic, including ChatGPT users and crawlers that collect training data (OAI-SearchBot) and timely information (GPTBot). Meta accounted for 16 percent, and Anthropic initiated around 11 percent.\n\n**Security implications:** The researchers deemed a significant amount of the automated traffic malicious.\n\n* Scraping activity that the authors deemed malicious, aiming to extract data for purposes such as competitive intelligence or systematic underpricing rather than aiding AI-driven interactions, rose nearly 47 percent from the prior year. (The authors labeled traffic malicious if the scraper spoofed its identity, followed a recognized attack pattern, or otherwise behaved in a suspicious manner.) Of the 750,000 threat profiles identified by the researchers, more than 60 percent were involved in malicious scraping.\n* Attacks in which a bot attempted to take over a user account fell by more than 30 percent over the year. However, the remaining attempts showed a 4x increase in attacks that occurred after an account was logged in. Although such attacks often took advantage of existing accounts via stolen credentials or hijacked sessions in progress, the number in which an agent created the account rose by 89 percent from the prior year.\n* The percentage of transaction traffic that involved a compromised payment card was “low and stable,” but the volume that was blocked by the card issuer rose by 20 percent. This may reflect a rising number of transactions executed on the Internet, an increased ability of agents to cycle through card numbers, or both.\n\n**Yes, but:** The report analyzes only activity on Human Security’s platform, not the internet as a whole. Moreover, malicious traffic often misrepresents its origin, so the researchers’ evaluation of any given data point may be mistaken.\n\n**Why it matters:** Autonomous systems are flooding the internet with a rising tide of additional traffic, and its likely this trend will continue in the foreseeable future. Infrastructure must be built or upgraded with this in mind. The rise in automated activity also poses challenges for cybersecurity because legitimate AI agents perform many of the same activities — browsing products, creating accounts, and checking out of transactions — that previously signaled malicious bots.\n\n**We’re thinking:** Agentic traffic on the internet is just getting started. The 80x rise last year is bound to multiply further in coming years as agents become more capable, robust, and trustworthy.\n\n---\n\n![Diagram showing step-by-step image creation process, featuring bears, cats, and birds as examples.](https://charonhub.deeplearning.ai/content/images/2026/05/STROKES.webp)\n\n# Planning Generated Images In Stages\n\nText-to-image generators that use diffusion or flow-matching typically compose a whole image at once (although they refine the whole image in steps). Researchers got better results by breaking image composition into discrete stages, then checking and revising interim results.\n\n**What’s new:** Lei Zhang and colleagues at Meta, University of California San Diego, Worcester Polytechnic Institute, and Northwestern University proposed a fine-tuning [method](https://arxiv.org/abs/2604.04746) for image generators that trains a model to compose images by planning, generating an element, checking whether it matches the prompt, correcting if necessary, generating another element, and so on.\n\n**Key insight:** Text-to-image models often [fail](https://arxiv.org/abs/2307.06350) to represent spatial relationships (such as whether one element is above, below, in front of, or behind another) and object attributes (such as numbers of fingers, arms, or legs). The generation process becomes easier to control when the model learns to complete the image by looping through a staged process. Given a prompt like “a bear hovering above a silver spoon”, the stages can be:\n\n* **Plan.** Write an instruction for the next change to be made (iteration 1: “draw a bear”; iteration 2 “add a spoon under a bear”; and so on) and a description of the image after the change.\n* **Sketch.** Generate an updated version of the image so far (iteration 1: an image of a bear; iteration 2: the bear and a spoon).\n* **Inspect.** Check the instruction and the description against the prompt, and check the image against the instruction.\n* **Refine.**Issue a command to correct it if needed (iteration 2: “the spoon was in front of the bear, draw it under the bear”) and produce a new image.\n\nTraining on data that represents this process can teach the model not only to generate an image based on a prompt but also to build up the image composition and correct it.\n\n**How it works:** The authors started with [BAGEL-7B](https://arxiv.org/abs/2505.14683), a pretrained multimodal model that takes images and text (say, two images and an instruction to combine them) and produces images and text (say, the combined image and a description of how the input image was changed). They fine-tuned it to generate images by cycling through stages to plan, sketch, inspect, and refine the composition.\n\n* **Fine-tuning to plan and sketch:**To create a dataset for fine-tuning the plan and sketch stages, the authors generated 32,000 examples, each containing about three to five intermediate images and a final image. They did this by prompting GPT-4o to transform prompts from [two](https://huggingface.co/datasets/BLIP3o/BLIP3o-Pretrain-Long-Caption) [datasets](https://huggingface.co/datasets/UCSC-VLAA/Recap-DataComp-1B) into text-based scene graphs. The graph nodes were objects (for example, “cat” or “bear”) or attributes of objects (“furry”), and edges encoded relationships between them (a cat “is” furry). From each graph, they randomly selected parts that contained objects, attributes, and relationships. They asked GPT-4o to turn the parts into incremental prompts to add those objects, attributes, and relationships to an image. They generated an image for each incremental change using [FLUX.1 Kontext](https://bfl.ai/models/flux-kontext) and kept only results that GPT-4o deemed consistent with the incremental prompts. The authors fine-tuned the model on the text-image examples. The model learned (i) to generate the next text tokens of the examples and (ii) to generate the next image by adjusting the pixel values of the current image over several flow-matching steps.\n* **Fine-tuning to inspect:** To produce a dataset for fine-tuning the inspect stage, they used the model after fine-tuning to plan and sketch, they generated examples of incremental instructions and images and then asked GPT-4o to judge whether an intermediate text description conflicted with the original prompt. Finally, they prompted GPT-4o to produce critiques and corrective instructions. The authors produced nearly 7,000 examples that stayed consistent with the original prompt and nearly 8,300 inconsistent examples. By learning to reproduce the GPT-4o critiques and instructions, the model learned to either accept the current plan as consistent with the original prompt or describe how to fix inconsistencies.\n* **Fine-tuning to refine:**The authors fine-tuned the model on a [dataset](https://arxiv.org/abs/2504.16080) of images, text reflections about how an image can be improved, and improved images.\n* Finally, they fine-tuned the model on all three datasets together using the same loss terms as before.\n\n**Results:** The authors’ fine-tuning method improved BAGEL-7B on tasks that require generating images in which object relationships match a text prompt (for example, placing a bear on a spoon instead of behind a spoon). It also improved BAGEL-7B’s ability to generate images based on real-world knowledge, such as scenes of a particular time of day or historical era.\n\n* On GenEval, which measures the percentage of details mentioned in a prompt that appear in the resulting generated image, the authors’ method raised BAGEL-7B from 77 percent to 83 percent after fine-tuning on 62,000 examples; it used 131 flow-matching steps. In contrast, [PARM](https://arxiv.org/abs/2501.13926), a method that improves image-generation by critiquing intermediate noisy diffusion states, achieved 77 percent after fine-tuning on 688,000 examples; PARM used 1,000 flow-matching steps.\n* On [WISE](https://arxiv.org/abs/2503.07265), which uses GPT-4o to rate realism, aesthetic quality and consistency between a generated image and its prompt (0 to 1, higher is better), the method raised BAGEL from 0.7 to 0.76 on average. The fine-tuned model more often placed scenes in the correct era or temporal context. Tested on a chemistry dataset, it more often generated chemically plausible structures, substances, and laboratory scenes.\n\n**Why it matters:** Image generators frequently produce good-looking images, but their output is often at odds with the prompt. For instance, objects may be out of place and have the wrong attributes. This work offers a way to make such systems more dependable beyond simply scaling training data.\n\n**We’re thinking:** An image generator that composes images in stages is analogous to an LLM that reasons over its input step by step. Both approaches direct the model to break down requests into pieces, and both improve the output.",
+      "tags": [
+        "AI新闻",
+        "Agent",
+        "Gemini"
+      ],
+      "score": 85,
+      "summary": "The Batch周刊报道Gemini Flash涨价、AI法案延迟、Agent驱动流量。",
+      "fetched_at": "2026-05-29T23:02:35.681058+08:00"
+    },
+    {
+      "title": "X平台疯传！这个国产开源模型，把信息图生成整明白了 | 附实测",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652803956&idx=1&sn=cf79cf7ef47805ef5ce237f6c21f0940",
+      "published": "2026-05-29T21:34:00+08:00",
+      "source": "智东西",
+      "content": "原创 陈骏达 2026-05-29 21:34 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=64aba817&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4AcuoKhZ4mtMY5wZTPdHZSLjqbSrDSkAOQXrrCbLpolRN7Ye4Xgqc2SU9OFCZ2EABBtnpL9b1aDjr15XibTxmzzRhJIlsf1lF5UIL0%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6e8e64a8&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqyibDLtVqSEJNy7O6Kfcy6w1gibTr6r3kwqnZIia50LuVexwsuYB7Jcapic64fPMf2e89icxhpQqaBTTHEM3vr6yy0X4ZUTBoHIfUw%2F640%3Ffrom%3Dappmsg)\n\n**8B参数，实现纯粹端到端像素-文字建模。**\n\n**作者 |**陈骏达\n\n**编辑 |**漠影\n\n今年4月底，GPT-Image 2发布，带动了一波**信息图（Infographic）**生成热潮。从书籍摘要到商业报告，过去需要设计师才能完成的复杂版面，开始被AI批量生成。“AI信息图”成为近期内容创作领域讨论热度最高的话题之一。\n\n但热潮背后，一个问题随之浮现：GPT-Image 2是闭源的，按Token计费，每百万输出Token高达30美元，对于有本地部署和二次开发需求的团队来说，它并不是一个可以长期依赖的选项。\n\n**“有没有可商用的开源替代方案”**成为开发者社区的高频讨论。在这个背景下，商汤科技4月底开源的SenseNova U1开始进入越来越多开发者的视野，并在X平台引发了大量讨论。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2a333ed4&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcurxpDWIE5BjrjgLFCWEicBTV0rghkPlOI6HtYp4NVicJsU9IyDTdeOaiaqlH8wLEUjCmNI2OZrdK0gxOtgsBCPEZicsp9v3joLzskY%2F640%3Ffrom%3Dappmsg)\n\nSenseNova U1采用了商汤自研的创新**NEO-unify架构**，彻底丢弃了传统图像模型必备的VAE和视觉编码器，将像素与文字放入同一表征空间原生建模。这意味着模型不再“翻译”图像，而是同时用两种语言思考，**从根源上解决了压缩带来的细节丢失和噪声问题。**\n\nHugging Face中国开发者社区工作人员Adina Yakup评价道：**“这一模型实现了纯粹的端到端像素-文字建模。”**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c9bb74fa&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuosNAqHNk8tHpT54jpQ9oj5bjod5Jb7A35Eyol2pwibiaY0qcvvy9QWibK3NF4nvH4tCicYHrUjibVJEcl39wI4hxg8LEDWOV1Nf0ys%2F640%3Ffrom%3Dappmsg)\n\n在结构化版面、密集中英文混排、图文精准对齐任务上，SenseNova U1实现了不错的效果，而这些历来是开源生图模型的软肋。AI博主Rohan Paul评价它：**“攻克了图像生成最难啃的骨头。”**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=1f9d607d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqiboS2awGjtY1Kn85FJQlVnYSLZq9mYof7TJeEkqEYiclmhz5knVXl87rjnica6forsmVY0A9BWHYOagicsZ7gVX2xASHn74IfY5w%2F640%3Ffrom%3Dappmsg)\n\n成本是SenseNova U1的另一大亮点。这一模型采用Apache 2.0 协议，支持商用，权重全开，单卡可跑，科技分析媒体Testing Catalog认为，**其成本约为闭源方案的十分之一**。开源不到一周，社区已自发提供GGUF量化权重，进一步降低部署门槛。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=017b7714&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqFSzQkoYBTWZPXdLguNialKgBk5q9JIdaxqGZWnGpZNwiceDUaWJ6Z004BbYibpPYRIYH4jhRMTBCY0DTicshdN7iaFd6M6rzyK5SY%2F640%3Ffrom%3Dappmsg)\n\n持续的高关注度下，近日，商汤进一步开源了**SenseNova-U1-8B-MoT-Infographic（信息图增强版）**，直接接瞄准信息图这一高需求场景。与GPT-Image 2等主流闭源方案相比，它在成本、可部署性和二次开发空间上提供了截然不同的选择。\n\n实际效果究竟如何？我们通过一轮实测，看看这款开源模型能交出怎样的答卷。\n\n***01******.***\n\n**七大硬核任务实测：**\n\n**梳理老黄行程、直出海报与论文**\n\n**高密度文字渲染已无明显破绽**\n\n开发者在X平台讨论SenseNova U1时，反复提到两个核心问题：文字渲染能不能稳？复杂版面能不能控？这也是信息图生成最本质的难点所在。我们把这两个问题放在实测的最前面，先验证基础能力，再延伸到海报、学术文档等更多场景，最后与GPT-Image 2进行横向对比，看两款模型的设计取向究竟有何不同。\n\n**（1）还原老黄“特种兵式”访华细节，梳理大模型演进时间线**\n\n第一个案例是最近很火的**黄仁勋同款行程**，老黄先到访了人民大会堂，在北京南锣鼓巷开启特种兵般的行程，吃炸酱面、喝豆汁儿、买蜜雪冰城，还尝了稻香村，随后开启台北之旅。\n\n面对这个任务，SenseNova U1信息图增强版先对复杂行程做了完整拆解，并按照合适的方式安排布局。生成的信息图结构清晰，图文结合也较为符合场景，还配有生动形象的描述，十分有现场感。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=f4b78298&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuoqpibBCDe7UMNWexbNcylZqWnwTWFOsQjib5bj8ZHAPicbicC8O7EvGjlD9XLTfRqsog1qr3LmpGKVibs2u2naCiaicFnUxcP40c24G8%2F640%3Ffrom%3Dappmsg)\n\n文字渲染方面，在这种高密度的场景下，依然能准确呈现地点、餐品名称及细节，整体可读性很强，展现了模型在复杂版面中对文字的稳定控制力。\n\n看完这个轻松的案例，我们又让SenseNova U1信息图增强版打造了一张**“LLM Architectures 大语言模型架构演进”**的横向知识图解。这个案例的难点在于包含大量数据，如何在柱状图中调整110M到1.8T的悬殊比例、让表格内的中英双语参数精准对齐，都是不小的挑战。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=f2e4b48a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcurEFAFsOE4QD9BbadceBNm2aL4RbpqOpzIBzaoBVzqVBmCOfQFGPMCQzuX6icvtV5jQqQOs5rHBH40pFm3da0nxfpoib4wnKxxTY%2F640%3Ffrom%3Dappmsg)\n\nSenseNova U1信息图增强版完美渲染了我们提供所有的文字信息，从BERT到GPT-5，年代和参数规模一目了然，没有出现文字乱码。在图表部分，柱状图渲染的效果基本符合数据大小，SenseNova U1信息图增强版还用箭头体现了模型之间的技术传承。\n\n**（2）生成音乐节与诗歌节海报，审美和准确度都在线**\n\n信息图还有一个十分常见的用法，就是海报生成。相比知识图解对数据精度的严苛要求，海报更考验模型对视觉冲击力、排版美学的理解能力。\n\n**在音乐节海报任务中**，我们要求SenseNova U1信息图增强版生成一张以富士山为主要视觉元素的海报。图片中央的富士山元素和舞台元素融合自然，下半部分的演出阵容以网格状整齐排列，12组音乐人的英文名和时间清晰列出。整体信息层级按照大标题、日期、阵容的顺序依次展开，视觉引导流畅。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=7f751991&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcupVibfqciaZTNeuICb2k0ORq74umIJicZiaHeTSH7xhFTYPNZmkFyulkg54ggGz0hIn9fD1ZiajJicKdsAloS9ere1JzeuIfMF26ibJ1c%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n总体来看，SenseNova U1信息图增强版很好地还原了深夜音乐节的氛围。\n\n**在诗歌节海报任务中**，我们在提示词中强调了“中间留白约占画面40%”以及“呼吸感极强”。模型准确地理解了这些要求，没有因为追求视觉效果而塞入多余装饰，而是严格遵循了克制的原则。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5d5b2c5d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcupSbGODMbJpNicS32Of10VATEtxpiclgibprnOZmia4xGO2JwD9KKkHIRd5sSsl4z2rPFGWwas0YkcgepTdmGv6YvjiaGTqVKjADPCw%2F640%3Ffrom%3Dappmsg)\n\n它还执行了深色衬线字体与米色纸张纹理的搭配，呈现出画面整体气质沉静，左下角竖排小字与右下角线描月亮的构图，精准捕捉到了东方留白诗意与现代排版的平衡感。这种对“少即是多”的理解能力在文生图中并不多见。\n\nSenseNova U1信息图增强版在应对精准排版指令时展现出了不错的执行力，生成的画面不仅好看，更能用于实际宣发场景。\n\n**（3）结构化文档生成，直出一页学术论文**\n\n最后，我们还考验了SenseNova U1信息图增强版在办公场景的应用。这类场景要求模型能精准理解文档的常见格式要求，并准确渲染所有文字。\n\n**第一个案例是Q2业务回顾的演示文稿单页。**SenseNova U1信息图增强版生成了深灰底、左侧竖排标题、右侧进度条的分栏结构，中英文副标题右对齐到位，进度条上“Revenue 128%”标注清晰，底部页码与公司名摆放工整。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b03da953&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuraxCib38QvXGUzrjOvjS9fB0F6IEPXOBDiciaqAoUaFXTq0j7pw8flznKTxDt0FDSic9Z7ib9GCzmudH5LbDbv6vKG4aJibRO1nqBqs%2F640%3Ffrom%3Dappmsg)\n\n处理这类商务页面时，模型对版面的留白控制得很舒适，没有多余的装饰元素去干扰信息层级，重点数据一目了然。\n\n**第二个案例是生成高密度的论文页面。**生成高密度学术论文页面的核心难度在于对复杂视觉元素与严谨逻辑关系的精确控制。提示词中的要求按照arXiv 风格进行页面渲染，且需要符合严格的学术排版规范（如斜体、加粗及专有名词标注）。\n\n最终，SenseNova U1信息图增强版准确输出了完整的页面排版，格式清晰、段落完整，复杂的数学公式也没有出现结构性错误，尤其在这类文字密度极高、格式复杂的情况下。整体呈现出可直接使用的完成度。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=1e581c7c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcurAqknN9WEr1icLtwg0QSjwI6bib60wnu13fp2dETS1RUMiahriciaESoP5qavT7DUibTy1tpVgfZej57TyKaIekPzmP1ngGJico9UQ5g%2F640%3Ffrom%3Dappmsg)\n\n**最后一个案例是难度拉满的高密度中文小字。**下图中是一家企业的品牌运营逻辑和市场表现全景解析，SenseNova U1信息图增强版不仅准确渲染了几乎所有中文小字，排版也较为清晰易读。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=97c0c451&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuoF27LKQt2HPepuytGqicxMEibGGa8Q9XND5LthKicomMr1Hc3PavBQZJIWfqf3DctCicoTrgT8mgC5L009wib9xkrbo2U1vJPiaVIbY%2F640%3Ffrom%3Dappmsg)\n\n总体来看，SenseNova U1信息图增强版在信息图任务上展现出了不错的版面控制力与复杂指令遵循能力。这让它有潜力成为内容创作与办公场景中的得力视觉工具。\n\n***02******.***\n\n**与GPT-Image 2横向对比**\n\n**两种不同的设计取向**\n\nX平台上有不少网友把SenseNova U1信息图增强版与GPT-Image 2放在一起讨论。我们也做了对照的测试，看看这两个模型在实际任务中有何异同。\n\n我们的首个案例聚焦于当前火爆的分镜生成玩法，要求两个模型分别生成一段跑酷动作序列：在未完工的灰色混凝土建筑内，一名运动员以动作捕捉剪影的形式，完成精准跳跃、墙跑和落地翻滚等一系列连贯动作。\n\nGPT-Image 2先交出了生成结果：\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=275840dc&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqzJHLdmImWhuTvVc0kt5bAiar0ZHWRap8FSRRgxKEJgbhssScOnclZRK12UqIOcibaO1zjPrpmiaZVBHlmib3kq0SPKuDAblumIJ4%2F640%3Ffrom%3Dappmsg)\n\nSenseNova U1信息图增强版随后完成了生成：\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=18cd87f3&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcupNAUYWGP0Ho6lz1A3yLANfCEpoTanF6TqexY5eSwka0wpicuGdzWyXYNsbj18gSwYIVX6sPeia9Xiaca1QXnIUW9wibvwBQSPaafM%2F640%3Ffrom%3Dappmsg)\n\n从视觉质感与逼真度的维度来看，GPT-Image 2生成的光影、材质、环境氛围比较逼真，富有视觉冲击力。**SenseNova U1信息图增强版则偏向概念化，强调动作路径和图形化表达。**\n\n从信息呈现与分镜实用性来说，SenseNova U1信息图增强版的生成结果专业且清晰。它将每个镜头细致拆解为：镜头语言（怎么拍）、动作（怎么做）、视觉特效（加什么特效）。拿到这个分镜脚本已经基本可以开始制作了。\n\nGPT-Image 2的生成结果在实用性上稍逊一筹。它看起来很酷、很科幻，但缺乏具体的制作指令。\n\n在另一个信息图生成测试中，我们为两个模型输入了同一份复古航海图风格的提示词：要求生成一张横版信息图，以做旧纸张为基底，用虚线航线串联起从“创意萌芽”到“产品上市”的六个阶段岛屿，并标注风险暗礁、资源漩涡等危险标记。GPT-Image 2与 SenseNova U1 信息图增强版再次展现出不同的设计取向。\n\nGPT-Image 2在航海图任务中**延续了艺术化取向**，较好地还原了做旧纸张纹理、手绘风格地标与古典装饰元素，整体沉浸感强；但细节繁复，字号较小，阅读效率不高。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6c0f700b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcurYmjSyIuUy7A0jDFuCCVxRkmSU6COD4ibj4tX9Se7WTLfx8vz1QdUUPZ6Ue8tGv1R31ntveZANUYy98xQ9T9XibfibbqqLxEDyVg%2F640%3Ffrom%3Dappmsg)\n\nSenseNova U1信息图增强版则选择弱化了厚重纹理，视觉负担更轻，信息获取更直接，更契合商业图表的高效传递需求。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=05a3a732&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuobB2RbJh9qKrV3ePXecGDsWv5lg8Q3EdL1CfRzFwNaFKU38oB56n0ZkLtu5rrJSiaK35laIwvW0ux2GjH947b42xXmwemQia4rQ%2F640%3Ffrom%3Dappmsg)\n\n综合以上两个实测案例，我们可以清晰看到两款模型在信息图生成领域呈现出的分化。\n\n**GPT-Image 2是“视觉派”**，擅长通过光影、材质，打造具有冲击力和情绪的视觉作品。但在需要精确拆解逻辑、清晰传递密集信息的场景中，它的生成结果往往过于重视觉而轻信息，导致可读性下降。\n\n**SenseNova U1 信息图增强版则更像是“生产工具派”**：它优先保障信息的结构清晰与获取效率，而它的短板在于视觉质感和稳定性仍有提升空间。\n\n***03******.***\n\n**回到开发者的问题**\n\n**架构、部署与真实价值**\n\n实测结果回应了X平台上那些讨论的核心判断，但也带来了一些新的问题值得深挖：这款模型为什么能用8B参数做到这些？开发者真正部署时会遇到什么成本？它在哪些场景下是可靠的生产工具，在哪些场景下还需要谨慎？\n\n作为一款仅有8B参数的大模型，尺寸并不是SenseNova U1系列模型唯一的特点。过去，**多模态大模型长期受困于“理解”与“生成”的二分**——通过视觉编码器（VE）看懂图像，再经由变分自编码器（VAE）生成图像，中间依靠适配器连接。\n\n这种拼接式架构如同一个“讲不同语言的工作组”，信息在模块间来回传递，不仅损耗大，更让模型不得不依赖堆参来弥补性能损失。\n\n商汤科技发布的SenseNova-U1系列模型从根本上解决了这一难题——它采用了自研的NEO-unify架构范式，**在单一模型中原生统一了多模态理解、推理与生成，真正将图像与文本放到同一个表征空间中直接建模。**\n\n在此前发布的SenseNova-U1基础上，商汤专门强化了SenseNova U1信息图增强版的信息图生成能力。为了避免通用理解能力在生成能力提升的过程中退化，商汤用高质量数据延长了MT训练阶段、在MT与SFT阶段优化了理解与生成任务的数据配比、在 RL阶段进一步打磨了奖励设计。\n\n最终，增强版模型在信息图相关基准上实现了显著提升：在 BizGenEval（Hard） 任务中，**较原版模型提升了6.8分**；而在 IGenBench 的 Q-ACC（问答准确率） 测试里，该基准用于评估信息图是否同时满足文本、图表、数据与结构等多重要求，**增强版较原版更是大幅跃升了18.2分。**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=cb7a07ef&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcupFTa3FQjxlnDP5QSpNqWY9UPpwrI85LscfYVZ0cmkaYBzsAwhoNCxDKI7YIqdv4CZk4t2JMy4oq7azYXdyicC6tqQ1eD2c5zBI%2F640%3Ffrom%3Dappmsg)\n\n统一架构还赋予了SenseNova U1信息图增强版更丰富的任务边界：它不只是一个生图工具，还可以完成多类型任务，让内容创作的整个链路都能在一个模型内闭环。\n\n在上述的信息图、视觉理解任务中，SenseNova U1信息图增强版都展现出了扎实的实力。而更值得开发者关注的是，这份实力并非以高昂的算力或API调用成本为代价。\n\n作为一款Apache 2.0协议全开源、支持商用的模型，**SenseNova U1信息图增强版支持轻量化的本地部署。**本次实测中我们选择的是一张RTX 5880显卡，拥有48GB显存，实际跑下来显存占用大概在30多GB。我们还试着将显卡显存大小调整至24GB、8GB，结合虚拟显存后，这些配置也能成功跑出结果。\n\n而在RTX 5880的配置下，SenseNova U1信息图增强版生成一张信息图的时间大概在70秒左右（2048x2048，推理步数30）。同时，GGUF量化后的模型，**适用于约10–12 GB显存的消费级显卡。**\n\n这让SenseNova-U1系列模型具有较强的性价比。以GPT-Image 2为代表的主流闭源模型采用按Token计费的模式，每百万输出Token价格高达30美元，生成一张高分辨率信息图的估算成本在0.005美元至0.4美元不等。单张调用似乎不贵，但对于日均生成上千张图像的团队来说，成本压力迅速累积。\n\n相比之下，SenseNova-U1系列模型可在开发者自己的服务器上无限次运行。**这种成本结构对团队而言是高度可预测、极低边际成本的。**\n\n***04******.***\n\n**结语：统一架构的想象力**\n\n**远不止信息图**\n\n回到最初网友们讨论的焦点，实测给出了答案。SenseNova-U1系列模型的架构突破是真实的，NEO-Unify去掉VAE和视觉编码器之后，模型在信息层级理解和版面控制上确实获得了结构性的改善，而不只是基准分数的跃升。\n\n此外，模型在信息图这一场景的细分能力也十分突出。在行程梳理、海报生成、学术文档等高密度场景中，它能交出可用的结果，并非噱头。\n\n而其开放的姿态和极低的部署成本，让这种能力不再只是实验室里的演示，而是真正有机会落地到开发者自己的产品和工作流中。\n\n当然，极高密度文字场景下偶发的乱码、视觉质感与GPT-Image 2之间的差距，都是它还在打磨的空间。但一个8B的开源模型，能把这场对话推进到这里，本身已经说明了一件事：统一架构的想象力，远不止信息图。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=30f34285&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4Acuo6QgWG1khhLzE6v3PcF48D8flNzoAeUCdqI0mCAhIT26HPvPDUqbiakqAM69eqdybFLS7vIAr93sqlVgYwl5ssZicgBWvNnPlDA%2F640%3Ffrom%3Dappmsg)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=36bfaedf&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcurNmJzWzT0AqWPLg3N2lqUx5fLP7Q4lO8Mx5ICBgnsiar0xLibL0mq7YnSbGZghvicDWTU0WiaVCl04sZDqKklFOiat6DGBd9bhOvq0%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=acc98126&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqtCJxelvJpo8AQmdxxmXiag8mVxjooNuEplw0PkJS58UIohucjFm5ODlMq41Z0atyCZNeINXZBbkf6YO82Zqm4iaGnjMVPic48ibs%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dc7c98df&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqazLC3JiaQGjeqEQeWYxIAF5v4e78KiakS7vibPsAVaMIGUB9cskwicXgz9WNo4PB9cuy8t5RGhRxiby9kt6wMSSq1xhnnT73hNQwg%2F640%3Ffrom%3Dappmsg)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=fc8e3ab1&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA4MTQ4NjQzMw%3D%3D%26mid%3D2652803956%26idx%3D1%26sn%3Dcf79cf7ef47805ef5ce237f6c21f0940)",
+      "tags": [
+        "开源模型",
+        "信息图",
+        "SenseNova"
+      ],
+      "score": 80,
+      "summary": "智东西介绍商汤开源模型SenseNova U1，可生成信息图。",
+      "fetched_at": "2026-05-29T23:02:35.681122+08:00"
+    },
+    {
+      "title": "这家公司用大模型给月嫂派活，周活10万次，前百度副总裁创业",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652803956&idx=2&sn=d3d65a2fcff5442347070eb3cd50533d",
+      "published": "2026-05-29T21:34:00+08:00",
+      "source": "智东西",
+      "content": "原创 李水青 2026-05-29 21:34 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=03d465c4&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4Acuo06Q7I5WqRfc1CN6Um6LK9pWrbxLP39LlFnBDgxAhDHdzLY5lHc5XZKZhu4fYyxSgnQChLqr59s6lZ1n7yRdAhbH0EicIpuku4%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=631561d0&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4Acuqib6gZ1IAg7icjmDgm3lbfUyx64StIfmX5fLWnlFhyntjQYUWFI7njPhLkAxxzpictpQ5pNrupy5o8czxl2TuDaMGJnqUhcJPKCo%2F640%3Ffrom%3Dappmsg)\n\n**推出全国首个家政具身平台，要让机器人进家。**\n\n**作者 |**李水青\n\n**编辑 |**心缘\n\n智东西5月29日报道，5月27日，济南，一场看似传统家政行业的发布会，却坐满了AI和机器人从业者、高校科研学者及科技媒体。\n\n当天，丽阳神州推出**全国首个生活服务全场景具身智能训练平台“硅聚变”**、**升级版“丽阳雨露”大模型平台**、**家务机器人“丽阳小当家”**。这家公司很多人并不熟悉，但它背后站着中国家政行业龙头“阳光大姐”，后者深耕家政服务20多年，培训服务员数十万人。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c8f8dc3b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4Acur7btc7vQR17UMF2iaTTaJqwpurXUf9G4zm3gbrhX9AtBaNjBzDOIbIribYw5qsjk0rqLndWfdgFJtADx0ial6SFGIPnC1gczzh2E%2F640%3Ffrom%3Dappmsg)\n\n更值得一提的是掌舵人**李硕——原百度副总裁、百度智能云战略行业总经理**。如今，他把创业方向押在了“AI+家政”。\n\n“你心中最理想的人生状态？”李硕开场抛出一个哲学问题。台下大部分人选择了：“能奋斗、能躺平，自由切换。”李硕话锋一转：“理想和现实之间，差一套系统。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=d1644f56&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4Acuo4tjRwLbLTiaqiapQDTMM6ZJiank8LBPLqQMktbrdmLKgPjDXlr3j0BVDSiaof05Jr2tIc2N8MGYQasNvzAgQhW5p6ZIwybiaq2yo4%2F640%3Ffrom%3Dappmsg)\n\n这套系统，就是**AI赋能的家政服务**。它不只是擦桌子、拖地板那么简单，而是**一整套对抗生活熵增的系统**：老人摔倒怎么办？产妇恢复怎么安排？孩子成长如何陪伴？谁来处理夜间护理、卫生间清洁、医疗陪护这些又脏又累又高度非标的工作？\n\n过去这套系统主要依赖人，现在AI和机器人正在开始接管其中的一部分。\n\n这家2018年创立的公司，AI鸿图已不是停留在“讲故事”阶段。李硕在专访中告诉智东西，其“**AI工作清单**”系统已覆盖**上万名服务员**，周访问量达到**7万-10万次**；**AI客服**已开始独立处理用户需求；**机器人**已在济南两家三甲医院承担医疗垃圾分类等工作。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=074436fa&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4AcurmaGficG0Ku4vpPN8wqQMWDvv8gFW2BnDlaVW2X3X8PJoicbSVcWCPyBavhibDXcvISherDkAAlW00h5BRV9hBr56v1nP9Hj8W1w%2F640%3Ffrom%3Dappmsg)\n\n而本次亮相的具身智能训练平台“硅聚变”，被李硕称为“可能是唯一能给机器人提供真实高质量家政数据的训练场。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=77be8453&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuqxxZdWuDgQg9wm8USj7S2JgFOYiasBRXKqfF4MNH6iatjBZibtYq9RkPWVdw5ibmOVcGNR7iaeJialWbaUpHLXh3uMpBDy3LEia0tLSw%2F640%3Ffrom%3Dappmsg)\n\nAI如何变革家政行业？机器人什么时候能够进家？这又将对行业从业者和我们的生活带来什么样的影响？\n\n本文通过**对话李硕和实地考察**，看一个技术出身的大厂高管，如何从行业长出来，打造一个“AI+家政”的创业范本。\n\n***01******.***\n\n**Agent落地400+家政门店**\n\n**具身机器人或明年进家**\n\n2026年，Agent成为AI落地的主战场。而家政行业，凭借复杂场景、高频动作和真实数据，成为最适合Agent和具身智能落地的行业之一。\n\n“我们内部的工作几乎全用OpenClaw（开源Agent架构）重做了。”李硕在专访中告诉智东西。原本计划扩招的开发团队停了下来，他们的工程师只用了三天，就完成了一个**AI岗位体系重构**。\n\n现在，AI已经深度参与**客服、培训、质检、服务匹配**等环节。\n\n举个例子，在阳光大姐的一家线下门店里，一天40多个用户需求，其中20多个完全由AI处理完成——从需求澄清、精准匹配到服务推荐，全程自动化。这套能力正在向全国近**400家**分支机构铺开。\n\n变化还来自于**具身智能**发展，家政行业正**为具身智能提供训练数据和落地场景**。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9a8986d6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4AcurRETQfESck2Gv6sJVSQKVfGopRCuFJjF8uyR8uJ8Xm5sOJaic3tb8mgYZeGlqkz10xnzZ2g6iaVuzl2EDA4GdAHNibcxpliad4eWg%2F640%3Ffrom%3Dappmsg)\n\n李硕把**家政服务员**比作“**特斯拉用来训练自动驾驶的驾驶员**”——特斯拉路上跑着几千万辆车，每辆车都在为自动驾驶模型采集数据。而具身智能行业呢？全中国能达到“特斯拉水准”的家政服务“驾驶员”，李硕估计不超过2000个。\n\n家政服务员正在成为具身智能最稀缺的训练资源。她们每天都在做真实的服务：开冰箱、拿瓶子、叠衣服、给老人翻身——这些动作，每一个都是机器人需要学习的“技能”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=87e96b7d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuqQm6jbVpzmOepsahIR5lsYibKTwt9hZjxNEUIgop8ibO7A79AAMWIQHF88gJ5wcGluVoElLLHAzHtibd4lIP7FHHDHzoquU1YhcQ%2F640%3Ffrom%3Dappmsg)\n\n而丽阳神州的培训基地，每年有上万人在这里进行实操训练，在李硕看来，这正是具身智能行业最缺的“数据油田”。\n\n机器人进家，也不是科幻。\n\n当智东西问及**机器人进家的时间表**，李硕的回答也比很多人想象得更激进：“**明年或者后年，人带着进家。**”当然，他强调不是机器替代人。而是人负责情感、判断、监督，机器人负责脏活、累活、重复活。\n\n***02******.***\n\n**从三款产品**\n\n**看AI和机器人如何落地家政行业**\n\n如果说很多公司还在讲“AI改变世界”，那么丽阳神州更像是在回答另一个问题：AI到底怎么干活？\n\n他们这次发布的三款产品，对应了家政行业重要的三件事：AI理解人、机器人学习人、人机开始协同。\n\n**1、丽阳雨露大模型服务平台：自研家政大模型，AI嵌入工作流**\n\n当下，很多行业大模型产品还停留在“**你问我答**”的阶段，但李硕发现这条路在家政行业**走不通**。\n\n“这个行业很多人连搜索引擎都不会用。”所以丽阳雨露大模型服务平台的升级方向，不是做一个更聪明的聊天机器人，而是**把AI塞进服务员每天的工作流里**。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2be186e3&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4Acur2GF9aPLDMiam5JK6HUicKibORVpicGTEPQgKV0Fw0FaES5jxGVQgOvZZ71TsEERibGvRmZhgY2EW0DvWOriblMrAobHVLfa6dxOibrw%2F640%3Ffrom%3Dappmsg)\n\n李硕告诉智东西，目前最火爆的一款应用，就是“**智能工作清单生成**”。\n\n比如月嫂每天服务宝妈时，系统会自动生成当天工作安排：饮食、护理、观察指标、沟通重点全部结构化输出——今天产妇处在产褥期第几天、母乳喂养什么阶段、身体什么状况，对应的护理重点是什么。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b7fb6b78&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4Acup6hYqdkh61sNkC38fyCW2N8pHQ7XfxicNcYSKfj7ia502OPZ7kaq5ziakejKuQq1yOCD5N3p4tcV2ic7InKhc1GHNW0espqibq2Sk4%2F640%3Ffrom%3Dappmsg)\n\n这份清单不仅是给服务员看的，更是给宝妈看的。宝妈看完知道服务员为什么做这些事，减少沟通成本，还能反向监督。\n\n这套功能目前向一万多名服务员开放，每周访问量7-10万次，平均每个服务员一天至少用6回。“过去家政行业最大的问题，是高度依赖个人经验，现在，AI开始改变行业标准化能力。”李硕告诉智东西。\n\n另一个有潜力的杀手级应用，是“**AI参与前台用户沟通**”。\n\n李硕举了个例子：一位90多岁的老人，经常摔倒，但又坚决不愿别人陪护，家人陷入焦虑。普通客服可能只会推荐养老院或护工，但丽阳神州的专业服务人员却从摔倒时间、药物情况、步态、卫生间环境、小推车高度等角度，一步步拆解问题。最终给出的方案，包括感应灯、防滑垫、扶手设计、步态评估、定点陪走等，最后建议去医院做步态和平衡评估。\n\n家政客户需要的是专业护理咨询，这也是AI可以学习的养料。“现在我们要用**AI把这些知识萃取出来**。”李硕说，“让AI能针对每个人、每种复杂情况，完成知识计算，给出合理建议。”\n\n除此之外，丽阳雨露平台还更新了智能刷题系统应用，落地了阳光大姐旗下培训系统及济南三甲医院护士培训场景。今年晚些时候，丽阳神州还将推出AI家政服务匹配、AI面试机器人插件、法务知识服务等应用。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b3a6accd&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuqNVs4ZNKC5UKUqX4XYTeOTeBmdTde3L0sC9sgDJBicUpXjkcHShVQO10iatuEQT9c5oglM87vgyYokicMmdfibuQOiah5cTSAF6Niag%2F640%3Ffrom%3Dappmsg)\n\n**2、硅聚变平台：给机器人提供真实世界，家政服务员就像“驾驶员”**\n\n相比大模型，“**硅聚变**”更像一个具身智能基础设施。它被定义为“**碳基人类与硅基智能共同的学习平台**”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2df6fa75&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4AcuoOlnliaOW7hvR20mM1Ia7L21txSgW5XmHJyEXk4jOH6llxjvXjsXyjHMYy6sMyHvTKZ4Pu4xdfcxy05CkGapLVRhiaicyzEjpQRY%2F640%3Ffrom%3Dappmsg)\n\n怎么做？从智东西实地考察可知，丽阳神州采用“**动作双采**”方案。\n\n比如老师在教服务员怎么叠衣服时，穿戴式设备和周边摄像头同时采集数据。服务员练习时也一样。一套动作产生的数据，既给人用作培训教材，也给机器用作3D建模、机器人训练数据。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5ecef45d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuqWYyqtTksco9ODE9sotdZ1qm5GlldH1RnopYoPzxpPnPuGFHfFftzhgMFshzezyibafNo0NRGTMSvSNaFBIb8QaciaRf4bbicaEY%2F640%3Ffrom%3Dappmsg)\n\n这套模式解决了具身智能行业一大痛点——缺乏高质量、低成本、连续稳定的训练数据。\n\n李硕向智东西算了一笔账：北上广深的机器人训练场，人员流动性差不多三个月换一拨人，数据成本高、质量不理想。而丽阳神州的培训基地有130多亩，常年有上千名学员在培训，一年上万人的实操数据，标准化程度高、前后一致性极强。\n\n“常规场景需要上万条数据才能训练一个任务，用我们的数据，可能一万到三万条就够了。”李硕告诉智东西。\n\n目前，多家头部本体企业已经或即将与丽阳神州达成合作，包括融资金额首屈一指的厂商。“目前进场的有130多台机器人本体，四款最新型号。”李硕说，“我们可能是唯一能给机器人提供真实高质量家政数据训练场的公司。”\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8ab042fa&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuqEx6oxw0r33JickAHC4A9V7jlp8nqlrsLgiaePmYrrd0j24mQR93pXzLMQiafibUs9ZJT5xjtUicAOCc552MibpobMRybxPHDS5O3Xo%2F640%3Ffrom%3Dappmsg)\n\n**3、丽阳小当家机器人：从脏活累活做起，医疗垃圾分类、夜间巡检**\n\n“丽阳小当家”已经在2026杭州国际具身机器人场景应用大赛上亮过相——连续运转超过16个小时，派出了上万份把子肉，五项指标综合评分第一。\n\n但李硕很清楚，机器人进家还远没那么简单。“我要测多少东西才确保他进家不揍你？”这句玩笑话表明，**安全认证是进家的硬门槛**。丽阳神州正在跟上海机器人研究院、上电科机器人认证中心等多家机构合作解决这个问题。\n\n因此，“丽阳小当家”没有先去挑战“端茶倒水”、“陪聊天”这些复杂情感交互，而是**先干脏活、累活、危险活**。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8b25bce9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2F8Eyv4o4AcuoSE7QPOCQ7ibzJGWgJGQgpUXaMGCibx8MrDfYhmt4dNic4dxrOG1p9v8xichR0N5zRiaFRSCVrqswibJAXqiboGJRO2wWksd3iaOdMyjg%2F640%3Ffrom%3Dappmsg)\n\n比如**医疗垃圾分类**。目前，“丽阳小当家”已经在济南两家三甲医院落地，着手两层楼的医疗垃圾处理。\n\n还比如**医院夜间巡检**：机器人每个房间走一遍，用红外判断老人的呼吸体征，读输液进度和体征监测仪数据。后台处理完后，再决定是让护工还是护士介入。\n\n还有一个具有代表性的场景是公共卫生间，他们已经在济南郊区部署机器人清扫路边卫生间。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9ea01a04&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcupukTNyT7FTHBBwY02hCupD1mHwbxYl59ZP52ufKhv1jjR0FaiaOicb41PEIT6TYeU23Rxtg3MTNs1pAibShSUn4VhiaCQp6Ozs9l0%2F640%3Ffrom%3Dappmsg)\n\n***03******.***\n\n**前百度副总裁创业**\n\n**做一家从行业里长出的AI公司**\n\n过去两年，大模型创业最常见的路径，是“先有技术，再找场景”。\n\n而丽阳神州，恰恰相反。\n\n丽阳神州成立于2018年，李硕在2023年入驻丽阳神州担任董事长。在此之前，他是百度副总裁、智能云战略行业总经理。从大厂高管到创业公司操盘手，李硕赶上了**两个关键时间节点**。\n\n第一个节点是2023年底，在ChatGPT引爆大模型浪潮期间，丽阳神州发布了全国首款家庭服务产业大模型。第二个节点是2025年3月，在DeepSeek、Qwen等开源模型实现突破时，这个大模型成为首个获得开放运营资质的生活服务领域垂直大模型。\n\n但一个关键的转折点，发生在2024年。他们发现，传统问答模式根本不适合家政行业，于是全面转向“工作清单制”，把AI嵌入工作流。这一变化，让AI第一次真正开始“干活”。\n\n但李硕告诉智东西，**最大的难点**从来不是技术，而是**知识**。\n\n当下，一些厂商做医疗大模型，医疗知识库已经积累了上百年，医生评职称要写论文，知识是现成的、文档化的。但护理知识呢？护士不写论文，经验都在资深护士长的脑袋里。\n\n丽阳神州的做法是“自己生产数据”——和三甲医院的护士长、博士们一起，把护理经验一条条文档化。目前其已经做了全国第一个医疗级护理知识库，预计今年9月完成国家标准院评测后正式对外发布。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=443c17c0&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcurAQFCpCys3jKtwZC4FdtCOr9icoUyJibkT2XBZicmkkmOSIZ4cmyYLS0ol1N8qe4NiaPh6BlU9CtTj79PyDwrUmia7xfR3X2HUYA7I%2F640%3Ffrom%3Dappmsg)\n\n第二个难点，是**把专业术语变成一线服务员能听懂的话**。\n\n“褥疮”在不同地方有不同叫法，“地瓜”在四川和山东指的不是一个东西。丽阳神州在底层基座模型基础上加了一个“口语层”，把专业知识翻译成中专水平能理解的语言。“动辄输出上千字，对护理从业者而言就是天书。”李硕说，“你得接受这个差异。”\n\n与大模型技术切入的创业公司相比，丽阳神州的最大优势是“从场景里长出来”。\n\n阳光大姐有20多年的行业积累，有数十万服务员的实践数据，**有成熟的商业模式，拥有真实订单、真实用户和真实利润**。\n\n“我们把成熟的商业模式的利润拿来做研发，研发成果又让商业模式运转得更好。目前**融资都是小额的，不需要烧钱摸索**。”李硕说。\n\n***04******.***\n\n**结语：人机协同进家**\n\n**不再是科幻**\n\nAI正在加速落地家政，人机协同进家不再是科幻。\n\n国家统计局数据显示，截至2025年末，我国60岁及以上人口数达3.2亿，占总人口的23%。2025年4月，商务部等九部门发布《关于促进家政服务消费扩容升级若干措施的通知》，明确加快家政数字化，拓展AI与机器人应用场景。\n\n产业深层痛点，包括服务标准、培训效率、匹配质量，正被大模型和具身智能逐一破解，但数据化门槛和安全认证仍是瓶颈。家政与科技公司“场景反哺技术”的新范式正在形成：传统企业提供场景与渠道，科技公司提供算法，效率远超实验室摆拍。\n\n丽阳神州的故事有意思的地方在于：它不是拿着AI锤子找钉子，而是从一个万亿级的、真实存在的、痛点明确的市场里长出来的。\n\n基于这样的出发点，其也为产业提供了一条可行路径：用大模型提升匹配与培训效率，用训练平台沉淀真实场景数据，再用机器人先从机构场景切入，逐步向家庭渗透。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=30f34285&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4Acuo6QgWG1khhLzE6v3PcF48D8flNzoAeUCdqI0mCAhIT26HPvPDUqbiakqAM69eqdybFLS7vIAr93sqlVgYwl5ssZicgBWvNnPlDA%2F640%3Ffrom%3Dappmsg)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=cc20033c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqJUWH8bcOm2NMYns2Pr6T9AHjYabqakN0lYOEXVdh70lZ0cwXVhC1HW3y3DzD6SnGt4vHNRqczJH6QHpQibiaocwc4x9aCOMzCw%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=acc98126&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqtCJxelvJpo8AQmdxxmXiag8mVxjooNuEplw0PkJS58UIohucjFm5ODlMq41Z0atyCZNeINXZBbkf6YO82Zqm4iaGnjMVPic48ibs%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dc7c98df&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqazLC3JiaQGjeqEQeWYxIAF5v4e78KiakS7vibPsAVaMIGUB9cskwicXgz9WNo4PB9cuy8t5RGhRxiby9kt6wMSSq1xhnnT73hNQwg%2F640%3Ffrom%3Dappmsg)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=90d041f1&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA4MTQ4NjQzMw%3D%3D%26mid%3D2652803956%26idx%3D2%26sn%3Dd3d65a2fcff5442347070eb3cd50533d)",
+      "tags": [
+        "AI+家政",
+        "具身智能",
+        "创业"
+      ],
+      "score": 80,
+      "summary": "前百度副总裁李硕创业，用大模型和机器人赋能家政服务。",
+      "fetched_at": "2026-05-29T23:02:35.681188+08:00"
+    },
+    {
+      "title": "最大开源中文预训练合成数据集来了！面壁清华端出6000亿Token大模型“精饲料”",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA4MTQ4NjQzMw==&mid=2652803956&idx=3&sn=b501a1726717bef56f9d3386b2c3ee2b",
+      "published": "2026-05-29T21:34:00+08:00",
+      "source": "智东西",
+      "content": "原创 刘煜 2026-05-29 21:34 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8e3dbb0a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4AcuogvwibAkdCibQfyhJ7vIZv7hVmMRp5zLNfFRRIktAiayqOf6Taic01UZNDyJicT7N53MN1x9REd0ITO7cAwXxtMGYbt0vk4SENK1icQ%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=7ae572ed&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F8Eyv4o4Acuo9c6LSgd5HsBJQ8ic5yfmjnfJMFwbNxe3kUnSIwxeOqFWNh4icWpKzXGibOxGQg4gEBbWgdtwkzTVqH4mM2lM0J9QuUxU0kJibzu4%2F640%3Ffrom%3Dappmsg)\n\n**高质量数据可在相同训练量下实现更多性能提升。**\n\n**作者 |**刘煜\n\n**编辑 |**陈骏达\n\n智东西5月29日报道，今日，**面壁智能**联合**清华大学**、**OpenBMB开源社区**联合发布并开源两大最新数据集：**Ultra-FineWeb-L3**与**UltraData-SFT-2605**。这两大数据集均基于面壁智能的UltraData数据分级治理体系构建。\n\nUltra-FineWeb-L3是中英文网页合成数据集，总量突破6000亿个Token，英文Token数达4000亿个以上，中文则超2000亿个，它同时是目前**最大规模的开源中文预训练合成数据集**。\n\nUltraData-SFT-2605则是**国内首次开源的千万级**、**同时包含深思考与非思考标注的****SFT数据集**。\n\n据面壁智能介绍，Ultra-FineWeb-L3能够缓解中文高质量预训练数据长期偏少、分布不均的问题。而UltraData-SFT-2605的关键作用，在于增强模型精准执行指令和分步推理的能力。\n\n目前，这两大数据集已全面上线UltraData网站以及集模型库、数据集、应用部署于一体的AI开发平台Hugging Face等，面向全球开发者免费开放。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c4e17832&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcupOcPDqGYLLumxKicVMbNM6rGzbExTA5CCrXdqb4fgREE6TqSCUSb8UPUJtZzZaAbaZWGscdsAYERnfoAAjz7pqLz792faib8Yhs%2F640%3Ffrom%3Dappmsg)\n\n**UltraData网站：**\n\n<https://ultradata.openbmb.cn>\n\n**Hugging Face地址：**\n\n<https://huggingface.co/collections/openbmb/ultradata>\n\n**Ultra-FineWeb-L3链接：**\n\n<https://huggingface.co/datasets/openbmb/Ultra-FineWeb-L3>\n\n**UltraData-SFT-2605链接：**\n\n<https://huggingface.co/datasets/openbmb/UltraData-SFT-2605>\n\n***01******.***\n\n**五级数据精细化治理**\n\n**模型性能提升效果平均提高1.49个百分点**\n\n以前研发人员做AI训练主要靠堆数据量，但当下大模型技术框架愈发接近，优质公开训练数据也日渐短缺，单纯依靠增加数据总量来提升大模型性能的做法，已经不大适用。\n\n因此，为提升模型性能，面壁智能联合清华和OpenBMB推出全球首个**L0-L4**五级数据分级治理方案，以系统化提升数据质量。整套流程分为五步：从最原始的数据（L0）开始，依次做基础过滤（L1）、精筛数据（L2）、数据合成与增强（L3），最后得到可用于编排的数据（L4）。\n\n这套方案把原始数据分步逐层筛选、优化，每个环节都有对应的处理规则和使用场景，相关测试显示，按等级使用数据训练模型，模型性能提升效果比混用数据平均提升1.49个百分点。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9dcbdfe1&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcurmAaRzrhK1TNy3PZztnhhf2NjybKP8SRbia5eJcibUZL99gggHrSxH7TpOEWxfc5esPQBPfZeONIl3k5ZFVccZ8r0icCQ4JIUvHM%2F640%3Ffrom%3Dappmsg)\n\n▲L0-L4数据分级治理体系概念图（图源：面壁智能公众号）\n\n今日面壁智能联合推出的Ultra-FineWeb-L3数据集，正是用L3精炼方法从通用网页中合成的大规模数据集。\n\n相关团队先对网页数据做L2级精筛，产出Ultra-FineWeb数据集。后续再以此为基础打造Ultra-FineWeb-L3，借助生成问答对、多风格文本改写，将普通网页内容优化为结构规整、信息浓度更高、更适配大模型学习的训练数据。\n\n如下图所示，相同训练量下，Ultra-FineWeb-L3在多个中英文任务上的表现都超过了FineWeb-edu、FinePhrase等其他数据集，而且训练越往后优势越明显。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=baf2f5d6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuoweUQPhPKzhs9REicUwGNUBCvWdAtIPzmV4GOynia0zxgMWndw9x2I2okib97XThHgkIrW8duxEbZWQ3q2yATNyk11Pyn4ldibnQE%2F640%3Ffrom%3Dappmsg)\n\n▲不同训练数据对模型性能的影响（图源：面壁智能公众号）\n\n除此之外，Ultra-FineWeb-L3数据集还被用于**MiniCPM5-1B**模型退火阶段的核心训练，助力该模型在训练后期进一步完成了整体能力提升。\n\n***02******.***\n\n**双类型标注兼顾快答与深度推理**\n\n**数据处理全程可溯源**\n\n面壁智能联合推出的另一个数据集**UltraData-SFT-2605**是给大模型用的思考题集和快速问答题集，同时覆盖数学、代码、知识、指令遵循等多个领域。如果说预训练是为模型储备知识，那么SFT就是帮助模型打磨理解指令、拆解复杂难题的核心能力。\n\n以前很多开源SFT数据要么规模小，要么只有最终答案，没有模型一步步推理的过程。这就导致训练出来的模型遇到复杂问题（比如数学、逻辑推理）容易瞎猜，给不出有条理的步骤。\n\n针对这一痛点，UltraData-SFT-2605划分出两类数据，分别适配不同使用场景：一类是**非思考数据**，用来训练模型快速给出直接答案，适合日常问答；另一类是**深思考数据**，附带完整思考过程，专门锻炼模型拆解问题、一步步推理的能力。像解数学题、写代码这类复杂任务都能用它训练。\n\n但是，就算是同一级别（L3）的数据，质量也会存在参差不齐的情况。比如会出现题目质量差、回答逻辑乱、或是混入测试题等问题。这些脏数据如果喂给模型，训练效果会打折扣。\n\n针对这些问题，UltraData-SFT-2605设置了一整套**筛选流程**：先筛选优质提问，再把控回答内容，还专门清理干扰数据、完成效果核验，最大程度保证用来训练的数据靠谱且实用。\n\n此外，开发者还能查看每一条数据的完整处理记录，对每条数据进行**溯源**，能够自行确认这些数据靠不靠谱。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2151b1a6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4Acup1BwlyNSBkGB2foREgibugycmn6929vSICVburbd21KhfOMrVUia12mn9ts4lF4dtiatGHob8vwRt19yJWMKjibtsUxNicUg9RibyFM%2F640%3Ffrom%3Dappmsg)\n\n▲SFT数据构造和验证流程示意图（图源：面壁智能公众号）\n\n***03******.***\n\n**L3数据优化训练效率**\n\n**UltraData系列开源方案能缩短端侧模型研发周期**\n\n对于端侧厂商而言，训练数据一直是个绕不开的难题。如果自己从网页合成数据、再做SFT清洗，这样一来制作成本高并且周期长。UltraData系列数据集的这次开源，相当于帮厂商省掉了这一步骤。面壁智能称，厂商直接使用开源的UltraData，还**能复现MiniCPM5-1B级别的模型能力**。\n\n具体来说，这批L3高质量数据让1B模型在数学、代码、推理等任务上，表现能接近更大的模型。\n\n另外，数据质量高了，训练时不需要那么多Token就能达到同样效果，算力和内存也更省。而这对端侧大模型从“能做”到“规模化用起来”来说，非常关键。\n\n在推出Ultra-FineWeb-L3与UltraData-SFT-2605数据集之前，相关团队在其开放社区网站整理了**UltraChat**、**UltraFeedback**等数据集的前期工作，并开源了总计2.4万亿个Token的训练数据，以及4款数据处理工具，为本次新数据集的推出筑牢了基础。\n\n其中，数学领域数据集UltraData-Math总Token量超2900亿个，完成了多等级数据搭建，仅L3数学合成数据就有880亿个Token，是目前开源平台里体量最大的数学训练数据。\n\n而网页数据集Ultra-FineWeb也曾连续两周登上Hugging Face热门榜第一，累计下载量超50万次。\n\n面壁智能称，接下来UltraData还会陆续开放更多数据，包括更多预训练阶段的数据（L1、L2、L3各层级）、更强的通用SFT数据、专门用于智能体训练的SFT数据以及强化学习（RL）数据。同时，相关的数据治理算法和模型也会持续开源。\n\n***04******.***\n\n**结语：开源数据集补齐行业短板**\n\n**数据与模型协同发展迎来新助力**\n\n此次两大新数据集的开源，在一定程度上能够缓解行业内优质训练数据不足、数据质量参差不齐等问题，同时也为开发者和终端厂商提供了一套低成本、可复用的数据解决方案，降低端侧小模型的训练门槛。\n\n随着后续更多类型数据、算法与模型逐步开放，面壁智能这套数据治理体系也将持续迭代，进一步推动数据与模型协同发展，助力AI技术在更多场景落地应用。当然，这两套数据集在模型实际训练中的具体效果，还有待开发者亲自上手验证。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=30f34285&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4Acuo6QgWG1khhLzE6v3PcF48D8flNzoAeUCdqI0mCAhIT26HPvPDUqbiakqAM69eqdybFLS7vIAr93sqlVgYwl5ssZicgBWvNnPlDA%2F640%3Ffrom%3Dappmsg)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=71eed8c6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4Acup7OPBgxRicCrvvayNjO6lvs2khAvwibzA76lYIXn5xN8859afTZgGcCwsIXxlBmL3R8RQJiby3licA2lwtVibMD4mml0DKYv1AWfsE%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=296b3bcc&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcurT4jCzvSLhC78CV2Kq85cL5icyoaA49paziakkUlfzzbvVzHVbH1NnFPvbAOkNlmseTYTJjoKG6b4Pdic8FjaEicJm9IaiaPtZyBvU%2F640%3Ffrom%3Dappmsg)\n\n7月2-3日，智东西主办的2026中国AI智能体大会将在杭州举行，设有开幕式，企业级AI智能体、AI智能体产品创新2场论坛，以及Coding Agent、自进化智能体、深度研究智能体、Computer-Use Agent、多智能体协同、Agent Skills、Agent Harness7场技术研讨会。公众号后台回复“智能体”报名参会。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=31ce1249&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4Acuq2WjoGCYXTNnnV8VKiad5oneAQgGNatoE85rkEoWegTpiaCXKUcyq8vHaOK7seJO73Iq3iasicaIs3UGDsuRpfblx5diceTgKYGDIs%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=acc98126&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqtCJxelvJpo8AQmdxxmXiag8mVxjooNuEplw0PkJS58UIohucjFm5ODlMq41Z0atyCZNeINXZBbkf6YO82Zqm4iaGnjMVPic48ibs%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c5e546a9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F8Eyv4o4AcuqiaapbolVfMMUYI0ib8ia2Tib5BpOk9j7YGggribDcncrHRIhibIraw64f8icfWdicSrZS6pmBa7ohshBfOAUxgmz6ZhkNicMNChzaz66c%2F640%3Ffrom%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dc7c98df&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F8Eyv4o4AcuqazLC3JiaQGjeqEQeWYxIAF5v4e78KiakS7vibPsAVaMIGUB9cskwicXgz9WNo4PB9cuy8t5RGhRxiby9kt6wMSSq1xhnnT73hNQwg%2F640%3Ffrom%3Dappmsg)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=23695b50&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA4MTQ4NjQzMw%3D%3D%26mid%3D2652803956%26idx%3D3%26sn%3Db501a1726717bef56f9d3386b2c3ee2b)",
+      "tags": [
+        "开源数据集",
+        "预训练",
+        "SFT"
+      ],
+      "score": 80,
+      "summary": "面壁智能联合清华开源6000亿Token中文预训练数据集和千万级SFT数据集。",
+      "fetched_at": "2026-05-29T23:02:35.681289+08:00"
+    },
+    {
+      "title": "vivo S60 体验：手机，就该少想多用",
+      "link": "https://www.ifanr.com/1667541?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-05-29T21:08:50+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/fc79edaa-1873-488b-b670-0794c52a0048.jpeg)\n\n一部手机用起来好不好，我通常会用一个很朴素的标准判断：**初见乍欢，久处不厌。**\n\n对主流价位段的非旗舰产品来说，这个标准甚至比参数表更重要。\n\n旗舰机用配置将体验越堆越高，却让人陷入另一种疲惫：这个功能得用上，那个模式也得试试，不然好像没有把这台手机真正用明白。\n\n**时间一长，手机反而会变成一个需要被认真对待的东西。**\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/54907aa4-a9d0-4c20-93b2-973ac8c4e7fa.jpg)\n\n所以在用 vivo S60 时，给我的感受要清爽不少，它把用手机这回事，还给了日常本身：\n\n> 随手拍照足够顺手，出门在外的续航足够踏实，拿在手里不累，放在桌上也好看。更重要的是，它的漂亮不是第一眼的热情，而是那种用久了仍然愿意多看一眼的耐看。\n\n### 漂亮，不该只给高配\n\n很多品牌喜欢谈设计，真正开刀的时候，第一个被砍掉的，往往也是设计。于是用户花更少的钱，不只是少了配置，还顺便少了被认真对待的资格。\n\n**一台手机「好不好看」，从来不是附加值，更是被选择的第一个理由。**\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2dbd20ef-a1cd-478e-8d32-8ec5595c26c9.png)\n\nvivo S60 系列这次做全系统一外观，本质上是在减少一种过去常见的纠结：喜欢某个设计，不必再绑定更高版本；想要某种质感，也不用为额外配置多花预算。\n\n如果不仔细看细节，S60 系列的两个版本几乎一致：相同的后盖工艺，一致的三款配色，机身尺寸都控制在 6.59 英寸。\n\n让不同预算的人，都能体面地拥有同一种审美，这才是精致感。S60 元气版没有因为定位更低，就在外观上先退一步；S60 也没有因为影像配置更完整，就牺牲掉原本轻巧、清爽的设计。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/d3269966-bf03-4c3a-9edc-1e74c18a27c4.jpeg)\n\n左：S60 右：S60 元气版\n\n后盖工艺负责质感，配色负责第一印象。vivo 这次把三款颜色同时给到两款机型，也让这种统一感从「看起来像同一代」，延伸到更具体的审美选择里。\n\n主推配色「星星海」用亮面玻璃搭配 14 层纳米镀膜，稍微转动角度，光线从后盖表面掠过，会泛起流沙般的细碎闪光，四芒星图案随之浮现。\n\n「初夏绿」和「仲夏夜」则换成了雾面磨砂玻璃。光线落在上面更柔和，手感更温润舒适，接近日常里愿意长时间拿着的状态。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/f2871948-ff33-45bf-a884-fbc08301174a.jpg)\n\n我们说一部手机好不好看，这个印象当然先由机身建立，但每天用下来，真正决定舒不舒服的，其实是屏幕。\n\n**在「好不好看」这个问题上，外观设计负责的是「初见乍欢」，真正让人「久处不厌」的，还是正面的屏幕。**\n\nvivo S60 系列两款机型都控制在 6.59 英寸。这个尺寸没有继续往大屏上走，也没有为了小巧牺牲显示面积。日常看视频、刷信息流，画面有足够空间；单手拿着、随手放进口袋，也不会觉得累赘。\n\n屏幕素质同样没有只停留在「够用」。足够的峰值亮度，加上 4320Hz PWM 调光，让 S60 系列在户外和室内都能维持稳定的观看体验：阳光下看得清，晚上看得久，也不容易觉得刺眼。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/9e33eda0-ad50-484c-afd2-55ef6d49ea30.jpeg)\n\n所以 S60 系列的好看，不只是刚拿起手机时的第一眼。它有一种持续的松弛感，从机身尺寸、握持手感，一直延伸到每天点亮屏幕的那一刻。\n\n### 拍照，让人很想把玩\n\n影像，是 vivo S 系列不可忽视的基因，也是构成这个系列气质的重要一环。\n\nvivo S60 系列全系都有后置柔光环，前置也保留了现在已经不多见的双实体柔光灯。S60 还延续了 3 倍大底潜望长焦，拍人时不用贴得太近，构图也更从容。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/87054ad0-a201-47a9-9d37-ace6132f520d.png)\n\n**其实这个价位段的手机，拍得「好看」已经不算什么挑战，真正稀缺的，是让「出片」本身也变得好玩，要有风格，有态度。**\n\n这就不得不提到，vivo S60 身上那个打磨了几年的一拍得胶片相机。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/2ed58eb0-8fa7-4e97-9ccf-102d37d66320.jpeg)\n\n从相机界面，到交互动画，以及成片本身和相框水印，都认真复刻了一台「胶片相机」，不仅有仪式感，更有风格化，好看好玩，让人拍了还想拍。\n\n比起让人「不明觉厉」的专业度，这个功能更主打「松弛感」：打开相机，切换模式，选一个滤镜，按下快门，然后等照片出来。\n\n**拍立得好玩的地方，也在这里，不追求每一张都完美，色可能有点偏，人物表情也未必刚好卡在最好的一秒。但照片出来后，反而会觉得，这样也挺好。**\n\n拍立得的迷人之处，就在于「不追求完美」：颜色会偏，表情会怪，构图会歪，但正因如此，照片才有了情绪。\n\n当然，好玩的影像，不代表 vivo S60 不是实力派——\n\n旗舰 X 系列同款的「原生光影」，也来到了 vivo S60 上。打开之后，照片质感不会那么生硬，明暗关系也更舒服。再配合相机里的「质感」影调，直出的画面很有「光学」味儿。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/bdbb1fc5-c019-475a-98c1-6d7d0b4c4080.jpeg)\n\n实况部分，vivo S60 支持「原生实况」和「4K 实况」，前者解决了 Live 图封面和动态差距太大的跳跃感，后者则保证了动态画面的清晰度足够高。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/b44360ee-1f25-4125-8f35-6d88f01bb4a3.jpeg)\n\n**手机影像这几年进步巨大，甚至有些趋同，这也让影像的趣味，少了一点意外。一拍得胶片相机刚好反过来。它会把一些小小的不确定留在照片里。**\n\n有时候镜头的对象，只是桌上的饮料、站在路旁的朋友，或者家门口的一棵树。这些当然不是什么「大片」，但在拍立得相框和滤镜加持下，「那天还挺开心」的情绪，轻轻被照片留了下来。\n\n拍人像够好看，拍日常有感觉，晒照片吸引点赞，这就是专属于 vivo S60 的影像表达。\n\n**它不要求用户研究每个模式，也不要求每张照片都拍得清楚、准确、无懈可击。它要解决的事情更简单：随手一拍，就得到一张情绪价值足够的照片。**\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/8c4541c9-9947-4c1b-b79a-4347f541415d.jpeg)\n\n### 手机，应该少想多用\n\nvivo S60 最终给我留下的印象，是**少想一点、多用一点。**\n\n当下的很多手机，已经陷入了参数和配置的堆料，试图验证自己很能「打」，——芯片要赢，影像要赢，跑分要赢，征服一个又一个「行业第一」。\n\n但归根结底，我们只是「用」一台手机，不是拿手机去打擂台，大部分人每天真正会做的事情，其实并没有那么复杂。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/82c3badd-e456-46d4-bcd1-f8068635cd40.jpg)\n\n图自 vivo\n\n当行业陷入堆料叙事，参数对抗的怪圈，消费者的体验非但没有变好，反而发现产品变得很「难相处」：选一台手机要拉个表，对比每一项数据；产品到手之后，才发现配置严重溢出，实际用到的能力可能只有 60%。\n\n配置卷到了天花板，体验却不一定落回生活里。\n\n这里不是说参数和硬件本身不重要，它们依旧是支撑良好体验的基石。只是相比一味堆高上限，如何量体裁衣，把成本真正放在用户每天都能感知到的地方，反而是更难、也更重要的事情。\n\n我愿称 vivo S60 为一台「陪伴型」的手机，设计和配置足够优秀，它适合那些不想被参数牵着走、又确实在意外观和拍照体验的人。\n\n**你知道什么时候该拿起它，也知道按下快门大概率不会失手；它不会用重量提醒你存在感，也不会用参数制造焦虑。**\n\n它更像一台真正服务生活的产品。\n\n![](https://s3.ifanr.com/images/ep/uploads/%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/1c379030-b24b-4248-9dbe-e77c39b36aa5.jpeg)\n\n一部主流价位手机最难的地方，往往不在于把某一项参数做得多满，每天重复拿起、点亮、拍照、收进口袋的过程中，仍然让人觉得顺手、轻松，也愿意多看一眼，这就够了。\n\n这才是 S 系列作为「漂亮机」最该有的状态：颜值负责心动，体验负责长情。\n\n初见乍欢，而久处不厌。\n\n最后再来看看 vivo S60 系列的售价：\n\n**vivo S60：**\n\n* 12GB+256GB 3599 元\n* 12GB+512GB 3999 元\n* 16GB+512GB 4399 元\n\n**vivo S60 元气版：**\n\n* 8GB+256GB 2899 元\n* 12GB+256GB 3199 元\n* 12GB+512GB 3499 元\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "非AI",
+        "手机",
+        "vivo"
+      ],
+      "score": 70,
+      "summary": "爱范儿评测vivo S60手机，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.681359+08:00"
+    },
+    {
+      "title": "blog form:\n\nhttps://t.co/Hb3JU8CeQS",
+      "link": "https://x.com/aiDotEngineer/status/2060355686606029084",
+      "published": "2026-05-29T21:40:49+08:00",
+      "source": "AI Engineer(@aiDotEngineer)",
+      "content": "blog form:  \n  \n[x.com/helloiamleonie…](https://x.com/helloiamleonie/status/2059931949741871348?s=46)\n\n![Leonie](https://pbs.twimg.com/profile_images/1559465709008297985/1Q_wkd4i_normal.jpg)\n\nLeonie@helloiamleonie\n\nTook some inspiration from [@vboykis](https://x.com/vboykis) and converted my first ever talk into a blog post.  \n  \nI talk about the role of agentic search in context engineering.   \n  \nTogether we build an intuition on the strengths and weaknesses of a selection of search tools.  \n  \n🔗[leoniemonigatti.com/blog/agentic-s…](https://leoniemonigatti.com/blog/agentic-search-for-context-engineering.html)u\n\n![Tweet Image](https://pbs.twimg.com/media/HJZZCNjXkAIp8h1.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/helloiamleonie/status/2059931949741871348)\n\n💬0🔄0❤️2👀479📊1",
+      "tags": [
+        "Agent",
+        "搜索",
+        "博客"
+      ],
+      "score": 70,
+      "summary": "AI Engineer转发Leonie博客，讨论agentic search在上下文工程中的作用。",
+      "fetched_at": "2026-05-29T23:02:35.681423+08:00"
+    },
+    {
+      "title": "1、Agora Skills：https://t.co/Wapgm6Jbn4\n\n2、项目线上地址：https://t.co/ShoVeTjE1j\n\n3、GitHub 仓库：https://t.co/o...",
+      "link": "https://x.com/berryxia/status/2060366115357044979",
+      "published": "2026-05-29T22:22:16+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "1、Agora Skills：[github.com/AgoraIO/skills](https://github.com/AgoraIO/skills)  \n  \n2、项目线上地址：[andyhuo520.github.io/tang-changan/](https://andyhuo520.github.io/tang-changan/)  \n  \n3、GitHub 仓库：[github.com/andyhuo520/tan…](https://github.com/andyhuo520/tang-changan)\n\n💬0🔄0❤️1👀83",
+      "tags": [
+        "开源",
+        "3D",
+        "交互"
+      ],
+      "score": 60,
+      "summary": "Berryxia分享Agora Skills项目，3D盛唐长安互动世界。",
+      "fetched_at": "2026-05-29T23:02:35.681486+08:00"
+    },
+    {
+      "title": "🔥我尼玛，兄弟们，这下真的是爆肝了。\n  已经开源在GitHub了，记得Star一波啊！ \n 我肝了2周+花费了800刀干出来的项目~😭\n\n自己可以真实去体验，文旅馆的真的都可以搞一搞！ \n\n 一...",
+      "link": "https://x.com/berryxia/status/2060365742416200117",
+      "published": "2026-05-29T22:20:47+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "🔥我尼玛，兄弟们，这下真的是爆肝了。  \n 已经开源在GitHub了，记得Star一波啊！   \n 我肝了2周+花费了800刀干出来的项目~😭  \n  \n自己可以真实去体验，文旅馆的真的都可以搞一搞！   \n  \n 一个用 3D 渲染技术three.JS 搭起来的盛唐长安互动世界，并接入 Agora Skills 做了核心实时语音互动小游戏。  \n  \n 你可以在里面：   \n - 和 NPC 对话、李白对诗、玩诗词小游戏   \n- 进入珍宝馆欣赏诗画   \n- 逛 AI 展馆，体验古文明与 AI 结合的沉浸感   \n  \n 这玩意我改了N遍，改的我头皮发麻。  \n  \n强迫症的我，光剪视频都剪了N次，有可能有人说是垃圾，不管如何，我认真做了。   \n  \n享受这个Solo 干项目的时光,Learning in Public !  \n  \n如果你觉得有意思，欢迎点个 Star 支持一下。   \n  \n 体验地址和Github地址见评论👇🏻，兄弟们记得一键三连啊！\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060364043341488128/vid/avc1/1920x1080/GaCwJxjJtJNdO8xY.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2060365742416200117/video/1)\n\n💬1🔄0❤️3👀148📊2",
+      "tags": [
+        "开源",
+        "3D",
+        "游戏"
+      ],
+      "score": 60,
+      "summary": "Berryxia爆肝项目，3D盛唐长安互动世界，接入语音互动。",
+      "fetched_at": "2026-05-29T23:02:35.681548+08:00"
+    },
+    {
+      "title": "- 有人说他们只设计了内饰，其实外观也是他们设计的。\n- 现在足以证明乔布斯多么伟大，不是 Ive 厉害，是拍板的人牛逼。\n- 但凡他们来中国实地考察几个月而不是闭门造车，也不可能设计出这么丑的东西。",
+      "link": "https://x.com/dingyi/status/2060350464064147920",
+      "published": "2026-05-29T21:20:04+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "- 有人说他们只设计了内饰，其实外观也是他们设计的。  \n- 现在足以证明乔布斯多么伟大，不是 Ive 厉害，是拍板的人牛逼。  \n- 但凡他们来中国实地考察几个月而不是闭门造车，也不可能设计出这么丑的东西。\n\n![Ken W](https://pbs.twimg.com/profile_images/1944368718231801856/MThgS-Qy_normal.jpg)\n\nKen W@kenw\\_2\n\n法拉利首席设计师接受采访透露，备受争议的首款电动汽车Luce，是由苹果前首席设计师Jony Ive的LoveFrom团队独自在美国花了8个月完成，包括内饰和外观，目的就是想尽可能不干扰设计团队从而带来尽可能多的新鲜感。  \n  \n当然了，最后的结果真的很新鲜，吓了全世界一跳。  \n  \n另外为什么不做双门版本的跑车而是做一款四门版本的看起来平平无奇的家用车？原因是电池技术没过关，做太小的车电池也小，到时候性能和续航都难兼顾。  \n  \n说白了就是一款售价55万欧元起步的试验品。  \n  \n有媒体评论，法拉利Luce是一款中国汽车厂商不会考虑抄袭的型号。这一句说明了一切。😂\n\n[🔗 View Quoted Tweet](https://x.com/kenw_2/status/2059637026215923927)\n\n💬4🔄0❤️5👀1945📊4",
+      "tags": [
+        "非AI",
+        "汽车",
+        "设计"
+      ],
+      "score": 30,
+      "summary": "Ding讨论法拉利Luce设计，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.681608+08:00"
+    },
+    {
+      "title": "一方面是国内企业炫耀每个月在 AI 上花了多少钱，人们一看：我就说了 AI 不是泡沫嘛。另一方面是亚马逊等大厂都在禁止员工滥用 AI，避免为了用 AI 而用 AI。国内还处于刚到澳门的阶段，恨不得天天...",
+      "link": "https://x.com/dingyi/status/2060348641609662580",
+      "published": "2026-05-29T21:12:50+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "一方面是国内企业炫耀每个月在 AI 上花了多少钱，人们一看：我就说了 AI 不是泡沫嘛。另一方面是亚马逊等大厂都在禁止员工滥用 AI，避免为了用 AI 而用 AI。国内还处于刚到澳门的阶段，恨不得天天晚上下楼去赌。\n\n💬5🔄0❤️6👀1132📊5",
+      "tags": [
+        "AI泡沫",
+        "评论",
+        "国内"
+      ],
+      "score": 60,
+      "summary": "Ding评论国内AI烧钱与亚马逊禁止滥用AI，观点性内容。",
+      "fetched_at": "2026-05-29T23:02:35.681668+08:00"
+    },
+    {
+      "title": "Nobody knows for sure where employment is going and over what time frame. But one thing I can tell y...",
+      "link": "https://x.com/GaryMarcus/status/2060356620928835746",
+      "published": "2026-05-29T21:44:32+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Nobody knows for sure where employment is going and over what time frame. But one thing I can tell you for sure is that the big AI CEO’s have started lying about it.  \n  \nWhen they tell you know “we are just here to augment humans, not replace them”, they are saying what they want you to hear for PR, not what they actually believe or hope.  \n  \nHere’s how you can tell.   \n  \nThe total addressable market for augmenting humans is probably in the high billions.  \n  \nThe total addressable market for replacing humans is in the trillions.  \n  \nThe infrastructure bets they are placing are in the trillions.  \n  \nThe only chance they have of making back that money is if they displace almost all white collar labor.  \n  \nI am not saying they will succeed. The tech continues to have serious reliability problems; the RoI hasn’t been there.  \n  \nBut when they pretend that total labor displacement isn’t their game plan, they are lying to you.\n\n💬3🔄8❤️20👀1016📊6",
+      "tags": [
+        "AI就业",
+        "观点",
+        "CEO"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus称AI CEO关于替代工作的说法是谎言。",
+      "fetched_at": "2026-05-29T23:02:35.681728+08:00"
+    },
+    {
+      "title": "talking the party line; they switch, he switches. 🤣",
+      "link": "https://x.com/GaryMarcus/status/2060351439608877488",
+      "published": "2026-05-29T21:23:57+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "talking the party line; they switch, he switches. 🤣\n\n![Beff (e/acc)](https://pbs.twimg.com/profile_images/2005482858975023104/s9wmB9qT_normal.jpg)\n\nBeff (e/acc)@beffjezos\n\nAI is a talent amplifier, not a talent replacement\n\n[🔗 View Quoted Tweet](https://x.com/beffjezos/status/2060260711608045989)\n\n💬2🔄1❤️12👀1659📊2",
+      "tags": [
+        "AI",
+        "评论",
+        "e/acc"
+      ],
+      "score": 60,
+      "summary": "Gary Marcus评论Beff的AI talent amplifier观点。",
+      "fetched_at": "2026-05-29T23:02:35.681789+08:00"
+    },
+    {
+      "title": "TuTu 接祝福吗😆",
+      "link": "https://x.com/geekbb/status/2060364329200009617",
+      "published": "2026-05-29T22:15:10+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "TuTu 接祝福吗😆\n\n![TuTu生活志](https://pbs.twimg.com/profile_images/1641781157644881921/xS9Is_9z_normal.jpg)\n\nTuTu生活志@tutulifestyle\n\n大家好，我是Tu晨风，请问100元人民币（14.76 USD）能在你们国家的普通超市买到什么东西，可以拍给我看看吗？这将成为我“全球购买力系列（懒人版）”视频的重要素材～ 谢谢！💰\n\n[🔗 View Quoted Tweet](https://x.com/tutulifestyle/status/2060354497176846516)\n\n💬0🔄0❤️0👀268",
+      "tags": [
+        "低价值",
+        "闲聊"
+      ],
+      "score": 30,
+      "summary": "Geekbb回复TuTu接祝福，无意义。",
+      "fetched_at": "2026-05-29T23:02:35.681849+08:00"
+    },
+    {
+      "title": "一个 Electron 桌面应用，内置 OpenCode，为嵌入式开发提供一个集成 AI 编码代理的桌面工作区。帮 Arduino、ESP32、RP2040 这些单片机写代码、编译、烧录，还能直接看串...",
+      "link": "https://x.com/geekbb/status/2060346418884477293",
+      "published": "2026-05-29T21:04:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "一个 Electron 桌面应用，内置 OpenCode，为嵌入式开发提供一个集成 AI 编码代理的桌面工作区。帮 Arduino、ESP32、RP2040 这些单片机写代码、编译、烧录，还能直接看串口日志和画波形图。  \n  \n[github.com/Razz19/Exort](https://github.com/Razz19/Exort)\n\n![Tweet Image](https://pbs.twimg.com/media/HJe2z6oakAA3yJb.jpg)\n\n💬1🔄0❤️19👀2231📊6",
+      "tags": [
+        "AI编程",
+        "嵌入式",
+        "开源"
+      ],
+      "score": 65,
+      "summary": "Geekbb介绍Exort，集成AI编码代理的嵌入式开发桌面应用。",
+      "fetched_at": "2026-05-29T23:02:35.681910+08:00"
+    },
+    {
+      "title": "Different models need different prompts, sometimes tools\n\n“Harness profiles” are how we do that in d...",
+      "link": "https://x.com/hwchase17/status/2060355016989585919",
+      "published": "2026-05-29T21:38:10+08:00",
+      "source": "Harrison Chase(@hwchase17)",
+      "content": "Different models need different prompts, sometimes tools  \n  \n“Harness profiles” are how we do that in deepagents\n\n![LangChain](https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_normal.jpg)\n\nLangChain@LangChain\n\nDeep Agents v0.6 makes harness profiles a first-class abstraction.  \n  \nNow, you can get production-grade performance from models like [@Kimi\\_Moonshot](https://x.com/Kimi_Moonshot), [@Alibaba\\_Qwen](https://x.com/Alibaba_Qwen), and [@DeepSeek\\_ai](https://x.com/DeepSeek_ai) at 20x+ lower cost than closed frontier APIs.  \n  \nMore on tuning:  \n[langchain.com/blog/tuning-de…](https://www.langchain.com/blog/tuning-deep-agents-different-models)\n\n[🔗 View Quoted Tweet](https://x.com/LangChain/status/2060349231722852680)\n\n💬6🔄1❤️18👀1141📊6",
+      "tags": [
+        "LangChain",
+        "Deep Agents",
+        "模型调优"
+      ],
+      "score": 80,
+      "summary": "Harrison Chase介绍Deep Agents v0.6的harness profiles，支持多种模型。",
+      "fetched_at": "2026-05-29T23:02:35.681970+08:00"
+    },
+    {
+      "title": "Hi everyone, please donate to TechAide's fundraiser, organized by Hugo Larochelle. This is a good ca...",
+      "link": "https://x.com/goodfellow_ian/status/2060364605667651905",
+      "published": "2026-05-29T22:16:16+08:00",
+      "source": "Ian Goodfellow(@goodfellow_ian)",
+      "content": "Hi everyone, please donate to TechAide's fundraiser, organized by Hugo Larochelle. This is a good cause, I was one of the TechAide speakers two years ago.\n\n![Hugo Larochelle](https://pbs.twimg.com/profile_images/1962856110106288128/2nOBCybB_normal.jpg)\n\nHugo Larochelle@hugo\\_larochelle\n\nLooking forward to our TechAide AI Conference today, during which we're raising funds to fight poverty and social exclusion in Montreal.  \n  \nIf you'd like to contribute, you can make a donation here:  \n[centraidemtl.org/TechAide-AI-Co…](https://centraidemtl.org/TechAide-AI-Conference-2026-DD)  \n  \nAny amount is greatly appreciate!!\n\n[🔗 View Quoted Tweet](https://x.com/hugo_larochelle/status/2060321708309950713)\n\n💬0🔄0❤️10👀2387📊1",
+      "tags": [
+        "非AI",
+        "慈善",
+        "呼吁"
+      ],
+      "score": 30,
+      "summary": "Ian Goodfellow呼吁捐款，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.682031+08:00"
+    },
+    {
+      "title": "One year from now, you'll either have started or have a longer list of things to get to.",
+      "link": "https://x.com/thejustinwelsh/status/2060347190866829745",
+      "published": "2026-05-29T21:07:04+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "One year from now, you'll either have started or have a longer list of things to get to.\n\n💬30🔄0❤️34👀1808📊27",
+      "tags": [
+        "低价值",
+        "鸡汤"
+      ],
+      "score": 20,
+      "summary": "Justin Welsh励志语录，无AI内容。",
+      "fetched_at": "2026-05-29T23:02:35.682092+08:00"
+    },
+    {
+      "title": "Kling AI Cannes Showcase — RAPHAEL: Behind the AI Workflow\n\nGo behind the scenes of RAPHAEL, an AI-p...",
+      "link": "https://x.com/Kling_ai/status/2060375625404432757",
+      "published": "2026-05-29T23:00:03+08:00",
+      "source": "Kling AI(@Kling_ai)",
+      "content": "Kling AI Cannes Showcase — RAPHAEL: Behind the AI Workflow  \n  \nGo behind the scenes of RAPHAEL, an AI-powered feature film created with Kling AI. See how the creator used Kling AI across the filmmaking workflow, from creative ideation to final cinematic frames, streamlining production and unlocking new creative possibilities.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060279536902971392/vid/avc1/1920x1080/SzvobDEnhlpv1bhX.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Kling_ai/status/2060375625404432757/video/1)\n\n💬0🔄0❤️0",
+      "tags": [
+        "AI视频",
+        "Kling AI",
+        "电影制作"
+      ],
+      "score": 85,
+      "summary": "Kling AI官方展示AI电影RAPHAEL幕后流程。",
+      "fetched_at": "2026-05-29T23:02:35.682168+08:00"
+    },
+    {
+      "title": ".@sydneyrunkle + @VictorMoreira16 with a 20 minute intro to Managed Deep Agents.\n\nWatch the full Int...",
+      "link": "https://x.com/LangChain/status/2060360939573019052",
+      "published": "2026-05-29T22:01:42+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": ".[@sydneyrunkle](https://x.com/sydneyrunkle) + [@VictorMoreira16](https://x.com/VictorMoreira16) with a 20 minute intro to Managed Deep Agents.  \n  \nWatch the full Interrupt keynote: [youtu.be/LdQpoK2TzSo](https://youtu.be/LdQpoK2TzSo)\n\n[Your browser does not support the video tag.](https://video.twimg.com/ext_tw_video/2060360858924949506/pu/vid/avc1/1280x720/LDaCxjPtvSeMGU72.mp4?tag=12)\n\n[🔗 View on Twitter](https://x.com/LangChain/status/2060360939573019052/video/1)\n\n💬4🔄1❤️13👀2667📊8",
+      "tags": [
+        "LangChain",
+        "Managed Agents",
+        "演讲"
+      ],
+      "score": 85,
+      "summary": "LangChain官方介绍Managed Deep Agents的20分钟入门。",
+      "fetched_at": "2026-05-29T23:02:35.682249+08:00"
+    },
+    {
+      "title": "@sydneyrunkle @VictorMoreira16 Want to watch more Interrupt sessions? Access the hub ⤵️\nhttps://t.co...",
+      "link": "https://x.com/LangChain/status/2060360940541874293",
+      "published": "2026-05-29T22:01:42+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "[@sydneyrunkle](https://x.com/sydneyrunkle)[@VictorMoreira16](https://x.com/VictorMoreira16) Want to watch more Interrupt sessions? Access the hub ⤵️  \n[interrupt.langchain.com/recordings](https://interrupt.langchain.com/recordings)\n\n💬0🔄0❤️3👀941",
+      "tags": [
+        "LangChain",
+        "会议",
+        "回放"
+      ],
+      "score": 75,
+      "summary": "LangChain提供Interrupt会议回放链接。",
+      "fetched_at": "2026-05-29T23:02:35.682316+08:00"
+    },
+    {
+      "title": "There are still a few spots left for @hwchase17 + @traversal_ai founder @_anish_agarwal's technical ...",
+      "link": "https://x.com/LangChain/status/2060351283060465808",
+      "published": "2026-05-29T21:23:20+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "There are still a few spots left for [@hwchase17](https://x.com/hwchase17) + [@traversal\\_ai](https://x.com/traversal_ai) founder [@\\_anish\\_agarwal](https://x.com/_anish_agarwal)'s technical fireside chat in NYC on June 2nd.  \n  \nLearn how Traversal builds, ships and improves their agents.  \n  \nEnjoy networking, drinks, and a live crêpe chef.  \n  \nRSVP for free: [luma.com/9k5ttsg2](https://luma.com/9k5ttsg2)#NYTechWeek\n\n![Tweet Image](https://pbs.twimg.com/media/HJfWX1fXUAU1_gH.jpg)\n\n💬4🔄2❤️14👀1403📊5",
+      "tags": [
+        "LangChain",
+        "活动",
+        "Agent"
+      ],
+      "score": 75,
+      "summary": "LangChain在纽约举办技术炉边谈话，讨论Agent构建。",
+      "fetched_at": "2026-05-29T23:02:35.682376+08:00"
+    },
+    {
+      "title": "Deep Agents v0.6 makes harness profiles a first-class abstraction.\n\nNow, you can get production-grad...",
+      "link": "https://x.com/LangChain/status/2060349231722852680",
+      "published": "2026-05-29T21:15:10+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Deep Agents v0.6 makes harness profiles a first-class abstraction.  \n  \nNow, you can get production-grade performance from models like [@Kimi\\_Moonshot](https://x.com/Kimi_Moonshot), [@Alibaba\\_Qwen](https://x.com/Alibaba_Qwen), and [@DeepSeek\\_ai](https://x.com/DeepSeek_ai) at 20x+ lower cost than closed frontier APIs.  \n  \nMore on tuning:  \n[langchain.com/blog/tuning-de…](https://www.langchain.com/blog/tuning-deep-agents-different-models)\n\n💬8🔄5❤️36👀5441📊14",
+      "tags": [
+        "LangChain",
+        "Deep Agents",
+        "v0.6"
+      ],
+      "score": 88,
+      "summary": "LangChain发布Deep Agents v0.6，支持多种模型，成本降低20倍。",
+      "fetched_at": "2026-05-29T23:02:35.682481+08:00"
+    },
+    {
+      "title": "cc @OfficialLoganK you’ll appreciate these results",
+      "link": "https://x.com/lennysan/status/2060369369981665652",
+      "published": "2026-05-29T22:35:12+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "cc [@OfficialLoganK](https://x.com/OfficialLoganK) you’ll appreciate these results\n\n💬0🔄0❤️3👀1004📊1",
+      "tags": [
+        "低价值",
+        "无意义"
+      ],
+      "score": 20,
+      "summary": "Lenny Rachitsky回复无实质内容。",
+      "fetched_at": "2026-05-29T23:02:35.682551+08:00"
+    },
+    {
+      "title": "→ https://t.co/tpyziKMyxy\n\nhttps://t.co/tpyziKMyxy",
+      "link": "https://x.com/_philschmid/status/2060359979207414054",
+      "published": "2026-05-29T21:57:53+08:00",
+      "source": "Philipp Schmid(@_philschmid)",
+      "content": "→ [ai.google.dev/gemini-api/doc…](https://ai.google.dev/gemini-api/docs/managed-agents-quickstart)[ai.google.dev/gemini-api/doc…](https://ai.google.dev/gemini-api/docs/managed-agents-quickstart)\n\n💬0🔄0❤️0👀168",
+      "tags": [
+        "Google",
+        "Managed Agents",
+        "链接"
+      ],
+      "score": 70,
+      "summary": "Philipp Schmid转发Google Managed Agents快速入门链接。",
+      "fetched_at": "2026-05-29T23:02:35.682614+08:00"
+    },
+    {
+      "title": "Managed Agents in the Gemini API. One API call gives you a sandboxed Linux with code execution, web ...",
+      "link": "https://x.com/_philschmid/status/2060359976325992528",
+      "published": "2026-05-29T21:57:52+08:00",
+      "source": "Philipp Schmid(@_philschmid)",
+      "content": "Managed Agents in the Gemini API. One API call gives you a sandboxed Linux with code execution, web access, and file I/O. Mount your skills, create a reusable agent, call it.  \n  \nBelow is a full example to build a data science assistant.👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJfeZTFXsAcJfb1.jpg)\n\n💬2🔄0❤️7👀278📊4",
+      "tags": [
+        "Gemini API",
+        "Managed Agents",
+        "数据科学"
+      ],
+      "score": 70,
+      "summary": "Philipp Schmid介绍Gemini API中的Managed Agents功能。",
+      "fetched_at": "2026-05-29T23:02:35.682677+08:00"
+    },
+    {
+      "title": "Some ways of thinking will serve you well for some purposes and serve you poorly for others. It is h...",
+      "link": "https://x.com/RayDalio/status/2060364362724835688",
+      "published": "2026-05-29T22:15:18+08:00",
+      "source": "Ray Dalio(@RayDalio)",
+      "content": "Some ways of thinking will serve you well for some purposes and serve you poorly for others. It is highly desirable to understand one's own and others' ways of thinking and their best applications. Some qualities are more suitable for some jobs. For example, you might not want to hire a highly introverted person as a salesman. That's not to say an introvert can't do that job; it's just that a gregarious person is likely to be more satisfied in the role and do a better job.  \n  \nIf you're not naturally good at one type of thinking, it doesn't mean you're precluded from paths that require it. It does, however, require that you either work with someone who has that required way of thinking (which works best) or learn to think differently (which is difficult or even impossible). #principleoftheday\n\n![Tweet Image](https://pbs.twimg.com/media/HJfidTPXYAI9CMP.png)\n\n💬10🔄17❤️100👀13182📊21",
+      "tags": [
+        "非AI",
+        "思维",
+        "原则"
+      ],
+      "score": 20,
+      "summary": "Ray Dalio分享思维方式原则，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.682739+08:00"
+    },
+    {
+      "title": "https://t.co/RcCK0Ajp8L",
+      "link": "https://x.com/recraftai/status/2060348770475262130",
+      "published": "2026-05-29T21:13:20+08:00",
+      "source": "Recraft(@recraftai)",
+      "content": "[artificialanalysis.ai/image/leaderbo…](https://artificialanalysis.ai/image/leaderboard/text-to-image)\n\n💬0🔄0❤️0👀257",
+      "tags": [
+        "低价值",
+        "链接"
+      ],
+      "score": 30,
+      "summary": "Recraft转发AI图像排行榜链接，无描述。",
+      "fetched_at": "2026-05-29T23:02:35.682799+08:00"
+    },
+    {
+      "title": "Go behind the scenes to learn more about how The Rogue was made in under a month, by a single person...",
+      "link": "https://x.com/runwayml/status/2060364000295002185",
+      "published": "2026-05-29T22:13:52+08:00",
+      "source": "Runway(@runwayml)",
+      "content": "Go behind the scenes to learn more about how The Rogue was made in under a month, by a single person with Runway.   \n  \nThe Rogue is part of Project Luxo: a new initiative exploring how AI-generated video has crossed the uncanny valley.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060363260461744132/vid/avc1/1920x1080/uwaaFG7ItahX6IHQ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/runwayml/status/2060364000295002185/video/1)\n\n💬3🔄4❤️23👀1133📊8",
+      "tags": [
+        "Runway",
+        "AI视频",
+        "Project Luxo"
+      ],
+      "score": 85,
+      "summary": "Runway官方展示AI电影The Rogue制作幕后，称已跨越恐怖谷。",
+      "fetched_at": "2026-05-29T23:02:35.682860+08:00"
+    },
+    {
+      "title": "I regret having missed that \"harder to justify\" line from my original quote, the paragraph it's embe...",
+      "link": "https://x.com/simonw/status/2060354196772413551",
+      "published": "2026-05-29T21:34:54+08:00",
+      "source": "Simon Willison(@simonw)",
+      "content": "I regret having missed that \"harder to justify\" line from my original quote, the paragraph it's embedded in was a little bit mangled but I should have worked harder to edit that in\n\n![Tweet Image](https://pbs.twimg.com/media/HJfZEw5awAAR536.jpg)\n\n💬1🔄0❤️6👀2655📊2",
+      "tags": [
+        "非AI",
+        "引用",
+        "编辑"
+      ],
+      "score": 30,
+      "summary": "Simon Willison对引用的编辑说明，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.682920+08:00"
+    },
+    {
+      "title": "Here's an extended edit of the quote that includes a following fragment where Andrew Macdonald calle...",
+      "link": "https://x.com/simonw/status/2060353804625977772",
+      "published": "2026-05-29T21:33:21+08:00",
+      "source": "Simon Willison(@simonw)",
+      "content": "Here's an extended edit of the quote that includes a following fragment where Andrew Macdonald called the trade \"harder to justify\" - full, unedited transcript is here: [gist.github.com/simonw/59096a3…](https://gist.github.com/simonw/59096a338c82f6f95e40e3d7c7b5bad9)\n\n![Tweet Image](https://pbs.twimg.com/media/HJfYssZbEAA1q1Y.png)\n\n💬2🔄0❤️10👀3272📊3",
+      "tags": [
+        "非AI",
+        "引用",
+        "编辑"
+      ],
+      "score": 30,
+      "summary": "Simon Willison提供引用的扩展编辑和完整转录。",
+      "fetched_at": "2026-05-29T23:02:35.682981+08:00"
+    },
+    {
+      "title": "Browse all packs in the Skill Marketplace: https://t.co/CIR0iT4g3T",
+      "link": "https://x.com/Skywork_ai/status/2060347341098627570",
+      "published": "2026-05-29T21:07:40+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Browse all packs in the Skill Marketplace: [skywork.ai](http://skywork.ai)\n\n💬0🔄0❤️2👀197📊1",
+      "tags": [
+        "Skywork",
+        "Skill Marketplace",
+        "AI"
+      ],
+      "score": 80,
+      "summary": "Skywork官方推广Skill Marketplace，提供技能包浏览。",
+      "fetched_at": "2026-05-29T23:02:35.683040+08:00"
+    },
+    {
+      "title": "You don't have to figure out which Skills fit you.\n\nWe did the picking. A few examples from the mark...",
+      "link": "https://x.com/Skywork_ai/status/2060347338678501400",
+      "published": "2026-05-29T21:07:39+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "You don't have to figure out which Skills fit you.  \n  \nWe did the picking. A few examples from the marketplace:  \n→ 5 Office Tools Everyone Needs  \n→ A Product Manager's Supercharged Workflow  \n→ A Growth Engine for Marketers  \n  \nAnd many more—pick the one that matches your work.\n\n💬1🔄0❤️2👀227📊1",
+      "tags": [
+        "Skywork",
+        "技能包",
+        "AI"
+      ],
+      "score": 80,
+      "summary": "Skywork推出Featured Skill Packs，按岗位和用例组织。",
+      "fetched_at": "2026-05-29T23:02:35.683099+08:00"
+    },
+    {
+      "title": "Introducing Featured Skill Packs.\n\nSkywork bundled the best Skills into packs—organized  by job and ...",
+      "link": "https://x.com/Skywork_ai/status/2060347336099090867",
+      "published": "2026-05-29T21:07:38+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Introducing Featured Skill Packs.  \n  \nSkywork bundled the best Skills into packs—organized by job and use case, so you find the ones that fit how you actually work. One click installs the whole pack.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060346863287689216/vid/avc1/1920x1080/K38uTli6zpJxPXF0.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Skywork_ai/status/2060347336099090867/video/1)\n\n💬1🔄0❤️4👀290📊2",
+      "tags": [
+        "Skywork",
+        "技能包",
+        "产品更新"
+      ],
+      "score": 80,
+      "summary": "Skywork介绍Featured Skill Packs，一键安装整包。",
+      "fetched_at": "2026-05-29T23:02:35.683158+08:00"
+    },
+    {
+      "title": "New roadmap for AGI. Maybe we should call it The Pope Test.",
+      "link": "https://x.com/Suhail/status/2060347400691310617",
+      "published": "2026-05-29T21:07:54+08:00",
+      "source": "Suhail(@Suhail)",
+      "content": "New roadmap for AGI. Maybe we should call it The Pope Test.\n\n![Pope Leo XIV](https://pbs.twimg.com/profile_images/1922601341576216576/JA1DF-Tv_normal.jpg)\n\nPope Leo XIV@Pontifex\n\nArtificial intelligences do not undergo experiences, do not possess a body, do not feel joy or pain, do not mature through relationships, and do not know from within what love, work, friendship or responsibility mean. Nor do they have a moral conscience, since they do not judge good and evil, grasp the ultimate meaning of situations, or bear responsibility for consequences. They may imitate or even simulate, but they do not understand what they produce, for they lack the affective, relational, and spiritual perspective through which human beings grow in wisdom. #MagnificaHumanitas\n\n[🔗 View Quoted Tweet](https://x.com/Pontifex/status/2060322763718725798)\n\n💬4🔄1❤️5👀2359📊3",
+      "tags": [
+        "AGI",
+        "观点",
+        "教皇"
+      ],
+      "score": 60,
+      "summary": "Suhail引用教皇关于AI的言论，提出教皇测试。",
+      "fetched_at": "2026-05-29T23:02:35.683236+08:00"
+    },
+    {
+      "title": "这几年最大的错误是“迭代方向”没找到，感觉自己在原地打转。AI很大的问题在于，不能总是和他在符号世界里，符号归符号，离开屏幕发现洗衣篮里还是一大堆脏衣服没有洗。真正与AI一起协作迭代我认为需要满足：个...",
+      "link": "https://x.com/feltanimalworld/status/2060369647703130407",
+      "published": "2026-05-29T22:36:18+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "这几年最大的错误是“迭代方向”没找到，感觉自己在原地打转。AI很大的问题在于，不能总是和他在符号世界里，符号归符号，离开屏幕发现洗衣篮里还是一大堆脏衣服没有洗。真正与AI一起协作迭代我认为需要满足：个人的独特性，这个事情考虑了你自身能力环境和处境的独特；某种物理验证，不能在符号世界空转\n\n💬1🔄0❤️4👀131📊2",
+      "tags": [
+        "AI",
+        "反思",
+        "迭代"
+      ],
+      "score": 55,
+      "summary": "Susan STEM反思AI迭代方向，认为需结合物理世界。",
+      "fetched_at": "2026-05-29T23:02:35.683304+08:00"
+    },
+    {
+      "title": "TinyShip https://t.co/o0BI6W8DRb 即将迎来下一个 release 的重要功能：支付方式支持 dodopayments，dodo 是最近很火的支付平台，有客户要求添加，我...",
+      "link": "https://x.com/vikingmute/status/2060349883018801305",
+      "published": "2026-05-29T21:17:46+08:00",
+      "source": "Viking(@vikingmute)",
+      "content": "TinyShip [tinyship.cn](http://tinyship.cn) 即将迎来下一个 release 的重要功能：支付方式支持 dodopayments，dodo 是最近很火的支付平台，有客户要求添加，我试了一下，可以支持个人和公司两种，几乎没有什么门槛，只要有一个产品的站点就可以，可以说是现在门槛最低的支付平台了。  \n  \n现在 TinyShip 几乎是支持所有主流的支付平台，包括国内国外的，微信商家支付，支付宝，Stripe，PayPal，Creem 以及 DodoPayments，同时做到 unified API, 可以方便的一键切换。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060349705100648449/vid/avc1/1920x1080/Gitfmrpvr9g2q65b.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/vikingmute/status/2060349883018801305/video/1)\n\n![Viking](https://pbs.twimg.com/profile_images/725179208528322560/TPjU7qop_normal.jpg)\n\nViking@vikingmute\n\n我的第三个独立开发的项目 TinyShip 今天上线了 🎉🎉[tinyship.cn](http://tinyship.cn)Rb   \n  \n看起来是 another SaaS template，但我认为完全不是重复造轮子，市面上确实有非常多的 SaaS 模板，但我想创造的是一个全新不一样的体验。  \n  \n1 支持双框架 ，为了满足不同框架爱好者，才用了 Next.js 和 Nuxt.js 双框架设计，这也是我在市面上看到的第一个 Nuxt 模版。  \n  \n2 双市场策略，完全适配国内本土和出海项目，本土支持 微信登录/微信支付/阿里云短信 国际市场支持 Stripe、Creem 支付，主流 OAuth 登录 以及 Twilio 短信。  \n说起个人项目，现在非常多人都在鼓吹出海，目前市面上的模板也都是针对出海项目的。但我认为独立开发一定不能忽略国内市场。虽然一直都在说国内付费意愿低，在你最熟悉的市场，其实比已经竞争非常激烈的出海项目有时候更容易成功。  \n  \n对于价格来说，大多数 SaaS 模板的定价都是对标国外架构，大多 100 到 200 美元。而给自己的定价策略是低价并且优质，让更多开发者有能力购买我的产品。所以价格是299人民币，早鸟价格期间 199 元，应该算是一个大多数人都能承受的价格了。  \n  \n还有更多详情请看 👇\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/1998562405216038912/vid/avc1/1920x1080/BlGUbologpPzTnQc.mp4?tag=21)\n\n[🔗 View on Twitter](https://x.com/vikingmute/status/1998566358779617506/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/vikingmute/status/1998566358779617506)\n\n💬2🔄0❤️3👀638📊2",
+      "tags": [
+        "非AI",
+        "支付",
+        "独立开发"
+      ],
+      "score": 30,
+      "summary": "Viking介绍TinyShip增加DodoPayments支付，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683365+08:00"
+    },
+    {
+      "title": "𝘔𝘰𝘳𝘦 𝘨𝘳𝘢𝘯𝘶𝘭𝘢𝘳 𝘳𝘰𝘭𝘦-𝘣𝘢𝘴𝘦𝘥 𝘢𝘤𝘤𝘦𝘴𝘴 𝘤𝘰𝘯𝘵𝘳𝘰𝘭 𝘪𝘯 𝘞𝘦𝘢𝘷𝘪𝘢𝘵𝘦 ...",
+      "link": "https://x.com/weaviate_io/status/2060360517659881513",
+      "published": "2026-05-29T22:00:01+08:00",
+      "source": "Weaviate • vector database(@weaviate_io)",
+      "content": "𝘔𝘰𝘳𝘦 𝘨𝘳𝘢𝘯𝘶𝘭𝘢𝘳 𝘳𝘰𝘭𝘦-𝘣𝘢𝘴𝘦𝘥 𝘢𝘤𝘤𝘦𝘴𝘴 𝘤𝘰𝘯𝘵𝘳𝘰𝘭 𝘪𝘯 𝘞𝘦𝘢𝘷𝘪𝘢𝘵𝘦 𝘊𝘭𝘰𝘶𝘥 𝘤𝘰𝘯𝘴𝘰𝘭𝘦.  \n  \nWe've expanded RBAC in the Cloud console with two new roles — 𝗘𝗱𝗶𝘁𝗼𝗿 and 𝗩𝗶𝗲𝘄𝗲𝗿 — joining the existing Owner and Admin roles.  \n  \nWhether you're a small team or rolling Weaviate out across business units, the principle of least privilege should be the default and not the exception.  \n  \nHere's how the four roles break down:  \n  \n→ 𝗢𝘄𝗻𝗲𝗿 - full control, including billing and promoting other Owners  \n→ 𝗔𝗱𝗺𝗶𝗻 - manages clusters, billing, and day-to-day org activity  \n→ 𝗘𝗱𝗶𝘁𝗼𝗿 (𝘯𝘦𝘸) - creates, configures, and deletes clusters, without touching billing or user invites; built for engineers shipping on Weaviate day-to-day  \n→ 𝗩𝗶𝗲𝘄𝗲𝗿 (𝘯𝘦𝘸) - read-only access for security reviewers, finance partners, and other stakeholders who need visibility without edit rights  \n  \nEnhanced RBAC reduces accidental changes, limits the blast radius of mistakes, and gives platform and security teams the clarity they need to scale confidently. Managing roles takes just a [weaviate.io/blog/rbac-over…](https://weaviate.io/blog/rbac-overview?utm_source=channels&utm_medium=w_social&utm_campaign=blog_post&utm_content=blog_annoucement_680101501)ion Settings, and changes take effect immediately.  \n  \nRead the full post 👉 <https://t.co/zrHlt5UPBb>\n\n![Tweet Image](https://pbs.twimg.com/media/HJeWCrFXcAIjlje.png)\n\n💬0🔄1❤️1👀28📊1",
+      "tags": [
+        "非AI",
+        "向量数据库",
+        "RBAC"
+      ],
+      "score": 70,
+      "summary": "Weaviate Cloud控制台新增编辑者和查看者角色，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683424+08:00"
+    },
+    {
+      "title": "Retail option volume in semiconductors is ~2.8x the post-2020 monthly average\n\nCharts of the Week: h...",
+      "link": "https://x.com/a16z/status/2060362549401682022",
+      "published": "2026-05-29T22:08:06+08:00",
+      "source": "a16z(@a16z)",
+      "content": "Retail option volume in semiconductors is ~2.8x the post-2020 monthly average  \n  \nCharts of the Week: [a16z.news/p/charts-of-th…](https://www.a16z.news/p/charts-of-the-week-retail-to-the)\n\n![Tweet Image](https://pbs.twimg.com/media/HJfg0dLacAE70Sz.jpg)\n\n💬3🔄2❤️18👀3942📊5",
+      "tags": [
+        "非AI",
+        "半导体",
+        "期权"
+      ],
+      "score": 30,
+      "summary": "a16z图表显示半导体零售期权交易量激增，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683483+08:00"
+    },
+    {
+      "title": "How to enter:\n→ Build your SaaS replacement in Bolt\n→ Post it on X and tag @boltdotnew\n→ Drop your p...",
+      "link": "https://x.com/boltdotnew/status/2060361086700761214",
+      "published": "2026-05-29T22:02:17+08:00",
+      "source": "bolt.new(@boltdotnew)",
+      "content": "How to enter:  \n→ Build your SaaS replacement in Bolt  \n→ Post it on X and tag [@boltdotnew](https://x.com/boltdotnew)  \n→ Drop your project link below  \n  \nCloses Sunday, May 31 at 11:59pm PT.  \nWinner announced Monday. 👀\n\n💬0🔄0❤️0",
+      "tags": [
+        "非AI",
+        "竞赛",
+        "广告"
+      ],
+      "score": 20,
+      "summary": "Bolt.new发起SaaS重建竞赛，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683542+08:00"
+    },
+    {
+      "title": "Now live in NYC.\n\nEvery tool you pay for is just a Bolt project you haven't built yet.\nRebuild the o...",
+      "link": "https://x.com/boltdotnew/status/2060361079486582811",
+      "published": "2026-05-29T22:02:15+08:00",
+      "source": "bolt.new(@boltdotnew)",
+      "content": "Now live in NYC.  \n  \nEvery tool you pay for is just a Bolt project you haven't built yet.  \nRebuild the one you're sick of paying for this weekend.  \n  \n5 best builds win $1,000 🗽\n\n![Tweet Image](https://pbs.twimg.com/media/HJffezdW4AgcF-c.jpg)\n\n💬1🔄1❤️1👀5📊1",
+      "tags": [
+        "非AI",
+        "广告",
+        "竞赛"
+      ],
+      "score": 20,
+      "summary": "Bolt.new在纽约推广重建SaaS竞赛，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683602+08:00"
+    },
+    {
+      "title": "请教一下各位朋友：\n\n如果一个公司告诉你通过了面试，跟你谈 offer，提出的薪资和期权，你觉得有谈判空间，提出了你的想法，过了两天对方 hr 说：\n“你是我们看的第一个候选人，我们想更谨慎地再看几个...",
+      "link": "https://x.com/shao__meng/status/2060353779485360307",
+      "published": "2026-05-29T21:33:15+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "请教一下各位朋友：  \n  \n如果一个公司告诉你通过了面试，跟你谈 offer，提出的薪资和期权，你觉得有谈判空间，提出了你的想法，过了两天对方 hr 说：  \n“你是我们看的第一个候选人，我们想更谨慎地再看几个人，如果到时还是觉得你最合适，我们就按你谈的调整定 offer”  \n  \n这种情况，你还会考虑它吗？替我朋友问的 😄\n\n💬0🔄0❤️0👀312",
+      "tags": [
+        "非AI",
+        "求职",
+        "咨询"
+      ],
+      "score": 20,
+      "summary": "Meng Shao询问offer谈判问题，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683661+08:00"
+    },
+    {
+      "title": "Grok Build 0.1 在 Cursor 中已经可用了！",
+      "link": "https://x.com/shao__meng/status/2060346904958132402",
+      "published": "2026-05-29T21:05:56+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "Grok Build 0.1 在 Cursor 中已经可用了！\n\n![Tweet Image](https://pbs.twimg.com/media/HJfSdpUaEAA_eOO.jpg)\n\n![eric zakariasson](https://pbs.twimg.com/profile_images/1841151626456801283/HnXqy3TQ_normal.jpg)\n\neric zakariasson@ericzakariasson\n\ngrok build is available in cursor, try it out!\n\n![Tweet Image](https://pbs.twimg.com/media/HJfQjb8awAA7di-.png)\n\n[🔗 View Quoted Tweet](https://x.com/ericzakariasson/status/2060344663836708928)\n\n💬1🔄0❤️1👀377📊1",
+      "tags": [
+        "Grok",
+        "Cursor",
+        "AI工具"
+      ],
+      "score": 60,
+      "summary": "Meng Shao透露Grok Build 0.1在Cursor中可用。",
+      "fetched_at": "2026-05-29T23:02:35.683720+08:00"
+    },
+    {
+      "title": "也许会有一种新的软件商业模式\n第一版免费\n后续更新每次都收费\n\n毕竟 AI Coding 第一版是最简单的…\n维护是很费心力的…\n\n或者 agent 自己迭代的版本免费\n人类迭代的版本收费",
+      "link": "https://x.com/oran_ge/status/2060369794306875788",
+      "published": "2026-05-29T22:36:53+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "也许会有一种新的软件商业模式  \n第一版免费  \n后续更新每次都收费  \n  \n毕竟 AI Coding 第一版是最简单的…  \n维护是很费心力的…  \n  \n或者 agent 自己迭代的版本免费  \n人类迭代的版本收费\n\n💬3🔄0❤️1👀993📊3",
+      "tags": [
+        "AI编码",
+        "商业模式",
+        "观点"
+      ],
+      "score": 55,
+      "summary": "Orange.ai设想新的软件商业模式：第一版免费，后续更新收费。",
+      "fetched_at": "2026-05-29T23:02:35.683779+08:00"
+    },
+    {
+      "title": "X 的巴别塔计划这几天体验下来，越来越觉得它的影响深远。\n以前我们所谓的互联网，其实它更像一堆很多语言小岛。\n看起来连在一起，其实不是一个世界。\n我们所在的中文圈，信息在这里兜兜转转走不出去。\n\n现在...",
+      "link": "https://x.com/oran_ge/status/2060361411617010000",
+      "published": "2026-05-29T22:03:34+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "X 的巴别塔计划这几天体验下来，越来越觉得它的影响深远。  \n以前我们所谓的互联网，其实它更像一堆很多语言小岛。  \n看起来连在一起，其实不是一个世界。  \n我们所在的中文圈，信息在这里兜兜转转走不出去。  \n  \n现在这些岛之间，开始有桥了。  \n居民们跨岛串门变得简简单单。\n\n💬8🔄2❤️16👀1874📊9",
+      "tags": [
+        "非AI",
+        "X平台",
+        "翻译"
+      ],
+      "score": 50,
+      "summary": "Orange.ai评论X的巴别塔计划打破语言壁垒，非AI主题。",
+      "fetched_at": "2026-05-29T23:02:35.683850+08:00"
+    },
+    {
+      "title": "有了 Claude Code 和 Cursor 这种软件以后，真的不只是写代码厉害。\n\n我之前拿到豆包手机以后，想给它装个谷歌框架，但一直在 Google Play 那有点问题，死活装不上。\n\n今天突...",
+      "link": "https://x.com/op7418/status/2060367382884094026",
+      "published": "2026-05-29T22:27:18+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "有了 Claude Code 和 Cursor 这种软件以后，真的不只是写代码厉害。  \n  \n我之前拿到豆包手机以后，想给它装个谷歌框架，但一直在 Google Play 那有点问题，死活装不上。  \n  \n今天突然想起来，打开让 Claude Code 帮我装。  \n  \n打开 USB 调试模式后，它直接就帮我搞定了：自动下载安装包、自动安装、自动调试好  \n  \n这个未来感觉很有用。\n\n💬7🔄0❤️19👀3907📊9",
+      "tags": [
+        "Claude Code",
+        "Android",
+        "谷歌框架"
+      ],
+      "score": 60,
+      "summary": "Op7418使用Claude Code成功给豆包手机安装谷歌框架。",
+      "fetched_at": "2026-05-29T23:02:35.683909+08:00"
     }
   ]
 }
