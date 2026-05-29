@@ -1,0 +1,425 @@
+{
+  "meta": {
+    "date": "2026-05-29"
+  },
+  "entries": [
+    {
+      "title": "Databricks at SIGMOD 2026",
+      "link": "https://www.databricks.com/blog/databricks-sigmod-2026",
+      "published": "2026-05-30T01:08:00+08:00",
+      "source": "Databricks",
+      "content": "Databricks continues to lead the way in engineering innovation, consistently pushing...",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.376823+08:00"
+    },
+    {
+      "title": "11 demos of Gemini Omni and Gemini 3.5 in action",
+      "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/",
+      "published": "2026-05-30T01:30:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemini_Omni_and_Gemini_3.5_hero.max-600x600.format-webp.webp)Watch 11 videos showing the capabilities of Gemini Omni and Gemini 3.5, announced at Google I/O 2026.",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.376936+08:00"
+    },
+    {
+      "title": "We've seen lots of enthusiasm for Devin's end-to-end testing capabilities in its virtual machine.\n\nI...",
+      "link": "https://x.com/cognition/status/2060416342704935107",
+      "published": "2026-05-30T01:41:51+08:00",
+      "source": "Cognition(@cognition_labs)",
+      "content": "We've seen lots of enthusiasm for Devin's end-to-end testing capabilities in its virtual machine.  \n  \nIn this post, [@ido\\_pesok](https://x.com/ido_pesok) shares the technical details behind how we implement testing for verification at scale.\n\n![Ido Pesok](https://pbs.twimg.com/profile_images/1640130809641472002/2vs-oNxN_normal.jpg)\n\nIdo Pesok@ido\\_pesok\n\n[x.com/i/article/2060…](http://x.com/i/article/2060411306759585792)\n\n[🔗 View Quoted Tweet](https://x.com/ido_pesok/status/2060416230641881336)\n\n💬3🔄8❤️36👀3406📊8",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377017+08:00"
+    },
+    {
+      "title": "Agent actions that aren't on your allowlist or can't be sandboxed go to a classifier subagent.\n\nThis...",
+      "link": "https://x.com/cursor_ai/status/2060406014478831842",
+      "published": "2026-05-30T01:00:49+08:00",
+      "source": "Cursor(@cursor_ai)",
+      "content": "Agent actions that aren't on your allowlist or can't be sandboxed go to a classifier subagent.  \n  \nThis separate agent decides whether to allow the tool call, try a different approach, or ask you for approval.  \n  \nLearn more: [cursor.com/changelog/auto…](http://cursor.com/changelog/auto-review)\n\n💬0🔄1❤️46👀4933📊4",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377088+08:00"
+    },
+    {
+      "title": "Auto-review mode is now available in Cursor.\n\nIt allows agents to run tool calls with fewer approval...",
+      "link": "https://x.com/cursor_ai/status/2060406013098897765",
+      "published": "2026-05-30T01:00:48+08:00",
+      "source": "Cursor(@cursor_ai)",
+      "content": "Auto-review mode is now available in Cursor.  \n  \nIt allows agents to run tool calls with fewer approval prompts and safer execution.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060398347375054853/vid/avc1/1920x1080/nbMTa6h9dgvHy9FH.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/cursor_ai/status/2060406013098897765/video/1)\n\n💬42🔄36❤️771👀33749📊131",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377164+08:00"
+    },
+    {
+      "title": "I’m very excited by this new benchmark dataset for visual generation that is suitable for the modern...",
+      "link": "https://x.com/drfeifei/status/2060404846734512205",
+      "published": "2026-05-30T00:56:10+08:00",
+      "source": "Fei-Fei Li(@drfeifei)",
+      "content": "I’m very excited by this new benchmark dataset for visual generation that is suitable for the modern era of large scale generative models!🤩\n\n![Keshigeyan Chandrasegaran](https://pbs.twimg.com/profile_images/1857746255625256960/b51xdElE_normal.jpg)\n\nKeshigeyan Chandrasegaran@keshigeyan\n\n1/ Introducing GPIC: a Giant Permissive Image Corpus and benchmark for visual generation!  \n  \n🚀100M VLM-captioned image-text pairs for training  \n📊1M image-text pairs for benchmarking  \n🖼️~28 trillion pixels  \n🤗Centrally Hosted  \n✅Fully permissive for research + commercial use  \n  \nDataset, benchmark and models🧵👇  \n  \nCo-led with [@KyleSargentAI](https://x.com/KyleSargentAI)\n\n![Tweet Image](https://pbs.twimg.com/media/HJgAovzaYAAedMT.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/keshigeyan/status/2060398262591668315)\n\n💬5🔄5❤️43👀4972📊9",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377231+08:00"
+    },
+    {
+      "title": "Another proof point for the open-weights thesis. From @RampLabs: \n\n\"If we built this again, we'd lea...",
+      "link": "https://x.com/FireworksAI_HQ/status/2060411438276239400",
+      "published": "2026-05-30T01:22:22+08:00",
+      "source": "Fireworks AI(@FireworksAI_HQ)",
+      "content": "Another proof point for the open-weights thesis. From [@RampLabs](https://x.com/RampLabs):   \n  \n\"If we built this again, we'd lean more on open-weight models.\"  \n  \nRamp pointed 10K agents at their own backend. Kimi K2.6 and DeepSeek V4 Pro on Fireworks recovered 7 high-severity vulnerabilities at ~5x lower cost per token than GPT 5.5. In a world of scarce (GPU) resources, both cost and value matter. AI leaders today are finding the right balance btw open & closed.   \n  \n\"On balance, the hard cases reward a frontier model, but cheaper open-weight models still find high-severity security issues in production code at meaningful rates.\"\n\n![Ramp Labs](https://pbs.twimg.com/profile_images/1953463704529362944/gv1pUgYO_normal.jpg)\n\nRamp Labs@RampLabs\n\n[x.com/i/article/2059…](http://x.com/i/article/2059666520729415680)\n\n[🔗 View Quoted Tweet](https://x.com/RampLabs/status/2059678575939273091)\n\n💬0🔄1❤️8👀754📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377296+08:00"
+    },
+    {
+      "title": "That’s a wrap on this month’s Gemini Drops!\n\nTo learn more about everything that’s new, check out th...",
+      "link": "https://x.com/GeminiApp/status/2060409308001738901",
+      "published": "2026-05-30T01:13:54+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "That’s a wrap on this month’s Gemini Drops!  \n  \nTo learn more about everything that’s new, check out the Gemini Drops Hub: [gemini.google/gemini-drops](http://gemini.google/gemini-drops)\n\n💬1🔄0❤️9👀3413📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377361+08:00"
+    },
+    {
+      "title": "9) Level up with Google AI Ultra\n\nUnlock higher usage limits and Gemini 3.5 Flash with the new Googl...",
+      "link": "https://x.com/GeminiApp/status/2060409306051379323",
+      "published": "2026-05-30T01:13:53+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "9) Level up with Google AI Ultra  \n  \nUnlock higher usage limits and Gemini 3.5 Flash with the new Google AI Ultra plan for just $100/month.\n\n![Tweet Image](https://pbs.twimg.com/media/HJgLKUvaQAAm4BX.jpg)\n\n💬7🔄0❤️15👀3820📊7",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377428+08:00"
+    },
+    {
+      "title": "Gemini Spark is now available to all Google AI Ultra subscribers in the U.S.\n\nIt can handle the heav...",
+      "link": "https://x.com/GeminiApp/status/2060405496872579115",
+      "published": "2026-05-30T00:58:45+08:00",
+      "source": "Google Gemini App(@GeminiApp)",
+      "content": "Gemini Spark is now available to all Google AI Ultra subscribers in the U.S.  \n  \nIt can handle the heavy lifting and connect the dots across your digital ecosystem to take action where it matters most. Whether you watch it work or let it run in the background, Gemini Spark is always under your direction.  \n  \nGive it a try at [gemini.google](http://gemini.google) or in the app and let us know what you think.\n\n![Google Gemini](https://pbs.twimg.com/profile_images/1940093473564073984/jiafRcO0_normal.png)\n\nGoogle Gemini@GeminiApp\n\nGemini Spark is your new 24/7 personal AI agent.  \n  \nGive it a task and it works autonomously in the background, even if your phone and laptop are turned off. You choose to turn it on and it's designed to check with you before taking major actions. #GoogleIO\n\n[🔗 View Quoted Tweet](https://x.com/GeminiApp/status/2056792333132460322)\n\n💬37🔄22❤️283👀21965📊53",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377492+08:00"
+    },
+    {
+      "title": "defensive acceleration in biology with Rosalind:",
+      "link": "https://x.com/gdb/status/2060421260304355384",
+      "published": "2026-05-30T02:01:23+08:00",
+      "source": "Greg Brockman(@gdb)",
+      "content": "defensive acceleration in biology with Rosalind:\n\n![OpenAI](https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg)\n\nOpenAI@OpenAI\n\nWe’re taking steps to accelerate defensive progress in biology:  \n  \n- Launching Rosalind Biodefense to help trusted builders develop new biodefense and pandemic preparedness capabilities.   \n- Expanding trusted access to GPT-Rosalind for select U.S. government and allied partners supporting public health and biodefense missions.   \nAdvances in biology can strengthen our ability to prevent, detect, and respond to biological threats.   Our goal is to help build a more robust ecosystem – giving trusted defenders frontier AI to develop and operate new defenses for public health and biodefense.   \n  \n[openai.com/index/strength…](https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/)\n\n[🔗 View Quoted Tweet](https://x.com/OpenAI/status/2060376598642405492)\n\n💬8🔄0❤️47👀4271📊9",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377559+08:00"
+    },
+    {
+      "title": "open models are having a moment!",
+      "link": "https://x.com/hwchase17/status/2060422390040195244",
+      "published": "2026-05-30T02:05:53+08:00",
+      "source": "Harrison Chase(@hwchase17)",
+      "content": "open models are having a moment!\n\n![LangChain](https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_normal.jpg)\n\nLangChain@LangChain\n\nThe latest finding in the LangSmith Signal: Open Models are having a moment.   \n  \n1 in 3 AI teams ran an open-weights model in April 2026, up from 1 in 5 nine months ago.  \n  \nThe overall number of teams using open weights grew 3x.   \n  \nWe’re seeing newer users choose open models at a higher rate than those who came before.\n\n![Tweet Image](https://pbs.twimg.com/media/HJgIOVeWQAMt0iQ.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgINZ5XkAkhji0.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgIOMCW0AMzrrc.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgIOJ9X0AIY_7q.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/LangChain/status/2060405874993115532)\n\n💬0🔄0❤️3👀172",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377624+08:00"
+    },
+    {
+      "title": "Parse PDFs at lightspeed (this video is at 1x) \n\nAbsolute cinema",
+      "link": "https://x.com/jerryjliu0/status/2060401682610262424",
+      "published": "2026-05-30T00:43:36+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "Parse PDFs at lightspeed (this video is at 1x)   \n  \nAbsolute cinema\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060401527836332034/vid/avc1/1480x1080/DKVAXgLOOMFsp-rB.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/jerryjliu0/status/2060401682610262424/video/1)\n\n![Jerry Liu](https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_normal.jpg)\n\nJerry Liu@jerryjliu0\n\nWe've created the world's fastest PDF parser ⚡️  \n  \nAnd it's more accurate than any other open-source, model-free PDF parser out there (pymupdf, pypdf, markitdown, pdftotext, opendataloader, pymupdf4llm)   \n  \nIntroducing LiteParse v2 - we rewrote the entire library into Rust and adapted it as native packages for Python and Node.   \n  \nIt supports 50+ different document types, can be triggered directly or installable directly within your favorite AI agent.  \n  \nBlog: [llamaindex.ai/blog/liteparse…](https://www.llamaindex.ai/blog/liteparse-v2-0-runs-everywhere?utm_medium=socials&utm_source=twitter&utm_campaign=2026-may-)  \n  \nRepo: [github.com/run-llama/lite…](https://github.com/run-llama/liteparse)\n\n![Tweet Image](https://pbs.twimg.com/media/HJWPiPnbQAAmm-O.png)\n\n[🔗 View Quoted Tweet](https://x.com/jerryjliu0/status/2059710330016817501)\n\n💬8🔄7❤️74👀8027📊21",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377689+08:00"
+    },
+    {
+      "title": "The Pope has clearly never been gently parented by Claude at 1am",
+      "link": "https://x.com/venturetwins/status/2060405185911067038",
+      "published": "2026-05-30T00:57:31+08:00",
+      "source": "Justine Moore(@venturetwins)",
+      "content": "The Pope has clearly never been gently parented by Claude at 1am\n\n![Tweet Image](https://pbs.twimg.com/media/HJgGb7fbUAYytT7.png)\n\n💬7🔄3❤️49👀2333📊12",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377753+08:00"
+    },
+    {
+      "title": "Improving agents\n\nThe old way: Manually reading traces, looking for patterns, writing evals, and cre...",
+      "link": "https://x.com/LangChain/status/2060421124601598345",
+      "published": "2026-05-30T02:00:51+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Improving agents  \n  \nThe old way: Manually reading traces, looking for patterns, writing evals, and creating fixes.  \n  \nThe better way: Letting LangSmith Engine run that cycle for you\n\n![Tweet Image](https://pbs.twimg.com/media/HJgWGBEWwAUU9tj.jpg)\n\n💬0🔄0❤️0",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377819+08:00"
+    },
+    {
+      "title": "The latest finding in the LangSmith Signal: Open Models are having a moment. \n\n1 in 3 AI teams ran a...",
+      "link": "https://x.com/LangChain/status/2060405874993115532",
+      "published": "2026-05-30T01:00:15+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "The latest finding in the LangSmith Signal: Open Models are having a moment.   \n  \n1 in 3 AI teams ran an open-weights model in April 2026, up from 1 in 5 nine months ago.  \n  \nThe overall number of teams using open weights grew 3x.   \n  \nWe’re seeing newer users choose open models at a higher rate than those who came before.\n\n![Tweet Image](https://pbs.twimg.com/media/HJgIOVeWQAMt0iQ.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgINZ5XkAkhji0.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgIOMCW0AMzrrc.jpg)![Tweet Image](https://pbs.twimg.com/media/HJgIOJ9X0AIY_7q.jpg)\n\n💬5🔄4❤️16👀1299📊7",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377908+08:00"
+    },
+    {
+      "title": "One other surprise about this thread is how often @A24 was mentioned. Nice job @scottbelsky.",
+      "link": "https://x.com/lennysan/status/2060410759306477596",
+      "published": "2026-05-30T01:19:40+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "One other surprise about this thread is how often [@A24](https://x.com/A24) was mentioned. Nice job [@scottbelsky](https://x.com/scottbelsky).\n\n![Lenny Rachitsky](https://pbs.twimg.com/profile_images/1592990461517389824/iln8hi1f_normal.jpg)\n\nLenny Rachitsky@lennysan\n\nWhat are your top 3 dream companies to work for right now?\n\n[🔗 View Quoted Tweet](https://x.com/lennysan/status/2059708614135451815)\n\n💬1🔄1❤️14👀2848📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.377996+08:00"
+    },
+    {
+      "title": "h/t @simonw https://t.co/EOWTSLlMbE",
+      "link": "https://x.com/lennysan/status/2060401818463781001",
+      "published": "2026-05-30T00:44:08+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "h/t [@simonw](https://x.com/simonw)[open.substack.com/pub/simonw/p/i…](http://open.substack.com/pub/simonw/p/i-think-anthropic-and-openai-have?utm_source=post-email-title&publication_id=1173386&post_id=199683963&utm_campaign=email-post-title&isFreemail=true&r=13nam&token=eyJ1c2VyX2lkIjoxODQ5Nzc0LCJwb3N0X2lkIjoxOTk2ODM5NjMsImlhdCI6MTc4MDAyMTI1NiwiZXhwIjoxNzgyNjEzMjU2LCJpc3MiOiJwdWItMTE3MzM4NiIsInN1YiI6InBvc3QtcmVhY3Rpb24ifQ.ol_U5UpBtlhl6RknBRWk7yusry3lVZzfn2OdrXLKBrU)\n\n![Tweet Image](https://pbs.twimg.com/media/HJgEe3WaUAALuxx.png)\n\n💬0🔄0❤️12👀1841📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378065+08:00"
+    },
+    {
+      "title": "700+ open roles right now at OpenAI 😮",
+      "link": "https://x.com/lennysan/status/2060401612913594605",
+      "published": "2026-05-30T00:43:19+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "700+ open roles right now at OpenAI 😮\n\n![Tweet Image](https://pbs.twimg.com/media/HJgENe7bUAELZmk.jpg)\n\n💬12🔄3❤️51👀6786📊17",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378139+08:00"
+    },
+    {
+      "title": "Here's the links for my conversation with Don Lincoln:\n\nYouTube: https://t.co/sh8V5rWS7D\n\nSpotify: h...",
+      "link": "https://x.com/lexfridman/status/2060415372743119215",
+      "published": "2026-05-30T01:38:00+08:00",
+      "source": "Lex Fridman(@lexfridman)",
+      "content": "Here's the links for my conversation with Don Lincoln:  \n  \nYouTube: [youtube.com/watch?v=1M3Vdl…](https://youtube.com/watch?v=1M3Vdl6DRkU)  \n  \nSpotify: [open.spotify.com/show/2MAi0BvDc…](https://open.spotify.com/show/2MAi0BvDc6GTFvKFPXnkCL)  \n  \nPodcast: [lexfridman.com/podcast](https://lexfridman.com/podcast)\n\n![Tweet Image](https://pbs.twimg.com/media/HJgL8vcbUAACBEG.jpg)\n\n💬2🔄2❤️23👀11464📊5",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378209+08:00"
+    },
+    {
+      "title": "Here's my conversation with Don Lincoln about some of the biggest open questions in physics, includi...",
+      "link": "https://x.com/lexfridman/status/2060415366761992612",
+      "published": "2026-05-30T01:37:58+08:00",
+      "source": "Lex Fridman(@lexfridman)",
+      "content": "Here's my conversation with Don Lincoln about some of the biggest open questions in physics, including dark energy, dark matter, the matter-antimatter imbalance, quantum vacuum, quantum foam, and the quest to unify the laws of physics.  \n  \nDon is a particle physicist at Fermilab who has spent decades working at the frontiers of high energy physics. He is also a great teacher & writer. I highly recommend his courses & books. One of my favorite lecture series he has given is The Evidence for Modern Physics where he breaks down the experiments that validate some of the weird laws of physics we have, and what it would take to validate even the weirder ones.  \n  \nIt's not enough to come up with a beautiful theory. You also have to show through experiment that the theory is likely to be correct. This process often doesn't get the love it deserves, even though it's often the most important and difficult part of the scientific process.  \n  \nI ❤️ physics.  \n  \nThe conversation is here on X in full and is up everywhere else (see comment).  \n  \nTimestamps:  \n0:00 - Introduction  \n0:49 - Unifying the laws of nature  \n15:20 - General relativity  \n32:27 - Electroweak force  \n44:09 - How particle colliders work  \n1:02:12 - Higgs boson discovery  \n1:12:32 - Theory of everything  \n1:42:17 - Physics of empty space  \n1:49:41 - Antimatter  \n2:10:31 - Dark energy  \n2:14:20 - Dark matter  \n2:42:56 - Future of physics\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060396044589158402/vid/avc1/1920x1080/lHrmt1XVNePRRuul.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/lexfridman/status/2060415366761992612/video/1)\n\n💬22🔄30❤️189👀21801📊45",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378281+08:00"
+    },
+    {
+      "title": "Did a demonic AI make this thumbnail image?",
+      "link": "https://x.com/pmarca/status/2060421221762953644",
+      "published": "2026-05-30T02:01:14+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Did a demonic AI make this thumbnail image?\n\n![Tucker Carlson](https://pbs.twimg.com/profile_images/1666923736132460544/9LWCHVOp_normal.jpg)\n\nTucker Carlson@TuckerCarlson\n\nGenesis 6 describes the Nephilim as demonic hybrids who occupy positions of authority in human society. They’re entirely real, says Father Stephen De Young.  \n  \n0:00 What Are the Nephilim?  \n3:40 The Advanced Civilization Before the Flood  \n12:14 Was Human Lifespan Longer Before the Flood Than It Is Now?  \n15:55 Was Technology Given to Us by Demons?  \n22:53 How Does Someone Become Demonized?  \n26:37 Gilgamesh and the Book of the Giants  \n36:38 Is Japan Still Producing Nephilim?  \n42:19 Why Did God Create Humanity?  \n46:09 Are the Nephilim Still Among Us?  \n53:36 The Ongoing Ritual of Human Sacrifice  \n59:11 Is There Fossil Evidence of Giants?  \n1:00:20 Who Is Goliath?  \n1:09:48 Epstein, AI, and the Destruction of the Earth  \n1:11:31 When Will Christ Return?  \n1:19:33 Why Every Civilization Is Centered Around Religion  \n1:21:40 The Gods of War and Money  \n1:23:08 How Should Christians Respond to War?  \n1:30:02 The Failures of Evangelical Christian Leadership  \n1:31:24 What Does It Mean to Truly Experience God's Work?  \n1:35:42 The Evils of Pornography  \n1:43:13 The One Unforgivable Sin\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060366364003409928/vid/avc1/1920x1080/eiOLs6Io9zf_hEvl.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TuckerCarlson/status/2060405936523448714/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/TuckerCarlson/status/2060405936523448714)\n\n💬3🔄0❤️18👀2776📊3",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378350+08:00"
+    },
+    {
+      "title": "𝗖𝗹𝗮𝘂𝗱𝗲 𝗢𝗽𝘂𝘀 𝟰.𝟴 brings longer independent work, sharper judgment, and stronger self-chec...",
+      "link": "https://x.com/milvusio/status/2060413611915227469",
+      "published": "2026-05-30T01:31:00+08:00",
+      "source": "Milvus(@milvusio)",
+      "content": "𝗖𝗹𝗮𝘂𝗱𝗲 𝗢𝗽𝘂𝘀 𝟰.𝟴 brings longer independent work, sharper judgment, and stronger self-checking to coding agents.  \n  \nCoding agents are no longer just generating snippets. They are planning changes, calling tools, editing files, checking outputs, and staying inside the same workflow for longer.  \n  \n𝗧𝗵𝗮𝘁 𝗰𝗵𝗮𝗻𝗴𝗲𝘀 𝘁𝗵𝗲 𝗿𝗼𝗹𝗲 𝗼𝗳 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹.  \n  \nWhen a chatbot retrieves the wrong context, it may give the wrong answer. When an agent retrieves the wrong context, the mistake can shape what it does next: the plan it follows, the tool it calls, the code it changes, and the memory it carries forward.  \n  \nSo retrieval can no longer stop at “find a few similar chunks.” Agents need context that is relevant, fresh, scoped, and traceable enough to support action.  \n  \nThat is where a vector database like Milvus matters. It gives agents a retrieval layer built for hybrid search, metadata filtering, and reliable access to production context.  \n  \nStronger agents don’t reduce the need for retrieval quality. They make retrieval quality more visible.\n\n![Tweet Image](https://pbs.twimg.com/media/HJe852VaYAABlJL.jpg)\n\n💬0🔄0❤️1👀22",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378419+08:00"
+    },
+    {
+      "title": "That year I used Kate's observations, as a visitor from another world, to make a portrait of Silicon...",
+      "link": "https://x.com/paulg/status/2060399981748424981",
+      "published": "2026-05-30T00:36:50+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "That year I used Kate's observations, as a visitor from another world, to make a portrait of Silicon Valley.  \n  \n[paulgraham.com/kate.html](https://paulgraham.com/kate.html)\n\n💬3🔄0❤️48👀14580📊8",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378482+08:00"
+    },
+    {
+      "title": "One thing I learned from being one of the first users of JustinTV is that even the most interesting ...",
+      "link": "https://x.com/paulg/status/2060398505634484461",
+      "published": "2026-05-30T00:30:58+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "One thing I learned from being one of the first users of JustinTV is that even the most interesting person's life is boring 99% of the time.\n\n💬11🔄12❤️272👀14897📊34",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378546+08:00"
+    },
+    {
+      "title": "Here's everything you need to know about Replit in 60 seconds ⭐️\n\n→ Plain English prompts turned int...",
+      "link": "https://x.com/Replit/status/2060421635971166468",
+      "published": "2026-05-30T02:02:53+08:00",
+      "source": "Replit ⠕(@Replit)",
+      "content": "Here's everything you need to know about Replit in 60 seconds ⭐️  \n  \n→ Plain English prompts turned into real working software  \n→ End-to-end workflow from UI to deployment  \n→ Real-time team collaboration with just a link  \n→ Parallel AI agents building different parts of your app at once\n\n[Your browser does not support the video tag.](https://video.twimg.com/ext_tw_video/2060421575048896520/pu/vid/avc1/720x1280/tpghKsya-AQdCpnq.mp4?tag=12)\n\n[🔗 View on Twitter](https://x.com/Replit/status/2060421635971166468/video/1)\n\n💬0🔄1❤️5👀313📊1",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378607+08:00"
+    },
+    {
+      "title": "Did you try the new Replit Canvas yet?\n\n- Explore multiple design directions\n- Tweak designs by chat...",
+      "link": "https://x.com/Replit/status/2060399003381162430",
+      "published": "2026-05-30T00:32:57+08:00",
+      "source": "Replit ⠕(@Replit)",
+      "content": "Did you try the new Replit Canvas yet?  \n  \n- Explore multiple design directions  \n- Tweak designs by chatting with design frames  \n- Design UI prototypes and convert them into apps  \n- Create marketing assets for social media\n\n![Tweet Image](https://pbs.twimg.com/media/HJgB5r5bkAAseG8.jpg)\n\n💬6🔄3❤️21👀1474📊8",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378672+08:00"
+    },
+    {
+      "title": "RSVP: https://t.co/MgsZXl0gwp",
+      "link": "https://x.com/runwayml/status/2060408781729644954",
+      "published": "2026-05-30T01:11:48+08:00",
+      "source": "Runway(@runwayml)",
+      "content": "RSVP: [luma.com/iobqd8a9](https://luma.com/iobqd8a9)\n\n💬0🔄0❤️2👀1875",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378736+08:00"
+    },
+    {
+      "title": "Last chance to RSVP for our annual CVPR Friends Dinner in Denver on June 4th for conversation, cockt...",
+      "link": "https://x.com/runwayml/status/2060408777518563351",
+      "published": "2026-05-30T01:11:47+08:00",
+      "source": "Runway(@runwayml)",
+      "content": "Last chance to RSVP for our annual CVPR Friends Dinner in Denver on June 4th for conversation, cocktails and bites.  \n  \nRSVP at the link below.\n\n![Tweet Image](https://pbs.twimg.com/media/HJgKlz9XIAQ8CMN.jpg)\n\n💬1🔄2❤️12👀2506📊3",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378798+08:00"
+    },
+    {
+      "title": "打印一个宝可梦牌，开宝可梦牌party。造物的快乐无与伦比，有物可造，有程序可写，跑通的那一刻快乐是没事只能上网乱喷的人无法理解的。说回来，我发现给桌游，比如宝可梦牌这种规则你说难也不难，说容易连大人...",
+      "link": "https://x.com/feltanimalworld/status/2060416063628521666",
+      "published": "2026-05-30T01:40:44+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "打印一个宝可梦牌，开宝可梦牌party。造物的快乐无与伦比，有物可造，有程序可写，跑通的那一刻快乐是没事只能上网乱喷的人无法理解的。说回来，我发现给桌游，比如宝可梦牌这种规则你说难也不难，说容易连大人都不能立即上手的游戏，做一个AI master，当裁判或者延申到决策建议，是一个非常好的用法。\n\n![Tweet Image](https://pbs.twimg.com/media/HJgQ7rsW8AUGuPN.jpg)\n\n💬0🔄0❤️0👀53",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378862+08:00"
+    },
+    {
+      "title": "Relatively speaking, hyperscalers are still less leveraged than most\n\nCharts of the Week: https://t....",
+      "link": "https://x.com/a16z/status/2060419175068442738",
+      "published": "2026-05-30T01:53:06+08:00",
+      "source": "a16z(@a16z)",
+      "content": "Relatively speaking, hyperscalers are still less leveraged than most  \n  \nCharts of the Week: [a16z.news/p/charts-of-th…](https://www.a16z.news/p/charts-of-the-week-retail-to-the)\n\n![Tweet Image](https://pbs.twimg.com/media/HJgUUgfaoAELoh2.jpg)\n\n![a16z](https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_normal.png)\n\na16z@a16z\n\nHyperscalers are increasingly funding the massive AI capex buildout with debt  \n  \n[a16z.news/p/charts-of-th…](https://www.a16z.news/p/charts-of-the-week-retail-to-the)\n\n![Tweet Image](https://pbs.twimg.com/media/HJf8Vaha4AAxd3t.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/a16z/status/2060392802115330325)\n\n💬3🔄1❤️10👀1798📊4",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.378966+08:00"
+    },
+    {
+      "title": "IT capex is approaching 40% of all capex for the entire S&amp;P\n\nCharts of the Week: https://t.co/PG...",
+      "link": "https://x.com/a16z/status/2060407689193373880",
+      "published": "2026-05-30T01:07:28+08:00",
+      "source": "a16z(@a16z)",
+      "content": "IT capex is approaching 40% of all capex for the entire S&P  \n  \nCharts of the Week: <https://t.co/PGxjCSffOC>\n\n![Tweet Image](https://pbs.twimg.com/media/HJgJ385aIAA3POD.jpg)\n\n![David Haber](https://pbs.twimg.com/profile_images/2010766823038357505/835Z-piQ_normal.jpg)\n\nDavid Haber@dhaber\n\n\"Every dollar since the invention of fire\" is going into this AI capex build out — and equity can’t fund it all.  \n  \nMarc Rowan anticipates Wall Street & Silicon Valley teaming up much more frequently to fund this next tech supercycle.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059706534821552131/vid/avc1/1920x1080/GF-6o7ua-YPhmLeB.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/dhaber/status/2059721281864343790/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/dhaber/status/2059721281864343790)\n\n💬5🔄2❤️21👀6303📊7",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379049+08:00"
+    },
+    {
+      "title": "based on this gem from @AlexWauters\nhttps://t.co/TF4N8GcHcg",
+      "link": "https://x.com/ericzakariasson/status/2060413708397081009",
+      "published": "2026-05-30T01:31:23+08:00",
+      "source": "eric zakariasson(@ericzakariasson)",
+      "content": "based on this gem from [@AlexWauters](https://x.com/AlexWauters)[scalex.dev/blog/ai-agent-…](https://scalex.dev/blog/ai-agent-permissions/)\n\n💬0🔄0❤️4👀870📊1",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379114+08:00"
+    },
+    {
+      "title": "play this game to see how many terminal commands you can safely approve in 30 seconds. try to beat a...",
+      "link": "https://x.com/ericzakariasson/status/2060413696338473079",
+      "published": "2026-05-30T01:31:20+08:00",
+      "source": "eric zakariasson(@ericzakariasson)",
+      "content": "play this game to see how many terminal commands you can safely approve in 30 seconds. try to beat auto review, it's harder than you think!  \n  \n[cursor-auto-review.com](http://cursor-auto-review.com)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060413642513014784/vid/avc1/932x720/fx3BvQuU4UVAGKT3.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/ericzakariasson/status/2060413696338473079/video/1)\n\n![Cursor](https://pbs.twimg.com/profile_images/1970182748146180096/dhZeXi_X_normal.jpg)\n\nCursor@cursor\\_ai\n\nAuto-review mode is now available in Cursor.  \n  \nIt allows agents to run tool calls with fewer approval prompts and safer execution.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060398347375054853/vid/avc1/1920x1080/nbMTa6h9dgvHy9FH.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/cursor_ai/status/2060406013098897765/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/cursor_ai/status/2060406013098897765)\n\n💬7🔄3❤️90👀5977📊16",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379183+08:00"
+    },
+    {
+      "title": "我的原则：\n✅ Reasoning Max \n❌Speed Fast\n\n慢就是快，多花点时间推理，你就少花一点时间去验证\n\n快就是贵，Fast 不是不好，主要是性价比不高，不差钱当然无所谓",
+      "link": "https://x.com/dotey/status/2060417073847709710",
+      "published": "2026-05-30T01:44:45+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "我的原则：  \n✅ Reasoning Max   \n❌Speed Fast  \n  \n慢就是快，多花点时间推理，你就少花一点时间去验证  \n  \n快就是贵，Fast 不是不好，主要是性价比不高，不差钱当然无所谓\n\n![Rainman](https://pbs.twimg.com/profile_images/1907035075587518465/D1m1Qo6G_normal.jpg)\n\nRainman@0xdeusyu\n\n[@MomoseReina](https://x.com/MomoseReina) 选择Max  \n  \n挽弓当挽强、用人当用长，你的时间比什么都宝贵\n\n[🔗 View Quoted Tweet](https://x.com/0xdeusyu/status/2060354285398106422)\n\n💬1🔄0❤️6👀813📊1",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379245+08:00"
+    },
+    {
+      "title": "借助 AI 去写 Mac App 完全没问题的。几点经验分享：\n\n1. 尽可能选 AppKit 而不是 SwiftUI，SwiftUI 不如 AppKit 强大，做出来的界面也不好看。SwiftUI ...",
+      "link": "https://x.com/dotey/status/2060411347930661235",
+      "published": "2026-05-30T01:22:00+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "借助 AI 去写 Mac App 完全没问题的。几点经验分享：  \n  \n1. 尽可能选 AppKit 而不是 SwiftUI，SwiftUI 不如 AppKit 强大，做出来的界面也不好看。SwiftUI 相比 AppKit 的优势是开发简单，但这条已经被 AI 弥补了  \n  \n2. 先用 Claude Design 去打磨 UI 设计和 UX 交互再去写代码可以事半功倍  \n  \n3. Opus 比 GPT-5.5 做出来的 UI 要好看  \n  \n4. Codex 有个官方 Plugin 叫 “Build macOS Apps”，可以用\n\n![Tweet Image](https://pbs.twimg.com/media/HJgM0m7W4AMWUMn.jpg)\n\n![卫斯理](https://pbs.twimg.com/profile_images/1770626410606141440/HFy0Ibg3_normal.jpg)\n\n卫斯理@imwsl90\n\n今天想到一点，我是否可以去做 mac app?  \n  \n理由如下  \n  \n- 会 objective-c/swift 我是国内比较早进入 iOS 开发的那批人  \n  \n- 正好有个 idea  \n  \n- 正好有 claude code ，以前总觉得 appkit 很难用，现在有 claude code，这个门槛似乎消失了\n\n[🔗 View Quoted Tweet](https://x.com/imwsl90/status/2060277012774998062)\n\n💬5🔄2❤️26👀3294📊10",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379307+08:00"
+    },
+    {
+      "title": "这其实让我想起 OpenAI API 的消息类型，一直是可以随意组合和传入 role 为 system 的消息的。\n\n主要差别在于 OpenAI 对于 role 为 system 的消息权重不算很高，...",
+      "link": "https://x.com/dotey/status/2060407572708913648",
+      "published": "2026-05-30T01:07:00+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "这其实让我想起 OpenAI API 的消息类型，一直是可以随意组合和传入 role 为 system 的消息的。  \n  \n主要差别在于 OpenAI 对于 role 为 system 的消息权重不算很高，而 Claude 对于 role 为 system 的消息权重很高。  \n  \n另一个实现层面的差异：OpenAI 的缓存是全自动的，不需要开发者做任何事；Anthropic 的缓存需要开发者手动设置 cache\\_control 断点来标记哪些内容应该缓存（虽然现在也有了自动缓存选项）。\n\n![Tweet Image](https://pbs.twimg.com/media/HJgJZrbWEAML1UX.jpg)\n\n💬1🔄0❤️3👀2069📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379371+08:00"
+    },
+    {
+      "title": "Claude Opus 4.8 发布的同时，Anthropic 还上线了一个 API 层面的新能力：mid-conversation system messages（对话中途系统消息）。对于做 Age...",
+      "link": "https://x.com/dotey/status/2060404667423596843",
+      "published": "2026-05-30T00:55:27+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Claude Opus 4.8 发布的同时，Anthropic 还上线了一个 API 层面的新能力：mid-conversation system messages（对话中途系统消息）。对于做 Agent 开发的会很有用。  \n  \n简单来说它就是类似于后续注入的方式修改原始系统提示词（System Prompt），并且不会影响 Prompt Caching。  \n  \n4.8 之前 Claude 是不能发送类型是 system 的消息，只能支持 user 或者 assistant 消息，system prompt 只能在最前面。  \n  \n所以 Claude Code 之前是用的一种特殊的消息内容：<system-reminder>，尝试覆盖系统消息指令。  \n  \n举个例子，你在初始 system message 指定这个 Agent 是一个系统设计师的角色，擅长做系统设计，但是不允许写代码，只写文档。  \n  \n然后随着任务推进，现在得让这个 Agent 开始写代码了，但你就算通过 user message 去让它可以写代码，因为权重不够高，它还是会倾向于不写代码写文档。  \n  \n现在有了 mid-conversation system messages，你就可以新加一条指令，明确要求它转变角色变成一个开发工程师，不必再遵守之前不写代码只写文档的约定，并且 mid-conversation system messages 的优先级更高，能覆盖原始 system message 的设定。  \n  \n这个功能目前只支持 Claude Opus 4.8，只在 Anthropic 自家 API 和 AWS 上的 Claude Platform 可用，Bedrock、Vertex AI、Microsoft Foundry 都不支持。系统消息不能放在对话开头（开头还是用顶层 system 字段），也不能连续放两条，必须跟在 user 消息后面。  \n  \n对于普通用户，这功能无需关心。\n\n![Tweet Image](https://pbs.twimg.com/media/HJgHHkkXMAYB-o6.jpg)\n\n![Lance Martin](https://pbs.twimg.com/profile_images/1999948423018221568/s2XL2-On_normal.jpg)\n\nLance Martin@RLanceMartin\n\na number of useful tips + tricks for Opus 4.8:   \n  \n1/ you can now update the system prompt mid-conversation w/o breaking the prompt cache.   \n  \npreviously, you had to add <system-reminder> tags to user messages (see [@trq212](https://x.com/trq212)'s post).  \n  \nhttps:[platform.claude.com/docs/en/build-…](https://platform.claude.com/docs/en/build-with-claude/mid-conversation-system-messages)s://t.co/0jNoyDOLgt\n\n[🔗 View Quoted Tweet](https://x.com/RLanceMartin/status/2060075220044796199)\n\n💬9🔄2❤️21👀6833📊12",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-30T02:32:21.379432+08:00"
+    }
+  ]
+}
