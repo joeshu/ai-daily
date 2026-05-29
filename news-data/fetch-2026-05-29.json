@@ -2232,6 +2232,456 @@
       "score": 65,
       "summary": "Opus 4.8自我审查能力提升，能发现自身代码问题。",
       "fetched_at": "2026-05-29T11:00:01.646694+08:00"
+    },
+    {
+      "title": "The find out stage of AI is just supply chain and password protection​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌…",
+      "link": "https://stackoverflow.blog/2026/05/29/find-out-stage-ai-supply-chain-password-protection/",
+      "published": "2026-05-29T15:40:00+08:00",
+      "source": "Stack Overflow Blog",
+      "content": "In this two-for-one special recorded at HumanX, Ryan is joined by Dataiku’s Florian Douetteau to chat about the governance, orchestration, and data requirements for serious agentic systems and 1Password’s Nancy Wang for a conversation on making agent swarms secure.​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌‍‌‍​‌​﻿‍‌​﻿​‌‌‍‌‍​﻿‌‍‌‍​‌​﻿‍​​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​​​‍﻿‌​﻿‌​‌‍​‌​﻿‌​‌‍​‌​‍﻿‌‌‍​‌‌‍​﻿​﻿​​​﻿‌﻿​‍﻿‌​﻿‍​‌‍‌‌​﻿‌﻿‌‍‌‌‌‍‌‍‌‍‌​‌‍‌‌​﻿‌﻿​﻿​‍​﻿​﻿​﻿‌‌‌‍‌‍​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌‍‌‍​‌​﻿‍‌​﻿​‌‌‍‌‍​﻿‌‍‌‍​‌​﻿‍​​‍﻿‌​﻿‌​‌‍​‍‌‍‌‍​﻿​​​‍﻿‌​﻿‌​‌‍​‌​﻿‌​‌‍​‌​‍﻿‌‌‍​‌‌‍​﻿​﻿​​​﻿‌﻿​‍﻿‌​﻿‍​‌‍‌‌​﻿‌﻿‌‍‌‌‌‍‌‍‌‍‌​‌‍‌‌​﻿‌﻿​﻿​‍​﻿​﻿​﻿‌‌‌‍‌‍​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌‍‌‌‌﻿‍​‌‍​﻿‌‍‌‌‌﻿​‍‌﻿​​‌﻿‌​​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌",
+      "tags": [
+        "AI治理",
+        "Agent安全"
+      ],
+      "score": 75,
+      "summary": "Stack Overflow博客讨论AI代理系统的治理、编排和安全需求。",
+      "fetched_at": "2026-05-29T15:55:44.621039+08:00"
+    },
+    {
+      "title": "存储三巨头破万亿市值，存储超级周期何时能见顶？| S10E13",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a192bf5e92d30c61133a0c1",
+      "published": "2026-05-29T14:00:00+08:00",
+      "source": "What's Next｜科技早知道",
+      "content": "就在本周，全球三大存储芯片巨头——SK 海力士、三星、美光——市值同时突破万亿美元。过去一年，SK 海力士股价累计涨幅超过 900%。财报显示，SK 海力士 2026 年第一季度营收接近三倍于去年同期，三星存储部门同期利润同比暴增 8 倍。存储，正在成为这一轮 AI 浪潮中最炙手可热的硬件赛道。\n\n这背后是一场史无前例的供需错配。SK 海力士 2026 年全年 HBM 产能已经售罄，短缺预计将持续至 2027 年。与此同时，AI 服务器对内存的疯狂抢占，已经传导到了普通消费者：同等配置的手机更贵了，想要的机型根本没货——内存，被 AI 抢走了。但存储行业是出了名的「涨得多猛、跌得多惨」——过去 40 年，一个周期内暴涨 10 倍、暴跌 90% 的情况屡见不鲜。这一轮，究竟是又一场超级周期，还是 AI 真的重写了游戏规则？\n\n这期节目我们请来前半导体行业从业者、公众号「傅立叶的猫」主理人张海军，我们与他聊了聊：为什么存储行业现在如此火爆、这一轮周期在哪些维度上真的不一样；从 HBM 缺货到 NAND 角色转变，存储的五层架构如何被 AI 重塑；以及，国内长鑫、长江存储的进展，和周期拐点究竟何时到来。\n\n**本期人物**   \nYaxian，「科技早知道」主播  \n张海军，前新思科技高级工程师、半导体公众号「傅里叶的猫」主理人\n\n时间轴  \n02:46 这轮周期是什么时候开始的？\n\n* 去年 Q1 现货价格已现端倪，三星海力士宣布停产 DDR4 引发囤货恐慌\n* 三重触发因素叠加：AI 需求拉动、DDR4 停产、关税预期\n\n04:05 存储的五层架构：离处理器越近，速度越快、价格越贵\n\n* 从 HBM、DRAM 到 NAND、机械硬盘，带宽与价格的权衡逻辑\n* \"内存墙\"：芯片算力已不是瓶颈，存储带宽才是\n\n07:33 HBM 为什么缺货缺到 2027 年？\n\n* 英伟达每代芯片 HBM 需求翻倍\n* 台积电 CoWoS 先进封装扩产周期长，供给端是硬约束\n\n09:26 三家原厂格局：海力士领跑，三星和美光追赶\n\n* HBM 市场从 350 亿美元预计增至 2027 年近 800 亿美元\n* 第四代 HBM 格局重洗\n\n13:00 这轮为什么不一样：结构性转变的五个维度\n\n* 需求端：从周期性补库存转向 AI 结构性爆发，三重需求（DRAM、HBM、NAND）同时拉升\n* 供给端：原厂从抢份额转向利润优先，扩产极为克制；\n* 长协模式（LTA）：锁量不锁价，甚至要求客户绑定原厂资本开支\n\n22:37 看多 vs 看空：分歧在哪里？\n\n* 短期超买、股价涨幅过大是看空方主要依据\n* 需求缺口太大、算法效率提升反而会扩大需求\n\n25:48 绕过 HBM 瓶颈的各路方案：英伟达 CMX、谷歌 CXL 内存池、Cerebras 晶圆级芯片\n\n* 英伟达 CMX 方案用 DPU 预取 NAND 数据降低延迟\n* 谷歌用 CXL 协议构建 TB 级 DRAM 内存池\n* Cerebras 晶圆芯片面临散热、扩展性硬伤\n\n32:00 NAND 的角色转变：从\"温数据仓库\"到 AI 推理参与者\n\n* AI agent 推理链路长、中间结果需要落盘，NAND 直接参与推理过程\n* 闪迪 HBF（高带宽闪存）：容量是 HBM 的 8~16 倍、成本更低，但受限于擦写寿命和工作温度\n\n38:06 长鑫、长江存储即将上市，国内存储进展如何？\n\n* 长江存储 NAND 国内已大规模销售，长鑫 HBM 尚未量产商用\n* 小米等手机厂商参股长鑫，本质是提前锁定产能\n\n**阶跃星辰 Step 3.7 Flash 模型**  \n阶跃星辰 Step 3.7 Flash 是专门面向生产级 Agent 的高效率 Flash 模型，一开始就为 Agent、Coding、Search 和多模态工作流设计，让你的生产工作流又快又稳。  \n感兴趣的小伙伴欢迎点击链接（ [sourl.co](https://sourl.co/ZUaCXf) ）试试，新注册用户有代金券，可以直接上手跑一跑，看看它在你的工作流里表现怎么样。  \n![Untitled](https://media24.fireside.fm/file/fireside-uploads-2024/images/4/4931937e-0184-4c61-a658-6b03c254754d/8TXHvhkX.jpeg)\n\n**幕后制作**  \n监制：Yaxian  \n后期：迪卡  \n运营：George   \n设计：饭团\n\n**商业合作**  \n声动活泼商业化小队，点击链接直达声动商务会客厅（[sourl.cn](https://sourl.cn/9h28kj) ），也可发送邮件至 [business@shengfm.cn](mailto:business@shengfm.cn) 联系我们。\n\n**加入声动活泼**  \n声动活泼正在招聘全职商务运营经理、早咖啡内容实习生和社群实习生，如果你也对播客行业的内容制作感兴趣，欢迎[点击招聘入口](https://eg76rdcl6g.feishu.cn/docx/XO6bd12aGoI4j0xmAMoc4vS7nBh?from=from_copylink)\n\n**关于声动活泼**  \n「用声音碰撞世界」，声动活泼致力于为人们提供源源不断的思考养料。  \n我们还有这些播客：[声动早咖啡](https://www.xiaoyuzhoufm.com/podcast/60de7c003dd577b40d5a40f3)、[声东击西](https://etw.fm/episodes)、[吃喝玩乐了不起](https://www.xiaoyuzhoufm.com/podcast/644b94c494d78eb3f7ae8640)、[反潮流俱乐部](https://www.xiaoyuzhoufm.com/podcast/5e284c37418a84a0462634a4)、[泡腾 VC](https://www.xiaoyuzhoufm.com/podcast/5f445cdb9504bbdb77f092e9)、[商业WHY酱](https://www.xiaoyuzhoufm.com/podcast/61315abc73105e8f15080b8a)、[跳进兔子洞](https://therabbithole.fireside.fm/) 、[不止金钱](https://www.xiaoyuzhoufm.com/podcast/65a625966d045a7f5e0b5640)  \n欢迎在[即刻](https://okjk.co/Qd43ia)、微博等社交媒体上与我们互动，搜索 **声动活泼** 即可找到我们。  \n期待你给我们写邮件，邮箱地址是：[ting@sheng.fm](mailto:ting@sheng.fm)  \n![科技早知道](https://media24.fireside.fm/file/fireside-uploads-2024/images/4/4931937e-0184-4c61-a658-6b03c254754d/81NaqVaT.jpg)  \n**欢迎扫码添加声小音，在节目之外和我们保持联系。**\n\nSpecial Guest: 张海军.",
+      "tags": [
+        "存储芯片",
+        "HBM",
+        "AI硬件"
+      ],
+      "score": 75,
+      "summary": "播客分析存储超级周期，HBM紧缺驱动AI硬件需求，非AI核心主题。",
+      "fetched_at": "2026-05-29T15:55:44.621169+08:00"
+    },
+    {
+      "title": "#560.Obsidian 的产品哲学：不开会、不融资、不统治世界，一个 7 人团队如何做出千万级笔记工具",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a19348bac7bdb080c32a406",
+      "published": "2026-05-29T14:45:17+08:00",
+      "source": "跨国串门儿计划",
+      "content": "📝 本期播客简介\n\n本期我们克隆了：Cortex Podcast [**The Philosophy of Obsidian, with CEO Steph Ango**](https://www.youtube.com/watch?v=x_0FybNDMNc&pp=0gcJCQ0LAYcqIYzv)\n\n本期是 Cortex「工作流现状」系列的一期深度对谈，主持人 Myke Hurley 请来了 Obsidian 的 CEO Steph Ango，聊聊这款以 Markdown、本地文件、链接和可塑性为核心的笔记工具，背后到底有怎样的产品哲学。\n\nSteph 并不是 Obsidian 的创始人。他最早是 Obsidian 的重度用户，也是著名 Minimal 主题的作者，后来从社区贡献者逐渐加入团队，成为这家只有七八个人公司的 CEO。在这期节目中，他分享了自己如何使用 Obsidian 进行思考、写作、任务管理和生活记录，也解释了为什么他接受笔记系统中的混乱，为什么文件和链接比文件夹更重要，以及为什么他认为纯文本文件会比任何一个 App 都更长寿。\n\n这期节目最特别的地方，是它展现了一种与主流科技公司完全不同的公司形态：Obsidian 团队很小、没有固定会议、几乎不用邮件和日历、不追求融资和指数级增长，也不想把 AI 按钮塞满整个应用。他们靠免费应用和可选付费服务维持盈利，坚持让用户拥有自己的数据，并在 AI 时代因为“文件优先、纯文本优先”的选择，意外站在了一个非常有利的位置。\n\n如果你关心笔记工具、个人知识管理、远程协作、小团队产品哲学，或者正在思考 AI 时代怎样保护自己的数字生活，这期对话会非常值得一听。\n\n👨‍💼 本期嘉宾\n\nSteph Ango，Obsidian CEO，设计师、创业者、写作者，也是 Obsidian 社区中著名 Minimal 主题的作者。他曾创办 B2B 制造业平台 Lumi，并在公司被收购后逐渐加入 Obsidian 团队。Steph 长期关注文件、软件、知识管理与数字长期主义，代表文章包括 File over App、Don’t Delegate Understanding 等。\n\n⏱️ 时间戳\n\n00:00 开场 & 播客简介\n\n认识 Obsidian 与 Steph Ango\n\n01:28 Cortex 开场：为什么 Obsidian 值得被深入聊一聊\n\n02:54 Steph 的核心设备：从 MacBook Air 到 Mac Mini 的混合工作流\n\n03:24 Obsidian 是什么：像 Wikipedia 一样连接自己的想法\n\n05:41 从 TiddlyWiki 到 Obsidian：为什么一个 Markdown 工具让他“一眼就懂”\n\n08:04 从用户、主题作者到 CEO：社区贡献者如何加入 Obsidian 团队\n\n10:40 小团队里的互补能力：工程、产品、设计、沟通与经营经验\n\nSteph 的个人工作流\n\n11:16 Obsidian 如何承载思考、笔记、写作和个人网站\n\n12:14 接受混乱：Steph 的笔记系统从“不整理”开始\n\n14:00 链接与 front matter：在低成本记录之后慢慢生成结构\n\n16:11 放下文件夹执念：用 metadata 和 Bases 从高处重新看笔记\n\n18:19 什么值得被链接：人、地点、书、概念和 Evergreen notes\n\n20:46 团队中的 Evergreen note：把长期方向变成共同语言\n\n21:31 极简任务管理：每周一条笔记，重新写下真正重要的事\n\n22:40 纸笔与 Obsidian：随手记录可以在纸上，最终回到系统里\n\n没有邮件和日历的生活\n\n23:39 邮件关系：团队结构就是为了“不需要邮件”而设计\n\n24:25 日历关系：只记录牙医、医生和少数真正需要提醒的事\n\n26:04 从日历地狱中逃离：把生活设计成不被会议占满\n\n27:10 大块不被打断的时间：Steph 眼中的自由\n\n7 人团队如何协作\n\n27:24 Obsidian 团队规模：全职 7 人与更大的社区协作网络\n\n28:20 宣言作为组织对齐方式：用原则替代复杂管理\n\n28:23 为什么刻意保持小团队：CEO 也想继续做贡献者\n\n29:42 小团队是否适合产品：为了自己使用而持续改进\n\n31:43 对产品每个界面负责：保持深度理解与责任感\n\n32:00 “投诉驱动开发”：Web Clipper 如何从社区需求进入产品\n\n33:42 真的不开会吗：没有固定例会，但允许必要时临时同步\n\n35:44 Discord、异步状态更新与 ramblings：远程团队的茶水间\n\nObsidian 的商业模式\n\n37:49 免费 App 与可选付费服务：Sync、Publish 和可替代方案\n\n38:22 不想统治世界：小团队、无投资人和可持续盈利\n\n39:35 放弃强制商业许可证：为了现实与用户信任，少赚几百万也可以\n\n41:24 没有 analytics 的公司：不知道所有用户是谁，也接受这种不知道\n\n42:13 不做企业许可后的轻盈：少掉大量企业支持与合规负担\n\n43:07 对增长的态度：用户增长很好，但不是唯一目标\n\nAI、纯文本与长期主义\n\n43:58 为什么 AI 让 Obsidian 更受欢迎：想用 AI 的人和不想要 AI 的人都来了\n\n45:48 Always Bet on Text：为什么纯文本文件比 App 更值得信任\n\n46:40 File over App：你的数据不该只是向服务商租来的访问权限\n\n48:25 Don’t Delegate Understanding：不要把理解外包给 AI\n\n49:40 AI 的正面用途：把电能用于自己真正理解的任务\n\n50:20 AI 本地化流水线：7 人团队如何支持 35 到 40 种语言\n\n52:08 AI 带来的民主化：让更多语言用户用上 Obsidian\n\n插件生态与未来方向\n\n53:07 插件和主题生态：Obsidian 像黏土一样适应用户\n\n53:42 可塑性与稳定性的取舍：你可以改造它，也可能把自己坑到\n\n55:12 Obsidian 的未来：更民主、更私密、更易修改\n\n55:40 协作是重要方向：从共享购物清单到团队知识工作\n\n56:10 Bases 的潜力：Markdown 之上的数据库能力\n\n56:55 Obsidian CLI：让外部工具、自动化和 AI Agent 与 Obsidian 交互\n\n58:11 如何开始使用 Obsidian：先保持简单，只要开始写\n\n收尾\n\n58:55 Steph 的文章与个人网站\n\n59:14 Cortex 结尾与 Moretex 介绍\n\n🌟 精彩内容\n\n💡 Obsidian 的核心：不是 App 拥有你的笔记，而是你拥有文件\n\nSteph 用非常清晰的方式解释了 Obsidian 的基本理念：它读取的是你电脑上的 Markdown 文件，而不是把你的内容锁进某个服务里。Obsidian 可以消失，但你的笔记、日记、文章和知识库仍然可以继续存在。\n\n“没有任何 app 真的能永远存在……所以我希望我的知识、笔记、日记，以及我一生中用数字形式创造的这些东西，能一直跟着我。”\n\n🧠 接受混乱，才是可持续的笔记系统\n\nSteph 的笔记方法不是追求完美分类，而是承认现实中人会偷懒、会忙、会在街上突然想到东西。他用 quick notes、clippings、references、essays、日记总结、链接和 front matter，让结构在长期使用中自然浮现，而不是一开始就强迫自己整理好一切。\n\n“混乱和偷懒，才是我记笔记时的常态。”\n\n🔗 链接是个人知识库里的“乐高积木”\n\n在 Steph 看来，Obsidian 最强大的地方不是文件夹，而是链接。人、地点、书、概念，甚至一句话、一种感受，都可以变成链接。随着时间推移，这些链接会变成一组可复用的思想构件，帮助你组合出更大的想法。\n\n“因为你给自己建立了这种速记，你就能很快用这些像乐高积木一样的东西，拼出更大的想法。”\n\n🏝️ 一个故意不被邮件和日历统治的团队\n\nObsidian 的组织方式非常反主流：没有固定会议，几乎不用邮件和日历，团队通过 Discord 异步协作，每个人都有大块不被打断的深度工作时间。Steph 说，这是从过去多年“日历地狱”中走出来后，有意识设计出的生活与公司结构。\n\n“打开日历一看，就知道自己有一大块一大块不被打断的时间。在这些时间块里，我可以做任何我想做的事。对我来说，这就是自由。”\n\n🛠️ 小团队、不融资、不想统治世界\n\nObsidian 只有七名全职成员，靠免费应用加可选付费服务维持运营。他们不想成为下一个 Microsoft，也不追求最大化收入。团队甚至把原本强制的商业许可证改成了可选，可能放弃了数百万美元收入，但换来了更符合现实的用户信任。\n\n“我们不是想统治世界。”\n\n🤖 AI 时代的反直觉优势：纯文本同时吸引两类人\n\nSteph 观察到，AI 让 Obsidian 的采用量快速上升。一类人选择 Obsidian，是因为他们不想让笔记工具被 AI 功能污染；另一类人选择 Obsidian，是因为 Markdown 文件非常适合被 Claude Code、Codex 等 AI 工具读取和处理。Obsidian 没有内置 AI，却因为坚持本地文件和纯文本，成为 AI 时代非常灵活的基础设施。\n\n“人们转向 Obsidian，一方面是因为他们想用 AI，另一方面又是因为他们不想要 AI。”\n\n⚠️ 不要把理解外包给 AI\n\nSteph 对 AI 的态度不是简单反对，而是强调边界。他最担心的是，人们把理解本身交给 AI，只接受建议和结果，却不再理解底层系统如何运作。对他来说，AI 最适合用在你已经理解、但执行成本很高的事情上，比如 Obsidian 的多语言本地化。\n\n“不要把理解这件事外包出去。”\n\n🌍 AI 的正面案例：7 人团队支持几十种语言\n\nObsidian 使用 AI 搭建本地化流水线，把英文帮助文档翻译成 35 到 40 种语言，再由社区协助修正。这让一个 7 人团队可以完成过去几乎不可能完成的国际化工作，也让更多语言用户能够使用一个私密、独立、可掌控的工具。\n\n“五分钟之内，这次更新就会出现在四十种语言里。”\n\n🧩 插件生态是一种有意识的取舍\n\nObsidian 可以被用户高度修改：插件、主题、外观、自动化都可以自己改造。这带来强大的自由，也带来测试与稳定性上的复杂度。Steph 承认，这是一种取舍，但他们愿意承担，因为 Obsidian 的哲学就是适应用户，而不是让用户完全适应工具。\n\n“Obsidian 会适应你，你可以塑造它。它就像一块黏土。”\n\n🌐 播客信息补充\n\n本播客采用原有人声声线进行播客音频制作，也可能会有一些地方听起来怪怪的\n\n使用 AI 进行翻译，因此可能会有一些地方不通顺；\n\n如果有后续想要听中文版的其他外文播客，也欢迎联系微信：iEvenight",
+      "tags": [
+        "笔记工具",
+        "产品哲学"
+      ],
+      "score": 70,
+      "summary": "讨论Obsidian的产品哲学和团队协作，非AI主题。",
+      "fetched_at": "2026-05-29T15:55:44.621245+08:00"
+    },
+    {
+      "title": "源：https://t.co/zRIRfwssvg",
+      "link": "https://x.com/FinanceYF5/status/2060262897436307834",
+      "published": "2026-05-29T15:32:07+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/minchoi/status…](https://x.com/minchoi/status/2060226858994565563)\n\n![Min Choi](https://pbs.twimg.com/profile_images/1638359113221517312/CBZaJFyA_normal.jpg)\n\nMin Choi@minchoi\n\nClaude Code has a new wild feature... dynamic workflow.  \n  \nHow to try:  \n  \nset /model to opus 4.8  \nset /effort to \"ultracode\" 😂  \nuse “workflow” in your prompt  \n  \nClaude will write an orchestration script, spawn subagents swarm, verify results, and report back.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060226650470522883/vid/avc1/1536x1196/dIKJFAJcyplzckVX.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/minchoi/status/2060226858994565563/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/minchoi/status/2060226858994565563)\n\n💬0🔄0❤️0👀228",
+      "tags": [
+        "Claude Code",
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 85,
+      "summary": "KOL转述Claude Code动态工作流新功能，可并行调度子Agent。",
+      "fetched_at": "2026-05-29T15:55:44.621300+08:00"
+    },
+    {
+      "title": "Claude实时生成编排脚本，并行运行大量子agent处理复杂任务。支持Max、Team、Enterprise及API端。\n\n注意：token消耗显著高于普通会话\nhttps://t.co/BUqwV...",
+      "link": "https://x.com/FinanceYF5/status/2060262885729927183",
+      "published": "2026-05-29T15:32:04+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Claude实时生成编排脚本，并行运行大量子agent处理复杂任务。支持Max、Team、Enterprise及API端。  \n  \n注意：token消耗显著高于普通会话  \n[x.com/ClaudeDevs/sta…](https://x.com/ClaudeDevs/status/2060044853279617150)\n\n![ClaudeDevs](https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_normal.png)\n\nClaudeDevs@ClaudeDevs\n\nNew in Claude Code (research preview): dynamic workflows.  \n  \nClaude writes an orchestration script on the fly, then spins up a large fleet of coordinated subagents in parallel to take on your most complex tasks.  \n  \nUse the word \"workflow\" in a prompt to get started.\n\n![Tweet Image](https://pbs.twimg.com/media/HJa_ctabIAA84so.png)\n\n[🔗 View Quoted Tweet](https://x.com/ClaudeDevs/status/2060044853279617150)\n\n💬1🔄0❤️0👀319📊1",
+      "tags": [
+        "Claude Code",
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 88,
+      "summary": "官方ClaudeDevs宣布Claude Code动态工作流，实时编排子Agent。",
+      "fetched_at": "2026-05-29T15:55:44.621353+08:00"
+    },
+    {
+      "title": "Claude Code 有了一个很猛的新功能：动态工作流。\n\n如何尝试：\n\n将 /model 设置为 opus 4.8\n将 /effort 设置为 “ultracode” 😂\n在你的提示词里使用 “...",
+      "link": "https://x.com/FinanceYF5/status/2060262873755246972",
+      "published": "2026-05-29T15:32:01+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Claude Code 有了一个很猛的新功能：动态工作流。  \n  \n如何尝试：  \n  \n将 /model 设置为 opus 4.8  \n将 /effort 设置为 “ultracode” 😂  \n在你的提示词里使用 “workflow”  \n  \nClaude 会编写一个编排脚本，启动一群子 Agent，验证结果，然后把结果汇报回来。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060262865224028160/vid/avc1/924x720/fDWnzlZqQO5BFVKr.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2060262873755246972/video/1)\n\n💬2🔄0❤️1👀321📊2",
+      "tags": [
+        "Claude Code",
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 88,
+      "summary": "中文解读Claude Code动态工作流，可编写脚本启动子Agent。",
+      "fetched_at": "2026-05-29T15:55:44.621402+08:00"
+    },
+    {
+      "title": "源：https://t.co/pyYobMFnIN",
+      "link": "https://x.com/FinanceYF5/status/2060260145997947089",
+      "published": "2026-05-29T15:21:11+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/a16z/status/20…](https://x.com/a16z/status/2059687657840713925)\n\n![a16z](https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_normal.png)\n\na16z@a16z\n\nOpenAI and Anthropic are effectively telling the market they can't solve every problem with a generic AI coworker.  \n  \nYou don't pour billions into massive forward-deployed joint ventures if you think the next model release is going to take care of it.  \n  \nIn the cloud supercycle, semis led and software followed (and you didn't need Qualcomm or ARM to tell you the value was migrating up the stack).  \n  \nIn AI, the infra layer itself is telling us the application layer is a separate, massive opportunity they can't fully capture.  \n  \na16z's [@joeschmidtiv](https://x.com/joeschmidtiv) on why the app layer isn't dead: [a16z.news/p/avoiding-dea…](https://www.a16z.news/p/avoiding-death-on-the-yellow-brick)\n\n![Tweet Image](https://pbs.twimg.com/media/HJV7AmCa0AA3TVK.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/a16z/status/2059687657840713925)\n\n💬0🔄0❤️0👀344",
+      "tags": [
+        "AI应用层",
+        "a16z",
+        "投资观点"
+      ],
+      "score": 80,
+      "summary": "a16z观点：OpenAI和Anthropic表明AI应用层仍是独立巨大机会。",
+      "fetched_at": "2026-05-29T15:55:44.621450+08:00"
+    },
+    {
+      "title": "云计算超级周期中半导体先行，价值向技术栈上层的软件迁移，无需高通、ARM点明。\n\nAI时代，基础设施层自身已证明，应用层是其无法完全攫取的独立巨大机会。\n\na16z合伙人乔·施密特四世深度解读：为什么...",
+      "link": "https://x.com/FinanceYF5/status/2060260133939363872",
+      "published": "2026-05-29T15:21:08+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "云计算超级周期中半导体先行，价值向技术栈上层的软件迁移，无需高通、ARM点明。  \n  \nAI时代，基础设施层自身已证明，应用层是其无法完全攫取的独立巨大机会。  \n  \na16z合伙人乔·施密特四世深度解读：为什么AI应用层并未消亡  \n  \n原文链接：[a16z.news/p/avoiding-dea…](https://a16z.news/p/avoiding-death-on-the-yellow-brick)\n\n![Tweet Image](https://pbs.twimg.com/media/HJeDrJMa8AAEAw1.png)\n\n💬1🔄0❤️0👀471📊1",
+      "tags": [
+        "AI应用层",
+        "a16z",
+        "投资观点"
+      ],
+      "score": 80,
+      "summary": "中文解读a16z合伙人文章，AI基础设施层证明应用层独立性。",
+      "fetched_at": "2026-05-29T15:55:44.621496+08:00"
+    },
+    {
+      "title": "OpenAI 和 Anthropic 实际上正在向市场表明：他们无法用一个通用 AI 同事解决所有问题。\n\n如果你觉得下一次模型发布就能搞定一切，绝不会砸数十亿美元去搞大规模前置部署合资企业。",
+      "link": "https://x.com/FinanceYF5/status/2060260119200624909",
+      "published": "2026-05-29T15:21:04+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "OpenAI 和 Anthropic 实际上正在向市场表明：他们无法用一个通用 AI 同事解决所有问题。  \n  \n如果你觉得下一次模型发布就能搞定一切，绝不会砸数十亿美元去搞大规模前置部署合资企业。\n\n![Tweet Image](https://pbs.twimg.com/media/HJeDqTzbsAATgcC.jpg)\n\n💬2🔄0❤️3👀545📊2",
+      "tags": [
+        "AI应用层",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "score": 80,
+      "summary": "中文翻译OpenAI和Anthropic承认通用AI无法解决所有问题。",
+      "fetched_at": "2026-05-29T15:55:44.621543+08:00"
+    },
+    {
+      "title": "源：https://t.co/vd3t94roHS",
+      "link": "https://x.com/FinanceYF5/status/2060259978628485512",
+      "published": "2026-05-29T15:20:31+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/ThomasOrTK/sta…](https://x.com/ThomasOrTK/status/2059703407364190518)\n\n![Thomas Kurian](https://pbs.twimg.com/profile_images/1376639799822454789/GtBiOWEJ_normal.jpg)\n\nThomas Kurian@ThomasOrTK\n\nToday we’re introducing Google AI Threat Defense - a comprehensive AI-powered cybersecurity solution designed to help continuously monitor for and stop AI-powered threats before they can impact your business. Here’s how it works:  \n  \n1. AI Threat Defense uses our cybersecurity platform [@wiz\\_io](https://x.com/wiz_io) to scan and prioritize what applications and systems have the highest security risk.  \n2. Gemini and other frontier AI models can then autonomously perform continual deep scanning of your applications - starting with those at the highest risk - to identify security vulnerabilities.  \n3. The capabilities of CodeMender - a new software repair agent - are then used to verify and accelerate the patching of vulnerabilities.  \n4. And our [@wiz\\_io](https://x.com/wiz_io) autonomous agents continuously test your systems to find unknown vulnerabilities before adversaries do so that you can remediate them before you are attacked.  \n  \nWhile other model providers focus on using AI to find and flag vulnerabilities, Google AI Threat Defense actively prioritizes your most critical real-world risks and accelerates their remediation using a variety of models since no single model finds a superset of the vulnerabilities found by all other models.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059703255131955200/vid/avc1/2436x1200/_N5VE7W1yYZlbiSS.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ThomasOrTK/status/2059703407364190518/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/ThomasOrTK/status/2059703407364190518)\n\n💬0🔄0❤️0👀211",
+      "tags": [
+        "谷歌",
+        "AI威胁防御",
+        "安全"
+      ],
+      "score": 80,
+      "summary": "谷歌发布AI Threat Defense，利用AI自动扫描修复漏洞。",
+      "fetched_at": "2026-05-29T15:55:44.621588+08:00"
+    },
+    {
+      "title": "阅读更多：https://t.co/XD43Gt9BxG",
+      "link": "https://x.com/FinanceYF5/status/2060259967035461794",
+      "published": "2026-05-29T15:20:28+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "阅读更多：[cloud.google.com/blog/products/…](https://cloud.google.com/blog/products/identity-security/introducing-google-ai-threat-defense)\n\n💬1🔄0❤️0👀150📊1",
+      "tags": [
+        "谷歌",
+        "AI威胁防御",
+        "安全"
+      ],
+      "score": 80,
+      "summary": "补充阅读谷歌AI威胁防御系统详情。",
+      "fetched_at": "2026-05-29T15:55:44.621635+08:00"
+    },
+    {
+      "title": "谷歌 AI 威胁防御系统正式推出\n\n这是一套全面的 AI 驱动网络安全解决方案，旨在持续监测并在 AI 驱动的威胁影响企业业务前将其阻断。",
+      "link": "https://x.com/FinanceYF5/status/2060259931870351476",
+      "published": "2026-05-29T15:20:20+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "谷歌 AI 威胁防御系统正式推出  \n  \n这是一套全面的 AI 驱动网络安全解决方案，旨在持续监测并在 AI 驱动的威胁影响企业业务前将其阻断。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060259918905843712/vid/avc1/1460x720/7CFi9YW_WwSausD_.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2060259931870351476/video/1)\n\n💬1🔄0❤️1👀340📊1",
+      "tags": [
+        "谷歌",
+        "AI威胁防御",
+        "安全"
+      ],
+      "score": 80,
+      "summary": "谷歌AI威胁防御系统中文简介，持续监测阻断AI威胁。",
+      "fetched_at": "2026-05-29T15:55:44.621681+08:00"
+    },
+    {
+      "title": "源：https://t.co/EYrEmcDVw9",
+      "link": "https://x.com/FinanceYF5/status/2060259543028990249",
+      "published": "2026-05-29T15:18:47+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/kimmonismus/st…](https://x.com/kimmonismus/status/2059733379440931323)\n\n![Chubby♨️](https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg)\n\nChubby♨️@kimmonismus\n\nThe old models are being buried. And space is being made for new ones.  \n  \nI can already smell GPT-5.6.\n\n[🔗 View Quoted Tweet](https://x.com/kimmonismus/status/2059733379440931323)\n\n💬0🔄0❤️0👀384",
+      "tags": [
+        "GPT-5.6",
+        "小道消息"
+      ],
+      "score": 50,
+      "summary": "KOL暗示旧模型被埋葬，GPT-5.6将至，无实质证据。",
+      "fetched_at": "2026-05-29T15:55:44.621727+08:00"
+    },
+    {
+      "title": "证实了：https://t.co/JrS1agycdW",
+      "link": "https://x.com/FinanceYF5/status/2060259531322753488",
+      "published": "2026-05-29T15:18:44+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "证实了：[x.com/nunezvice/stat…](https://x.com/nunezvice/status/2059685334145724438)\n\n![Victor E. Nunez](https://pbs.twimg.com/profile_images/2040409741050920960/1cqQSJX-_normal.jpg)\n\nVictor E. Nunez@nunezvice\n\ntambién tenemos que hacer espacio para lo que viene 👀\n\n[🔗 View Quoted Tweet](https://x.com/nunezvice/status/2059685334145724438)\n\n💬1🔄0❤️0👀559📊1",
+      "tags": [
+        "GPT-5.6",
+        "小道消息"
+      ],
+      "score": 50,
+      "summary": "另一条类似暗示，无实质内容。",
+      "fetched_at": "2026-05-29T15:55:44.621773+08:00"
+    },
+    {
+      "title": "旧模型正在被埋葬，新模型的空间已然腾出。\n\n已经能嗅到GPT-5.6的气息了。",
+      "link": "https://x.com/FinanceYF5/status/2060259519679328468",
+      "published": "2026-05-29T15:18:41+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "旧模型正在被埋葬，新模型的空间已然腾出。  \n  \n已经能嗅到GPT-5.6的气息了。\n\n![Tweet Image](https://pbs.twimg.com/media/HJeDHamagAA_11w.png)\n\n💬2🔄0❤️2👀519📊2",
+      "tags": [
+        "GPT-5.6",
+        "小道消息"
+      ],
+      "score": 50,
+      "summary": "中文翻译旧模型被埋葬，嗅到GPT-5.6气息。",
+      "fetched_at": "2026-05-29T15:55:44.621819+08:00"
+    },
+    {
+      "title": "源：https://t.co/QiCw2tIfRN",
+      "link": "https://x.com/FinanceYF5/status/2060259134692548998",
+      "published": "2026-05-29T15:17:10+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/arrakis\\_ai/sta…](https://x.com/arrakis_ai/status/2059643015866761471)\n\n![CHOI](https://pbs.twimg.com/profile_images/1722791621484572672/lVxDDP4N_normal.jpg)\n\nCHOI@arrakis\\_ai\n\nGemini Omni turned me into the owner of a $5 million Pokémon card.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059642194995339264/vid/avc1/1080x1080/2aSxCa5dDO7EmWJt.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/arrakis_ai/status/2059643015866761471/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/arrakis_ai/status/2059643015866761471)\n\n💬0🔄0❤️0👀562",
+      "tags": [
+        "Gemini Omni",
+        "演示"
+      ],
+      "score": 50,
+      "summary": "Gemini Omni演示生成宝可梦卡牌所有权，无实质进展。",
+      "fetched_at": "2026-05-29T15:55:44.621866+08:00"
+    },
+    {
+      "title": "Gemini Omni让某人摇身一变成了一张价值500万美元宝可梦卡牌的主人。",
+      "link": "https://x.com/FinanceYF5/status/2060259123103772685",
+      "published": "2026-05-29T15:17:07+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Gemini Omni让某人摇身一变成了一张价值500万美元宝可梦卡牌的主人。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060259110143352832/vid/avc1/720x720/2Wg3GgLj1XMpG1Gr.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2060259123103772685/video/1)\n\n💬1🔄0❤️1👀472📊1",
+      "tags": [
+        "Gemini Omni",
+        "演示"
+      ],
+      "score": 50,
+      "summary": "中文翻译Gemini Omni让用户获得虚拟宝可梦卡牌。",
+      "fetched_at": "2026-05-29T15:55:44.621916+08:00"
+    },
+    {
+      "title": "源：https://t.co/RJkZSIKFQ4",
+      "link": "https://x.com/FinanceYF5/status/2060258812725280933",
+      "published": "2026-05-29T15:15:53+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/kimmonismus/st…](https://x.com/kimmonismus/status/2059800823421661195)\n\n![Chubby♨️](https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg)\n\nChubby♨️@kimmonismus\n\nThere is a striking tension between Chris Olah’s remarks and Dario Amodei’s recent framing.  \n  \nOlah says frontier AI labs operate under incentives that can conflict with doing the right thing and therefore need serious external moral scrutiny.  \n  \nAmodei, meanwhile, seems to be moving from “AI may wipe out large parts of white-collar work” toward a more market-friendly story about productivity gains, job transformation, and Jevons-style optimism - a narrative that also happens to sound much better on the road to an IPO.\n\n![Tweet Image](https://pbs.twimg.com/media/HJWp6GmXUAEOtbH.jpg)![Tweet Image](https://pbs.twimg.com/media/HJWqlyBXEAIgDGL.png)\n\n[🔗 View Quoted Tweet](https://x.com/kimmonismus/status/2059800823421661195)\n\n💬0🔄0❤️0👀254",
+      "tags": [
+        "AI伦理",
+        "Chris Olah",
+        "Dario Amodei"
+      ],
+      "score": 82,
+      "summary": "KOL比较Olah与Amodei观点：前者认为AI实验室需外部监督，后者转向乐观叙事。",
+      "fetched_at": "2026-05-29T15:55:44.621965+08:00"
+    },
+    {
+      "title": "职业结构未发生有意义的变化，易受 AI 影响岗位的失业速度也没有加快https://t.co/PkISZyJZnb",
+      "link": "https://x.com/FinanceYF5/status/2060258801010594002",
+      "published": "2026-05-29T15:15:50+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "职业结构未发生有意义的变化，易受 AI 影响岗位的失业速度也没有加快[x.com/kimmonismus/st…](https://x.com/kimmonismus/status/2059636584165822771)\n\n![Chubby♨️](https://pbs.twimg.com/profile_images/1728327996375719936/RW7VBJfD_normal.jpg)\n\nChubby♨️@kimmonismus\n\nDario Amodei predicted last year that AI would eliminate 50% of entry-level white-collar jobs within years. Unemployment could hit 10-20%. He's since moved closer to the Jevons Paradox, the idea that automation actually creates more demand and more work. Altman said last week he was \"pretty wrong\" about displacement (see Axios image down below). Anthropic co-founder Olah, in turn, repeated Dario Amodei's warning to the Pope a few days ago.  \n  \nMeanwhile Yale's Budget Lab has been tracking the actual US labor market monthly since ChatGPT launched. Every single update: no meaningful shift in occupational mix. No acceleration in job losses for AI-exposed roles (Image 2 below). Deutsche Bank coined a term for it in January, \"AI redundancy washing.\" Companies blaming AI for layoffs they'd make regardless.  \n  \nSo where does that leave us? Amodei could still be right. Exponentials look flat until they don't - the steam engine existed for decades before it restructured entire economies. AI capabilities are compounding fast. The labor data just hasn't caught up yet. Or maybe it won't, at least not in the way anyone predicted. We genuinely don't know! And this is precisely my point here.  \n  \nWhat we do know is that right now the gap between AI capability curves and actual employment data is wider than it's ever been. And that gap is the only honest starting point for this conversation.  \n  \nHowever, it was important to me to take a look at the status quo and see where we stand and how the different perspectives and assumptions are developing.\n\n![Tweet Image](https://pbs.twimg.com/media/HJVMjh8boAAwqrF.jpg)![Tweet Image](https://pbs.twimg.com/media/HJVMjs3bQAA2P10.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/kimmonismus/status/2059636584165822771)\n\n💬1🔄0❤️0👀1106📊1",
+      "tags": [
+        "AI就业",
+        "劳动力市场"
+      ],
+      "score": 80,
+      "summary": "耶鲁劳动力数据显示AI未显著改变职业结构或加速失业。",
+      "fetched_at": "2026-05-29T15:55:44.622012+08:00"
+    },
+    {
+      "title": "Chris Olah 的言论与 Dario Amodei 近期的叙事框架之间存在着尖锐的分歧。\n\nChris Olah认为，前沿 AI 实验室的运行激励机制可能与 “做正确的事” 相冲突，因此需要接受...",
+      "link": "https://x.com/FinanceYF5/status/2060258772019466699",
+      "published": "2026-05-29T15:15:43+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Chris Olah 的言论与 Dario Amodei 近期的叙事框架之间存在着尖锐的分歧。  \n  \nChris Olah认为，前沿 AI 实验室的运行激励机制可能与 “做正确的事” 相冲突，因此需要接受严格的外部道德监督。\n\n![Tweet Image](https://pbs.twimg.com/media/HJeCbxmaYAAwnTo.jpg)\n\n💬1🔄0❤️1👀797📊1",
+      "tags": [
+        "AI伦理",
+        "Chris Olah",
+        "激励"
+      ],
+      "score": 80,
+      "summary": "中文翻译Olah认为前沿AI实验室激励机制需外部道德监督。",
+      "fetched_at": "2026-05-29T15:55:44.622058+08:00"
+    },
+    {
+      "title": "身边不少人都说小米这次送的Token没多大用处，我反倒觉得只是没有用起来~~\n\n刚领到小米赠送的Token，第一时间就安排上了。\n\n特意给Berry小跟班补充好储备。\n\n之前总听大家讨论MiMo-2....",
+      "link": "https://x.com/berryxia/status/2060255723586756795",
+      "published": "2026-05-29T15:03:36+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "身边不少人都说小米这次送的Token没多大用处，我反倒觉得只是没有用起来~~  \n  \n刚领到小米赠送的Token，第一时间就安排上了。  \n  \n特意给Berry小跟班补充好储备。  \n  \n之前总听大家讨论MiMo-2.5-Pro，一直没空实测。  \n  \n现在直接接入我的Agent，专门测试它的调用能力。  \n  \n坐等测试结果，后续慢慢跟大家分享。\n\n![Tweet Image](https://pbs.twimg.com/media/HJd8TbbbwAAxZXJ.jpg)\n\n💬1🔄0❤️0👀245📊1",
+      "tags": [
+        "小米",
+        "Token",
+        "Agent"
+      ],
+      "score": 60,
+      "summary": "个人分享使用小米赠送Token接入MiMo-2.5-Pro测试Agent。",
+      "fetched_at": "2026-05-29T15:55:44.622119+08:00"
+    },
+    {
+      "title": "注册链接：https://t.co/e0Ej0oBEQa",
+      "link": "https://x.com/berryxia/status/2060244409132970160",
+      "published": "2026-05-29T14:18:39+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "注册链接：[bloome.im/login?ref=K049…](https://bloome.im/login?ref=K049zmo0)\n\n💬0🔄0❤️0👀531",
+      "tags": [
+        "广告",
+        "注册"
+      ],
+      "score": 50,
+      "summary": "推广Bloome注册链接。",
+      "fetched_at": "2026-05-29T15:55:44.622169+08:00"
+    },
+    {
+      "title": "中午给kfc的轻食来个海报～\n\n使用我的这个海报Agent 非常丝滑…\n\n就是随便的提示词，完全不吃你的提示词。",
+      "link": "https://x.com/berryxia/status/2060243899223060676",
+      "published": "2026-05-29T14:16:37+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "中午给kfc的轻食来个海报～  \n  \n使用我的这个海报Agent 非常丝滑…  \n  \n就是随便的提示词，完全不吃你的提示词。\n\n![Tweet Image](https://pbs.twimg.com/media/HJd04gbbIAEugie.jpg)![Tweet Image](https://pbs.twimg.com/media/HJd04gYbcAAXGfs.jpg)\n\n![Berryxia.AI](https://pbs.twimg.com/profile_images/2016043556964605952/Tqi9KA2r_normal.jpg)\n\nBerryxia.AI@berryxia\n\n兄弟们，今天我不装了。  \n  \n摊牌了～   \n  \n之前一直有朋友说你这套提示词生成的海报这么好看，而且非常丝滑。  \n  \n捣鼓了一套万能产品、人文、科技、展会等等 都可以快速出图的提示词。  \n  \n但是，很多人还是用不来觉得麻烦。  \n于是我，我把它在Bloome 做了个海报设计Agent。   \n  \n你直接对话就可以生成，现在是为了避免白嫖怪直接1 刀解锁，好像可以生成100 张图？  \n  \n我没有记错的话，限时一周。  \n  \n👇地址见评论区～\n\n![Tweet Image](https://pbs.twimg.com/media/HI6QWw5a4AAAisc.jpg)![Tweet Image](https://pbs.twimg.com/media/HI6QWw2aoAEvTMO.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/berryxia/status/2057741038320767059)\n\n💬4🔄0❤️0👀984📊4",
+      "tags": [
+        "海报Agent",
+        "推广"
+      ],
+      "score": 50,
+      "summary": "自我推广海报Agent，随意提示词即可生成。",
+      "fetched_at": "2026-05-29T15:55:44.622216+08:00"
+    },
+    {
+      "title": "Pitch 终于支持 agent 了，我曾经用这个产品做过很多 PPT，内置的模版设计都很有品味。\n\nhttps://t.co/e6MwONFMHi",
+      "link": "https://x.com/dingyi/status/2060238709912711278",
+      "published": "2026-05-29T13:56:00+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "Pitch 终于支持 agent 了，我曾经用这个产品做过很多 PPT，内置的模版设计都很有品味。  \n  \n[pitch.com/whats-new/intr…](https://pitch.com/whats-new/introducing-pitch-agent)\n\n💬2🔄0❤️1👀797📊2",
+      "tags": [
+        "Pitch",
+        "Agent",
+        "PPT"
+      ],
+      "score": 75,
+      "summary": "Pitch支持Agent功能，用户可创建PPT。",
+      "fetched_at": "2026-05-29T15:55:44.622262+08:00"
+    },
+    {
+      "title": "一个可视化的 AI Agent 技能管理器，支持桌面应用和终端 UI，统一管理 20+ 种 Agent 的 91000+ 技能。搜一下就能装，不用再去 GitHub 手动找 markdown 文件了。...",
+      "link": "https://x.com/geekbb/status/2060254758280245587",
+      "published": "2026-05-29T14:59:46+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "一个可视化的 AI Agent 技能管理器，支持桌面应用和终端 UI，统一管理 20+ 种 Agent 的 91000+ 技能。搜一下就能装，不用再去 GitHub 手动找 markdown 文件了。  \n  \n现在分享 GitHub 项目我都要跑一遍检查……信任已经没有了  \n  \n[github.com/skillsgate/ski…](https://github.com/skillsgate/skillsgate)\n\n![Tweet Image](https://pbs.twimg.com/media/HJd9ER1awAAC_Gg.jpg)![Tweet Image](https://pbs.twimg.com/media/HJd-h7kbsAAv5xv.jpg)\n\n💬0🔄0❤️3👀436📊1",
+      "tags": [
+        "AI Agent",
+        "技能管理器",
+        "开源"
+      ],
+      "score": 70,
+      "summary": "介绍Skillsgate开源项目，可视化管理AI Agent技能。",
+      "fetched_at": "2026-05-29T15:55:44.622307+08:00"
+    },
+    {
+      "title": "Paging Mary Matossian, Professor Mary Matossian to the courtesy phone please.",
+      "link": "https://x.com/pmarca/status/2060244918619283560",
+      "published": "2026-05-29T14:20:40+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Paging Mary Matossian, Professor Mary Matossian to the courtesy phone please.\n\n![Ceb K.](https://pbs.twimg.com/profile_images/1986616281332695040/D6poMa31_normal.jpg)\n\nCeb K.@CEBKCEBKCEBK\n\nIdeology is a series of disappointments: realizing that anarchism doesn’t make any sense, that socialism is awful at almost everything, that getting hooked on super-meth would actually be boring, that Nazism would actually be pretty stifling, that niche “-isms” are larp/cope, etc\n\n[🔗 View Quoted Tweet](https://x.com/CEBKCEBKCEBK/status/2060243997289808186)\n\n💬5🔄1❤️26👀9748📊5",
+      "tags": [
+        "非AI",
+        "意识形态"
+      ],
+      "score": 50,
+      "summary": "Marc Andreessen评论意识形态，与AI无关。",
+      "fetched_at": "2026-05-29T15:55:44.622352+08:00"
+    },
+    {
+      "title": "If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 1...",
+      "link": "https://x.com/petergyang/status/2060254968968569062",
+      "published": "2026-05-29T15:00:36+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.  \n  \nJoin 110,000+ subscribers here:  \n[creatoreconomy.so](https://creatoreconomy.so/)\n\n💬0🔄0❤️0👀82",
+      "tags": [
+        "推广",
+        "新闻通讯"
+      ],
+      "score": 50,
+      "summary": "推广个人AI和产品指南新闻通讯。",
+      "fetched_at": "2026-05-29T15:55:44.622398+08:00"
+    },
+    {
+      "title": "哈哈哈可太搞笑了\n问了一下牛马AI有什么办法实现盖了盖子能运行",
+      "link": "https://x.com/yangyi/status/2060244961556328631",
+      "published": "2026-05-29T14:20:50+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "哈哈哈可太搞笑了  \n问了一下牛马AI有什么办法实现盖了盖子能运行\n\n![Tweet Image](https://pbs.twimg.com/media/HJd11l0bUAAagah.jpg)\n\n![sudox](https://pbs.twimg.com/profile_images/2047106792640118784/FKsIPafv_normal.jpg)\n\nsudox@kmcnam1\n\njfc....\n\n![Tweet Image](https://pbs.twimg.com/media/HJYnvj5WAAAbEVz.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/kmcnam1/status/2059877579679527200)\n\n💬3🔄0❤️0👀588📊2",
+      "tags": [
+        "搞笑",
+        "无用"
+      ],
+      "score": 40,
+      "summary": "调侃AI回答问题，无实际信息。",
+      "fetched_at": "2026-05-29T15:55:44.622443+08:00"
+    },
+    {
+      "title": "Coding Agent 在开发之外能做什么，这个问题昨晚我有了一些新的认识\n\n昨天全天我的🪜都有问题，X Google ChatGPT Cursor 都没问题，就是 Codex 一直连接不上。。。...",
+      "link": "https://x.com/shao__meng/status/2060250294106354031",
+      "published": "2026-05-29T14:42:02+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "Coding Agent 在开发之外能做什么，这个问题昨晚我有了一些新的认识  \n  \n昨天全天我的🪜都有问题，X Google ChatGPT Cursor 都没问题，就是 Codex 一直连接不上。。。  \n  \n就让 Cursor 帮我分析我🪜的问题，以让 Codex 能正常跑起来为目标，几分钟时间，它分析了代理的实现，做了一些测试，帮我改了代理方式，又自己 CLI 调用 Codex 跑通了测试。  \n  \n到这还没完，为了让我在🪜出问题时还能用 Codex，还给我接通了 DeepSeek API (我之前在 Cursor 给过 API Key)，给我做了一键在 Codex 切换为 DeepSeek 的选项。  \n  \n确实太贴心了，我都想给它🧎🏻‍♂️一个了。\n\n💬1🔄0❤️0👀157📊1",
+      "tags": [
+        "Coding Agent",
+        "使用体验"
+      ],
+      "score": 60,
+      "summary": "个人分享用Cursor分析网络问题并自动切换DeepSeek。",
+      "fetched_at": "2026-05-29T15:55:44.622488+08:00"
+    },
+    {
+      "title": "Anthropic 的估值时间线\n\n2025年底，也就是Claude Code 爆火后\n\nAnthropic开启了🚀模式...",
+      "link": "https://x.com/xiaohu/status/2060252950296170844",
+      "published": "2026-05-29T14:52:35+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "Anthropic 的估值时间线  \n  \n2025年底，也就是Claude Code 爆火后  \n  \nAnthropic开启了🚀模式...\n\n![Tweet Image](https://pbs.twimg.com/media/HJd8oUSbIAA_oZg.jpg)\n\n💬2🔄0❤️2👀253📊2",
+      "tags": [
+        "Anthropic",
+        "估值",
+        "时间线"
+      ],
+      "score": 75,
+      "summary": "KOL整理Anthropic估值时间线，2025年底后快速增长。",
+      "fetched_at": "2026-05-29T15:55:44.622533+08:00"
+    },
+    {
+      "title": "这个推文自动翻译功能，我一时半会还没适应\n\n感觉所有人都变成了中文博主\n\n原则上以前我会跳过一些中文内容重点关注英文内容\n\n现在全是中文了😂\n\n我还在适应中…",
+      "link": "https://x.com/xiaohu/status/2060250803680739449",
+      "published": "2026-05-29T14:44:03+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "这个推文自动翻译功能，我一时半会还没适应  \n  \n感觉所有人都变成了中文博主  \n  \n原则上以前我会跳过一些中文内容重点关注英文内容  \n  \n现在全是中文了😂  \n  \n我还在适应中…\n\n💬2🔄0❤️3👀385📊2",
+      "tags": [
+        "用户体验",
+        "翻译"
+      ],
+      "score": 40,
+      "summary": "吐槽推文自动翻译功能，与AI无关。",
+      "fetched_at": "2026-05-29T15:55:44.622578+08:00"
     }
   ]
 }
