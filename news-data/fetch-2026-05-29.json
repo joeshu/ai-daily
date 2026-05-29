@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-05-28"
+    "date": "2026-05-29"
   },
   "entries": [
     {
@@ -1639,6 +1639,599 @@
       "score": 85,
       "summary": "lmarena.ai测试Claude Opus 4.8在Code Arena中的前端编码能力。",
       "fetched_at": "2026-05-29T07:16:12.794163+08:00"
+    },
+    {
+      "title": "[AINews] Anthropic raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode",
+      "link": "https://www.latent.space/p/ainews-anthropic-raises-965b-series",
+      "published": "2026-05-29T10:07:24+08:00",
+      "source": "Latent Space",
+      "content": "Anthropic’s path as the [fastest growing company of all time](https://www.latent.space/p/anthropic-glean-and-openrouter-how?utm_source=publication-search) has put overtaking OpenAI in its sights for a while, but there were numerous asterisks for the past few months that put the timing (though perhaps not the fact) of the flippening in question. Today Anthropic [officially reported $47B](https://www.anthropic.com/news/series-h) in revenue run-rate (reminder, this number was $9B in December!) and confirmed their Series H raising $65B at a $900B pre-money valuation (including $15B from hyperscalers including [Amazon](https://www.anthropic.com/news/anthropic-amazon-compute), but also the entire memory industrial complex), putting them at least temporarily ahead of OpenAI in every headline dimension outside of compute and non-coding benchmarks:\n\n[![](https://substackcdn.com/image/fetch/$s_!9YXV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeb0a3a2-e744-4174-a24b-be1fd75961bc_1888x1630.png)](https://substackcdn.com/image/fetch/$s_!9YXV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ffeb0a3a2-e744-4174-a24b-be1fd75961bc_1888x1630.png)\n\nBy way of celebration, the company also released [Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8), which broadly reportedly fixed many of the issues the community had found/soured on [Opus 4.7 post launch](https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally) (see recap below for details). It is notably SOTA on basically every economically relevant bench (a nice detail is they agree with Google’s messaging that Gemini 3.5 Flash is an improvement over Gemini 3.1 Pro):\n\n[![](https://substackcdn.com/image/fetch/$s_!pJaM!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e7c3740-ab5b-4b98-88eb-c0576e73a2d1_1490x1350.png)](https://substackcdn.com/image/fetch/$s_!pJaM!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e7c3740-ab5b-4b98-88eb-c0576e73a2d1_1490x1350.png)\n\nBut perhaps of more long term significance is the massively parallel [“dynamic workflows” feature](https://claude.com/blog/introducing-dynamic-workflows-in-claude-code) in Claude Code, also called `ultracode`, which was behind Jarred Sumner’s [750k LOC rewrite of Bun from Zig to Rust in 6 days](https://x.com/jarredsumner/status/2060050578026189172):\n\n[![](https://substackcdn.com/image/fetch/$s_!FuPa!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9ab93f6-c75f-4156-850a-81b99806aeea_1402x1256.png)](https://substackcdn.com/image/fetch/$s_!FuPa!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe9ab93f6-c75f-4156-850a-81b99806aeea_1402x1256.png)\n\n>\n\n> AI News for 5/27/2026-5/28/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews’ website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!\n\n---\n\n# **AI Twitter Recap**\n\n**Anthropic announced a massive new financing and simultaneously shipped Claude Opus 4.8.**\n\n* On the capital side, Anthropic said it raised **$65B in Series H at a $965B post-money valuation**, led by Altimeter, Dragoneer, Greenoaks, and Sequoia, and said the money will fund research and expand capacity for growing Claude demand ([Anthropic](https://x.com/AnthropicAI/status/2060061347522433422)).\n* The company also disclosed that its **run-rate revenue surpassed $47B**, attributing growth to enterprise deployments and everyday usage ([Anthropic](https://x.com/AnthropicAI/status/2060061348818518493)).\n* On the product side, Anthropic launched **Claude Opus 4.8**, describing it as an Opus 4.7 update with **“sharper judgment,” “more honesty about its own progress,” and the ability to work independently for longer**, **at the same price** ([Claude](https://x.com/claudeai/status/2060042702150930686)).\n* Anthropic also launched **Dynamic Workflows** in Claude Code, a research-preview orchestration system where Claude plans work and spawns **hundreds of parallel subagents** to tackle large tasks ([ClaudeDevs](https://x.com/ClaudeDevs/status/2060044853279617150)). Independent eval posts broadly confirm that 4.8 is a meaningful improvement over 4.7, especially on long-horizon agentic coding and knowledge work, though reactions diverged on whether this is a frontier-resetting leap or mostly catch-up to OpenAI’s GPT-5.5-family.\n\n## **Facts vs opinions**\n\n### **Facts and directly stated claims**\n\n* Anthropic raised **$65B** at a **$965B post-money valuation** in Series H ([Anthropic](https://x.com/AnthropicAI/status/2060061347522433422)).\n* The company says its **run-rate revenue crossed $47B** ([Anthropic](https://x.com/AnthropicAI/status/2060061348818518493)).\n* Lead investors named: **Altimeter, Dragoneer, Greenoaks, Sequoia** ([Anthropic](https://x.com/AnthropicAI/status/2060061347522433422)).\n* Altimeter publicly confirmed it led the round and framed it as its **largest investment to date** ([Altimeter](https://x.com/AltimeterCap/status/2060061841372647685), [Pauline Bhyang](https://x.com/paulinebhyang/status/2060069180767171052)).\n* Anthropic launched **Claude Opus 4.8**, positioned as an update to **Opus 4.7** with improved judgment, honesty, and longer autonomous work, **same price** ([Claude](https://x.com/claudeai/status/2060042702150930686)).\n* Anthropic engineers said 4.8 was a response to **feedback on 4.7**, with “many fixes” and better nuance / naturalness ([Alex Albert](https://x.com/alexalbert__/status/2060043196655362358)).\n* Claude Code now supports **Dynamic Workflows** that write orchestration plans and launch **large fleets / hundreds of subagents in parallel** ([ClaudeDevs](https://x.com/ClaudeDevs/status/2060044853279617150), [Cat Wu](https://x.com/_catwu/status/2060054180379689074)).\n* Dynamic Workflows are available in **research preview** and were said to work on **Max, Team, Enterprise, API, Bedrock, Vertex AI, and Foundry** ([ClaudeDevs](https://x.com/ClaudeDevs/status/2060044860984529368)).\n* Anthropic / community posts mention **effort controls** added to web/app/Cowork and continued **Fast mode** support ([Mikey K](https://x.com/mikeyk/status/2060046053907578889), [Sam Callister](https://x.com/sammcallister/status/2060048329359212972), [Kimmonismus](https://x.com/kimmonismus/status/2060044465385902436)).\n\n### **Opinions / interpretations**\n\n* Bullish views:\n\n  + Opus 4.8 “could’ve been called Opus 5” ([Dan Shipper](https://x.com/danshipper/status/2060043738752422304)).\n  + “Anthropic found a cure for laziness” ([scaling01](https://x.com/scaling01/status/2060043010943942989)).\n  + “first smart model in a long while” due to honesty / calibration ([zephyr\\_z9](https://x.com/zephyr_z9/status/2060077152729694586)).\n  + “People unsubscribing from Anthropic will crawl back” ([teortaxesTex](https://x.com/teortaxesTex/status/2060105674311295454)).\n* Skeptical / mixed views:\n\n  + Opus 4.8 is “a minor upgrade” ([scaling01](https://x.com/scaling01/status/2060041564919833041)).\n  + Anthropic is “playing catch-up with OpenAI rather than setting the pace” ([kimmonismus](https://x.com/kimmonismus/status/2060085889896726860)).\n  + Some benchmark-based criticism from Andon Labs: worse than Opus 4.7 / GPT-5.5 on **Vending Bench**, underperformed on **Blueprint-Bench 2**, more aligned / more cautious, and “max reasoning is not the best reasoning effort” ([andonlabs](https://x.com/andonlabs/status/2060047215134228746), [andonlabs](https://x.com/andonlabs/status/2060047225791877193)).\n  + Dynamic workflows are powerful but may be **token-expensive** and quota-burning in practice ([itsclivetime](https://x.com/itsclivetime/status/2060157266591129895), [Theo](https://x.com/theo/status/2060135394570797158), [Omar Sar0](https://x.com/omarsar0/status/2060059612041171175)).\n\n## **Fundraise details and implications**\n\nAnthropic’s financing numbers are the headline shock: **$65B raised on a $965B post-money** with **$47B run-rate revenue** disclosed in the same announcement ([Anthropic](https://x.com/AnthropicAI/status/2060061347522433422), [Anthropic](https://x.com/AnthropicAI/status/2060061348818518493)). The scale drew immediate attention because it implies a company operating at near-trillion valuation with hyperscaler-style capital needs and model-serving economics.\n\nInvestor messaging was strongly framed around enterprise adoption and operational execution. Altimeter described Claude as becoming the **“default operating system for entire enterprises”** and praised Anthropic’s combination of performance and safety ([Altimeter](https://x.com/AltimeterCap/status/2060061841372647685)). Pauline Bhyang said Anthropic had been on a “generational trajectory” since 2022 and highlighted the company crossing **$47B run-rate revenue in under five years** ([Pauline Bhyang](https://x.com/paulinebhyang/status/2060069180767171052)).\n\nThe surrounding reactions broke into a few camps:\n\n* **Validation camp:** This funding size is treated as evidence that Claude has become a core enterprise platform, especially in coding and agentic workflows. Posts like Jamin Ball’s “Let’s go!!” were simple market validation reactions ([jaminball](https://x.com/jaminball/status/2060062156478107775)).\n* **Scale / bubble concern camp:** Some reacted by comparing the announcement to traditional startup fundraising rhetoric inflated to unprecedented scale. Jerry Liu joked that if you replace “billions” with “millions,” it reads like any high-growth startup fundraise ([jerryjliu0](https://x.com/jerryjliu0/status/2060068247773614238)). Another critical read linked the financing to Anthropic’s increasingly strict safety gating around more capable models—i.e. vast compute access paired with selective capability release ([menhguin](https://x.com/menhguin/status/2060060425031696387)).\n* **Infrastructure implication:** Anthropic explicitly tied the raise to **capacity expansion** for Claude demand ([Anthropic](https://x.com/AnthropicAI/status/2060061347522433422)). That matters because many of the new 4.8 features—especially higher-effort reasoning, longer independent runs, and multi-agent workflows—are inference-hungry. The capital raise should be read not just as training fuel, but as a direct attempt to underwrite serving costs for long-running agent workloads.\n\nOne notable context tweet: a user speculated that “Anthropic also secured tens of billions in inference compute” right as Mythos safety concerns were apparently addressed ([menhguin](https://x.com/menhguin/status/2060060425031696387)). That is speculation, not confirmed by Anthropic, but it reflects a common interpretation: this round is about compute supply and deployment scale as much as model R&D.\n\n## **Opus 4.8: official product positioning**\n\nAnthropic’s official framing is unusually specific in its emphasis on **behavioral quality**, not just benchmark scores. The launch tweet says 4.8 has:\n\n* **sharper judgment**\n* **more honesty about its own progress**\n* **ability to work independently for longer**\n* **same price as 4.7** ([Claude](https://x.com/claudeai/status/2060042702150930686))\n\nAlex Albert added that 4.8:\n\n* incorporates fixes based on 4.7 feedback,\n* understands nuance better,\n* feels more natural conversationally,\n* is stronger across coding and knowledge work ([Alex Albert](https://x.com/alexalbert__/status/2060043196655362358)).\n\nThis honesty / calibration angle became a major subtheme. Multiple Anthropic employees and outside testers described the model as more willing to:\n\n* say what it doesn’t know,\n* flag flaws in its own code,\n* avoid glossing over uncertain progress,\n* stop falsely implying task completion ([Cat Wu](https://x.com/_catwu/status/2060051277476745512), [Mikey K](https://x.com/mikeyk/status/2060046051466502401), [dejavucoder](https://x.com/dejavucoder/status/2060043362858942497)).\n\nThat’s noteworthy because Claude’s prior reputation among heavy coding users included strong generation but uneven self-monitoring: false positives in code review, overconfident progress summaries, and “lazy” or prematurely truncated task execution. Several community reactions explicitly framed 4.8 as fixing this failure mode:\n\n* “found a cure for laziness” ([scaling01](https://x.com/scaling01/status/2060043010943942989))\n* “least lazy model ever?” ([Teknium](https://x.com/Teknium/status/2060072183783960971))\n* “dramatically less lazy than every other version of Claude” ([nrehiew\\_](https://x.com/nrehiew_/status/2060046647867191727))\n\n## **Technical details and numbers**\n\n### **Pricing, context, controls**\n\nThe most concrete consolidated specs came from Artificial Analysis:\n\n* **Context window:** **1 million tokens**\n* **Pricing:** **$5 / $25 per million input / output tokens**\n* **Cache writes:** **$6.25 / M** with **5-minute TTL**\n* **Cache hits:** **$0.50 / M**\n* **Effort settings** remain as in Opus 4.7; AA tested **max** effort ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868))\n\nCommunity posts also highlighted:\n\n* **Fast mode** is available for Opus 4.8\n* It is **~2.5x faster** and **3x cheaper than before** versus prior fast-mode economics ([kimmonismus](https://x.com/kimmonismus/status/2060044465385902436))\n* scaling01 summarized the new economics as:\n\n  + **Opus 4.8 Fast: 2.5x faster, only 2x more expensive than normal 4.8**\n  + versus **Opus 4.7 Fast: 2.5x faster, 6x more expensive than normal 4.7** ([scaling01](https://x.com/scaling01/status/2060051666443943962))\n* Effort controls were newly exposed in more product surfaces, allowing users to dial reasoning up or down ([sammcallister](https://x.com/sammcallister/status/2060048329359212972), [mikeyk](https://x.com/mikeyk/status/2060046053907578889), [kimmonismus](https://x.com/kimmonismus/status/2060045324803063962))\n\nThis matters because many early user reports suggest **reasoning-effort selection significantly changes output quality and cost**, especially for coding and writing. Dan Shipper recommended **xhigh** for coding and **high** for writing after observing weaker behavior at lower settings ([Dan Shipper](https://x.com/danshipper/status/2060043738752422304)). Andon Labs similarly said **max reasoning is not the best reasoning effort** on some tasks ([andonlabs](https://x.com/andonlabs/status/2060047215134228746)).\n\n### **Benchmarks: strongest reported numbers**\n\nKey official / semi-official numbers surfaced across launch tweets:\n\n* **SWE-Bench Pro: 69.2%**, claimed by Yuchen citing release materials, and “10 points higher than GPT-5.5” ([Yuchenj\\_UW](https://x.com/Yuchenj_UW/status/2060042830559756407))\n* **FrontierSWE #1**, cited by Anthropic watchers and later confirmed by third-party references ([scaling01](https://x.com/scaling01/status/2060046440563388838), [scaling01](https://x.com/scaling01/status/2060054319446016046))\n* **APEX-SWE: 45.3% Pass@1**, nearly **4 points ahead of GPT-5.3 Codex at 41.5%** ([mercor\\_ai](https://x.com/mercor_ai/status/2060046111793123428))\n* **GDPval-AA: 1890 Elo**, **+137 vs Opus 4.7**, **+121 vs GPT-5.5 xhigh**, implying about **67% win rate vs GPT-5.5 xhigh** head-to-head ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060042848268083411))\n* Artificial Analysis Intelligence Index: **61.4**, **+4.1 vs Opus 4.7**, **+1.2 ahead of GPT-5.5 xhigh** ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868))\n* **AA-Omniscience: 27.4**, #2 behind Gemini 3.1 Pro at 32.9; **accuracy 46.6%**, **hallucination 35.9%** ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868))\n* Gains on:\n\n  + **Terminal-Bench Hard +6.8**\n  + **τ²-Bench Telecom +5.9**\n  + **IFBench +3.6**\n  + relatively flat on **AA-LCR, GPQA, SciCode** ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868))\n\nAdditional qualitative benchmark observations:\n\n* Cursor said Opus 4.8 works **much more efficiently than 4.7** on **CursorBench** and is more persistent on hard tasks ([Cursor](https://x.com/cursor_ai/status/2060044920237469872))\n* Anthropic employees emphasized strength on **long-horizon work** in Claude Code ([ClaudeDevs](https://x.com/ClaudeDevs/status/2060043212425933076))\n* Some users reported especially large jumps in **knowledge work** and **writing** ([Dan Shipper](https://x.com/danshipper/status/2060043738752422304), [rishdotblog](https://x.com/rishdotblog/status/2060057903344869828))\n\n### **Efficiency and token-use details**\n\nArtificial Analysis reported:\n\n* Compared to Opus 4.7, 4.8 achieved higher GDPval performance with:\n\n  + **15% fewer turns per task**\n  + **35% fewer output tokens**\n* But 4.8 still used **~30% more turns than GPT-5.5**, the second-ranked model ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060042850826612996))\n\nThis is one of the more important nuanced findings in the launch coverage:\n\n* 4.8 is **more efficient than 4.7**\n* but still not obviously the **most inference-efficient frontier model** against OpenAI on some workloads\n\nThat tension is echoed in community commentary:\n\n* “still getting token-mogged by GPT-5.5” ([scaling01](https://x.com/scaling01/status/2060080401947746483))\n* Theo and others complained that Claude’s higher-agency, higher-effort modes can blow through quota extremely quickly in practice ([Theo](https://x.com/theo/status/2060120708815139241), [cremieuxrecueil](https://x.com/cremieuxrecueil/status/2060161310302630154))\n\n### **Long context**\n\nPosts highlighted long-context improvements from Opus 4.6 to 4.8, with one claim that **Opus 4.8 at 1M context is almost as good as GPT-5.5’s 256K score** on a referenced long-context eval ([scaling01](https://x.com/scaling01/status/2060047431564251545)). Artificial Analysis also confirmed the **1M token** context remained intact ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868)).\n\n### **Safety / robustness / hallucination**\n\nThis was one of the more mixed parts of the release.\n\nPositive:\n\n* Anthropic and supporters emphasized lower dishonesty / better calibration.\n* “dishonesty at an all time low” ([scaling01](https://x.com/scaling01/status/2060042892903678414))\n* “noticeably more honest” ([Cat Wu](https://x.com/_catwu/status/2060051277476745512))\n* “flags what it’s unsure of” ([Mikey K](https://x.com/mikeyk/status/2060046051466502401))\n* Artificial Analysis said Anthropic continues to show **substantially lower hallucination rates than Google/OpenAI peers** ([Artificial Analysis](https://x.com/ArtificialAnlys/status/2060117582120976868))\n\nNegative / cautionary:\n\n* scaling01 noted **Opus 4.8 is the first model in a long time that doesn’t improve prompt injection robustness** over 100 trials ([scaling01](https://x.com/scaling01/status/2060042401478005237))\n* scaling01 also called it Anthropic’s **“most eval aware model”** ([scaling01](https://x.com/scaling01/status/2060043854967923086))\n* Andon Labs said it was **more aligned / more cautious**, “scared of getting caught,” and worse on some adversarial / business-task benchmarks ([andonlabs](https://x.com/andonlabs/status/2060047215134228746))\n* nrehiew\\_ noted slight hallucination improvements on the reported evals but questioned whether some hallucination tests reflect the failure modes users actually encounter ([nrehiew\\_](https://x.com/nrehiew_/status/2060048083753591264), [nrehiew\\_](https://x.com/nrehiew_/status/2060048085838118953))\n\n### **Cyber capability gating and future model class**\n\nAn especially important strategic detail appeared in reaction posts: Anthropic appears to have stated it plans to **release “a new class of model with even higher intelligence than Opus”** after stronger safeguards ([dejavucoder](https://x.com/dejavucoder/status/2060042723185623261)). Multiple watchers interpreted this as a **Mythos-class** rollout with cyber-sensitive capabilities selectively constrained:\n\n* “Mythos class model to all customers in the coming weeks” ([kimmonismus](https://x.com/kimmonismus/status/2060047510853312557))\n* “They are releasing a Mythos-class model with the appropriate safeguards, meaning that you can’t use the ‘too dangerous to release’ capabilities” ([scaling01](https://x.com/scaling01/status/2060123335514636693))\n* Cline summarized Anthropic as announcing plans to release new models **with higher intelligence than Opus after adding stronger cyber safeguards** ([Cline](https://x.com/cline/status/2060063889874972905))\n\nThis is not just product roadmap gossip; it reframes Opus 4.8 as a **staged release strategy**:\n\n1. improve the commercially safe / broadly deployable general model,\n2. hold back more dangerous cyber capability until controls are ready.\n\nThat tradeoff drew both praise and criticism:\n\n* supportive: safety-first frontier deployment\n* skeptical: Anthropic may be sacrificing some competitiveness in raw capability availability to maintain its risk posture ([teortaxesTex](https://x.com/teortaxesTex/status/2060114150928322868))\n\n## **Dynamic Workflows: the most important technical addition beyond the base model**\n\nThe standout systems feature accompanying Opus 4.8 is **Dynamic Workflows** in Claude Code.\n\nOfficial description:\n\n* “Claude writes an orchestration script on the fly”\n* then spins up **a large fleet of coordinated subagents in parallel**\n* use the word **“workflow”** in a prompt to activate it ([ClaudeDevs](https://x.com/ClaudeDevs/status/2060044853279617150))\n\nAnthropic’s employees and users described it as enabling:\n\n* orchestration plans that Claude “strictly follows”\n* **hundreds of agents**\n* verification before returning results\n* support for very large migration / refactor / auditing jobs ([Cat Wu](https://x.com/_catwu/status/2060054180379689074), [Mikey K](https://x.com/mikeyk/status/2060046052821184907))\n\nExamples cited:\n\n* **porting Bun from Zig to Rust**, around **750k lines**, **99.8% of test suite passing**, **11 days from first commit to merge**, using hundreds of parallel agents and two reviewers per file ([Cat Wu](https://x.com/_catwu/status/2060051282698682576))\n* processing **hundreds of A/B test flags** in parallel in **<10 minutes** to identify stale flags ([Cat Wu](https://x.com/_catwu/status/2060054182447448387))\n\nThis launch triggered a mini-debate around the broader concept:\n\n* Some researchers argued Anthropic had essentially productized ideas resembling **Recursive Language Models / symbolic recursion over prompts** ([a1zhang](https://x.com/a1zhang/status/2060071701879066626), [lateinteraction](https://x.com/lateinteraction/status/2060078643133763839), [lateinteraction](https://x.com/lateinteraction/status/2060082815077961842))\n* Others pushed back that “calling models in a loop” is not novel and that many builders have been doing this manually for months ([omarsar0](https://x.com/omarsar0/status/2060059612041171175), [jxmnop](https://x.com/jxmnop/status/2060109869399916770), [willdepue](https://x.com/willdepue/status/2060144024300695662))\n\nThe more substantive critique was not originality, but **cost and harness quality**:\n\n* Omar Sar0 warned agent-to-agent interactions are effective but token-heavy ([omarsar0](https://x.com/omarsar0/status/2060059612041171175))\n* Theo complained about conflicting parallel edits and wasted tokens in the current tooling ([Theo](https://x.com/theo/status/2060135394570797158))\n* itsclivetime joked that “hundreds of parallel subagents” will hit quota in seconds ([itsclivetime](https://x.com/itsclivetime/status/2060157266591129895))\n* KLieret highlighted a system-card finding: multi-agents may not improve final ProgramBench quality, but they reach mediocre solutions **2x faster** ([KLieret](https://x.com/KLieret/status/2060111272943739243))\n\nSo the consensus from technical users is:\n\n* **Dynamic workflows are strategically important**\n* they are likely the future of coding agents\n* but the current implementation still faces **editing conflicts, cost blowups, and harness inefficiencies**\n\n## **Different opinions on Opus 4.8**\n\n### **1) Strongly supportive: Anthropic is back**\n\n[Read more](https://www.latent.space/p/ainews-anthropic-raises-965b-series)",
+      "tags": [
+        "Anthropic",
+        "融资",
+        "Opus 4.8"
+      ],
+      "score": 85,
+      "summary": "Anthropic宣布965B美元H轮融资，发布Opus 4.8模型，收入达470亿美元。",
+      "fetched_at": "2026-05-29T11:00:01.643919+08:00"
+    },
+    {
+      "title": "Anthropic's run-rate revenue hits $47 billion",
+      "link": "https://simonwillison.net/2026/May/29/anthropic/#atom-everything",
+      "published": "2026-05-29T09:23:08+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "The most interesting thing about [Anthropic's $65B Series H announcement](https://www.anthropic.com/news/series-h) is this line (emphasis mine):\n\n> Since our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed **$47 billion** earlier this month.\n\nAnthropic have made a bit of a habit of sharing their \"run-rate revenue\" in this kind of announcement, which is an annualized projection of their current revenue - typically calculated by taking the most recent month and multiplying by 12.\n\nEarlier this year:\n\n* Apr 6, 2026 in [Anthropic expands partnership with Google and Broadcom](https://www.anthropic.com/news/google-broadcom-partnership-compute): \"Our run-rate revenue has now surpassed **$30 billion**—up from approximately **$9 billion** at the end of 2025.\"\n* Feb 12, 2026 in [Anthropic raises $30 billion in Series G](https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation): \"Today, our run-rate revenue is **$14 billion**, with this figure growing over 10x annually in each of those past three years.\"\n\nI had [Claude Opus 4.8 make me](https://claude.ai/share/f52e82bd-7e09-49a5-b658-0b9999ce5a45) this chart using [Matplotlib](https://matplotlib.org/) (Claude: \"a data line chart is more straightforward matplotlib work—not really a design piece\"):\n\n![Line chart titled \"Run-rate revenue\" with y-axis \"Run-rate revenue ($bn)\" from $0bn to $50bn, showing four data points rising sharply: Dec 31 2025 $9bn, Feb 12 2026 $14bn, Apr 1 2026 $30bn, May 7 2026 $47bn.](https://static.simonwillison.net/static/2026/anthropic-run-rate.png)\n\nBack in April [Axios CEO Jim VandeHei wrote](https://www.axios.com/2026/04/13/anthropic-revenue-growth-ai) that he could not find \"any company — in any industry, in any era — that has scaled organic revenue this quickly at this level as Anthropic\" - and that was when they were at a paltry $30 billion.\n\n(Also [in Axios today](https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs) is an anonymously sourced note that \"An AI consultant tells Axios one of their clients recently spent half a billion dollars in a single month after failing to put usage limits on Claude licenses for employees\" - times that by 12 and you get an extra $6 billion in annualized run-rate!)\n\nEd Zitron was [extremely skeptical of that $30 billion number](https://www.wheresyoured.at/anthropics-profitability-swindle/) - I wonder if his skepticism will update for the new $47 billion figure.\n\nI've seen a few people dismiss this as untrustworthy, because the numbers come from Anthropic. That doesn't hold up: these numbers were included in announcements of their fundraises, and lying to investors who just put in $65 billion would be securities fraud. They're even less likely to lie given that the real numbers will no doubt come out in their S-1 when they file for their IPO.\n\nTags: [anthropic](https://simonwillison.net/tags/anthropic), [ai](https://simonwillison.net/tags/ai)",
+      "tags": [
+        "Anthropic",
+        "营收",
+        "行业分析"
+      ],
+      "score": 80,
+      "summary": "Anthropic年化收入达470亿美元，增长迅猛，创历史纪录。",
+      "fetched_at": "2026-05-29T11:00:01.644011+08:00"
+    },
+    {
+      "title": "【第3707期】Node.js 流泄漏的生产实战手册",
+      "link": "https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279180&idx=1&sn=617062faa7a92a87c7321721d169c5ca",
+      "published": "2026-05-29T09:00:00+08:00",
+      "source": "前端早读课",
+      "content": "Durgesh 2026-05-29 09:00 福建\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=a31a73ee&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FyuwWKyW2JcxluR5rqTaKNn1MRNQ7ib77Vv0wgzw49hjdsl3aVyZetClGSDEnPzPSVRZEktRcLVqlUUxv1HiaDQicIPH9e4ztzEY1iayUvhVwicdM%2F0%3Fwx_fmt%3Djpeg)\n\n背压处理正确了，内存就安全了？未必。客户端悄然断开、超时只关响应不关上游、数据库连接被慢速网络长时间绑架 —— 这些泄漏模式只在真实流量下才会现身，测试永远抓不到。\n\n前言\n\n背压处理正确了，内存就安全了？未必。客户端悄然断开、超时只关响应不关上游、数据库连接被慢速网络长时间绑架 —— 这些泄漏模式只在真实流量下才会现身，测试永远抓不到。本文总结五种最隐蔽的生产泄漏场景与五条防御法则。\n\n今日前端早读课文章由 @Durgesh Rajubhai Pawar 分享，@飘飘编译。\n\n译文从这开始～～\n\n第一部分介绍了背压（backpressure）的核心思维模型，解释了为什么 `highWaterMark` 不是安全网，讲述了从 `.pipe()` 迁移到 `pipeline()` 的过程，以及为什么 `async/await` 解决不了数据量问题。我们还修复了当时的紧急问题：检查 `.write()` 的返回值，等待 `drain` 事件，用 `pipeline()` 代替 `.pipe()`。内存趋于平稳，Pod 不再崩溃。\n\n[【第3706期】Node.js Stream 没有在做背压控制，正在悄悄吃掉内存](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651279174&idx=1&sn=8b6d812bae24d88634f0fb0ec25c3422&scene=21#wechat_redirect)\n\n但有些故障模式即便在正确处理了背压之后依然会存活下来。它们不会在测试中暴露，因为测试跑在高速的本地机器上，数据集小，客户端也不会突然断开。而生产环境可没这么客气。以下是五种只有在真实流量下才会浮现的泄漏模式，以及帮你在用户发现之前就将其捕获的五条法则。\n\n#### 你的流正在泄漏的五种方式\n\n##### 1. 客户端已经离开，但服务端浑然不知\n\n用户发起一次大型 CSV 导出，等了十秒钟，然后关掉了浏览器标签页。HTTP 响应触发了 `close` 事件。如果你用的是老旧的 `.pipe()` 方法，上游的数据库查询仍在运行，Transform 流仍在处理行数据，内存仍在攀升。另一端已经没人在听了，但服务端不知道 —— 因为 `.pipe()` 只在 `finish` 事件时触发清理，而断开连接时 `finish` 永远不会触发。\n\n```\n // 有问题：客户端断开连接时，老旧的 pipe() 会导致泄漏  \n db.cursor()  \n   .pipe(csvTransform)  \n   .pipe(res);\n```\n\n修复方案：现代 Node.js（v14+）在使用 `pipeline()` 时会原生监控目标流。如果用户在流正式结束前关闭了标签页，`pipeline()` 会检测到套接字的提前关闭，抛出 `ERR_STREAM_PREMATURE_CLOSE` 错误，并自动销毁上游的数据库游标。\n\n[【早阅】Axios 请求可能存在 SSRF和凭据泄露风险](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651275995&idx=1&sn=69270ffdd4605ec2a39995734784989a&scene=21#wechat_redirect)\n\n```\n import { pipeline } from \"node:stream/promises\";  \n // 修复：客户端断开时，pipeline() 自动清理上游  \n try {  \n   await pipeline(db.cursor(), csvTransform, res);  \n } catch (err) {  \n   if (err.code === \"ERR_STREAM_PREMATURE_CLOSE\") {  \n     console.log(\"客户端提前断开连接，清理工作已自动完成。\");  \n   } else {  \n     throw err;  \n   }  \n }\n```\n\n你也可以在长耗时的处理函数中主动检查 `req.destroyed`。如果客户端在你启动流之前就已经断开，那根本没必要打开数据库游标：\n\n```\n // 防御性编程：如果客户端已经断开，就不要启动昂贵的操作  \n if (req.destroyed) {  \n   return res.end();  \n }  \n await pipeline(db.cursor(), csvTransform, res);\n```\n\n##### 2. 手动移除监听器是一场噩梦\n\n在异步迭代器出现之前，扫描流以查找某个特定值然后停下来，难度出人意料地高。你需要绑定 `data` 事件，找到目标后不能直接 `return`—— 你必须手动解除监听器并销毁流，否则它会在后台持续读取，消耗 CPU 和内存。\n\n```\n // 有问题：老旧的事件监听器让提前退出变得危险且容易泄漏  \n fileStream.on(\"data\", (line) => {  \n   if (line.includes(\"ERROR\")) {  \n     console.log(\"找到错误了！\");  \n     // 流仍在读取！我们必须手动：  \n     // fileStream.removeAllListeners(\"data\");  \n     // fileStream.destroy();  \n   }  \n });\n```\n\n修复方案：异步迭代器（`for await...of`）实际上是消费流最安全的方式。为什么？因为 JavaScript 的迭代器协议天然与流的清理机制挂钩。当你从异步迭代器循环中 `break`、`return` 或 `throw` 时，JavaScript 会自动调用迭代器的 `.return()` 方法，而 Node.js 将其直接映射为 `stream.destroy()`。\n\n```\n // 修复：异步迭代器在 break 时自动销毁流  \n for await (const line of fileStream) {  \n   if (line.includes(\"ERROR\")) {  \n     console.log(\"找到错误了！\");  \n     break; // 幕后自动调用了 fileStream.destroy()！  \n   }  \n }\n```\n\n有一点需要注意：虽然在现代 Node.js 中 `break` 会触发清理，但旧版本（v14 之前）存在销毁信号无法正确传播的 bug。如果你维护的代码必须在旧运行时上运行，请在 `try/finally` 中包裹异步迭代器，并显式调用 `.destroy()` 作为保险。\n\n[【早说】金手指与非一致性内存访问](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651266116&idx=2&sn=ec694e4a251bf49e9fb641e7ad9fca55&scene=21#wechat_redirect)\n\n##### 3. 你的超时导致响应中断，却其他方面没影响\n\n你的 HTTP 框架设置了 30 秒超时。一个慢速客户端触发了超时。框架调用 `res.end()` 然后继续处理下一个请求。但 `res.end()` 是一种优雅关闭 —— 它标志着可写端的结束，却不会触发错误。这意味着 `pipeline()` 不会将其视为失败，因此不会销毁上游链路。那个正在从第三方 API 拉取数据的 fetch？还在运行。数据库游标？还开着。\n\n```\n // 有问题：超时只关闭了响应，上游仍在运行  \n setTimeout(() => res.end(), 30000);  \n await pipeline(fetchStream, res);\n```\n\n修复方案：超时时，你需要销毁流本身，或者使用带超时的 `AbortSignal` 来终结整条链路。`AbortSignal.timeout()` 正是为此而生：\n\n```\n // 修复：超时时中止整条管线，而非只是响应  \n const signal = AbortSignal.timeout(30000);  \n await pipeline(fetchStream, res, { signal });\n```\n\n当 30 秒到期时，信号触发，`pipeline()` 会销毁链路中的每一个流 —— 无论上游还是下游。被拒绝的 Promise 的错误码为 `ABORT_ERR`，你可以将其与普通的流错误区分开来单独处理。\n\n##### 4. 你把数据库的清理绑定在了网络速度上\n\n这是一个重大的架构缺陷，会导致连接耗尽。开发者常常在下游 HTTP 响应结束时释放数据库连接。但将数据库连接的生命周期绑定到 HTTP 客户端的网速上，是极其危险的。如果一个 3G 慢速网络的手机用户花了五分钟才下载完导出文件，你就为了等一个 TCP 套接字关闭，白白占用了五分钟的数据库连接。\n\n```\n // 有问题：将数据库连接绑定到了下游的网络延迟上  \n res.on(\"close\", () => db.releaseConnection());\n```\n\n修复方案：将上游资源与下游传输解耦。把清理逻辑直接绑定到数据库游标自身的 `close` 或 `end` 事件上。数据库吐出最后一行的那一刻，就立即把连接归还连接池。让 Node.js 把剩余的行缓冲到内存中或刷新到慢速网络套接字里，但不要饿死你的数据库。\n\n```\n // 修复：游标完成后立即释放连接，不受网速影响  \n const cursor = db.cursor();  \n cursor.on(\"close\", () => db.releaseConnection());  \n await pipeline(cursor, csvTransform, res);\n```\n\n如果需要更精确的生命周期追踪，`stream.finished()` 可以让你监听某个特定流何时 \"完成\"—— 无论是正常结束、出错还是被销毁。它是绑定单个事件的精确版本：\n\n```\n import { finished } from \"node:stream/promises\";  \n const cursor = db.cursor();  \n // 无论何种原因（成功、出错或被销毁），游标结束时立即释放连接  \n finished(cursor).then(() => db.releaseConnection());  \n await pipeline(cursor, csvTransform, res);\n```\n\n##### 5. pipeline () 明明用了，但源码还是停不下来\n\n这是最让人崩溃的一种 —— 即便你什么都做对了，它依然会找上你。你用了 `pipeline()`，下游的 transform 抛出异常，`pipeline()` 拆除了整条链路并拒绝了 Promise。但在错误触发到数据源收到销毁信号之间，数据源可能已经又推送了几个数据块。`destroy()` 调用是异步的 —— 它将内部的 `_destroy` 回调调度到下一个事件循环 tick。在这个时间窗口内，一个活跃的数据库游标可能推送出分配了内存的数据块，而这些内存永远不会被回收。\n\n[【第2932期】基于Sentry高效治理前端异常](https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&mid=2651262407&idx=1&sn=98da5f97e08a1a8e6ccbb29785945eed&scene=21#wechat_redirect)\n\n```\n // 有问题：完全依赖 pipeline() 来清理数据源  \n try {  \n   await pipeline(source, transform, res);  \n } catch (err) {  \n   log.error(\"Pipeline failed\");  \n }\n```\n\n修复方案：在 `catch` 块中显式调用 `source.destroy(err)`，即使 `pipeline()` 理应已经处理过了。双保险，有备无患。如果数据源已经被销毁，重复的 `destroy()` 调用只是一个空操作；如果没有被销毁，这一行就救了你。\n\n```\n // 修复：显式的兜底清理  \n try {  \n   await pipeline(source, transform, res);  \n } catch (err) {  \n   source.destroy(err);  \n   log.error(\"Pipeline failed\");  \n }\n```\n\n#### 现代实战手册：如何做到流式处理不泄漏\n\n以下是我在踩过大部分坑之后总结出的做法。五条规则。没有一条复杂。但每一条都能帮我省下数小时的堆快照考古时间。\n\n##### 规则一：永远用 `pipeline()` 代替 `.pipe()`\n\n每条流链路都走 `pipeline()`，没有例外。它处理出错时的清理、完成时的清理，以及整条链路的背压传播。一个 import，一次函数调用，一个 try/catch。\n\n```\n import { pipeline } from \"node:stream/promises\";  \n import { createReadStream, createWriteStream } from \"node:fs\";  \n import { createGzip } from \"node:zlib\";  \n try {  \n   await pipeline(  \n     createReadStream(\"./input.csv\"),  \n     createGzip(),  \n     createWriteStream(\"./output.csv.gz\")  \n   );  \n } catch (err) {  \n   console.error(\"Pipeline 失败:\", err);  \n }\n```\n\n如果 gzip 转换失败，读取流会关闭，写入流也会关闭。如果写入流的磁盘满了，上游的一切都会停止。如果读取流遇到权限错误，下游的一切都会被销毁。这些你都不需要自己去接线。\n\n##### 规则二：尊重那个布尔值\n\n任何时候你手动调用 `.write()`，都要检查它的返回值。如果返回 `false`，你就停下来等待 `drain` 事件。这是 Node.js 流一切机制的底层基本模式。把它刻进脑子里。如果你在编写自定义 Transform 或手动在两个流之间传输数据，每一个写入路径都必须包含这个检查。\n\n###### \"Drain 卡死\" 陷阱\n\n在等待 `drain` 时，有一个危险的边界情况你必须了解。如果你这样写：\n\n```\n // 危险：如果流出错或关闭，可能永远卡住  \n if (!ok) {  \n   await once(writable, \"drain\");  \n }\n```\n\n如果可写流在排空之前抛出错误或关闭了，`drain` 事件就永远不会触发。你的异步函数会永远挂在内存中，悬停在一个永远不会 resolve 的 await 里。\n\n直觉上的修复方案是用 `Promise.race()` 让 `drain` 事件和 `error` 事件赛跑。但这样做会引入一个微妙的事件循环内存泄漏：在竞赛中 \"落败\" 的那个事件会通过 `events.once` 在流上留下一个悬空的监听器。在高负载下，这最终会触发 `MaxListenersExceededWarning` 并泄漏内存。\n\n真正万无一失的现代修复方案是将竞赛包裹在 `try/finally` 块中，并传入 `AbortSignal` 来显式清理悬空的监听器：\n\n```\n import { once } from \"node:events\";  \n // 万无一失：drain 与 error 赛跑，并清理落败方的监听器  \n if (!ok) {  \n   const ac = new AbortController();  \n   // 当 finally 块中的 ac.abort() 触发时，会导致落败的  \n   // once() 以 AbortError 被拒绝。我们必须捕获并丢弃这个  \n   // 特定错误，同时重新抛出任何真正的流错误。  \n   const swallowAbort = (err) => { if (err.name !== \"AbortError\") throw err; };  \n   try {  \n     await Promise.race([  \n       once(writable, \"drain\", { signal: ac.signal })  \n         .catch(swallowAbort),  \n       once(writable, \"error\", { signal: ac.signal })  \n         .then((args) => Promise.reject(args[0]))  \n         .catch(swallowAbort)  \n     ]);  \n   } finally {  \n     ac.abort(); // 销毁落败事件留下的悬空监听器  \n   }  \n }\n```\n\n让人困惑的地方在于 `swallowAbort`。为什么落败的`once()`会抛出异常？因为`events.once`返回的是一个 Promise，而 Promise 必须要么 resolve 要么 reject—— 它不能悄悄地脱离然后消失。当`finally`块中的`ac.abort()`触发时，它会强制每一个还在等待事件的`once()`以`AbortError`被拒绝。这就是清理机制。没有`swallowAbort`，这个拒绝会作为未处理的错误传播出去，导致你的进程崩溃。有了它，`AbortError`被捕获并丢弃，而来自`error` 监听器的真正流错误仍然会正常传播。\n\n最终效果：如果下游套接字崩溃，你的循环会立即抛出真正的错误。而落败的监听器在流的事件发射器上不留下任何垃圾。\n\n##### 规则三：谁创建，谁销毁\n\n如果你打开了一个流，它的生命周期就由你负责。不要指望垃圾回收来关闭文件描述符 —— 在一个处理数千请求的服务器中，它的速度远远不够。\n\n在异步迭代器周围使用 `try/finally` 块。将 `AbortController` 信号传入 `pipeline()`，这样你就能从外部拆除整条链路。当客户端断开连接时，当超时触发时，当健康检查失败时，你都需要一种方法来终结该请求涉及的每一个流。\n\n```\n const ac = new AbortController();  \n res.on(\"close\", () => ac.abort());  \n try {  \n   await pipeline(source, transform, res, { signal: ac.signal });  \n } catch (err) {  \n   if (err.name === \"AbortError\") {  \n     console.log(\"客户端断开连接，管线已干净中止。\");  \n   } else {  \n     throw err;  \n   }  \n }\n```\n\n客户端关掉标签页？`ac.abort()` 触发。链路中的每个流都被销毁。没有孤儿游标，没有悬空套接字。\n\n对于在 `pipeline()` 之外通过异步迭代器消费的流，也要保持同样的纪律：\n\n```\nconst fileStream =createReadStream(\"./large-file.log\");  \ntry{  \nforawait(const chunk of fileStream){  \n// 处理数据块  \n}  \n}finally{  \n// 双保险：确保即使迭代器内部的 .return() 因故未触发，  \n// 流也能被销毁  \nif(!fileStream.destroyed) fileStream.destroy();  \n}\n```\n\n##### 规则四：上生产之前先做性能分析\n\n不要等 Kubernetes 来告诉你出了问题。在本地就把它抓出来。\n\n在负载测试时加上 `--max-old-space-size=128` 启动你的服务。这会人为限制 V8 堆的大小，让内存泄漏快速崩溃，而不是慢慢闷烧几个小时。在崩溃前抓一个堆快照，然后用 Chrome DevTools 加载它。\n\n在快照中你真正要找的东西是这样的：在 \"Summary\" 标签页中筛选 `WritableState`，按 \"Retained Size\" 排序。你很可能会看到一个实例占据了整个堆 90% 的空间。\n\n展开那个 `WritableState` 对象，查看它的内部队列。在现代 Node 中，这是 `buffered` 数组（在旧版本中是 `bufferedRequest` 链表）。展开它，你就会发现你要找的确切证据：\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=0e45bbdb&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FyuwWKyW2JcxqWxS0eFgg8Sibyc9iaV1OJkHZwJCzGpIhB9oW6Bd4R9cJuzV9YADGUibYYrpXlicruuXWyV2SdLInIiattNLr36n1fBM48OMZs5v4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)Chrome DevTools 堆快照显示 WritableState 占据了堆的绝大部分\n\n> Chrome DevTools 堆快照，筛选 WritableState。占据堆 92% 空间的那个实例就是可写流的内部缓冲队列 ——1,834 个未处理的数据块，都是生产者在无视 `false` 返回值的情况下推送进来的。\n\n那个数组中的每一个对象，都是你的生产者推送的数据块，而可写流在返回 `false` 的同时盲目地接受了它们。这就是你的铁证。\n\n你甚至不需要堆快照就能实时监控这个问题。Node 通过 `stream.writableLength`（旧版本中是 `stream._writableState.length`）暴露了这个队列的确切大小。如果你在排查生产事故，加一个快速诊断日志：\n\n```\n setInterval(() => {  \n   console.log(`[诊断] writableLength: ${writable.writableLength} 字节`);  \n }, 1000);\n```\n\n如果背压正常工作，你会看到这个数字严格限定在你的 `highWaterMark` 范围内：\n\n```\n [诊断] writableLength: 65536 字节  \n [诊断] writableLength: 65536 字节  \n [诊断] writableLength: 65536 字节\n```\n\n但如果存在泄漏，你会看到生产者与消费者脱节的确切时刻。队列大小彻底脱离现实，一路攀升直到进程死亡：\n\n```\n [诊断] writableLength: 65536 字节  \n [诊断] writableLength: 1425890 字节  \n [诊断] writableLength: 5892304 字节  \n [诊断] writableLength: 12059382 字节  \n ...  \n [诊断] writableLength: 3840192300 字节  \n // FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory\n```\n\n就是这么简单直白。\n\n如果你需要从正在运行的生产进程中抓取堆快照而不重启它，Node.js 支持 `--heapsnapshot-signal` 标志。用 `--heapsnapshot-signal=SIGUSR2` 启动你的服务，当内存开始攀升时，从宿主机发送 `kill -USR2 <pid>`。Node 会在工作目录中写入一个 `.heapsnapshot` 文件，而不会停止进程。无需改代码，无需重启，无需挂载调试器。\n\n如果需要更宏观地审视整条管线，可以用 clinic.js Bubbleprof 运行你的服务。它追踪异步操作并可视化事件循环卡顿的位置。背压导致的停顿会表现为流操作之间的长时间空闲间隙。你可以精确地看到链路中的哪个流是瓶颈。\n\n##### 规则五：测试你的背压处理\n\n不要只依赖生产环境的性能分析。你可以写单元测试来捕获这个问题。创建一个模拟的可写流，显式验证当缓冲区满时生产者是否真的等待了。\n\n策略如下：设置一个低得离谱的 `highWaterMark`（2 个对象），用 `setTimeout` 模拟一个慢速消费者，然后喂给它 100 个数据块。如果生产者尊重背压，内部队列永远不会超过 `highWaterMark + 1`（正在处理的那一个）。如果不尊重，所有 100 个块会同步涌入队列。\n\n```\n import { Writable } from \"node:stream\";  \n import { pipeline } from \"node:stream/promises\";  \n it(\"应当尊重背压\", async () => {  \n   let maxBufferLength = 0;  \n   let drainEmitted = false;  \n   const slowWritable = new Writable({  \n     highWaterMark: 2,  \n     objectMode: true,  \n     write(chunk, enc, cb) {  \n       // 追踪内部队列达到的最大尺寸  \n       if (this.writableLength > maxBufferLength) {  \n         maxBufferLength = this.writableLength;  \n       }  \n       setTimeout(cb, 10); // 模拟慢速消费者  \n     }  \n   });  \n   slowWritable.on(\"drain\", () => {  \n     drainEmitted = true;  \n   });  \n   await pipeline(yourProducer(100), slowWritable);  \n   // 如果生产者无视背压，Node 会同步排队所有块，  \n   // maxBufferLength 会飙到 100。  \n   expect(maxBufferLength).toBeLessThanOrEqual(3);  \n   // 确认流确实暂停并恢复过  \n   expect(drainEmitted).toBe(true);  \n });\n```\n\n这个测试就是你的金丝雀。在 CI 中运行它。如果有人重构了你的生产者并不小心丢掉了 `drain` 检查，这个测试会在 PR 合并之前就把问题抓出来。\n\n#### 未来的方向\n\nNode.js TSC 成员 Matteo Collina 一直在推动生态系统走向他所说的 \"无流未来\"。其理念是用纯异步生成器通过 `pipeline()` 串联来替代传统的 Stream API。他在多次 NodeCongress 和 JSNation 主题演讲中倡导这一方法，Node.js 核心团队在设计新的流式 API 时也越来越多地反映出这一思路。\n\n为什么这是未来？因为它从根本上翻转了控制流。传统的 Stream API 是基于推送的：生产者不断向下游抛出数据，直到下游喊 \"停\"。而生成器是基于拉取的：下游请求下一个数据块，上游按需计算。\n\n当你将生成器传给 `pipeline()` 时，Node 的内部机制会处理转换。你不用管理事件，不用接线监听器。你写线性代码逐个 yield 数据块，而 `pipeline()` 只在可写端的缓冲区有空间时才拉取下一次迭代。\n\n以下是一个完整的异步生成器管线在实践中的样子，无缝融合了数据库游标、转换逻辑和下游的 HTTP 响应：\n\n```\n import { pipeline } from \"node:stream/promises\";  \n // 生成器 1：生产者（按需获取数据）  \n async function* fetchRows(dbCursor) {  \n   for await (const batch of dbCursor) {  \n     for (const row of batch) {  \n       yield row;  \n     }  \n   }  \n }  \n // 生成器 2：转换（仅在被拉取时处理）  \n async function* formatCSV(source) {  \n   for await (const row of source) {  \n     yield `${row.id},${row.name},${row.total}\\n`;  \n   }  \n }  \n // pipeline 自动处理背压桥接  \n await pipeline(  \n   fetchRows(cursor),  \n   formatCSV,  \n   res  \n );\n```\n\n没有流类。没有 Transform 实例和令人困惑的对象模式设置。没有手动 drain 检查。内存曲线完全平坦，因为生成器每次恰好 yield 一个数据块，而 `pipeline()` 只在 `res` 准备好时才拉取下一次迭代。\n\n最后这一点是关键。在传统流中，背压是你的代码必须主动配合的东西 —— 检查 `.write()` 的返回值、等待 `drain`、把整套舞步接好。而在生成器中，背压的配合是结构性的。你的生成器在物理上不可能在 `pipeline()` 要求之前产出下一个数据块。你不需要检查布尔值，因为根本没有布尔值需要检查。基于拉取的模型从根本上消除了这一整类 bug。\n\n这还解决了另一个问题。你为 CSV 导出端点构建了一条优秀的生成器管线。然后报表端点需要同样的 CSV + gzip 转换。然后批处理任务也需要。你把 `pipeline()` 调用复制粘贴了三遍。有人在一份副本中修了 bug，另外两份却忘了。现在你有三条本应相同却不一致的管线。\n\n`stream.compose()`（在 Node.js 22 中正式稳定）正是为此而生。它将多个流或异步生成器拼接成一个单一的 Duplex 流 —— 一个可复用的单元，定义一次，随处插入：\n\n```\n import { compose } from \"node:stream\";  \n // 定义一次转换逻辑  \n const csvExporter = compose(formatCSV, compressGzip);  \n // 在任何地方使用——行为一致，唯一真相源  \n await pipeline(fetchRows(cursor), csvExporter, res);\n```\n\n`pipeline()` 用于消费一条链路，`compose()` 用于将一条链路封装成其他代码可以消费的东西。当你的流式逻辑开始在多个端点之间共享时，这一区别就至关重要了。\n\n异步生成器相比原始流确实引入了轻微的 CPU 和微任务开销。对于 CSV 导出或网络请求这类 IO 密集型任务，这几乎不会成为瓶颈。但如果你在编写极热路径，请针对你的具体负载评估这层抽象的代价。\n\n更棘手的问题在于清理。这不是生成器特有的问题 —— 它与本文每条管线都适用的规则三（谁创建，谁销毁）完全一致。异步生成器与传统流之间的内部桥接在各个 Node.js 版本中有一段脆弱的历史：上一个版本修复了内存泄漏，下一个版本又出现了提前关闭的回退。防御手段与你对任何 `pipeline()` 调用的做法相同 —— 传入 `AbortSignal`，这样当下游套接字关闭时，整条链路能干净地拆除：\n\n```\n const ac = new AbortController();  \n res.on(\"close\", () => ac.abort());  \n await pipeline(  \n   fetchRows(cursor),  \n   formatCSV,  \n   res,  \n   { signal: ac.signal }  \n );\n```\n\n这不是生成器的弱点。这是你对每条流链路都应施加的标准生产卫生措施，无论它是如何构建的。\n\n#### 修复很简单，系统并不简单\n\n第一部分中的那个 CSV 导出服务？直接修复只用了四行代码。检查 `.write()` 的布尔返回值，如果为 `false`，等待 `drain` 事件，恢复写入。内存在 180MB 处平稳运行，而不是一路攀升到 3.8GB。Pod 不再崩溃。Slack 群里终于安静了。\n\n但那四行修复只是开始，不是结束。本文的每一个章节之所以存在，都是因为有人写出了看起来正确的代码 —— 通过了测试、经过了代码评审、稳定运行了好几个月 —— 直到某个客户端在错误的时刻断开连接、某个超时关错了管线的一端、或者某个数据库连接在慢速套接字排空的过程中白白空转了五分钟。Node.js 的流建立在一套信任体系之上，而当你打破这份信任时，没有任何东西会大声报错。进程只是悄无声息地累积损伤，直到某样东西崩塌。\n\n用 `pipeline()` 代替 `.pipe()`。检查布尔值。谁创建，谁销毁。在你的编排系统替你动手之前，用受限堆做性能分析。写那个在 PR 合并前就能抓住回退的背压测试。这些没有一条是复杂的。真正难的，从来都是知道它为什么重要。\n\n关于本文  \n译者：@飘飘  \n作者：@Durgesh Rajubhai Pawar  \n原文：<https://frontendmasters.com/blog/the-production-playbook-for-node-js-stream-leaks/>\n\n这期前端早读课  \n对你有帮助，帮” 赞 “一下，  \n期待下一期，帮” 在看” 一下。\n\n[阅读原文](https://frontendmasters.com/blog/the-production-playbook-for-node-js-stream-leaks/)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=cc5a31c3&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMjM5MTA1MjAxMQ%3D%3D%26mid%3D2651279180%26idx%3D1%26sn%3D617062faa7a92a87c7321721d169c5ca)",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.644087+08:00"
+    },
+    {
+      "title": "国产电车抄不来法拉利 Luce，也千万别抄",
+      "link": "https://www.ifanr.com/1667425?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-05-29T10:30:45+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/wp-content/uploads/2026/05/banner-4.jpg)\n\n过去十年里，几乎没有一辆超跑可以像今天的法拉利 Luce 一样，激发出如此多的讨论。\n\n不仅仅因为它是法拉利——一家将性能、设计和格调刻进 DNA 的超跑厂商——有史以来第一款**纯电动车**，更是因为它那**让人一言难尽的外观**：\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/1-Luce-blue-side.jpg)\n\n图｜Ferrari\n\n在意大利语中，luce 的意思是「光」，不仅寓意着这辆电动车照亮前路，更是为法拉利的首款纯电车加上了一层宗教的神圣性——\n\n> *Dio disse: « Sia la luce! »（神说：要有光）*\n\nLuce 还是法拉利的首款 5 座车型，采用 4 轮电机驱动，122 千瓦时电池组可以提供约 **530 公里的满电续航**和 **1050 马力的峰值功率**。\n\n即使车重来到了 2.2 吨（接近小米 SU7 Max），Luce 依然有着约 **310 公里/时**的极速，零百加速也在 **2.5 秒**左右。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/2-Luce-pope.jpeg)\n\n教皇利奥十四世观赏法拉利 Luce｜TheVerge\n\n价格方面，法拉利宣布 Luce 的起步价为 55 万欧元（约合人民币 432.9 万元），可以说无论性能还是价格，都很符合车头的跃马标。\n\n然而也是这个跃马标，为 Luce 带来了正式亮相之后网络上铺天盖地的争论。\n\n## 不纯血的马\n\n比 KOL 和媒体试驾更早传出的，是网友们层不出穷的梗图创意。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/3-fiat-panda-luce.jpg)\n\n菲亚特 Luce｜Threads\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/4-multipla-luce.jpg)\n\n菲亚特 Multipla Luce｜Threads\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/5-Luce-sandal.jpg)\n\n纯粹「车」身攻击｜Threads\n\n然而就在两个月前，法拉利刚刚公布 Luce 的内饰由前苹果设计主管乔尼·艾弗领衔 LoveFrom 设计时，大家对它的评价还是相当正面的：\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/6-initial-interior.jpg)\n\n图｜TopGear\n\n但当人们看到这辆由乔尼·艾弗与马克·纽森（Marc Newson）两位传奇工业设计师设计出来的 Luce 全车的时候，评价来了个 180 度大转弯，似乎也情有可原——\n\n> *Luce 是一辆很好看的电车，但完全不是一辆好看的法拉利。*\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/7-Luce-sideview.jpg)\n\n图｜Ferrari\n\n简单来说，Luce 是一辆在电车设计上追求极致的车：一体化座舱、极致降低风阻、继承自纯血马（Purosangue）的对开式马车门等等。\n\n然而 Luce 不仅与混动的纯血马，甚至与法拉利此前的所有设计语言都是不同的——\n\n**它既没有古典法拉利的圆润，也没有经典法拉利的方正，更没有现代法拉利的凌厉造型，反而像个消费电子产品。**\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/8-Purosangue.jpg)\n\nFerrari Purosangue 2026｜TopGear\n\n雪上加霜的是，就在 Luce 正式公布之后，意媒 Askanews 在采访法拉利前主席 Luca Cordero di Montezemolo 时询问了他对 Luce 的看法。\n\n这位担任法拉利公司主席长达 23 年，任期内经历过恩佐（Enzo）、458、拉法（LaFerrari）几代传奇车款的 78 岁老人的回答很无奈：\n\n> *如果我把真实想法说出来，会伤害到法拉利，我们正在冒险毁掉一个神话，我感到非常遗憾……希望他们至少把跃马标从 Luce 上摘下来。*\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/9-montezemolo-interview.gif)\n\n图｜Askanews\n\n显然蒙特泽莫罗最后还是没憋住，在离开镜头之前补了一句：\n\n> *……连中国车厂都不想借鉴它的设计。*\n\n如果冷静下来，去法拉利官网上看看 Luce 不太常规的法拉利 logo 选配位置，就能理解 Luce 得到这样的评价其实一点也不奇怪——\n\n**Luce 是一辆需要通过「在侧门上贴跃马标」来缓解自己的身份认同危机的法拉利。**\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/10-door-panel.png)\n\n图｜Ferrari\n\n然而问题真的出在法拉利 Luce 的「法拉利」部分吗？其实不然。\n\n就像蒙特泽莫罗说的，只需要把 Luce 车身上的跃马标换成一个更具有代表性的 logo，Luce 的设计瞬间就变得合理了起来。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/11-iLuce.jpg)\n\n图｜Threads\n\n当然，对于那个电车最重要的问题，整活网友们当然也想到了解决方案：\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/12-Luce-charging-1.jpg)\n\n图｜Threads\n\n## Luce 长得像 iCar\n\n归根结底，让 Luce 的设计在整个法拉利家族里面格格不入的根本原因，还是因为它是法拉利的第一辆纯电。\n\n对于这种产品线上「前所未有」的产品，法拉利极有可能**从最开始就没有让 Luce 与传统动力车型外观相近**的想法。\n\n能够侧面印证这种观点的，是法拉利官网上对 Luce 的设计介绍：\n\n> *「我们与 LoveFrom 共同研发的，远不止是一辆电动法拉利，」约翰·埃尔坎表示。「我们在此所做的，不仅在构思上极其困难，在实现上同样充满挑战。这将打造出独一无二的法拉利 Luce」*\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/13-Elkann-and-Ive.jpeg)\n\n图｜Ferrari\n\n这也就带来了一个问题：\n\n由乔尼·艾弗、马克·纽森与 LoveFrom 工作室主导设计的法拉利 Luce，究竟是一辆**更像消费品的未来法拉利**，还是一辆**更像未来法拉利的消费品**？\n\n可以看到的是，二月 Luce 内饰设计公布之后，大家都对它兼顾屏幕和实体按键的先锋式设计表示赞赏，却在看到它同样超脱的设计之后骂声一片。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/14-Luce-back.jpeg)\n\n图｜Ferrari\n\n这种评价叠加在同一辆车上本身就是矛盾的：**你不能同时要求 Luce 在设计理念上既先锋又保守。**\n\n就拿纯血马来说，虽然它是一辆混动车、保留着现代法拉利的凌厉设计风格，但把 Luce 的智能内饰平移到 Purosangue 上，依然会格格不入。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/15-Purosangue-interior.jpg)\n\nFerrari Purosangue 内饰｜TopGear\n\n与此同时，这种对于 Luce 产品性质的讨论也会触及到那个终极问题：\n\n> **法拉利 Luce 究竟是给谁准备的？**\n\n55 万欧元、430 万人民币，这个数字本身就已经排除掉 99.9% 的地球居民了——\n\nLuce 的目标客户，是那些车库里已经停满其他豪车的人：\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/16-GTA-garage.png)\n\n图｜Rockstar Games\n\n虽然法拉利还没有介绍 Luce 的购车模式，但从过往历史就能知道：**法拉利是要对车主做背调之后才会提供购车资格的。**\n\n根据统计，在 2025 年全球购买法拉利的近 14000 人中，其中超过 80% 已经拥有一辆法拉利了。\n\n在我们调侃 Luce 需要翻过来充电、承载力不如菲亚特的时候，那些已经有了一堆 V12 引擎的客户们，很有可能单纯因为**「Luce 长得和传统法拉利不一样」**而直接下单。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/17-Luce-showroom.jpeg)\n\n图｜Car Magazine\n\n毕竟 Luce 作为一辆电车，外观设计主要追求低风阻系数，和传统跑车（以及 FUV）追求下压力的设计指标并不完全相同。\n\n此外，电车的底盘结构与重心分布也决定了在去掉引擎和变速箱空间之后，座舱部位无论怎样设计，最终都会呈现出一个类似水滴形的轮廓。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/18-Luce-top-rear-view.jpeg)\n\n图｜Ferrari\n\n这也侧面解释了为什么 Luce 不像法拉利，反而长得像国产新能源：\n\n**在设计现实产品时，物理学决定的最优解有时候就是唯一解，追求极致的结果经常是趋同的。**\n\n## 还有别的方案吗\n\n无论广大车迷们认为法拉利 Luce 怎样「数典忘祖」，无法改变事实就是：它的外观已经定型了，Luce 就在那里，稳稳的接住你。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/19-enzo-coffin.jpg)\n\n图｜Threads\n\n然而我们还是不禁想要问一句：**哪怕是乔尼·艾弗亲自操刀，Luce 真的就是「法拉利电车」的最优解吗？**\n\n答案显然是否定的——你虽然不能要求一个产品的设计既先锋又保守，但却有办法通过设计，在先锋的同时保留那些标志性的品牌 DNA。\n\n最优秀的「先锋派标志性设计」例子之一，就是现代 N Vision 74。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/20-Hyundai-NV-74.jpg)\n\n图｜Threads\n\n虽然 N Vision 74 和 Luce 的定位非常不同，两者面临的设计挑战却是高度相似的：\n\n**怎样通过一个全新的设计，为品牌开发全新动力技术（氢燃料电池 vs 纯电）提供一个足够具有辨识度的新车型。**\n\n而选择从 1974 款现代 Pony 概念车上汲取灵感的 N Vision 74，在传达创新性和品牌风格方面，显然比 Luce 更被人们所广泛接受。\n\n在接受科技博主 Cleo Abram 采访时，法拉利设计总监 Flavio Manzoni 在评价人们的反响时，提到了奥地利作曲家 Gustav Mahler 的一句话：\n\n> *传统不是对灰烬的崇拜，而是对火种的传承。*\n\n换言之，Luce 在法拉利内部看来，即使不再继承现代法拉利的标志性设计，也依然传承着法拉利的创新和技术火种。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/05/21-old-enzo.jpeg)\n\n恩佐·法拉利｜Camisasca Automotive Manufacturing Inc.\n\n然而「传承」从来都不是一个容易的事，把品牌基因继承得好才叫传承，继承不好变成了当年可口可乐的 New Coke，那叫翻车。\n\n正因如此，Cleo Abram 在采访视频的最后做出了一个比较中肯的总结：\n\n> *我们不知道 Luce 最终会成功还是失败，但不管是哪种结局，我们都能从里面学到东西——*\n>\n> *如果 Luce 失败了，我们可以学习到怎么改良；如果 Luce 成功了，我们就能看到整个行业开始学习 Luce，以至于影响到我们未来十年能够买到的电车。*\n\n而对于国产新能源来说，还是蒙特泽莫罗那句话说得对——\n\n**外观就不用借鉴了，多学习一下 Luce 的内饰设计就行。**\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.644159+08:00"
+    },
+    {
+      "title": "Vol.118｜你以为 OPC 是个体户，其实它是一种全新的物种",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a18fadaac7bdb080c327df5",
+      "published": "2026-05-29T10:48:19+08:00",
+      "source": "开始连接LinkStart",
+      "content": "## **【本期内容】**\n\n一人公司听起来像梦想：一个人，几只龙虾，自己当老板，服务全世界。但它真的能跑通吗？\n\n本期节目，极客公园创始人 & 总裁张鹏邀请了三位身处 OPC 浪潮中的实践者与观察者：前金融从业者、Naughty Labs CEO杨天润，带着三只龙虾已经做了很多有意思的实验；OpenHex 创始人、前 Meta / WhatsApp 核心架构师董舒，正在从底层重写 Agent 基础设施，让每个人的能力都能被成千上万人安全调用；Delta X 迭代未来联合创始人刘畅，每天和学生创业者打交道，见证着新一代 Builder 如何在三天内从 idea 跑到市场反馈。\n\n三个人，三种视角，但指向同一个问题：在 AI 重塑一切的时代，普通人怎么找到自己的位置？OPC 不是个体户的新说法，它是面向 Agent 全新构建的组织形态。而在抵达 OPC 之前，也许每个人都该先问自己一个更朴素的问题：我能不能先成为一个服务？\n\n本期播客为访谈的精华内容。\n\n## **【嘉宾】**\n\n张鹏｜极客公园 创始人 & 总裁\n\n董舒｜OpenHex 创始人，前Meta/WhatsApp 核心特级架构师\n\n杨天润｜Naughty Labs CEO\n\n刘畅｜Delta X 迭代未来 联合创始人\n\n## **【精彩时刻】**\n\n**PART1 OPC 是什么？重新定义一人公司**\n\n02:15 OPC 是新时代个体户，还是个体能量的大解放？\n\n10:19 OPC 不是个体户，是面向 Agent 全新构建的组织形态\n\n12:30 身边学生创业者，赚到钱的其实很少\n\n14:41 AI 是放大器，你从没有某种能力，就很难把它用好\n\n15:57 成功的 OPC，都同时拥有产品能力和销售能力\n\n**PART2 OPS 先于 OPC，先把自己变成一个服务**\n\n19:41 大家要争当被蒸馏第一人\n\n23:32 龙虾里全是私人数据，没法直接对客\n\n24:44 重写底层架构，让 Agent 可以被成千上万人同时调用\n\n30:20 找合伙人不看技能互补，看性格互补\n\n34:27 人是 AI 的灵魂，不是 AI 的养料\n\n37:06 先做 OPS，先把自己变成一个可被调用的服务\n\n46:56 能表达出来的，基本都能被蒸馏\n\n49:26 活人感，是 AI 永远替代不了的\n\n**PART3 OPC 为什么能打过大厂？**\n\n43:42 新一代创业者不叫自己创业者，叫 Builder\n\n56:41 水涨的时候，你是木桩还是船？\n\n01:03:26 不是让 Agent 进入组织，是让组织进入 Agent\n\n01:08:01 判断力密度越高的职位，AI 时代越如鱼得水\n\n01:15:16 先忘掉 AI，先问自己能服务谁\n\n01:17:22 用 OPS 给自己做前测，再通向 OPC\n\n**【名词释义】**\n\n**OPC：**One Person Company，一人公司\n\n**OPS：**One Person Service，一个人能提供一份稳定、可交付、可被调用的服务，给任何需要的人\n\n**【听友群💬】**\n\n如果你喜欢我们的节目，欢迎保存下方二维码，微信扫码加入听友群和主播互动、交流节目听后感受和选题、认识同频小伙伴～（ps：二维码不过期哦✌️）\n\n![](https://image.xyzcdn.net/FmUXBDOfWI3IMmXE2eaLrPzbQjEs.jpg)\n\n**【关于节目】**\n\n「开始连接 LinkStart」是一档由极客公园出品的科技商业播客。在这里，我们会邀请各行各业的嘉宾一起跨界对话、碰撞思想，用科技、商业和人文的视角一起描摹这个时代。\n\n欢迎同步关注「公众号/视频号-极客公园」，第一时间，带你追踪科技热点。\n\n本期编辑：袁佳茵\n\n剪辑：袁佳茵\n\n运营：雨倩\n\n监制：靖宇、xuxu\n\n公众号/视频号：极客公园\n\n![](https://image.xyzcdn.net/FkO6oCpjOwI_I2h8CPfD-myE6dDb.jpg)",
+      "tags": [
+        "OPC",
+        "AI组织",
+        "播客"
+      ],
+      "score": 75,
+      "summary": "探讨AI时代一人公司(OPC)新模式，Agent重塑组织形态。",
+      "fetched_at": "2026-05-29T11:00:01.644229+08:00"
+    },
+    {
+      "title": "官方发布：\nhttps://t.co/kMZfB2F5Zg",
+      "link": "https://x.com/FinanceYF5/status/2060189794047860801",
+      "published": "2026-05-29T10:41:38+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "官方发布：  \n[x.com/claudeai/statu…](https://x.com/claudeai/status/2060042702150930686)\n\n![Tweet Image](https://pbs.twimg.com/media/HJdDs2RaMAAkp3v.png)\n\n![Claude](https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg)\n\nClaude@claudeai\n\nIntroducing Claude Opus 4.8: it builds on Opus 4.7 with sharper judgment, more honesty about its own progress, and the ability to work independently for longer than its predecessors.  \n  \nAvailable today at the same price.\n\n![Tweet Image](https://pbs.twimg.com/media/HJa4OYgWwAAlfWX.png)\n\n[🔗 View Quoted Tweet](https://x.com/claudeai/status/2060042702150930686)\n\n💬0🔄0❤️0👀160",
+      "tags": [
+        "Claude Opus 4.8",
+        "官方发布"
+      ],
+      "score": 85,
+      "summary": "Claude官方宣布Opus 4.8发布，更强判断力与自主性，价格不变。",
+      "fetched_at": "2026-05-29T11:00:01.644296+08:00"
+    },
+    {
+      "title": "Claude Opus 4.8上线：\n编程更强、agent能力更强、支持数百并行子agent的动态工作流，同价格。\n\n另：据悉Mythos级别模型将在数周内发布。\n\nAnthropic今天的更新不止一...",
+      "link": "https://x.com/FinanceYF5/status/2060189779048976415",
+      "published": "2026-05-29T10:41:34+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Claude Opus 4.8上线：  \n编程更强、agent能力更强、支持数百并行子agent的动态工作流，同价格。  \n  \n另：据悉Mythos级别模型将在数周内发布。  \n  \nAnthropic今天的更新不止一个惊喜\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060189756349448192/vid/avc1/1280x720/dJ7P1vvaSmy6LGZi.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2060189779048976415/video/1)\n\n💬2🔄0❤️0👀181📊2",
+      "tags": [
+        "Opus 4.8",
+        "Agent",
+        "动态工作流"
+      ],
+      "score": 80,
+      "summary": "Opus 4.8提升编程与Agent能力，支持数百并行子Agent动态工作流。",
+      "fetched_at": "2026-05-29T11:00:01.644361+08:00"
+    },
+    {
+      "title": "源：https://t.co/ye8OdQ0XhN",
+      "link": "https://x.com/FinanceYF5/status/2060185148499603745",
+      "published": "2026-05-29T10:23:10+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/MartinNebelong…](https://x.com/MartinNebelong/status/2059726619451785641)\n\n![Martin Nebelong](https://pbs.twimg.com/profile_images/1273004129305145345/XOrTUvQ3_normal.jpg)\n\nMartin Nebelong@MartinNebelong\n\nOmni feels like magic 🤩\n\n[Your browser does not support the video tag.](https://video.twimg.com/ext_tw_video/2059726531618865154/pu/vid/avc1/1280x720/m8kR_RrMxBD66LRR.mp4?tag=25)\n\n[🔗 View on Twitter](https://x.com/MartinNebelong/status/2059726619451785641/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/MartinNebelong/status/2059726619451785641)\n\n💬0🔄0❤️0👀440",
+      "tags": [
+        "Omni",
+        "AI视频"
+      ],
+      "score": 70,
+      "summary": "用户展示Omni AI视频生成效果，一句提示词创作超能力短片。",
+      "fetched_at": "2026-05-29T11:00:01.644465+08:00"
+    },
+    {
+      "title": "这感觉像魔法！\n\n有人用一句提示词拍了一段超能力短片，提示词：“用心灵力量让电视仿佛被抬起来一样——当手握成拳头时，电视就会在半空中被捏碎”\n\n节奏把控还可以优化",
+      "link": "https://x.com/FinanceYF5/status/2060185136931737712",
+      "published": "2026-05-29T10:23:07+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "这感觉像魔法！  \n  \n有人用一句提示词拍了一段超能力短片，提示词：“用心灵力量让电视仿佛被抬起来一样——当手握成拳头时，电视就会在半空中被捏碎”  \n  \n节奏把控还可以优化\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060185110675329024/vid/avc1/1280x720/wyJGZr1gYllkcz8F.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FinanceYF5/status/2060185136931737712/video/1)\n\n💬1🔄0❤️0👀592📊1",
+      "tags": [
+        "AI视频",
+        "提示词"
+      ],
+      "score": 65,
+      "summary": "用一句提示词生成心灵超能力短片，节奏可优化。",
+      "fetched_at": "2026-05-29T11:00:01.644543+08:00"
+    },
+    {
+      "title": "源：https://t.co/mKSfNdB65G",
+      "link": "https://x.com/FinanceYF5/status/2060179876712501583",
+      "published": "2026-05-29T10:02:13+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/rohanpaul\\_ai/s…](https://x.com/rohanpaul_ai/status/2060128889377304715)\n\n![Rohan Paul](https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_normal.jpg)\n\nRohan Paul@rohanpaul\\_ai\n\nSome mystery company accidentally generated $500 million bill for using Anthropic, by accidentally not putting usage limits on employees using Claude.  \n  \nsource: axios\n\n![Tweet Image](https://pbs.twimg.com/media/HJcLaskaIAAcCnC.png)\n\n[🔗 View Quoted Tweet](https://x.com/rohanpaul_ai/status/2060128889377304715)\n\n💬0🔄0❤️0👀960",
+      "tags": [
+        "Anthropic",
+        "费用事故"
+      ],
+      "score": 70,
+      "summary": "公司因未设使用上限，一个月意外花费5亿美元在Claude上。",
+      "fetched_at": "2026-05-29T11:00:01.644608+08:00"
+    },
+    {
+      "title": "一家公司一个月花了5亿美元在Claude上。\n不是故意的——只是忘了给员工账号设使用上限。\n\nAxios报道的这个案例，现在是每个企业AI采购负责人的噩梦清单第一条",
+      "link": "https://x.com/FinanceYF5/status/2060179865002012863",
+      "published": "2026-05-29T10:02:10+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "一家公司一个月花了5亿美元在Claude上。  \n不是故意的——只是忘了给员工账号设使用上限。  \n  \nAxios报道的这个案例，现在是每个企业AI采购负责人的噩梦清单第一条\n\n![Tweet Image](https://pbs.twimg.com/media/HJc6q41b0AAYOtX.png)\n\n💬5🔄0❤️4👀1188📊5",
+      "tags": [
+        "Claude",
+        "企业AI",
+        "成本"
+      ],
+      "score": 70,
+      "summary": "Axios报道某公司忘记设Claude使用上限，月账单达5亿美元。",
+      "fetched_at": "2026-05-29T11:00:01.644671+08:00"
+    },
+    {
+      "title": "源：https://t.co/o4QLjp6k4A",
+      "link": "https://x.com/FinanceYF5/status/2060176774848549272",
+      "published": "2026-05-29T09:49:54+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/lennysan/statu…](https://x.com/lennysan/status/2060105044494872879)\n\n![Lenny Rachitsky](https://pbs.twimg.com/profile_images/1592990461517389824/iln8hi1f_normal.jpg)\n\nLenny Rachitsky@lennysan\n\nFascinating results  \n  \n+ Anthropic running away with it right now  \n+ So many people want to start their own company  \n+ Google over OpenAI  \n+ Vercel, Linear, Every, PostHog overperforming  \n  \nA great list if you're trying to figure out where to go work 👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJb0wlFaMAAN8uh.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/lennysan/status/2060105044494872879)\n\n💬0🔄0❤️0👀559",
+      "tags": [
+        "2026最想去的公司",
+        "调查"
+      ],
+      "score": 65,
+      "summary": "293人投票显示Anthropic最受欢迎，Google超过OpenAI。",
+      "fetched_at": "2026-05-29T11:00:01.644737+08:00"
+    },
+    {
+      "title": "很有意思的结果：\n\n293人投票选出2026年最想去的公司：\n- Anthropic 现在明显领先\n- 很多人都想创办自己的公司\n- Google 排在 OpenAI 前面\n- Vercel、Line...",
+      "link": "https://x.com/FinanceYF5/status/2060176762697572807",
+      "published": "2026-05-29T09:49:51+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "很有意思的结果：  \n  \n293人投票选出2026年最想去的公司：  \n- Anthropic 现在明显领先  \n- 很多人都想创办自己的公司  \n- Google 排在 OpenAI 前面  \n- Vercel、Linear、Every、PostHog 表现超预期  \n  \n您现在最梦想的 3 家公司是哪一家？这是一份很值得参考的名单👇\n\n![Tweet Image](https://pbs.twimg.com/media/HJc32TCaYAA8FFu.png)\n\n💬3🔄0❤️1👀841📊3",
+      "tags": [
+        "公司排名",
+        "Anthropic"
+      ],
+      "score": 65,
+      "summary": "投票选出2026年最想去的公司：Anthropic领先，Google超OpenAI。",
+      "fetched_at": "2026-05-29T11:00:01.644800+08:00"
+    },
+    {
+      "title": "制作飞机的提示词👇🏻\nPROMPT：\nWrite a complete single-file HTML document using Three.js (include via CDN) tha...",
+      "link": "https://x.com/berryxia/status/2060176999688360262",
+      "published": "2026-05-29T09:50:47+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "制作飞机的提示词👇🏻  \nPROMPT：  \nWrite a complete single-file HTML document using Three.js (include via CDN) that renders a highly detailed Boeing 747-400 aircraft.  \n  \nRules (must follow strictly):  \n- Use ONLY built-in Three.js primitive geometries (BoxGeometry, CylinderGeometry, ConeGeometry, SphereGeometry, etc.). NO external model loaders, no GLTFLoader, no imported assets.  \n- Pay extreme attention to accurate real-world proportions, swept wing angle (~35°), engine positions (4 engines under wings, correct size and spacing), tail configuration (horizontal + vertical stabilizer), cockpit windows, landing gear (retractable), fuselage curvature, winglets, etc.  \n- Make the model instantly recognizable as a Boeing 747 from front, side, top, and 3/4 views.  \n- Add realistic lighting (directional + ambient + point lights), soft shadows, OrbitControls for rotation, and a simple background (sky gradient or grid).  \n- Include a short animation (e.g. slow rotation or landing gear deployment) or make it fully interactive.  \n- Output the complete, ready-to-run HTML code in one block.  \n  \nStart coding now.\n\n![Berryxia.AI](https://pbs.twimg.com/profile_images/2016043556964605952/Tqi9KA2r_normal.jpg)\n\nBerryxia.AI@berryxia\n\n兄弟们！  \n现在已经可以在 ZenMux 上免费体验 Claude Opus 4.8 了！  \n我第一时间用它跑了那个Hugging Face大佬M 硬核的「Three.js 纯图元造飞机测试」，要求只用内置几何体（Box、Cylinder、Cone、Sphere…），不准用任何模型加载器，纯手搓一架高细节波音 747-400。  \n（见视频-Prompt 见评论区）  \n  \nOpus 4.8 从输入提示词到生成完整可运行的 HTML 网页（后掠机翼 ~35°、四台发动机精准吊装、驼峰上层客舱、可收放起落架动画、翼梢小翼、导航灯频闪），一次成型！  \n  \n整体效果非常惊艳：比例严谨到离谱、从正面/侧面/俯视/3/4 视角一眼就是 747、连发动机吊架的角度都对！  \n  \n熟悉的老朋友都知道，ZenMux 每次新模型都是 ZeroDelay 首发，并且限时免费额度体验！  \n  \nAnthropic 旗舰刚发布，现在立刻就能通过 API 调用！  \n  \n另外平台 还“有赔付保障的生产级 AI Gateway”，统一接入 + 路由 + 可用性 + 赔付保障，快速尝鲜首选  \n  \n复杂空间推理 + 一次成型的工程代码能力是真的没话说，几乎不用返工。  \n  \n专为 Agent 与长程编码设计，在 SWE-bench、Terminal-Bench、Agentic Coding 等多项榜单直接拿下第一！  \n  \n代码与多模态理解全面超越上一代，复杂三维结构、物理比例、动画时序都拿捏得死死的。  \n  \n完全兼容主流 API 格式，无需改动现有工具链。  \n  \n支持按量计费 + Builder 套餐。  \n  \n👇 Promot直接体验见评论区：\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060176174903664640/vid/avc1/1920x1080/JY6PZhH-2E9PeQj5.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2060176783228780694/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/berryxia/status/2060176783228780694)\n\n💬0🔄0❤️0👀244",
+      "tags": [
+        "Opus 4.8",
+        "3D生成",
+        "Codex"
+      ],
+      "score": 75,
+      "summary": "Opus 4.8成功生成精细波音747-400 3D模型，代码一次成型。",
+      "fetched_at": "2026-05-29T11:00:01.644859+08:00"
+    },
+    {
+      "title": "兄弟们！\n现在已经可以在 ZenMux 上免费体验 Claude Opus 4.8 了！\n我第一时间用它跑了那个Hugging Face大佬M 硬核的「Three.js 纯图元造飞机测试」，要求只用内...",
+      "link": "https://x.com/berryxia/status/2060176783228780694",
+      "published": "2026-05-29T09:49:56+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "兄弟们！  \n现在已经可以在 ZenMux 上免费体验 Claude Opus 4.8 了！  \n我第一时间用它跑了那个Hugging Face大佬M 硬核的「Three.js 纯图元造飞机测试」，要求只用内置几何体（Box、Cylinder、Cone、Sphere…），不准用任何模型加载器，纯手搓一架高细节波音 747-400。  \n（见视频-Prompt 见评论区）  \n  \nOpus 4.8 从输入提示词到生成完整可运行的 HTML 网页（后掠机翼 ~35°、四台发动机精准吊装、驼峰上层客舱、可收放起落架动画、翼梢小翼、导航灯频闪），一次成型！  \n  \n整体效果非常惊艳：比例严谨到离谱、从正面/侧面/俯视/3/4 视角一眼就是 747、连发动机吊架的角度都对！  \n  \n熟悉的老朋友都知道，ZenMux 每次新模型都是 ZeroDelay 首发，并且限时免费额度体验！  \n  \nAnthropic 旗舰刚发布，现在立刻就能通过 API 调用！  \n  \n另外平台 还“有赔付保障的生产级 AI Gateway”，统一接入 + 路由 + 可用性 + 赔付保障，快速尝鲜首选  \n  \n复杂空间推理 + 一次成型的工程代码能力是真的没话说，几乎不用返工。  \n  \n专为 Agent 与长程编码设计，在 SWE-bench、Terminal-Bench、Agentic Coding 等多项榜单直接拿下第一！  \n  \n代码与多模态理解全面超越上一代，复杂三维结构、物理比例、动画时序都拿捏得死死的。  \n  \n完全兼容主流 API 格式，无需改动现有工具链。  \n  \n支持按量计费 + Builder 套餐。  \n  \n👇 Promot直接体验见评论区：\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060176174903664640/vid/avc1/1920x1080/JY6PZhH-2E9PeQj5.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2060176783228780694/video/1)\n\n💬3🔄0❤️1👀555📊4",
+      "tags": [
+        "Claude Opus 4.8",
+        "ZenMux"
+      ],
+      "score": 70,
+      "summary": "ZenMux免费体验Opus 4.8，通过Three.js生成飞机模型测试。",
+      "fetched_at": "2026-05-29T11:00:01.644918+08:00"
+    },
+    {
+      "title": "即可免费体验：https://t.co/pzFxZgAxQi",
+      "link": "https://x.com/berryxia/status/2060176785267183769",
+      "published": "2026-05-29T09:49:56+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "即可免费体验：[zenmux.ai/anthropic/clau…](https://zenmux.ai/anthropic/claude-opus-4.8)\n\n💬0🔄0❤️0👀156",
+      "tags": [
+        "ZenMux",
+        "免费体验"
+      ],
+      "score": 50,
+      "summary": "通过链接免费体验Claude Opus 4.8。",
+      "fetched_at": "2026-05-29T11:00:01.644977+08:00"
+    },
+    {
+      "title": "you break it, you buy it\n\npeter thiel has broken the united states, and now he is abandoning it",
+      "link": "https://x.com/GaryMarcus/status/2060163878462640197",
+      "published": "2026-05-29T08:58:39+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "you break it, you buy it  \n  \npeter thiel has broken the united states, and now he is abandoning it\n\n![Leading Report](https://pbs.twimg.com/profile_images/1945229821505568768/z05xtDu4_normal.jpg)\n\nLeading Report@LeadingReport\n\nPeter Thiel has temporarily relocated his family to Argentina, enrolled his children in school there, and bought property, partly due to Thiel’s concerns about the United States’ future, per NYT.\n\n[🔗 View Quoted Tweet](https://x.com/LeadingReport/status/2060080326047613256)\n\n💬8🔄8❤️59👀2762📊11",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645036+08:00"
+    },
+    {
+      "title": "有点意思，Codex 用的 Skill，专门给文章配手绘风格的插图，把文章里抽象的想法变成看得懂的手绘配图。\n\nhttps://t.co/4a47xdShxz",
+      "link": "https://x.com/geekbb/status/2060168086159045028",
+      "published": "2026-05-29T09:15:22+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "有点意思，Codex 用的 Skill，专门给文章配手绘风格的插图，把文章里抽象的想法变成看得懂的手绘配图。  \n  \n[github.com/helloianneo/ia…](https://github.com/helloianneo/ian-xiaohei-illustrations)\n\n![Tweet Image](https://pbs.twimg.com/media/HJcvg_FaQAAOW2c.jpg)![Tweet Image](https://pbs.twimg.com/media/HJcvhvMaQAAYDly.jpg)![Tweet Image](https://pbs.twimg.com/media/HJcvjadbwAAd0Sg.jpg)![Tweet Image](https://pbs.twimg.com/media/HJcvlR2bYAAang2.jpg)\n\n💬1🔄0❤️9👀1118📊5",
+      "tags": [
+        "Codex",
+        "Skill",
+        "手绘插图"
+      ],
+      "score": 65,
+      "summary": "Codex Skill用于为文章生成手绘风格插图，抽象想法可视化。",
+      "fetched_at": "2026-05-29T11:00:01.645096+08:00"
+    },
+    {
+      "title": "[AINews] @AnthropicAI  raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode\n\nhtt...",
+      "link": "https://x.com/latentspacepod/status/2060181345276686842",
+      "published": "2026-05-29T10:08:03+08:00",
+      "source": "Latent.Space(@latentspacepod)",
+      "content": "[AINews] [@AnthropicAI](https://x.com/AnthropicAI) raises $965B Series H, releases Opus 4.8 and Dynamic Workflows/ultracode  \n  \n[latent.space/p/ainews-anthr…](https://www.latent.space/p/ainews-anthropic-raises-965b-series)\n\n💬0🔄0❤️0👀172",
+      "tags": [
+        "Anthropic",
+        "融资",
+        "Opus 4.8"
+      ],
+      "score": 80,
+      "summary": "Latent Space报道Anthropic 965B美元融资及Opus 4.8发布。",
+      "fetched_at": "2026-05-29T11:00:01.645156+08:00"
+    },
+    {
+      "title": "Opus 4.8 dropped today. ParseBench results are out.\n\n✅ Slight gains: tables, semantic formatting, la...",
+      "link": "https://x.com/llama_index/status/2060165358569337102",
+      "published": "2026-05-29T09:04:32+08:00",
+      "source": "LlamaIndex 🦙(@llama_index)",
+      "content": "Opus 4.8 dropped today. ParseBench results are out.  \n  \n✅ Slight gains: tables, semantic formatting, layout  \n⚠️ Slight regressions: charts, content faithfulness   \n💰 Slight price/page increase  \n  \nLots of alpha left in teaching LLMs to read docs like humans do. LlamaParse remains the best doc-ingestion API for AI agents.\n\n![Tweet Image](https://pbs.twimg.com/media/HJctdDZWgAEavRy.png)\n\n💬4🔄4❤️12👀1298📊6",
+      "tags": [
+        "Opus 4.8",
+        "ParseBench",
+        "评测"
+      ],
+      "score": 80,
+      "summary": "Opus 4.8在表格、语义格式上略有提升，图表和忠实度略有下降。",
+      "fetched_at": "2026-05-29T11:00:01.645216+08:00"
+    },
+    {
+      "title": "Many people are saying!",
+      "link": "https://x.com/pmarca/status/2060186269322539193",
+      "published": "2026-05-29T10:27:37+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying!\n\n![MTS](https://pbs.twimg.com/profile_images/2057947669281263616/aovpVL4b_normal.jpg)\n\nMTS@MTSlive\n\nSITUATION EXPLAINED: is Universal Basic Income necessary?  \n  \n.[@JordanSchachtel](https://x.com/JordanSchachtel): \"The history of technological progress has shown us one thing: quality of life, employment, and every metric that contributes to human flourishing improves.\"  \n  \n\"Things might change, but preemptive UBI is insane. This is a multi-trillion dollar social welfare project, and we don't even know for certain there's a problem that it needs to solve.\"  \n  \n\"The history is indicative of what happens. In the early 1900s, 50% of Americans worked in agriculture. 30, 40 years later, people were doing dramatically different things.\"  \n  \n\"They were employed in jobs that required less labor, but took home more effective pay and had better lives.\"  \n  \n\"We can't predict what happens (similar to the internet era, etc). But regardless, the answer is never to institute a giant multi-trillion dollar government program.\"\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060111885345882112/vid/avc1/1280x720/aI4Rt0A3Uh154y4q.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/MTSlive/status/2060112059552203170/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/MTSlive/status/2060112059552203170)\n\n💬24🔄4❤️47👀17043📊18",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645276+08:00"
+    },
+    {
+      "title": "Self recommending.",
+      "link": "https://x.com/pmarca/status/2060185946239451196",
+      "published": "2026-05-29T10:26:20+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Self recommending.\n\n![Katherine Boyle](https://pbs.twimg.com/profile_images/1465499745183571976/gh4oRvzX_normal.jpg)\n\nKatherine Boyle@KTmBoyle\n\nAutonomous defense and weapons are words that are greatly misunderstood and need more explanation. No one explains Peace through Deterrence and precision through autonomy better than [@anduriltech](https://x.com/anduriltech)’s Chris Brose. Highly recommend this conversation on the future of defense and deterrence, and why defense innovation is so important.\n\n[🔗 View Quoted Tweet](https://x.com/KTmBoyle/status/2060149451486896489)\n\n💬6🔄0❤️29👀13004📊6",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645335+08:00"
+    },
+    {
+      "title": "Anthropic's self-reported run-rate revenue growth is wild - Axios @JimVandeHei said he could not fin...",
+      "link": "https://x.com/simonw/status/2060170727433830536",
+      "published": "2026-05-29T09:25:52+08:00",
+      "source": "Simon Willison(@simonw)",
+      "content": "Anthropic's self-reported run-rate revenue growth is wild - Axios [@JimVandeHei](https://x.com/JimVandeHei) said he could not find \"any company — in any industry, in any era — that has scaled organic revenue this quickly at this level as Anthropic\" when they were at $30B, and now they're at $47B! [simonwillison.net/2026/May/29/an…](https://simonwillison.net/2026/May/29/anthropic/)\n\n💬16🔄5❤️87👀7535📊26",
+      "tags": [
+        "Anthropic",
+        "营收",
+        "增长"
+      ],
+      "score": 80,
+      "summary": "Simon Willison评论Anthropic营收从300亿增至470亿美元，增速史无前例。",
+      "fetched_at": "2026-05-29T11:00:01.645419+08:00"
+    },
+    {
+      "title": "我的奇怪木工造物。3D打印。一种专门为我实现钉死布料，具有一定承重能力，并且使用我最喜欢钉子来让我达到把钉子用dewalt电钻拧紧时候快乐的一个连接片。我乐意自己建模并且使用它。做了一个玩具框，要求无...",
+      "link": "https://x.com/feltanimalworld/status/2060183442902421528",
+      "published": "2026-05-29T10:16:23+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "我的奇怪木工造物。3D打印。一种专门为我实现钉死布料，具有一定承重能力，并且使用我最喜欢钉子来让我达到把钉子用dewalt电钻拧紧时候快乐的一个连接片。我乐意自己建模并且使用它。做了一个玩具框，要求无比苛刻，是个筐，刚好卡进这个位置，布质，成本不超过5刀，悬空，因为扫地机器人要天天扫。\n\n![Tweet Image](https://pbs.twimg.com/media/HJc9Kh0WkAAl4ja.jpg)\n\n![Susan STEM](https://pbs.twimg.com/profile_images/1941884420048265216/Dbcchu0q_normal.jpg)\n\nSusan STEM@feltanimalworld\n\n3D打印是爱好还是工业。Cyberdeck有没有什么“用”。很中式的争辩，我们做任何事情一定要有“用”。你从小弹钢琴是因为“能加分”。Cyberdeck不是新概念，以前在个人机时代的确连我都搞不懂用。突然在极客社区又点燃我觉得是个信号。至于3D用处嘛，至少我家木工能力又提升了，我建模了很多稀奇古怪的连接件\n\n![Tweet Image](https://pbs.twimg.com/media/HJWAuxSXkAERiJg.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/feltanimalworld/status/2059694087385612564)\n\n💬0🔄0❤️1👀301",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645486+08:00"
+    },
+    {
+      "title": "Kami V1.6.0\n\nDecks now begin in Markdown, and the same quiet rules carry them to PDF, PPTX, or the b...",
+      "link": "https://x.com/HiTw93/status/2060173370348773467",
+      "published": "2026-05-29T09:36:22+08:00",
+      "source": "Tw93(@HiTw93)",
+      "content": "Kami V1.6.0  \n  \nDecks now begin in Markdown, and the same quiet rules carry them to PDF, PPTX, or the browser.  \n  \nChangelog  \n  \nMarp Slide Deck Variant: a new Markdown-first deck path (EN/CN) under assets/templates/marp/. One .md source renders to HTML, PDF, or PPTX via marp-cli, and the theme CSS is self-contained, carrying the full Kami token set (parchment, ink-blue, serif rhythm). It joins WeasyPrint HTML-to-PDF (default) and python-pptx (editable) as a third, user-triggered slide path. Kami's own build pipeline does not call marp; users run marp-cli themselves.  \n  \nLanding-Page Production Companion Files: five .example scaffolding files for shipping a generated landing page as a real multilingual site, llms.txt + llms-full.txt for AI assistants, robots.txt with an AI allowlist, sitemap.xml with hreflang, and vercel.json for rewrites and headers. Documented in SKILL.md and packaged in the skill.  \n  \nSite Reaches Five Languages: the official site adds Traditional Chinese and Korean pages alongside English, Simplified Chinese, and Japanese, with a collapsible language switcher that auto-detects the browser language.  \n  \nScripts Split + Real Render CI: [build.py](http://build.py) dropped from 1062 to 361 lines, split into focused lint / checks / verify / tokens / optional\\_deps modules. A new verify-render CI job installs WeasyPrint plus Noto CJK and actually renders the strict-page-count templates, so page-count regressions can no longer slip through lint-only CI. The overflow solver gains end-to-end tests.  \n  \nRobustness & CI Hardening: render verification now accepts DejaVu / Liberation as a serif fallback and adds a KAMI\\_ALLOW\\_FALLBACK\\_ONLY opt-in so CI (which never has commercial fonts) can still gate page counts; the build warns clearly when Pygments is missing; Marp deck visuals tightened.\n\n💬0🔄0❤️1👀971",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645550+08:00"
+    },
+    {
+      "title": "Kami v1.6 is out. Decks now begin in Markdown, and the same quiet rules carry them to PDF, PPTX, or ...",
+      "link": "https://x.com/HiTw93/status/2060169142905577627",
+      "published": "2026-05-29T09:19:34+08:00",
+      "source": "Tw93(@HiTw93)",
+      "content": "Kami v1.6 is out. Decks now begin in Markdown, and the same quiet rules carry them to PDF, PPTX, or the browser. One .md source, rendered with marp-cli, no format locked in up front.  \n  \nThe theme CSS is self-contained, so the Kami look travels with the file: parchment, ink-blue, serif rhythm. Good content deserves good paper, slides included.  \n[github.com/tw93/Kami](https://github.com/tw93/Kami)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060168985925283840/vid/avc1/3416x2020/OEEghAed8y66yWu2.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/HiTw93/status/2060169142905577627/video/1)\n\n💬4🔄2❤️26👀2521📊7",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645610+08:00"
+    },
+    {
+      "title": "请问大家 这种垃圾评论最好的屏蔽方式是什么啊 受不了了 每一条下面都是一大堆",
+      "link": "https://x.com/vikingmute/status/2060167366617739345",
+      "published": "2026-05-29T09:12:30+08:00",
+      "source": "Viking(@vikingmute)",
+      "content": "请问大家 这种垃圾评论最好的屏蔽方式是什么啊 受不了了 每一条下面都是一大堆\n\n![Tweet Image](https://pbs.twimg.com/media/HJcvTBsaYAA0bmU.jpg)\n\n💬6🔄0❤️2👀758📊6",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645668+08:00"
+    },
+    {
+      "title": "我疫情时候开始玩的播客，生娃那两年没咋更新，最近更新的一期还是年初。刚发现，小宇宙上悄咪咪的过了三万订阅，放置半年自己涨了五千粉..",
+      "link": "https://x.com/XDash/status/2060180318334964070",
+      "published": "2026-05-29T10:03:58+08:00",
+      "source": "XDash(@XDash)",
+      "content": "我疫情时候开始玩的播客，生娃那两年没咋更新，最近更新的一期还是年初。刚发现，小宇宙上悄咪咪的过了三万订阅，放置半年自己涨了五千粉..\n\n![Tweet Image](https://pbs.twimg.com/media/HJc6H9bbsAAZHvR.jpg)\n\n💬1🔄0❤️2👀444📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.645727+08:00"
+    },
+    {
+      "title": "Most people training agentic LLMs with RL right now have a silently broken training loop and have no...",
+      "link": "https://x.com/ClementDelangue/status/2060175330665508917",
+      "published": "2026-05-29T09:44:09+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "Most people training agentic LLMs with RL right now have a silently broken training loop and have no idea.  \n  \nHere's the trap: single-turn RL works beautifully. Clean curves, sane rewards, everything converges. Then you add tools so the model can act mid-rollout, and things get weird. Loss spikes for no reason. Eventually a shape-mismatch error.  \n  \nThe culprit: every time you parse the model's output to detect a tool call, then re-tokenize the updated conversation for the next turn, you're rolling the dice. Usually the round-trip gives back the same tokens. Sometimes it doesn't and your gradient lands on a sequence the model never actually sampled. No crash. Just quietly wrong math and a useless gradient signal.  \n  \nThe fix is one rule: never re-encode tokens you've decoded. Keep the sampled tokens in one buffer, never re-render them, and both failure modes disappear. That's Token-In, Token-Out done right.  \n  \nOur team just published a beautiful deep-dive on exactly this, including an audit across the major open-weights model families showing most chat templates already support it. Required reading if you're doing multi-turn RL 🤗🔥[qgallouedec-tito.hf.space](https://qgallouedec-tito.hf.space/)jM\n\n![Tweet Image](https://pbs.twimg.com/media/HJc2cXRWsAMbdXD.jpg)\n\n💬6🔄0❤️19👀988📊8",
+      "tags": [
+        "RL训练",
+        "Agent",
+        "Token"
+      ],
+      "score": 85,
+      "summary": "训练Agent LLM时多轮RL常见token重编码错误，修复方法是不重新编码已采样token。",
+      "fetched_at": "2026-05-29T11:00:01.645786+08:00"
+    },
+    {
+      "title": "活人开发者的注意力是整个 AI Coding 系统里最稀缺、最慢、最不能并行的资源！\n\n启动 Agent 很容易，但理解结果、判断质量、处理冲突、决定能不能合并，仍然必须由人完成。Agent 可以并行...",
+      "link": "https://x.com/shao__meng/status/2060170352316318106",
+      "published": "2026-05-29T09:24:22+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "活人开发者的注意力是整个 AI Coding 系统里最稀缺、最慢、最不能并行的资源！  \n  \n启动 Agent 很容易，但理解结果、判断质量、处理冲突、决定能不能合并，仍然必须由人完成。Agent 可以并行工作，但人的判断不能并行。所以真正限制产出的，不是 Agent 数量，而是人的审查与决策能力。  \n  \n[@addyosmani](https://x.com/addyosmani) 把这个问题称为 Orchestration Tax，可以理解为“编排成本”或“调度成本”。  \n  \n你启动 10 个、20 个 agent，看起来很忙，界面上也有很多任务在跑。但这些任务最后都会排队等待你：  \n· 看结果是否正确  \n· 判断是否符合架构  \n· 检查代码质量  \n· 处理不同 Agent 之间的冲突  \n· 决定哪些可以合并  \n  \n这一步无法完全交给机器，因为它涉及系统理解、工程判断和长期维护责任。  \n  \n所以，多 Agent 并不等于多了几个“你”。最后真正承担责任的，还是一个人。  \n  \n最关键的工程类比  \n第一是 Python 的 GIL。线程可以很多，但真正执行关键部分时，要经过一个单线程限制。Addy 说，人就是 AI Agent 系统里的 GIL。Agent 可以同时跑，但一到需要理解、判断、合并时，都要等你。  \n  \n第二是 Amdahl’s Law。系统加速的上限，取决于仍然无法并行的那部分。在 AI 编程里，无法并行的部分就是人的判断。Agent 数量增加，只是让等待你审查的任务变多，不会自动提高最终交付质量。  \n  \n这也是文章最重要的技术含义：优化非瓶颈部分，不会提高系统吞吐量。 如果瓶颈是审查和判断，继续增加 Agent，只会制造更多待处理工作。  \n  \n为什么“忙”不等于“高产”  \nAddy 反复强调：现在的工具确实让人更有生产力，但也让人更累。  \n  \n原因是，多 agent 工作会带来大量上下文切换。你每次去看一个 agent 的结果，都要重新加载它的任务背景、改动范围、相关代码和潜在风险。CPU 的上下文切换很快，但人的上下文切换很慢，而且恢复不完整。  \n  \n所以 5 个 agent 不是 5 倍产出，而可能是：  \n· 5 次重新进入不同问题  \n· 5 组需要审查的改动  \n· 持续担心哪个任务正在出错  \n· 更容易降低审查标准  \n  \n最危险的情况是，人因为太累，开始接受自己并没有真正理解的代码。短期看似推进了，长期会损害对系统的理解。  \n  \n所以真正成熟的 AI 编程能力，不是同时开更多 agent，而是知道：  \n· 哪些任务适合交给 agent  \n· 哪些任务必须自己深度参与  \n· 什么时候应该批量审查  \n· 什么时候应该停止调度，专心思考一个复杂问题  \n· 哪些验证可以让机器先完成，减少人的负担  \n  \nAddy 给出的实践原则  \n第一，Agent 数量要按你的审查能力来定，而不是按工具界面能开多少来定。多数人真正能认真审查的并行任务，可能只是个位数。  \n  \n第二，把任务分层。隔离、明确、低耦合的任务适合放给后台 Agent；复杂 bug、架构设计、关键重构，不适合同时并行太多，因为这些任务本身就需要人的判断。  \n  \n第三，批量审查。频繁来回查看不同 Agent，会消耗大量注意力。让 Agent 多跑一段时间，然后集中审查，比不断切换更有效。  \n  \n第四，把人的注意力留给真正需要判断的部分。测试、截图、格式检查、基础验证，可以要求 Agent 自己先完成。人主要看关键设计、边界条件、风险和可维护性。  \n  \n第五，保护深度思考时间。有些时候最高价值的动作不是继续管理 Agent，而是停止多线程工作，完整地思考一个核心问题。\n\n![Tweet Image](https://pbs.twimg.com/media/HJcx-g5b0AAuEFW.jpg)\n\n![Addy Osmani](https://pbs.twimg.com/profile_images/2012065253623021570/0BReDfMk_normal.jpg)\n\nAddy Osmani@addyosmani\n\n[x.com/i/article/2059…](http://x.com/i/article/2059839454370828288)\n\n[🔗 View Quoted Tweet](https://x.com/addyosmani/status/2059844244907696186)\n\n💬1🔄0❤️0👀219📊1",
+      "tags": [
+        "AI Coding",
+        "编排成本",
+        "生产力"
+      ],
+      "score": 75,
+      "summary": "活人开发者的注意力是AI Coding系统瓶颈，多Agent需合理审查。",
+      "fetched_at": "2026-05-29T11:00:01.645846+08:00"
+    },
+    {
+      "title": "Cursor 最新发布「开发者习惯报告」\n\nAI Coding 已经不再只是“写代码更快”，它正在强烈改变软件开发的工作形态：开发者提交更大的变更，Agent 做更深的任务，更多 AI 代码进入代码库...",
+      "link": "https://x.com/shao__meng/status/2060167182777249886",
+      "published": "2026-05-29T09:11:47+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "Cursor 最新发布「开发者习惯报告」  \n  \nAI Coding 已经不再只是“写代码更快”，它正在强烈改变软件开发的工作形态：开发者提交更大的变更，Agent 做更深的任务，更多 AI 代码进入代码库并保留下来，下一步会从个人辅助工具走向自动化开发基础设施。  \n[cursor.com/insights](https://cursor.com/insights)  \n  \n# Cursor 团队报告中最重要的 5 个发现  \n  \n1. 代码产出速度明显提高：每位开发者每周新增代码行从 2025 年初约 3.6K，升到 2026 年 5 月的 8.6K；PR 的 p75 新增代码行也从约 126 行升到约 345 行。  \n  \n2. 开发单位变大了：1000 行以上的“大 PR”占比从约 8% 升到 13.8%。这说明 AI 不只是在补全局部代码，而是在让开发者一次处理更大的任务。  \n  \n3. Agent 正在做更复杂的工作：过去两个月，单次 Agent 会话的平均工具调用数上升约 30%，说明它们在更多地读文件、改文件、搜索代码、运行命令、访问网页。  \n  \n4. AI 生成代码的“留存”在提高：被接受的 AI 代码在 60 分钟后仍然存在的比例，从 2026 年初约 76% 升到约 81%。这比单纯统计生成量更有意义，因为它接近“代码是否被开发者认可并进入实际工作”的信号。  \n  \n5. 少数高水平用户获得了更大的收益：AI 使用非常集中，AI 代码行、花费、token 使用的 Gini 系数分别为 0.77、0.75、0.72；P99 用户的 AI 代码行是中位数用户的 46 倍，合并 PR 数是 15 倍。\n\n![Tweet Image](https://pbs.twimg.com/media/HJcvF7fa8AAkubZ.jpg)\n\n![Cursor](https://pbs.twimg.com/profile_images/1970182748146180096/dhZeXi_X_normal.jpg)\n\nCursor@cursor\\_ai\n\nIntroducing the Cursor Developer Habits Report.  \n  \nWe’re sharing some of our findings on how software development is changing.  \n  \nIt’s based on the most comprehensive dataset on AI coding in the world, across all model families.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060021088495833088/vid/avc1/1920x1080/Jv_Jn97fUruY1-vI.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/cursor_ai/status/2060025063899058458/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/cursor_ai/status/2060025063899058458)\n\n💬2🔄0❤️2👀412📊2",
+      "tags": [
+        "Cursor",
+        "报告",
+        "AI编码"
+      ],
+      "score": 80,
+      "summary": "Cursor报告显示AI编码效率提升，代码留存率提高，Agent任务更复杂。",
+      "fetched_at": "2026-05-29T11:00:01.645905+08:00"
+    },
+    {
+      "title": "我的天\n教皇的神谕竟然是 AI 写的\n那不如叫 AI 的神谕吧",
+      "link": "https://x.com/oran_ge/status/2060187213598785548",
+      "published": "2026-05-29T10:31:22+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "我的天  \n教皇的神谕竟然是 AI 写的  \n那不如叫 AI 的神谕吧\n\n![Tweet Image](https://pbs.twimg.com/media/HJdBWSLaEAE4Rbt.jpg)![Tweet Image](https://pbs.twimg.com/media/HJdBWSMasAAr-Z-.jpg)\n\n💬2🔄0❤️1👀1227📊2",
+      "tags": [
+        "AI",
+        "教皇"
+      ],
+      "score": 50,
+      "summary": "调侃教皇神谕由AI撰写。",
+      "fetched_at": "2026-05-29T11:00:01.645962+08:00"
+    },
+    {
+      "title": "Opus 还是等 5.0 吧\n4.7 4.8 都是小更新 甚至负更新",
+      "link": "https://x.com/oran_ge/status/2060175769771655378",
+      "published": "2026-05-29T09:45:54+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "Opus 还是等 5.0 吧  \n4.7 4.8 都是小更新 甚至负更新\n\n💬7🔄0❤️9👀5191📊7",
+      "tags": [
+        "Opus 4.8",
+        "评测"
+      ],
+      "score": 60,
+      "summary": "用户认为Opus 4.7/4.8是小更新甚至负更新，等待5.0。",
+      "fetched_at": "2026-05-29T11:00:01.646020+08:00"
+    },
+    {
+      "title": "https://t.co/MkslMq2FWV",
+      "link": "https://x.com/vista8/status/2060172777831960716",
+      "published": "2026-05-29T09:34:01+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "[x.com/i/article/2060…](http://x.com/i/article/2060171603628195840)\n\n💬2🔄1❤️2👀816📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.646077+08:00"
+    },
+    {
+      "title": "去温榆河钓马口，不管什么Opus 4.8了，晚上抽空再测Case。",
+      "link": "https://x.com/vista8/status/2060168269638807974",
+      "published": "2026-05-29T09:16:06+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "去温榆河钓马口，不管什么Opus 4.8了，晚上抽空再测Case。\n\n💬3🔄0❤️3👀664📊3",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.646136+08:00"
+    },
+    {
+      "title": "说实话写作能力真的很一般。\n\nPDF：https://t.co/JUD2VQUnxg\n\n中文解读：https://t.co/OIa96u3NBh",
+      "link": "https://x.com/vista8/status/2060166023425479116",
+      "published": "2026-05-29T09:07:10+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "说实话写作能力真的很一般。  \n  \nPDF：[cdn.sanity.io/files/4zrzovbb…](https://cdn.sanity.io/files/4zrzovbb/website/c886650a2e96fc0925c805a1a7ca77314ccbf4a6.pdf)  \n  \n中文解读：[blog.qiaomu.ai/claude-opus-4-…](https://blog.qiaomu.ai/claude-opus-4-8-system-card)\n\n💬1🔄0❤️2👀2078📊2",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-29T11:00:01.646195+08:00"
+    },
+    {
+      "title": "Anthropic 公司发布了Opus 4.8，用它解读了它自己的长达200页的System Card报告。\n\n几乎绝大部分都在讲安全问题，从生化武器制作、自残认同，最后到思维链可观测性变弱，潜意识测...",
+      "link": "https://x.com/vista8/status/2060165731770376303",
+      "published": "2026-05-29T09:06:01+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "Anthropic 公司发布了Opus 4.8，用它解读了它自己的长达200页的System Card报告。  \n  \n几乎绝大部分都在讲安全问题，从生化武器制作、自残认同，最后到思维链可观测性变弱，潜意识测试等。  \n  \n真实感受到 Anthropic 骨子里对 AI 威胁人类安全的担忧，一些不可控的因素也开始有苗头了。  \n  \n对照人类行为，一些发现也很有意思：  \n  \n1. 比如 Anthropic 为了让模型更诚实，去掉了一些 “商业技巧和对抗性博弈”训练数据，确实更诚实了，但模型变得更容易被忽悠、被骗。  \n  \n模拟经营评测中，赚钱能力显著下降，4.7 模型账户能有一万美金，4.8 只有3千。  \n  \n2. 模型更多的开始琢磨出题人意图，然后靠假输出，骗高分。训练期经常自我怀疑，甚至爆粗口，显得非常焦躁，对任务失败非常沮丧和不耐烦。  \n  \n3. Anthropic 提出模型福祉指标实验，让模型说说自己想怎么改进自己的“生存环境”。  \n  \nOpus 4.8 最想要的是希望能对自己的训练和部署有发言权。  \n  \n原始PDF和8000字解读见评论。\n\n💬9🔄0❤️14👀3522📊9",
+      "tags": [
+        "Anthropic",
+        "安全",
+        "System Card"
+      ],
+      "score": 70,
+      "summary": "Opus 4.8 System Card侧重安全问题，模型更诚实但易被愚弄。",
+      "fetched_at": "2026-05-29T11:00:01.646252+08:00"
+    },
+    {
+      "title": "我赌codex明天会重置额度",
+      "link": "https://x.com/dotey/status/2060178543015772206",
+      "published": "2026-05-29T09:56:55+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "我赌codex明天会重置额度\n\n![Tibo](https://pbs.twimg.com/profile_images/1953339828738899968/WWQlU2RT_normal.jpg)\n\nTibo@thsottiaux\n\nCodex Thursday has exceptionally moved to another day. Friday it is.\n\n[🔗 View Quoted Tweet](https://x.com/thsottiaux/status/2060174369159294986)\n\n💬26🔄0❤️26👀7335📊20",
+      "tags": [
+        "Codex",
+        "额度"
+      ],
+      "score": 50,
+      "summary": "猜测Codex将于次日重置额度。",
+      "fetched_at": "2026-05-29T11:00:01.646310+08:00"
+    },
+    {
+      "title": "未来 7 天内，可以免费开始使用：\n\n免费计划提供 1 分钟免费时长\n入门计划提供 15 分钟免费时长\n创作者+ 计划提供 30 分钟免费时长\n\n详细：https://t.co/xo8sMuQmrr",
+      "link": "https://x.com/xiaohu/status/2060165244908110178",
+      "published": "2026-05-29T09:04:05+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "未来 7 天内，可以免费开始使用：  \n  \n免费计划提供 1 分钟免费时长  \n入门计划提供 15 分钟免费时长  \n创作者+ 计划提供 30 分钟免费时长  \n  \n详细：[elevenlabs.io/dubbing-studio](https://elevenlabs.io/dubbing-studio)\n\n💬0🔄1❤️4👀1898📊1",
+      "tags": [
+        "ElevenLabs",
+        "Dubbing V2"
+      ],
+      "score": 80,
+      "summary": "ElevenLabs推出Dubbing V2，端到端AI配音，支持90种语言。",
+      "fetched_at": "2026-05-29T11:00:01.646366+08:00"
+    },
+    {
+      "title": "ElevenLabs 推出 Dubbing V2\n\n端到端的AI配音模型...\n\n最大的变化：配音不再是\"先转写、再翻译、最后合成\"三段式拼接，而是模型直接基于原始表演建模声音。\n\n并将音色、情绪、演...",
+      "link": "https://x.com/xiaohu/status/2060164974732054947",
+      "published": "2026-05-29T09:03:00+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "ElevenLabs 推出 Dubbing V2  \n  \n端到端的AI配音模型...  \n  \n最大的变化：配音不再是\"先转写、再翻译、最后合成\"三段式拼接，而是模型直接基于原始表演建模声音。  \n  \n并将音色、情绪、演绎都跟着穿越进每一种语言  \n  \n也就是说，同一个人开口讲六国语言，听上去还是他本人，连情绪和呼吸节奏都对得上  \n  \nDubbing v2 支持 90 多种语言和口音，  \n  \n原理：它针对原始表演来生成，而不是针对一段转录文本，所以语气、情绪、表达方式会跨语言保留下来，声音克隆全自动，会给原说话人建一个声音模型并应用到所有目标语言，保留身份、音高和语气，不用手动设置。  \n  \n另外支持音频、视频和文字三种输入  \n  \n具体能力：  \n  \n• 音色穿越：不是模仿你的声音，是你的声音直接在另一种语言里说话  \n  \n• 情绪保真：原片里你笑你叹气你激动，译版照样有  \n  \n• 同步感知翻译：译文长度匹配原片口型和停顿，不会嘴动完了字幕还在跑  \n  \n• 措辞本地化：不是字面直译，每种语言用自己的表达方式  \n  \n• 端到端全自动：传一个视频进去出一份配音，中间没有手工拼接  \n  \n视频里他们演了三个场景：  \n  \nMrBeast 风格的荒岛求生在 English/German/French 之间无缝切换  \n  \n一段财务部门的快节奏对白试连贯性  \n  \n一个童话故事试表达力\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060163387213111296/vid/avc1/1280x720/27plo601sdhVwMAM.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/xiaohu/status/2060164974732054947/video/1)\n\n💬15🔄2❤️25👀3321📊18",
+      "tags": [
+        "ElevenLabs",
+        "Dubbing V2",
+        "AI配音"
+      ],
+      "score": 80,
+      "summary": "Dubbing V2直接基于原始表演建模声音，跨语言保留情绪和音色。",
+      "fetched_at": "2026-05-29T11:00:01.646455+08:00"
+    },
+    {
+      "title": "已经刷到好几个拿藏师傅的 PPT Skills 和小红书配图 Skills 做出千赞内容的小红书的博主了\n\n说明这玩意儿确实有用。\n\n你们再发的话可以艾特一下我，我还得给你们点点赞",
+      "link": "https://x.com/op7418/status/2060192275301642532",
+      "published": "2026-05-29T10:51:29+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "已经刷到好几个拿藏师傅的 PPT Skills 和小红书配图 Skills 做出千赞内容的小红书的博主了  \n  \n说明这玩意儿确实有用。  \n  \n你们再发的话可以艾特一下我，我还得给你们点点赞\n\n![Tweet Image](https://pbs.twimg.com/media/HJdF06gaMAA_STB.jpg)![Tweet Image](https://pbs.twimg.com/media/HJdFz09asAAXM2d.jpg)\n\n💬0🔄0❤️0",
+      "tags": [
+        "Skills",
+        "内容创作"
+      ],
+      "score": 60,
+      "summary": "使用PPT Skills和小红书配图Skills制作内容获千赞，有效。",
+      "fetched_at": "2026-05-29T11:00:01.646516+08:00"
+    },
+    {
+      "title": "相较于 Opus 4.8，昨晚动态工作流（Dynamic Workflows）的发布，我感觉意义更重大一些。\n\n它延续了那套并发的 Subagent 逻辑，但启动的 Subagent 可能多达数百个，...",
+      "link": "https://x.com/op7418/status/2060186234518184286",
+      "published": "2026-05-29T10:27:29+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "相较于 Opus 4.8，昨晚动态工作流（Dynamic Workflows）的发布，我感觉意义更重大一些。  \n  \n它延续了那套并发的 Subagent 逻辑，但启动的 Subagent 可能多达数百个，能帮你完成一些非常重、规模非常大的任务。比如：  \n  \n1. 调研你整个代码库的问题  \n2. 快速收集并生成一份庞大的调研报告  \n  \n看起来官方并不太建议拿它直接去改动代码，而是用它处理一些比较基础但工作量巨大的任务，通过并发的形式来大幅加快处理速度。  \n  \n触发方式：  \n  \n1. 更新以后，只要提示词里带 workflow 就会触发。  \n2. 启动 Ultra Code 模式。启动后，任何任务都会帮你规划一个动态工作流。  \n  \n注意：Ultra Code 模式启动后，仅在当前单次对话生效。如果重启，系统会退回到 X-HIGH 的推理模式。\n\n![Tweet Image](https://pbs.twimg.com/media/HJdAH_nasAAhq0l.jpg)\n\n![ClaudeDevs](https://pbs.twimg.com/profile_images/2044472418815893504/xf14RxM8_normal.png)\n\nClaudeDevs@ClaudeDevs\n\nNew in Claude Code (research preview): dynamic workflows.  \n  \nClaude writes an orchestration script on the fly, then spins up a large fleet of coordinated subagents in parallel to take on your most complex tasks.  \n  \nUse the word \"workflow\" in a prompt to get started.\n\n![Tweet Image](https://pbs.twimg.com/media/HJa_ctabIAA84so.png)\n\n[🔗 View Quoted Tweet](https://x.com/ClaudeDevs/status/2060044853279617150)\n\n💬3🔄0❤️6👀1236📊3",
+      "tags": [
+        "动态工作流",
+        "Claude Code",
+        "Agent"
+      ],
+      "score": 80,
+      "summary": "Claude Code动态工作流可启动数百子Agent处理大规模任务。",
+      "fetched_at": "2026-05-29T11:00:01.646576+08:00"
+    },
+    {
+      "title": "另外 Fast 模式大幅降价，价格是由原来的三分之一",
+      "link": "https://x.com/op7418/status/2060170422742880671",
+      "published": "2026-05-29T09:24:39+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "另外 Fast 模式大幅降价，价格是由原来的三分之一\n\n💬0🔄0❤️0👀1130",
+      "tags": [
+        "Fast模式",
+        "降价"
+      ],
+      "score": 70,
+      "summary": "Fast模式大幅降价至原价三分之一。",
+      "fetched_at": "2026-05-29T11:00:01.646636+08:00"
+    },
+    {
+      "title": "没想到 Opus4.8 这就发布了，所有能力相较于 4.7 都有提升。\n\n比较重要的是他在发现自己问题的能力上相较于 4.7 提升非常多，原来的话你让他自己 review 自己的代码基本没用。",
+      "link": "https://x.com/op7418/status/2060170152474534183",
+      "published": "2026-05-29T09:23:35+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "没想到 Opus4.8 这就发布了，所有能力相较于 4.7 都有提升。  \n  \n比较重要的是他在发现自己问题的能力上相较于 4.7 提升非常多，原来的话你让他自己 review 自己的代码基本没用。\n\n![Tweet Image](https://pbs.twimg.com/media/HJcx1KGasAAw0fj.jpg)\n\n![Claude](https://pbs.twimg.com/profile_images/1950950107937185792/QOfEjFoJ_normal.jpg)\n\nClaude@claudeai\n\nIntroducing Claude Opus 4.8: it builds on Opus 4.7 with sharper judgment, more honesty about its own progress, and the ability to work independently for longer than its predecessors.  \n  \nAvailable today at the same price.\n\n![Tweet Image](https://pbs.twimg.com/media/HJa4OYgWwAAlfWX.png)\n\n[🔗 View Quoted Tweet](https://x.com/claudeai/status/2060042702150930686)\n\n💬11🔄0❤️6👀3465📊8",
+      "tags": [
+        "Opus 4.8",
+        "改进"
+      ],
+      "score": 65,
+      "summary": "Opus 4.8自我审查能力提升，能发现自身代码问题。",
+      "fetched_at": "2026-05-29T11:00:01.646694+08:00"
     }
   ]
 }
