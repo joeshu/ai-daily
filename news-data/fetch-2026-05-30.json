@@ -1641,6 +1641,154 @@
       "score": 70,
       "summary": "Google Cloud自动停用Railway生产账户，导致平台宕机8小时。",
       "fetched_at": "2026-05-30T19:28:36.113449+08:00"
+    },
+    {
+      "title": "Perplexity 的产品设计真厉害，可惜了",
+      "link": "https://x.com/dingyi/status/2060707816843993540",
+      "published": "2026-05-30T21:00:04+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "Perplexity 的产品设计真厉害，可惜了\n\n![Lex Tang](https://pbs.twimg.com/profile_images/973550161556209664/C-SNrSiO_normal.jpg)\n\nLex Tang@lexrus\n\nthe menubar animation of Perplexity Computer is awesome\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059188987353550849/vid/avc1/680x318/WmNPBUxZ5BHLOQhd.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/lexrus/status/2059189459678347313/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/lexrus/status/2059189459678347313)\n\n💬0🔄0❤️0👀28",
+      "tags": [
+        "Perplexity",
+        "产品设计",
+        "评论"
+      ],
+      "score": 65,
+      "summary": "用户称赞Perplexity Computer的菜单栏动画设计，但表达遗憾。",
+      "fetched_at": "2026-05-30T21:25:53.106676+08:00"
+    },
+    {
+      "title": "上次介绍的 ego 竟然发布了一个专为 ai agent 设计的浏览器，叫 ego lite：\n\n- 可以让 agents 直接继承用户的登录状态，并在完全隔离的后台空间中运行，改变了过去“运行两条命...",
+      "link": "https://x.com/dingyi/status/2060696809400619450",
+      "published": "2026-05-30T20:16:19+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "上次介绍的 ego 竟然发布了一个专为 ai agent 设计的浏览器，叫 ego lite：  \n  \n- 可以让 agents 直接继承用户的登录状态，并在完全隔离的后台空间中运行，改变了过去“运行两条命令行、盯着输出、再运行两条”的低效循环。  \n- 用户和agents可以用各自的space做自己的事情，互不干扰。  \n- 执行浏览器任务的速度会比其他家都至少快 20%  \n  \n别的不说，这个开场动画挺细腻的：[lite.ego.app](https://lite.ego.app/)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060679242736955393/vid/avc1/1022x1478/9y_iyN9Czp-OIPM7.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/dingyi/status/2060696809400619450/video/1)\n\n![ego](https://pbs.twimg.com/profile_images/2056551465523822592/ZX2qS1FE_normal.png)\n\nego@ego\\_agent\n\nBrowsers were never built for agents.  \n  \nThose Chrome-bridging solutions, windows flying everywhere, login states breaking at random. Not bugs. Just bridge limits.  \n  \nSame task. 20% to 245% faster. Not magic.  \n  \nego lite is rebuilt from the kernel up.  \n  \nYour AI agents, Claude Code, Codex, OpenClaw and more, inherit your login state directly, run in fully isolated spaces in the background, never touching your tabs.  \n  \nWhat they get isn't a handful of CLI commands, but complete JS functions: complex multi-step operations, written once, executed once. Not \"run two commands, stare at output, run two more\" on repeat.  \n  \nYour browser, Your agent. Together, for the first time.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060406737304453121/vid/avc1/1280x720/-Ku5kYuOi7-GZAt1.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/ego_agent/status/2060406816925012063/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/ego_agent/status/2060406816925012063)\n\n💬3🔄0❤️11👀1438📊4",
+      "tags": [
+        "ego",
+        "Agent浏览器",
+        "AI Agent"
+      ],
+      "score": 88,
+      "summary": "专为AI agent设计的浏览器ego lite发布，支持继承登录状态，独立后台运行，速度提升20%以上。",
+      "fetched_at": "2026-05-30T21:25:53.106726+08:00"
+    },
+    {
+      "title": "Production-ready specs:\nhttps://t.co/t2dnoQ9vKu",
+      "link": "https://x.com/googleaidevs/status/2060685356333207697",
+      "published": "2026-05-30T19:30:49+08:00",
+      "source": "Google AI Developers(@googleaidevs)",
+      "content": "Production-ready specs:  \n[x.com/Diplomeme/stat…](https://x.com/Diplomeme/status/2052223786351755597?s=20)\n\n![ᴍᴜʀᴘʜʏ](https://pbs.twimg.com/profile_images/2047554637583249408/c0ogF6UC_normal.jpg)\n\nᴍᴜʀᴘʜʏ@Diplomeme\n\nCosmetic products Promotional with Nano Banana 2 on [@itsPolloAI](https://x.com/itsPolloAI)   \n  \nGenerate ur product with prompt : ⤵️\n\n![Tweet Image](https://pbs.twimg.com/media/HHr2pmebUAAFS_k.jpg)![Tweet Image](https://pbs.twimg.com/media/HHr2pmeaoAA99WZ.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/Diplomeme/status/2052223786351755597)\n\n💬1🔄0❤️3👀1501📊1",
+      "tags": [
+        "Gemini",
+        "图像生成",
+        "产品推广"
+      ],
+      "score": 75,
+      "summary": "Google AI开发者官方转发使用Gemini API进行化妆品产品宣传的示例。",
+      "fetched_at": "2026-05-30T21:25:53.106758+08:00"
+    },
+    {
+      "title": "Start building today: https://t.co/emn7RzVr3k",
+      "link": "https://x.com/googleaidevs/status/2060685358120018133",
+      "published": "2026-05-30T19:30:49+08:00",
+      "source": "Google AI Developers(@googleaidevs)",
+      "content": "Start building today: [ai.google.dev/gemini-api/doc…](https://ai.google.dev/gemini-api/docs/image-generation)\n\n💬0🔄0❤️3👀951",
+      "tags": [
+        "Gemini API",
+        "图像生成",
+        "教程"
+      ],
+      "score": 65,
+      "summary": "Google AI开发者发布Gemini API图像生成文档链接，鼓励开发者开始使用。",
+      "fetched_at": "2026-05-30T21:25:53.106786+08:00"
+    },
+    {
+      "title": "ICYMI: Nano Banana Pro [gemini-3-pro-image] and Nano Banana 2 [gemini-3.1-flash-image] are now GA an...",
+      "link": "https://x.com/googleaidevs/status/2060685345738375640",
+      "published": "2026-05-30T19:30:46+08:00",
+      "source": "Google AI Developers(@googleaidevs)",
+      "content": "ICYMI: Nano Banana Pro [gemini-3-pro-image] and Nano Banana 2 [gemini-3.1-flash-image] are now GA and ready for production via the Gemini API.   \n  \nCheck out these great community examples to see the capabilities of both models in action 🧵\n\n![Tweet Image](https://pbs.twimg.com/media/HJkE9WvWcAIywZJ.jpg)\n\n💬4🔄2❤️44👀2509📊9",
+      "tags": [
+        "Gemini",
+        "Nano Banana",
+        "模型发布"
+      ],
+      "score": 92,
+      "summary": "Gemini Nano Banana Pro和Nano Banana 2模型正式GA，可通过Gemini API使用。",
+      "fetched_at": "2026-05-30T21:25:53.106813+08:00"
+    },
+    {
+      "title": "A friendly reminder that bookmarking stuff is not part of building a business.",
+      "link": "https://x.com/thejustinwelsh/status/2060693224507736295",
+      "published": "2026-05-30T20:02:05+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "A friendly reminder that bookmarking stuff is not part of building a business.\n\n💬44🔄1❤️45👀1811📊40",
+      "tags": [
+        "创业",
+        "提醒"
+      ],
+      "score": 20,
+      "summary": "提醒收藏内容不等于实际建立业务。",
+      "fetched_at": "2026-05-30T21:25:53.106839+08:00"
+    },
+    {
+      "title": "The bar we set for V4.1: ready for real client work. \nSeeing it pass the test in the wild made our d...",
+      "link": "https://x.com/recraftai/status/2060692365933777197",
+      "published": "2026-05-30T19:58:40+08:00",
+      "source": "Recraft(@recraftai)",
+      "content": "The bar we set for V4.1: ready for real client work.   \nSeeing it pass the test in the wild made our day.\n\n![ibexdream](https://pbs.twimg.com/profile_images/1972412967627993088/SO9wbzrO_normal.jpg)\n\nibexdream@ibexdream\n\nTesting Recraft V4.1 this week: the model that keeps getting recommended for actual design work, not just images.  \n  \nStarted with the hardest test I could think of: branding my own name. 12 logo directions, each a different design language.  \n  \nLogos were just the start though. Posters, editorial, product mockups in the thread: same tool, three disciplines, every prompt included.  \n  \nThe takeaway: this feels like a tool for real projects, not just experiments. Started my first client project on it this week.  \n[@recraftai](https://x.com/recraftai)\n\n![Tweet Image](https://pbs.twimg.com/media/HJY9ipDWwAAs8KH.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/ibexdream/status/2059903527980314899)\n\n💬2🔄1❤️7👀454📊3",
+      "tags": [
+        "Recraft",
+        "AI设计",
+        "V4.1"
+      ],
+      "score": 85,
+      "summary": "Recraft发布V4.1模型，针对实际设计工作，获得用户认可。",
+      "fetched_at": "2026-05-30T21:25:53.106865+08:00"
+    },
+    {
+      "title": "chatgpt plus 的 codex 额度太不经用了。\n\n5 小时额度，一把就梭哈完了。\n\npro 20x 的 codex 尽情使用，确实让人上瘾。我觉得以后 ChatGPT 还可以推出 40x，...",
+      "link": "https://x.com/howie_serious/status/2060704501791936774",
+      "published": "2026-05-30T20:46:53+08:00",
+      "source": "howie.serious(@howie_serious)",
+      "content": "chatgpt plus 的 codex 额度太不经用了。  \n  \n5 小时额度，一把就梭哈完了。  \n  \npro 20x 的 codex 尽情使用，确实让人上瘾。我觉得以后 ChatGPT 还可以推出 40x，甚至 60x 的会员🤣\n\n![howie.serious](https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg)\n\nhowie.serious@howie\\_serious\n\n我的 ChatGPT pro 20x 会员的 codex 额度用完了。  \n  \n灵机一动，想起来给老婆开的 ChatGPT plus 会员还有额度。  \n  \n现在 codex可以继续用起来了，哈哈\n\n[🔗 View Quoted Tweet](https://x.com/howie_serious/status/2060663573131710688)\n\n💬1🔄0❤️1👀564📊1",
+      "tags": [
+        "ChatGPT",
+        "Codex",
+        "额度"
+      ],
+      "score": 30,
+      "summary": "用户抱怨ChatGPT Plus的Codex额度消耗快，Pro更充足。",
+      "fetched_at": "2026-05-30T21:25:53.106890+08:00"
+    },
+    {
+      "title": "https://t.co/Hm0dreAQ6M",
+      "link": "https://x.com/vista8/status/2060690120383053930",
+      "published": "2026-05-30T19:49:45+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "[x.com/i/article/2060…](http://x.com/i/article/2060689316318445568)\n\n💬3🔄0❤️12👀1188📊6",
+      "tags": [
+        "链接",
+        "文章"
+      ],
+      "score": 40,
+      "summary": "分享一篇文章链接，内容未知。",
+      "fetched_at": "2026-05-30T21:25:53.106915+08:00"
+    },
+    {
+      "title": "iOS 上我做的那个 HTML 和 Markdown 预览的 App （即览）差不多了，感觉晚上就能给大家发测试资格了",
+      "link": "https://x.com/op7418/status/2060689179642916894",
+      "published": "2026-05-30T19:46:00+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "iOS 上我做的那个 HTML 和 Markdown 预览的 App （即览）差不多了，感觉晚上就能给大家发测试资格了\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060687456287281152/vid/avc1/1080x2346/RqNQ5K1EWWLWctZE.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/op7418/status/2060689179642916894/video/1)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n现在周围人发文件都变成 Markdown 和 HTML 了，但是微信这俩格式一个都不支持，而且相当封闭，想用其他应用打开都费劲，真是受不了。  \n  \n如果是在外面用手机，别人发过来的 Markdown 和 HTML 文件都不知道怎么打开。  \n  \n感觉得做个手机上的 HTML 和 Markdown 阅读器了。\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2060626984200437995)\n\n💬22🔄0❤️34👀8527📊18",
+      "tags": [
+        "iOS",
+        "Markdown预览",
+        "HTML预览"
+      ],
+      "score": 70,
+      "summary": "个人开发者开发的iOS Markdown和HTML预览App即将发布测试。",
+      "fetched_at": "2026-05-30T21:25:53.106940+08:00"
     }
   ]
 }
