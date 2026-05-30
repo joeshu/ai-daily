@@ -1389,6 +1389,116 @@
       "score": 0,
       "summary": "",
       "fetched_at": "2026-05-30T14:45:20.068326+08:00"
+    },
+    {
+      "title": "卧槽，真的不是一个人有这样的感觉啊！\n \nX算法最近让很多人越老越看不懂？\n长文流量下滑、大V也有同感！\n\n我扒了一位博主对源码的深度分析，结合最新算法逻辑，大白话给你捋清楚。\n\n核心结论：他的分析 ...",
+      "link": "https://x.com/berryxia/status/2060643438971019461",
+      "published": "2026-05-30T16:44:15+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "卧槽，真的不是一个人有这样的感觉啊！  \n   \nX算法最近让很多人越老越看不懂？  \n长文流量下滑、大V也有同感！  \n  \n我扒了一位博主对源码的深度分析，结合最新算法逻辑，大白话给你捋清楚。  \n  \n核心结论：他的分析 85%~90% 对得上，是目前最靠谱的民间解读。  \n  \n一条一条说，可以收藏研究下！  \n  \n① 自动翻译 = 全球抢流量！  \n  \n以前你的帖子主要在中文圈转。现在平台自动翻译内容推向全球，同样聊AI，你要跟全世界的帖子竞争。  \n  \n流量被稀释，不是你我的问题，是池子变大了，竞争自然被放大了。  \n  \n② 粉丝数大幅贬值  \n  \n过去：发了就有粉丝看。  \n  \n现在：算法从全平台 ~1500 条候选帖里挑，只看你最近的兴趣和行为。  \n  \n每条帖子都得靠自己\"赚\"读者，粉丝数不再是保底。  \n  \n也就是说你和全球的同行者，每个帖子都会进行质量、内容、稀缺性多维度比拼了！  \n  \n③ 算法分两步走  \n  \n• 第一步「找候选」：根据兴趣从全平台捞帖子  \n  \n• 第二步「排序打分」：预测你互动的概率，按分数排序推送  \n  \n这两步和源码几乎完全一致。  \n  \n④ 核心看 ~15 个互动信号（最重要）  \n  \n点赞、回复、转发、停留时长、看视频/图片、点链接，以及负面信号（不感兴趣、屏蔽、举报）。  \n  \n有加有减，汇总算总分。他列的和实际基本吻合。  \n  \n⑤ 最关键的一点：算法不管内容好不好  \n  \n打分时不看\"这人是不是专家\"、\"内容靠不靠谱\"、\"作者资历如何\"。  \n  \n只关心：这条帖子能不能让你产生互动。  \n  \n安全过滤器管有害内容，但不管真假和专业度。  \n  \n这也解释了为什么质量一般的帖子有时候反而爆。  \n  \n⑥ 几个补充机制他也说对了：  \n  \n• 系统记住你看过的帖子，避免重复推  \n• 同一作者发太密，后面的权重会被压  \n• 转发不再是直接广播给粉丝的放大器，也要走完整打分流程  \n  \n总结：  \n长文流量下滑不是算法\"封杀\"长文，是多重机制叠加，全球竞争、粉丝通道弱化、早期互动门槛提高。  \n  \n一句话：X算法只管\"你会不会互动\"，不管\"内容好不好、作者厉不厉害\"。  \n  \n想被看到？  \n  \n开头就抓住人，让人停下来、点赞、回复。  \n  \n靠粉丝基数硬推的时代过去了。\n\n![Tweet Image](https://pbs.twimg.com/media/HJjgHYBbMAADoCA.jpg)\n\n![Arnaud Bertrand](https://pbs.twimg.com/profile_images/1387256201293959168/3h5yYupT_normal.jpg)\n\nArnaud Bertrand@RnaudBertrand\n\nSo I spent some time studying the new Twitter/X algorithm today since the latest version was published about a week ago on Github ([github.com/xai-org/x-algo…](https://github.com/xai-org/x-algorithm#updates--may-15th-2026)).  \n  \nMy goal was to answer why so many people have seemingly seen such a dramatic drop in their posts' reach.  \n  \nThe first answer, which is actually somewhat unrelated to the ranking algorithm on Github, is the auto-translate feature, rolled out worldwide on April 7, 2026 ([x.com/nikitabier/sta…](https://x.com/nikitabier/status/2041335306331549699?s=20)).  \n  \nBefore that date, if you wrote in English about, say, the Trump-Xi Beijing summit, you were competing for attention with maybe 5,000 other English-language accounts writing on geopolitics.  \n  \nAfter that date, your post is competing for attention with other posts on the same topic IN EVERY LANGUAGE ON EARTH. For some topics that do command global attention like geopolitics, that's a very brutal multiplier: you used to be one of 5,000, you're suddenly one of 50,000 (something of that order): MUCH more difficult to stand out.  \n  \nSecondly, the number of followers you have matters far less than it used to: each post now has to earn its audience reader by reader, on the predicted engagement of the post, and how its topic matches what each reader has recently been engaging with.  \n  \nHere is how the algorithm works, in simple terms: when you, as a reader, open your feed, the algorithm doesn't load \"posts from accounts you follow.\" Instead it runs a 2-stage prediction of what posts you're likely to engage with in that very moment.  \n  \nThe first stage is the retrieval stage. The system narrows billions of posts on X/Twitter that day down to roughly 1,500 candidates by matching the semantic content of each post - what it's about - against what you as a reader have recently engaged with. Some candidate posts come from accounts you follow; others are pulled from across the platform by pure topic similarity to your recent interests.  \n  \nYou can test this retrieval stage easily: start disproportionally engaging with - say - Brad Pitt videos and you'll bit by bit see your timeline flooded with Brad Pitt content, most of it from accounts you've never followed and never heard of.  \n  \nThen there's the ranking stage. Each of these candidate posts for your feed is fed through a Grok-based model that tries to understand if you'll engage with the post.   \n  \nIt looks at 15 engagement metrics:   \n1) P(favorite) — the reader likes the post  \n2) P(reply) — the reader replies to it  \n3) P(repost) — the reader reposts it  \n4) P(quote) — the reader quote-tweets it  \n5) P(click) — the reader clicks a link in it  \n6) P(profile\\_click) — the reader taps through to your profile  \n7) P(video\\_view) — the reader watches the video  \n8) P(photo\\_expand) — the reader expands an image  \n9) P(share) — the reader shares it (DM, off-platform, etc.)  \n10) P(dwell) — the reader stops scrolling and lingers on the post  \n11) P(follow\\_author) — the reader follows you after seeing it  \n12) P(not\\_interested) — the reader marks \"not interested\"  \n13) P(block\\_author) — the reader blocks you  \n14) P(mute\\_author) — the reader mutes you  \n15) P(report) — the reader reports the post  \n  \nFifteen predicted actions, each multiplied by a weight, summed: that sum is the score that determines in which priority a post will be seen among other candidates.  \n  \nPlease note that posting something with a video or an image can give your post an advantage as 2 actions are specifically for these: video\\_view and photo\\_expand. No video or photo and you don't get a score for these. Also, naturally, having a video maximizes the chance that a user will \"dwell\" on your post to watch it.  \n  \nAlso note that 4 of these actions carry negative weights (not\\_interested, block\\_author, mute\\_author and report): meaning that if the model expects a post to generate a lot of negativity, it'll get de-boosted quite dramatically.  \n  \nBut note, first and foremost, what's NOT in there: none of the things that, naively, one might think a serious information platform would weigh. There is no P(this post is true and well-sourced). No P(the author actually knows what they're talking about). No P(this person has spent a decade building a body of work that has held up). No P(this account has earned the right to be taken seriously on this topic). No P(the author has a large following from credible people). The model does not seem to care - at all - about any of that.  \n  \nEvery post starts from zero. You could have ten years of rigorous, well-sourced analysis behind you - or you could be just an uneducated rando who registered yesterday. To this algorithm, you're both just a bag of engagement probabilities.  \n  \nNow, sure, to be fair, there is a \"brand\" effect that's not covered by the algorithm: someone who has in fact built a brand will naturally have better engagement metrics because people recognize their account. But that's an indirect, second-order effect. And crucially, it's legacy: those \"brands\" were built under earlier versions of the algorithm that gave followers and reputation more weight.  \n  \nLastly, several other features of the new algorithm compound the dilution, none of them visible from outside but all consequential.  \n  \nThe May 15 update added an \"impression bloom filter,\" tightening the rule that once a reader has been served a post, the system won't serve it to them again. Before, a strong post could marinate in someone's feed across multiple refreshes and accumulate engagement on the second or third pass. Now it basically gets one shot.  \n  \nAlso, your own posts compete with each other. An \"Author Diversity Scorer\" inside the ranking stage attenuates the score of every subsequent post of yours that ends up in a reader's candidate pool. In plain terms: if multiple of your posts land in a reader's candidate pool, the system shows one at full strength and dampens the others. So don't post several times consecutively on the same topic.  \n  \nAnd, last but not least, another huge impact on reach is that, in the old algorithm, when someone reposted or quote-tweeted you, your post was broadcast to their followers' timelines - a repost from an account with 100,000 followers was a huge boost.   \n  \nIn the new algorithm, that mechanism is vastly demoted: reposts - like every post - need to go through the retrieval and ranking stage mentioned above, so a repost from a big account is a long way from the boost it used to be.  \n  \nThis is especially brutal for low-effort quote tweets, which used to function as cheap amplification: now they often can't even clear the retrieval stage - they simply don't contain enough novel semantic content for the system to match them to anyone's interests.  \n  \nSo, putting it all together, the reach collapse comes from many forces stacking at once:  \n- Auto-translate makes your posts compete for attention against an order of magnitude more content  \n- The retrieval stage matches posts by topic, not by who follows you  \n- The ranking stage scores purely on predicted engagement with no weight for credibility, expertise, or track record  \n- The bloom filter narrows every post's window to one strong shot  \n- The diversity scorer penalizes prolific posting  \n- Reposts no longer carry much distribution power  \n  \nEach of these alone would dent your reach. Combined, they amount to a complete reset: your audience that you built painstakingly over years basically doesn't matter much anymore, and it's much - much - harder to stand out even if you're a big account.  \n  \nPeople structurally rewarded by this algorithm are folks who:  \n- Post visually (videos/images)  \n- Post on globally popular topics because they clear the retrieval stage easily  \n- Provoke strong emotional reactions - likes, replies, reposts  \n- Don't care about accuracy or seriousness because the algorithm doesn't measure it  \n- Don't care about their existing audience because every post is judged in isolation anyway  \n  \nIn short this new algorithm, like so many on social media, is all about maximizing whether people will engage with something - not about whether they should.\n\n[🔗 View Quoted Tweet](https://x.com/RnaudBertrand/status/2058450505630716013)\n\n💬3🔄0❤️8👀501📊3",
+      "tags": [
+        "X算法",
+        "社交媒体"
+      ],
+      "score": 65,
+      "summary": "KOL分析X算法变化，指出流量分散、粉丝贬值、互动信号为核心。",
+      "fetched_at": "2026-05-30T18:00:16.150193+08:00"
+    },
+    {
+      "title": "Apparently Birkenstocks and Schoffel fleeces are fashionable now. As 17 yo said, a stopped clock is ...",
+      "link": "https://x.com/paulg/status/2060646412409323609",
+      "published": "2026-05-30T16:56:04+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "Apparently Birkenstocks and Schoffel fleeces are fashionable now. As 17 yo said, a stopped clock is right twice a day. So 14 yo took my picture and asked ChatGPT to rate my fashionableness. It said I looked like I was dressed to walk the dog. Maybe this is why dogs like me.\n\n💬11🔄0❤️32👀3333📊10",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 30,
+      "summary": "Paul Graham用ChatGPT评估穿着，调侃时尚趋势。",
+      "fetched_at": "2026-05-30T18:00:16.150282+08:00"
+    },
+    {
+      "title": "Same as knowing how to google in the 2010s.",
+      "link": "https://x.com/_philschmid/status/2060639388745257120",
+      "published": "2026-05-30T16:28:09+08:00",
+      "source": "Philipp Schmid(@_philschmid)",
+      "content": "Same as knowing how to google in the 2010s.\n\n![dax](https://pbs.twimg.com/profile_images/1602333093485891584/mmVqjFNI_normal.jpg)\n\ndax@thdxr\n\ni have seen enough proof now that using a coding agent is a deep skill  \n  \nit's confusing because the people you see heavily using them produce horrible results  \n  \nbut that's because it's a skill! you can get better and the ceiling seems pretty high - this is very exciting to me\n\n[🔗 View Quoted Tweet](https://x.com/thdxr/status/2060553984947950017)\n\n💬4🔄1❤️12👀738📊5",
+      "tags": [
+        "AI Agent",
+        "编程技能"
+      ],
+      "score": 75,
+      "summary": "转发观点：使用编码agent是一项需要学习的深度技能。",
+      "fetched_at": "2026-05-30T18:00:16.150357+08:00"
+    },
+    {
+      "title": "Most in-car media systems still expect you to search with keywords.\n\nBut when you’re driving, you do...",
+      "link": "https://x.com/qdrant_engine/status/2060632303999570171",
+      "published": "2026-05-30T16:00:00+08:00",
+      "source": "Qdrant(@qdrant_engine)",
+      "content": "Most in-car media systems still expect you to search with keywords.  \n  \nBut when you’re driving, you don’t think in keywords - you think in moods, vibes, and intent.  \n  \nThis project by Sarvesh Talele, built with Qdrant Edge, creates a fully local AI-powered media discovery system that lets users search music semantically through voice, text, and mood-based queries.  \n  \nWhat’s interesting:  \n→ Local voice transcription with Whisper  \n→ Semantic retrieval with vector embeddings  \n→ On-device vector search using Qdrant Edge  \n→ No cloud dependency required  \n  \nA great example of how vector search can power privacy-first, real-time experiences directly on-device.  \n  \nRead here:  \n[levelup.gitconnected.com/how-i-built-a-…](https://levelup.gitconnected.com/how-i-built-a-smart-in-car-media-discovery-system-515b00d08bf7)\n\n![Tweet Image](https://pbs.twimg.com/media/HJgvR4HbcAA8N1A.jpg)\n\n💬4🔄0❤️5👀83📊5",
+      "tags": [
+        "向量搜索",
+        "车载AI"
+      ],
+      "score": 70,
+      "summary": "Qdrant展示车载媒体发现系统，使用Whisper和向量搜索实现本地化语义搜索。",
+      "fetched_at": "2026-05-30T18:00:16.150459+08:00"
+    },
+    {
+      "title": "说干就干朋友们，开新坑了",
+      "link": "https://x.com/op7418/status/2060639508002148578",
+      "published": "2026-05-30T16:28:38+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "说干就干朋友们，开新坑了\n\n![Tweet Image](https://pbs.twimg.com/media/HJjcpvcawAA00eg.jpg)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n现在周围人发文件都变成 Markdown 和 HTML 了，但是微信这俩格式一个都不支持，而且相当封闭，想用其他应用打开都费劲，真是受不了。  \n  \n如果是在外面用手机，别人发过来的 Markdown 和 HTML 文件都不知道怎么打开。  \n  \n感觉得做个手机上的 HTML 和 Markdown 阅读器了。\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2060626984200437995)\n\n💬8🔄0❤️18👀2499📊7",
+      "tags": [
+        "产品想法"
+      ],
+      "score": 20,
+      "summary": "个人吐槽微信不支持Markdown/HTML，计划做手机阅读器。",
+      "fetched_at": "2026-05-30T18:00:16.150539+08:00"
+    },
+    {
+      "title": "在论文之外，其他领域，如tech和金融，也非常好用。\n\n例如使用 “SpaceX IPO” 测了一下 AnySearch Lens，效果很直观：\n\nQuery Matrix 展示它怎么扩展问题，Clu...",
+      "link": "https://x.com/dongxi_nlp/status/2060634403915616743",
+      "published": "2026-05-30T16:08:21+08:00",
+      "source": "马东锡 NLP(@dongxi_nlp)",
+      "content": "在论文之外，其他领域，如tech和金融，也非常好用。  \n  \n例如使用 “SpaceX IPO” 测了一下 AnySearch Lens，效果很直观：  \n  \nQuery Matrix 展示它怎么扩展问题，Clusters 把结果分成官方 + 新闻 +市场、评论等证据组。面板还能看到原始结果，去重，域名分布，抽取进度和 reflection，对判断可靠性很有帮助。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060633685074800640/vid/avc1/3808x2160/oVJLDe2z53sTgJOS.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/dongxi_nlp/status/2060634403915616743/video/1)\n\n💬2🔄0❤️1👀452📊3",
+      "tags": [
+        "AI搜索",
+        "AnySearch"
+      ],
+      "score": 70,
+      "summary": "演示AnySearch Lens在科技和金融领域的搜索效果，支持查询扩展和聚类。",
+      "fetched_at": "2026-05-30T18:00:16.150616+08:00"
+    },
+    {
+      "title": "AnySearch 跟不同 agent 搭配非常快速。\n\nCodex 可以直接把它的 MCP + REST +SKILL 设计自己喜欢的工作流。搜索速度快，结果覆盖面广，精度也不错。\n\n很适合做 re...",
+      "link": "https://x.com/dongxi_nlp/status/2060634406092464463",
+      "published": "2026-05-30T16:08:21+08:00",
+      "source": "马东锡 NLP(@dongxi_nlp)",
+      "content": "AnySearch 跟不同 agent 搭配非常快速。  \n  \nCodex 可以直接把它的 MCP + REST +SKILL 设计自己喜欢的工作流。搜索速度快，结果覆盖面广，精度也不错。  \n  \n很适合做 research agent，做论文调研，市场分析和信息核查。非常推荐大家试试，把搜索变成可观察可复用的工作流。  \n  \nAnySearch github  \n[github.com/anysearch-ai](https://github.com/anysearch-ai)  \nAnySearch  \n[anysearch.com/home?utm\\_sourc…](https://anysearch.com/home?utm_source=kol_dongxi&utm_medium=referral&utm_campaign=kol_02a)\n\n💬1🔄1❤️2👀372📊3",
+      "tags": [
+        "AI搜索",
+        "工作流"
+      ],
+      "score": 70,
+      "summary": "介绍AnySearch与Codex搭配设计研究Agent，支持论文调研和市场分析。",
+      "fetched_at": "2026-05-30T18:00:16.150683+08:00"
+    },
+    {
+      "title": "我用 Codex + AnySearch 做了一个搜索+决策 cockpit：AnySearch Lens。\n\n日常读论文、选论文题目时，我最希望准确和丰富论文来源。AnySearch 帮我做到了这点...",
+      "link": "https://x.com/dongxi_nlp/status/2060634398676992061",
+      "published": "2026-05-30T16:08:20+08:00",
+      "source": "马东锡 NLP(@dongxi_nlp)",
+      "content": "我用 Codex + AnySearch 做了一个搜索+决策 cockpit：AnySearch Lens。  \n  \n日常读论文、选论文题目时，我最希望准确和丰富论文来源。AnySearch 帮我做到了这点。  \n  \n例如，现在AnySearch Lens 会围绕 agent harness 生成 Query Matrix，跑 REST + MCP + SKILL，抽取正文、聚类证据，最后给出 reflection 和下一步搜索建议，这非常符合在做研究时，对深度和广度要求高的工作流模式。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060632946562699264/vid/avc1/3840x1534/hzuEeqHTpSNEOc99.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/dongxi_nlp/status/2060634398676992061/video/1)\n\n💬3🔄0❤️14👀1061📊8",
+      "tags": [
+        "AI搜索",
+        "论文调研"
+      ],
+      "score": 70,
+      "summary": "使用Codex+AnySearch构建研究决策工具AnySearch Lens，提升论文搜索深度。",
+      "fetched_at": "2026-05-30T18:00:16.150747+08:00"
     }
   ]
 }
