@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "date": "2026-05-30"
+  },
+  "entries": [
+    {
+      "title": "How DoorDash Built a Testing System to Evaluate LLMs",
+      "link": "https://blog.bytebytego.com/p/how-doordash-built-a-testing-system",
+      "published": "2026-05-30T23:30:52+08:00",
+      "source": "ByteByteGo Newsletter",
+      "content": "## [How to Track AI ROI in Real Time (Sponsored)](https://go.bytebytego.com/Datadog_060126)\n\n[![](https://substackcdn.com/image/fetch/$s_!eGG5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F3e514377-9065-4d16-b57c-160afec4e714_2800x1422.png)](https://go.bytebytego.com/Datadog_060126)\n\nDatadog’s guide shows you how to connect AI spend, infrastructure, and model performance into a single view, so you can catch cost spikes the moment they happen. See how Kevel cut AWS costs by up to $100,000/month after replacing reactive cost reviews with real-time visibility.  \n  \nYou’ll learn how to:\n\n* Break down AI costs by token, model, provider, and team\n* Get alerted the instant inference volume spikes or API spend exceeds budget\n* Correlate cost increases directly to architecture changes so root-cause analysis takes minutes\n\n[Get the guide](https://go.bytebytego.com/Datadog_060126)\n\n---\n\nDoorDash’s customer support chatbot had a hallucination problem. Not the dramatic kind where it invents entire conversations, but the subtle, harder-to-catch kind.\n\nFor example, the chatbot would look at a customer’s order history, see a delivery status field, misread it, and then confidently suggest a refund policy that didn’t actually exist. The raw data was right there in the chatbot’s context window, the working memory where an LLM holds everything it needs to generate a response, but having too much information was making things worse.\n\nFor reference, DoorDash is one of the largest food delivery and local commerce platforms in the United States, connecting customers with restaurants and stores through a network of independent delivery drivers called Dashers.\n\nAt that scale, the company handles hundreds of thousands of support contacts every day from customers, merchants, and Dashers, making automated support not just a nice-to-have but a necessity.\n\nThe team could see the problem clearly, but fixing it was a different story. Every change they made to reduce hallucinations in one scenario risked creating new ones in another. They were stuck between two bad options. They could deploy changes to production and hope for the best, which meant risking real customer experiences. Or they could manually test dozens of conversation scenarios for every prompt change, which would take weeks and still might miss things.\n\nThis tension isn’t unique to DoorDash. It’s the fundamental challenge anyone faces when they move from traditional deterministic software to LLM-based systems. DoorDash used to run customer support on hand-built decision trees, where every change had a predictable, traceable impact. LLMs replaced that predictability with flexibility and more natural conversations, but they also introduced non-determinism, meaning the same input can produce different outputs each time.\n\nDoorDash’s answer to this problem wasn’t a better chatbot. It was a better system for improving the chatbot, something they call the simulation and evaluation flywheel. In this article, we will learn how they built this flywheel and the key takeaways.\n\n*Disclaimer: This post is based on publicly shared details from the DoorDash Engineering Team. Please comment if you notice any inaccuracies.*\n\n## What the Flywheel Actually Does\n\nThe flywheel has two interconnected pieces:\n\n* The first is an offline simulator that generates realistic multi-turn customer conversations without involving any real customers.\n* The second is an evaluation framework that automatically grades how the chatbot performed in those conversations.\n\nTogether, they create a tight iteration loop.\n\n[![](https://substackcdn.com/image/fetch/$s_!4eth!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f68eb05-7dc8-448a-b5ab-ad59f8da6c84_1688x1192.png)](https://substackcdn.com/image/fetch/$s_!4eth!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f68eb05-7dc8-448a-b5ab-ad59f8da6c84_1688x1192.png)\n\nSource: [DoorDash Engineering Blog](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/)\n\nWhen the team notices a problem, they write an evaluation that captures the specific failure mode they want to fix. A single job trigger then orchestrates the entire pipeline end-to-end, automatically generating test scenarios from historical transcripts, running multi-turn conversations between the simulator and the chatbot, and evaluating the results.\n\n[![](https://substackcdn.com/image/fetch/$s_!USZ5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F735b862b-b37e-4817-99a1-1c498fefd6c2_2054x1466.png)](https://substackcdn.com/image/fetch/$s_!USZ5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F735b862b-b37e-4817-99a1-1c498fefd6c2_2054x1466.png)\n\nThen they modify the prompt or the system architecture, run the simulator again, and check whether the pass rate climbed. If it did, they would keep going. If it didn’t, they try something else. They repeat this cycle until the pass rate hits their exit criteria, and then they deploy with confidence that the change actually works.\n\nThe graph below shows the pass rate for no-hallucination evaluation over time\n\n[![](https://substackcdn.com/image/fetch/$s_!cKsW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb6dd70f-ae10-40a8-84d1-cf5046bbbf48_2514x1398.png)](https://substackcdn.com/image/fetch/$s_!cKsW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Feb6dd70f-ae10-40a8-84d1-cf5046bbbf48_2514x1398.png)\n\nSource: [DoorDash Engineering Blog](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/)\n\nThe speed of this loop makes this a powerful approach. DoorDash can run more than 200 simulated conversations in under five minutes and get automated evaluation results immediately.\n\nIn other words, what used to take days of manual testing and review now takes hours. And because everything happens offline, they never risk degrading the experience for real customers while they iterate.\n\nTheir evaluation suite has grown to more than 50 evaluations covering hallucination detection, tone assessment, issue classification, and other quality dimensions. Before any change goes to production, it must pass the full suite, which serves as both a quality check and a regression test.\n\nThe flywheel sounds straightforward, but both the simulator and the evaluator required solving genuinely hard problems.\n\n---\n\n## [FeatureOps Summit 2026 - Feature management in the AI Era (Sponsored)](https://go.bytebytego.com/Unleashed_060126)\n\n[![](https://substackcdn.com/image/fetch/$s_!xQ3q!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd7fe5105-3674-489a-ba00-e9e871fe1b21_1200x1200.png)](https://go.bytebytego.com/Unleashed_060126)\n\nSpeed without control is a false economy. As AI code-generation accelerates software delivery, the **FeatureOps Summit 2026** is here to ensure that when we ship more, we break less.This premier virtual event brings together engineers, architects, and product leaders to explore the infrastructure of fearless delivery.\n\n**Key Themes:**\n\n* **AI Safety Nets:** Guardrails for the flood of automated code.\n* **Edge Resilience:** Sub-millisecond evaluation at scale.\n* **Continuous Flow:** Moving past the “fixed-release” mindset. Register today to master the tools and patterns required for a fail-safe release environment.\n\n[Register Today](https://go.bytebytego.com/Unleashed_060126)\n\n---\n\n## Simulating Customers That Push Back\n\nA static test case can check whether the chatbot gives a reasonable answer to a single message, but it can’t capture what happens when a frustrated customer pushes back three times, provides additional information mid-conversation, or threatens to escalate.\n\nDoorDash’s simulator doesn’t use scripted messages at all.\n\nInstead, it uses an LLM to play the customer role, generating dynamic responses based on detailed test scenarios. At each turn, the simulator runs through a structured analysis, asking questions such as:\n\n* Was the issue addressed?\n* Is the conversation making progress?\n* Does the customer need to provide more information?\n* Is the conversation going in circles?\n\nBased on this analysis, it decides what a realistic customer would say next.\n\nThe test scenarios themselves come from real historical support transcripts, not from engineers imagining what customers might say.\n\nLLMs analyze past conversations from DoorDash’s database and extract structured behavioral profiles, including the customer’s personality traits (frustrated and demanding versus confused and patient), a detailed narrative of the situation, and the specific outcome the customer is seeking. This grounds the simulator in actual customer behavior rather than idealized test cases.\n\nSee the diagram below:\n\n[![](https://substackcdn.com/image/fetch/$s_!L2Ta!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5832df44-5f71-4dcf-b4e9-6f38f771758d_2054x1852.png)](https://substackcdn.com/image/fetch/$s_!L2Ta!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5832df44-5f71-4dcf-b4e9-6f38f771758d_2054x1852.png)\n\nThe simulator also exhibits realistic escalation patterns. It doesn’t immediately ask for a manager. Instead, it gives the chatbot multiple chances to resolve the issue, only escalating after repeated unhelpfulness or circular exchanges, and re-engaging when progress becomes clear again. This mirrors how real customers behave.\n\nFor a simulated conversation to be meaningful, the chatbot also needs realistic backend data. It needs to look up delivery status, check refund eligibility, and pull order details. DoorDash handles this through mock data that blends real production data with scenario-specific test data, preserving timestamps and relationships to keep interactions realistic. This allows them to test complex edge cases, including fraud scenarios and high-value refunds, that their previous testing infrastructure couldn’t handle.\n\n## Using an LLM to Judge Another LLM\n\nRunning hundreds of realistic conversations is only useful if you can tell whether the chatbot actually handled them well. However, manually reading through every simulated conversation would defeat the entire purpose of automation. So DoorDash uses an LLM to evaluate the chatbot’s performance automatically.\n\nEach evaluation is structured as a function that takes the full conversation transcript (including tool calls and backend responses) along with the relevant company policy, applies a prompt asking whether the chatbot correctly followed that policy, and returns a binary pass or fail with the reasoning behind the judgment.\n\nThe obvious objection here is that this sounds circular. If an LLM caused the problem by hallucinating, why would you trust another LLM to catch the hallucination?\n\nDoorDash addresses this directly with a concept they call the generator-verifier gap. Acting as a full customer support agent involves complex, multi-step decision-making across a huge range of possible scenarios. That’s genuinely hard. But verifying a single, narrowly-defined behavior is a much simpler task.\n\nFor example, “Did the chatbot claim the customer was eligible for a refund when the policy says otherwise?” is a straightforward binary question. The evaluator isn’t trying to be a better support agent. It’s checking one specific thing at a time, and LLMs are much more reliable at these focused binary judgments than they are at open-ended generation.\n\nBut DoorDash doesn’t just trust the LLM judge out of the box. They calibrate it against human judgment through a structured process. They collect a sample of conversations, have human experts label each one as pass or fail, run the LLM judge on the same samples, and then measure how often the judge agrees with the humans and how often it misses problems or flags false ones. They analyze the reasoning behind any mismatches, revise the evaluation prompt to fix systematic errors, and repeat until the judge reliably matches human expert judgment. This calibration step creates trust in the system.\n\nThe binary nature of the evaluations is important here. DoorDash isn’t asking the LLM to rate the chatbot’s performance on a subjective scale of 1 to 10. They’re asking whether the chatbot followed a specific policy or not. It makes calibration faster, makes disagreements easier to diagnose, and produces more reliable judgments.\n\n## Fixing Hallucinations by Giving the Chatbot Less Information\n\nWith the simulator generating conversations and the evaluator grading them, DoorDash had a working flywheel.\n\nDuring early launches, human reviewers noticed the chatbot was getting overwhelmed by the sheer volume of data in its context window. Order histories, delivery status updates, refund decisions, and tool call results were all being fed directly to the model as raw event logs. The chatbot would misinterpret a field or suggest a policy that didn’t exist, not because the information was wrong, but because there was too much of it. This runs directly counter to the intuition that giving a model more information should produce better results.\n\nDoorDash hypothesized that the same data that was vital for the chatbot’s reasoning was becoming noise when it came time to generate a response to the customer. Their solution was an architectural layer they called the “case state,” which synthesizes the raw tool history into a structured, intermediate representation. Instead of dumping everything into the context window, the case state distills the relevant facts into a clean format that the chatbot can actually use.\n\nGetting the case state right required the flywheel. Their first attempts at extraction logic didn’t work well at all. Some versions left out critical information, causing the chatbot to miss details that were essential for driving resolutions. Other versions remained too noisy or poorly structured, confusing the model in different ways. Since the simulator could generate numerous realistic conversations in minutes, the team experimented with dozens of different context shapes and prompt strategies in a rapid feedback loop. Each iteration took hours instead of the weeks it would have required through manual testing.\n\nOver 11 iterations, the hallucination evaluation pass rate climbed steadily upward, with a notable dip at iteration 3, where a change actually made things temporarily worse. That dip shows that improvement isn’t linear, even with a flywheel, and that part of the flywheel’s value is catching regressions before they reach real customers.\n\nThe final result was a 90% reduction in hallucinations in simulation, and that improvement carried over into production. The strong correlation between their offline metrics and live traffic performance gave the team confidence that the flywheel is a reliable development tool, not just an internal sandbox disconnected from reality.\n\n# Conclusion\n\nThe simulation and evaluation flywheel has fundamentally changed how DoorDash develops and deploys chatbot improvements, compressing iteration cycles from days to hours and giving them a way to validate changes across hundreds of scenarios before any real customer is affected.\n\nHowever, the flywheel does come with real tradeoffs worth understanding.\n\nThe main limitation is that it can only catch problems for which you’ve written evaluations. If a failure mode isn’t captured by an evaluation, the flywheel is blind to it. DoorDash mitigates this by running a full evaluation suite before every deployment, covering hallucination, tone, and issue classification, but new failure modes can always emerge that existing evaluations don’t cover. This is why human review remains the starting point for every improvement cycle. Despite all the automation, someone still has to look at real conversations and notice what’s going wrong.\n\nSimulation fidelity is another inherent limitation. Even with transcript-derived scenarios and hybrid mock data, synthetic conversations are approximations of real user behavior. DoorDash reports a strong correlation between its offline metrics and production results, which validates the approach, but that correlation isn’t guaranteed to hold for every type of scenario or every kind of system change.\n\nThere’s also the question of cost. Running hundreds of LLM-to-LLM conversations per test cycle, plus LLM-as-judge evaluations on each one, requires significant compute. For smaller teams or less critical applications, a lighter-weight version with fewer scenarios and more targeted evaluations might be the pragmatic starting point.\n\nThe broader takeaway is that LLM systems require a completely different testing paradigm than traditional software. Since we can’t trace the branch anymore, we need a feedback loop that lets us simulate, evaluate, and iterate fast enough to build confidence before shipping.\n\n**References:**\n\n* [A Simulation and Evaluation Flywheel to build LLM Chatbots at Scale](https://careersatdoordash.com/blog/doordash-simulation-evaluation-flywheel-to-develop-llm-chatbots-at-scale/)\n* [LLM as a Judge Pattern](https://en.wikipedia.org/wiki/LLM-as-a-Judge)",
+      "tags": [
+        "LLM测试",
+        "DoorDash",
+        "技术文章"
+      ],
+      "score": 75,
+      "summary": "DoorDash构建LLM评估系统，解决聊天机器人幻觉问题。",
+      "fetched_at": "2026-05-31T01:03:34.181590+08:00"
+    },
+    {
+      "title": "一切都是Vibe的时代，小红书为什么要去买世界杯？---串台翻转体育",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a1aa43cac7bdb080c332624",
+      "published": "2026-05-31T00:00:00+08:00",
+      "source": "屠龙之术",
+      "content": "![](https://image.xyzcdn.net/FtlsrL_4pphT5vQAcQnqE2KLfeMh.png)\n\n数了下自己的播客，之前14期都是AI内容，我快成一个AI博主了……\n\n但回想我做播客的起初，我没想过自己是要当一个AI博主的啊……\n\n今天的内容就几乎没有涉及AI的内容。\n\n我的好友，播客[**翻转体育(Sports Inverted)**](https://www.xiaoyuzhoufm.com/podcast/5e393a72418a84a046bd59a4)的主播hualun找我聊了一个最近的热门话题：\n\n**小红书购买了世界杯版权**\n\n![](https://image.xyzcdn.net/FoQT3Q2QR2OuxischEiIyX4cx8J8.jpeg)\n\n我从\n\n* 一个多年球迷\n* 一个多年的内容和社区观察者\n* 一个一直看相关方向的投资人\n\n的角度，聊了聊这个话题的种种；\n\n翻转体育那边已经更新，[这里：](https://www.xiaoyuzhoufm.com/episode/6a1a8e93989e711d011291c5)\n\n![](https://image.xyzcdn.net/FnBp8aR1UtYlprjOoET98yFAAHa8.jpg)\n\n**【对谈嘉宾】**\n\n* **hualun：**[**翻转体育(Sports Inverted)**](https://www.xiaoyuzhoufm.com/podcast/5e393a72418a84a046bd59a4)**主播**\n\n（想加粉丝群的请先+微信：rosicky311)\n\n下面正片开始……\n\n**【时间线】**\n\n04:29 是否意外小红书购买世界杯版权？\n\n06:36 上届抖音的世界杯项目团队可能超过1000人\n\n07:38 社区都是“养”出来的\n\n08:35 一个案例：小红书在直播带货上的尝试过程\n\n10:20 再一个案例：娱乐直播小红书要不要做？\n\n10:48 小红书是一家“运气”非常好的公司\n\n11:06 如何评判小红书买世界杯这个决定的对错/好坏？\n\n11:37 小红书赞助春晚的评判如何？\n\n13:04 中国目前明显处于上升期的内容平台可能只有小红书一家了\n\n13:50 如果我是小红书的投资人，如何看待这个事情\n\n15:02 如果今天是一家上市公司，股价会如何反应？\n\n15:22 话题延展到抖音买CBA版权以及后续一系列事情\n\n17:12 世界杯需要小红书，还是小红书需要世界杯？\n\n17:40 传统意义上的版权，可能都在经历“重构”\n\n18:20 世界杯版权可能是最后的几个“堡垒”\n\n18:58 咪咕解说团 VS 小红书的解说团\n\n20:53 重轻说：“游戏是游戏评论的一部分”\n\n23:13 F1最近几年在国内的变化也是另外一个例证\n\n24:50 小红书过去几年对于男性用户的运营很多\n\n25:21 另一个重点：小红书提供横屏长视频功能+4K\n\n26:09 今年小红书其实拿了德甲的版权的\n\n27:22 聊聊当年的懂球帝的故事\n\n27:54 算法 VS 垂类社区\n\n29:20 现在市面上还有所谓的音乐社区、母婴社区、游戏社区、宠物社区吗？\n\n34:59 剩下的可能不“小而美”了\n\n36:58 播客其实也承担了这种变化的溢出\n\n38:09 订阅制/算法制/广场\n\n39:05 虎扑老哥 VS 小红书的社区调性\n\n41:03 我对社区的一个解读角度：人味儿的多少\n\n43:31 NBA以及一些NBA球队正式入驻B站\n\n45:45 一个可参考的案例：B站S赛版权的购买决策\n\n46:42 “大补丸”的比喻\n\n47:27 体育社区的“没落”\n\n50:04 极端假设：腾讯这次NBA版权没有续约会怎么样？\n\n52:36 一个看哭的小红书帖子：你记忆中的98年世界杯\n\n**【播客简介】**\n\n屠龙之术是一档关注科技、互联网、风险投资的播客，\n\n主播庄明浩是一个游走在互联网和风险投资行业的边缘人士。\n\n其工作多年所积累的认知似乎都成为了某种意义上的”屠龙之术“……\n\n或许某天再有新的“龙”出现的时候，就是这档播客停更之时。\n\n**【ima知识库】屠龙之术VIP报告库** [**ima.qq.com**](https://ima.qq.com/wiki/?shareId=7c732a68674e53edea8d17f9546ad5a2047e0c63985dde9d2592f2bb76fe43eb)\n\n![](https://image.xyzcdn.net/Fh7sXFANg724pHei6gzpziPTC1HG.png)",
+      "tags": [
+        "小红书",
+        "世界杯版权",
+        "播客"
+      ],
+      "score": 65,
+      "summary": "播客讨论小红书购买世界杯版权的商业分析。",
+      "fetched_at": "2026-05-31T01:03:34.181677+08:00"
+    },
+    {
+      "title": "Beyond Code Coverage: Functionality Testing with Playwright\n\nCode coverage is a vanity metric. Funct...",
+      "link": "https://x.com/aiDotEngineer/status/2060748820649005092",
+      "published": "2026-05-30T23:43:00+08:00",
+      "source": "AI Engineer(@aiDotEngineer)",
+      "content": "Beyond Code Coverage: Functionality Testing with Playwright  \n  \nCode coverage is a vanity metric. Functionality coverage is what matters. Marlene Mhangami shows how Playwright + MCP enables testing that actually catches the bugs users hit.   \n  \n[youtube.com/watch?v=FWEInO…](https://www.youtube.com/watch?v=FWEInOtngmM)\n\n![Tweet Image](https://pbs.twimg.com/media/HJjuK_RXcAE-_VV.jpg)\n\n💬0🔄1❤️19👀718📊4",
+      "tags": [
+        "Playwright",
+        "功能测试",
+        "AI测试"
+      ],
+      "score": 65,
+      "summary": "使用Playwright进行功能测试，超越代码覆盖率。",
+      "fetched_at": "2026-05-31T01:03:34.181751+08:00"
+    },
+    {
+      "title": "周末早上一早去健身房空无一人，心想也不是教练让锻炼！\n\n我也不会去的哈哈😂 \n\n其实我觉得针对我这种懒人的话，尤其像现在整天研究 AI，总想着找借口和理由不去锻炼，就特别适合跟着教练一起练。\n\n跟着...",
+      "link": "https://x.com/berryxia/status/2060762042236334144",
+      "published": "2026-05-31T00:35:32+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "周末早上一早去健身房空无一人，心想也不是教练让锻炼！  \n  \n我也不会去的哈哈😂   \n  \n其实我觉得针对我这种懒人的话，尤其像现在整天研究 AI，总想着找借口和理由不去锻炼，就特别适合跟着教练一起练。  \n  \n跟着教练练的好处有：  \n  \n1. 动作完成度更好  \n  \n 你自己练的时候，可能在真正达到效果、或者身体快到极限的时候，因为觉得太痛苦就放过自己了；跟着教练能确保动作练到位。  \n  \n2. 让你长期坚持  \n  \n 自己练很难长久，可能练几天或者身体稍微不舒服，就想找借口不去了；有教练监督能帮你克服惰性。  \n  \n3. 正反馈更明确  \n  \n 无论是动作的规范度还是身体的变化，跟着教练练都会非常明显。  \n  \n所以我觉得如果条件允许的话，建议大家可以跟着教练一起练，效果其实是更好的。\n\n![Tweet Image](https://pbs.twimg.com/media/HJlMHsZbMAA0veE.jpg)![Tweet Image](https://pbs.twimg.com/media/HJlMHsba0AAtMC1.jpg)\n\n💬0🔄0❤️0👀113",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-05-31T01:03:34.181819+08:00"
+    },
+    {
+      "title": "我今天刷到Ivan Fioravanti在mlx-vlm项目里的更新。\n\nStep 3.7 Flash模型正式加进去了。\n\n转换到MLX之后，视觉理解和文本生成全部跑通。\n\n这个模型速度特别快。\n\n4...",
+      "link": "https://x.com/berryxia/status/2060758287994503508",
+      "published": "2026-05-31T00:20:37+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "我今天刷到Ivan Fioravanti在mlx-vlm项目里的更新。  \n  \nStep 3.7 Flash模型正式加进去了。  \n  \n转换到MLX之后，视觉理解和文本生成全部跑通。  \n  \n这个模型速度特别快。  \n  \n4bit量化版本在128GB Apple Silicon机器上就能支持32K上下文。  \n  \n他直接在Mac Studio上测了benchmark，生成速度达到53 tokens/s以上。  \n  \n拿一张截图让它分析，模型把结构信息、关键元素提取得又快又准。  \n  \n以前我们总觉得高质量视觉语言任务必须靠云端。  \n  \n现在它把这种能力真正塞进了个人Mac。  \n  \n隐私、速度、零额外费用，全都兼顾到位。  \n  \n本地多模态AI又往前走了一步，真正能落地到日常项目里。\n\n![Tweet Image](https://pbs.twimg.com/media/HJlIu3ZbwAAUn6N.jpg)\n\n![Ivan Fioravanti ᯅ](https://pbs.twimg.com/profile_images/1992614705974611968/2ow40fhA_normal.jpg)\n\nIvan Fioravanti ᯅ@ivanfioravanti\n\nStep 3.7 Flash support added to mlx-vlm! 🚀  \n✅ Conversion to MLX  \n✅ Vision  \n✅ Text  \n  \nThis model is ultra fast! I'm gonna publish some benchmarks tests soon!  \n  \n4bit can run on 128GB Apple Silicon machines up to 32K contexts. We need to squeeze this model a little more to use it comfortably here.  \n  \nGonna upload MLX models on Hugging Face and create a PR for [@Prince\\_Canuma](https://x.com/Prince_Canuma) to review 🚀\n\n![Tweet Image](https://pbs.twimg.com/media/HJklD7cXUAI6oSS.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/ivanfioravanti/status/2060719059545579938)\n\n💬1🔄0❤️4👀800📊2",
+      "tags": [
+        "MLX-VLM",
+        "Step 3.7 Flash",
+        "本地多模态"
+      ],
+      "score": 82,
+      "summary": "Step 3.7 Flash模型加入mlx-vlm，本地多模态推理提速。",
+      "fetched_at": "2026-05-31T01:03:34.181884+08:00"
+    },
+    {
+      "title": "乔帮主的这个总结非常全面了！\n算法的偏爱更进一步是情绪，内容同质化基本已死！\n\n让用户可以互动才是王道，出现在时间线也没用… \n\n反正这个x 三天两头改算法然后中文评论区区垃圾账号黄 推一直没有得到处...",
+      "link": "https://x.com/berryxia/status/2060751831744336057",
+      "published": "2026-05-30T23:54:58+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "乔帮主的这个总结非常全面了！  \n算法的偏爱更进一步是情绪，内容同质化基本已死！  \n  \n让用户可以互动才是王道，出现在时间线也没用…   \n  \n反正这个x 三天两头改算法然后中文评论区区垃圾账号黄 推一直没有得到处理……\n\n![向阳乔木](https://pbs.twimg.com/profile_images/1960882043249942533/h4J39ERy_normal.jpg)\n\n向阳乔木@vista8\n\n[x.com/i/article/2060…](http://x.com/i/article/2060689316318445568)\n\n[🔗 View Quoted Tweet](https://x.com/vista8/status/2060690120383053930)\n\n💬0🔄0❤️0👀333",
+      "tags": [
+        "算法",
+        "内容同质化"
+      ],
+      "score": 30,
+      "summary": "评论算法偏好和内容同质化现象。",
+      "fetched_at": "2026-05-31T01:03:34.181947+08:00"
+    },
+    {
+      "title": "最近大家看到小米的MiMo 模型的降价！\n我今天看了一下用了120 w 差不多花了3块多钱！\n\n正好看到小米MiMo团队罗福莉分享的一篇技术博客。\n\nV2.5系列刚把API价格降下来，背后其实是他们把...",
+      "link": "https://x.com/berryxia/status/2060751816800047413",
+      "published": "2026-05-30T23:54:54+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "最近大家看到小米的MiMo 模型的降价！  \n我今天看了一下用了120 w 差不多花了3块多钱！  \n  \n正好看到小米MiMo团队罗福莉分享的一篇技术博客。  \n  \nV2.5系列刚把API价格降下来，背后其实是他们把推理系统彻底重构了一遍。  \n  \n他们用的Hybrid Sliding Window Attention架构，能把KVCache存储压缩到全注意力的约1/7。  \n  \n但罗福莉他们很清楚，架构优势在真实生产流量里不会自动变现。  \n  \n于是团队重新设计了KVCache管理、层级缓存和prefix-cache tree，针对SWA特有的缓存难题做了专项处理，同时深度优化了调度策略和Prefill/Decode流水线。  \n  \n在真实生产流量验证后，有效KVCache容量提升了接近5倍，主流框架下的服务端缓存命中率稳定在93%到95%。  \n  \n再叠加MoE配置调优和多模态推理优化，才真正把长上下文推理成本打下来，支撑了这次降价。  \n  \n这恰巧说明，好架构只是天花板，把它真正落地成可规模化、低成本的生产能力，才是决定模型性价比的关键。\n\n![Tweet Image](https://pbs.twimg.com/media/HJlC0iZbgAEfoNy.jpg)\n\n![Fuli Luo](https://pbs.twimg.com/profile_images/1988292026555564032/WBBBI5xQ_normal.jpg)\n\nFuli Luo@\\_LuoFuli\n\nInference Optimizations Behind the MiMo-V2.5 Series API Price Reductions   \n  \nRead the full technical blog: [mimo.xiaomi.com/blog/mimo-v2-5…](https://mimo.xiaomi.com/blog/mimo-v2-5-inference)  \n  \nThe V2.5 model family, including MiMo-V2.5 and MiMo-V2.5-Pro, is built on a Hybrid Sliding Window Attention (Hybrid SWA) architecture, which compresses KVCache storage to roughly 1/7 that of Full Attention. However, architectural advantages rarely translate directly into measurable gains in production serving. To realize these gains, we redesigned KVCache management, tiered caching, and the prefix-cache tree; addressed key challenges in SWA KVCache handling; and optimized scheduling as well as the Prefill/Decode pipeline.   \n  \nValidated on real production traffic, these optimizations have increased effective KVCache capacity by nearly 5x, with server-side cache hit rates averaging 93%–95% across mainstream harness frameworks. Together with MoE configuration tuning and multimodal inference optimizations, they enable more efficient long-context inference and form part of what makes the recent API price cuts possible.\n\n[🔗 View Quoted Tweet](https://x.com/_LuoFuli/status/2060672928367497480)\n\n💬0🔄0❤️2👀380",
+      "tags": [
+        "小米MiMo",
+        "推理优化",
+        "API降价"
+      ],
+      "score": 82,
+      "summary": "小米MiMo V2.5系列通过推理优化实现API降价。",
+      "fetched_at": "2026-05-31T01:03:34.182012+08:00"
+    },
+    {
+      "title": "兄弟们，想认真学提示词工程，周末花这 25 分钟是非常值得！\n\n这个就是来自于 Anthropic 官方的 Prompting 101 课程，带你从零搭建一个能落地的 prompt 任务：\n1. 语气...",
+      "link": "https://x.com/berryxia/status/2060751765050732987",
+      "published": "2026-05-30T23:54:42+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "兄弟们，想认真学提示词工程，周末花这 25 分钟是非常值得！  \n  \n这个就是来自于 Anthropic 官方的 Prompting 101 课程，带你从零搭建一个能落地的 prompt 任务：  \n1. 语气背景  \n2. XML 结构  \n3. Few-shot 示例  \n4. 输出格式化  \n5. 预填充与拓展思考  \n  \n这些内容一次性都给你讲清楚了。  \n  \n我做了中文字幕以及全程的章节化，每个章节都配好了核心要素的总结说明。  \n  \n也可以不用从头看，挑重点跳读也可以。  \n  \n#prompting101\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060741891763912704/vid/avc1/1920x1080/xpljKgIutJuhSqPR.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2060751765050732987/video/1)\n\n💬0🔄1❤️2👀272📊3",
+      "tags": [
+        "提示工程",
+        "Anthropic",
+        "教程"
+      ],
+      "score": 78,
+      "summary": "Anthropic官方Prompting 101课程的中文版讲解。",
+      "fetched_at": "2026-05-31T01:03:34.182096+08:00"
+    },
+    {
+      "title": "see also",
+      "link": "https://x.com/GaryMarcus/status/2060757925098836021",
+      "published": "2026-05-31T00:19:11+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "see also\n\n![Gary Marcus, MIT PhD and NYU Professor Emeritus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus, MIT PhD and NYU Professor Emeritus@GaryMarcus\n\nMy feed is suddenly filled w Elon supporters who can’t understand the difference between an insult and a genuine counterargument.  \n  \nAs always, I refer them to [@paulg](https://x.com/paulg)’s pyramid:\n\n![Tweet Image](https://pbs.twimg.com/media/HJlIEx7WUAcHHRj.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2060757557250007173)\n\n💬0🔄0❤️3👀462",
+      "tags": [
+        "辩论",
+        "Elon"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus评论Elon支持者缺乏真正反驳。",
+      "fetched_at": "2026-05-31T01:03:34.182170+08:00"
+    },
+    {
+      "title": "see also:",
+      "link": "https://x.com/GaryMarcus/status/2060757617362772264",
+      "published": "2026-05-31T00:17:57+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "see also:\n\n![Gary Marcus, MIT PhD and NYU Professor Emeritus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus, MIT PhD and NYU Professor Emeritus@GaryMarcus\n\nMy feed is suddenly filled w Elon supporters who can’t understand the difference between an insult and a genuine counterargument.  \n  \nAs always, I refer them to [@paulg](https://x.com/paulg)’s pyramid:\n\n![Tweet Image](https://pbs.twimg.com/media/HJlIEx7WUAcHHRj.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2060757557250007173)\n\n💬0🔄0❤️1👀949📊1",
+      "tags": [
+        "辩论",
+        "Elon"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus再次引用层次论回应辩论。",
+      "fetched_at": "2026-05-31T01:03:34.182233+08:00"
+    },
+    {
+      "title": "My feed is suddenly filled w Elon supporters who can’t understand the difference between an insult a...",
+      "link": "https://x.com/GaryMarcus/status/2060757557250007173",
+      "published": "2026-05-31T00:17:43+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "My feed is suddenly filled w Elon supporters who can’t understand the difference between an insult and a genuine counterargument.  \n  \nAs always, I refer them to [@paulg](https://x.com/paulg)’s pyramid:\n\n![Tweet Image](https://pbs.twimg.com/media/HJlIEx7WUAcHHRj.jpg)\n\n💬1🔄2❤️8👀2044📊4",
+      "tags": [
+        "辩论",
+        "Elon"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus批评Elon支持者混淆侮辱与反驳。",
+      "fetched_at": "2026-05-31T01:03:34.182294+08:00"
+    },
+    {
+      "title": "brew-browser 用 Tauri 2 + Svelte 5 写的，一个轻量 macOS 原生应用，给 Homebrew 加了图形界面。能看仪表盘、搜包、装包卸包、管后台服务，还能把当前环境快照...",
+      "link": "https://x.com/geekbb/status/2060751085300523448",
+      "published": "2026-05-30T23:52:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "brew-browser 用 Tauri 2 + Svelte 5 写的，一个轻量 macOS 原生应用，给 Homebrew 加了图形界面。能看仪表盘、搜包、装包卸包、管后台服务，还能把当前环境快照成 Brewfile 方便新机恢复。  \n  \n[github.com/msitarzewski/b…](https://github.com/msitarzewski/brew-browser)\n\n![Tweet Image](https://pbs.twimg.com/media/HJk0k7yagAAkNVA.jpg)\n\n💬1🔄0❤️4👀1102📊3",
+      "tags": [
+        "brew-browser",
+        "Homebrew",
+        "macOS"
+      ],
+      "score": 70,
+      "summary": "开源macOS原生Homebrew图形界面应用。",
+      "fetched_at": "2026-05-31T01:03:34.182354+08:00"
+    },
+    {
+      "title": "用 ChatGPT Images 2.0 生成整页中国风宋代美学版视觉 PPT 页面图，自动封装为 PPTX、PDF、网页 PPT 三件套\n\nhttps://t.co/XqfWuwlDO7",
+      "link": "https://x.com/geekbb/status/2060742025549373770",
+      "published": "2026-05-30T23:16:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "用 ChatGPT Images 2.0 生成整页中国风宋代美学版视觉 PPT 页面图，自动封装为 PPTX、PDF、网页 PPT 三件套  \n  \n[github.com/ansuelele/KK-C…](https://github.com/ansuelele/KK-Chinese-Style-PPT-Song-Aesthetics)\n\n![Tweet Image](https://pbs.twimg.com/media/HJksLp5bIAArwCt.jpg)\n\n💬0🔄0❤️7👀1406📊2",
+      "tags": [
+        "ChatGPT Images",
+        "PPT生成",
+        "宋代美学"
+      ],
+      "score": 70,
+      "summary": "用ChatGPT Images 2.0生成中国风PPT页面。",
+      "fetched_at": "2026-05-31T01:03:34.182415+08:00"
+    },
+    {
+      "title": "The secret to LiteParse lies in the grid projection algorithm. We project a complex page layout with...",
+      "link": "https://x.com/jerryjliu0/status/2060755304636449178",
+      "published": "2026-05-31T00:08:46+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "The secret to LiteParse lies in the grid projection algorithm. We project a complex page layout with text and tables into well-structured text, that humans can read and agents can understanding.  \n  \nThis contains of a few core steps (no LLMs!):   \n1. Grouping text fragments to lines  \n2. Identify left,center,right anchors  \n3. Snap each text item to an anchor   \n4. Handle flowing paragraphs separately   \n5. Render each text item in a carefully tuned order so that each piece of text aligns to a grid column   \n6. Post-processing  \n  \nFor more details check out this great blog post we wrote a month ago!   \n  \n[llamaindex.ai/blog/how-litep…](https://www.llamaindex.ai/blog/how-liteparse-turns-pdfs-into-text-a-deep-dive-into-the-grid-projection-algorithm)\n\n![Tweet Image](https://pbs.twimg.com/media/HJlGBsSagAAdwAl.jpg)\n\n![Jerry Liu](https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_normal.jpg)\n\nJerry Liu@jerryjliu0\n\nWe've created the world's fastest PDF parser ⚡️  \n  \nAnd it's more accurate than any other open-source, model-free PDF parser out there (pymupdf, pypdf, markitdown, pdftotext, opendataloader, pymupdf4llm)   \n  \nIntroducing LiteParse v2 - we rewrote the entire library into Rust and adapted it as native packages for Python and Node.   \n  \nIt supports 50+ different document types, can be triggered directly or installable directly within your favorite AI agent.  \n  \nBlog: [llamaindex.ai/blog/liteparse…](https://www.llamaindex.ai/blog/liteparse-v2-0-runs-everywhere?utm_medium=socials&utm_source=twitter&utm_campaign=2026-may-)  \n  \nRepo: [github.com/run-llama/lite…](https://github.com/run-llama/liteparse)\n\n![Tweet Image](https://pbs.twimg.com/media/HJWPiPnbQAAmm-O.png)\n\n[🔗 View Quoted Tweet](https://x.com/jerryjliu0/status/2059710330016817501)\n\n💬1🔄1❤️1👀247📊2",
+      "tags": [
+        "LiteParse",
+        "PDF解析",
+        "网格投影"
+      ],
+      "score": 85,
+      "summary": "LlamaIndex的LiteParse网格投影算法详解。",
+      "fetched_at": "2026-05-31T01:03:34.182475+08:00"
+    },
+    {
+      "title": "This is what $120B in TTM free cash flow looks like",
+      "link": "https://x.com/venturetwins/status/2060739423340552684",
+      "published": "2026-05-30T23:05:39+08:00",
+      "source": "Justine Moore(@venturetwins)",
+      "content": "This is what $120B in TTM free cash flow looks like\n\n![空空丨火币赚币](https://pbs.twimg.com/profile_images/2009255300155756544/NbsyLzIu_normal.jpg)\n\n空空丨火币赚币@btcoindown\n\n没想到黄仁勋还有这么可爱的一面，竟然还嘟着嘴跳舞。  \n  \n这舞跳的松弛又自然，感觉他可以和特朗普斗舞了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060402626466832385/vid/avc1/720x810/VpA33OZ51dU5UMYZ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/btcoindown/status/2060574420780155047/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/btcoindown/status/2060574420780155047)\n\n💬6🔄3❤️45👀3038📊8",
+      "tags": [
+        "NVIDIA",
+        "现金流"
+      ],
+      "score": 10,
+      "summary": "展示NVIDIA 1200亿美元自由现金流。",
+      "fetched_at": "2026-05-31T01:03:34.182534+08:00"
+    },
+    {
+      "title": "🌐 𝗪𝗲𝗯𝗶𝗻𝗮𝗿 | 𝗪𝗵𝗮𝘁’𝘀 𝗡𝗲𝘄 𝗶𝗻 𝗠𝗶𝗹𝘃𝘂𝘀 𝟯.𝟬: 𝗟𝗶𝘃𝗲 𝗪𝗮𝗹𝗸𝘁𝗵𝗿𝗼𝘂𝗴𝗵 & ...",
+      "link": "https://x.com/milvusio/status/2060741259732676904",
+      "published": "2026-05-30T23:12:57+08:00",
+      "source": "Milvus(@milvusio)",
+      "content": "🌐 𝗪𝗲𝗯𝗶𝗻𝗮𝗿 | 𝗪𝗵𝗮𝘁’𝘀 𝗡𝗲𝘄 𝗶𝗻 𝗠𝗶𝗹𝘃𝘂𝘀 𝟯.𝟬: 𝗟𝗶𝘃𝗲 𝗪𝗮𝗹𝗸𝘁𝗵𝗿𝗼𝘂𝗴𝗵 & 𝗔𝗠𝗔, 𝗝𝘂𝗻𝗲 𝟴 𝗼𝗻𝗹𝗶𝗻𝗲  \n  \nMilvus 3.0 beta is the biggest architectural upgrade since the project began. It brings native support for indexing and querying vectors directly on your data lake, along with a query engine that goes beyond top-K search.  \n  \nIn this live session, core maintainers Li Liu and Jiang Chen will walk through what shipped, the design choices behind it, and how Milvus 3.0 powers 𝗭𝗶𝗹𝗹𝗶𝘇 𝗩𝗲𝗰𝘁𝗼𝗿 𝗟𝗮𝗸𝗲𝗯𝗮𝘀𝗲.  \n  \n🎤 𝗧𝗼𝗽𝗶𝗰𝘀  \n• What changed in Milvus 3.0 beta  \n• Why data lake-native vector search matters  \n• What’s in beta now and what’s coming in GA  \n• How Milvus 3.0 powers Zilliz Vector Lakebase  \n• 15–20[zilliz.com/event/whats-ne…](https://zilliz.com/event/whats-new-in-milvus-3-0-beta?utm_source=x) maintainers  \n  \n📅 𝗝𝘂𝗻𝗲 𝟴, 𝟮𝟬𝟮𝟲, 𝟰:𝟬𝟬 𝗽𝗺 𝗣𝗗𝗧  \n🔗 Register here: <https://t.co/ccpclyAQa8>  \n  \nBring your questions about migration, performance, arc#Milvusr#VectorDatabasee#Zilliz’d like to ask the maintainers. Looking forward to the conversation!   \n#Milvus#VectorDatabase#Zilliz\n\n![Tweet Image](https://pbs.twimg.com/media/HJk4wpUaMAALaGa.jpg)\n\n💬0🔄0❤️0👀31",
+      "tags": [
+        "Milvus 3.0",
+        "向量数据库",
+        "数据湖"
+      ],
+      "score": 79,
+      "summary": "Milvus 3.0 beta网络研讨会，数据湖原生向量搜索。",
+      "fetched_at": "2026-05-31T01:03:34.182594+08:00"
+    },
+    {
+      "title": "Learn more on our blog! https://t.co/qvze9VZX21",
+      "link": "https://x.com/OpenRouter/status/2060759845960065243",
+      "published": "2026-05-31T00:26:49+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "Learn more on our blog! [openrouter.ai/announcements/…](https://openrouter.ai/announcements/guardrails)\n\n💬0🔄0❤️0👀145",
+      "tags": [
+        "OpenRouter",
+        "Guardrails",
+        "AI安全"
+      ],
+      "score": 75,
+      "summary": "OpenRouter推出Guardrails安全治理功能。",
+      "fetched_at": "2026-05-31T01:03:34.182654+08:00"
+    },
+    {
+      "title": "Assign guardrails to specific API keys or members, or set a workspace default\n\nEverything is availab...",
+      "link": "https://x.com/OpenRouter/status/2060759844433342540",
+      "published": "2026-05-31T00:26:48+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "Assign guardrails to specific API keys or members, or set a workspace default  \n  \nEverything is available through the Management API too, so you can automate provisioning during onboarding or key rotation.  \n  \nStart here: [openrouter.ai/workspaces](http://openrouter.ai/workspaces)\n\n💬1🔄0❤️0👀175📊1",
+      "tags": [
+        "OpenRouter",
+        "Guardrails",
+        "管理API"
+      ],
+      "score": 75,
+      "summary": "Guardrails可分配给API密钥或工作区。",
+      "fetched_at": "2026-05-31T01:03:34.182714+08:00"
+    },
+    {
+      "title": "Guardrails on OpenRouter are the most powerful in the market: centralized security &amp; governance ...",
+      "link": "https://x.com/OpenRouter/status/2060759826708222180",
+      "published": "2026-05-31T00:26:44+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "Guardrails on OpenRouter are the most powerful in the market: centralized security & governance for your AI traffic  \n  \nBudget limits, ZDR, model & provider restrictions, prompt injection defense, and DLP / sensitive info detection, layered into rules you control! 🧵\n\n![Tweet Image](https://pbs.twimg.com/media/HJlGiHgWwAQy--j.jpg)\n\n💬1🔄0❤️4👀318📊1",
+      "tags": [
+        "OpenRouter",
+        "Guardrails",
+        "预算限制"
+      ],
+      "score": 75,
+      "summary": "OpenRouter Guardrails提供预算限制、敏感信息检测等。",
+      "fetched_at": "2026-05-31T01:03:34.182776+08:00"
+    },
+    {
+      "title": "It's interesting how the same model (Opus 4.8) can produce very different output whether you're usin...",
+      "link": "https://x.com/petergyang/status/2060758437919879656",
+      "published": "2026-05-31T00:21:13+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "It's interesting how the same model (Opus 4.8) can produce very different output whether you're using it via Claude Code or regular Claude.  \n  \nI find the latter still better for writing tasks, probably because it has a default prompt that's not optimized for coding.\n\n💬1🔄0❤️1👀503📊1",
+      "tags": [
+        "Claude",
+        "Opus 4.8",
+        "写作"
+      ],
+      "score": 60,
+      "summary": "Claude Code与普通Claude输出差异观察。",
+      "fetched_at": "2026-05-31T01:03:34.182836+08:00"
+    },
+    {
+      "title": "只能发140字，一个月上一次X对我来说是合适的。不要相信X自媒体的收益，非常微薄，不值得花去大量时间。只有少部分非常同频的朋友一边开发一边交流是值得的。我认为目前值得做的是英文油管，顶级创客的油管已经...",
+      "link": "https://x.com/feltanimalworld/status/2060739751380918573",
+      "published": "2026-05-30T23:06:58+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "只能发140字，一个月上一次X对我来说是合适的。不要相信X自媒体的收益，非常微薄，不值得花去大量时间。只有少部分非常同频的朋友一边开发一边交流是值得的。我认为目前值得做的是英文油管，顶级创客的油管已经不是“表演节目”了，AI加持下里面会孵化项目的。开源的趋势慢慢会被逆转，好代码不会分享。\n\n💬3🔄0❤️13👀815📊5",
+      "tags": [
+        "X",
+        "收益",
+        "英文油管"
+      ],
+      "score": 10,
+      "summary": "建议不要依赖X自媒体收益，转向英文YouTube。",
+      "fetched_at": "2026-05-31T01:03:34.182896+08:00"
+    },
+    {
+      "title": "AI safety can't happen behind closed doors! Super cool to see that the @AISecurityInst is releasing ...",
+      "link": "https://x.com/ClementDelangue/status/2060749008641970465",
+      "published": "2026-05-30T23:43:45+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "AI safety can't happen behind closed doors! Super cool to see that the [@AISecurityInst](https://x.com/AISecurityInst) is releasing its evals, datasets, and models in the open on [@huggingface](https://x.com/huggingface), so researchers everywhere can scrutinize, reproduce, and build on them: [huggingface.co/ai-safety-inst…](http://huggingface.co/ai-safety-institute)\n\n![Tweet Image](https://pbs.twimg.com/media/HJlAObsWgAUqf1l.jpg)\n\n💬8🔄14❤️52👀5254📊17",
+      "tags": [
+        "AI安全",
+        "开源评估",
+        "HuggingFace"
+      ],
+      "score": 85,
+      "summary": "AI安全研究所开源评估数据集与模型。",
+      "fetched_at": "2026-05-31T01:03:34.182955+08:00"
+    },
+    {
+      "title": "Increasingly, HTML Artifacts are becoming a core part of how I work with AI agents.\n\nLong-horizon ag...",
+      "link": "https://x.com/omarsar0/status/2060751120587497720",
+      "published": "2026-05-30T23:52:08+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "Increasingly, HTML Artifacts are becoming a core part of how I work with AI agents.  \n  \nLong-horizon agent sessions need a better way to surface insights about what work it has done.  \n  \nThis may not be obvious right now, but as you start to let your agent work on dynamic workflows, large codebases, long-running loops (e.g., using /goal), and deep research tasks, you need a good way to present results. Chat window is not it.  \n  \nYou also don't want to just trust everything the agents do. Artifacts help provide an important verification layer, which in turn enables important decision-making.  \n  \nI like HTML artifacts because I can just ask the agent to produce as many of them (and in whatever form) as I need to verify the work and make sense out of everything. I even built a nice tab system for my artifacts. They are great for continual learning and research.  \n  \nI use HTML artifacts for logging, tracking experiments, brainstorming, managing my inbox, code reviews, agent session management, deep research, writing, reading, and so much more.  \n  \nI believe [@karpathy](https://x.com/karpathy) wrote about this somewhere: As we move on to more advanced applications of AI agents and outputs get more complex, we will start to find the need for even more advanced forms of interactions with AI, including interactive neural videos/simulations.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060751063884734464/vid/avc1/1300x720/oRn0DsAqf25en0x0.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/omarsar0/status/2060751120587497720/video/1)\n\n💬3🔄5❤️23👀1153📊8",
+      "tags": [
+        "HTML Artifacts",
+        "AI代理",
+        "工作流"
+      ],
+      "score": 65,
+      "summary": "使用HTML Artifacts作为AI代理的输出验证层。",
+      "fetched_at": "2026-05-31T01:03:34.183015+08:00"
+    }
+  ]
+}
