@@ -663,6 +663,226 @@
       "score": 50,
       "summary": "宝玉认为单一编程技能不稀缺，工程和写作能力仍重要。",
       "fetched_at": "2026-05-31T04:55:09.736363+08:00"
+    },
+    {
+      "title": "How we contain Claude across products",
+      "link": "https://simonwillison.net/2026/May/30/how-we-contain-claude/#atom-everything",
+      "published": "2026-05-31T05:36:24+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "**[How we contain Claude across products](https://www.anthropic.com/engineering/how-we-contain-claude)**\n\nA complaint I often have about sandboxing products is that they are rarely thoroughly *documented*, and in the absence of detailed documentation it's hard to know how much I can trust them.\n\nAnthropic just published a fantastic overview of how their various sandbox techniques work across [Claude.ai](https://claude.ai/), Claude Code, and Cowork.\n\n> We constrain where and how an agent can act with process sandboxes, VMs, filesystem boundaries, and egress controls. The goal is to set a hard boundary on what an agent can reach. For example, if credentials never enter the sandbox, they can't be exfiltrated, regardless of whether the cause is a user, a model finding a “creative” path, or an attacker.\n\nClaude.ai uses gVisor. Claude Code, run locally, uses Seatbelt on macOS and Bubblewrap on Linux. Claude Cowork runs a full VM (Apple's Virtualization framework on macOS, HCS on Windows).\n\nThere's a lot in here, including some interesting stories of risks they missed such as the `api.anthropic.com/v1/files` exfiltration vector [covered here previously](https://simonwillison.net/2026/Jan/14/claude-cowork-exfiltrates-files/).\n\nThis reminded me it's time I took another look at Anthropic's open source [srt (Anthropic Sandbox Runtime)](https://github.com/anthropic-experimental/sandbox-runtime) tool - it's mature enough know that I'm ready to give it a proper go.\n\nTags: [sandboxing](https://simonwillison.net/tags/sandboxing), [security](https://simonwillison.net/tags/security), [ai](https://simonwillison.net/tags/ai), [generative-ai](https://simonwillison.net/tags/generative-ai), [llms](https://simonwillison.net/tags/llms), [anthropic](https://simonwillison.net/tags/anthropic), [claude](https://simonwillison.net/tags/claude), [claude-code](https://simonwillison.net/tags/claude-code)",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "安全"
+      ],
+      "score": 85,
+      "summary": "Anthropic官方发布Claude沙箱技术详解，涵盖gVisor、Seatbelt等方案。",
+      "fetched_at": "2026-05-31T06:57:35.537212+08:00"
+    },
+    {
+      "title": "Running Python ASGI apps in the browser via Pyodide + a service worker",
+      "link": "https://simonwillison.net/2026/May/30/pyodide-asgi-browser/#atom-everything",
+      "published": "2026-05-31T05:02:16+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "**Research:** [Running Python ASGI apps in the browser via Pyodide + a service worker](https://github.com/simonw/research/tree/main/pyodide-asgi-browser#readme)\n\n[Datasette Lite](https://lite.datasette.io/) is my version of Datasette that runs entirely in the browser using Pyodide in WebAssembly.\n\nWhen I first built it [four years ago](https://simonwillison.net/2022/May/4/datasette-lite/) I used Web Workers and code that intercepts navigation operations and fetches the generated HTML by running the Python app.\n\nThis worked, but had the disadvantage that any JavaScript in `<script>` tags would not be executed - breaking some Datasette functionality and a whole lot of Datasette plugins.\n\nThis morning I [set Claude Opus 4.8 the task](https://github.com/simonw/research/pull/112) (in Claude Code for web) of figuring out how to run Python ASGI apps in Pyodide using Service Workers instead, and it seems to work! Here's a [basic ASGI FastCGI demo](https://simonw.github.io/research/pyodide-asgi-browser/) and here's [a demo that runs Datasette 1.0a31](https://simonw.github.io/research/pyodide-asgi-browser/datasette.html).\n\nI'm still getting my head around exactly how it works, but once I've done that I plan to upgrade Datasette Lite itself.\n\nTags: [javascript](https://simonwillison.net/tags/javascript), [python](https://simonwillison.net/tags/python), [datasette](https://simonwillison.net/tags/datasette), [asgi](https://simonwillison.net/tags/asgi), [service-workers](https://simonwillison.net/tags/service-workers), [pyodide](https://simonwillison.net/tags/pyodide), [datasette-lite](https://simonwillison.net/tags/datasette-lite), [claude-code](https://simonwillison.net/tags/claude-code)",
+      "tags": [
+        "Pyodide",
+        "浏览器",
+        "ASGI"
+      ],
+      "score": 70,
+      "summary": "Simon Willison用Pyodide在浏览器中通过Service Worker运行Python ASGI应用。",
+      "fetched_at": "2026-05-31T06:57:35.537297+08:00"
+    },
+    {
+      "title": "everyone from openai like my tweet",
+      "link": "https://x.com/jerryjliu0/status/2060838715870888242",
+      "published": "2026-05-31T05:40:13+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "everyone from openai like my tweet\n\n💬0🔄0❤️1👀442",
+      "tags": [
+        "无价值"
+      ],
+      "score": 10,
+      "summary": "Jerry Liu发推文说OpenAI的人赞了他的推，无实质内容。",
+      "fetched_at": "2026-05-31T06:57:35.537360+08:00"
+    },
+    {
+      "title": "One annoyance is each tab is missing features that would be really nice to have in a combined interf...",
+      "link": "https://x.com/jerryjliu0/status/2060837351983911317",
+      "published": "2026-05-31T05:34:47+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "One annoyance is each tab is missing features that would be really nice to have in a combined interface  \n- why doesn't Cowork have a `fork` feature on threads?   \n- why doesn't Code have a concept of \"Projects\" like Cowork?\n\n![Jerry Liu](https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_normal.jpg)\n\nJerry Liu@jerryjliu0\n\nI've been loyal to Claude but it would be really nice to have these tabs be consolidated   \n  \nCodex is a lot nicer in that regard\n\n![Tweet Image](https://pbs.twimg.com/media/HJl1Hk1bMAA2_Zb.png)\n\n[🔗 View Quoted Tweet](https://x.com/jerryjliu0/status/2060807138172416406)\n\n💬8🔄0❤️8👀459📊7",
+      "tags": [
+        "Claude",
+        "Codex",
+        "用户体验"
+      ],
+      "score": 65,
+      "summary": "Jerry Liu吐槽Claude各产品标签间功能缺失，认为Codex更优。",
+      "fetched_at": "2026-05-31T06:57:35.537416+08:00"
+    },
+    {
+      "title": "The Marxists of that time thought this was a GOOD idea.",
+      "link": "https://x.com/pmarca/status/2060848464117002709",
+      "published": "2026-05-31T06:18:57+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "The Marxists of that time thought this was a GOOD idea.\n\n![Logan Dobson](https://pbs.twimg.com/profile_images/1455586780300840964/2EOm06rx_normal.jpg)\n\nLogan Dobson@LoganDobson\n\nI think a lot of people are saying a lot of stuff out here that doesn't make sense if you think about it for two seconds.   \n  \nThe entire industrial revolution was about shifting production from individual humans to massive, expensive machines that yes could cost more than human labor to purchase up front but once established enabled gains in productivity and efficiency that brought the entire world out of the middle ages and into modernity, prosperity, raised living standards, wages....\n\n[🔗 View Quoted Tweet](https://x.com/LoganDobson/status/2060809673356488884)\n\n💬0🔄1❤️12👀1431📊1",
+      "tags": [
+        "非AI"
+      ],
+      "score": 30,
+      "summary": "Marc Andreessen转推关于马克思主义的评论，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537471+08:00"
+    },
+    {
+      "title": "Yes.",
+      "link": "https://x.com/pmarca/status/2060848327806390424",
+      "published": "2026-05-31T06:18:24+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Yes.\n\n![Logan Dobson](https://pbs.twimg.com/profile_images/1455586780300840964/2EOm06rx_normal.jpg)\n\nLogan Dobson@LoganDobson\n\nI think a lot of people are saying a lot of stuff out here that doesn't make sense if you think about it for two seconds.   \n  \nThe entire industrial revolution was about shifting production from individual humans to massive, expensive machines that yes could cost more than human labor to purchase up front but once established enabled gains in productivity and efficiency that brought the entire world out of the middle ages and into modernity, prosperity, raised living standards, wages....\n\n[🔗 View Quoted Tweet](https://x.com/LoganDobson/status/2060809673356488884)\n\n💬2🔄0❤️8👀2112📊2",
+      "tags": [
+        "非AI"
+      ],
+      "score": 20,
+      "summary": "Marc Andreessen简单评论“Yes.”，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537523+08:00"
+    },
+    {
+      "title": "Co-sign.",
+      "link": "https://x.com/pmarca/status/2060846282470756662",
+      "published": "2026-05-31T06:10:17+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Co-sign.\n\n![Lomez](https://pbs.twimg.com/profile_images/1989741157468049410/TA5JekVn_normal.jpg)\n\nLomez@L0m3z\n\nWatched Marty Supreme, which was better than I was expecting, quite entertaining, funny, visually interesting, frenetic and uncomfortable in the way Safdie movies are. But it really leans into this sociological tic you often see in movies/books about successful people that the true artists, true geniuses, people at the highest levels of their field, must give themselves over to narcissism/sociopathy/cruel often self-sabotaging obsession. All of the main characters are some version of this. Possessed like heroin addicts by their pet passion, however trivial (like ping pong), and willing to destroy themselves and everyone around them in its singular pursuit.  \n  \nSome highly successful people are like of this course, possessed by their goals in this self-destructive way, but this trope is mostly cope in my experience. The idea that to become truly successful one must become evil, one must make some kind of Faustian bargain, one must commit himself to misery in all other things, is a way for non-successful people, the less motivated or talented, to tell themselves their shortcomings are in fact an expression of their virtue and moral superiority over the guy who has made it to the top of the mountain.  \n  \nIn fact, the most successful people I know, rich, powerful, highly accomplished across a number of domains, while unique in their own ways, often weird, and even unusually obsessive, are not sociopathic or self-sabotaging at all and seem to be as satisfied and well-adjusted to the world as anyone else, and usually more so. The malignant narcissist, on the other hand, tends to flame out and self-implode well short of the summit.\n\n[🔗 View Quoted Tweet](https://x.com/L0m3z/status/2060770476264407336)\n\n💬8🔄3❤️20👀7249📊7",
+      "tags": [
+        "非AI"
+      ],
+      "score": 25,
+      "summary": "Marc Andreessen转推并评论“Co-sign.”，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537611+08:00"
+    },
+    {
+      "title": "Interesting thread.",
+      "link": "https://x.com/pmarca/status/2060843945471676734",
+      "published": "2026-05-31T06:00:59+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting thread.\n\n![Marko Jukic](https://pbs.twimg.com/profile_images/1690074184624287745/aBPeoMVj_normal.jpg)\n\nMarko Jukic@mmjukic\n\nI mean, it's a good question. Why hasn't human civilization naturally developed into a brutal aristocracy of the highly moral and high-IQ? Why don't we have a global \"130 IQ high-trust Anglo\" paradise already?  \n  \nWhat mysterious force obviously overcomes and beats intelligence?\n\n[🔗 View Quoted Tweet](https://x.com/mmjukic/status/2060805004374466713)\n\n💬25🔄3❤️50👀11827📊18",
+      "tags": [
+        "非AI"
+      ],
+      "score": 25,
+      "summary": "Marc Andreessen转推并评论“Interesting thread.”，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537666+08:00"
+    },
+    {
+      "title": "If it weren't for Twitter I'd never have written most of these down, and I'm very glad now that I di...",
+      "link": "https://x.com/paulg/status/2060849371986505733",
+      "published": "2026-05-31T06:22:33+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "If it weren't for Twitter I'd never have written most of these down, and I'm very glad now that I did.\n\n![Paul Graham](https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_normal.jpg)\n\nPaul Graham@paulg\n\n7 yo just learned it's \"Your call will be answered in the order received\" and not \"Your call will be answered in the watery sea.\"\n\n[🔗 View Quoted Tweet](https://x.com/paulg/status/1133709981998571520)\n\n💬0🔄1❤️4👀263📊1",
+      "tags": [
+        "非AI"
+      ],
+      "score": 20,
+      "summary": "Paul Graham发推感谢Twitter让他写下这些想法，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537716+08:00"
+    },
+    {
+      "title": "The only thing worse than having the CEO knee-deep in building stuff with AI is not having the CEO k...",
+      "link": "https://x.com/paulg/status/2060835696298856528",
+      "published": "2026-05-31T05:28:13+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "The only thing worse than having the CEO knee-deep in building stuff with AI is not having the CEO knee-deep in building stuff with AI.\n\n💬76🔄23❤️385👀25891📊92",
+      "tags": [
+        "CEO",
+        "AI",
+        "领导力"
+      ],
+      "score": 85,
+      "summary": "Paul Graham认为CEO深度参与AI构建至关重要。",
+      "fetched_at": "2026-05-31T06:57:35.537768+08:00"
+    },
+    {
+      "title": "When Chrome assures you \"your tabs will reopen\" after you install the latest update, does anyone els...",
+      "link": "https://x.com/paulg/status/2060835373022921185",
+      "published": "2026-05-31T05:26:56+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "When Chrome assures you \"your tabs will reopen\" after you install the latest update, does anyone else say a silent prayer that they actually will? Thank God they never break this. All it would take is one failure of that type, and no one would trust them again.\n\n💬41🔄1❤️151👀14028📊42",
+      "tags": [
+        "非AI"
+      ],
+      "score": 15,
+      "summary": "Paul Graham调侃Chrome更新后标签页恢复的可靠性，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537817+08:00"
+    },
+    {
+      "title": "The only thing worse than having the president of the company knee-deep in building stuff with AI is...",
+      "link": "https://x.com/paulg/status/2060834059366871109",
+      "published": "2026-05-31T05:21:42+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "The only thing worse than having the president of the company knee-deep in building stuff with AI is not having the president of the company knee-deep in building stuff with AI.\n\n💬0🔄0❤️4👀438📊1",
+      "tags": [
+        "AI",
+        "领导力"
+      ],
+      "score": 40,
+      "summary": "Paul Graham重复CEO观点，变体为“president”，价值较低。",
+      "fetched_at": "2026-05-31T06:57:35.537866+08:00"
+    },
+    {
+      "title": "Reimagining technology as a catalyst for human connection, @tigrisli designs installations, electron...",
+      "link": "https://x.com/Replit/status/2060828698933166081",
+      "published": "2026-05-31T05:00:24+08:00",
+      "source": "Replit ⠕(@Replit)",
+      "content": "Reimagining technology as a catalyst for human connection, [@tigrisli](https://x.com/tigrisli) designs installations, electronic hardware, and experiences that evoke curiosity and play.  \n  \nSee her perfume installation, transforming memories into bespoke fragrance with AI in real time, on day two of Vibecon.  \n  \nNYC, June 17–18.  \n  \nGet your tickets at [vibecon.ai](http://vibecon.ai)\n\n![Tweet Image](https://pbs.twimg.com/media/HJmIx8wXEAAt5hu.jpg)\n\n💬7🔄1❤️11👀1475📊7",
+      "tags": [
+        "广告",
+        "AI"
+      ],
+      "score": 30,
+      "summary": "Replit推广Vibecon活动，展示AI香水安装，广告性质。",
+      "fetched_at": "2026-05-31T06:57:35.537913+08:00"
+    },
+    {
+      "title": "Tenet Industries (@industriestenet) is building low-cost, mass-producible defense systems, starting ...",
+      "link": "https://x.com/ycombinator/status/2060843835123736907",
+      "published": "2026-05-31T06:00:33+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Tenet Industries ([@industriestenet](https://x.com/industriestenet)) is building low-cost, mass-producible defense systems, starting with strike drones.   \n  \nDefense primes are still building Bugattis and Ferraris. Tenet is building the F-150 for defense.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060783200780378112/vid/avc1/1920x1080/WTmwJk1RRkJRnugJ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2060843835123736907/video/1)\n\n💬7🔄0❤️31👀2569📊8",
+      "tags": [
+        "非AI"
+      ],
+      "score": 30,
+      "summary": "Y Combinator推广低成本无人机项目Tenet，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.537961+08:00"
+    },
+    {
+      "title": "Congrats on the launch, @hpafrisk, @falkemil_, @0xfabian_!\n\nhttps://t.co/dufWdSof4x",
+      "link": "https://x.com/ycombinator/status/2060843836763722158",
+      "published": "2026-05-31T06:00:33+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Congrats on the launch, [@hpafrisk](https://x.com/hpafrisk), [@falkemil\\_](https://x.com/falkemil_), [@0xfabian\\_](https://x.com/0xfabian_)!  \n  \n[ycombinator.com/launches/QbL-t…](https://www.ycombinator.com/launches/QbL-tenet-low-cost-mass-produced-strike-drones)\n\n💬0🔄0❤️3👀1483",
+      "tags": [
+        "非AI"
+      ],
+      "score": 20,
+      "summary": "Y Combinator祝贺Tenet项目发布，非AI相关。",
+      "fetched_at": "2026-05-31T06:57:35.538009+08:00"
+    },
+    {
+      "title": "It will also be interesting to track how open models close the gap in the coming months. \n\nhttps://t...",
+      "link": "https://x.com/omarsar0/status/2060829453266145348",
+      "published": "2026-05-31T05:03:24+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "It will also be interesting to track how open models close the gap in the coming months.   \n  \n[x.com/EpochAIResearc…](https://x.com/EpochAIResearch/status/2060451576779886942)\n\n![Epoch AI](https://pbs.twimg.com/profile_images/1866142753127616512/DYcE9bN1_normal.jpg)\n\nEpoch AI@EpochAIResearch\n\nWe took another look at the capability gap between open-weight and proprietary models. Since the start of the year, open-weight models have lagged the state of the art by four months.\n\n![Tweet Image](https://pbs.twimg.com/media/HJgxyhzaUAANyCB.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/EpochAIResearch/status/2060451576779886942)\n\n💬0🔄0❤️8👀1796📊1",
+      "tags": [
+        "开源模型",
+        "闭源模型",
+        "能力差距"
+      ],
+      "score": 80,
+      "summary": "Epoch AI数据显示开源模型落后闭源模型约四个月，转述。",
+      "fetched_at": "2026-05-31T06:57:35.538057+08:00"
     }
   ]
 }
