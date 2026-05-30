@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-05-29"
+    "date": "2026-05-30"
   },
   "entries": [
     {
@@ -957,6 +957,300 @@
       "score": 10,
       "summary": "个人清晨生活分享，与 AI 无关。",
       "fetched_at": "2026-05-30T07:11:36.344314+08:00"
+    },
+    {
+      "title": "[AINews] Founders and Forward Deployed Engineers",
+      "link": "https://www.latent.space/p/ainews-founders-and-forward-deployed",
+      "published": "2026-05-30T09:57:15+08:00",
+      "source": "Latent Space",
+      "content": "Most people are still digesting the [massive Anthropic news](https://www.latent.space/p/ainews-anthropic-raises-965b-series) from yesterday.\n\nWe’re taking the opportunity to solicit [the leading AI FDE’s](https://ai.engineer/cfp) in the world for AIE’s new Forward Deployed Engineer track, mirroring similar pushes from both [OpenAI DeployCo](https://www.latent.space/p/ainews-thinking-machines-native-interaction) and [Anthropic DeployCo](https://www.blackstone.com/news/press/anthropic-partners-with-blackstone-hellman-friedman-and-goldman-sachs-to-launch-enterprise-ai-services-firm/):\n\n[![](https://substackcdn.com/image/fetch/$s_!SpLP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png)](https://substackcdn.com/image/fetch/$s_!SpLP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fb92541e3-151a-4f10-8226-b86cb12eaca0_2332x1344.png)\n\nas well as AIE’s new Founders program, where we are doing our version of the Startup Battlefield, a competitive pitch contest anchored by YCombinator’s Garry Tan and Howie Lu’s [$10 Million dollar Hyperagent](https://x.com/howietl/status/2057823823526014990) contest. Sign up (and [book hotel](https://www.ai.engineer/worldsfair/2026#venue)!) for details today if you are keen.\n\n[![](https://substackcdn.com/image/fetch/$s_!pbtj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa6ef076-049b-4bd8-b183-4a49f1a913f8_2276x1306.png)](https://substackcdn.com/image/fetch/$s_!pbtj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Faa6ef076-049b-4bd8-b183-4a49f1a913f8_2276x1306.png)\n\n> AI News for 5/28/2026-5/29/2026. We checked 12 subreddits, [544 Twitters](https://twitter.com/i/lists/1585430245762441216) and no further Discords. [AINews’ website](https://news.smol.ai/) lets you search all past issues. As a reminder, [AINews is now a section of Latent Space](https://www.latent.space/p/2026). You can [opt in/out](https://support.substack.com/hc/en-us/articles/8914938285204-How-do-I-subscribe-to-or-unsubscribe-from-a-section-on-Substack) of email frequencies!\n\n---\n\n# **AI Twitter Recap**\n\n**Claude Opus 4.8 Rollout, Benchmark Friction, and API Ergonomics**\n\n* **Opus 4.8 landed into a noisy, mixed eval landscape**: multiple independent benches converged on “incremental but not dominant.” [@arena](https://x.com/arena/status/2060160804767584512) pushed **200+ frontend/code tests** comparing Opus 4.8 against prior Opus variants, Gemini, and GLM; [@theo](https://x.com/theo/status/2060172445592789064) reported CursorBench shows it as **more efficient but slightly worse than 4.7 within margin of error**; [@jerryjliu0](https://x.com/jerryjliu0/status/2060196252642648427) and [@llama\\_index](https://x.com/llama_index/status/2060165358569337102) found **small gains on tables/layout** but regressions on **content faithfulness/charts** in document parsing; [@scaling01](https://x.com/scaling01/status/2060335738172911766) said **no progress on ALE-Bench** and separately flagged interesting failure modes on LisanBench. On the positive side, [@jeremyphoward](https://x.com/jeremyphoward/status/2060195641847107722) found 4.8 **less over-agentic and more cooperative** than 4.7/GPT-5.5 in coding, while [@leo\\_linsky](https://x.com/leo_linsky/status/2060205310871326894) called it a tangible product improvement over prior Anthropic releases.\n* **Anthropic also shipped useful platform-level changes**: [@ClaudeDevs](https://x.com/ClaudeDevs/status/2060432688281251998) announced **mid-conversation system instructions without breaking prompt cache**, plus authoritative mid-conversation system-role updates, which matters for long-running agent sessions and cost control. But pricing remains a major complaint: [@jeremyphoward](https://x.com/jeremyphoward/status/2060198836963061998) argued Anthropic has done little for **API affordability**, preferring GPT-5.5 partly because subscription/API economics are easier to justify. Overall takeaway: 4.8 looks like a meaningful quality-of-life release for real use, not a clean benchmark reset.\n\n**Agent Harnesses, Multi-Turn RL Bugs, and the Infrastructure Around Autonomy**\n\n* **A subtle but important RL failure mode got called out**: [@ClementDelangue](https://x.com/ClementDelangue/status/2060175330665508917) highlighted a Hugging Face deep-dive on why many **tool-using, multi-turn RL training loops are silently broken**. The core bug: decoding model output, parsing tool calls, then **re-tokenizing** the updated conversation can change tokenization, so gradients are applied to sequences the model never actually sampled. The proposed fix is a strict **“Token-In, Token-Out”** rule: never re-encode sampled tokens; keep a single token buffer across turns. [@johnschulman2](https://x.com/johnschulman2/status/2060392679528337714) reinforced the broader point that **renderers are foundational** infrastructure between messages and tokens, with failure modes spanning train/test mismatch, caching inefficiency, and prompt injection risk.\n* **Harness design is becoming its own optimization discipline**: [@omarsar0](https://x.com/omarsar0/status/2060371848010019001) surfaced work on **Effective Feedback Compute (EFC)**, claiming raw token/tool counts explain agent success poorly while EFC reaches **R² up to 0.99**, implying harness quality matters more than gross activity. This lines up with productized tuning efforts like [@LangChain](https://x.com/LangChain/status/2060349231722852680), where **Deep Agents v0.6** makes **harness profiles** first-class to get strong performance from Qwen/Kimi/DeepSeek at **20x+ lower cost** than frontier APIs, and [@hwchase17](https://x.com/hwchase17/status/2060355016989585919) explicitly framing “different models need different prompts/tools.” [@vllm\\_project](https://x.com/vllm_project/status/2060208480292843720) shipped **native weight syncing APIs** and improved pause/resume for async RL, and later added [fastokens](https://x.com/vllm_project/status/2060414393666679229), a **Rust BPE tokenizer** to reduce CPU tokenization bottlenecks in long-context/agentic workloads.\n* **Debate is shifting from “single vs multi-agent” to where the abstraction pays**: [@OfirPress](https://x.com/OfirPress/status/2060352260723392658) argued current multi-agent systems are mostly **speedups, not capability unlocks**; [@scaling01](https://x.com/scaling01/status/2060363050272653625) took the opposite view, expecting swarm-style training to yield better planning and superintelligence-like behavior. Either way, the practical trend is clear: more teams are building around **agent observability, traces, and continual improvement loops**, e.g. [@Vtrivedy10](https://x.com/Vtrivedy10/status/2060406006329278970) on mining production traces for SFT/distillation and long-horizon continual learning.\n\n**Open Models, Local AI, and the OSS Toolchain Tightening Up**\n\n* **Local-first and open-weight momentum continues to rise**: [@LangChain](https://x.com/LangChain/status/2060405874993115532) said **1 in 3 AI teams** ran an open-weights model in April 2026, up from **1 in 5** nine months earlier; [@EpochAIResearch](https://x.com/EpochAIResearch/status/2060451576779886942) estimated open-weight models now lag frontier proprietary models by about **four months**. On the toolchain side, [@ggerganov](https://x.com/ggerganov/status/2060394400237109567) launched **llama.app**, giving llama.cpp an official website, a unified installer, and a single `llama` entrypoint aimed at easier local deployment and third-party agent integration. [@ollama](https://x.com/ollama/status/2060428074102206496) announced **OpenJarvis** as a local-first personal AI via Ollama, explicitly tied to Stanford/Hazy’s “Intelligence Per Watt” framing.\n* **Open infrastructure is getting more enterprise-shaped**: [@ClementDelangue](https://x.com/ClementDelangue/status/2060378354931388837) noted that **~50% of models and datasets on Hugging Face are now private**, rising with HF’s storage/buckets offering; this is an important correction to the idea that HF is only public OSS infrastructure. [@abidlabs](https://x.com/abidlabs/status/2060404002341462044) showed **Hugging Face Jobs** replacing GitHub runners for CPU/serverless GPU CI. [@DSPyOSS](https://x.com/DSPyOSS/status/2060186371902587119), [@dbreunig](https://x.com/dbreunig/status/2060187833084870746), and others shipped a redesigned **DSPy docs/front page** ahead of a coming 4.0, focused on onboarding into programmable AI systems rather than pure prompting.\n* **Licensing and permissiveness are becoming strategic levers**: [@kimmonismus](https://x.com/kimmonismus/status/2060458698930016378) highlighted NVIDIA moving its four open model families to **Linux Foundation OpenMDW-1.1**, reducing legal fragmentation across weights/code/docs/data. New permissive data releases also matter: [@keshigeyan](https://x.com/keshigeyan/status/2060398262591668315) introduced **GPIC**, a **100M-pair permissive image corpus** plus **1M-pair benchmark** for visual generation, with explicit research + commercial usability.\n\n**Google/OpenAI Product Surface Expands: Managed Agents, Gemini Spark/Omni, and Codex on Windows**\n\n* **Google is widening the “managed agent” stack from API to consumer product**: [@\\_philschmid](https://x.com/_philschmid/status/2060359976325992528) showed **Managed Agents in the Gemini API**: a single API call provisioning a sandboxed Linux environment with code execution, web access, and file I/O. On the consumer side, [@GeminiApp](https://x.com/GeminiApp/status/2060405496872579115) rolled out **Gemini Spark** to U.S. AI Ultra subscribers as a **24/7 personal agent** that can operate across a user’s digital ecosystem under direction. Google also kept pushing **Gemini Omni** multimodal generation/editing demos ([example](https://x.com/alexanderchen/status/2060322611586834518), [product thread](https://x.com/GeminiApp/status/2060473816393150965)) and announced **Google Flow Agent** for creative workflows in video/film production ([thread](https://x.com/Google/status/2060473826362732611)).\n* **OpenAI’s Codex is moving closer to a persistent remote dev operator**: [@OpenAI](https://x.com/OpenAI/status/2060428604727771421) and [@OpenAIDevs](https://x.com/OpenAIDevs/status/2060429591655927942) added **computer use on Windows**, including remote steering from the ChatGPT mobile app. Follow-on UX improvements included **stable identicons for background agents** and search across prior chat content ([@OpenAIDevs](https://x.com/OpenAIDevs/status/2060478367921831936)); [@reach\\_vb](https://x.com/reach_vb/status/2060430024537178215) summarized broader Codex updates around Windows control, mobile remote access, and profile/task stats. Separately, OpenAI updated **gpt-5.5 instant** to improve **sycophancy, factuality, and multilingual performance** per [@michpokrass](https://x.com/michpokrass/status/2060219759682330970).\n* **This all points to more vertically integrated agent stacks**: model + harness + sandbox + UI + remote control + pricing/quotas. Google is smoothing quotas on Gemini ([@joshwoodward](https://x.com/joshwoodward/status/2060171610922058142)); OpenAI is expanding Codex’s operating surface; Cursor added **auto-review mode** with subagent-based approval routing ([tweet](https://x.com/cursor_ai/status/2060406013098897765)). The common pattern is less “chatbot,” more **managed execution environment with policy and memory**.\n\n**Research and Systems Papers Worth Attention**\n\n* **Search, retrieval, and memory**: [@TheTuringPost](https://x.com/TheTuringPost/status/2060194173505155358) highlighted **Bidirectional Evolutionary Search (BES)** from Harvard/MIT, combining forward search with backward decomposition and evolutionary operators; reported gains include **Llama-3.2-3B-Instruct on MuSiQue from 4.0% to 7.0%**. In retrieval, [@\\_reachsumit](https://x.com/_reachsumit/status/2060214762626306512) pointed to **Latent Terms**, showing sparse BM25-ready features can be extracted from frozen dense retrievers via SAEs. [@topk\\_io](https://x.com/topk_io/status/2060383255153569938) open-sourced **Iso-ModernColBERT** for more efficient late-interaction inference.\n* **Continual learning and belief/state management**: [@HuggingPapers](https://x.com/HuggingPapers/status/2060312560323182657) summarized **BeliefTrack**, claiming optimized belief-state management cuts long-horizon reasoning failures by **70%+**. [@AndrewLampinen](https://x.com/AndrewLampinen/status/2060460827199599026) argued the continual learning field over-focused on interference instead of positive transfer; [@victor207755822](https://x.com/victor207755822/status/2060315686329778432) presented a second **DeliAutoResearch SKILL** paper focused on self-iteration and CL.\n* **Multimodal/world models/robotics**: NVIDIA-affiliated work included **γ-World**, a generative multi-agent world model streaming at **24 FPS** ([tweet](https://x.com/fangfu0830/status/2060233093894869499)), and **minWM**, a real-time interactive video world model framework ([tweet](https://x.com/_akhaliq/status/2060392729473860026)). In robotics, [@\\_akhaliq](https://x.com/_akhaliq/status/2060388349425119540) shared **Qwen-VLA**, and [@inventorOli](https://x.com/inventorOli/status/2060357909561622885) demoed Robostral’s language-following and manipulation improvements. For always-on proactive agents, [@dair\\_ai](https://x.com/dair_ai/status/2060373102119555191) surfaced work replacing LLM wake-up decisions with a **220MiB temporal-graph encoder**, gaining **+16.7 mean F1** while running **4–83x faster**.\n\n**Top tweets (by engagement)**\n\n* **OpenAI / biology**: [@OpenAI on Rosalind Biodefense](https://x.com/OpenAI/status/2060376598642405492) announced trusted-access biology tooling for public health and biodefense.\n* **Google / consumer agents**: [@GeminiApp on Spark](https://x.com/GeminiApp/status/2060405496872579115) rolled out its always-on personal agent to AI Ultra users in the U.S.\n* **OpenAI / dev tools**: [@OpenAI on Codex Windows support](https://x.com/OpenAI/status/2060428604727771421) and [@OpenAIDevs](https://x.com/OpenAIDevs/status/2060429591655927942) expanded computer use to Windows plus mobile remote steering.\n* **llama.cpp UX milestone**: [@ggerganov](https://x.com/ggerganov/status/2060394400237109567) launched **llama.app** with a unified installer and CLI entrypoint for local AI.\n* **HF / RL correctness**: [@ClementDelangue](https://x.com/ClementDelangue/status/2060175330665508917) amplified the **Token-In, Token-Out** warning for multi-turn RL with tools.\n* **Open vs closed timing gap**: [@EpochAIResearch](https://x.com/EpochAIResearch/status/2060451576779886942) estimated open-weight models are now about **4 months behind** the frontier.\n\n---\n\n# **AI Reddit Recap**\n\n## **/r/LocalLlama + /r/localLLM Recap**\n\n### **1. Local LLM Performance: MoE Releases, Quants, VRAM Savings**\n\n* **[StepFun 3.7 Flash](https://www.reddit.com/r/LocalLLaMA/comments/1tqloii/stepfun_37_flash/)** (Activity: 637): **StepFun released [Step 3.7 Flash](https://static.stepfun.com/blog/step-3.7-flash/), a multimodal MoE with** `196B` **total parameters,** `11B` **active, and a built-in** `1.8B` **ViT, advertised for high-throughput agent workflows up to** `400 TPS` **and reportedly runnable locally with ~**`128GB` **RAM. Reported benchmarks position it unusually strongly for a flash-class/local model: SWE-Bench Pro** `56.26%`**, DeepSearchQA F1** `92.82%`**, HLE w/tools** `47.2`**, plus large gains over Step 3.5 Flash on Terminal-Bench, Toolathlon, ClawEval, and other agentic/tool-use tasks. Direct model artifacts are available on Hugging Face in [BF16](https://huggingface.co/stepfun-ai/Step-3.7-Flash/), [FP8](https://huggingface.co/stepfun-ai/Step-3.7-Flash-FP8), [NVFP4](https://huggingface.co/stepfun-ai/Step-3.7-Flash-NVFP4), and [GGUF](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF), with day-0** `llama.cpp` **[support PR](https://github.com/ggml-org/llama.cpp/pull/23845) and related MTP work in** `llama.cpp#23274`**.** Commenters characterize the model as technically odd: its hidden/thinking traces are described as nearly incoherent, but final answers can be *“perfect”* and competitive with much larger `>1TB` models; one user says the prior Step 3.5 *“infinite thinking”* issue appears fixed. There is cautious enthusiasm around local deployment, especially for users with `4x3090`-class hardware, and appreciation that StepFun upstreamed `llama.cpp` support instead of only maintaining a fork.\n\n  + StepFun released multiple Step-3.7-Flash checkpoints on Hugging Face: **BF16** ([Step-3.7-Flash](https://huggingface.co/stepfun-ai/Step-3.7-Flash/)), **FP8** ([Step-3.7-Flash-FP8](https://huggingface.co/stepfun-ai/Step-3.7-Flash-FP8)), **NVFP4** ([Step-3.7-Flash-NVFP4](https://huggingface.co/stepfun-ai/Step-3.7-Flash-NVFP4)), and **GGUF** ([Step-3.7-Flash-GGUF](https://huggingface.co/stepfun-ai/Step-3.7-Flash-GGUF)). One user reports the prior Step 3.5 Flash “infinite thinking” issue appears fixed, making 3.7 more usable despite still having an odd intermediate reasoning style.\n  + There is day-0 `llama.cpp` enablement via StepFun’s upstream PR: [ggml-org/llama.cpp#23845](https://github.com/ggml-org/llama.cpp/pull/23845), contrasting with Step 3.5’s fork-based support. A separate community PR for **MTP support** exists at [ggml-org/llama.cpp#23274](https://github.com/ggml-org/llama.cpp/pull/23274), though commenters note it needs updating for Step 3.7 and current `master`.\n  + A vLLM nightly test of the **NVFP4** checkpoint on `2x Pro 6k` with `64` concurrent shallow-context requests reached about `2200 tok/s`. The reported config used `tensor-parallel-size 2`, `--enable-expert-parallel`, `--quantization modelopt`, `--kv-cache-dtype fp8`, `--reasoning-parser step3p5`, and StepFun tool-call parsing; vLLM reported **GPU KV cache size** `1,667,645` **tokens** and **max concurrency** `6.36x` **for** `262,144` **tokens/request**.\n\n[Read more](https://www.latent.space/p/ainews-founders-and-forward-deployed)",
+      "tags": [
+        "AI新闻汇总",
+        "AI活动",
+        "行业动态"
+      ],
+      "score": 75,
+      "summary": "Latent Space发布AI新闻，包含Anthropic融资及FDE/创始人项目信息。",
+      "fetched_at": "2026-05-30T10:53:05.705724+08:00"
+    },
+    {
+      "title": "Chris哥这篇我一口气看完。\"全牛市里最贵的不是股票，是大跌那天手里的现金\"——这句我直接收藏了。\n从币圈OG到把存储讲透，跟着真金白银走这套逻辑你是真的言行一致。",
+      "link": "https://x.com/FinanceYF5/status/2060524608730841395",
+      "published": "2026-05-30T08:52:04+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "Chris哥这篇我一口气看完。\"全牛市里最贵的不是股票，是大跌那天手里的现金\"——这句我直接收藏了。  \n从币圈OG到把存储讲透，跟着真金白银走这套逻辑你是真的言行一致。\n\n![168X](https://pbs.twimg.com/profile_images/1983732588268417025/iaNd-Idz_normal.jpg)\n\n168X@168X\\_Fortune\n\n[x.com/i/article/2060…](http://x.com/i/article/2060220661839388672)\n\n[🔗 View Quoted Tweet](https://x.com/168X_Fortune/status/2060225444700668261)\n\n💬1🔄0❤️1👀1154📊1",
+      "tags": [
+        "投资观点",
+        "币圈",
+        "非AI"
+      ],
+      "score": 30,
+      "summary": "用户转载关于牛市现金策略的币圈投资观点。",
+      "fetched_at": "2026-05-30T10:53:05.705813+08:00"
+    },
+    {
+      "title": "Windows的兄弟们终于等到了～\n\n很多人以为AI agent的电脑操作还得靠Mac或云端，OpenAI直接把Codex的Computer Use推到Windows上了。\n\n现在Codex能在Win...",
+      "link": "https://x.com/berryxia/status/2060528534247108632",
+      "published": "2026-05-30T09:07:39+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "Windows的兄弟们终于等到了～  \n  \n很多人以为AI agent的电脑操作还得靠Mac或云端，OpenAI直接把Codex的Computer Use推到Windows上了。  \n  \n现在Codex能在Windows真实桌面执行任务，ChatGPT手机App还能远程启动、查看和指挥，整个流程边走边控，电脑继续干活。  \n  \n早期体验，但对Windows主力用户来说，跨设备agent落地一步到位。\n\n![OpenAI](https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg)\n\nOpenAI@OpenAI\n\nWindows users, this one’s for you.  \n  \nComputer use now works on Windows, so Codex can take action on your Windows computer.  \n  \nAnd with Windows support for Codex in the ChatGPT mobile app, you can start, review, and steer tasks on the go while work continues on your Windows machine.  \n  \nAn early experience, but we’re working on more ways to keep your work moving, wherever you are.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060428466064080896/vid/avc1/1920x1080/BtNI33bwhD31RkAU.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/OpenAI/status/2060428604727771421/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/OpenAI/status/2060428604727771421)\n\n💬5🔄0❤️3👀649📊4",
+      "tags": [
+        "OpenAI",
+        "Codex",
+        "Windows"
+      ],
+      "score": 85,
+      "summary": "KOL转述OpenAI Codex的Computer Use支持Windows并在手机App远程操控。",
+      "fetched_at": "2026-05-30T10:53:05.705889+08:00"
+    },
+    {
+      "title": "This agent is an AI UGC startup",
+      "link": "https://x.com/browser_use/status/2060541495317606712",
+      "published": "2026-05-30T09:59:10+08:00",
+      "source": "Browser Use(@browser_use)",
+      "content": "This agent is an AI UGC startup\n\n![shawn](https://pbs.twimg.com/profile_images/1997244451497160704/4Eta0uTx_normal.jpg)\n\nshawn@shawn\\_pana\n\nI built an agent that turns anything on the internet into viral TikToks.   \n  \nPowered by browser-harness running 24/7 in a VPS:   \n> reads any post, thread, or webpage   \n> creates a TikTok in the viral format I ask for   \n> opens TikTok and uploads for me   \n  \nZero hassle. Idea to post in minutes.   \nTry it out ↓🔗\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060540973240012800/vid/avc1/1660x1080/w8qN6vf52Knb8pWP.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/shawn_pana/status/2060541178689556841/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/shawn_pana/status/2060541178689556841)\n\n💬0🔄0❤️0👀127",
+      "tags": [
+        "AI Agent",
+        "UGC",
+        "视频生成"
+      ],
+      "score": 75,
+      "summary": "Browser Use展示一个可将网页内容自动生成TikTok的AI Agent。",
+      "fetched_at": "2026-05-30T10:53:05.705959+08:00"
+    },
+    {
+      "title": "我还挺喜欢 Cursor 的设计模式的，在画布里指出各种 UI 上的问题，全部让 subagent 一条条修复，太好用了。",
+      "link": "https://x.com/dingyi/status/2060535566262038730",
+      "published": "2026-05-30T09:35:36+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "我还挺喜欢 Cursor 的设计模式的，在画布里指出各种 UI 上的问题，全部让 subagent 一条条修复，太好用了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2059796827957063681/vid/avc1/3368x2160/317zdaKTqgvvgy_5.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/shubgaur/status/2059798259066188214/video/1)\n\n💬6🔄0❤️17👀3173📊9",
+      "tags": [
+        "Cursor",
+        "AI编程",
+        "用户体验"
+      ],
+      "score": 65,
+      "summary": "用户分享Cursor的subagent修复UI功能的使用体验。",
+      "fetched_at": "2026-05-30T10:53:05.706035+08:00"
+    },
+    {
+      "title": "Huge if true.",
+      "link": "https://x.com/pmarca/status/2060541616105111554",
+      "published": "2026-05-30T09:59:38+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Huge if true.\n\n![Just Another Pod Guy](https://pbs.twimg.com/profile_images/1594517633239597056/GJZfxXVM_normal.jpg)\n\nJust Another Pod Guy@TMTLongShort\n\nWe are going to deflate the cost of the following things on a like-for-like basis over the next seven years by roughly 90%:   \n  \nHealthcare   \nEducation   \nHousing   \nTransportation   \nSex   \n  \nIf we still have socialism at the end of this something has gone horribly wrong.\n\n[🔗 View Quoted Tweet](https://x.com/TMTLongShort/status/2060520571532718289)\n\n💬8🔄1❤️30👀7858📊7",
+      "tags": [
+        "经济预测",
+        "Marc Andreessen",
+        "观点"
+      ],
+      "score": 40,
+      "summary": "Marc Andreessen转发预测未来七年多项成本降低90%的观点。",
+      "fetched_at": "2026-05-30T10:53:05.706163+08:00"
+    },
+    {
+      "title": "Many people are saying.",
+      "link": "https://x.com/pmarca/status/2060540023074959588",
+      "published": "2026-05-30T09:53:19+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying.\n\n![Shyam Sankar](https://pbs.twimg.com/profile_images/1698394928991399936/4D_Gd9qV_normal.jpg)\n\nShyam Sankar@ssankar\n\nJevons paradox playing out in real time.  \n  \nCheaper technology is creating more demand and more jobs.  \n  \n[apollo.com/wealth/the-dai…](https://www.apollo.com/wealth/the-daily-spark/zero-evidence-of-ai-related-job-losses)\n\n![Tweet Image](https://pbs.twimg.com/media/HJhzvFpXEAI4djI.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/ssankar/status/2060524212595339513)\n\n💬10🔄4❤️49👀10094📊10",
+      "tags": [
+        "杰文斯悖论",
+        "AI就业",
+        "观点"
+      ],
+      "score": 45,
+      "summary": "Marc Andreessen转发Shyam Sankar关于AI降低成本反而增加就业的观点。",
+      "fetched_at": "2026-05-30T10:53:05.706236+08:00"
+    },
+    {
+      "title": "Alexander Hamilton returns.",
+      "link": "https://x.com/pmarca/status/2060535088870551886",
+      "published": "2026-05-30T09:33:42+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Alexander Hamilton returns.\n\n![Treasury Secretary Scott Bessent](https://pbs.twimg.com/profile_images/1889401757060444160/MDUd0e0g_normal.jpg)\n\nTreasury Secretary Scott Bessent@SecScottBessent\n\nFor too long, our political class treated efficiency as a substitute for resilience and consumption as a measure of prosperity.   \n  \nTrade policy, industrial capacity, and national security are inseparable. And to allow foreign dependencies to degrade any one of those domains is to allow them to define America’s future. Under [@POTUS](https://x.com/POTUS)’ leadership, we are rebuilding domestic production to restore American sovereignty.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060446231910887429/vid/avc1/1280x720/XgTWavJwyg4yeQ_i.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/SecScottBessent/status/2060447016271147414/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/SecScottBessent/status/2060447016271147414)\n\n💬14🔄15❤️235👀17386📊25",
+      "tags": [
+        "政治言论",
+        "贸易政策",
+        "非AI"
+      ],
+      "score": 10,
+      "summary": "Marc Andreessen转发财长Bessent关于贸易和工业主权的政治言论。",
+      "fetched_at": "2026-05-30T10:53:05.706302+08:00"
+    },
+    {
+      "title": "Legal AI superempowers normal individuals with no legal background to fight big institutions in bure...",
+      "link": "https://x.com/pmarca/status/2060532576063037924",
+      "published": "2026-05-30T09:23:43+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Legal AI superempowers normal individuals with no legal background to fight big institutions in bureaucracies and in courts on a level knowledge/skill playing field, for the first time in human history. As such, it is one of the most inspiring applications of AI.\n\n![Jeff Huber](https://pbs.twimg.com/profile_images/1588236352797126656/i-XMejJn_normal.jpg)\n\nJeff Huber@jeffreyhuber\n\nLegal AI is probably the least inspiring application of AI   \n  \nchange my mind\n\n[🔗 View Quoted Tweet](https://x.com/jeffreyhuber/status/2060508656031207836)\n\n💬45🔄17❤️300👀24114📊50",
+      "tags": [
+        "AI法律",
+        "赋能个人",
+        "Marc Andreessen"
+      ],
+      "score": 70,
+      "summary": "Marc Andreessen反驳Legal AI不是令人沮丧的应用，而是赋权个人对抗大机构的应用。",
+      "fetched_at": "2026-05-30T10:53:05.706368+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2060531543689535687",
+      "published": "2026-05-30T09:19:37+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Second City Bureaucrat](https://pbs.twimg.com/profile_images/2022105969124106240/MZaMlllx_normal.jpg)\n\nSecond City Bureaucrat@CityBureaucrat\n\nI always wondered where the \"ratio\" obsession came from. BAP told me it was a metric for volume-based guerilla marketing contracts but I didn't believe him.\n\n[🔗 View Quoted Tweet](https://x.com/CityBureaucrat/status/2060501784158736750)\n\n💬7🔄0❤️24👀16558📊6",
+      "tags": [
+        "非AI",
+        "无价值"
+      ],
+      "score": 5,
+      "summary": "Marc Andreessen转发关于社交平台“ratio”指标的无关讨论。",
+      "fetched_at": "2026-05-30T10:53:05.706432+08:00"
+    },
+    {
+      "title": "Many people are saying.",
+      "link": "https://x.com/pmarca/status/2060529242371428403",
+      "published": "2026-05-30T09:10:28+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying.\n\n![Azeem Azhar](https://pbs.twimg.com/profile_images/1712261265907650560/ozcGIe7s_normal.jpg)\n\nAzeem Azhar@azeem\n\nA general-purpose technology can sit inside firms for ages before we see the results. It happened with electricity, it’s happening with AI.\n\n![Tweet Image](https://pbs.twimg.com/media/HJaXiXrbkAAnpAM.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/azeem/status/2060000498913247688)\n\n💬15🔄4❤️63👀20821📊15",
+      "tags": [
+        "AI通用技术",
+        "影响滞后",
+        "观点"
+      ],
+      "score": 50,
+      "summary": "Marc Andreessen转发Azeem关于通用技术（如AI）需要长期才能显现效果的观点。",
+      "fetched_at": "2026-05-30T10:53:05.706496+08:00"
+    },
+    {
+      "title": "Many people are saying.",
+      "link": "https://x.com/pmarca/status/2060529029745459432",
+      "published": "2026-05-30T09:09:38+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying.\n\n![Rapid Response 47](https://pbs.twimg.com/profile_images/1883970867215876096/HK4lwY1m_normal.jpg)\n\nRapid Response 47@RapidResponse47\n\n.[@SecScottBessent](https://x.com/SecScottBessent): \"A nation that cannot manufacture, mine, ship, or refine its needs gradually cedes its strength and sovereignty to others. That is a dangerous dependency for any country; it is an unacceptable one for the United States of America.\"\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060474067262619650/vid/avc1/1280x720/2iw3nyOLxxdEDZZp.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/RapidResponse47/status/2060475458169246124/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/RapidResponse47/status/2060475458169246124)\n\n💬31🔄48❤️583👀26738📊61",
+      "tags": [
+        "政治言论",
+        "制造业",
+        "非AI"
+      ],
+      "score": 10,
+      "summary": "Marc Andreessen转发财长Bessent关于美国制造业自主的政治演讲。",
+      "fetched_at": "2026-05-30T10:53:05.706557+08:00"
+    },
+    {
+      "title": "幸存者偏差\n广东人口大省\n且接触信息是最快的省份",
+      "link": "https://x.com/yangyi/status/2060544863117131928",
+      "published": "2026-05-30T10:12:33+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "幸存者偏差  \n广东人口大省  \n且接触信息是最快的省份\n\n![Roland.W](https://pbs.twimg.com/profile_images/1911955967505219584/mbOS-TVy_normal.jpg)\n\nRoland.W@rwayne\n\n一个很冷的知识  \n  \nDeepseek在潮汕话里面，意思是知识  \n  \n潮汕帮这么狠的吗全搞ai了\n\n![Tweet Image](https://pbs.twimg.com/media/HJehnMmaoAE_lZQ.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/rwayne/status/2060293054691750128)\n\n💬0🔄0❤️0👀2",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 0,
+      "summary": "用户评论“幸存者偏差”及潮汕话与DeepSeek的无关内容。",
+      "fetched_at": "2026-05-30T10:53:05.706620+08:00"
+    },
+    {
+      "title": "你的时间线上，什么翻译语种是最多的？\n我看到的是韩语。",
+      "link": "https://x.com/yangyi/status/2060544205643276797",
+      "published": "2026-05-30T10:09:56+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "你的时间线上，什么翻译语种是最多的？  \n我看到的是韩语。\n\n💬0🔄0❤️0👀40",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 0,
+      "summary": "用户询问时间线上翻译语种最多的内容。",
+      "fetched_at": "2026-05-30T10:53:05.706682+08:00"
+    },
+    {
+      "title": "Wan2.7-t2v-2026-04-25 is #3 on the Text-to-Video Arena! \n\nCongrats to the @Alibaba_Wan team on this ...",
+      "link": "https://x.com/arena/status/2060532939914682751",
+      "published": "2026-05-30T09:25:10+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Wan2.7-t2v-2026-04-25 is #3 on the Text-to-Video Arena!   \n  \nCongrats to the [@Alibaba\\_Wan](https://x.com/Alibaba_Wan) team on this achievement.\n\n![Tweet Image](https://pbs.twimg.com/media/HJh7gXuasAACoXN.jpg)\n\n![Wan](https://pbs.twimg.com/profile_images/1955825038210555905/xtkxHg06_normal.jpg)\n\nWan@Alibaba\\_Wan\n\n1/2 Meet Wan2.7-Video — The Comprehensive Model for Controllable Video Storytelling!   \n  \nFrom single clips to full-scale narrative direction, we’ve built more than just a generator. We’ve built a director’s suite:   \n  \n• Multimodal control over performance and style via text, image, audio, and video.   \n  \n• Character customization with up to 5 reference inputs and voice profiles.   \n  \n• Video editing with simple, intuitive instructions.   \n  \n• Full-stack creative toolkit: generation, editing, cloning, restyling, continuation, and more.   \n  \n• Sustained improvements in visual fidelity, motion stability, and prompt adherence.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2040051339317882880/vid/avc1/1920x1080/HXuGgWFB1i6K5Zqs.mp4?tag=21)\n\n[🔗 View on Twitter](https://x.com/Alibaba_Wan/status/2040051865581469704/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/Alibaba_Wan/status/2040051865581469704)\n\n💬1🔄4❤️12👀1800📊3",
+      "tags": [
+        "视频生成",
+        "Wan2.7",
+        "排行榜"
+      ],
+      "score": 80,
+      "summary": "lmarena公布阿里Wan2.7在Text-to-Video Arena排名第三。",
+      "fetched_at": "2026-05-30T10:53:05.706744+08:00"
+    },
+    {
+      "title": "Dive into the Video Arena leaderboard details at: https://t.co/70ZwIMf0Vp",
+      "link": "https://x.com/arena/status/2060532942406033410",
+      "published": "2026-05-30T09:25:10+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Dive into the Video Arena leaderboard details at: [arena.ai/leaderboard/te…](http://arena.ai/leaderboard/text-to-video)\n\n💬0🔄0❤️2👀916",
+      "tags": [
+        "排行榜",
+        "链接"
+      ],
+      "score": 50,
+      "summary": "lmarena提供Text-to-Video Arena排行榜链接。",
+      "fetched_at": "2026-05-30T10:53:05.706807+08:00"
+    },
+    {
+      "title": "如何构建你自己的 Agent Harness？\n\n先看几个问题：\n· 生产级 Harness 是“选一个框架”就能搞定的吗？\n· 生产级 Harness 必须承担的 15 项真实职责是什么？\n· 每项...",
+      "link": "https://x.com/shao__meng/status/2060539774134558969",
+      "published": "2026-05-30T09:52:19+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "如何构建你自己的 Agent Harness？  \n  \n先看几个问题：  \n· 生产级 Harness 是“选一个框架”就能搞定的吗？  \n· 生产级 Harness 必须承担的 15 项真实职责是什么？  \n· 每项职责如何做成可安装、可版本化、可换语言的 worker？  \n· 单次 turn 如何跑通？  \n· 策略、审批、预算、trace 在生产级 Harness 里为什么重要？  \n  \n[@mfpiccolo](https://x.com/mfpiccolo) 在他的「How to Build Your Own Agent Harness」中给出了完整答案，强烈建议阅读原文：  \n[iii.dev/blog/how-to-bu…](https://iii.dev/blog/how-to-build-your-own-agent-harness/)\n\n![Tweet Image](https://pbs.twimg.com/media/HJiB-RuakAAFXiR.jpg)\n\n![Mike Piccolo](https://pbs.twimg.com/profile_images/2000231368198852610/YnKhL5h5_normal.jpg)\n\nMike Piccolo@mfpiccolo\n\n[x.com/i/article/2060…](http://x.com/i/article/2060024515619397638)\n\n[🔗 View Quoted Tweet](https://x.com/mfpiccolo/status/2060069083878408689)\n\n💬0🔄0❤️3👀217📊1",
+      "tags": [
+        "Agent Harness",
+        "教程",
+        "生产级"
+      ],
+      "score": 70,
+      "summary": "用户分享构建生产级Agent Harness的文章，涵盖15项职责和架构。",
+      "fetched_at": "2026-05-30T10:53:05.706870+08:00"
+    },
+    {
+      "title": "冷知识：GitHub Copilot 里面的 Gemini 3.5 Flash Token 消耗按 14 倍算，与之相对的：\n- Claude Sonnet 4.6 (1x)\n- Claude Opu...",
+      "link": "https://x.com/dotey/status/2060541910570197016",
+      "published": "2026-05-30T10:00:49+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "冷知识：GitHub Copilot 里面的 Gemini 3.5 Flash Token 消耗按 14 倍算，与之相对的：  \n- Claude Sonnet 4.6 (1x)  \n- Claude Opus 4.8 (15x)  \n- Gemini 3.1 Pro (1x)  \n- GPT-5.5 (7.5x)\n\n![Tweet Image](https://pbs.twimg.com/media/HJiDb4yWIAchNF9.jpg)\n\n💬0🔄0❤️0👀2",
+      "tags": [
+        "GitHub Copilot",
+        "Tokens",
+        "定价"
+      ],
+      "score": 75,
+      "summary": "用户指出GitHub Copilot中Gemini 3.5 Flash的Token消耗按14倍计算，与其他模型对比。",
+      "fetched_at": "2026-05-30T10:53:05.706933+08:00"
+    },
+    {
+      "title": "Q：我把数据库接入了 AI Agent，每次用手机发消息让它帮我查数据、导出文件，但 token 消耗特别大。我已经把工作流写进了 Agent 的 Memory 里，但它就是不按流程走，该怎么办？\n\n...",
+      "link": "https://x.com/dotey/status/2060538728011927954",
+      "published": "2026-05-30T09:48:10+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Q：我把数据库接入了 AI Agent，每次用手机发消息让它帮我查数据、导出文件，但 token 消耗特别大。我已经把工作流写进了 Agent 的 Memory 里，但它就是不按流程走，该怎么办？  \n  \nA：这是一个非常典型的问题。根本原因在于：Memory 只是“背景信息”，不是“执行指令”。Agent 每次对话都会重新理解意图、重新规划步骤，这个思考过程本身就是 token 消耗的大头。  \n  \n解决方案：用 Agent Skill + Script 替代 Memory 里的工作流。  \n  \n核心思路是把任务拆成两部分：  \n- LLM 只做它擅长的事——把自然语言翻译成 SQL 查询语句  \n- 确定性的步骤全部用脚本——执行 SQL、格式化结果、上传文件，这些不需要 AI 思考，写成 Python/Shell 脚本直接跑  \n  \n再进一步，在 Skill 里内嵌你的表结构说明和常用 SQL 模板，Agent 只需要填空而不是从零推理。  \n  \n改完之后 token 消耗能降一个数量级。  \n  \n一句话总结：能用脚本干的事别让 LLM 干，LLM 只负责翻译，不负责执行。\n\n![Tweet Image](https://pbs.twimg.com/media/HJiA-s_W0AIj-fL.jpg)\n\n💬0🔄2❤️7👀1070📊3",
+      "tags": [
+        "AI Agent",
+        "Token优化",
+        "技巧"
+      ],
+      "score": 70,
+      "summary": "用户回答关于Agent token消耗大的问题，建议用脚本替代LLM推理。",
+      "fetched_at": "2026-05-30T10:53:05.706994+08:00"
+    },
+    {
+      "title": "最新版 Codex 可以看到 Token 用量",
+      "link": "https://x.com/dotey/status/2060529208602833354",
+      "published": "2026-05-30T09:10:20+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "最新版 Codex 可以看到 Token 用量\n\n![Tweet Image](https://pbs.twimg.com/media/HJh4VfXWoAYNoWg.jpg)\n\n![jason](https://pbs.twimg.com/profile_images/2057561784047816704/5Su5xy1d_normal.jpg)\n\njason@jxnlco\n\n10h 45m was codex picking the 5.5 party guests  \n  \ncodex > settings > profile\n\n![Tweet Image](https://pbs.twimg.com/media/HJhdWU_bQAAzRAD.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/jxnlco/status/2060499639032545618)\n\n💬16🔄1❤️20👀6766📊13",
+      "tags": [
+        "Codex",
+        "Token用量",
+        "功能更新"
+      ],
+      "score": 70,
+      "summary": "用户转述最新版Codex可显示Token用量。",
+      "fetched_at": "2026-05-30T10:53:05.707079+08:00"
     }
   ]
 }
