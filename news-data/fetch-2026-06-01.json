@@ -497,6 +497,89 @@
       "score": 68,
       "summary": "转述PewDiePie发布agent orchestrator，未证实，属小道消息。",
       "fetched_at": "2026-06-01T05:00:50.550912+08:00"
+    },
+    {
+      "title": "“We know that they are lying, they know that they are lying, they even know that we know they are ly...",
+      "link": "https://x.com/pmarca/status/2061211784669978894",
+      "published": "2026-06-01T06:22:39+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "“We know that they are lying, they know that they are lying, they even know that we know they are lying, we also know that they know we know they are lying too, they of course know that we certainly know they know we know they are lying too as well, but they are still lying.”\n\n![Spencer Pratt](https://pbs.twimg.com/profile_images/2043484616439595008/HNMqir29_normal.jpg)\n\nSpencer Pratt@spencerpratt\n\nThe New York Times is denying the 6 people dying on our streets in LA every day, including one who died just this morning on the Skid Row livestream. Just like Nithya Raman, the New York Times is from the east coast, and they have no clue how bleak things are in LA.\n\n![Tweet Image](https://pbs.twimg.com/media/HJqJ5zFbwAAnBCL.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/spencerpratt/status/2061111412097957925)\n\n💬15🔄19❤️121👀11254📊19",
+      "tags": [
+        "非AI",
+        "社会评论"
+      ],
+      "score": 40,
+      "summary": "Marc Andreessen转推批评纽约时报否认洛杉矶流浪汉死亡事件。",
+      "fetched_at": "2026-06-01T07:01:40.025678+08:00"
+    },
+    {
+      "title": "Excellent news, this was a mistake, it's coming back! https://t.co/JpUPzZcwF0",
+      "link": "https://x.com/simonw/status/2061195387315404868",
+      "published": "2026-06-01T05:17:30+08:00",
+      "source": "Simon Willison(@simonw)",
+      "content": "Excellent news, this was a mistake, it's coming back! [x.com/PhilippSpiess/…](https://x.com/PhilippSpiess/status/2061189796689494339)\n\n![Philipp Spiess](https://pbs.twimg.com/profile_images/2046863769247043585/2m9gPsN1_normal.jpg)\n\nPhilipp Spiess@PhilippSpiess\n\n[@simonw](https://x.com/simonw) Sorry about this! The button was unintentionally removed during some recent menu restructurings. It'll be back with the next hotfix release.  \n  \nYou can bind a custom keyboard shortcut to the \"Copy as Markdown\" command and use that as a workaround!\n\n[🔗 View Quoted Tweet](https://x.com/PhilippSpiess/status/2061189796689494339)\n\n💬1🔄1❤️41👀3867📊4",
+      "tags": [
+        "Codex",
+        "功能恢复"
+      ],
+      "score": 72,
+      "summary": "Simon Willison确认OpenAI Codex的“Copy as Markdown”功能因误删即将恢复。",
+      "fetched_at": "2026-06-01T07:01:40.025768+08:00"
+    },
+    {
+      "title": "工业克苏鲁中我佩服的两代人，一代是创业一代，从草根建立起来。第二代比我父母小十几岁，大学制度逐渐成熟之后加入的工程师。多不是特别好的大学，中大都算顶级。他们属于“调试工程师”。欧美客户的设计很厉害吗？...",
+      "link": "https://x.com/feltanimalworld/status/2061216691560854006",
+      "published": "2026-06-01T06:42:09+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "工业克苏鲁中我佩服的两代人，一代是创业一代，从草根建立起来。第二代比我父母小十几岁，大学制度逐渐成熟之后加入的工程师。多不是特别好的大学，中大都算顶级。他们属于“调试工程师”。欧美客户的设计很厉害吗？不要高看他们，无数岗位的调试工程师公差模具装配良率，靠996硬把你设计不成熟给吞噬。\n\n![Susan STEM](https://pbs.twimg.com/profile_images/1941884420048265216/Dbcchu0q_normal.jpg)\n\nSusan STEM@feltanimalworld\n\n全球化这个链条上，秩序是非常难得的。中国核心秩序就是被称为工业克苏鲁的长/珠三角工业制造业产业链。其他所谓“马车”，都是搭这个的便车而已。克苏鲁我追溯到核心只有两个：1）超级母机。2）超高性价比的海量工程师形成不可超越的“调试能力”。 调试能力不会轻易失去，但是许多超级母机的核心不在手里\n\n[🔗 View Quoted Tweet](https://x.com/feltanimalworld/status/2061125363934118035)\n\n💬0🔄0❤️0👀10",
+      "tags": [
+        "工业",
+        "非AI"
+      ],
+      "score": 35,
+      "summary": "讨论中国工业制造业的调试工程师能力与全球化秩序。",
+      "fetched_at": "2026-06-01T07:01:40.025843+08:00"
+    },
+    {
+      "title": "slide decks = adult picture books",
+      "link": "https://x.com/andrewchen/status/2061209999137964054",
+      "published": "2026-06-01T06:15:33+08:00",
+      "source": "andrew chen(@andrewchen)",
+      "content": "slide decks = adult picture books\n\n💬2🔄0❤️7👀638📊2",
+      "tags": [
+        "无价值"
+      ],
+      "score": 20,
+      "summary": "andrew chen发表无实质内容的推文：slide decks = adult picture books。",
+      "fetched_at": "2026-06-01T07:01:40.025913+08:00"
+    },
+    {
+      "title": "We need more coding and agent traces public sharing to build datasets and better open source models!...",
+      "link": "https://x.com/ClementDelangue/status/2061196949101932899",
+      "published": "2026-06-01T05:23:42+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "We need more coding and agent traces public sharing to build datasets and better open source models! Lots of people contributing already, you should share yours too! [huggingface.co/datasets?searc…](https://huggingface.co/datasets?search=Traces)\n\n![Simon Willison](https://pbs.twimg.com/profile_images/378800000261649705/be9cc55e64014e6d7663c50d7cb9fc75_normal.jpeg)\n\nSimon Willison@simonw\n\nI'm really upset about this: OpenAI's Codex Desktop had a \"Copy as Markdown\" option for exporting full chat transcripts, but the feature vanished in an update a couple of days ago  \n  \nGenuinely my single favorite feature of Codex compared to Claude Code  \n [github.com/openai/codex/i…](https://github.com/openai/codex/issues/25201)\n\n[🔗 View Quoted Tweet](https://x.com/simonw/status/2061158636311958005)\n\n💬10🔄6❤️50👀4371📊13",
+      "tags": [
+        "开源模型",
+        "Agent追踪"
+      ],
+      "score": 82,
+      "summary": "Hugging Face CEO呼吁公开分享编码和Agent追踪数据以改进开源模型。",
+      "fetched_at": "2026-06-01T07:01:40.025980+08:00"
+    },
+    {
+      "title": "我的一个朋友是伊朗移民。\n\n他靠一家小的一人水管公司养活家人，他们一家热情好客，常常请我吃烤肉喝爱兰。\n\n我说我帮你们做个网站，然后搞点GEO，增加一点客户吧！\n\n于是在周天的晚上，来自中国北方的我，...",
+      "link": "https://x.com/dongxi_nlp/status/2061211516804706801",
+      "published": "2026-06-01T06:21:35+08:00",
+      "source": "马东锡 NLP(@dongxi_nlp)",
+      "content": "我的一个朋友是伊朗移民。  \n  \n他靠一家小的一人水管公司养活家人，他们一家热情好客，常常请我吃烤肉喝爱兰。  \n  \n我说我帮你们做个网站，然后搞点GEO，增加一点客户吧！  \n  \n于是在周天的晚上，来自中国北方的我，听着Beyond，用 codex 帮伊朗人做一家瑞典语的水管工网站。  \n  \n这一刻，没有巴别塔困境。\n\n![Tweet Image](https://pbs.twimg.com/media/HJrk8s1WkAE9B8v.jpg)\n\n💬1🔄0❤️4👀223📊2",
+      "tags": [
+        "AI工具",
+        "个人故事"
+      ],
+      "score": 65,
+      "summary": "用OpenAI Codex帮助伊朗移民制作瑞典语网站的故事。",
+      "fetched_at": "2026-06-01T07:01:40.026044+08:00"
     }
   ]
 }
