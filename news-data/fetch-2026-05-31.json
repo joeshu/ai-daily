@@ -1229,6 +1229,64 @@
       "score": 62,
       "summary": "调侃AI开发者喜新厌旧，在Claude Code和Codex间反复横跳。",
       "fetched_at": "2026-05-31T18:15:11.823750+08:00"
+    },
+    {
+      "title": "这世界也需要一个绝对纯粹的 Github，只允许手工写的代码，禁止 AI 生成，禁止 awesome list，禁止 markdown 文档。。。",
+      "link": "https://x.com/dingyi/status/2061070944177893768",
+      "published": "2026-05-31T21:03:00+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "这世界也需要一个绝对纯粹的 Github，只允许手工写的代码，禁止 AI 生成，禁止 awesome list，禁止 markdown 文档。。。\n\n💬2🔄0❤️3👀444📊2",
+      "tags": [
+        "AI吐槽",
+        "低价值"
+      ],
+      "score": 20,
+      "summary": "个人观点：希望GitHub只允许手工代码，禁止AI生成。",
+      "fetched_at": "2026-05-31T21:44:43.977258+08:00"
+    },
+    {
+      "title": "Google 主页新推出的 AI 模式反应迅速且体验出色，应该会对 Perplexity 造成不小的冲击。之前通过 PayPal 绑定薅了一年 Perplexity Pro，眼看快到期了，本来打算续费...",
+      "link": "https://x.com/geekbb/status/2061065515112738923",
+      "published": "2026-05-31T20:41:26+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "Google 主页新推出的 AI 模式反应迅速且体验出色，应该会对 Perplexity 造成不小的冲击。之前通过 PayPal 绑定薅了一年 Perplexity Pro，眼看快到期了，本来打算续费，但现在感觉 Google AI 模式完全可以平替，得重新斟酌一下了。\n\n![Tweet Image](https://pbs.twimg.com/media/HJpfOvtakAEGg6i.jpg)\n\n💬4🔄0❤️0👀678📊3",
+      "tags": [
+        "AI模式",
+        "谷歌",
+        "用户体验"
+      ],
+      "score": 65,
+      "summary": "用户评价Google AI模式体验好，可能冲击Perplexity。",
+      "fetched_at": "2026-05-31T21:44:43.977334+08:00"
+    },
+    {
+      "title": "Most people don't really want total freedom in their lives and businesses.\n\nThey want someone or som...",
+      "link": "https://x.com/thejustinwelsh/status/2061055611857522994",
+      "published": "2026-05-31T20:02:05+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "Most people don't really want total freedom in their lives and businesses.  \n  \nThey want someone or something to blame when things go wrong.  \n  \n100% freedom means accepting that everything is your fault, both good and bad, true or untrue.\n\n💬35🔄2❤️63👀2063📊35",
+      "tags": [
+        "非AI",
+        "个人感悟"
+      ],
+      "score": 10,
+      "summary": "讨论自由与责任的关系，与AI无关。",
+      "fetched_at": "2026-05-31T21:44:43.977394+08:00"
+    },
+    {
+      "title": "Agent: OpenAI Codex \n+ Tools: Google 全家桶、WhatsApp、电报、浏览器自动化等\n+ Data: Google Drive、Notion、AGENTS.md 等...",
+      "link": "https://x.com/shao__meng/status/2061063716016472360",
+      "published": "2026-05-31T20:34:17+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "Agent: OpenAI Codex   \n+ Tools: Google 全家桶、WhatsApp、电报、浏览器自动化等  \n+ Data: Google Drive、Notion、AGENTS.md 等  \n+ Skills: inbox-zero、contacts 等  \n== 个人生活自动化 Agent 工具栈  \n  \n[@nicbstme](https://x.com/nicbstme) 提出的两个典型工作流  \n1. 介绍邮件（跨 5 个工具的「胶水活」）  \n朋友 WhatsApp 求助 → 搜 WhatsApp/Gmail 找邮箱 → 网页查公司融资 → 起草介绍信 → 等批准 → 发邮件 → WhatsApp 告知完成。  \n  \n人工约 20 分钟、大量上下文切换；用户侧约 10 秒提需求。Agent 做的是跨 App 的编排，不是回答问题。  \n  \n2. 车牌更新（行政连续性）  \n发照片给 Agent → 更新 Drive 里的 Markdown 车辆档案 → 保留 VIN、保险等字段 → 上传回 Drive → 必要时用浏览器自动化同步到 FasTrak、停车 App、保险门户等无 API 的系统。  \n  \n体现的是行政连续性：同一份信息在多处保持一致，而非一次性问答。  \n  \n最重要的架构决策：Drive 作为 Source of Truth  \nNicolas 刻意把知识从 Notion 迁到 Google Drive，原因很务实：  \n· Notion 对人友好，对 Agent 不友好（嵌套页面、数据库属性、权限、UI 原生结构）  \n· Drive + Markdown/CSV：可搜索、可 diff、可编辑、可上传、可引用 file ID  \n· gogcli 提供统一的 CLI 面（Gmail、Drive、Calendar、Docs、Sheets 等）  \n  \n组织知识不应只为人类 UI，而应面向 Agent 的工具路径。 稳定 file ID、纯文本、表格、返回 JSON 的命令——这些才是 Agent 友好的数据形态。  \n  \n联系人 CSV（电话、邮箱、LinkedIn 等）被作者称为「最佳投资之一」，因为它是跨渠道 lookup 的枢纽。  \n  \n工具优先级（可靠性层级）  \nAPI / CLI > 本地文件 > 浏览器自动化 > 屏幕/UI 自动化  \n  \nAgent 的可靠性上限取决于工具面。gog gmail messages list --json 比让模型在网页上点来点去更稳定、可重试、可推理。浏览器和屏幕自动化是必要时的兜底，不是主路径。  \n  \nSkills：Agent 的「习惯」与「品味」  \nSkill 不是 fancy 架构，就是可迭代的操作手册。以 inbox-zero 为例：  \n· 列出收件箱 → 区分自动归档 / 需人工审阅  \n· 展示重要邮件、引用原文、建议归档或回复  \n· 起草后等明确批准再发送  \n· 保留所有收件人、回复简短、不主动建议电话、签名用 \"Nicolas\"  \n  \n没有 Skill，每次都要重新 prompt 所有偏好；有了 Skill，说「run inbox zero」即可。个人 Agent 的个性化，来自操作品味的累积，而非 cute voice。  \n  \n反馈闭环：  \n· 工具失败 → 修工具或加 guardrail  \n· 判断失误 → 更新 Skill  \n· 忘记偏好 → 写入 memory / AGENTS.md  \n· 工作流重复 → 体系 compound 改进  \n  \n批准门控：信任分级才是产品  \nNicolas 明确反对「YOLO 全自动」：  \n· 低 stakes 可直接发（如「告诉 Hugo 我下周在西雅图」）  \n· 高 stakes 必须：读上下文 → 起草 → 展示 → 等批准 → 执行 → 确认。  \n  \n有用 vs 可怕的分界，在于是否在正确时刻问人。  \n  \n「杀手级」工作流：What did I miss?  \n比单点邮件更重要的，是生活收件箱 triage：  \n· 每隔几小时问一句「我漏了什么？」→ Agent 扫描 WhatsApp、Telegram、Gmail、SMS、Calendar、Drive 变更 → 汇总：谁需要回复、什么 urgent、什么 stale、什么可忽略、什么该建日历、什么要查文档。  \n  \n特点：上下文重、重复、跨工具、充满小决策——人讨厌做第一遍扫描，Agent 擅长第一遍，判断权仍在人。  \n  \n复现清单（Nicolas 给出的路径）  \n1. 装 Agent 运行时 + 各渠道 CLI/连接器  \n2. 集中数据：Drive 为真相源，联系人 CSV，重要文档可搜索化  \n3. 谨慎授权：Full Disk Access、Screen Recording、Accessibility——必须配合同级 approval gates  \n4. 写 operating rules（AGENTS.md）：draft before send、工具路由、隐私边界等  \n5. 为重复流程写 Skills，并在每次失误后更新\n\n![Tweet Image](https://pbs.twimg.com/media/HJpeg9WbEAA-g7R.jpg)\n\n![Nicolas Bustamante](https://pbs.twimg.com/profile_images/1859460270613200898/thqbDVjW_normal.jpg)\n\nNicolas Bustamante@nicbstme\n\n[x.com/i/article/2060…](http://x.com/i/article/2060579190920110081)\n\n[🔗 View Quoted Tweet](https://x.com/nicbstme/status/2060583553449250888)\n\n💬1🔄0❤️1👀107📊1",
+      "tags": [
+        "Agent框架",
+        "自动化",
+        "工具栈"
+      ],
+      "score": 88,
+      "summary": "详细解析个人生活自动化Agent的工具栈与工作流设计。",
+      "fetched_at": "2026-05-31T21:44:43.977448+08:00"
     }
   ]
 }
