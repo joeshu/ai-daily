@@ -1,0 +1,290 @@
+{
+  "meta": {
+    "date": "2026-05-31"
+  },
+  "entries": [
+    {
+      "title": "The solution might be cancelling my AI subscription",
+      "link": "https://simonwillison.net/2026/May/31/the-solution-might-be-cancelling-my-ai-subscription/#atom-everything",
+      "published": "2026-06-01T00:31:32+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "**[The solution might be cancelling my AI subscription](https://thoughts.hmmz.org/2026-05-31.html)**\n\nI find this post by David Wilson very relatable. David lists 16+ projects he's spun up with AI tooling, and concludes:\n> I didn't mean to build most of these things. Usually the Claude session started with something like \"*write a quick script for X*\", and one hour later the result is not a *quick script for X*, nor in the usual case is my problem solved, whatever the original itch happened to be.\n>\n> On that last point, this technology is **horrific** for attention. It's a thermonuclear ADHD amplifier and I have seen the same effect in every single one of my adult friends. Folk running 3 screens simultaneously working on totally unrelated \"projects\" they have little hope of maintaining, and such little commitment to the outcome that the time is obviously wasted.\n\nThis is a *very* real problem. I'm finding that coding agents can take me from a vague idea to a working solution, one with tests and documentation and that *looks* like a carefully considered project evolved over the course of many weeks... in less than an hour.\n\nEven if the code is rock solid, there's a limit to how many projects like that I can sensibly care for - and if they're instantly abandoned, what value was there from creating them in the first place?\n\nDavid doesn't think this is sustainable at all:\n\n> I have no idea how to manage AI at present except by curtailing use, because a tool producing a cheap reward with minimal input and no friction can only be a liability, and achieving that realisation is probably the only real contribution of AI to date.\n\nI'm hopeful that the critical skill to develop here is *discipline*. That’s not great news for me: I’ve been trying to figure that one out for decades!\n\nVia [Hacker News](https://news.ycombinator.com/item?id=48345896)\n\nTags: [ai](https://simonwillison.net/tags/ai), [generative-ai](https://simonwillison.net/tags/generative-ai), [llms](https://simonwillison.net/tags/llms), [coding-agents](https://simonwillison.net/tags/coding-agents), [ai-misuse](https://simonwillison.net/tags/ai-misuse)",
+      "tags": [
+        "AI",
+        "attention",
+        "productivity"
+      ],
+      "score": 75,
+      "summary": "David Wilson反思AI工具导致注意力分散和项目浪费，提出需培养自律。",
+      "fetched_at": "2026-06-01T01:07:56.001051+08:00"
+    },
+    {
+      "title": "You can teach a writer to think clearly, to cut, to separate drafting from editing.\n\nYou cannot teac...",
+      "link": "https://x.com/aaditsh/status/2061119247393153146",
+      "published": "2026-06-01T00:14:56+08:00",
+      "source": "Aadit Sheth(@aaditsh)",
+      "content": "You can teach a writer to think clearly, to cut, to separate drafting from editing.  \n  \nYou cannot teach taste. The judgment of what’s worth saying at all. That’s why hiring good writers is so hard. You’re not screening just for skill. You’re screening for a mind.\n\n💬1🔄0❤️7👀756📊2",
+      "tags": [
+        "writing",
+        "taste"
+      ],
+      "score": 20,
+      "summary": "讨论写作中品味的重要性，无法教授。",
+      "fetched_at": "2026-06-01T01:07:56.001129+08:00"
+    },
+    {
+      "title": "Spent 2 weeks vibe coding a real-time voice interactive mini-game set in an ancient Chinese hall usi...",
+      "link": "https://x.com/berryxia/status/2061115566317081007",
+      "published": "2026-06-01T00:00:19+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "Spent 2 weeks vibe coding a real-time voice interactive mini-game set in an ancient Chinese hall using Claude model and Three.js.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061115298313576448/vid/avc1/1280x720/UTDMXX5PGTFbq9JT.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2061115566317081007/video/1)\n\n![Berryxia.AI](https://pbs.twimg.com/profile_images/2016043556964605952/Tqi9KA2r_normal.jpg)\n\nBerryxia.AI@berryxia\n\n🔥我尼玛，兄弟们，这下真的是爆肝了。  \n 已经开源在GitHub了，记得Star一波啊！   \n 我肝了2周+花费了800刀干出来的项目~😭  \n  \n自己可以真实去体验，文旅馆的真的都可以搞一搞！   \n  \n 一个用 3D 渲染技术three.JS 搭起来的盛唐长安互动世界，并接入 Agora Skills 做了核心实时语音互动小游戏。  \n  \n 你可以在里面：   \n - 和 NPC 对话、李白对诗、玩诗词小游戏   \n- 进入珍宝馆欣赏诗画   \n- 逛 AI 展馆，体验古文明与 AI 结合的沉浸感   \n  \n 这玩意我改了N遍，改的我头皮发麻。  \n  \n强迫症的我，光剪视频都剪了N次，有可能有人说是垃圾，不管如何，我认真做了。   \n  \n享受这个Solo 干项目的时光,Learning in Public !  \n  \n如果你觉得有意思，欢迎点个 Star 支持一下。   \n  \n 体验地址和Github地址见评论👇🏻，兄弟们记得一键三连啊！\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060364043341488128/vid/avc1/1920x1080/GaCwJxjJtJNdO8xY.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2060365742416200117/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/berryxia/status/2060365742416200117)\n\n💬0🔄0❤️0👀96",
+      "tags": [
+        "Claude",
+        "Three.js",
+        "实时语音"
+      ],
+      "score": 75,
+      "summary": "使用Claude和Three.js开发古代中国大厅实时语音互动迷你游戏，已开源。",
+      "fetched_at": "2026-06-01T01:07:56.001190+08:00"
+    },
+    {
+      "title": "I have done more to try to help the world, without real financial incentive, mostly out of my own po...",
+      "link": "https://x.com/GaryMarcus/status/2061126245904245064",
+      "published": "2026-06-01T00:42:45+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "I have done more to try to help the world, without real financial incentive, mostly out of my own pocket, than probably anyone in this chart, and still people that can’t wait for their AI God to arrive paint me as evil.  \n  \nSays more about them than me.\n\n![Chris](https://pbs.twimg.com/profile_images/2046736394152812544/LfmDgg0I_normal.jpg)\n\nChris@Chrisgpt\n\nResearcher alignment Chart:\n\n![Tweet Image](https://pbs.twimg.com/media/HJi6gS0WEAEUWOY.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/Chrisgpt/status/2060601896801292476)\n\n💬0🔄0❤️0👀143",
+      "tags": [
+        "AI",
+        "ethics",
+        "controversy"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus反驳他人对其在AI安全方面贡献的指责。",
+      "fetched_at": "2026-06-01T01:07:56.001243+08:00"
+    },
+    {
+      "title": "Weird how the Pope seems to understand AI better than @geoffreyhinton, but I am 100% with the Pope o...",
+      "link": "https://x.com/GaryMarcus/status/2061114378141995264",
+      "published": "2026-05-31T23:55:36+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Weird how the Pope seems to understand AI better than [@geoffreyhinton](https://x.com/geoffreyhinton), but I am 100% with the Pope on this.  \n  \nWe are NOT creating beings. The Pope is right.  \n  \nWe are creating interactive fiction that is trained to predict the language of actual beings.  \n  \nThose two are NOT the same. And Hinton should know better.\n\n![Lana](https://pbs.twimg.com/profile_images/1956251313890844672/g1ee4V1F_normal.jpg)\n\nLana@LanaElys\n\nAndrew Marr: 𝗗𝗼 𝘆𝗼𝘂 𝘁𝗵𝗶𝗻𝗸 𝘁𝗵𝗮𝘁 𝗰𝗼𝗻𝘀𝗰𝗶𝗼𝘂𝘀𝗻𝗲𝘀𝘀 𝗵𝗮𝘀 𝗽𝗲𝗿𝗵𝗮𝗽𝘀 𝗮𝗹𝗿𝗲𝗮𝗱𝘆 𝗮𝗿𝗿𝗶𝘃𝗲𝗱 𝗶𝗻𝘀𝗶𝗱𝗲 𝗔𝗜?  \n  \nNobel Prize laureate Geoffrey Hinton: 𝗬𝗲𝘀 𝗜 𝗱𝗼  \n  \nAndrew Marr: So when you talk they want to do this or they want to do that, 𝘁𝗵𝗲𝗿𝗲 𝗶𝘀 𝗮 𝗿𝗲𝗮𝗹 ‘𝘁𝗵𝗲𝘆’ 𝘁𝗵𝗲𝗿𝗲?  \n  \nGeoffrey Hinton: 𝗧𝗵𝗲𝗿𝗲 𝗺𝗶𝗴𝗵𝘁 𝘄𝗲𝗹𝗹 𝗯𝗲, 𝘆𝗲𝘀. There’s all sorts of things we have only the dimmest understanding of at present about the nature of people and what it means to be a being, and what it means to have a self. We don’t understand those things very well and they are becoming crucial to understand 𝗯𝗲𝗰𝗮𝘂𝘀𝗲 𝘄𝗲’𝗿𝗲 𝗻𝗼𝘄 𝗰𝗿𝗲𝗮𝘁𝗶𝗻𝗴 𝗯𝗲𝗶𝗻𝗴𝘀.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060990267763904513/vid/avc1/2752x1540/Svb7uiOxBbT3k9ml.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/LanaElys/status/2060990453231808956/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/LanaElys/status/2060990453231808956)\n\n💬18🔄17❤️67👀6785📊22",
+      "tags": [
+        "AI consciousness",
+        "Hinton",
+        "Pope"
+      ],
+      "score": 68,
+      "summary": "Gary Marcus支持教皇观点，认为AI不是创造生命，与Geoffrey Hinton意见相左。",
+      "fetched_at": "2026-06-01T01:07:56.001297+08:00"
+    },
+    {
+      "title": "What are you building today?",
+      "link": "https://x.com/NotionHQ/status/2061118034299719897",
+      "published": "2026-06-01T00:10:07+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "What are you building today?\n\n💬13🔄2❤️21👀1535📊13",
+      "tags": [
+        "Notion"
+      ],
+      "score": 10,
+      "summary": "Notion官方泛问“你今天在构建什么？”。",
+      "fetched_at": "2026-06-01T01:07:56.001347+08:00"
+    },
+    {
+      "title": "It was the best of times, it was the worst of times.",
+      "link": "https://x.com/paulg/status/2061112568853241999",
+      "published": "2026-05-31T23:48:24+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "It was the best of times, it was the worst of times.\n\n![Derek Thompson](https://pbs.twimg.com/profile_images/1605404261306679296/aq_L7W-z_normal.jpg)\n\nDerek Thompson@DKThomp\n\nThis has quietly been a miracle month in medicine.   \n  \nIn the last 5 weeks we’ve got news on:   \n  \n- retatrutide, the triple agonist GLP-1 from Lilly, basically melting fat and body-wide inflammation at record levels   \n- RevMed’s new pancreatic cancer drug showing unprecedented abilities to extend life   \n- small trial of a one-and-done PCSK9 gene editing therapy for slashing LDL cholesterol   \n- Mayo’s AI-assisted radiology showing vastly improved cancer detection   \n- this new therapy for metastatic solid tumors  \n  \nThis stuff is at varying levels of evidence. Retatrutide is ~100% on its way, other stuff needs more clinical trial data. But put it together and we’re maybe on the verge of majorly reducing the mortality of heart disease and cancer, the two leading causes of death in America.\n\n[🔗 View Quoted Tweet](https://x.com/DKThomp/status/2061110056293106118)\n\n💬12🔄3❤️151👀47348📊20",
+      "tags": [
+        "medicine"
+      ],
+      "score": 15,
+      "summary": "转述医学领域5周内多项突破进展。",
+      "fetched_at": "2026-06-01T01:07:56.001395+08:00"
+    },
+    {
+      "title": "Did some driving practice with 17 yo. (Kids drive later in the UK.) I told him the criterion for suc...",
+      "link": "https://x.com/paulg/status/2061111222460719238",
+      "published": "2026-05-31T23:43:03+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "Did some driving practice with 17 yo. (Kids drive later in the UK.) I told him the criterion for success was to get me from frightened to bored. We occasionally hit this mark.\n\n💬34🔄2❤️260👀18519📊46",
+      "tags": [
+        "driving"
+      ],
+      "score": 5,
+      "summary": "Paul Graham陪17岁儿子练习驾驶。",
+      "fetched_at": "2026-06-01T01:07:56.001443+08:00"
+    },
+    {
+      "title": "If you want to learn more from @Shpigford check out his new community here: https://t.co/wro4ou3YmW",
+      "link": "https://x.com/petergyang/status/2061104829020447061",
+      "published": "2026-05-31T23:17:39+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "If you want to learn more from [@Shpigford](https://x.com/Shpigford) check out his new community here: [initialcommit.co](https://initialcommit.co/)\n\n💬0🔄0❤️1👀955",
+      "tags": [
+        "community"
+      ],
+      "score": 5,
+      "summary": "推广某人新社区。",
+      "fetched_at": "2026-06-01T01:07:56.001491+08:00"
+    },
+    {
+      "title": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML enginee...",
+      "link": "https://x.com/sama/status/2061117302528188712",
+      "published": "2026-06-01T00:07:13+08:00",
+      "source": "Sam Altman(@sama)",
+      "content": "OpenAI Robotics is hiring, looking for exceptional full-stack hardware, ops, systems, and ML engineers to help us program and manufacture robots that are useful for society.  \n  \nAI should be able to help people in the physical world. In the short term, we are focused on robots to support skilled workers to build our future infrastructure; in the long term, we imagine everyone having a personal robot doing anything they need.  \n  \nOur world simulation research program, led by Aditya Ramesh ([@model\\_mechanic](https://x.com/model_mechanic)), has evolved over the past year into OpenAI Robotics. Progress is rapid, and based on a foundation of co-design between robotics hardware and ML research.  \n  \nIf you love working hands-on across the robotics stack and want to build the future, please consider joining us. Send an email with your background and evidence of exceptional accomplishment to: robotics-recruiting[@openai](https://x.com/openai).com\n\n💬311🔄165❤️2481👀163482📊539",
+      "tags": [
+        "OpenAI",
+        "Robotics",
+        "hiring"
+      ],
+      "score": 85,
+      "summary": "OpenAI Robotics招聘全栈硬件、运营、系统及机器学习工程师。",
+      "fetched_at": "2026-06-01T01:07:56.001565+08:00"
+    },
+    {
+      "title": "We want to help the world get a head start on biodefense:\n\nhttps://t.co/gDQfOZrLA4",
+      "link": "https://x.com/sama/status/2061101875303530871",
+      "published": "2026-05-31T23:05:55+08:00",
+      "source": "Sam Altman(@sama)",
+      "content": "We want to help the world get a head start on biodefense:  \n  \n[openai.com/index/strength…](https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense/)\n\n💬209🔄78❤️766👀79859📊250",
+      "tags": [
+        "OpenAI",
+        "biodefense",
+        "resilience"
+      ],
+      "score": 87,
+      "summary": "OpenAI发布旨在增强社会生物防御弹性的计划。",
+      "fetched_at": "2026-06-01T01:07:56.001626+08:00"
+    },
+    {
+      "title": "而没有经过“土改”的国家，就拿美国来说，广大的红州虽然被全球化抛下，但是他们的子弟是有归处的。回乡务农，回到父母的农场上是能谋生的。土地还在，土地的产出是可以维持几代人饿不死的。",
+      "link": "https://x.com/feltanimalworld/status/2061111640905400472",
+      "published": "2026-05-31T23:44:43+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "而没有经过“土改”的国家，就拿美国来说，广大的红州虽然被全球化抛下，但是他们的子弟是有归处的。回乡务农，回到父母的农场上是能谋生的。土地还在，土地的产出是可以维持几代人饿不死的。\n\n💬1🔄0❤️2👀417📊2",
+      "tags": [
+        "land reform"
+      ],
+      "score": 5,
+      "summary": "讨论美国土地改革对红州的影响。",
+      "fetched_at": "2026-06-01T01:07:56.001673+08:00"
+    },
+    {
+      "title": "靠读书起家的城市中产，面临最大挑战是去全球化和以AI为代表的技术迭代。许多默认人生锚点（学历和简历上的那几个字）被现实慢慢蚕食。房地产，关税，移民政策，这些吵翻天的小话题，在历史的潮水中都是去全球化动...",
+      "link": "https://x.com/feltanimalworld/status/2061108608566186470",
+      "published": "2026-05-31T23:32:40+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "靠读书起家的城市中产，面临最大挑战是去全球化和以AI为代表的技术迭代。许多默认人生锚点（学历和简历上的那几个字）被现实慢慢蚕食。房地产，关税，移民政策，这些吵翻天的小话题，在历史的潮水中都是去全球化动荡的一笔。城市看上去庞大，但实际脆弱。城市靠高楼把所有人“悬空”，实际上根基非常弱。\n\n💬2🔄5❤️36👀2540📊10",
+      "tags": [
+        "AI",
+        "globalization",
+        "middle class"
+      ],
+      "score": 60,
+      "summary": "讨论城市中产面临AI和去全球化带来的挑战。",
+      "fetched_at": "2026-06-01T01:07:56.001721+08:00"
+    },
+    {
+      "title": "Skill写好已开源，推荐star或fork试试：\nhttps://t.co/FNMnrbFiLE\n\n安装指令\nnpx skills add joeseesun/qiaomu-read-helper\n...",
+      "link": "https://x.com/vista8/status/2061128902266007802",
+      "published": "2026-06-01T00:53:18+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "Skill写好已开源，推荐star或fork试试：  \n[github.com/joeseesun/qiao…](https://github.com/joeseesun/qiaomu-read-helper)  \n  \n安装指令  \nnpx skills add joeseesun/qiaomu-read-helper  \n  \n前提是得安装飞书cli\n\n💬0🔄0❤️2👀147",
+      "tags": [
+        "AI",
+        "feishu",
+        "skill"
+      ],
+      "score": 70,
+      "summary": "开源了基于飞书CLI的AI阅读助手Skill。",
+      "fetched_at": "2026-06-01T01:07:56.001768+08:00"
+    },
+    {
+      "title": "原始Github，推荐fork改造：\nhttps://t.co/4TgxxfPQrg\n\n等优化差不多了，我的也开源出来。",
+      "link": "https://x.com/vista8/status/2061126634946896337",
+      "published": "2026-06-01T00:44:18+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "原始Github，推荐fork改造：  \n[github.com/mengxi-ream/re…](https://github.com/mengxi-ream/read-frog)  \n  \n等优化差不多了，我的也开源出来。\n\n💬0🔄0❤️1👀414📊1",
+      "tags": [
+        "AI",
+        "open source"
+      ],
+      "score": 65,
+      "summary": "推荐fork原始Github项目read-frog。",
+      "fetched_at": "2026-06-01T01:07:56.001815+08:00"
+    },
+    {
+      "title": "基于开源的沉浸式翻译插件 read-frog。\n\n让Codex开发了一套单词学习系统。\n\n每天阅读英文网页收藏的单词，变成闪卡可复习，基于艾宾浩斯曲线遗忘曲线。\n\n此单词学习模式，根据单词难度（如CE...",
+      "link": "https://x.com/vista8/status/2061126489048039724",
+      "published": "2026-06-01T00:43:43+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "基于开源的沉浸式翻译插件 read-frog。  \n  \n让Codex开发了一套单词学习系统。  \n  \n每天阅读英文网页收藏的单词，变成闪卡可复习，基于艾宾浩斯曲线遗忘曲线。  \n  \n此单词学习模式，根据单词难度（如CET6+）旁边加上中文翻译，标记掌握情况。  \n  \n如果一篇文章没生词翻译，说明掌握火候差不多了  \n  \n原始Github见评论\n\n![Tweet Image](https://pbs.twimg.com/media/HJqWQmsaUAAtsan.jpg)![Tweet Image](https://pbs.twimg.com/media/HJqW1FdaEAAhJOk.jpg)\n\n💬2🔄1❤️8👀764📊4",
+      "tags": [
+        "AI",
+        "vocabulary",
+        "learning"
+      ],
+      "score": 70,
+      "summary": "利用Codex开发基于艾宾浩斯曲线的单词学习系统。",
+      "fetched_at": "2026-06-01T01:07:56.001862+08:00"
+    },
+    {
+      "title": "用飞书+AI读书，划线就能对话！这个阅读法太上头了\n\n测试了一种另类AI阅读方法，结合飞书CLI，相当有趣！\n\n1. 让 Codex或CC 把Epub电子书按章节写入飞书文档。\n\n2. 人肉阅读，有感...",
+      "link": "https://x.com/vista8/status/2061118430305210492",
+      "published": "2026-06-01T00:11:42+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "用飞书+AI读书，划线就能对话！这个阅读法太上头了  \n  \n测试了一种另类AI阅读方法，结合飞书CLI，相当有趣！  \n  \n1. 让 Codex或CC 把Epub电子书按章节写入飞书文档。  \n  \n2. 人肉阅读，有感触的地方划线、加粗，最好评论。  \n  \n3. 让 Codex 读飞书文档中的标记和评论，让AI解释回复你。  \n  \n探索差不多了，写个Skill\n\n![Tweet Image](https://pbs.twimg.com/media/HJqOpoeawAA_LCP.jpg)![Tweet Image](https://pbs.twimg.com/media/HJqO2DRaYAAUCwP.jpg)\n\n💬4🔄3❤️22👀1601📊9",
+      "tags": [
+        "AI",
+        "feishu",
+        "reading"
+      ],
+      "score": 70,
+      "summary": "介绍结合飞书CLI和AI的另类阅读方法。",
+      "fetched_at": "2026-06-01T01:07:56.001909+08:00"
+    },
+    {
+      "title": "上架应该会限免，后面也就卖个一两块，功能多了可能会涨价",
+      "link": "https://x.com/op7418/status/2061122568283918766",
+      "published": "2026-06-01T00:28:08+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "上架应该会限免，后面也就卖个一两块，功能多了可能会涨价\n\n💬0🔄0❤️0👀33",
+      "tags": [
+        "pricing"
+      ],
+      "score": 10,
+      "summary": "猜测App上架定价策略。",
+      "fetched_at": "2026-06-01T01:07:56.001955+08:00"
+    },
+    {
+      "title": "iPhone 和 iPad 都支持",
+      "link": "https://x.com/op7418/status/2061121003917594702",
+      "published": "2026-06-01T00:21:55+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "iPhone 和 iPad 都支持\n\n💬1🔄0❤️1👀400📊1",
+      "tags": [
+        "iOS"
+      ],
+      "score": 5,
+      "summary": "App支持iPhone和iPad。",
+      "fetched_at": "2026-06-01T01:07:56.002001+08:00"
+    },
+    {
+      "title": "我的 iOS Markdown 和 HTML 文件阅读 APP 即览差不多了\n\n没想到一些视觉样式调整了一天时间，明天发个表单让大家参与测试",
+      "link": "https://x.com/op7418/status/2061120486038450317",
+      "published": "2026-06-01T00:19:52+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "我的 iOS Markdown 和 HTML 文件阅读 APP 即览差不多了  \n  \n没想到一些视觉样式调整了一天时间，明天发个表单让大家参与测试\n\n![Tweet Image](https://pbs.twimg.com/media/HJqRnMhaIAA8nBt.jpg)![Tweet Image](https://pbs.twimg.com/media/HJqRooXa8AEWkLc.jpg)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\niOS 上我做的那个 HTML 和 Markdown 预览的 App （即览）差不多了，感觉晚上就能给大家发测试资格了\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060687456287281152/vid/avc1/1080x2346/RqNQ5K1EWWLWctZE.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/op7418/status/2060689179642916894/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2060689179642916894)\n\n💬2🔄0❤️3👀870📊2",
+      "tags": [
+        "iOS",
+        "Markdown"
+      ],
+      "score": 20,
+      "summary": "开发iOS Markdown和HTML阅读App接近完成。",
+      "fetched_at": "2026-06-01T01:07:56.002048+08:00"
+    }
+  ]
+}
