@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-05-30"
+    "date": "2026-05-31"
   },
   "entries": [
     {
@@ -883,6 +883,196 @@
       "score": 80,
       "summary": "Epoch AI数据显示开源模型落后闭源模型约四个月，转述。",
       "fetched_at": "2026-05-31T06:57:35.538057+08:00"
+    },
+    {
+      "title": "Quoting Karen Kwok for Reuters Breakingviews",
+      "link": "https://simonwillison.net/2026/May/31/anthropic-run-rate/#atom-everything",
+      "published": "2026-05-31T09:48:12+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "> Anthropic defines “run-rate revenue” in two parts. Use the last 28 days of sales ⁠from customers charged on a consumption basis and multiply it by 13. Then, multiply the monthly subscription take by 12, ​and add the two together.\n\n— [Karen Kwok for Reuters Breakingviews](https://www.reuters.com/commentary/breakingviews/anthropic-gives-lesson-ai-revenue-hallucination-2026-03-10/), citing \"a person familiar with the matter\"\n\nTags: [anthropic](https://simonwillison.net/tags/anthropic), [ai](https://simonwillison.net/tags/ai)",
+      "tags": [
+        "Anthropic",
+        "营收",
+        "AI"
+      ],
+      "score": 72,
+      "summary": "Anthropic定义run-rate收入：消费收入乘以13加订阅收入乘以12。",
+      "fetched_at": "2026-05-31T11:37:26.023302+08:00"
+    },
+    {
+      "title": "用 Twitter 这么多年，最喜欢的事情就是夜里刷推，因为一到夜里就能刷到很多高质量内容，尤其是和自己相关行业的。但现在几乎已经刷不到了。\n\n这世界急需一个新的社交平台，就像当年 Facebook ...",
+      "link": "https://x.com/dingyi/status/2060904733322391557",
+      "published": "2026-05-31T10:02:32+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "用 Twitter 这么多年，最喜欢的事情就是夜里刷推，因为一到夜里就能刷到很多高质量内容，尤其是和自己相关行业的。但现在几乎已经刷不到了。  \n  \n这世界急需一个新的社交平台，就像当年 Facebook 迅速取代 MySpace 一样。\n\n💬5🔄1❤️13👀1546📊6",
+      "tags": [
+        "社交平台",
+        "吐槽"
+      ],
+      "score": 30,
+      "summary": "用户抱怨Twitter夜间高质量内容减少，认为需要新社交平台。",
+      "fetched_at": "2026-05-31T11:37:26.023433+08:00"
+    },
+    {
+      "title": "全网都在骂 Opus 4.8，退订的人越来越多。实在想不明白，一家所有产品都是二流甚至三流水平的公司，是怎么火起来的？？？？？？？？\n\n我赌三年内 Anthropic 就会消失或被收购。",
+      "link": "https://x.com/dingyi/status/2060899625121579221",
+      "published": "2026-05-31T09:42:14+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "全网都在骂 Opus 4.8，退订的人越来越多。实在想不明白，一家所有产品都是二流甚至三流水平的公司，是怎么火起来的？？？？？？？？  \n  \n我赌三年内 Anthropic 就会消失或被收购。\n\n💬27🔄1❤️30👀13132📊26",
+      "tags": [
+        "Anthropic",
+        "Opus",
+        "吐槽"
+      ],
+      "score": 20,
+      "summary": "用户批评Opus 4.8并预测Anthropic三年内消失或被收购。",
+      "fetched_at": "2026-05-31T11:37:26.023514+08:00"
+    },
+    {
+      "title": "backrooms full of unaddressed comments",
+      "link": "https://x.com/figma/status/2060922398413648168",
+      "published": "2026-05-31T11:12:44+08:00",
+      "source": "Figma(@figma)",
+      "content": "backrooms full of unaddressed comments\n\n![Tweet Image](https://pbs.twimg.com/media/HJnd_9EW8AA5KAF.jpg)\n\n💬1🔄0❤️14👀727📊2",
+      "tags": [
+        "Figma",
+        "评论",
+        "低价值"
+      ],
+      "score": 10,
+      "summary": "Figma发布无意义图片，内容为空。",
+      "fetched_at": "2026-05-31T11:37:26.023584+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2060919628696887399",
+      "published": "2026-05-31T11:01:44+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![James E. Thorne](https://pbs.twimg.com/profile_images/1197948006047215616/8ZIPsKTX_normal.jpg)\n\nJames E. Thorne@DrJStrategy\n\nFood for thought.   \n  \nClay’s Revenge  \n  \nTreasury Secretary Scott Bessent’s speech at the Reagan National Economic Forum was more than a defense of tariffs or industrial policy. It was the clearest public restoration of Henry Clay’s American System in generations.  \n  \nClay understood what the priesthood of globalization spent three decades denying: Economic power is national power. A country that cannot make what it needs, finance its own expansion, or secure the energy that sustains both is not sovereign in any serious sense. Bessent’s formulation, that economic security is national security, is simply Clay’s doctrine translated into the language of the 21st century.  \n  \nPresident Trump had already prepared the ground. In April, he proclaimed April 12, 2026, a day of celebration in honor of Henry Clay and ordered Room 208 in the Eisenhower Executive Office Building redesignated as the Henry Clay Room. That was not empty nostalgia. Trump has long treated Clay’s creed of “fair, equal, and reciprocal” trade as a precursor to America First economics. Bessent’s speech converted that historical tribute into governing doctrine.  \n  \nThe significance reaches beyond one speech. The United States is rediscovering its native political economy: strategic protection for key industries, public backing for national development, and finance aligned with national strength rather than with the abstractions of borderless efficiency. Kevin Warsh is attempting something parallel at the Federal Reserve. His call for a new Treasury, Fed accord and a smaller Fed balance sheet points toward a more Hamiltonian vision of public credit, and, in a deeper sense, an effort to undo William McChesney Martin’s betrayal of Harry Truman.   \n  \nTruman called Martin a traitor when the Fed chairman prioritized monetary independence over financing national strategy. What Martin enshrined as central-bank independence, Warsh seems to treat as a historical deviation from the older American tradition in which public credit served national power.  \n  \nThe last time the United States operated on anything like this logic at full scale was during World War II, when Washington treated steel, shipping, energy, logistics, and capital allocation as parts of one integrated national mission. That, not laissez-faire mythology, is the real American precedent for national power in an age of danger.  \n  \nThe world woke up when President Trump launched Operation Epic Fury and Operation Absolute Resolve. The closure of the Strait of Hormuz then made the lesson impossible to miss: resource security is not a seminar topic but the hard foundation of state power. Once one of the world’s critical energy choke points was effectively shut, the entire fantasy that advanced economies could float above geography, production, and force collapsed in real time.   \n  \nThat is why leaders across the West, Mark Carney included, are drifting toward the language of resilience, industrial capacity, and strategic autonomy.  \n  \nYet America retains the decisive advantage. Coupled with Canada and Venezuela, the Americas are becoming the center of resource security. The United States sits at the heart of that system as an energy superpower, with the oil, gas, capital, and industrial base to turn strategy into production. Europe lacks that foundation. China cannot trust its access to it.  \n  \nBessent did not merely defend a policy mix. He announced a return to an older American statecraft: Clay at Treasury, Hamilton at the Fed, and the American System back at the center of national strategy.\n\n[🔗 View Quoted Tweet](https://x.com/DrJStrategy/status/2060898762130674012)\n\n💬7🔄0❤️35👀13173📊7",
+      "tags": [
+        "经济",
+        "政策",
+        "Andreessen"
+      ],
+      "score": 60,
+      "summary": "Andreessen转发关于Henry Clay经济体系及关税政策的讨论。",
+      "fetched_at": "2026-05-31T11:37:26.023651+08:00"
+    },
+    {
+      "title": "Many people are saying.",
+      "link": "https://x.com/pmarca/status/2060916966236598584",
+      "published": "2026-05-31T10:51:09+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying.\n\n![Mystery Grove Movie List Co.](https://pbs.twimg.com/profile_images/1254314471813758976/sRWOQDLz_normal.jpg)\n\nMystery Grove Movie List Co.@MysteryGrove\n\nPlease listen to my new podcast episode on True Detective Season 2, which was actually much better than Season 1  \n  \n[theconundrumcluster.com/p/ep70-a-brief…](https://www.theconundrumcluster.com/p/ep70-a-brief-introduction-to-true)\n\n[🔗 View Quoted Tweet](https://x.com/MysteryGrove/status/1954709874971140474)\n\n💬14🔄0❤️23👀16097📊10",
+      "tags": [
+        "剧评",
+        "Andreessen"
+      ],
+      "score": 20,
+      "summary": "Andreessen转发关于《真探》第二季的播客推荐。",
+      "fetched_at": "2026-05-31T11:37:26.023716+08:00"
+    },
+    {
+      "title": "Many people are saying.",
+      "link": "https://x.com/pmarca/status/2060916138742292525",
+      "published": "2026-05-31T10:47:52+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Many people are saying.\n\n![David Sacks](https://pbs.twimg.com/profile_images/1879600809693917185/GkBxdTd9_normal.jpg)\n\nDavid Sacks@DavidSacks\n\nApollo’s Chief Economist: Zero Evidence of AI-Related Job Losses\n\n![Tweet Image](https://pbs.twimg.com/media/HJnFKHHa0AAXYwC.jpg)![Tweet Image](https://pbs.twimg.com/media/HJnFKHJagAAJEHi.jpg)![Tweet Image](https://pbs.twimg.com/media/HJnFKHLbgAARJ9W.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/DavidSacks/status/2060895086859407406)\n\n💬20🔄13❤️115👀24020📊22",
+      "tags": [
+        "AI",
+        "就业",
+        "影响"
+      ],
+      "score": 82,
+      "summary": "Apollo首席经济学家称零证据显示AI导致失业，Andreessen转发。",
+      "fetched_at": "2026-05-31T11:37:26.023778+08:00"
+    },
+    {
+      "title": "But seriously, it’s a good book, and you definitely shouldn’t buy it.",
+      "link": "https://x.com/pmarca/status/2060916055946747998",
+      "published": "2026-05-31T10:47:32+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "But seriously, it’s a good book, and you definitely shouldn’t buy it.\n\n![Marc Andreessen 🇺🇸](https://pbs.twimg.com/profile_images/1820716712234303489/9GpKDZjq_normal.jpg)\n\nMarc Andreessen 🇺🇸@pmarca\n\nMy strategy to bury “Abundance” by loudly praising it upon publication seems to have worked.\n\n![Tweet Image](https://pbs.twimg.com/media/HJmnj09boAA0W_O.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/pmarca/status/2060862542252331207)\n\n💬20🔄4❤️98👀21959📊21",
+      "tags": [
+        "Andreessen",
+        "书籍"
+      ],
+      "score": 15,
+      "summary": "Andreessen调侃其书籍《Abundance》的宣传策略。",
+      "fetched_at": "2026-05-31T11:37:26.023840+08:00"
+    },
+    {
+      "title": "凉快\n氧足\n人少\n舒坦",
+      "link": "https://x.com/HiTw93/status/2060924872621273106",
+      "published": "2026-05-31T11:22:34+08:00",
+      "source": "Tw93(@HiTw93)",
+      "content": "凉快  \n氧足  \n人少  \n舒坦\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060923870232870913/vid/avc1/2160x3840/Nvcxu4Fj3-wqWHGZ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/HiTw93/status/2060924872621273106/video/1)\n\n💬5🔄0❤️8👀409📊5",
+      "tags": [
+        "生活",
+        "视频"
+      ],
+      "score": 0,
+      "summary": "用户分享登山视频，内容与AI无关。",
+      "fetched_at": "2026-05-31T11:37:26.023902+08:00"
+    },
+    {
+      "title": "今天大厂做的事情，以「AI 提效」为理由裁员，听起来像是在拥抱变化，其实恰恰相反。\n它是在用最小的动作假装变化已经发生了，好避免面对那个真正痛苦的问题：\n旧的仗打完了，新的仗是什么？\n如果回答不了，再...",
+      "link": "https://x.com/oran_ge/status/2060912447868031432",
+      "published": "2026-05-31T10:33:12+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "今天大厂做的事情，以「AI 提效」为理由裁员，听起来像是在拥抱变化，其实恰恰相反。  \n它是在用最小的动作假装变化已经发生了，好避免面对那个真正痛苦的问题：  \n旧的仗打完了，新的仗是什么？  \n如果回答不了，再裁一万人也没用。\n\n![Orange AI](https://pbs.twimg.com/profile_images/1760074488073629696/ceSsuVCY_normal.png)\n\nOrange AI@oran\\_ge\n\n[x.com/i/article/2060…](http://x.com/i/article/2060890772099170304)\n\n[🔗 View Quoted Tweet](https://x.com/oran_ge/status/2060891001917714672)\n\n💬0🔄0❤️3👀1441📊1",
+      "tags": [
+        "AI",
+        "裁员",
+        "大厂"
+      ],
+      "score": 65,
+      "summary": "评论大厂以AI提效为借口裁员，回避真正战略问题。",
+      "fetched_at": "2026-05-31T11:37:26.023963+08:00"
+    },
+    {
+      "title": "AI 这么刚需的东西\n微信官方应该早点自己支持\n他们的 agent 至少应该支持吧\n听说张小龙亲自操刀\n如果不支持 md 渲染…\n有点说不过去",
+      "link": "https://x.com/oran_ge/status/2060907257244811412",
+      "published": "2026-05-31T10:12:34+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "AI 这么刚需的东西  \n微信官方应该早点自己支持  \n他们的 agent 至少应该支持吧  \n听说张小龙亲自操刀  \n如果不支持 md 渲染…  \n有点说不过去\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n现在周围人发文件都变成 Markdown 和 HTML 了，但是微信这俩格式一个都不支持，而且相当封闭，想用其他应用打开都费劲，真是受不了。  \n  \n如果是在外面用手机，别人发过来的 Markdown 和 HTML 文件都不知道怎么打开。  \n  \n感觉得做个手机上的 HTML 和 Markdown 阅读器了。\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2060626984200437995)\n\n💬0🔄0❤️1👀1544",
+      "tags": [
+        "微信",
+        "AI",
+        "Agent"
+      ],
+      "score": 60,
+      "summary": "建议微信支持AI agent及Markdown/HTML渲染。",
+      "fetched_at": "2026-05-31T11:37:26.024025+08:00"
+    },
+    {
+      "title": "开始制作视频后，才发现笔记本的内存太重要了。\n\n一首MTV至少需要13分钟渲染，明年换个好点的笔记本。\n\nM4 24G还是捉襟见肘。",
+      "link": "https://x.com/vista8/status/2060904422709055817",
+      "published": "2026-05-31T10:01:18+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "开始制作视频后，才发现笔记本的内存太重要了。  \n  \n一首MTV至少需要13分钟渲染，明年换个好点的笔记本。  \n  \nM4 24G还是捉襟见肘。\n\n![Tweet Image](https://pbs.twimg.com/media/HJnNW8TbEAA2jQc.jpg)\n\n💬1🔄0❤️2👀888📊2",
+      "tags": [
+        "硬件",
+        "内存"
+      ],
+      "score": 10,
+      "summary": "用户感叹笔记本内存不足影响视频渲染。",
+      "fetched_at": "2026-05-31T11:37:26.024086+08:00"
+    },
+    {
+      "title": "只需提供一个Suno歌曲的URL，用Codex自动生成音乐MTV。\n\nCodex自动调用生图、组织画面、生成对齐的歌词。\n\nSkill等继续完善后就可以开源了。",
+      "link": "https://x.com/vista8/status/2060902037081165996",
+      "published": "2026-05-31T09:51:50+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "只需提供一个Suno歌曲的URL，用Codex自动生成音乐MTV。  \n  \nCodex自动调用生图、组织画面、生成对齐的歌词。  \n  \nSkill等继续完善后就可以开源了。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2060901539754262528/vid/avc1/1920x1080/5HCJ9YDawaP1uMYm.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/vista8/status/2060902037081165996/video/1)\n\n💬5🔄0❤️13👀1234📊6",
+      "tags": [
+        "AI",
+        "Codex",
+        "音乐MTV"
+      ],
+      "score": 70,
+      "summary": "演示用Codex自动生成音乐MTV，后续计划开源。",
+      "fetched_at": "2026-05-31T11:37:26.024147+08:00"
     }
   ]
 }
