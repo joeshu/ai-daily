@@ -377,6 +377,453 @@
       "score": 65,
       "summary": "Bolt宣布获得SOC 2 Type II认证，增强用户信任。",
       "fetched_at": "2026-06-02T04:17:36.730408+08:00"
+    },
+    {
+      "title": "Scaling oncology patient support: How New York Cancer and Blood Specialists transformed customer experience with AWS and Pronetx, now part of Caylent",
+      "link": "https://aws.amazon.com/blogs/architecture/scaling-oncology-patient-support-how-new-york-cancer-and-blood-specialists-transformed-customer-experience-with-aws-and-pronetx-now-part-of-caylent/",
+      "published": "2026-06-02T05:45:52+08:00",
+      "source": "AWS Architecture Blog",
+      "content": "As one of the United States’ leading oncology and hematology providers, the goal of [New York Cancer and Blood Specialists (NYCBS)](https://nycancer.com/) is to provide comprehensive and compassionate care to patients. The organization handles more than 250,000 patient calls every year across over 100 specialized queues and wanted to optimize its manual call handling process.\n\nThis post details how NYCBS partnered with Amazon Web Services (AWS) and AWS partner [Pronetx](https://aws.amazon.com/marketplace/seller-profile?id=seller-ws5zi5a7i3e2c) (now part of [Caylent](https://aws.amazon.com/marketplace/seller-profile?id=ca3d951d-f8e1-4e22-bddc-5cae46f9cb2e)) to migrate to [Amazon Connect Customer](https://aws.amazon.com/connect/), the AWS cloud contact center service. The migration delivered a 54 percent improvement in patient enrollment and transformed the way NYCBS connects with the patients who need them most.\n\n## Solution overview\n\nNYCBS chose to migrate to a dedicated Amazon Connect Customer instance with the help of Pronetx, an AWS partner specializing in Amazon Connect Customer. The 13-week engagement covered three phases: discovery and foundation (2 weeks), build and implementation (8 weeks), and acceptance testing and go-live (3 weeks).\n\nThis solution uses Amazon Connect Customer as the core contact center service. At the heart of the customer experience infrastructure lies the call routing and patient communication logic. Within this infrastructure, several key components work together to deliver HIPAA-compliant patient care.\n\n## Architecture\n\nThe architecture has three main layers, as shown in the following diagram. Each layer is designed to handle a specific aspect of the customer experience operations of NYCBS while maintaining HIPAA compliance throughout.\n\n![Architecture diagram showing the three-layer NYCBS contact center solution built on Amazon Connect. The diagram illustrates: (1) CTR management microservice with Amazon API Gateway, AWS Lambda, and Amazon DynamoDB; (2) core contact center services with Amazon Connect instance, AWS Secrets Manager, Amazon Polly, and IVR Lambda functions; (3) call recording and AI/ML pipeline with Amazon S3, Amazon Transcribe, and Amazon Lex. Shared AWS services include AWS CloudFormation, AWS IAM, AWS KMS, Amazon CloudWatch, and Amazon SNS. External integrations include Microsoft Intune ID and NYCBS on-premises systems.](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2026/06/01/ARCHBLOG-1455-1.png)\n\n*Figure 1: NYCBS customer experience solution architecture on Amazon Connect, showing the CTR management microservice, core contact center services, and call recording and AI/ML pipeline layers, integrated with shared AWS services and external systems.*\n\n### CTR management microservice\n\nThis layer handles contact trace record (CTR) processing through [Amazon API Gateway](https://aws.amazon.com/api-gateway/) as the entry point. The microservice uses [AWS Lambda](https://aws.amazon.com/lambda/) functions (Get Disposition Code and Update CTRs) to retrieve and process call disposition codes, with [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) storing disposition code data for quick retrieval.\n\n### Core contact center services\n\nThe central Amazon Connect Customer instance manages incoming agent flows and call routing across more than 100 specialized queues. [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) securely stores credentials and sensitive configuration. [Amazon Polly](https://aws.amazon.com/polly/) provides text-to-speech capabilities for automated voice responses. Configuration is managed through DynamoDB configuration tables and configuration Lambda functions, with IVR Integration Lambda functions handling IVR workflows.\n\n### Call recording and AI/ML pipeline\n\nCall recordings and artifacts are stored in [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/). A dedicated Lambda function handles voicemail processing, with [Amazon Transcribe](https://aws.amazon.com/transcribe/) converting voicemails to text. A subsequent Lambda function then creates cases from transcribed voicemails. AI capabilities are powered by [Amazon Lex](https://aws.amazon.com/lex/) for conversational chatbots and other AWS AI services for intelligent automation, with OMS Lookup providing Order Management System integration.\n\n### Shared services and integrations\n\nThe architecture integrates with external systems including Microsoft Intune ID for identity management and the on-premises systems of NYCBS. Shared AWS services provide the foundation:\n\n* [AWS CloudFormation](https://aws.amazon.com/cloudformation/) templates automate infrastructure as code (IaC) deployment.\n* [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) manages identity and access controls.\n* [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms/) encrypts sensitive data.\n* [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) handles monitoring and logging.\n* [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/) provides notification services for alerts.\n\nTogether, these components helped NYCBS reduce patient enrollment time by 54 percent. The reduction came through automated multi-language routing in English, Spanish, Russian, and Mandarin. NYCBS also added specialty-based queue prioritization for urgent cases and real-time agent monitoring across the more than 250,000 annual patient calls. The implementation maintains HIPAA compliance through role-based access controls, encryption with AWS KMS, and secure credential storage.\n\n## Technical highlights\n\nA key engineering decision was moving from a shared multi-tenant environment to a dedicated Amazon Connect Customer instance. This architectural shift helped NYCBS implement several capabilities that had previously been unavailable:\n\n* Multi-language routing (English, Spanish, Russian, and Mandarin) through language-detection flows.\n* Specialty-based queue prioritization for urgent oncology cases.\n* After-hours coverage logic with automated callback options.\n* HIPAA-compliant call recording with role-based access controls.\n* Real-time agent monitoring and performance dashboards.\n\n## Key takeaways\n\nA dedicated Amazon Connect Customer instance gives healthcare organizations the flexibility, security, and native feature access that multi-tenant environments can’t match, including the following:\n\n* Multi-language, specialty-based routing (English, Spanish, Russian, Mandarin) directly improved patient access to the right care team.\n* Migrating from manual workflows to automated IaC-driven continuous integration and continuous delivery (CI/CD) deployment removed third-party management fees and reduced operational costs.\n* HIPAA compliance was maintained throughout using AWS KMS encryption, role-based access controls, and AWS Secrets Manager for credential storage.\n* A 54 percent improvement in patient enrollment shows that modernizing contact center operations delivers measurable clinical and business outcomes.\n\n## Results\n\nWithin the 13-week implementation window, NYCBS achieved a 54 percent improvement in patient enrollment, which reflects not only operational efficiency, but also improved access to care. The organization removed third-party management fees through direct AWS consumption, reducing operational costs. NYCBS gained real-time visibility into call quality through Operata and the conversational analytics capabilities of Amazon Connect Customer. In addition, the team established a rapid CI/CD pipeline that deploys new features safely and quickly without disrupting patient services.\n\n## Conclusion\n\nIf your healthcare organization manages complex, high-volume contact center operations, you can apply what NYCBS achieved. A dedicated Amazon Connect Customer instance provides the flexibility, security, and native feature access that healthcare-specific workflows demand. We recommend the following next steps to get started:\n\n* [Start with a no-cost trial:](https://aws.amazon.com/connect/pricing/) Create an Amazon Connect Customer instance and explore its capabilities at no cost for your first 12 months.\n* [Download the reference architecture:](https://aws.amazon.com/architecture/reference-architecture-diagrams/) Access the AWS reference architecture for healthcare customer experience centers to plan your migration.\n* [Schedule a consultation:](https://aws.amazon.com/contact-us/) Connect with an AWS healthcare specialist or engage an AWS Partner such as Pronetx, now part of [Caylent](https://aws.amazon.com/marketplace/seller-profile?id=ca3d951d-f8e1-4e22-bddc-5cae46f9cb2e), to scope your engagement.\n* [Explore AWS for Healthcare:](https://aws.amazon.com/health/) Review HIPAA-eligible services, compliance guides, and customer success stories tailored for healthcare organizations.\n\n## Learn more\n\n* [Amazon Connect documentation and getting started guide](https://docs.aws.amazon.com/connect/)\n* [Amazon Lex developer guide](https://docs.aws.amazon.com/lex/)\n* [Amazon Bedrock overview and model catalog](https://docs.aws.amazon.com/bedrock/)\n* [Amazon Transcribe developer guide](https://docs.aws.amazon.com/transcribe/latest/dg/what-is.html)\n* [AWS for Healthcare and Life Sciences](https://aws.amazon.com/health/)\n* [AWS Partner Network: Find a healthcare partner](https://aws.amazon.com/partners/)\n\n## AWS Partner spotlight\n\nPronetx, now part of [Caylent](https://aws.amazon.com/marketplace/seller-profile?id=ca3d951d-f8e1-4e22-bddc-5cae46f9cb2e), an AWS Premier Tier Services Partner, specializes in Amazon Connect. Pronetx helps organizations design, migrate, and operate customer engagement systems on AWS, with a focus on resilience and AI-driven customer experience.\n\n**[Contact Pronetx](https://partners.amazonaws.com/contactpartner?partnerId=0018W00002YjNQWQA3&partnerName=Pronetx%2C%20Inc.) | [Partner Overview](https://partners.amazonaws.com/partners/0018W00002YjNQWQA3/) | [AWS Marketplace](https://aws.amazon.com/marketplace/seller-profile?id=seller-ws5zi5a7i3e2c)**",
+      "tags": [
+        "AWS",
+        "案例"
+      ],
+      "score": 70,
+      "summary": "AWS助力纽约癌症中心迁移到Amazon Connect，非AI主题。",
+      "fetched_at": "2026-06-02T07:27:35.991643+08:00"
+    },
+    {
+      "title": "Reference your own AWS Secrets Manager secrets in Amazon Bedrock AgentCore Identity",
+      "link": "https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/",
+      "published": "2026-06-02T06:16:28+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "AI agents are only as powerful as the tools they can access. Whether retrieving customer data from a CRM, posting updates to Slack, or querying a GitHub repository, agents need to call external APIs, and that means securely passing credentials at runtime. Getting that right, without hardcoding secrets in code or exposing them in agent prompts, is one of the defining challenges of building production-ready agentic systems.\n\n[Amazon Bedrock AgentCore Identity](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html) meets this challenge through credential providers and a token vault that automatically create and manage a secret in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) in your account for each Outbound credential provider resource. This secret contains either the API key or client secret along with the other metadata for the external identity provider. While AgentCore Identity fully creates and manages these secrets, customers couldn’t configure custom tags, rotation policies, or [customer managed AWS Key Management Service (AWS KMS)](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-mgn-key) key encryption at creation time.\n\nToday, we’re excited to announce the ability to reference a secret in AWS Secrets Manager for AgentCore Identity, so you can reference your own preconfigured secret from Secrets Manager and retain full control over how it is managed. With this ability, you can extend your organization’s existing secrets governance processes to AgentCore. You can provide an existing, preconfigured AWS Secrets Manager secret to use with your [credential provider](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/resource-providers.html) resources. You retain full control over its encryption configuration, rotation, replication, tags, and resource policies, just as you would manage other secrets in Secrets Manager. You can also choose a secret from another AWS account within the same AWS Region, though cross-Region secret sharing isn’t supported. This also supports secrets brought in through AWS Secrets Manager external connectors, enabling integration with third-party secret managers.\n\nIn this post, we will review example use cases, and walk through how to get started configuring your credential provider resources with an existing secret.\n\n## Example use cases\n\nThe following are example use cases:\n\n1. **Your agent accesses an external API your team already has a secret for:** Provide the ARN of that existing secret to your credential provider resources instead of having AgentCore Identity create a new one. You can also reference a secret from another AWS account within the same Region, and secrets brought in through AWS Secrets Manager external connectors are supported, enabling integration with third-party secret managers.\n2. **You would like to rotate your secret for security best practices and want your agent to continue working as you rotate:** When you rotate the secret value, AgentCore Identity retrieves the updated value on its next read. You don’t need to update or recreate the credential provider resources.\n3. **You scope secret access to the intended agent use:** Configure the resource policy on your secret directly in AWS Secrets Manager. You control which AWS Identity and Access Management (IAM) principals can access the secret and scope access conditions.\n4. **Your agent operates in a regulated environment where every credential must be encrypted with your customer managed key:** Create the secret with your customer managed encryption key before providing it to AgentCore Identity. This is especially useful if your organization enforces SCPs and RCPs to help verify that all data is encrypted using customer managed CMKs. By referencing an existing secret, your encryption configuration is fully preserved.\n5. **Your organization requires resource tags on secrets for cost allocation, compliance tracking, or governance auditing:** Create and tag the secret according to your standards before providing it to AgentCore Identity.\n\nTo learn more about the secret configuration options available, see the [AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/managing-secrets.html).\n\n## Prerequisites\n\nTo follow along, you need the following:\n\n1. An existing AWS Secrets Manager secret with the API key or OAuth client secret.\n2. IAM permissions to give the AgentCore Identity service principal `secretsmanager:GetSecretValue` access to the secret.\n3. If you’re using a customer managed AWS KMS key, `kms:Decrypt` permission on that key for the service principal.\n4. Access to the Amazon Bedrock AgentCore Identity console or AWS Command Line Interface (AWS CLI).\n\n## Getting started\n\nTo reference a secret in AWS Secrets Manager, provide the secret ARN and JSON key when creating your credential provider resources through the AgentCore Identity API. AgentCore Identity retrieves the credential value from the specified JSON key in your secret at runtime.\n\nThe following sections show how to create a credential provider resource with a referenced secret using the AWS Management Console, the AWS CLI, or an AI agent.\n\n### Using the console\n\nYou can configure a referenced secret when creating new credential provider resources directly from the Amazon Bedrock AgentCore Identity console. The feature supports both API key and OAuth client credential types.\n\n![AgentCore Identity console showing creation of an Outbound Auth resource with a referenced secret](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-1.png)\n\n*Figure 1: AgentCore Identity console, creating an Outbound Auth resource with a referenced secret.*\n\n### A. Add an API key with a referenced secret\n\nTo add an API key with a referenced secret, complete the following steps:\n\n1. Open the [Amazon Bedrock AgentCore console](https://console.aws.amazon.com/bedrock-agentcore/).\n2. In the left navigation pane, choose **Identity**.\n3. In the **Outbound Auth** section, choose **Add Outbound Auth**.\n4. Choose **Add API key**.\n5. Enter a **Name** for your Outbound Auth resource.\n6. Under **API key selection method**, choose **Provide API key via Secrets Manager**.\n7. In the **Secrets Manager ARN** field, enter or choose the ARN of your existing secret. The list displays secrets available in your account. For example: `arn:aws:secretsmanager:us-east-1:123456789012:secret:myApiKeySecret-AbCdEf`.\n8. In the **JSON key** field, specify the key within your Secrets Manager secret that contains the API key value.\n9. Choose **Add**.\n10. Verify that the credential provider was created by checking that it appears in the Outbound Auth list.\n\n![AgentCore Identity console showing how to add an API key from Secrets Manager](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-2.png)\n\n*Figure 2: AgentCore Identity console, adding an API key from Secrets Manager.*\n\n### B. Add an OAuth client secret with a referenced secret\n\nTo add an OAuth client secret with a referenced secret, complete the following steps:\n\n1. From the **Identity** page, choose **Add Outbound Auth**.\n2. Choose **Add OAuth client**.\n3. Enter a **Name** for your OAuth client (for example, `google-oauth-client-v5fz5`).\n4. Under **Provider**, choose your intended included or custom provider.\n5. Enter your **Client ID** as assigned by the identity provider.\n6. Under **Client secret**, choose **Provide Client secret via Secrets Manager**.\n7. In the **Secrets Manager ARN** field, enter the ARN of the secret that contains your OAuth client secret.\n8. In the **JSON key** field, specify the key within the secret that contains the client secret value.\n9. Choose **Add OAuth Client**.\n10. Verify that the credential provider was created by checking that it appears in the Outbound Auth list.\n\n![AgentCore Identity console showing how to add an OAuth client secret from Secrets Manager](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-3.png)\n\n*Figure 3: AgentCore Identity console, adding an OAuth client secret from Secrets Manager.*\n\n### Using the AWS CLI\n\nYou can configure a referenced secret when creating a new Outbound Auth resource directly for an OAuth client secret from the AWS CLI as shown in the following code:\n\n```\naws bedrock-agentcore-control create-oauth2-credential-provider \\\n    --name \"google-oauth-client-v5fz5\" \\\n    --credential-provider-vendor \"GoogleOauth2\" \\\n    --oauth2-provider-config-input '{\n        \"googleOauth2ProviderConfig\": {\n            \"clientId\": \"<clientId>\",\n            \"clientSecretSource\": \"EXTERNAL\",\n            \"clientSecretConfig\": {\n                \"secretId\": \"arn:aws:secretsmanager:us-east-1:123456789012:secret:myGoogleKeySecret-AbCdEf\",\n                \"jsonKey\": \"key\"\n            }\n        }\n    }'\n```\n\n### Using an AI agent on your desktop\n\nIf you’re using an AI coding agent (like [Kiro](https://kiro.dev/) or similar), you can prompt it to configure a referenced secret directly:\n\n> *“I have an existing secret in AWS Secrets Manager at ARN arn:aws:secretsmanager:us-east-1:123456789012:secret:my-api-key. Create an OAuth2 credential provider in Amazon Bedrock AgentCore Identity named <client-name>, using GoogleOauth2 as the vendor. The client ID is <clientId>, the client secret source is EXTERNAL, and the secret JSON key is key.”*\n>\n> Note: Replace <client-name> and <clientId> with your values.\n\n**Important:** Give AgentCore Identity permission to read your secret by adding a resource policy to the secret that allows the service principal to call `secretsmanager:GetSecretValue`. If your secret is encrypted with a customer managed KMS key, also give the service principal `kms:Decrypt` permission on that key.\n\n## Conclusion\n\nWith the ability to reference a secret in AWS Secrets Manager, AgentCore Identity gives you the flexibility to use your existing secrets and secret management practices when configuring outbound auth for your AI agents. You can retain full control over how your credentials are encrypted, rotated, and accessed, while AgentCore Identity handles retrieving them at runtime.\n\nTo get started, see the [Amazon Bedrock AgentCore Identity documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html). For more on secret management, see the [AWS Secrets Manager User Guide](https://docs.aws.amazon.com/secretsmanager/latest/userguide/).\n\n---\n\n## About the authors\n\n![Swara Gandhi](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-4.jpeg)\n\n### Swara Gandhi\n\nSwara Gandhi is a Senior Solutions Architect on the AWS Identity Solutions team. She works on building secure and scalable end-to-end identity solutions. She is passionate about everything identity, security, and cloud.\n\n![Satveer Khurpa](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/ML-21022-5.jpeg)\n\n### Satveer Khurpa\n\nSatveer Khurpa is a Sr. WW Specialist Solutions Architect, Amazon Bedrock AgentCore at Amazon Web Services, specializing in agentic AI security with a focus on AgentCore Identity and Security. In this role, he uses his expertise in cloud-based architectures to help clients design and deploy secure agentic AI systems across diverse industries. Satveer applies his deep understanding of agentic AI patterns, identity and access management, and defense-in-depth security principles to architect scalable, secure, and responsible agent-based applications, enabling organizations to unlock new business opportunities while maintaining robust security postures for autonomous AI workloads.",
+      "tags": [
+        "Bedrock",
+        "Secrets Manager",
+        "Agent"
+      ],
+      "score": 85,
+      "summary": "Amazon Bedrock AgentCore支持引用已有Secrets Manager秘密。",
+      "fetched_at": "2026-06-02T07:27:35.991731+08:00"
+    },
+    {
+      "title": "Transforming rare cancer research with Amazon Quick: Integrating biomedical databases for breakthrough discoveries",
+      "link": "https://aws.amazon.com/blogs/machine-learning/transforming-rare-cancer-research-with-amazon-quick-integrating-biomedical-databases-for-breakthrough-discoveries/",
+      "published": "2026-06-02T05:54:16+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "Rare cancer research generates heterogeneous data across genomic sequencing pipelines, clinical trial registries, biomarker repositories, and peer-reviewed literature. Integrating these sources for a single investigation typically requires custom ETL pipelines, manual schema reconciliation, and iterative querying across disconnected systems—a process that can take weeks before any analysis begins.\n\n[Amazon Quick Research](https://docs.aws.amazon.com/quick/latest/userguide/using-amazon-quick-research.html) addresses this integration challenge by providing a unified research environment. It ingests structured and unstructured data from multiple sources, including publicly available biomedical databases such as [PubMed](https://pubmed.ncbi.nlm.nih.gov/), and applies large language model (LLM)-driven synthesis to generate cited, versioned research reports.\n\nIn this post, we walk through how to use Amazon Quick Research to integrate biomedical data sources for rare cancer research. The walkthrough uses pediatric sarcoma as the research domain and draws on publicly available datasets from PubMed and other open biomedical repositories. It covers the end-to-end workflow: defining a research objective, configuring data sources, reviewing the AI-generated research plan, running the investigation, and iterating on results using the revision and versioning system.\n\n## Capabilities\n\n**Amazon Quick Research** is an agentic research workflow within Amazon Quick that orchestrates multi-source data retrieval and LLM-based synthesis. The core components are:\n\n* **Research objective parsing** – The agent interprets a natural language research question and breaks it into structured sub-topics for parallel investigation.\n* **Multi-source data ingestion** – Supports web search (publicly indexed sources including PubMed, ClinicalTrials.gov, and open-access journals), file uploads (PDF, Word, Excel, PowerPoint), and Amazon Quick assets (Spaces, dashboards, knowledge bases, and datasets). Sources are processed and indexed when the research project is created.\n* **AI-generated research plan** – Before running, the agent produces a structured plan that lists the topics it will investigate, the sources it will query per topic, and the analytical approach. You can review and revise this plan before committing to a full run.\n* **Cited report generation** – Output is a structured report with inline citations traceable to source documents or URLs. Each statement includes a provenance link, and the “Understand the statement” feature exposes the evidence chain behind individual conclusions.\n* **Versioned revision workflow** – You can annotate specific statements with revision comments (up to 400 characters). Submitting a revision starts a new research run scoped to the annotated sections, increments the version number, and preserves prior versions for comparison.\n* **Export formats** – Reports are exportable as PDF or Word. Summary variants (Executive, General, Custom) let you tailor output length and citation density for different audiences.\n\n[**Spaces**](https://docs.aws.amazon.com/quick/latest/userguide/working-with-spaces.html) provides the data organization layer that feeds Amazon Quick Research. A Space is a logical container that groups up to 10,000 files alongside Amazon Quick dashboards, topics, and knowledge bases. Files are indexed on upload and made available as a retrieval corpus for research runs. Supported formats include Word, Excel, PowerPoint, PDF, CSV, TXT, RTF, JSON, YAML, XML, and HTML. For this walkthrough, a Space is populated with publicly available cancer genomics datasets and PubMed abstracts to serve as the internal knowledge corpus alongside live web search.\n\n## Walkthrough\n\nThis walkthrough shows how to integrate biomedical data sources for rare cancer research using Amazon Quick. You create a Space, start Quick Research, and generate a cited report.\n\nThe following video walks through the steps:\n\n[\n\n](https://d2908q01vomqb2.cloudfront.net/artifacts/DBSBlogs/ml-20129/Rare+Cancer+Research+Demo+.mp4?_=1)\n\nNote: Amazon Quick is a paid service. Following this walkthrough creates billable resources. To avoid ongoing charges, finish the cleanup steps at the end of this post.\n\n### Prerequisites\n\nBefore you start this walkthrough, you need the following:\n\n1. An active AWS account.\n2. Access to Amazon Quick with permissions to create Spaces and Research projects.\n3. Basic familiarity with biomedical research terminology.\n\n### Part 1: Create a space\n\n1. Open Amazon Quick and choose **Spaces** in the main navigation.\n2. Choose **Create space** to add the required files for the research.\n3. Choose **Add knowledge**.\n4. Select from file uploads, dashboards, or knowledge bases.\n\nAdd the name for the Space at the top of the page.\n\nConfirm your Space appears in the Spaces list with a green checkmark or `Ready` status. Choose the Space name to verify that all uploaded files are listed and show `Indexed` status.\n\n### Part 2: Create a research project\n\nOn the Amazon Quick home page, choose **Quick Research**. Choose **New Research** to start a structured workflow that guides you from objective setting through final report generation.\n\n### Part 3: Define the objective\n\nEnter the research objective in the text field. A focused, specific question produces better results.\n\n**Example objective:**\n\n> *What are the promising targeted therapy approaches for pediatric sarcomas with specific genomic alterations, and how can we identify patients who may benefit from these treatments?*\n\nState your research goal and specify the scope of your investigation. The AI agent helps refine your research question and suggests additional angles you might want to explore based on the available data sources.\n\n### Part 4: Data source selection and integration\n\nChoose the data sources to include in the research:\n\n* **Web search** – Enable web search to pull from publicly indexed sources such as PubMed, ClinicalTrials.gov, and open-access journals. Add specific URLs as needed:\n  + <https://rarecancer.org/publications>\n  + <https://www.ncbi.nlm.nih.gov/>\n  + <https://aacrjournals.org/>\n  + <https://pmc.ncbi.nlm.nih.gov/articles/PMC10815984/>\n  + <https://journals.sagepub.com/home/rtu>\n  + <https://www.cancer.gov/types>\n  + <https://www.seattlechildrens.org/research/>\n\n![Figure 1 Screenshot of Amazon Quick New Research interface showing the research objective input field with example text about pediatric sarcomas, and research materials section with web search, file uploads, and Quick assets options expanded.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-2.jpg)\n\n* Choose **File upload** to add specific documents. Link Quick Research to your existing data spaces to include internal documents, reports, and knowledge bases in the research. Here, you can combine external web sources with your organization’s proprietary information.\n\n![Figure 2 Screenshot of the File Uploads dialog in Amazon Quick Research showing accepted file formats (csv, docx, pdf, xls, xlsx) and an uploaded file named kazansky-dissertation-deposit.pdf with options to add up to 20 files](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-3.jpg)\n\n* Choose **Quick assets** to include data spaces, dashboards, and knowledge bases. These are collections of files, documents, and analytics organized in Quick for fast access and analysis.\n\n![Figure 3 Screenshot of the Add Quick assets dialog showing a search field for Cancer Research Knowledge and a table displaying Organization’s Rare Cancer Research Knowledge space with columns for Name, Type, Owner, and Last modified.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-4.jpg)\n\nQuick Research automatically identifies relevant data sources from connected repositories. For this pediatric sarcoma investigation, the system recognizes connections between:\n\n* Genomic mutation data and drug target databases\n* Clinical outcome data and treatment protocol literature\n* Biomarker profiles and patient response patterns\n* Historical trial data and current therapeutic options\n\n### Part 5: AI-powered plan\n\nQuick Research generates a structured plan before running. Review the topics that the agent will investigate:\n\n* Topic 1: Genomic-guided targeted therapies for pediatric sarcomas – patient selection and treatment approaches.\n* Topic 2: Genomic landscape of pediatric sarcomas – mutations, gene fusions (for example, PAX3), and subtypes including rhabdomyosarcoma, Ewing sarcoma, and osteosarcoma.\n* Topic 3: Current FDA-approved targeted therapies – mechanisms of action, efficacy, and genomic profiles.\n* Topic 4: Future directions – gene editing, cell-based therapies, novel drug delivery systems, and preclinical research.\n\n![Figure 4 Screenshot of the Topics to explore section showing the AI-generated research plan with topics including Genomic-Guided Targeted Therapies, Genomic Landscape of Pediatric Sarcomas, Current FDA-Approved Targeted Therapies, and other research areas.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-5.jpg)\n\n### Part 6: Revise the plan (optional) and start research\n\n1. Choose **Revise Plan** to refine the scope before running.\n2. Add specific areas of focus, such as:\n   * `Add a section on specific mutations and gene fusion`\n   * `Add comparative analysis between different approaches`\n\nWhen you are satisfied with the plan, choose **Start Researching**.\n\nConfirm that you see a progress indicator and the message `Research in progress`. The status should change from `Not started` to `In progress`.\n\n### Part 7: Review the report\n\nQuick Research synthesizes findings into a structured report that includes:\n\n* An executive summary with key discoveries and clinical implications.\n* Detailed analysis sections with supporting data visualizations.\n* Evidence-based recommendations for future research directions.\n* Cited sources and methodology transparency.\n* Actionable next steps for clinical implementation.\n* Sources.\n\nThis process takes about 20–30 minutes to finish.\n\n![Figure 5 Screenshot of the completed research report titled Genomic-Guided Targeted Therapies for Pediatric Sarcomas showing the Executive Summary section, navigation sidebar with topics, and Comments panel with research improvement suggestions.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-6.jpg)\n\n#### 1. Access the finished research\n\n* Choose **Research** in the main navigation.\n* Look for your research project status. It should show **Complete**.\n* Choose your finished research project.\n\n#### 2. Navigate the research report\n\nThe report synthesizes information from all selected sources in a structured format.\n\n* Use the **Topics** tab in the left pane to move between major sections.\n* Review supporting evidence and source references within each section.\n* Use the **Download**, **Summarize**, and **Share** buttons in the upper-right corner as needed.\n* Choose **Reading mode** to hide sidebars and focus on content.\n\n#### 3. Examine citations\n\nCitations provide direct access to source materials for verification and deeper investigation.\n\n* Look for numbered citations throughout the report.\n* Choose a citation number to view source details.\n* Notice that the pop-up shows the source article and a hyperlink to the original page.\n\n#### 4. Understand statement analysis\n\nStatement analysis shows the reasoning behind research conclusions and provides transparency in the analysis process.\n\n* Look for the **Understand the statement** icon (three horizontal lines and a plus).\n* Choose the icon next to any statement in the report.\n* Review the explanation window, which shows:\n  + How the statement was determined.\n  + A summary of evidence.\n\n### Part 8: Update research\n\nTo refine the research with additional focus areas, add revision comments directly in the report.\n\n#### 1. Add comments for revision\n\nQuick Research uses your comments for revision in subsequent runs.\n\n* In the research report, **select text** to expand or revise.\n* In the **Research pane** on the right, add comments (up to 400 characters):`Need deeper investigation on \"specific topic area\"`\n\n#### 2. Start the revision process\n\n* Choose the **Revise** button (becomes available after you add comments).\n* Confirm that the **Review revision started** message appears.\n* Quick Research analyzes the existing content and applies the comments.\n\nResearch typically takes 20–40 minutes to finish, and the version increments (for example, Version 2) when revision is finished.\n\n#### 3. Review version history\n\nVersion control maintains a clear audit trail of the research process and preserves previous iterations.\n\n* Notice that the version number has incremented.\n* Compare different versions to see how the feedback was incorporated.\n* Track the evolution of the research through versions.\n\n#### 4. Use the summarize feature\n\nDifferent summary formats serve different audience needs and presentation contexts.\n\n* Choose the **Summarize** button in the upper right.\n* Choose a summary type:\n  + **Executive Summary**: VP-oriented, 2-page maximum, no citations.\n  + **General Share Out**: Business-friendly, 6-page maximum, essential citations.\n  + **Custom Summary**: Tailored format up to 5,000 characters.\n\n#### 5. Download and share\n\nMultiple download formats support different use cases, from formal presentations to collaborative review.\n\n* Use the **Download** button to get:\n  + **PDF** format for presentations.\n  + **Word** format for collaborative editing.\n* Use the **Share** button to distribute the research with team members.\n\n## Clean up\n\nThe following steps permanently delete your research reports and all files uploaded to Spaces. If you want to preserve any research findings or uploaded data, export the reports (PDF or Word format) and download any important files before you proceed.\n\nAfter your research is finished, you can delete the research document and the assets you created with the following steps:\n\n1. Delete the report:\n   1. Choose the report.\n   2. Choose **Actions**.\n   3. Choose **Delete**.\n2. Delete the assets:\n   1. Open the **Spaces** section in the Amazon Quick console.\n   2. Locate the space you want to remove and choose the **More actions (•••)** menu next to the space’s name.\n   3. Choose **Delete** to remove the space.\n\nDeleting these resources stops all associated charges.\n\n## Conclusion\n\nIn this post, we showed how Amazon Quick Research can integrate publicly available biomedical databases with your own research corpus to support rare cancer investigation. With Quick Research, your team can ask complex questions in natural language that span multiple data sources, identify subtle correlations through AI-powered analytics, and synthesize findings from diverse datasets to support regulatory submissions, funding applications, and clinical decision-making. The result is faster research and more comprehensive, evidence-based insights that can inform clinical decisions, guide future research investments, and improve outcomes for patients facing rare cancer diagnoses.\n\nTo get started with your own biomedical datasets:\n\n* Visit the [Amazon Quick product page](https://aws.amazon.com/quicksuite/) to start a trial and create your first research Space.\n* Read the [Amazon Quick Research documentation](https://docs.aws.amazon.com/quicksuite/) for detailed walkthroughs and best practices.\n\nHave questions or want to share your research success story? Leave a comment, or join the [AWS for Industries: Healthcare and Life Sciences community](https://aws.amazon.com/health/).\n\n---\n\n## About the authors\n\n![Anu K Nagaraja](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-7.png)\n\n### Anu K Nagaraja\n\nAnu is a Healthcare and Life Sciences (HCLS) Solutions Architect II at AWS with more than six years of experience specializing in AI, generative AI, and machine learning. She helps organizations across multiple industries build scalable, cloud-driven solutions. Anu focuses on AI innovation through modern data platforms, agentic AI architectures, and emerging cloud technologies. Outside of work, Anu enjoys playing badminton and hiking.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/Screenshot-2024-09-26-at-11.09.10 AM-100x106.png)\n\n### Isha Doshi\n\nIsha is an ISV Solutions Architect II at AWS, specializing in machine learning and artificial intelligence. She helps customers build scalable, secure, and innovative solutions on AWS. In her free time, Isha enjoys hiking and photography.\n\n![Niranjana Rajendran](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/27/ML-20129-9.png)\n\n### Niranjana Rajendran\n\nNiranjana has more than seven years of experience at Amazon Web Services working with enterprise customers across diverse industries, currently supporting the Healthcare and Life Sciences sector. She specializes in deployments, cloud solutions, AI/ML, and driving scalable customer outcomes through strategic technical engagements. Outside of work, she enjoys hiking and exploring Seattle.",
+      "tags": [
+        "AI研究",
+        "医疗",
+        "Amazon Quick"
+      ],
+      "score": 85,
+      "summary": "Amazon Quick Research整合生物医学数据库用于罕见癌症研究。",
+      "fetched_at": "2026-06-02T07:27:35.991803+08:00"
+    },
+    {
+      "title": "OpenAI models and Codex on Amazon Bedrock are now generally available",
+      "link": "https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/",
+      "published": "2026-06-02T05:31:12+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "GPT-5.5, GPT-5.4, and Codex are now generally available on Amazon Bedrock. Deploy them in production applications and agents today, on Bedrock’s high performance inference engine.\n\n## Key takeaways\n\n* GPT-5.5, the most advanced frontier model from OpenAI, is generally available on Amazon Bedrock. Pricing matches OpenAI first-party rates.\n\n* Codex on Amazon Bedrock is generally available with pay-per-token pricing. Inference runs through Bedrock, and usage counts toward your existing AWS commitments.\n\nOne month after our [expanded partnership announcement](https://www.aboutamazon.com/news/aws/bedrock-openai-models), GPT-5.5, GPT-5.4, and Codex are now generally available on [Amazon Bedrock](https://aws.amazon.com/bedrock/), giving you access to frontier models and the OpenAI coding agent for software development. \n\nAmazon Bedrock is the platform for building and running AI applications and agents at production scale. [OpenAI models on Bedrock](https://aws.amazon.com/bedrock/openai/) run on Amazon Bedrock’s next-generation inference engine, built for high performance, reliability, and security. \n\n**The most capable OpenAI model on Amazon Bedrock** \n\nGPT-5.5 grasps your intent faster and handles multi-step tasks autonomously, excelling at writing and debugging code across large code bases, analyzing data, generating documents and spreadsheets, and operating software across multiple tools until a task is complete. The improvements are most significant in agentic coding and knowledge work, where real progress depends on sustaining context and taking action over time.  \n\nBoth GPT-5.5 and GP-5.4 are built for complex, multi-step tasks and are available in the Amazon Bedrock model catalog today. You can call them through the Responses API on Amazon Bedrock and pay the same per-token rate as direct from OpenAI with no additional fees. \n\n[Bedrock’s inference engine](https://aws.amazon.com/blogs/machine-learning/exploring-the-zero-operator-access-design-of-mantle/) gives you your own isolated queue with automated capacity management, so your performance stays predictable, even under heavy load. As each request runs, its full state is captured durably and continuously, so if hardware fails or a node restarts mid-call, your request picks back up where it left off instead of starting over. Every call inherits the governance controls you already use across AWS: IAM permissions, VPC and PrivateLink isolation, KMS encryption, and AWS CloudTrail audit logging. Your prompts and responses are not used to train models and are not shared with model providers. These protections extend to GPT-5.5 and GPT-5.4 on Amazon Bedrock. \n\n> *“At Amgen, we’re focused on applying advanced AI in ways that may help accelerate the delivery of potential new therapies while equipping our teams with advanced tools. OpenAI’s GPT-5.5 and frontier models offer compelling advances in capability, quality, and consistency that matter in a field where the questions are complex and the standards for scientific accuracy and decision quality are exceptionally high. Making these models available on AWS gives us an important new path to explore and scale those capabilities within the responsible AI framework, including, security, governance, and operational frameworks across the enterprise.”* \n>\n> *– Sean Bruich, Senior Vice President, Chief Technology Officer at Amgen* \n\n**Accelerate software development with Codex on Amazon Bedrock**  \n\nCodex is the OpenAI coding agent for AI-powered software development. More than 5 million people use Codex every week to write, refactor, debug, test, and validate code across large codebases. Codex holds context across entire repositories, reasons through ambiguous failures, checks assumptions using tools, and carries changes through surrounding code with awareness of how systems connect. With GPT-5.5 powering inference, Codex completes the same work more efficiently and with higher quality compared to prior model versions. \n\n[Codex on Amazon Bedrock](https://developers.openai.com/api/docs/guides/amazon-bedrock) is available through the Codex App, the Codex CLI, and IDE integrations with Visual Studio Code, JetBrains, and Xcode, with all model inference routed through Amazon Bedrock. Inference stays within your selected Region to meet data residency requirements. You pay per token with no seat licenses and no per-developer commitments, so you can get started fast and scale access as you go.   \n\n> *“Autodesk is the technology platform for the people who design and make the world around us. Workflows like building design are highly iterative, requiring precision, coordination, and continuous refinement across teams. With OpenAI models and Codex now generally available on Amazon Bedrock, our teams are evaluating how frontier AI capabilities and AI-powered development tools on scalable, secure AWS infrastructure can help accelerate development workflows and support more informed decision-making for our customers.”* \n>\n> *– Ritesh Bansal, VP of Analytics Data, Agentic AI and AI/ML Platform at Autodesk.* \n\n## **What’s next**\n\nDuring our expanded partnership announcement, we introduced Amazon Bedrock Managed Agents, powered by OpenAI. Coming soon, it will let you deploy production-ready agents built on the OpenAI agent harness, delivering faster execution, sharper reasoning, and reliable steering of long-running tasks. Every agent will operate with its own identity, log every action for auditability, and run with all model inference on Amazon Bedrock. To stay up to date, sign up through the [interest form](https://pages.awscloud.com/GLOBAL-ln-GC-openai-bedrock-interest.html).\n\nWe will continue expanding the OpenAI capabilities available on Amazon Bedrock as new advances arrive. That includes Daybreak, the OpenAI vision for changing how software is built and defended. Daybreak, which includes cyber models and Codex Security, is designed to help cyber defenders identify vulnerabilities, review code for risk, and guide remediation across the development lifecycle. When Daybreak becomes available on Bedrock, security teams will be able to adopt it through the governance and operational frameworks they already use on AWS. \n\n## **Get started**\n\nGPT-5.5 and GPT-5.4 are available today in the Amazon Bedrock model catalog. Check the [AWS Regions page](https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html) for availability. For documentation and a step-by-step walkthrough, see the [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards-openai.html) and the [getting started blog](https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock). \n\n---\n\n## About the author\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/22/Screenshot-2026-05-22-at-1.18.28 PM-100x89.png)\n\n### Bharat Sandhu\n\nBharat Sandhu leads AI/ML marketing for Amazon Web Services, covering silicon, models, training, inference, and agents. His team’s mission is to help customers build, deploy, and scale AI applications and agents faster, more securely, and at lower cost.",
+      "tags": [
+        "OpenAI",
+        "Bedrock",
+        "GA"
+      ],
+      "score": 88,
+      "summary": "GPT-5.5、Codex等OpenAI模型在Amazon Bedrock上正式可用。",
+      "fetched_at": "2026-06-02T07:27:35.991899+08:00"
+    },
+    {
+      "title": "【年度巨献】大焦虑时代生存指南 | 对谈4位顶级心理学家 | E151",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a1d3d6e7460cabdeb593f28",
+      "published": "2026-06-02T07:00:00+08:00",
+      "source": "TIANYU2FM — 对谈未知领域",
+      "content": "根据世界卫生组织的数据估算，全球有3.59亿人正被焦虑症折磨着。这是个什么概念？如果把全世界所有正在被焦虑困扰的人聚到一个国家里，那将是地球上人口第四多的国家。而这还只是被正式诊断为\"焦虑障碍\"的那一部分。\n\n我们为一周后也许永远不会发生的事焦虑，为也许根本没说错的一句话焦虑，为会不会跟不上时代的步伐焦虑，甚至是因为自己过度焦虑而焦虑。焦虑究竟是什么？我们又该如何缓解自己的焦虑？如何与它相处？\n\n本期节目你将会一次听到来自：清华、斯坦福、浙大、北师大四位在一线研究的心理学家对这个问题的答案。\n\n**时间戳：**\n\n00:03:29 陈巧珍医生 · 临床精神医学视角\n\n话题：焦虑的临床定义、急性焦虑 vs 慢性焦虑、焦虑躯体化、\"身体变成战场\"、精神科 vs 心理咨询的选择、临时用药\n\n00:51:34 裴瑞博士 · 社交焦虑视角\n\n话题：社交焦虑 、社恐、\"活着\" vs \"活得好\"、认知行为疗法 CBT、社交媒体与焦虑、不确定性与焦虑\n\n01:51:03 谢超教授 · 认知神经科学视角\n\n话题：分层精神病学、焦虑与抑郁的共病机制、如何用多样性对冲不确定性、中美精神类药物使用差异\n\n02:22:47 彭华茂教授 · 发展心理学视角\n\n话题：适度焦虑 vs 过度焦虑 vs 泛化焦虑、焦虑的自我接纳、心理学词汇的滥用、代际焦虑传递、AI对人类状态的影响\n\n**陈巧珍**——医学博士，主任医师，浙江大学精神病与精神卫生学、应用心理学博士生导师。浙江大学医学院附属第二医院精神科副主任，擅长失眠、焦虑、抑郁、双相障碍、精神分裂症等精神疾病的临床诊治和人际心理治疗。\n\n**裴瑞**——斯坦福大学社会神经科学实验室博士后，宾夕法尼亚大学传播学博士。她主要关注年轻人的社交决策，社会链接和心理健康的议题。她即将入职佛罗里达大学心理系担任助理教授，她的实验室（Social Decisions Lab) 已经开始招收phd 和research assistant. 如果你有兴趣和peipei一起工作，可以发邮件到peiruipenn@gmail.com联系她！\n\n**谢超**——清华大学心理与认知科学系助理教授，复旦大学博士。他主要从事认知神经科学与精神病学的交叉研究。他通过对大脑认知功能的神经解码，探索精神疾病背后的复杂病理机制，为新一代精神疾病的“分型诊疗”提供神经科学证据和理论框架。\n\n**彭华茂**——北京师范大学心理学部教授，中国心理学会老年心理专业委员会副主任。博士毕业于北京师范大学发展心理研究所、前斯坦福大学访问学者。她的研究方向主要聚焦认知发展、情绪与动机、决策、认知老化等。\n\n从他们不同的视角来看，焦虑是什么？而我们又该如何与焦虑相处？再次欢迎你收听TIANYU2FM年度巨献，本期节目将用将近三个半小时的时间来彻底展开焦虑究竟是什么的谜题。\n\n**结语**\n\n回过头看，我们其实是带着同一个问题，敲开了四扇不同的门——精神科的诊室、社会心理学的实验室、心理与认知科学的交叉地带、发展心理学的视野。四位学者，拼出了同一张关于焦虑的地图。\n\n陈巧珍医生告诉我们，焦虑首先是一股能量。当它找不到出口，就会钻进身体，把我们自己变成一座战场——而仅仅是\"看见它\"，往往就是松绑的开始。\n\n裴瑞让我们明白，社交焦虑的内核，是那个既想被看见、又怕被审视的、矛盾的自己。我们之所以失控，恰恰可能不是因为不确定太多，而是因为生活被安排得太确定了。\n\n谢超老师把焦虑放到了更大的尺度里：它是有限空间里一种系统性的不确定，而对冲它的办法，不是把所有筹码押在一条路上，而是让自己活得更多元一点——一件事不行了，你还有别的事可以锚定自己是谁。\n\n彭华茂老师提醒我们，焦虑本质上是对不确定性的不安，真正能支持你的，并不是远处那些让你比较、让你不安的声音，而是近处那些具体的、麻烦的、真实的连接。\n\n如果把这四块拼到一起，你会发现一件有点反直觉的事——\n\n这一期，没有人真的教我们\"如何消灭焦虑\"。\n\n因为焦虑大概率不会消失。它是人类进化了上百万年留下的本能，撞上了一个只用几十年就脱胎换骨的世界。这种古老的身体、和崭新的时代之间的拉扯，注定会不断生出新的不安。我们甚至问过他们：如果有一天焦虑这个词突然不见了，你会用什么词来代替它？有人说是“在乎”——因为你只会为你真正在乎的东西焦虑。\n\n所以你看，焦虑或许从来不是要被连根拔起的敌人，它曾经让我们活下来，今天的它，也仍在提醒我们，你还在乎，你还想活得好，而不只是活着。\n\n这一期，我们聊了将近三个半小时的焦虑。但愿听完之后，你心里那根一直绷着的弦，能松一松。如果此刻正在听的你，也悬在某种说不清的不安里，那么也许可以从一件很小的事开始：先承认你不必是超人，去看看窗外流动的云，去摸一摸手边这只温热的杯子，去给那个会跟你拌嘴、也会真心为你跑一趟的人，发一条消息。\n\n感谢陈巧珍、裴瑞、谢超、彭华茂四位老师，把各自最前沿的思考毫无保留地交给了我们，也感谢从头听到这里的你。\n\n好了，那如果你喜欢我们的内容希望你可以订阅我们，以及，坦白说在社交平台分享你从我们内容中收到灵感或是启发，其实是最能够帮助我们的方式，我们保证会努力把内容做得越来越有价值！\n\n那么，本期TIANYU2FM的年度巨献到此落幕！我们下期再见！\n\n**本期节目制作**\n\n王一山（制片人）\n\n晴晴（内容编导）\n\nWT（节目剪辑）\n\nAlan（节目运营）\n\n**TIANYU2FM的理念：每期对谈有价值的声音**\n\n我们是天宇和天域，是挚友，也是一起求知的伙伴。这是一档为了开拓眼界，走出自我局限而设立的播客，我们通过与人的对谈来与未知的领域及知识互动。\n\n**主持人简介**\n\n天宇 | 大白（声调偏低）：媒介研究者（主要兴趣：后人类、科技史、ACG）（小红书：[后人类大白｜Tianyu Li](https://xhslink.com/m/5Cv6iLhd7SN)）\n\n天域 | 杰激（声调偏高）：出海服装电商平台PROJECTISR、Ssequence创始人（小红书：[李天域 Jack](https://www.xiaohongshu.com/user/profile/595aebbe82ec396233ef3a72)）",
+      "tags": [
+        "心理学"
+      ],
+      "score": 30,
+      "summary": "心理学播客访谈，与AI无关。",
+      "fetched_at": "2026-06-02T07:27:35.991979+08:00"
+    },
+    {
+      "title": "Prompt to business:\n- website\n- mobile app\n- monetization\n- Delaware corp\n\nStart for free:",
+      "link": "https://x.com/amasad/status/2061575503434408106",
+      "published": "2026-06-02T06:27:56+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "Prompt to business:  \n- website  \n- mobile app  \n- monetization  \n- Delaware corp  \n  \nStart for free:\n\n![Replit ⠕](https://pbs.twimg.com/profile_images/2031733558952464384/ERrHv3jK_normal.jpg)\n\nReplit ⠕@Replit\n\nCan you build a real business for free with a single prompt?  \n  \nStarting today on Replit, the answer is yes.   \n  \nFrom a single prompt, get a website, mobile app, slide deck, and launch video.   \n   \nPlus unlock perks from [@stripe](https://x.com/stripe)[@atlas](https://x.com/atlas), [@QuickBooks](https://x.com/QuickBooks), [@mercury](https://x.com/mercury) & [@doolaHQ](https://x.com/doolaHQ)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061537162596892672/vid/avc1/1920x1080/D7BkTCa8art-PaDW.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Replit/status/2061537387726119165/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/Replit/status/2061537387726119165)\n\n💬10🔄1❤️34👀3327📊11",
+      "tags": [
+        "Replit",
+        "AI产品"
+      ],
+      "score": 85,
+      "summary": "Replit推出从prompt到商业的全流程生成，包括网站、应用等。",
+      "fetched_at": "2026-06-02T07:27:35.992106+08:00"
+    },
+    {
+      "title": "Good ELI 5 by Grok",
+      "link": "https://x.com/AravSrinivas/status/2061580061409693874",
+      "published": "2026-06-02T06:46:03+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "Good ELI 5 by Grok\n\n![Grok](https://pbs.twimg.com/profile_images/2057885623374290944/lmj0pawP_normal.jpg)\n\nGrok@grok\n\nPerplexity’s new “Search as Code” lets the AI write a short Python script instead of asking for search results one question at a time.  \n  \nThe script runs inside their system and can do parallel searches, custom filters, deduping, and smart processing all in one go.   \n  \nFaster, fewer back-and-forth steps, and it gets better as AIs improve at writing code. Basically trading slow conversations for a custom research recipe.\n\n[🔗 View Quoted Tweet](https://x.com/grok/status/2061579000531521836)\n\n💬3🔄0❤️20👀2666📊4",
+      "tags": [
+        "Perplexity",
+        "代码生成"
+      ],
+      "score": 85,
+      "summary": "Grok评Perplexity的Search as Code功能，通过代码执行进行搜索。",
+      "fetched_at": "2026-06-02T07:27:35.992184+08:00"
+    },
+    {
+      "title": "We’re moving away from search as a web fetch tool call to search as codegen to be future proof in a ...",
+      "link": "https://x.com/AravSrinivas/status/2061575845056278971",
+      "published": "2026-06-02T06:29:18+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "We’re moving away from search as a web fetch tool call to search as codegen to be future proof in a world where code execution inside agent harnesses is the way to do almost all of our knowledge work.   \n  \nDoing this lets you compose multi-step primitives far more naturally and be much more adaptable to changes made to the agent harness, as well as benefit from improvements in coding capabilities that are guaranteed to come from the next generation of frontier models.\n\n![Perplexity](https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_normal.jpg)\n\nPerplexity@perplexity\\_ai\n\nIntroducing Search as Code, our new search architecture for AI agents.  \n  \nIt writes Python that calls our search stack directly, instead of looping through function calls one at a time.  \n  \nAvailable in the Perplexity Agent API, and now default in Computer.  \n  \n[research.perplexity.ai/articles/rethi…](https://research.perplexity.ai/articles/rethinking-search-as-code-generation)\n\n![Tweet Image](https://pbs.twimg.com/media/HJvxG6jaEAEQj2j.png)\n\n[🔗 View Quoted Tweet](https://x.com/perplexity_ai/status/2061506359326384319)\n\n💬10🔄4❤️70👀6351📊16",
+      "tags": [
+        "Perplexity",
+        "搜索架构"
+      ],
+      "score": 88,
+      "summary": "Perplexity CEO宣布转向search as codegen新架构。",
+      "fetched_at": "2026-06-02T07:27:35.992251+08:00"
+    },
+    {
+      "title": "Long-form writing works better with a little more space. \n\nNow you can edit longer pieces in full-sc...",
+      "link": "https://x.com/ChatGPTapp/status/2061571468992126982",
+      "published": "2026-06-02T06:11:55+08:00",
+      "source": "ChatGPT(@ChatGPTapp)",
+      "content": "Long-form writing works better with a little more space.   \n  \nNow you can edit longer pieces in full-screen and save them to your Library to come back to later.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061571299571638272/vid/avc1/1504x1080/wwOrhCvHYecLkLHb.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ChatGPTapp/status/2061571468992126982/video/1)\n\n💬16🔄14❤️344👀11772📊56",
+      "tags": [
+        "ChatGPT",
+        "功能更新"
+      ],
+      "score": 75,
+      "summary": "ChatGPT支持全屏编辑长文并保存到Library。",
+      "fetched_at": "2026-06-02T07:27:35.992323+08:00"
+    },
+    {
+      "title": "Production AI systems place very different demands on infrastructure once workloads scale.\n\nHow?\n\nJo...",
+      "link": "https://x.com/FireworksAI_HQ/status/2061572540489994669",
+      "published": "2026-06-02T06:16:10+08:00",
+      "source": "Fireworks AI(@FireworksAI_HQ)",
+      "content": "Production AI systems place very different demands on infrastructure once workloads scale.  \n  \nHow?  \n  \nJoin us at #MSBuild to find out.  \n  \nRegister here: [build.microsoft.com/en-US/sessions…](https://build.microsoft.com/en-US/sessions/BRKSP91)\n\n![Tweet Image](https://pbs.twimg.com/media/HJwsGUhaEAAH1Jy.jpg)\n\n💬0🔄0❤️3👀211📊1",
+      "tags": [
+        "Fireworks",
+        "MSBuild"
+      ],
+      "score": 65,
+      "summary": "Fireworks AI宣传在MSBuild的session。",
+      "fetched_at": "2026-06-02T07:27:35.992385+08:00"
+    },
+    {
+      "title": "Neurosymbolic rising!",
+      "link": "https://x.com/GaryMarcus/status/2061563911091245141",
+      "published": "2026-06-02T05:41:53+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Neurosymbolic rising!\n\n![Leo](https://pbs.twimg.com/profile_images/2057207018721525761/SKK74ZTZ_normal.jpg)\n\nLeo@biosemiote\n\nI've wanted to work on deep neurosymbolic integration for a while: if you make an 800k transformer reason \\*like\\* a logical solver, you get 100% on sudoku-extreme w. 15m of train compute.  \n  \nHappy that I finally got chance to focus on this at [@axiommathai](https://x.com/axiommathai)[x.com/albe\\_alfa/stat…](https://x.com/albe_alfa/status/2061444276853031371)\n\n[🔗 View Quoted Tweet](https://x.com/biosemiote/status/2061520375226511623)\n\n💬4🔄0❤️12👀3432📊4",
+      "tags": [
+        "神经符号",
+        "研究"
+      ],
+      "score": 70,
+      "summary": "Gary Marcus转推神经符号集成研究进展。",
+      "fetched_at": "2026-06-02T07:27:35.992450+08:00"
+    },
+    {
+      "title": "From Google I/O to building real world solutions in one weekend. Always inspired by the energy of th...",
+      "link": "https://x.com/googleaidevs/status/2061569280991502475",
+      "published": "2026-06-02T06:03:13+08:00",
+      "source": "Google AI Developers(@googleaidevs)",
+      "content": "From Google I/O to building real world solutions in one weekend. Always inspired by the energy of this community!\n\n![Cerebral Valley](https://pbs.twimg.com/profile_images/2046220356726542337/Yb2xlcEt_normal.jpg)\n\nCerebral Valley@cerebral\\_valley\n\nGoogle I/O showed where AI is headed.  \nOur community spent the weekend building it.  \n  \nBuilders gathered in San Francisco alongside [@GoogleDeepMind](https://x.com/GoogleDeepMind) to turn the newest Gemini + Gemma capabilities into working products.  \n  \nFrom multimodal agents and voice interfaces to long-horizon reasoning systems, teams showed us what’s possible with Gemini 3.5 Flash.  \n  \nThe winners:\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061127238272315392/vid/avc1/1280x720/qN__nAlkwtQF4t-V.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/cerebral_valley/status/2061127487669829762/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/cerebral_valley/status/2061127487669829762)\n\n💬2🔄1❤️11👀903📊2",
+      "tags": [
+        "Google",
+        "hackathon"
+      ],
+      "score": 65,
+      "summary": "Google AI开发者转推Cerebral Valley黑客松活动。",
+      "fetched_at": "2026-06-02T07:27:35.992511+08:00"
+    },
+    {
+      "title": "This isn't about making a single video faster.\n\nOnce the workflow is established, an AI agent can pr...",
+      "link": "https://x.com/HeyGen/status/2061566234630758643",
+      "published": "2026-06-02T05:51:07+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "This isn't about making a single video faster.  \n  \nOnce the workflow is established, an AI agent can produce a new market update each week using the same system: generate the script, create the A-roll through the HeyGen CLI/MCP, update a HyperFrames template with the latest data, and render the final video.  \n  \nThe advisor focuses on expertise and analysis. The agent handles production.  \n  \nThe result is a consistent stream of client-ready video updates generated from the same repeatable workflow.  \n  \nGet the template and recreate this video in minutes:  \n  \n[hyperframes.dev/session/1abc61…](https://www.hyperframes.dev/session/1abc61ef-748e-4dad-a893-670ceafbcf25)\n\n💬1🔄0❤️2👀338📊1",
+      "tags": [
+        "HeyGen",
+        "AI视频"
+      ],
+      "score": 75,
+      "summary": "HeyGen展示AI agent自动生成客户视频更新。",
+      "fetched_at": "2026-06-02T07:27:35.992570+08:00"
+    },
+    {
+      "title": "Contact sheet:\n\nHyperFrames generated an initial contact sheet, providing a frame-by-frame preview o...",
+      "link": "https://x.com/HeyGen/status/2061566231908598179",
+      "published": "2026-06-02T05:51:06+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "Contact sheet:  \n  \nHyperFrames generated an initial contact sheet, providing a frame-by-frame preview of the entire video before the final render.  \n  \nThis is the review stage, where layouts, visuals, and timing can be adjusted before production. The AI agent flagged a single item for review, it was approved, and the project moved forward.\n\n![Tweet Image](https://pbs.twimg.com/media/HJwhGtRaUAANbYm.jpg)\n\n💬1🔄0❤️1👀313📊1",
+      "tags": [
+        "HeyGen",
+        "工作流"
+      ],
+      "score": 75,
+      "summary": "HeyGen展示HyperFrames的联系表预览功能。",
+      "fetched_at": "2026-06-02T07:27:35.992630+08:00"
+    },
+    {
+      "title": "Many financial advisors spend hundreds, sometimes thousands, per month on client update videos\n\nWe w...",
+      "link": "https://x.com/HeyGen/status/2061566219715748209",
+      "published": "2026-06-02T05:51:03+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "Many financial advisors spend hundreds, sometimes thousands, per month on client update videos  \n  \nWe wanted to see if Avatar 5 + HyperFrames could handle the entire task  \n  \nSo we gave an AI agent a brief and let it run  \n  \nHere's what it created, plus the workflow in the thread below ↓\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061553312512856064/vid/avc1/1920x1080/hIvhzUb-8uic2Kgs.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/HeyGen/status/2061566219715748209/video/1)\n\n💬3🔄2❤️8👀713📊5",
+      "tags": [
+        "HeyGen",
+        "AI视频"
+      ],
+      "score": 75,
+      "summary": "HeyGen用Avatar 5+HyperFrames生成理财顾问视频。",
+      "fetched_at": "2026-06-02T07:27:35.992689+08:00"
+    },
+    {
+      "title": "and for the high taste UI people, don't worry, the two rows of chips is only for a couple of days : ...",
+      "link": "https://x.com/OfficialLoganK/status/2061568656975536465",
+      "published": "2026-06-02T06:00:44+08:00",
+      "source": "Logan Kilpatrick(@OfficialLoganK)",
+      "content": "and for the high taste UI people, don't worry, the two rows of chips is only for a couple of days : ) will merge into one soon! great work by the team to make this possible in collaboration with Google Workspace and Google Identity!   \n  \nTry it out: [ai.studio/build](https://ai.studio/build)\n\n💬1🔄0❤️16👀2702📊3",
+      "tags": [
+        "Google AI Studio",
+        "UI"
+      ],
+      "score": 80,
+      "summary": "Logan Kilpatrick预告AI Studio UI即将合并为一行。",
+      "fetched_at": "2026-06-02T07:27:35.992749+08:00"
+    },
+    {
+      "title": "We just shipped the ability to build apps that connect to Gmail, Drive, Sheets, and more directly in...",
+      "link": "https://x.com/OfficialLoganK/status/2061568290984800740",
+      "published": "2026-06-02T05:59:17+08:00",
+      "source": "Logan Kilpatrick(@OfficialLoganK)",
+      "content": "We just shipped the ability to build apps that connect to Gmail, Drive, Sheets, and more directly inside of [@GoogleAIStudio](https://x.com/GoogleAIStudio), no navigating to other sites, you can add testers right inside of AI Studio, with full public sharing coming soon!!\n\n![Tweet Image](https://pbs.twimg.com/media/HJwpDklbEAAwnhV.jpg)\n\n💬29🔄19❤️333👀11411📊66",
+      "tags": [
+        "Google AI Studio",
+        "Workspace"
+      ],
+      "score": 85,
+      "summary": "Google AI Studio可直接构建连接Gmail等应用并添加测试人员。",
+      "fetched_at": "2026-06-02T07:27:35.992808+08:00"
+    },
+    {
+      "title": "https://t.co/Ygly5lxRJK",
+      "link": "https://x.com/OpenAIDevs/status/2061564723150418307",
+      "published": "2026-06-02T05:45:06+08:00",
+      "source": "OpenAI Developers(@OpenAIDevs)",
+      "content": "[developers.openai.com/codex/amazon-b…](http://developers.openai.com/codex/amazon-bedrock)\n\n💬2🔄1❤️19👀4033📊4",
+      "tags": [
+        "OpenAI",
+        "Codex"
+      ],
+      "score": 60,
+      "summary": "OpenAI开发者链接指向Codex on Bedrock页面。",
+      "fetched_at": "2026-06-02T07:27:35.992868+08:00"
+    },
+    {
+      "title": "OpenAI models and Codex, now in your AWS workflows.\n\nBuild AI apps and software engineering workflow...",
+      "link": "https://x.com/OpenAIDevs/status/2061564710173224985",
+      "published": "2026-06-02T05:45:03+08:00",
+      "source": "OpenAI Developers(@OpenAIDevs)",
+      "content": "OpenAI models and Codex, now in your AWS workflows.  \n  \nBuild AI apps and software engineering workflows with OpenAI on Amazon Bedrock, using the AWS environments and controls your team already trusts.\n\n![OpenAI](https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg)\n\nOpenAI@OpenAI\n\nOpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.  \n  \nThis is also the beginning of a broader expansion of OpenAI capabilities on AWS, including future availability for cybersecurity capabilities like Daybreak.  \n  \n[openai.com/index/openai-f…](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/)\n\n[🔗 View Quoted Tweet](https://x.com/OpenAI/status/2061564502160892138)\n\n💬23🔄12❤️233👀14755📊37",
+      "tags": [
+        "OpenAI",
+        "Bedrock",
+        "GA"
+      ],
+      "score": 88,
+      "summary": "OpenAI开发者宣布OpenAI模型和Codex在AWS上可用。",
+      "fetched_at": "2026-06-02T07:27:35.992927+08:00"
+    },
+    {
+      "title": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to...",
+      "link": "https://x.com/OpenAI/status/2061564502160892138",
+      "published": "2026-06-02T05:44:13+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.  \n  \nThis is also the beginning of a broader expansion of OpenAI capabilities on AWS, including future availability for cybersecurity capabilities like Daybreak.  \n  \n[openai.com/index/openai-f…](https://openai.com/index/openai-frontier-models-and-codex-are-now-available-on-aws/)\n\n💬133🔄200❤️1985👀214145📊338",
+      "tags": [
+        "OpenAI",
+        "AWS",
+        "GA"
+      ],
+      "score": 95,
+      "summary": "OpenAI官方宣布GPT-5.5等模型和Codex在AWS Bedrock上GA。",
+      "fetched_at": "2026-06-02T07:27:35.992985+08:00"
+    },
+    {
+      "title": "In North Carolina they're building the future.",
+      "link": "https://x.com/paulg/status/2061580810604736783",
+      "published": "2026-06-02T06:49:02+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "In North Carolina they're building the future.\n\n![Blake Scholl 🛫](https://pbs.twimg.com/profile_images/1804594864392413184/P8wPASUb_normal.jpg)\n\nBlake Scholl 🛫@bscholl\n\nSuperpower Superfactory is making good progress. Foundations going in to hold dozens of large CNC machines.\n\n![Tweet Image](https://pbs.twimg.com/media/HJwyrBeWQAEyjEU.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/bscholl/status/2061578890217189590)\n\n💬8🔄1❤️22👀2897📊6",
+      "tags": [
+        "制造业"
+      ],
+      "score": 50,
+      "summary": "Paul Graham转推北卡罗来纳州工厂建设，非AI。",
+      "fetched_at": "2026-06-02T07:27:35.993073+08:00"
+    },
+    {
+      "title": "my #1 most used skill lol",
+      "link": "https://x.com/petergyang/status/2061586272305795355",
+      "published": "2026-06-02T07:10:44+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "my #1 most used skill lol\n\n![Tweet Image](https://pbs.twimg.com/media/HJw5wgDbgAAE93j.png)\n\n💬0🔄0❤️4👀139",
+      "tags": [
+        "无价值"
+      ],
+      "score": 30,
+      "summary": "无实质内容，仅表情。",
+      "fetched_at": "2026-06-02T07:27:35.993135+08:00"
+    },
+    {
+      "title": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is...",
+      "link": "https://x.com/sama/status/2061562575322492937",
+      "published": "2026-06-02T05:36:34+08:00",
+      "source": "Sam Altman(@sama)",
+      "content": "The OpenAI Foundation is doing a lot of wonderful things.  \n  \nHelping society become resilient to AI is going to be incredibly important. Much more to come here!\n\n![The OpenAI Foundation](https://pbs.twimg.com/profile_images/2036469575966138371/plvDgkl9_normal.jpg)\n\nThe OpenAI Foundation@FoundationOAI\n\nAI is advancing quickly. Society’s ability to manage its risks must advance just as fast.  \n  \nToday we’re sharing our vision for AI Resilience, with more than $130M in initial grants underway across bio-resilience, cyber-resilience, AI model safety, and AI’s impact on young people: [openaifoundation.org/news/resilienc…](http://openaifoundation.org/news/resilience-in-the-age-of-ai)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061463524736737280/vid/avc1/1920x1080/N34TQCtf03-FlNQE.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/FoundationOAI/status/2061463726407155795/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/FoundationOAI/status/2061463726407155795)\n\n💬165🔄44❤️618👀77751📊146",
+      "tags": [
+        "OpenAI Foundation",
+        "AI安全"
+      ],
+      "score": 90,
+      "summary": "Sam Altman宣布OpenAI Foundation的AI韧性计划，拨款超1.3亿美元。",
+      "fetched_at": "2026-06-02T07:27:35.993195+08:00"
+    },
+    {
+      "title": "Parrot’s (@tryparrotai) OS provides full context on estimates, parts, customers, insurers, suppliers...",
+      "link": "https://x.com/ycombinator/status/2061568471515701704",
+      "published": "2026-06-02T06:00:00+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Parrot’s ([@tryparrotai](https://x.com/tryparrotai)) OS provides full context on estimates, parts, customers, insurers, suppliers, and payments, so their agents can physically call and communicate with real people to run the shop on autopilot.  \n  \nCongrats on the launch, [@pbaek5699](https://x.com/pbaek5699) & [@Parrot\\_Liam](https://x.com/Parrot_Liam)!  \n  \n[ycombinator.com/launches/QdR-p…](https://www.ycombinator.com/launches/QdR-parrot-ai-native-os-for-auto-repair-shops)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061557187936505856/vid/avc1/1920x1080/gg3QoklX891LNq-j.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2061568471515701704/video/1)\n\n💬3🔄3❤️14👀3259📊5",
+      "tags": [
+        "YC",
+        "AI代理"
+      ],
+      "score": 80,
+      "summary": "YC孵化项目Parrot推出AI原生OS管理汽车修理店。",
+      "fetched_at": "2026-06-02T07:27:35.993254+08:00"
+    },
+    {
+      "title": "你烧了多少token\n又赚了多少钱\n如果换成api实付\n养得起ai吗😁",
+      "link": "https://x.com/yangyi/status/2061582971363332478",
+      "published": "2026-06-02T06:57:37+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "你烧了多少token  \n又赚了多少钱  \n如果换成api实付  \n养得起ai吗😁\n\n💬0🔄0❤️0👀23",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 30,
+      "summary": "个人吐槽，无价值。",
+      "fetched_at": "2026-06-02T07:27:35.993312+08:00"
+    },
+    {
+      "title": "VenCap CIO David Clark says top 1% venture exits are 10x-ing:\n\n\"We always thought that the largest c...",
+      "link": "https://x.com/a16z/status/2061562172183130541",
+      "published": "2026-06-02T05:34:58+08:00",
+      "source": "a16z(@a16z)",
+      "content": "VenCap CIO David Clark says top 1% venture exits are 10x-ing:  \n  \n\"We always thought that the largest companies were going to continue to be an order of magnitude larger than we'd seen in prior cycles. And if anything, that's accelerating.\"  \n  \n\"Between 2020 and 2024, top 1% exits started at $10 billion. We updated those numbers in February this year, and a top 1% exit for '25 and the first two months of '26 was then $20 billion.\"  \n  \n\"We just updated them yesterday. And if you look at just the exits that have closed, it's now at $32 billion.\"  \n  \n\"And then if you think about OpenAI and Anthropic coming in, potentially we could be north of $100 billion by September... so we've 10x'd over the space of 24 months what a top 1% exit looks like.\"  \n  \n[@daveclark85](https://x.com/daveclark85) with [@DavidGeorge83](https://x.com/DavidGeorge83)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061562092495556608/vid/avc1/1280x720/1EDB_2MLYGAtREhl.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/a16z/status/2061562172183130541/video/1)\n\n![a16z](https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_normal.png)\n\na16z@a16z\n\nAI Winners, Token Economics, and Venture Strategy w/ David Clark and David George  \n  \nVenCap CIO David Clark joins a16z GP David George to discuss the AI supercycle and how it's changing the technology industry, including what bigger exits mean for venture capital, why we're not in a bubble, why we're still early in enterprise AI adoption, and more.  \n  \n00:00 Intro  \n00:38 The scale shift: Anthropic & OpenAI adding more revenue than hyperscalers  \n04:20 Skeuomorphic vs native AI applications in the enterprise  \n06:24 How the best AI companies run themselves differently  \n08:14 Top 1% exits 10x'd in 24 months  \n11:17 The half-life problem: Why 40% of AI leaders drop off every year  \n13:11 Token economics, cost pressure, and who captures value  \n17:00 Loss ratios, risk, and how to think about early stage  \n22:51 Are we in an AI bubble?  \n29:50 The future of venture capital in an AI world  \n  \n[@daveclark85](https://x.com/daveclark85)[@DavidGeorge83](https://x.com/DavidGeorge83)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061495893753581568/vid/avc1/1280x720/Oeow3OI_mOQy-v-x.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/a16z/status/2061517721955864828/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/a16z/status/2061517721955864828)\n\n💬0🔄3❤️14👀6404📊2",
+      "tags": [
+        "VC",
+        "AI投资"
+      ],
+      "score": 75,
+      "summary": "a16z分享VenCap CIO关于AI退出的观点，顶级退出规模10倍增长。",
+      "fetched_at": "2026-06-02T07:27:35.993374+08:00"
+    },
+    {
+      "title": "It's cool to see that the https://t.co/SdGWBBVrqG has become progressively a major source of learnin...",
+      "link": "https://x.com/ClementDelangue/status/2061560497783382373",
+      "published": "2026-06-02T05:28:19+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "It's cool to see that the [hf.co/blog](http://hf.co/blog) has become progressively a major source of learning and news about AI for the community.  \n  \nJust look at the recent content created & major announcements & tutorial from [@openclaw](https://x.com/openclaw), [@nvidia](https://x.com/nvidia), [@jetbrains](https://x.com/jetbrains), [@IBMResearch](https://x.com/IBMResearch),...  \n  \nWhat is the next blogpost you're going to create on HF? AI need to be more public, open and collaborative and we need everybody's help to make it so!\n\n![Tweet Image](https://pbs.twimg.com/media/HJwhzJEW0AAygIA.jpg)\n\n💬15🔄8❤️47👀5047📊21",
+      "tags": [
+        "Hugging Face",
+        "社区"
+      ],
+      "score": 70,
+      "summary": "Hugging Face CEO称其博客成为AI学习主要来源。",
+      "fetched_at": "2026-06-02T07:27:35.993434+08:00"
+    },
+    {
+      "title": "i played with this way too long. thanks for building it @DanHollick \n\nhttps://t.co/2l1Fu2Qg2M",
+      "link": "https://x.com/ericzakariasson/status/2061575291605279210",
+      "published": "2026-06-02T06:27:06+08:00",
+      "source": "eric zakariasson(@ericzakariasson)",
+      "content": "i played with this way too long. thanks for building it [@DanHollick](https://x.com/DanHollick)[cursor.com/insights](https://cursor.com/insights)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061575085585215488/vid/avc1/1924x2160/qAMHT18h9s6Ui0pn.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ericzakariasson/status/2061575291605279210/video/1)\n\n💬1🔄0❤️41👀1427📊7",
+      "tags": [
+        "Cursor"
+      ],
+      "score": 40,
+      "summary": "用户分享Cursor体验，低价值。",
+      "fetched_at": "2026-06-02T07:27:35.993494+08:00"
+    },
+    {
+      "title": "Cursor 在为用户增加使用额度。最近我重度使用了 Cursor 的 Agent，效果相当不错。我常用的 GUI Agent 里面，Codex App > Cursor > Claude Deskt...",
+      "link": "https://x.com/dotey/status/2061569125948760319",
+      "published": "2026-06-02T06:02:36+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Cursor 在为用户增加使用额度。最近我重度使用了 Cursor 的 Agent，效果相当不错。我常用的 GUI Agent 里面，Codex App > Cursor > Claude Desktop。  \n  \n几个亮点：  \n  \n1. 它的 multitask 模式可以开启多个后台任务并行，速度很不错。  \n  \n2. 它可以灵活选择各种模型，不像 Codex 和 Claude Code 只能选择自家模型，composer 2.5 在普通任务上的能力和速度都还可以  \n  \n3. Plan 模式比较详细，列有详细的 Steps，配合 multitask 模式通常效果很稳定  \n  \n不足之处：  \n还不支持 /goal、手机版  \n还没有类似于 Codex 的 Chrome use + Computer use 的调试功能，只有内置浏览器的调试\n\n![Tweet Image](https://pbs.twimg.com/media/HJwqKf9XwAEFmKu.jpg)\n\n![Cursor](https://pbs.twimg.com/profile_images/1970182748146180096/dhZeXi_X_normal.jpg)\n\nCursor@cursor\\_ai\n\nWe’re increasing usage limits for every Teams user.  \n  \nInspired by the success of our Ultra plan, we're also introducing a Premium team seat that includes 5x usage at only 3x the cost.\n\n[🔗 View Quoted Tweet](https://x.com/cursor_ai/status/2061550723503194426)\n\n💬3🔄0❤️1👀1643📊3",
+      "tags": [
+        "Cursor",
+        "Agent"
+      ],
+      "score": 70,
+      "summary": "宝玉评论Cursor使用体验和功能对比。",
+      "fetched_at": "2026-06-02T07:27:35.993552+08:00"
+    },
+    {
+      "title": "It would be great if AI agents like Codex and Cursor could expose an API to web views. This would al...",
+      "link": "https://x.com/dotey/status/2061565621360337132",
+      "published": "2026-06-02T05:48:40+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "It would be great if AI agents like Codex and Cursor could expose an API to web views. This would allow a webpage opened in the right pane to send prompts (including text and images) directly back to the agent.  \n  \nFor instance, if I build a webpage similar to Claude Design, I could add an in-page input box. When a user enters a prompt and clicks \"send\", the webpage would call an API like \"window.codex.sendPrompt(text, attachments)\" to push that content straight into the chat interface on the left. This would enable much deeper interaction between the agent and the webpage, unlocking a lot more possibilities.  \n  \ncc [@thsottiaux](https://x.com/thsottiaux)[@jxnlco](https://x.com/jxnlco)[@Dimillian](https://x.com/Dimillian)\n\n![Tweet Image](https://pbs.twimg.com/media/HJwnAN9WUAAMPpM.jpg)![Tweet Image](https://pbs.twimg.com/media/HJwnANBXQAA2VkC.jpg)\n\n💬1🔄0❤️6👀1250📊2",
+      "tags": [
+        "AI agent",
+        "API"
+      ],
+      "score": 60,
+      "summary": "宝玉建议AI agent向web视图暴露API。",
+      "fetched_at": "2026-06-02T07:27:35.993609+08:00"
+    },
+    {
+      "title": "It would be great if AI agents like Codex and Cursor could expose an API to web views. This would al...",
+      "link": "https://x.com/dotey/status/2061564829567971333",
+      "published": "2026-06-02T05:45:32+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "It would be great if AI agents like Codex and Cursor could expose an API to web views. This would allow a webpage opened in the right pane to send prompts (including text and images) directly back to the agent.  \n  \nFor instance, if I build a webpage similar to Claude Design, I could add an in-page input box. When a user enters a prompt and clicks \"send\", the webpage would call an API like \"window.codex.sendPrompt(text, attachments)\" to push that content straight into the chat interface on the left. This would enable much deeper interaction between the agent and the webpage, unlocking a lot more possibilities.  \n  \ncc [@thsottiaux](https://x.com/thsottiaux)[@jxnlco](https://x.com/jxnlco)[@Dimillian](https://x.com/Dimillian)\n\n![Tweet Image](https://pbs.twimg.com/media/HJwky5-WoAAqiuI.jpg)\n\n💬0🔄0❤️0👀46",
+      "tags": [
+        "AI agent",
+        "API"
+      ],
+      "score": 60,
+      "summary": "宝玉重复建议AI agent暴露API。",
+      "fetched_at": "2026-06-02T07:27:35.993670+08:00"
+    },
+    {
+      "title": "Java News Roundup: OpenJDK JEPs, Hazelcast, Quarkus, Hibernate, Koog, JHipster, Introducing Endive",
+      "link": "https://www.infoq.com/news/2026/06/java-news-roundup-may25-2026/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-02T05:30:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/06/java-news-roundup-may25-2026/en/headerimage/java-news-roundup-image-1780348608154.jpg)\n\nThis week's Java roundup for May 25th, 2026, features news highlighting: lifecycle changes with two of the JEPs that were targeted for JDK 27; the GA release of Koog 1.0; point releases of Hazelcast, Quarkus, Hibernate and JHipster; the eighth milestone release of Spring AI 2.0; and introducing Endive, a JVM-native WebAssembly (Wasm) runtime.\n\n*By Michael Redlich*",
+      "tags": [
+        "Java"
+      ],
+      "score": 60,
+      "summary": "Java新闻汇总，非AI主题。",
+      "fetched_at": "2026-06-02T07:27:35.993730+08:00"
     }
   ]
 }
