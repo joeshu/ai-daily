@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-05-31"
+    "date": "2026-06-01"
   },
   "entries": [
     {
@@ -580,6 +580,314 @@
       "score": 65,
       "summary": "用OpenAI Codex帮助伊朗移民制作瑞典语网站的故事。",
       "fetched_at": "2026-06-01T07:01:40.026044+08:00"
+    },
+    {
+      "title": "制糖工厂发布 AI 小电拼 Mirror：全球首款智能体电源，支持 AI Agent 原生接入",
+      "link": "https://www.ifanr.com/1667606?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-06-01T11:24:29+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/wp-content/uploads/2026/06/001.png)\n\n制糖工厂 CANDYSIGN 今日发布 AI 小电拼 Mirror，这是继 AI 小电拼 Pro/Ultra 之后的旗舰新品。AI 小电拼 Mirror 新增全新设计的 ingBar 琥珀屏，支持小米 120W 澎湃秒充私有协议，作为全球首款基于 SDC（Software-Defined Charger）架构的智能体电源，它可以通过 MCP 协议进一步接入 OpenClaw、Claude Code、Codex、Hermes 等 AI 智能体，通过自然语言。无需 App 即可让 AI 直接调控充电。\n\nAI 小电拼 Mirror 搭载 CanOS 2.0 如意系统与制糖工厂首创的 OTW 云桥架构，不仅能升级自身协议，还能为其他硬糖充电头提供 OTA 升级能力。延续小电拼家族标志性的可拼拆设计，160W 高能巡航与 FluxAI 自由流® 算法，实现多口场景下 160W ＞ 250W 的实战效果。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/008.png)\n\n### 可呼吸的 ingBar 琥珀屏：让充电状态变得精致、可感知\n\nAI 小电拼 Mirror 正面配备一块 0.5 寸 OLED 自发光 ingBar 琥珀屏，能够显示实时功率与时间信息。状态屏支持待机时钟，日常以温和的呼吸光形式陪伴用户，需要时可清晰读取当前功率数据。这块屏幕致敬 80 年代终端美学，通过琥珀色光效呈现功率、时间与设备状态。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/003.gif)\n\n相比传统充电器只用指示灯表达「通电 / 断电」，ingBar 将充电状态变得可读、可感知，也更有陪伴感：待机时钟带有呼吸动态，模拟真空管般的热电子生命感；整点可闪屏报时；关键状态一眼可得，而详细参数则交由手机端查看。\n\n在细节上，ingBar 采用双面 UV 驯化蓝光，形成更接近复古终端的琥珀质感；屏幕略低于面板，配合 UV 耐磨涂层，降低日常磨花概率。它还内置康威生命游戏屏保，并为不同摆放姿态、支架形态适配了专属字体与背景纹理。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/004.jpg)\n\n### 支持小米 120W 澎湃秒充，全协议满速稳充\n\nAI 小电拼 Mirror 支持小米 120W 澎湃秒充私有协议，配合 PPS、AVS、UFCS2.0 等全协议兼容能力，华为、小米、OV、iPhone、iPad、Switch、ROG 游戏本、联想拯救者等设备均可获得满速充电体验。4 个 USB-C 口均可触发小米 120W 金标动画，并兼容 PD 3.2 AVS、QC5、SCP、FCP、AFC、PE+ 等 19 种协议。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/005.png)\n\n大小电流自动适配，从 140W 工作站、双笔记本供能到蓝牙耳机微电流补电，FluxAI 算法精准识别不伤机。ROG 游戏本、联想拯救者 PD 100W-140W 长时间重载运行，不掉档、不掉电，真正实现「线充即电源」。从 MacBook 到剃须刀，从大疆无人机到电子秤，Mirror 全面覆盖日常与创作设备。\n\nAI 小电拼 Mirror 还提供独家的小家电「魔拟充」模式，让更多之前只能通过 A-C 线充电的老旧设备也能通过 C-C 线稳定供电。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/006.png)\n\n### 全球首款智能体电源，支持 OpenClaw 原生接入\n\nAI 小电拼 Mirror 是全球首款支持 OpenClaw 等 AI 智能体原生接入的消费级充电设备。基于 SDC 架构与 MCP 协议，Mirror 打通了 AI 操控硬件的最后一步，无需打开 App，通过 OpenClaw 即可让 AI 直接调控充电策略。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/007.png)\n\n用户可以通过自然语言指令让 AI 调整充电模式、查看实时功率、切换睡眠充或高速充等场景。例如：「帮我看看现在电脑有没有跑满功率」「晚上切到低噪低温的睡眠充」「我要开始渲染，优先保证 MacBook 和充电宝」。AI 能秒懂用户意图并自主修正指令，从一个补能工具进化成 AI 工作流中随调随用的智能体电源。\n\n### CanOS 2.0 如意系统：永不过时的充电系统\n\nAI 小电拼 Mirror 搭载制糖工厂自研 CanOS 2.0 如意系统，这是一套分层的供能运行系统，把电源从硬件功能拆成多个长期可扩展的系统模块。它不再只是充电策略集合，而是一套面向能源与计算的运行系统架构。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/008.png)\n\nCanOS 2.0 实现了多项关键升级：\n\n* 显示系统重构：从屏幕功能变成系统能力，三层架构适配不同显示形态\n* 自由流调度升级：从算法进化为实时调度器，支持高能巡航的全面能力\n* 协议固件可持续更新：全模 OTA 支持协议芯片固件迭代，支持 SPR AVS、UFCS 2.0 等新协议\n* 端云配置同步：设备长期在线可靠性显著提升\n* 内置 GPU 驱动：功率调度与显示互不干扰，高负载时依然稳定\n* 控制与协议通讯重构：大幅优化通讯机制，提升插入识别与协议协商成功率\n\n硬件决定下限，CanOS 2.0 决定上限。Mirror 不是一次性硬件，而是一个可以持续进化的系统。\n\nCanOS / IonBridge 相关开源地址：https://go.ifanr.com/ionbridge-open-sourc\n\n### OTW 云桥架构：升级自己，也升级其他充电头\n\nAI 小电拼 Mirror 搭载制糖工厂首创的 OTW（Over The Wire&Wireless）云桥架构。通过 OTW，Mirror 不仅能通过全模 OTA 升级自身，还能作为「中枢」，带着其他硬糖充电头一起升级。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/009.png)\n\n通过小电拼作为能源系统节点，硬糖充电头可以获得新协议、新策略，打破「出厂定型」的限制。目前支持 OTW 的硬糖产品包括 40W 硬糖 A 充与硬糖 C³ 充电器，可刷入华为模式、安卓模式、笔电模式、UFCS 2.0 模式等个性化模式，一个充电头变身多个充电头。\n\n电源，第一次从一个孤立的配件，变成了整个能源系统里的节点。它不再只是一个独立配件，而是可联网、可升级、可协同的能源系统节点。\n\n### 可拼拆设计，家旅双栖，桌面艺术品\n\nAI 小电拼 Mirror 延续小电拼家族标志性的可拼拆设计，实现家旅双栖的灵活体验。合体尺寸为 105 × 39 × 78 mm，拆下充电器主体后尺寸仅 105 × 39 × 39 mm；单口占用体积仅 28.6 cm³/口，功率密度达到 1.08 W/cm³，是全球最小的五口充电器之一。极简的外观、复古而不过度设计的比例，让 Mirror 成为可以自然融入桌面的物件。\n\nAI 小电拼 Mirror 还带来了全新配件：蝶架 Wingie 与牛架 Oxie。蝶架以飞翔姿态呈现桌搭美学；牛架 Oxie 亦有「Oxy/氧气」之意，暗示空气流通、散热极佳，解锁 160W 满血巡航的强悍性能。相比上一代，Mirror 全时在线静息功耗降低 56%，搭配 Oxie 牛架可进一步提升长时间高负载场景下的散热表现。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/010.png)\n\n居家场景，摆上蝶架或牛架，Mirror 是整个桌面的电力中枢，全时全设备供电；出差时，抽离底座，带走的是一只体积极小但功率极其夸张的 160W 随行充，一个就能喂饱笔电、手机、平板、耳机。拆开后的主体仅厚 39mm，插在家中墙面或酒店插座上几乎不突出，也不易挡住相邻插孔。垂直重心的独特设计实现了「墙插不掉」的无忧体验。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/011.png)\n\n### 4C+1A 五口设计，4×140W 盲插，160W 持续满血\n\nAI 小电拼 Mirror 采用 4C1A 五口设计， 加上背后双五孔插座，以一顶七。4 个 C 口均支持最高 140W 功率，单一接口顶格 140W，双笔电可以实现 160W 长时间满血输出。Mirror 体积极致紧凑，单口体积占比仅 28.6 cm³/口，功率密度达 1.08 W/cm³，突破极限。\n\n160W 高能巡航——不是仅维持数分钟的定时峰值，而是长时间实战下不降档的持续能力。在黑客松、长时间 4K/8K 渲染、AI 推理等极端场景下，Mirror 能提供长时间稳定供电能力。实测中，Mirror 可为 MacBook Pro 持续输出约 88W，为 Lenovo R9000P 游戏本持续输出约 91.1W，为 Anker A1340 充电宝输出最高 138.92W，并在半小时测试中保持稳定，直到设备自身不再请求最高功率，让创作者不用因电源限制而中断创作流程。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/012.png)\n\n▲ Macbook Pro (Apple M5 Max) 半小时持续 88W 充满不掉档\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/013.png)\n\n▲ Lenovo R9000P 游戏本 半小时持续 91.1W 充满不掉档\n\n这一切都得益于 **FluxAI 自由流® 算法**。传统充电器靠预设的「功率分配表」工作，多口时掉速明显。而自由流通过实时监测、瞬时回收、功率复用，按需流动，甚至因此实现「160W ＞ 250W」的实际输出效能。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/014.png)\n\n### 工业级冗余与等保三级水准安全：为昂贵设备加上可靠保险\n\n对于一台长期连接手机、笔记本、平板与创作设备的智能电源，安全性与性能同等重要。\n\nAI 小电拼 Mirror 采用全新电源及散热架构，以工业级冗余标准构建消费电子设备：元器件物理极限达到 105℃ / 32A / 1000V，具备 64.2% 耐压冗余、1/8 电流负载比，并使用 105℃ 抗饱和变压器，让关键元器件长期处于「低负载、高耐压、抗饱和」状态。\n\n在电气表现上，Mirror 于 220Vac / 50Hz 输入、28V / 5A 满载输出条件下，POWER-Z 实测 VBUS 纹波约 18mV，远低于国标 ≤200mVp-p 要求；ACDC 输出端效率达到 94.5%。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/15.png)\n\n在联网与固件安全上，AI 小电拼 Mirror 构建了从芯片到云端的闭环安全逻辑：通过 ESP32、FPGA 与定制 Bootloader 构建三重校验与物理级信任链；通过 eFuse 熔断降低物理侧攻风险；每台设备出厂即拥有唯一 RSA 密钥，OTA 升级采用「一机一包」动态加密；并通过加密产线、mTLS 通讯与自动化 CI / CD 审计流程，确保固件从编译到运行都处于可验证、不可篡改的监控下。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/16.png)\n\n## 关于制糖工厂 CANDYSIGN\n\n制糖工厂 CANDYSIGN 是一个以极致美感和灵活多用电能产品为核心的品牌。秉承「好产品就是一颗糖」的理念，制糖工厂融合科技、艺术与时尚，服务创作者、开发者和多设备生产力用户，持续探索数字电能产品的新形态。\n\n从 2023 年 7 月 14 日的 01s 小电拼全球旅行版，到 02 AI 小电拼，再到 03 AI 小电拼 Mirror，小电拼系列已历经三代迭代。制糖工厂小电拼拥有拼拆设计专利、自由流算法专利等技术积累，产品定义、工业设计、系统架构、算法、固件与方案均由 CANDYSIGN 自主完成。\n\n了解更多：https://thecandysign.com/  \n天猫旗舰店：https://candysign.tmall.com\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "AI硬件",
+        "智能体电源",
+        "充电器"
+      ],
+      "score": 75,
+      "summary": "制糖工厂发布AI小电拼Mirror，全球首款智能体电源，支持AI Agent原生接入。",
+      "fetched_at": "2026-06-01T11:53:48.342847+08:00"
+    },
+    {
+      "title": "源：https://t.co/AhqgjFn2kl",
+      "link": "https://x.com/FinanceYF5/status/2061264933816517022",
+      "published": "2026-06-01T09:53:51+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "源：[x.com/\\_simonsmith/st…](https://x.com/_simonsmith/status/2061085217113120796)\n\n![Simon Smith](https://pbs.twimg.com/profile_images/1893071963570012160/XJPttxhY_normal.jpg)\n\nSimon Smith@\\_simonsmith\n\nWith Codex at 5 million users, they’ve hit about 0.6% of ChatGPT’s roughly 900 million users. We are so, so early. The vast majority of people have no idea what’s already possible to do with AI, while a tiny minority is automating their personal lives and work.\n\n[🔗 View Quoted Tweet](https://x.com/_simonsmith/status/2061085217113120796)\n\n💬0🔄0❤️1👀852",
+      "tags": [
+        "Codex",
+        "用户数",
+        "AI采用"
+      ],
+      "score": 65,
+      "summary": "Simon Smith称Codex达500万用户，约为ChatGPT的0.6%，AI应用仍早期。",
+      "fetched_at": "2026-06-01T11:53:48.342935+08:00"
+    },
+    {
+      "title": "有人偶尔问一下AI，有人已经在用它自动化自己的工作和生活。\n\n这两种人之间的差距，正在越来越大。\n\n而且现在还是早期",
+      "link": "https://x.com/FinanceYF5/status/2061264922072482031",
+      "published": "2026-06-01T09:53:48+08:00",
+      "source": "AI Will(@FinanceYF5)",
+      "content": "有人偶尔问一下AI，有人已经在用它自动化自己的工作和生活。  \n  \n这两种人之间的差距，正在越来越大。  \n  \n而且现在还是早期\n\n![Tweet Image](https://pbs.twimg.com/media/HJsVhdia8AAjCIG.jpg)\n\n💬2🔄0❤️5👀1637📊3",
+      "tags": [
+        "AI自动化",
+        "观点"
+      ],
+      "score": 30,
+      "summary": "用户感叹AI使用差距扩大。",
+      "fetched_at": "2026-06-01T11:53:48.343008+08:00"
+    },
+    {
+      "title": "我现在对众包的商单越来越反感了，给 ZenMux 写了两次审核都被拒了，我就想简简单单推荐一下，不想用 AI 生成那种长篇大论的文章，标题用钩子骗你进来那种垃圾内容。宁可这钱不赚了，咱也不妥协。",
+      "link": "https://x.com/dingyi/status/2061275499440283819",
+      "published": "2026-06-01T10:35:50+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "我现在对众包的商单越来越反感了，给 ZenMux 写了两次审核都被拒了，我就想简简单单推荐一下，不想用 AI 生成那种长篇大论的文章，标题用钩子骗你进来那种垃圾内容。宁可这钱不赚了，咱也不妥协。\n\n💬3🔄0❤️19👀1297📊4",
+      "tags": [
+        "无用信息"
+      ],
+      "score": 10,
+      "summary": "用户发帖抱怨商单审核被拒。",
+      "fetched_at": "2026-06-01T11:53:48.343077+08:00"
+    },
+    {
+      "title": "MiniMax M3 终于发布了，再不更新他们家就要掉队了。\nhttps://t.co/yyNOZvJSF7",
+      "link": "https://x.com/dingyi/status/2061269759820513470",
+      "published": "2026-06-01T10:13:01+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "MiniMax M3 终于发布了，再不更新他们家就要掉队了。  \n[platform.minimaxi.com/subscribe/toke…](https://platform.minimaxi.com/subscribe/token-plan?code=7aDo9HUUdx&source=link)\n\n![Tweet Image](https://pbs.twimg.com/media/HJsZ2Z0a0AAEK4F.jpg)\n\n💬2🔄0❤️6👀2649📊3",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "评论"
+      ],
+      "score": 62,
+      "summary": "用户评论MiniMax M3终于发布。",
+      "fetched_at": "2026-06-01T11:53:48.343142+08:00"
+    },
+    {
+      "title": "Current AI is bandaids all the way down; LLMs can’t play nicely with basic tools like databases and ...",
+      "link": "https://x.com/GaryMarcus/status/2061294007058354620",
+      "published": "2026-06-01T11:49:22+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Current AI is bandaids all the way down; LLMs can’t play nicely with basic tools like databases and knowledge graphs, and you never know what you are going to get.  \n  \nIt’s long time to face facts: LLMs have their uses, but we need a sounder foundation for AI.\n\n![Flowers ☾](https://pbs.twimg.com/profile_images/2046251039083376640/tBO6g5mD_normal.jpg)\n\nFlowers ☾@flowersslop\n\none problem I still have with LLM based AI is that its still reactive rather than proactive, so they add loops and stuff like the heartbeat in openclaw, but that pretty much feels like a bandaid solution for a way deeper more fundamental problem of how these things are built\n\n[🔗 View Quoted Tweet](https://x.com/flowersslop/status/2061233508991799642)\n\n💬0🔄0❤️4👀230",
+      "tags": [
+        "LLM",
+        "局限性",
+        "AI基础"
+      ],
+      "score": 80,
+      "summary": "Gary Marcus认为LLM缺乏可靠基础，需更扎实的AI框架。",
+      "fetched_at": "2026-06-01T11:53:48.343206+08:00"
+    },
+    {
+      "title": "We're live! Come watch the keynote 👉 https://t.co/aBhpRZDFQr",
+      "link": "https://x.com/NVIDIAAI/status/2061282752331448413",
+      "published": "2026-06-01T11:04:39+08:00",
+      "source": "NVIDIA AI(@NVIDIAAI)",
+      "content": "We're live! Come watch the keynote 👉[nvda.ws/3PW0xGj](http://nvda.ws/3PW0xGj)r\n\n![NVIDIA](https://pbs.twimg.com/profile_images/1828904711124078593/SRvCZSfQ_normal.jpg)\n\nNVIDIA@nvidia\n\nThe crowd is rolling in 🎉  \n  \nGTC Taipei keynote starts soon →[nvda.ws/3PW0xGj](https://nvda.ws/3PW0xGj)L\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061278130564730880/vid/avc1/720x1280/vGTGfcp8U6RWBT0q.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/nvidia/status/2061278154929430835/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/nvidia/status/2061278154929430835)\n\n💬2🔄6❤️42👀4572📊6",
+      "tags": [
+        "NVIDIA",
+        "GTC",
+        "keynote"
+      ],
+      "score": 70,
+      "summary": "NVIDIA AI宣布GTC Taipei主题演讲直播开始。",
+      "fetched_at": "2026-06-01T11:53:48.343268+08:00"
+    },
+    {
+      "title": "Read more from @MiniMax_AI:",
+      "link": "https://x.com/OpenRouter/status/2061277171960934603",
+      "published": "2026-06-01T10:42:29+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "Read more from [@MiniMax\\_AI](https://x.com/MiniMax_AI):\n\n![MiniMax (official)](https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_normal.jpg)\n\nMiniMax (official)@MiniMax\\_AI\n\nIntroducing MiniMax M3: The First Open-Weights Model to Combine Three Frontier Capabilities  \n  \n- Coding & Agentic Frontier: 59.0% SWE-Bench Pro, 66.0% Terminal Bench 2.1, 34.8% SWE-fficiency, 28.8% KernelBench Hard, 74.2% MCP Atlas  \n- MiniMax Sparse Attention scales context to 1M  \n- Natively Multimodal from Step Zero  \n  \nAPI: [platform.minimax.io](http://platform.minimax.io)  \nToken Plan: [platform.minimax.io/subscribe/toke…](https://platform.minimax.io/subscribe/token-plan)  \n🚀New! MiniMax Code:[code.minimax.io](http://code.minimax.io)l  \n  \nWeights & Tech Report in ~10 Days\n\n![Tweet Image](https://pbs.twimg.com/media/HJsWydIbIAAFAZL.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/MiniMax_AI/status/2061266317815296322)\n\n💬0🔄0❤️3👀884📊1",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "发布"
+      ],
+      "score": 85,
+      "summary": "OpenRouter转发MiniMax官方，宣布M3模型上线并支持1M上下文和原生多模态。",
+      "fetched_at": "2026-06-01T11:53:48.343330+08:00"
+    },
+    {
+      "title": "Try it now, with a 50% off discount for the first week: https://t.co/MbUpx4RJIF",
+      "link": "https://x.com/OpenRouter/status/2061277160342761892",
+      "published": "2026-06-01T10:42:26+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "Try it now, with a 50% off discount for the first week: [openrouter.ai/minimax/minima…](https://openrouter.ai/minimax/minimax-m3)\n\n💬1🔄0❤️5👀727📊1",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "折扣"
+      ],
+      "score": 80,
+      "summary": "OpenRouter提供MiniMax M3首周5折优惠。",
+      "fetched_at": "2026-06-01T11:53:48.343393+08:00"
+    },
+    {
+      "title": "MiniMax-M3 is live on OpenRouter!\n\nA frontier-class open-weight model that combines a 1M-token conte...",
+      "link": "https://x.com/OpenRouter/status/2061277148502192246",
+      "published": "2026-06-01T10:42:23+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "MiniMax-M3 is live on OpenRouter!  \n  \nA frontier-class open-weight model that combines a 1M-token context window, frontier coding and agentic performance, and native multimodality (image & video) in one model.\n\n![Tweet Image](https://pbs.twimg.com/media/HJsgpMVaEAAjk-W.jpg)\n\n💬4🔄3❤️41👀2940📊9",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "产品上线"
+      ],
+      "score": 85,
+      "summary": "OpenRouter宣布MiniMax M3上线，具备1M上下文、前沿编码与Agent性能以及原生多模态。",
+      "fetched_at": "2026-06-01T11:53:48.343454+08:00"
+    },
+    {
+      "title": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better? ...",
+      "link": "https://x.com/petergyang/status/2061277577785000203",
+      "published": "2026-06-01T10:44:05+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "Ok is there any difference between Codex automations and Claude Code routines? Which one is better?   \n  \nI want to consolidate all my cron jobs in one list.\n\n💬4🔄0❤️5👀731📊4",
+      "tags": [
+        "Codex",
+        "Claude Code",
+        "比较"
+      ],
+      "score": 40,
+      "summary": "用户询问Codex与Claude Code自动化的差异。",
+      "fetched_at": "2026-06-01T11:53:48.343515+08:00"
+    },
+    {
+      "title": "It was very fun",
+      "link": "https://x.com/Suhail/status/2061271831416623607",
+      "published": "2026-06-01T10:21:15+08:00",
+      "source": "Suhail(@Suhail)",
+      "content": "It was very fun\n\n💬0🔄0❤️3👀1610",
+      "tags": [
+        "无意义"
+      ],
+      "score": 5,
+      "summary": "用户发推表示很有趣。",
+      "fetched_at": "2026-06-01T11:53:48.343608+08:00"
+    },
+    {
+      "title": "以前国外冲浪只需要搞定个梯子和美区Apple ID\n现在可好\n各种手机卡，Apple ID还得有个土区和菲区……",
+      "link": "https://x.com/yangyi/status/2061280457954849204",
+      "published": "2026-06-01T10:55:32+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "以前国外冲浪只需要搞定个梯子和美区Apple ID  \n现在可好  \n各种手机卡，Apple ID还得有个土区和菲区……\n\n💬0🔄0❤️0👀684📊1",
+      "tags": [
+        "无用信息"
+      ],
+      "score": 10,
+      "summary": "用户抱怨海外冲浪需要多种账号。",
+      "fetched_at": "2026-06-01T11:53:48.343675+08:00"
+    },
+    {
+      "title": "MiniMax M3 imminent. \n\nWill be doing deep testing with it on my own coding agent and harness.\n\nRevie...",
+      "link": "https://x.com/omarsar0/status/2061266791100235827",
+      "published": "2026-06-01T10:01:14+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "MiniMax M3 imminent.   \n  \nWill be doing deep testing with it on my own coding agent and harness.  \n  \nReview coming soon.\n\n![OpenCode](https://pbs.twimg.com/profile_images/1973794620233433088/nBn75BTm_normal.png)\n\nOpenCode@opencode\n\nMiniMax M3 will be launching soon  \n  \nYou can try it right now in OpenCode  \n  \nFor free\n\n[🔗 View Quoted Tweet](https://x.com/opencode/status/2061233503337906187)\n\n💬9🔄1❤️31👀4866📊9",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "测试"
+      ],
+      "score": 65,
+      "summary": "用户omarsar0称将对MiniMax M3进行深度测试。",
+      "fetched_at": "2026-06-01T11:53:48.343737+08:00"
+    },
+    {
+      "title": "Find MiniMax M3 in Battle Mode. Scores coming soon. https://t.co/yZiJuG8ica",
+      "link": "https://x.com/arena/status/2061270384323019111",
+      "published": "2026-06-01T10:15:30+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Find MiniMax M3 in Battle Mode. Scores coming soon. [arena.ai](http://arena.ai)\n\n💬0🔄0❤️4👀1193📊1",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "评测"
+      ],
+      "score": 80,
+      "summary": "lmarena.ai将MiniMax M3加入对战模式，评分待出。",
+      "fetched_at": "2026-06-01T11:53:48.343799+08:00"
+    },
+    {
+      "title": "New open model: MiniMax M3 by @MiniMax_AI is live in the Arena!\n\nFind it across Text, Vision, Docume...",
+      "link": "https://x.com/arena/status/2061270380770447782",
+      "published": "2026-06-01T10:15:29+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "New open model: MiniMax M3 by [@MiniMax\\_AI](https://x.com/MiniMax_AI) is live in the Arena!  \n  \nFind it across Text, Vision, Document and Code Arena: Frontend. Bring your toughest prompts and vote. Scores incoming soon!\n\n![Tweet Image](https://pbs.twimg.com/media/HJsaTcaaAAANLlK.jpg)\n\n![MiniMax (official)](https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_normal.jpg)\n\nMiniMax (official)@MiniMax\\_AI\n\nIntroducing MiniMax M3: The First Open-Weights Model to Combine Three Frontier Capabilities  \n  \n- Coding & Agentic Frontier: 59.0% SWE-Bench Pro, 66.0% Terminal Bench 2.1, 34.8% SWE-fficiency, 28.8% KernelBench Hard, 74.2% MCP Atlas  \n- MiniMax Sparse Attention scales context to 1M  \n- Natively Multimodal from Step Zero  \n  \nAPI: [platform.minimax.io](http://platform.minimax.io)  \nToken Plan: [platform.minimax.io/subscribe/toke…](https://platform.minimax.io/subscribe/token-plan)  \n🚀New! MiniMax Code:[code.minimax.io](http://code.minimax.io)l  \n  \nWeights & Tech Report in ~10 Days\n\n![Tweet Image](https://pbs.twimg.com/media/HJsWydIbIAAFAZL.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/MiniMax_AI/status/2061266317815296322)\n\n💬3🔄4❤️71👀3894📊8",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "Arena"
+      ],
+      "score": 80,
+      "summary": "lmarena.ai上线MiniMax M3模型，支持文本、视觉等任务。",
+      "fetched_at": "2026-06-01T11:53:48.343861+08:00"
+    },
+    {
+      "title": "HuggingFace 发的 AI Agent 词汇表\n作者 @SergioPaniego @ariG23498 \nhttps://t.co/wDfJDGl7pZ\n\n做了一个信息卡便于保存随时查阅。",
+      "link": "https://x.com/shao__meng/status/2061264215701397998",
+      "published": "2026-06-01T09:51:00+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "HuggingFace 发的 AI Agent 词汇表  \n作者 [@SergioPaniego](https://x.com/SergioPaniego)[@ariG23498](https://x.com/ariG23498)[huggingface.co/blog/agent-glo…](https://huggingface.co/blog/agent-glossary)  \n  \n做了一个信息卡便于保存随时查阅。\n\n![Tweet Image](https://pbs.twimg.com/media/HJsUkitaQAAUbz1.jpg)\n\n💬1🔄0❤️2👀332📊2",
+      "tags": [
+        "AI Agent",
+        "词汇表",
+        "HuggingFace"
+      ],
+      "score": 70,
+      "summary": "HuggingFace发布AI Agent词汇表，便于查阅。",
+      "fetched_at": "2026-06-01T11:53:48.343921+08:00"
+    },
+    {
+      "title": "Model page: \n\nhttps://t.co/2LHU4ZG39o",
+      "link": "https://x.com/ollama/status/2061268258540658809",
+      "published": "2026-06-01T10:07:04+08:00",
+      "source": "ollama(@ollama)",
+      "content": "Model page:   \n  \n[ollama.com/library/minima…](https://ollama.com/library/minimax-m3)\n\n![Tweet Image](https://pbs.twimg.com/media/HJsYYl6bAAA9ONo.jpg)\n\n💬0🔄2❤️6👀1418📊1",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "Ollama"
+      ],
+      "score": 80,
+      "summary": "Ollama Cloud上线MiniMax M3模型，提供零数据保留。",
+      "fetched_at": "2026-06-01T11:53:48.343980+08:00"
+    },
+    {
+      "title": ".@MiniMax_AI M3 model is available on Ollama's Cloud! \n\nIn partnership with MiniMax, the M3 model on...",
+      "link": "https://x.com/ollama/status/2061268256569360620",
+      "published": "2026-06-01T10:07:03+08:00",
+      "source": "ollama(@ollama)",
+      "content": ".[@MiniMax\\_AI](https://x.com/MiniMax_AI) M3 model is available on Ollama's Cloud!   \n  \nIn partnership with MiniMax, the M3 model on Ollama's Cloud is US-based with zero data retention.   \n  \nTry M3 on coding and agentic tasks:   \n  \nClaude Code:   \nollama launch claude --model minimax-m3:cloud   \n  \nCodex:   \nollama launch codex --model minimax-m3:cloud   \n  \nChat:   \nollama run minimax-m3:cloud  \n  \nand more! 👇👇👇\n\n![MiniMax (official)](https://pbs.twimg.com/profile_images/1875100548535574529/VxHk9HyU_normal.jpg)\n\nMiniMax (official)@MiniMax\\_AI\n\nIntroducing MiniMax M3: The First Open-Weights Model to Combine Three Frontier Capabilities  \n  \n- Coding & Agentic Frontier: 59.0% SWE-Bench Pro, 66.0% Terminal Bench 2.1, 34.8% SWE-fficiency, 28.8% KernelBench Hard, 74.2% MCP Atlas  \n- MiniMax Sparse Attention scales context to 1M  \n- Natively Multimodal from Step Zero  \n  \nAPI: [platform.minimax.io](http://platform.minimax.io)  \nToken Plan: [platform.minimax.io/subscribe/toke…](https://platform.minimax.io/subscribe/token-plan)  \n🚀New! MiniMax Code:[code.minimax.io](http://code.minimax.io)l  \n  \nWeights & Tech Report in ~10 Days\n\n![Tweet Image](https://pbs.twimg.com/media/HJsWydIbIAAFAZL.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/MiniMax_AI/status/2061266317815296322)\n\n💬13🔄10❤️90👀7521📊18",
+      "tags": [
+        "MiniMax",
+        "M3",
+        "Ollama"
+      ],
+      "score": 80,
+      "summary": "Ollama宣布MiniMax M3可在Cloud使用，支持Claude Code和Codex集成。",
+      "fetched_at": "2026-06-01T11:53:48.344038+08:00"
+    },
+    {
+      "title": "为她做一个游戏\n可能是最好的儿童节礼物",
+      "link": "https://x.com/oran_ge/status/2061273157340889460",
+      "published": "2026-06-01T10:26:31+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "为她做一个游戏  \n可能是最好的儿童节礼物\n\n![Percival](https://pbs.twimg.com/profile_images/1663368690316836865/vAedLy1R_normal.jpg)\n\nPercival@robinshen84\n\n女儿想要哈利波特的魔法世界，我用 ColaOS 在两周内给她造了一个专属游戏   \n  \n从故事→剧本→分镜→人物/场景剧照→转场视频→音效→鼠标特效，一共设计了 5 种结局。收集物品解锁成就，最终打开下一个故事的彩蛋。  \n  \n但看到她认真玩进去的那一刻——值了。  \n  \n#AI#哈利波特#亲子\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061271298437988352/vid/avc1/1152x720/8qeNC4tPmxRiJm6h.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/robinshen84/status/2061272435320832003/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/robinshen84/status/2061272435320832003)\n\n💬0🔄0❤️1👀1719📊1",
+      "tags": [
+        "AI游戏",
+        "亲子",
+        "儿童节"
+      ],
+      "score": 65,
+      "summary": "用户用ColaOS为女儿制作哈利波特主题游戏。",
+      "fetched_at": "2026-06-01T11:53:48.344097+08:00"
+    },
+    {
+      "title": "Manus 引发的法规来了\n\n出海可以，但是不能出卖...\n\n投资者开展对外投资活动，不得出口、使用国家禁止出口的货物、技术、服务及相关数据，或者未经许可出口、使用国家限制出口的货物、技术、服务及相关...",
+      "link": "https://x.com/xiaohu/status/2061285910411669596",
+      "published": "2026-06-01T11:17:12+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "Manus 引发的法规来了  \n  \n出海可以，但是不能出卖...  \n  \n投资者开展对外投资活动，不得出口、使用国家禁止出口的货物、技术、服务及相关数据，或者未经许可出口、使用国家限制出口的货物、技术、服务及相关数据；  \n  \n不得以跨境派遣技术人员、组织人员赴其他国家（地区）工作、跨境提供技术指导、安排人员跨境培训等方式向其他国家（地区）转移国家禁止出口的货物、技术、服务及相关数据  \n  \n或者未经许可向其他国家（地区）转移国家限制出口的货物、技术、服务及相关数据。\n\n![Tweet Image](https://pbs.twimg.com/media/HJsoDbnboAAfI_u.jpg)\n\n💬2🔄0❤️0👀904📊2",
+      "tags": [
+        "AI法规",
+        "Manus",
+        "出海"
+      ],
+      "score": 75,
+      "summary": "用户评论Manus引发法规，限制技术出口和数据转移。",
+      "fetched_at": "2026-06-01T11:53:48.344157+08:00"
     }
   ]
 }
