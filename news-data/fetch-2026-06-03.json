@@ -1,0 +1,715 @@
+{
+  "meta": {
+    "date": "2026-06-02"
+  },
+  "entries": [
+    {
+      "title": "June Android Drop: New personalization and safety features are here",
+      "link": "https://blog.google/products-and-platforms/platforms/android/android-drop-june-2026/",
+      "published": "2026-06-03T02:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Final_Static_Asset_1.max-600x600.format-webp.webp)Plan outfits in Google Photos, get alerts for fake calls, and share pics with iPhone devices and more.",
+      "tags": [
+        "Android更新",
+        "非AI"
+      ],
+      "score": 60,
+      "summary": "Google发布Android June Drop，新增个性化与安全功能。",
+      "fetched_at": "2026-06-03T03:41:57.416315+08:00"
+    },
+    {
+      "title": "Don't Build Slop (4 Levels of AI Agent Maturity)\n\nMost AI agents are slop. @arafatkatze from @cline ...",
+      "link": "https://x.com/aiDotEngineer/status/2061891036893335726",
+      "published": "2026-06-03T03:21:45+08:00",
+      "source": "AI Engineer(@aiDotEngineer)",
+      "content": "Don't Build Slop (4 Levels of AI Agent Maturity)  \n  \nMost AI agents are slop. [@arafatkatze](https://x.com/arafatkatze) from [@cline](https://x.com/cline) breaks down the 4 levels of agent maturity — and what separates a demo from a product.  \n[youtube.com/watch?v=yUmS-F…](https://www.youtube.com/watch?v=yUmS-F9IX90)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1O8_AXQAAR61a.jpg)\n\n💬0🔄0❤️3👀117📊1",
+      "tags": [
+        "AI Agent",
+        "成熟度",
+        "观点"
+      ],
+      "score": 80,
+      "summary": "AI Engineer分享AI Agent成熟度四个级别的观点。",
+      "fetched_at": "2026-06-03T03:41:57.416415+08:00"
+    },
+    {
+      "title": "SWE benchmarks don’t necessarily capture app building capabilities. ViBench does.",
+      "link": "https://x.com/amasad/status/2061878314311266552",
+      "published": "2026-06-03T02:31:12+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "SWE benchmarks don’t necessarily capture app building capabilities. ViBench does.\n\n![Michele Catasta](https://pbs.twimg.com/profile_images/1921747874922045440/wAkYCjVY_normal.jpg)\n\nMichele Catasta@pirroh\n\nMost AI coding benchmarks miss what actually matters: how models perform at the application layer.  \n  \nIntroducing ViBench, an open-source benchmark for evaluating agents on end-to-end web application development.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ06MSPbkAAiaLj.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/pirroh/status/2061868189630513509)\n\n💬0🔄1❤️15👀2613📊2",
+      "tags": [
+        "ViBench",
+        "基准测试",
+        "AI评估"
+      ],
+      "score": 70,
+      "summary": "Amjad Masad评论ViBench用于评估AI应用开发能力。",
+      "fetched_at": "2026-06-03T03:41:57.416496+08:00"
+    },
+    {
+      "title": "And Macs and Linux Machines too",
+      "link": "https://x.com/AravSrinivas/status/2061877326494027778",
+      "published": "2026-06-03T02:27:17+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "And Macs and Linux Machines too\n\n💬2🔄0❤️12👀1991📊3",
+      "tags": [
+        "Perplexity",
+        "本地模型"
+      ],
+      "score": 50,
+      "summary": "Perplexity CEO表示本地模型将支持Mac和Linux。",
+      "fetched_at": "2026-06-03T03:41:57.416571+08:00"
+    },
+    {
+      "title": "We’re brining local models that can run on your personal hardware inside Perplexity Computer. This w...",
+      "link": "https://x.com/AravSrinivas/status/2061875858542096520",
+      "published": "2026-06-03T02:21:27+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "We’re brining local models that can run on your personal hardware inside Perplexity Computer. This will take advantage of the local hardware while giving you the privacy and token efficiency per watt, as well as access to the frontier models on the server side GPUs when necessary. Coming soon to Windows laptops. Stay tuned.\n\n![Perplexity](https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_normal.jpg)\n\nPerplexity@perplexity\\_ai\n\nToday we're announcing that hybrid agentic inference is coming to Perplexity Computer.  \n  \nComputer can split tasks between a local model running on your machine and frontier models in the cloud. This keeps private data on your device and maximizes token efficiency.  \n  \nComing soon.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061861227383685120/vid/avc1/1280x720/MDVLXoE2luDeCMjK.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/perplexity_ai/status/2061861293569765847/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/perplexity_ai/status/2061861293569765847)\n\n💬12🔄12❤️128👀12770📊23",
+      "tags": [
+        "Perplexity Computer",
+        "混合推理"
+      ],
+      "score": 85,
+      "summary": "Perplexity Computer将支持本地与云端模型混合推理。",
+      "fetched_at": "2026-06-03T03:41:57.416645+08:00"
+    },
+    {
+      "title": "A great cloud agent experience involves a lot more than moving a local agent to a server.\n\nWe've lea...",
+      "link": "https://x.com/cursor_ai/status/2061878340265656620",
+      "published": "2026-06-03T02:31:18+08:00",
+      "source": "Cursor(@cursor_ai)",
+      "content": "A great cloud agent experience involves a lot more than moving a local agent to a server.  \n  \nWe've learned that it requires a durable execution platform, a powerful harness, and the tools and infra to give agents realistic development environments.  \n  \n[cursor.com/blog/cloud-age…](http://cursor.com/blog/cloud-agent-lessons)\n\n💬6🔄6❤️64👀2623📊15",
+      "tags": [
+        "Cursor",
+        "云Agent",
+        "经验分享"
+      ],
+      "score": 85,
+      "summary": "Cursor官方分享构建云Agent平台的必要组件。",
+      "fetched_at": "2026-06-03T03:41:57.416720+08:00"
+    },
+    {
+      "title": "https://t.co/4qxTnbDyaB",
+      "link": "https://x.com/firecrawl/status/2061866484071022712",
+      "published": "2026-06-03T01:44:12+08:00",
+      "source": "Firecrawl(@firecrawl_dev)",
+      "content": "[luma.com/4kipu7y0](https://luma.com/4kipu7y0)\n\n💬0🔄0❤️0👀749",
+      "tags": [
+        "Firecrawl",
+        "视频链接"
+      ],
+      "score": 60,
+      "summary": "Firecrawl分享一个Luma视频链接。",
+      "fetched_at": "2026-06-03T03:41:57.416787+08:00"
+    },
+    {
+      "title": "Firecrawl is opening a coffee shop in NYC 🔥🗽\n\nOn June 4th we're taking over Fellini Coffee for NYC...",
+      "link": "https://x.com/firecrawl/status/2061866482217214255",
+      "published": "2026-06-03T01:44:11+08:00",
+      "source": "Firecrawl(@firecrawl_dev)",
+      "content": "Firecrawl is opening a coffee shop in NYC 🔥🗽  \n  \nOn June 4th we're taking over Fellini Coffee for NYC Tech Week, and every single cup is free all day long.  \n  \nCome say hi and grab a coffee on us. RSVP below!\n\n![Tweet Image](https://pbs.twimg.com/media/HJ04ovLXYAAmmG1.jpg)\n\n💬6🔄1❤️48👀6823📊17",
+      "tags": [
+        "Firecrawl",
+        "活动"
+      ],
+      "score": 50,
+      "summary": "Firecrawl在纽约开设咖啡店活动。",
+      "fetched_at": "2026-06-03T03:41:57.416850+08:00"
+    },
+    {
+      "title": "We’re looking forward to seeing how developers and enterprises use Fireworks AI on @Microsoft Foundr...",
+      "link": "https://x.com/FireworksAI_HQ/status/2061883539549978948",
+      "published": "2026-06-03T02:51:58+08:00",
+      "source": "Fireworks AI(@FireworksAI_HQ)",
+      "content": "We’re looking forward to seeing how developers and enterprises use Fireworks AI on [@Microsoft](https://x.com/Microsoft) Foundry to power the next generation of intelligent applications.  \n  \nCatch us at booth F111 at #MSBuild and see Fireworks AI + Microsoft Foundry in action.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061883232300470272/vid/avc1/1920x1080/RY-OM_JOMt6N_tNE.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/FireworksAI_HQ/status/2061883539549978948/video/1)\n\n💬0🔄1❤️2👀90📊1",
+      "tags": [
+        "Fireworks AI",
+        "Microsoft Foundry"
+      ],
+      "score": 70,
+      "summary": "Fireworks AI在Microsoft Foundry上提供AI服务。",
+      "fetched_at": "2026-06-03T03:41:57.416941+08:00"
+    },
+    {
+      "title": "Until today I never once in my life thought about what the plural of backlash was.",
+      "link": "https://x.com/GaryMarcus/status/2061875891656114310",
+      "published": "2026-06-03T02:21:35+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Until today I never once in my life thought about what the plural of backlash was.\n\n![Gary Marcus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus@GaryMarcus\n\nThings are so chaotic in AI right now that [@axios](https://x.com/axios) had to specify \\*which\\* AI backlash they were referring to!\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2061875505604038692)\n\n💬6🔄1❤️14👀1788📊5",
+      "tags": [
+        "Gary Marcus",
+        "评论"
+      ],
+      "score": 30,
+      "summary": "Gary Marcus评论AI领域混乱。",
+      "fetched_at": "2026-06-03T03:41:57.417018+08:00"
+    },
+    {
+      "title": "Things are so chaotic in AI right now that @axios had to specify *which* AI backlash they were refer...",
+      "link": "https://x.com/GaryMarcus/status/2061875505604038692",
+      "published": "2026-06-03T02:20:02+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Things are so chaotic in AI right now that [@axios](https://x.com/axios) had to specify \\*which\\* AI backlash they were referring to!\n\n![Axios](https://pbs.twimg.com/profile_images/1641458976049995776/GtO-0zYe_normal.jpg)\n\nAxios@axios\n\nAnthropic faces AI spending backlash before IPO [axios.com/2026/06/02/ant…](https://www.axios.com/2026/06/02/anthropic-ipo-ai-sticker-shock-spending-usage?utm_campaign=mrf-utm_campaign=editorial&utm_source=x&utm_medium=owned_social&utm_source=twitter&utm_medium=social&mrfcid=202606026a13c9401f0de911809ad413)\n\n[🔗 View Quoted Tweet](https://x.com/axios/status/2061738519911895061)\n\n💬3🔄2❤️23👀5067📊5",
+      "tags": [
+        "Anthropic",
+        "IPO",
+        "反弹"
+      ],
+      "score": 40,
+      "summary": "Gary Marcus转述Axios关于Anthropic IPO开支反弹的报道。",
+      "fetched_at": "2026-06-03T03:41:57.417088+08:00"
+    },
+    {
+      "title": "Maybe @ylecun can be automated after all, @SchmidhuberAI?",
+      "link": "https://x.com/GaryMarcus/status/2061873036404650215",
+      "published": "2026-06-03T02:10:14+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Maybe [@ylecun](https://x.com/ylecun) can be automated after all, [@SchmidhuberAI](https://x.com/SchmidhuberAI)?\n\n![Tweet Image](https://pbs.twimg.com/media/HJ0-mdGa0AAQFUK.jpg)\n\n💬2🔄3❤️12👀2424📊4",
+      "tags": [
+        "讽刺",
+        "Gary Marcus"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus嘲讽Yann LeCun。",
+      "fetched_at": "2026-06-03T03:41:57.417161+08:00"
+    },
+    {
+      "title": "The persistent campaign to discredit me begins with a fundamental misunderstanding of my work. \n\nIt ...",
+      "link": "https://x.com/GaryMarcus/status/2061872512024371289",
+      "published": "2026-06-03T02:08:09+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "The persistent campaign to discredit me begins with a fundamental misunderstanding of my work.   \n  \nIt is worth taking the time to understand the issues, if you want to understand a lot of what is driving current gains (hint, it is NOT just about pure scaling).\n\n![Gary Marcus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus@GaryMarcus\n\nPeople who say this kind of thing are completely lost about what I actually said about deep learning, and I would strongly encourage them to read “Deep learning is hitting a wall” (2022).   \n  \nWhat I said there (and in 2018 etc), completely explicitly, was that deep learning would need to be supplemented by neurosymbolic AI.   \n  \nAnd that is EXACTLY what happened. Claude Code, for example, is absolute vindication of what I argued. So are code interpreters, tool use, symbolic harnesses, etc.  \n  \n(If you don’t understand that, you don’t understand the first thing about AI architecture, and are simply betraying your own ignorance.)\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2061870295741591791)\n\n💬1🔄1❤️7👀1739📊2",
+      "tags": [
+        "深度学习",
+        "神经符号AI",
+        "观点"
+      ],
+      "score": 30,
+      "summary": "Gary Marcus重申深度学习需要神经符号补充的观点。",
+      "fetched_at": "2026-06-03T03:41:57.417234+08:00"
+    },
+    {
+      "title": "People who say this kind of thing are completely lost about what I actually said about deep learning...",
+      "link": "https://x.com/GaryMarcus/status/2061870295741591791",
+      "published": "2026-06-03T01:59:20+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "People who say this kind of thing are completely lost about what I actually said about deep learning, and I would strongly encourage them to read “Deep learning is hitting a wall” (2022).   \n  \nWhat I said there (and in 2018 etc), completely explicitly, was that deep learning would need to be supplemented by neurosymbolic AI.   \n  \nAnd that is EXACTLY what happened. Claude Code, for example, is absolute vindication of what I argued. So are code interpreters, tool use, symbolic harnesses, etc.  \n  \n(If you don’t understand that, you don’t understand the first thing about AI architecture, and are simply betraying your own ignorance.)\n\n![Deva](https://pbs.twimg.com/profile_images/2059022310472921090/zcHuhauZ_normal.jpg)\n\nDeva@DevaBuilds\n\n[@GaryMarcus](https://x.com/GaryMarcus)[@SenJohnKennedy](https://x.com/SenJohnKennedy) Being wrong about deep learning for a decade is apparently great prep for shaping AI policy. The forecasters with the worst track records always push for the most restrictions.\n\n[🔗 View Quoted Tweet](https://x.com/DevaBuilds/status/2061864730369896914)\n\n💬1🔄2❤️13👀5391📊3",
+      "tags": [
+        "深度学习",
+        "神经符号AI",
+        "回应"
+      ],
+      "score": 30,
+      "summary": "Gary Marcus回应批评，坚持深学习应结合神经符号方法。",
+      "fetched_at": "2026-06-03T03:41:57.417309+08:00"
+    },
+    {
+      "title": "truly incredible ❤️",
+      "link": "https://x.com/GaryMarcus/status/2061865498267259040",
+      "published": "2026-06-03T01:40:17+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "truly incredible ❤️\n\n![Zengyi Qin](https://pbs.twimg.com/profile_images/1997785159161049089/2de-DSQ8_normal.jpg)\n\nZengyi Qin@qinzytech\n\n[@GaryMarcus](https://x.com/GaryMarcus)[@SenJohnKennedy](https://x.com/SenJohnKennedy) congrats man, must feel wild to see something you pushed for actually get signed\n\n[🔗 View Quoted Tweet](https://x.com/qinzytech/status/2061865332042805539)\n\n💬0🔄0❤️7👀2232📊1",
+      "tags": [
+        "Gary Marcus",
+        "回应"
+      ],
+      "score": 10,
+      "summary": "Gary Marcus对祝贺推文表示感谢。",
+      "fetched_at": "2026-06-03T03:41:57.417375+08:00"
+    },
+    {
+      "title": "Check out everything we launched today 👇\nhttps://t.co/Mck7gcPr4c",
+      "link": "https://x.com/github/status/2061868367133413665",
+      "published": "2026-06-03T01:51:41+08:00",
+      "source": "GitHub(@github)",
+      "content": "Check out everything we launched today 👇[github.blog/news-insights/…](https://github.blog/news-insights/product-news/github-copilot-app-the-agent-native-desktop-experience/?utm_source=x-copilot-app-desktop-blog-cta&utm_medium=social&utm_campaign=msbuild-2026)c\n\n💬1🔄5❤️10👀4311📊4",
+      "tags": [
+        "GitHub Copilot",
+        "更新"
+      ],
+      "score": 85,
+      "summary": "GitHub宣布Copilot及平台多项更新。",
+      "fetched_at": "2026-06-03T03:41:57.417440+08:00"
+    },
+    {
+      "title": "As agents take on more of your workflow, you need a stronger guarantee that your code is secure, iso...",
+      "link": "https://x.com/github/status/2061868364851826954",
+      "published": "2026-06-03T01:51:40+08:00",
+      "source": "GitHub(@github)",
+      "content": "As agents take on more of your workflow, you need a stronger guarantee that your code is secure, isolated, and controlled.   \n  \nCloud and local sandboxes for GitHub Copilot allow you to safely experiment with agentic workflows and gives enterprise teams a way to centrally manage policies.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ04Yida0AAOAql.jpg)\n\n💬2🔄2❤️16👀4595📊3",
+      "tags": [
+        "GitHub Copilot",
+        "沙箱",
+        "安全"
+      ],
+      "score": 80,
+      "summary": "GitHub Copilot引入云和本地沙箱以确保代码安全。",
+      "fetched_at": "2026-06-03T03:41:57.417490+08:00"
+    },
+    {
+      "title": "The next frontier of agentic development is here, and you are in control.   \n \nToday we announced re...",
+      "link": "https://x.com/github/status/2061868355934654624",
+      "published": "2026-06-03T01:51:38+08:00",
+      "source": "GitHub(@github)",
+      "content": "The next frontier of agentic development is here, and you are in control.    \n   \nToday we announced releases that will keep you in the flow with your agents, all on the GitHub platform.  ⬇️\n\n![Tweet Image](https://pbs.twimg.com/media/HJ015-WasAApvGW.jpg)\n\n💬40🔄33❤️204👀27046📊61",
+      "tags": [
+        "GitHub",
+        "Agent开发"
+      ],
+      "score": 85,
+      "summary": "GitHub宣布Agent开发新前沿，用户可控制代理。",
+      "fetched_at": "2026-06-03T03:41:57.417540+08:00"
+    },
+    {
+      "title": "Verifiers are important for scaling evals/RL\n\nBut costs add up! So can we make them cheaper?\n\nSome g...",
+      "link": "https://x.com/hwchase17/status/2061867746141356427",
+      "published": "2026-06-03T01:49:12+08:00",
+      "source": "Harrison Chase(@hwchase17)",
+      "content": "Verifiers are important for scaling evals/RL  \n  \nBut costs add up! So can we make them cheaper?  \n  \nSome great work by [@Vtrivedy10](https://x.com/Vtrivedy10)[@jakebroekhuizen](https://x.com/jakebroekhuizen) in conjunction with [@nikogrupen](https://x.com/nikogrupen)[@gabepereyra](https://x.com/gabepereyra) and the Harvey team on this\n\n![LangChain](https://pbs.twimg.com/profile_images/2028336270431453184/jRRpLAdG_normal.jpg)\n\nLangChain@LangChain\n\n[x.com/i/article/2061…](http://x.com/i/article/2061784083839983616)\n\n[🔗 View Quoted Tweet](https://x.com/LangChain/status/2061864647884464430)\n\n💬5🔄2❤️15👀1378📊6",
+      "tags": [
+        "验证器",
+        "成本优化",
+        "LangChain"
+      ],
+      "score": 75,
+      "summary": "Harrison Chase讨论验证器降低成本的方法。",
+      "fetched_at": "2026-06-03T03:41:57.417588+08:00"
+    },
+    {
+      "title": "Proud to be one of Inc.'s 2026 Best Workplaces.\n\nThe truth: we genuinely love the people we work wit...",
+      "link": "https://x.com/HeyGen/status/2061874436530487480",
+      "published": "2026-06-03T02:15:48+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "Proud to be one of Inc.'s 2026 Best Workplaces.  \n  \nThe truth: we genuinely love the people we work with. We move fast. We care deeply about the work.  \n  \nMost places make you pick one or two. We've managed to keep all three.  \n  \nThanks to every HeyGen team member who made this possible.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061873349350109184/vid/avc1/2160x2700/6Z9hpbzuV5BAcQOk.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/HeyGen/status/2061874436530487480/video/1)\n\n💬1🔄2❤️12👀454📊3",
+      "tags": [
+        "HeyGen",
+        "获奖"
+      ],
+      "score": 50,
+      "summary": "HeyGen入选Inc.最佳工作场所。",
+      "fetched_at": "2026-06-03T03:41:57.417636+08:00"
+    },
+    {
+      "title": "And if tackling challenging problems, learning fast, and shaping the future sounds like you, come bu...",
+      "link": "https://x.com/HeyGen/status/2061874437906219162",
+      "published": "2026-06-03T02:15:48+08:00",
+      "source": "HeyGen(@HeyGen_Official)",
+      "content": "And if tackling challenging problems, learning fast, and shaping the future sounds like you, come build with us:   \n[heygen.com/careers](https://www.heygen.com/careers)\n\n💬1🔄1❤️2👀278📊2",
+      "tags": [
+        "HeyGen",
+        "招聘"
+      ],
+      "score": 30,
+      "summary": "HeyGen发布招聘信息。",
+      "fetched_at": "2026-06-03T03:41:57.417684+08:00"
+    },
+    {
+      "title": "New in the LangSmith Sandboxes GA Release: Snapshots and cheap forks\n\nCapture a running sandbox. Spi...",
+      "link": "https://x.com/LangChain/status/2061885807464505734",
+      "published": "2026-06-03T03:00:59+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "New in the LangSmith Sandboxes GA Release: Snapshots and cheap forks  \n  \nCapture a running sandbox. Spin up 10 parallel branches for roughly the cost of one.   \n  \nWhen your agent goes down the wrong path, restore and try a different branch.  \n  \n[docs.langchain.com/langsmith/sand…](https://docs.langchain.com/langsmith/sandbox-snapshots)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1KNxDWwAI98io.jpg)\n\n💬1🔄0❤️5👀652📊2",
+      "tags": [
+        "LangSmith",
+        "沙箱",
+        "功能更新"
+      ],
+      "score": 75,
+      "summary": "LangSmith沙箱发布快照和分支功能。",
+      "fetched_at": "2026-06-03T03:41:57.417732+08:00"
+    },
+    {
+      "title": "New in Deep Agents: Agent Rubrics!\n\nAttach a rubric to your agent invocation, and a grader evaluates...",
+      "link": "https://x.com/LangChain/status/2061875246110507011",
+      "published": "2026-06-03T02:19:01+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "New in Deep Agents: Agent Rubrics!  \n  \nAttach a rubric to your agent invocation, and a grader evaluates and self-corrects output until it satisfies all requirements.  \n  \nThis is helpful for long/complex tasks where you need to keep the agent on track re an end goal!\n\n![Sydney Runkle](https://pbs.twimg.com/profile_images/1955622250629021696/WOrOq2Mw_normal.jpg)\n\nSydney Runkle@sydneyrunkle\n\n[x.com/i/article/2061…](http://x.com/i/article/2061868304654864384)\n\n[🔗 View Quoted Tweet](https://x.com/sydneyrunkle/status/2061873579004735884)\n\n💬2🔄2❤️6👀1480📊3",
+      "tags": [
+        "Deep Agents",
+        "评判",
+        "LangChain"
+      ],
+      "score": 75,
+      "summary": "LangChain Deep Agents引入评判打分标准。",
+      "fetched_at": "2026-06-03T03:41:57.417779+08:00"
+    },
+    {
+      "title": "Quick rant on AI model benchmarks:\n\n- Some of the most popular ones are no longer helpful (SWE-bench...",
+      "link": "https://x.com/leerob/status/2061866385752326358",
+      "published": "2026-06-03T01:43:48+08:00",
+      "source": "Lee Robinson(@leerob)",
+      "content": "Quick rant on AI model benchmarks:  \n  \n- Some of the most popular ones are no longer helpful (SWE-bench¹)  \n- It can be very hard to reproduce reported results (so lots of variance)  \n- Take them with a grain of salt, look at the average across many  \n  \nWe need some creative new ideas for AI model marketing. Supportive of a Survivor spin-off (who is the AI Jeff Probst!?).  \n  \nI get why every model release shows benchmark scores as the headline. It's actually pretty hard to describe how a model has improved without it sounding like fluff. And also it sounds boring to say the same thing over and over (\"it's better at following instructions\" repeat x10).  \n  \nBenchmarks make it very clear there is a number, which likely started bad, and is now going up. Yay! The reality is that benchmarks are most useful to those \\*training\\* the model so they know where to improve.  \n  \nModel labs use these benchmarks to measure progress, which is why having non-saturated benchmarks is extremely helpful. If you see models getting 90% on an eval, it's probably time to make a harder version.  \n  \nI do think there's a word of caution for everyone interpreting benchmarks. It's very hard to get exactly the same scores, which is why some benches show error bars and do the average over multiple runs.  \n  \nBut even further, the hardware and GPUs the evals are running on really matter! Small differences there, or minor tweaks to the prompt, can swing scores by multiple percentage points².  \n  \nAll of that to say, it's important to look at many different benchmarks, and then actually use the model to make your own opinion. For example, there's recently been a lot of debate on here about Opus 4.8 not benchmarking as well as other models. But personally I've found the model really good from my own usage. Your mileage may vary!  \n  \nThere aren't many high-quality public benchmarks that measure things like the UX of the model responses, the style of the messages, the warmth or directness of the \"personality\". These things matter \\*a lot\\* for the day-to-day usage. How the model performs in the real world is often different from very specific benches.  \n  \nIn summary, benchmarks matter but they are not a substitute for extensively testing the model yourself with real work.  \n  \n¹: [openai.com/index/why-we-n…](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified)  \n²: [anthropic.com/engineering/in…](https://www.anthropic.com/engineering/infrastructure-noise)\n\n![lilly sharples](https://pbs.twimg.com/profile_images/1984738183368880128/hTH7wZBC_normal.jpg)\n\nlilly sharples@lillysharples\n\nI’m tired of useless AI benchmarks. How about we give three people a different model, strand them on an island, and see who survives the longest\n\n[🔗 View Quoted Tweet](https://x.com/lillysharples/status/2061260903212052681)\n\n💬12🔄3❤️88👀9217📊18",
+      "tags": [
+        "基准测试",
+        "评论"
+      ],
+      "score": 65,
+      "summary": "Lee Robinson批评AI基准无用，建议关注实际体验。",
+      "fetched_at": "2026-06-03T03:41:57.417826+08:00"
+    },
+    {
+      "title": "PSA: This week only, get 25% off all the @MavenHQ Lenny's List courses (and hundreds of other course...",
+      "link": "https://x.com/lennysan/status/2061883267817914589",
+      "published": "2026-06-03T02:50:53+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "PSA: This week only, get 25% off all the [@MavenHQ](https://x.com/MavenHQ) Lenny's List courses (and hundreds of other courses)  \n  \nA few in particular to check out right now:  \n+ How to Become a Supermanager with AI w/ [@yourgirlhils](https://x.com/yourgirlhils)[maven.com/hilary-gridley…](https://maven.com/hilary-gridley/ai-powered-people-management?promoCode=LENNY25)  \n+ AI Evals For Engineers & PMs w/ [@HamelHusain](https://x.com/HamelHusain)[@sh\\_reya](https://x.com/sh_reya)[maven.com/parlance-labs/…](https://maven.com/parlance-labs/evals?promoCode=LENNY25)  \n+ PM Interview Bootcamp w/ [@ViableBen](https://x.com/ViableBen)[maven.com/ben-erez/pm-in…](https://maven.com/ben-erez/pm-interview?promoCode=LENNY25)  \n+ Building Agentic AI Applications w/ Aishwarya & Kiriti [maven.com/aishwarya-kiri…](https://maven.com/aishwarya-kiriti/genai-system-design?promoCode=LENNY25)  \n+ Executive Playbook for AI in Engineering, Product, and Design w/ [@clairevo](https://x.com/clairevo)[@zackdavis](https://x.com/zackdavis)[maven.com/clairevo/ai-na…](https://maven.com/clairevo/ai-native-epd-org?promoCode=MAVEN100)  \n+ World-class Product Sense in Practice w/ [@shreyas](https://x.com/shreyas)[maven.com/shreyas-doshi/…](https://maven.com/shreyas-doshi/product-sense?promoCode=MAVEN100)  \n  \nHere's the full list: [maven.com/lenny](https://maven.com/lenny)  \n  \nTop 100 Maven courses: [maven.com](https://maven.com/)  \n  \nThere’s no better time to invest in yourself.\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJ1GFqIaMAAJbli.jpg)](https://video.twimg.com/tweet_video/HJ1GFqIaMAAJbli.mp4)\n\n💬0🔄0❤️2👀745📊1",
+      "tags": [
+        "课程推广",
+        "AI"
+      ],
+      "score": 20,
+      "summary": "Lenny Rachitsky推广AI相关课程优惠。",
+      "fetched_at": "2026-06-03T03:41:57.417874+08:00"
+    },
+    {
+      "title": "(And please share this with others so that we can collect as much data as possible)",
+      "link": "https://x.com/lennysan/status/2061865730061242657",
+      "published": "2026-06-03T01:41:12+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "(And please share this with others so that we can collect as much data as possible)\n\n💬0🔄0❤️4👀1559📊1",
+      "tags": [
+        "推广"
+      ],
+      "score": 10,
+      "summary": "Lenny Rachitsky请求转发以收集数据。",
+      "fetched_at": "2026-06-03T03:41:57.417949+08:00"
+    },
+    {
+      "title": "Microsoft Research is at BUILD 2026 this week, giving developers a hands-on look at some of the many...",
+      "link": "https://x.com/MSFTResearch/status/2061886242636132564",
+      "published": "2026-06-03T03:02:42+08:00",
+      "source": "Microsoft Research(@MSFTResearch)",
+      "content": "Microsoft Research is at BUILD 2026 this week, giving developers a hands-on look at some of the many AI-based models and tools they can use to accelerate innovation, enhance their capabilities, and quickly transform ideas into prototypes. [msft.it/6010vjBUe](https://msft.it/6010vjBUe)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1KnDZW0AAF54y.jpg)\n\n💬0🔄1❤️2👀101📊1",
+      "tags": [
+        "Microsoft Research",
+        "BUILD 2026"
+      ],
+      "score": 70,
+      "summary": "Microsoft Research在Build展示AI模型和工具。",
+      "fetched_at": "2026-06-03T03:41:57.418004+08:00"
+    },
+    {
+      "title": "Welcome to Microsoft Build 2026.\n\nStep inside the Microsoft Research Lab, where developers are getti...",
+      "link": "https://x.com/MSFTResearch/status/2061873272510107757",
+      "published": "2026-06-03T02:11:10+08:00",
+      "source": "Microsoft Research(@MSFTResearch)",
+      "content": "Welcome to Microsoft Build 2026.  \n  \nStep inside the Microsoft Research Lab, where developers are getting hands-on with the latest from MSR. Aurora’s forecasting models, Trellis 3D generation, Magentic UI, Mindful Memory, and more.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061873236606898176/vid/avc1/720x1280/5fzOPrvRP-rng4j8.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/MSFTResearch/status/2061873272510107757/video/1)\n\n💬1🔄1❤️9👀841📊2",
+      "tags": [
+        "Microsoft Research",
+        "Build",
+        "展示"
+      ],
+      "score": 65,
+      "summary": "Microsoft Research在Build 2026展示最新AI技术。",
+      "fetched_at": "2026-06-03T03:41:57.418057+08:00"
+    },
+    {
+      "title": "Awesome to have on you stage @steipete ! What an exciting time",
+      "link": "https://x.com/mustafasuleyman/status/2061882830561628611",
+      "published": "2026-06-03T02:49:09+08:00",
+      "source": "Mustafa Suleyman(@mustafasuleyman)",
+      "content": "Awesome to have on you stage [@steipete](https://x.com/steipete) ! What an exciting time\n\n![Peter Steinberger 🦞](https://pbs.twimg.com/profile_images/1131851609774985216/OcsssQ9J_normal.png)\n\nPeter Steinberger 🦞@steipete\n\nSuch a privilege to work with Microsoft to bring claws to enterprises!\n\n[🔗 View Quoted Tweet](https://x.com/steipete/status/2061874084649025728)\n\n💬2🔄0❤️19👀1271📊3",
+      "tags": [
+        "Mustafa Suleyman",
+        "回应"
+      ],
+      "score": 20,
+      "summary": "Mustafa Suleyman祝贺Peter Steinberger。",
+      "fetched_at": "2026-06-03T03:41:57.418105+08:00"
+    },
+    {
+      "title": "Super excited to announce seven new world-class MAI models today. They represent what we consider a ...",
+      "link": "https://x.com/mustafasuleyman/status/2061880164498428188",
+      "published": "2026-06-03T02:38:33+08:00",
+      "source": "Mustafa Suleyman(@mustafasuleyman)",
+      "content": "Super excited to announce seven new world-class MAI models today. They represent what we consider a new era in AI designed to keep you in control and on the frontier.  \nFirst is our text foundation model, MAI-Thinking-1, exceptionally strong on reasoning and SWE tasks.   \n- It’s a 35B active parameter MoE with a 256K context window. Independent human raters on Surge prefer it for overall quality in blind side-by-sides versus Sonnet 4.6, and it’s achieved 97% on AIME 2025, the key measure of its general-purpose reasoning abilities.   \n- It's at 53% on SWE Bench Pro, placing it right alongside Opus 4.6 on one of the toughest coding benchmarks.   \n- And since we co-designed our models with our own silicon, MAI-Thinking-1 is optimized on our MAIA 200 chip. Benchmarking head-to-head against the GB200, we see 30% better performance per dollar as well as a 1.4x performance-per-watt gain when running our MAI models on the MAIA 200 end-to-end.   \n   \nNext is MAI-Image-2.5 and its Flash variant. Two super strong models now at #2 on the leaderboards, surpassing the score of Nano Banana 2 on image editing.   \n   \nLast for now is MAI-Code-1-Flash, our new inference efficient coding model, especially tuned for VS Code and GitHub Copilot CLI.   \n- Code-1-Flash achieves 51% on SWE Bench Pro, despite having just 5B parameters, putting it closer to Haiku in size but cheaper in cost.   \n   \nAll of this is the foundation for Microsoft Frontier Tuning. It lets you customize our models to create custom, company-specific agents that only you control. You can make our model, your model. Your data. Your agents. Your moat.   \n   \nEarly adopters are already seeing a difference. When we tuned our models for McKinsey’s tasks, MAI delivered the highest win rate, outperforming GPT-5.5 on quality, while being 10x lower on cost.   \n   \nAlso really excited to be collaborating with the amazing team at Mayo Clinic to jointly train a new frontier AI model for healthcare.   \n   \nOur announcements today mark another milestone on the road to humanist superintelligence. You can learn more and about our other new models in our latest blog: [microsoft.ai/news/building-…](https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1EnxhX0AE62j0.jpg)\n\n💬12🔄36❤️122👀7817📊33",
+      "tags": [
+        "MAI模型",
+        "Microsoft",
+        "发布"
+      ],
+      "score": 95,
+      "summary": "Mustafa Suleyman宣布Microsoft发布七个MAI模型，含MAI-Thinking-1等。",
+      "fetched_at": "2026-06-03T03:41:57.418153+08:00"
+    },
+    {
+      "title": "Inverse Dynamics: Infer the action behind change.",
+      "link": "https://x.com/NVIDIAAI/status/2061872269694321102",
+      "published": "2026-06-03T02:07:11+08:00",
+      "source": "NVIDIA AI(@NVIDIAAI)",
+      "content": "Inverse Dynamics: Infer the action behind change.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061872259514744832/vid/avc1/832x480/iIa38N92OsbBjNcF.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/NVIDIAAI/status/2061872269694321102/video/1)\n\n💬1🔄1❤️2👀791📊1",
+      "tags": [
+        "NVIDIA",
+        "逆动力学"
+      ],
+      "score": 60,
+      "summary": "NVIDIA AI介绍逆动力学概念。",
+      "fetched_at": "2026-06-03T03:41:57.418199+08:00"
+    },
+    {
+      "title": "Forward Dynamics: Simulate the future world.",
+      "link": "https://x.com/NVIDIAAI/status/2061872203600404846",
+      "published": "2026-06-03T02:06:55+08:00",
+      "source": "NVIDIA AI(@NVIDIAAI)",
+      "content": "Forward Dynamics: Simulate the future world.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061872144339042304/vid/avc1/1280x720/INKfigP9reimsJg5.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/NVIDIAAI/status/2061872203600404846/video/1)\n\n💬1🔄2❤️4👀839📊2",
+      "tags": [
+        "NVIDIA",
+        "前向动力学"
+      ],
+      "score": 60,
+      "summary": "NVIDIA AI介绍前向动力学。",
+      "fetched_at": "2026-06-03T03:41:57.418247+08:00"
+    },
+    {
+      "title": "Self-Evolving Hermes Agents: Enterprise AI That Gets Better With Use | Nemotron Labs https://t.co/1I...",
+      "link": "https://x.com/NVIDIAAI/status/2061870499232190967",
+      "published": "2026-06-03T02:00:09+08:00",
+      "source": "NVIDIA AI(@NVIDIAAI)",
+      "content": "Self-Evolving Hermes Agents: Enterprise AI That Gets Better With Use | Nemotron Labs [x.com/i/broadcasts/1…](https://x.com/i/broadcasts/1pJdRRyneOjKW)\n\n💬14🔄24❤️183👀8380📊46",
+      "tags": [
+        "NVIDIA",
+        "Hermes Agent",
+        "企业AI"
+      ],
+      "score": 70,
+      "summary": "NVIDIA AI介绍自进化Hermes Agent企业AI。",
+      "fetched_at": "2026-06-03T03:41:57.418295+08:00"
+    },
+    {
+      "title": "Multiple modalities, many applications. \n\nCosmos 3, the first omni-model for physical AI, is here. C...",
+      "link": "https://x.com/NVIDIAAI/status/2061870464549466565",
+      "published": "2026-06-03T02:00:01+08:00",
+      "source": "NVIDIA AI(@NVIDIAAI)",
+      "content": "Multiple modalities, many applications.   \n  \nCosmos 3, the first omni-model for physical AI, is here. Check out some amazing examples below 👇\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061857653714825216/vid/avc1/1280x720/6DhnHAZICPQPW1tC.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/NVIDIAAI/status/2061870464549466565/video/1)\n\n💬11🔄10❤️99👀6097📊26",
+      "tags": [
+        "Cosmos 3",
+        "物理AI",
+        "发布"
+      ],
+      "score": 90,
+      "summary": "NVIDIA发布Cosmos 3通用物理AI模型。",
+      "fetched_at": "2026-06-03T03:41:57.418343+08:00"
+    },
+    {
+      "title": "Notion 🤝 @xai",
+      "link": "https://x.com/NotionHQ/status/2061873637683261484",
+      "published": "2026-06-03T02:12:37+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Notion 🤝 [@xai](https://x.com/xai)\n\n💬1🔄1❤️18👀1050📊3",
+      "tags": [
+        "Notion",
+        "xAI",
+        "合作"
+      ],
+      "score": 75,
+      "summary": "Notion宣布与xAI合作。",
+      "fetched_at": "2026-06-03T03:41:57.418390+08:00"
+    },
+    {
+      "title": "Two new models today: Grok 4.3 + Grok Build 0.1.\n\nNow available for your Notion Agent and Custom Age...",
+      "link": "https://x.com/NotionHQ/status/2061872195379544272",
+      "published": "2026-06-03T02:06:53+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Two new models today: Grok 4.3 + Grok Build 0.1.  \n  \nNow available for your Notion Agent and Custom Agents.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061872094078722048/vid/avc1/1264x1080/b2PBn15m3FCBR7w8.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/NotionHQ/status/2061872195379544272/video/1)\n\n💬12🔄8❤️95👀7191📊23",
+      "tags": [
+        "Notion",
+        "Grok",
+        "集成"
+      ],
+      "score": 80,
+      "summary": "Notion集成Grok 4.3和Grok Build模型。",
+      "fetched_at": "2026-06-03T03:41:57.418437+08:00"
+    },
+    {
+      "title": "From question to model.\n\nThe public equity investing plugin for Codex.",
+      "link": "https://x.com/OpenAI/status/2061888058459570279",
+      "published": "2026-06-03T03:09:55+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "From question to model.  \n  \nThe public equity investing plugin for Codex.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061887952096256000/vid/avc1/3840x2160/ZDToGmbggrRiheAc.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/OpenAI/status/2061888058459570279/video/1)\n\n💬3🔄3❤️54👀12435📊10",
+      "tags": [
+        "Codex",
+        "投资插件"
+      ],
+      "score": 80,
+      "summary": "OpenAI发布Codex的公共股权投资插件。",
+      "fetched_at": "2026-06-03T03:41:57.418486+08:00"
+    },
+    {
+      "title": "Prep faster. Sell smarter.\n\nThe sales plugin for Codex.",
+      "link": "https://x.com/OpenAI/status/2061887949516730502",
+      "published": "2026-06-03T03:09:29+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "Prep faster. Sell smarter.  \n  \nThe sales plugin for Codex.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061887891928952832/vid/avc1/1920x1080/PbMhv-EJ6sX5Yp3_.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/OpenAI/status/2061887949516730502/video/1)\n\n💬3🔄2❤️58👀13547📊8",
+      "tags": [
+        "Codex",
+        "销售插件"
+      ],
+      "score": 80,
+      "summary": "OpenAI发布Codex的销售插件。",
+      "fetched_at": "2026-06-03T03:41:57.418533+08:00"
+    },
+    {
+      "title": "We’re making Codex more useful for your work by expanding plugins beyond individual tools.\n\nThese pl...",
+      "link": "https://x.com/OpenAI/status/2061887650391625870",
+      "published": "2026-06-03T03:08:18+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "We’re making Codex more useful for your work by expanding plugins beyond individual tools.  \n  \nThese plugins turn Codex into a specialist for a specific role with a single install, no coding required.  \n  \nCodex can access 62 popular apps and 110 skills for work across sales, data analytics, creative production, product design, and public equity investing.  \n  \n[openai.com/index/codex-fo…](https://openai.com/index/codex-for-every-role-tool-workflow/)\n\n💬78🔄70❤️922👀49718📊187",
+      "tags": [
+        "Codex",
+        "插件扩展"
+      ],
+      "score": 85,
+      "summary": "OpenAI扩展Codex插件，支持62个应用和110项技能。",
+      "fetched_at": "2026-06-03T03:41:57.418580+08:00"
+    },
+    {
+      "title": "Microsoft has just announced a model better at editing than Nano Banana 2 🔥\n\n- #2 in single-image e...",
+      "link": "https://x.com/itsPaulAi/status/2061879680861700566",
+      "published": "2026-06-03T02:36:38+08:00",
+      "source": "Paul Couvert(@itsPaulAi)",
+      "content": "Microsoft has just announced a model better at editing than Nano Banana 2 🔥  \n  \n- #2 in single-image edit  \n- #3 in text to image  \n- #3 in text rendering  \n  \nI have been testing it for a few days now and it's surprisingly good!  \n  \nOnly GPT-Image-2 seems a bit better.  \n  \nSingle obvious limitation for now: you can't upload multi-images to edit them for now.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1Cp-TX0AAocA3.jpg)\n\n💬4🔄0❤️7👀332📊4",
+      "tags": [
+        "Microsoft",
+        "图像模型",
+        "评论"
+      ],
+      "score": 75,
+      "summary": "Paul Couvert评论Microsoft新图像模型优于Nano Banana 2。",
+      "fetched_at": "2026-06-03T03:41:57.418628+08:00"
+    },
+    {
+      "title": "Some new Codex updates today from OpenAI! \n\nSites allow users to create and share interactive, hoste...",
+      "link": "https://x.com/TheRundownAI/status/2061870860495958465",
+      "published": "2026-06-03T02:01:35+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Some new Codex updates today from OpenAI!   \n  \nSites allow users to create and share interactive, hosted websites and apps that update as details change.  \n  \n6 new role-specific plugins for sales, creative production, investment banking, data anaytics, product design, and public equity investing.   \n  \nAnnotations let you select the exact part of a doc, slide, or spreadsheet you want changed and tell Codex exactly what to do.  \n  \nAll aimed at making things easier for non-developers, which OAI says now make up 20% of its 5M Codex users.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061870675581714432/vid/avc1/1920x1080/2B6iz5TePj40dWhr.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TheRundownAI/status/2061870860495958465/video/1)\n\n💬2🔄0❤️7👀973📊3",
+      "tags": [
+        "Codex",
+        "更新",
+        "总结"
+      ],
+      "score": 70,
+      "summary": "The Rundown AI总结OpenAI Codex更新，包括Sites和插件。",
+      "fetched_at": "2026-06-03T03:41:57.418679+08:00"
+    },
+    {
+      "title": "Refortifai is building @AtrsiaAI: agents for analog circuit design.\n\nIt reasons hierarchically about...",
+      "link": "https://x.com/ycombinator/status/2061887627457163494",
+      "published": "2026-06-03T03:08:13+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Refortifai is building [@AtrsiaAI](https://x.com/AtrsiaAI): agents for analog circuit design.  \n  \nIt reasons hierarchically about your circuit, finds the right topologies for your specs, and does deep-dive debugging— all with awareness of parasitics, physical layout, reusability, and interference. Bring your existing PDKs, design docs, and toolkit and Atrisa will understand and adopt.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061846830154145792/vid/avc1/1920x1080/A9RgiBZUOI7NhY3Z.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2061887627457163494/video/1)\n\n💬1🔄0❤️1👀152📊1",
+      "tags": [
+        "Atrisia",
+        "Y Combinator",
+        "AI Agent"
+      ],
+      "score": 70,
+      "summary": "Y Combinator介绍Atrisia，AI模拟电路设计代理。",
+      "fetched_at": "2026-06-03T03:41:57.418730+08:00"
+    },
+    {
+      "title": "Congrats on the launch, @Cyan9800, @RithikWasHere,  and @AtmanKar!\n\nhttps://t.co/xCRUDS3prq",
+      "link": "https://x.com/ycombinator/status/2061887629130702927",
+      "published": "2026-06-03T03:08:13+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Congrats on the launch, [@Cyan9800](https://x.com/Cyan9800), [@RithikWasHere](https://x.com/RithikWasHere), and [@AtmanKar](https://x.com/AtmanKar)!  \n  \n[ycombinator.com/launches/QdM-r…](https://www.ycombinator.com/launches/QdM-refortifai-atrisa-agents-for-analog-circuit-design)\n\n💬0🔄0❤️0👀152",
+      "tags": [
+        "Y Combinator",
+        "祝贺"
+      ],
+      "score": 30,
+      "summary": "Y Combinator祝贺Atrisia团队发布。",
+      "fetched_at": "2026-06-03T03:41:57.418779+08:00"
+    },
+    {
+      "title": "Frontend Slides now has 20k stars on GitHub 😮 \nIt's insane how many people have already replaced PP...",
+      "link": "https://x.com/zarazhangrui/status/2061889286585405790",
+      "published": "2026-06-03T03:14:48+08:00",
+      "source": "Zara Zhang(@zarazhangrui)",
+      "content": "Frontend Slides now has 20k stars on GitHub 😮   \nIt's insane how many people have already replaced PPTs with HTML decks and never looked back  \n  \nRecently added new features including beautiful templates, publish as webpage/export as PDF, and inline editing\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1MRgrbwAAz5me.jpg)\n\n![Zara Zhang](https://pbs.twimg.com/profile_images/1742369596534067200/Ts-5zSJ6_normal.jpg)\n\nZara Zhang@zarazhangrui\n\nI created a Claude Skill that make beautiful slides on the web. The world hasn't woken up to the fact that code can create much better slides than most PPT tools.  \n  \n- Claude interviews you first about aesthetics, then generate a few directions to \"show not tell\", and you can pick your favorite  \n- Cool transitions and animations  \n- Interactive hover states and cursor effects  \n- Auto-fits on any screen  \n- Supports converting existing PPTX files to web-based slides; preserves original images and brand assets  \n  \nI asked Claude to make a slide show about this skill to showcase what it can do.  \n  \nLink to skill below\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2016336358189789184/vid/avc1/2484x1414/NOit4P6HEUrnVp0P.mp4?tag=21)\n\n[🔗 View on Twitter](https://x.com/zarazhangrui/status/2016337615843434646/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/zarazhangrui/status/2016337615843434646)\n\n💬0🔄0❤️0",
+      "tags": [
+        "Frontend Slides",
+        "GitHub",
+        "工具"
+      ],
+      "score": 50,
+      "summary": "Zara Zhang的Frontend Slides获20k GitHub星。",
+      "fetched_at": "2026-06-03T03:41:57.418826+08:00"
+    },
+    {
+      "title": "Automatic behind the scene routing in user interfaces (instead of model picker) will redistribute va...",
+      "link": "https://x.com/ClementDelangue/status/2061871024627482964",
+      "published": "2026-06-03T02:02:14+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "Automatic behind the scene routing in user interfaces (instead of model picker) will redistribute value capture and usage towards many more models than just frontier ones (especially towards open-source/smaller/cheaper ones). Because it removes the cognitive load for the final user to have to switch models (which is too high leading to defaulting to frontier for all calls with model picker) cc [@antonosika](https://x.com/antonosika)[@bgurley](https://x.com/bgurley)\n\n![Factory](https://pbs.twimg.com/profile_images/1768168785733980160/a4hWTSfN_normal.jpg)\n\nFactory@FactoryAI\n\nIntroducing model routing to Factory.  \n  \nFactory Router picks the right model for every task, automatically.  \n  \nMaintain frontier performance while cutting costs by 25%.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061862679506219008/vid/avc1/1280x720/NWp79X4cpMWf6fSV.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/FactoryAI/status/2061862733126275549/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/FactoryAI/status/2061862733126275549)\n\n💬2🔄7❤️41👀2733📊6",
+      "tags": [
+        "模型路由",
+        "Hugging Face",
+        "观点"
+      ],
+      "score": 70,
+      "summary": "Clement Delangue评论界面自动路由可降低认知负荷。",
+      "fetched_at": "2026-06-03T03:41:57.418874+08:00"
+    },
+    {
+      "title": "读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架。\n\n框架会围绕一个共享的结构化规格文档 S。\n\n① 设计者 D：根据 S 生成可执行的视觉方案\n② 执行者 E：...",
+      "link": "https://x.com/vista8/status/2061881016344772999",
+      "published": "2026-06-03T02:41:56+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "读了今天Huggingface最热论文，关于如何让AI生成论文图表的Harness框架。  \n  \n框架会围绕一个共享的结构化规格文档 S。  \n  \n① 设计者 D：根据 S 生成可执行的视觉方案  \n② 执行者 E：将方案渲染成图像（或代码）  \n③ 验证者 V：输出带有具体问题定位的诊断报告  \n④ 修订者 R：将诊断转化为结构化操作，直接修改 S 中的对应字段  \n  \n参考并简化，写了一个Skill：  \n  \n设计者（生图提示词）  \n执行者（Codex调用GPT-image-2生图）  \n验收者（审美评判，这个可能不靠谱）  \n  \n另外整合了抓取Skill，只需要提供URL就能生成配图，哪怕是 X URL。  \n  \n生成效果如下：\n\n![Tweet Image](https://pbs.twimg.com/media/HJ1Fj1-aUAAkWCg.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ1Fm0SbEAABhTn.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ1Fq12aEAA4f_j.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ1F0jKbYAAuFij.jpg)\n\n💬4🔄0❤️3👀239📊4",
+      "tags": [
+        "论文",
+        "Harness框架",
+        "AI图表"
+      ],
+      "score": 60,
+      "summary": "开发者阅读论文后实现AI生成图表框架。",
+      "fetched_at": "2026-06-03T03:41:57.418942+08:00"
+    },
+    {
+      "title": "https://t.co/pY8XTAjl4k",
+      "link": "https://x.com/vista8/status/2061877707173171433",
+      "published": "2026-06-03T02:28:47+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "[x.com/i/article/2061…](http://x.com/i/article/2061873460926943233)\n\n💬4🔄1❤️2👀470📊5",
+      "tags": [
+        "转发",
+        "文章"
+      ],
+      "score": 30,
+      "summary": "转发一篇文章。",
+      "fetched_at": "2026-06-03T03:41:57.418998+08:00"
+    },
+    {
+      "title": "我去，一句话建网站啊，还能分享给别人查看。\n\n企业版，注意必须企业版更新Codex后， @ site 使用。\n\nCodex这次更新有点强！\n\nAnthropic 只是Design，OpenAI更进一步...",
+      "link": "https://x.com/vista8/status/2061875079630496169",
+      "published": "2026-06-03T02:18:21+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "我去，一句话建网站啊，还能分享给别人查看。  \n  \n企业版，注意必须企业版更新Codex后， @ site 使用。  \n  \nCodex这次更新有点强！  \n  \nAnthropic 只是Design，OpenAI更进一步，包设计，还包网站生成。\n\n![OpenAI](https://pbs.twimg.com/profile_images/1885410181409820672/ztsaR0JW_normal.jpg)\n\nOpenAI@OpenAI\n\nBuilding apps has never been easier.  \n  \nWith Sites, Codex can turn your work, ideas, and plans into an interactive website or app your team can explore, use, and share with a URL.  \n  \nRolling out to Business and Enterprise plans, before expanding more broadly.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061840534667497472/vid/avc1/3840x2160/ScgF4IfUoqq7Cp2v.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/OpenAI/status/2061845949170045346/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/OpenAI/status/2061845949170045346)\n\n💬5🔄0❤️4👀767📊4",
+      "tags": [
+        "Codex",
+        "Sites",
+        "评论"
+      ],
+      "score": 50,
+      "summary": "开发者评论OpenAI Codex Sites功能。",
+      "fetched_at": "2026-06-03T03:41:57.419048+08:00"
+    },
+    {
+      "title": "https://t.co/CmJDnbzZc1",
+      "link": "https://x.com/vista8/status/2061869420905898360",
+      "published": "2026-06-03T01:55:52+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "[x.com/i/article/2061…](http://x.com/i/article/2061869220716019712)\n\n💬5🔄0❤️6👀751📊6",
+      "tags": [
+        "转发",
+        "文章"
+      ],
+      "score": 30,
+      "summary": "转发其他人文章。",
+      "fetched_at": "2026-06-03T03:41:57.419097+08:00"
+    }
+  ]
+}
