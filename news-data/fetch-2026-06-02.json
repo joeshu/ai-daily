@@ -1254,6 +1254,341 @@
       "score": 78,
       "summary": "Google发布Workspace CLI，支持超100项技能，可被人类和AI Agent使用。",
       "fetched_at": "2026-06-02T16:29:19.025551+08:00"
+    },
+    {
+      "title": "YC 如何进行 AI-Native 组织改造：Agent 能力要向所有人开放",
+      "link": "https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524469&idx=1&sn=18c08cb79e431d64b2ce7eaf491853d1",
+      "published": "2026-06-02T20:33:00+08:00",
+      "source": "Founder Park",
+      "content": "Founder Park 2026-06-02 20:33 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9eb97a14&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FUrL1kkHON7K8bKjIMxvGvXpzj9WW0vOA1BMoWFbkOiaSoxLcG2nDqdXsX2duMribt51DbCEiaibTamq73FXsmibOXbbvol1Zs5zFRzatHmP950Po%2F0%3Fwx_fmt%3Djpeg)\n\n真正的 AI-Native，不只是拿 AI 当 Copilot 用这么简单。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=afb82adb&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FqpAK9iaV2O3sAVsSPfCN9UX44XiaoicbUJIrOGuaujdMNY6iaQewDZEX1GY3tcVk3QGeKJyUMMHBSMALvO8B7DZwsA%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg)\n\nYC 一直走在 AI-Native 组织改造的前沿。\n\n过去一年多，YC 的合伙人、Optimizely 创始人 Pete Koomen 在内部主导搭建了一套覆盖全员的 Agent 系统。\n\n在一年时间里，演化成了 350+ 工具的内部注册表、一个全员可见的 Agent 对话系统，甚至每晚还会自动阅读当天所有对话、改进自身技能。在某些具体能力上，已经超过了任何一位合伙人单独的水平。\n\nPete 在最近的一期播客中，详细拆解了这套系统的构建经验、关键设计决策。除此之外，他也聊了很多关于如何构建好一个 AI Native 组织的心得。\n\n在搭这套系统的过程中，Pete 形成了一个更大的判断：\n\n真正的 AI-Native 组织和「把 AI 当 Copilot 用」的组织有本质差异。Copilot 是 2023–2024 年的做法，AI 辅助你完成具体任务，流程、决策、知识沉淀仍然在人的头脑里。真正的 AI-Native 做法是把 AI 作为整个组织运转的建设层，并且系统性地记录所有 artifacts，包括会议录音、Agent 对话记录、决策文档，让这些成为 Agent 可以学习、检索、利用的原材料。\n\n同时，它还需要两个前提：**Trust by default（默认信任）** 和 **Egalitarian（平等主义）**。AI 能力必须向每个人开放，所有 Agent 对话默认对全员可见。这与大多数 command and control 式的企业是相反的，但只有这样，Agent 才能拿到足够广的上下文。\n\n以下是对谈精华，在不改变原意的前提下，Founder Park 进行了编辑。\n\n⬆️关注 Founder Park，最及时最干货的创业分享\n\n---\n\nFounder Park 正在持续寻找值得被看见的 AI 团队与项目。\n\n我们将通过「AI 产品市集」、内容报道、社群分发等方式，帮你触达早期用户、获得真实反馈，以及建立关键连接。\n\n如果你正在做 AI 相关的事，欢迎和我们聊聊。 \n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b48d84d1&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FUrL1kkHON7KtwJvXZC7PKR2vfA8algP47mrNiaVxibSsiaAnqSiaEkZ7sTPEoMfANkcfrug4QCVG0icmRIQqBVPvytreVe5VoPcWAFIjqxxSlHkE%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n---\n\n## **01**\n\n## ****从给财务搭建 Agent 开始，****\n\n## ****一开始就放开权限****\n\n**Gary：YC 这两三年一直在****投资****AI 公司，但很多人不知道，YC 内部也在用同样的东西来改造自己的组织。Pete 一直在主导这件事。从头说起吧，是什么契机让你开始做这个？**\n\n**Pete：**大概一年多前，我和几个工程师在跟财务团队合作，讨论要给他们建什么工具，记账分录（journal entries）、记录融资轮次（priced rounds），这些让 YC 运转的日常流程。\n\n我同时看到两件事在发生。一方面，我们有个传统循环：财务团队向工程师描述复杂的工作流，工程师把它翻译成确定性软件，交回去，如此反复。这感觉极其低效。另一方面，这正好是 agentic coding 工具起来的时候，Windsurf、Cursor 已经很成熟，Claude Code 也差不多那时候推出。我在自己的机器上用这些工具，感觉像开了挂。然后回头看公司内部还在用老方法，这个鸿沟越来越大。\n\n所以原始的想法就是：为什么不直接给财务团队构建能运行 Agent 的工具？让他们用英语提示词来表达工作流，而不是让工程师去写 Ruby 代码。\n\n这个想法成为了整个 YC AI 基础设施建设的原始动力。Pete 与工程师 Jared 等人开始着手构建 YC 自己的 Agent harness，最初仅仅是一个针对财务场景的专用系统，但很快演变为一个通用的 Agent 基础设施层。\n\n**Gary：**但最早其实不是编程 Agent，是 LLM 写 SQL 查询。我记得第一个版本就是这个，效果好到我很惊讶，非技术的人居然能直接提问。\n\n**Pete：**对。我们搭了一个简单的 Agent 循环加工具注册表，第一个真正的 unlock 是 Jared 建的工具，给 Agent 执行只读 SQL 查询的能力。其实是两个工具：一个是查数据库，另一个是读模型文件（model files）。\n\n**Gary：**Jared 说他觉得自己在「违规」。\n\n**Pete：**确实。一开始我们的策略是给 Agent 非常有限的、范围严格的工具集。Jared 一直觉得不够强大，做不了他想做的事。然后有一天晚上他偷偷推了一个 PR：直接给 Agent 开放了整个生产数据库的完整只读权限。\n\n**Gary：**然后它就起效了。\n\n**Pete：**效果惊人。这其实预示了后来 OpenClaw 的经验，真正阻碍这些工具发挥威力的，不是技术能力，而是我们对安全和隐私的过度担忧。当你把担忧放下一点，你会发现这些东西强大得不可思议。\n\n这就是那种工作与生活之间诡异的割裂，**在家里用 Claude Code 或 OpenClaw 什么都能做，到了公司就被塞进一个狭窄的框里。我们一直在试图缩小这个差距。**\n\n## **02**\n\n## ****成本下降带来的不是需求减少，****\n\n## ****而是需求爆发****\n\n**Gary：为什么一个 SQL 查询工具能产生这么大的效果？听起来很简单。**\n\n**Pete：**因为 **YC 有一个特殊优势，所有自研软件都跑在同一个 Postgres 数据库上。**公司表、创始人表、财务交易表、内部 CRM 笔记，全在一个地方。别的公司把这些功能外包给各种第三方 SaaS，我们全是自己建的。\n\n我现在可以问 Agent：「给我看过去四个 batch 里投了太空相关公司的所有投资人。」当所有上下文在一个地方，再加上一点 schema 说明，Agent 就能回答关于我们业务的任何问题。\n\n**Gary：**最酷的不是让回答问题变容易了，是我们开始问以前根本不会问的问题。以前用 BI 工具，问一个这样的问题要好几小时写 SQL，所以除非特别重要你根本不会去问。如果需要去敲数据科学团队的门、排他们的工作队列，你问的问题就会少得多。\n\n**Pete：**完全正确。这是杰文斯悖论的又一个实例，当你把团队间的来回沟通成本降为零，提问的数量和复杂度都会爆炸。杰文斯悖论说的是：当某种资源的使用效率提高时，人们反而会消耗更多这种资源。对 YC 来说，SQL 查询的门槛降低之后，不仅已有问题变得更容易回答，更重要的是人们开始提出以前根本不敢提的问题。成本下降带来的不是需求减少，而是需求爆发。\n\n现在外面看这个的人，大部分还活在那个老世界里。2026 年了还是这样，有点不可思议。但也意味着前面还有很长的路可以走，这让人兴奋。\n\n**Gary：如果你的公司不像 YC 这样有统一数据库，怎么办？**\n\n**Pete：**我觉得正在发生的事情跟当年 Google 做 BigTable 类似，从 schema + join 变成一张针对检索优化的大宽表。你需要把数据反规范化（denormalize），放到一个针对 Agent 理解和检索优化的格式里。\n\n**Gary：**这正是我用 Gbrain（Gary 自己开发的一套 agent）做的事。我把来自多个系统的数据整合进去，内置了 RAG、Graph RAG、RRF 混合重排序……所有关于检索的经验现在都在为 Agent 服务。当你给 Agent 一个灵魂，给它数据，让它知道你是谁、你关心什么，它就获得了疯狂的翅膀。它能看到你看不到的角落，你问一个问题它甚至会重新解读你的意图，给你一个坦率说需要一个非常了解你的人才能给出的答案。\n\n你可以用 MCP 包一层，但老实说我直觉上觉得，这些模型用 MCP 和 CLI 都很强，但用 CLI 似乎更强一点。总之核心是：你得做反规范化，把它放到一个专门为 Agent 优化的格式里。\n\n## **03**\n\n## ****上下文放在一个地方，****\n\n## ****要有工具注册表****\n\n**Gary：YC 的 Agent 系统的架构是什么样的？**\n\n**Pete：**核心架构极其简单：一个 Agent 循环（agent loop）、一个工具注册表（tool registry）、一个模型路由器（model router）。其中，工具注册表是最核心的组件，它会把 YC 各团队构建的业务工具集中管理，将 Agent 的通用能力与 YC 的具体业务逻辑连接起来。\n\n**Gary：聊聊工具注册表。如果你在任何其他组织，会最优先建什么？**\n\n**Pete：**两件事：第一是把所有重要上下文放到一个地方，第二就是内部工具注册表（tool registry）。\n\n工具注册表是让 Agent 在工作中真正有用的东西。一开始我们只有大约 20 个工具。但每次遇到一个可以用 Agent 改善的工作场景，就加一个工具。现在已经超过 350 个了，我刚查过。每个团队都在加自己的工具。\n\n我可以管理我的 office hours，财务团队可以记账入账，活动团队可以管理 events，所有 YC 重要的工作都有对应工具。这些工具不仅在我们内部 Agent 系统里可用，也可以在每个人自己机器上跑的 Claude Code 里用。\n\n工具注册表本质上是一个 Resolver（解析器），它告诉 Agent「我能做什么」。Agent 接到任务后，先查 Resolver 决定调用哪个工具，再去执行。\n\n**Gary：在工具之上还有一层 Skills**。这部分我来说说我的经验，因为在 OpenClaw 里走了同样的路。\n\n如果说工具（tools）是具体的操作接口，那么技能（skills）是对工具的更高层封装，一种可复用的、有明确语义的能力单元。我有一个叫 Skillify 的元技能（meta skill），做完某件新事、觉得结果不错，就说「skillify it」，Agent 就会把操作封装成可复用技能，注册到 Resolver 里，以后像调方法一样随时调用。Hermes Agent 也有类似的东西，他们叫别的名字，但本质一样。\n\n但最重要的不是 Skillify 本身，是之后一步：我有个叫 check resolvable 的元技能，每次 Skillify 之后都会调用，让 Agent 检查所有现有技能，评估新技能是否与已有技能重复，并建议如何整合。它检查两件事，DRY（Don't Repeat Yourself）：有 10 个做同一件事的技能是坏的，有一个带参数的技能是好的。MECE（Mutually Exclusive，Collectively Exhaustive）：说出来有点丢人，这是麦肯锡做 slide deck 的术语，但模型天然理解这些概念。如果你有一个 DRY + MECE 的 Resolver 表，那就是最优解。\n\n**Pete：**这些概念在各种 Agent harness 里被反复独立发现，Claude Code 有 skill registry，我们有 tool registry，OpenClaw 有 resolver。感觉就像 Unix 早期发现栈和堆一样，我们正在定义 Agentic 系统的基础原语。你在各种不同的地方，可能是 Claude Code、可能是我们自己的 harness、可能是 OpenClaw、可能是 Hermes，这些东西就是一遍又一遍地出现。\n\n## **04**\n\n## ****Dream Cycle，****\n\n## ****Agent 每晚都在自我进化****\n\n**Gary：你们也在做自动化的技能自我改进循环了？这是 OpenClaw 的 Dream Cycle，也是 Karpathy 的 auto-research，Codex 现在也加了 SLG（Self-Learning Goal）。到处在独立出现。**\n\n**Pete：**对。我们有一个通用 Agent，每天晚上会自动读取所有员工当天的 Agent 对话，寻找它本可以做得更好的地方，寻找如果提前知道就能更高效的上下文信息。运作逻辑是：白天员工使用 Agent 完成工作、产生大量对话记录；夜间 Dream Cycle Agent 读取这些记录、识别技能不足之处；次日相关技能的提示词被自动优化，系统整体能力提升。\n\n我来举一个具体例子。我们有一个共享技能叫「两句话描述」（Two-Sentence Description），帮创始人把公司用两句话说清楚。\n\n**Gary：**得解释一下这是什么，两句话描述是用简洁的自然语言说清楚公司做什么、为什么值得关注？听起来容易但出人意料地难。连最有经验的创始人都会忘记，因为他们有完美的上下文。而且奇怪的是，几乎没有人主动去做这件事。\n\n其实 YC 本身就是一个 context engineering 的过程，我们一直在教人：你脑子里有完美的上下文，但好的沟通是在别人脑中复制同样的上下文。第一句，我能不能知道这到底是什么东西？如果我都不知道它是什么，连问题都问不出来，那我大概就在想什么时候吃午饭了。第二句，它为什么值得我注意？如果同一个房间里有五家公司做类似的事，而你没让我理解你为什么不同。\n\n**Pete：**两句话描述是一种简单的原子能力，每个 YC 合伙人都反复练习过无数次的东西。Tom（YC 一位合伙人）最初手写了一个提示词教 Agent 怎么做。后来发生了件很酷的事，其他几位合伙人在一次 group office hours 上让 Spring Batch 的创始人当场练习两句话描述，给即时反馈。合伙人脑子里关于「怎么做好这件事」的隐性知识，在那次会议的来回交流中被显性化了，现在活在了那段会议转录的上下文里。\n\n我们把会议转录交给 Agent，说：根据你从这里学到的，改进两句话描述技能。改进后效果肉眼可见地更好。这个技能现在比我们任何一个人单独做都要好。\n\n**Gary：**这就是超级智能在组织内部诞生的方式。听起来是个小事，但你把任何组织的运营拆开看，就是无数个这样的「原子操作」。\n\nJack Dorsey 在 Block 做的事情其实也是同一个逻辑，他试图把 Block 变成一个围绕「帮全世界的人互相支付」的小型 AGI。而我们刚才走过的就是这个微观机制：有人写了一个提示词，更多人使用它，使用过程产生了大量 artifacts，这些 artifacts 被用来 metaprompt、在每日 Dream Cycle 中自动改进这个技能，最终这个技能超越了任何单个人的能力。你把组织里做的每一件事都这样处理，你就有了一个超级组织。不是理论，现在每个人都可以做到。\n\n## **05**\n\n## ****所有 Agent 对话对 YC 全职员工可见****\n\n**Pete：**真正的 AI-Native 组织与「把 AI 当 copilot 用」的组织之间存在本质差异。Copilot 是 2023-2024 年的做法：AI 辅助你完成某项具体任务，但流程、决策、知识沉淀仍然在人的头脑中。**真正的 AI-Native 做法是把 AI 作为整个组织运转的建设层（building layer），并且系统性地记录所有 artifacts**，包括会议录音、Agent 对话记录、决策文档，让这些成为 Agent 可以学习、检索、利用的原材料。\n\n**Gary：**有一个微妙但重要的设计决策是，默认情况下，**所有 Agent 对话对 YC 全职员工可见。**\n\n**Pete：**对。每个 Agent 对话自动广播到一个内部 Slack 频道，任何人能加入查看。说实话这个决定不是轻松做出来的。我们讨论了很多，「那所有人都能看到所有东西，这样可以吗？」\n\n**Gary：**最终我很高兴我们选择了开放。\n\n**Pete：**这个透明度同时解决了好几个问题。第一，知识传播，任何人都能观察别人的用法来学习。我记得你开始大量使用时，你的用法非常有创意，很多人看了之后说「哇，我没想到还能这么用」。\n\n第二，它让你可以在内部安全上更宽松。这些 Agent 在拥有广泛上下文访问权限时最强大，但这跟大多数组织的做法相反。通过默认公开广播，你建立了一种社会性控制。人们知道自己的操作是可见的，在高信任环境里这足以保护私密信息，不需要严格的技术访问控制。\n\n第三，降低新员工门槛。以前新人可能需要六个月上手。现在他们可以通过阅读他人的对话记录快速了解 YC 的工作方式，不是靠占用资深合伙人的时间，而是通过 AI 自动完成的「学徒制」。你刚来不好意思问的蠢问题，问 Agent 毫无心理压力。我自己用编程 Agent 的第一个感受就是：那些我不好意思问人的蠢问题，问 Agent 完全没有心理负担。在组织层面同样如此，更多问题被问出来，人们上手速度快得多。\n\n**Gary：**这就是 shared organizational brain，是我们能做到的最接近「连接彼此大脑」的东西。如果你把它定位为「**让组织中每个人都能借助同事的集体技能和直觉来提升自己**」，它的价值就变得极为清晰。\n\n我记得 Anthropic CEO Dario 的那篇文章提到，AI 进步的很多阻碍不是技术性的，而是社会文化性的。两年前录会议还让人觉得奇怪、侵入性的，现在基本默认所有会议都在录了。这不是技术问题，是社会文化的变迁。当所有的会议、对话、工作过程都被记录下来，这些记录就成了 Agent 可以学习的原材料。\n\n**Gary：**这揭示了超级智能组织必须具备的两个文化特质。我本来不会猜到它们是必要条件，但现在确信了。\n\n**第一，Egalitarian（平等主义），**AI 能力必须向组织中每个人开放，不只是领导层。如果只有高层才能访问这些工具，组织就无法实现真正的智能化。\n\n**第二，Trust by default（默认信任），**你必须愿意向员工开放上下文和数据，而不是将信息锁定在权限层级中。\n\n这两者都不是大多数组织的默认状态。大多数企业是 command and control，信息按需分配，这与 AI Agent 需要广泛上下文才能发挥最大价值的特性根本矛盾。\n\n**Pete：**这种环境在创业公司里最容易实现，小团队、目标一致、高度信任。另外你得愿意花钱，$10,000 到 $100,000 一年在 token 上。\n\n**Gary：**但如果你投入了、建好技能体系、以开放方式跟团队协作，你基本上在活在 2028 年。现在花 $100K 做的事，两年后只要 $10K，再一年后只要几百块。届时所有人都这样做，我们会说「这就是公司现在的样子」。所以现在有一个一次性的时间跳跃窗口，你可以跳过所有现存的巨头、所有 Fortune 500、所有已有的创业公司。\n\n我在想 90 年代公司开始给员工买电脑时是不是有类似感觉，那些电脑很贵、不稳定，但先买的公司获得了对手无法比拟的优势。\n\n**Pete：**更准确说法是它抬高了底线。每个人都变强了，特别是新人，他们通过这套系统自动获得了以前需要半年才能积累的上下文。不是替代人，是让每个人都更强。这也是为什么你应该现在创业，因为大量老组织里的掌权者掌握资源和资本，但不相信这些。他们把上下文锁死，觉得不安全。\n\n## **06**\n\n## ****未来******应该是 Agent 包裹着确定性工具**\n\n**Gary：你之前写了那篇很火的文章 Horseless Carriages。核心观点是什么？**\n\n**Pete：**那是对大量 AI 软件设计方式的批评。说实话，我觉得现在大部分还是那样，没变。\n\n我看到的模式是：公司在原有软件的某个角落嵌入一小块 AI，但整体仍然是大量确定性代码包着。我用的例子是 Gmail 的 AI 写邮件功能。核心问题是：AI 的 prompt context 和工作逻辑被开发者锁死在后台，用户无法访问、修改、自定义。**经典的「开发者决定一切，保护用户免受复杂性」思维，本质上是把 AI 的控制权集中在开发者手中，而不是交给用户。**\n\n\\*「Horseless Carriages」这个比喻来自汽车发明初期，早期的汽车在外形上模仿马车，只是把马换成了发动机，而没有根据新技术的特性重新设计交通工具。Pete 用同样的逻辑审视今天的 AI 软件，认为大多数仍然是「在确定性软件里嵌一小块 AI」，本质上还是马车。\n\n**Gary：**Safetyism，我讨厌这个。\n\n**Pete：**你再看我在本地用 coding agent 的体验，什么都能做，有超能力。**当 AI 越来越成熟，正确方向是 Agent 包裹确定性工具（agent wrapping deterministic tools）**，而不是确定性软件包裹 AI。AI 最大的潜力在于将软件的控制权从开发者转移到用户手中。我们在内部也在尽力朝这个方向暴露能力给员工，但还有很长的路要走。\n\n**Gary：**Chat 作为界面也是这个逻辑。我以前觉得 Chat 不是 AI 的最终 UI，改主意了。反思之后，Chat 最接近人类语言，人类语言最接近思维的表达。你不能把它塞进框里，那限制我们太多。Chat 是清晰智能的最近跳板。而且 Chat 是多模态的，文字、语音、图片、文件都行。你越来越信任 Agent，不需要复杂 UI 审查每一步。\n\n**Pete：**偶尔你确实需要某个特定视图，Agent 可以当场生成一个针对当前需求的单页 JavaScript 应用，用完即弃，这个技能文件可以随时再调用。这就是 just-in-time software（即时软件）。\n\n**Gary：**我有切身体验。一月到二月我用 Rails 写了约五十万行代码，Gary's List，包括深度研究、语音提取、事实核查整套 agentic 框架。但这是 2013 年的建法，上次我写代码就是 web 2.0 时代。Claude Code 让你可以这样做，但你不必这样做。过去三天我用 Gbrain 重写了同样的能力，大概一万行 TypeScript 加两千行 Markdown。更重要的是它是动态的：我的主编可以用自然语言修改规则，我根本不用碰代码。那五十万行 Rails 僵化、改起来慢十倍。这就是 just-in-time software 的真实体现。\n\n**Pete：最好的 AI 软件往往是最小的，只在模型能力之上加最少量的预写代码，让模型做最多的工作。**我最喜欢的例子是 Pi，一个极简的开源 Agent harness。代码量极小，但你可以用 Pi 修改和扩展 Pi 自身，这种「自我扩展」的软件形态很迷人。我怀疑未来越来越多商业软件会以这种形式出现，一个极小的起点，加上 Agent 按需扩展。\n\n**Gary：**Claude Code 也是。每次 Boris 来 YC 分享，最让我印象深的就是他对简洁的执念，让产品尽可能地小。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=4d20eb42&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FUrL1kkHON7Kcz8Or5brWBwzqAYIlYKibyEbpPpNkVwSABfH4YXdCWaLlDdicEyZicYTMbVsPqiatsWtgyIlVsfbemF4pOsJA6npibOGqoicSNSRo8%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1%23imgIndex%3D3)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=cf55c525&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FqpAK9iaV2O3u2fI9s28mn09TnD4aChWibVHIyyBzPC2GibicVQ57QYiaEw6yibwy9zhkB7aFajGpNtBru6icEFuibRKXwA%2F640%3Fwx_fmt%3Dother%26wxfrom%3D5%26wx_lazy%3D1%26tp%3Dwebp%23imgIndex%3D3)\n\n**更多阅读**\n\n****[美团领投、变量资本跟投，Mindverse总融资5000万美元，打造持续学习的Agent模型](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524461&idx=1&sn=0d7022d4eb2e63f3a97ae2541131e2ea&scene=21#wechat_redirect)\n\n[Cursor Composer 2.5 拆解：最强大的 RL 环境，就是你自己的产品](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524420&idx=1&sn=98cc073826e9b49bc7e4fe5788f22d80&scene=21#wechat_redirect)\n\n# [拆解 Anthropic：最好的 AI 公司，可能也是一种组织发明](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524328&idx=1&sn=97ebe18816f4b1af83e2b56c4f21171a&scene=21#wechat_redirect)\n\n# [AGI Playground 2026，欢迎来新加坡！](https://mp.weixin.qq.com/s?__biz=Mzg5NTc0MjgwMw==&mid=2247524316&idx=1&sn=4974ce701988a7dfa630ed34dcabfebc&scene=21#wechat_redirect)****\n\n转载原创文章请添加微信：founderparker\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=83a67cc1&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzg5NTc0MjgwMw%3D%3D%26mid%3D2247524469%26idx%3D1%26sn%3D18c08cb79e431d64b2ce7eaf491853d1)",
+      "tags": [
+        "YC",
+        "Agent",
+        "AI组织"
+      ],
+      "score": 85,
+      "summary": "YC合伙人分享内部Agent系统，强调全员开放Agent能力。",
+      "fetched_at": "2026-06-02T22:02:15.227219+08:00"
+    },
+    {
+      "title": "Top Agentic Frameworks for Building Applications 2026",
+      "link": "https://blog.jetbrains.com/pycharm/2026/06/top-agentic-frameworks-for-building-applications-2026/",
+      "published": "2026-06-02T20:12:37+08:00",
+      "source": "The JetBrains Blog",
+      "content": "In 2026, the world of AI is changing at a serious pace. The days of AI systems dealing solely in single-prompt interactions are coming to an end. Instead, these models are evolving into [agentic systems](https://www.jetbrains.com/pycharm/data-science/) – long-running, goal-driven software enabled by agentic frameworks that are becoming a critical layer in modern application architecture.\n\nThis rapid shift means that Python developers building autonomous systems are increasingly relying on agentic frameworks to manage reasoning, memory, tools, and collaboration among multiple agents.\n\nYou’ve probably already heard of some of the most popular frameworks. LangChain and AutoGen have risen to prominence, but there are dozens more, many of them open-source and only one to two years old. With so many frameworks promising different agentic capabilities, the real challenge is knowing which ones are best suited for the kind of application you want to build.\n\nLet’s take a closer look at some of the most important agentic frameworks on the market in 2026, comparing what each does best and rating them based on our key comparison criteria to help you discover which is best for your projects.\n\n## What are AI agents?\n\nAn [AI agent](https://www.jetbrains.com/pycharm/features/ai/) is a piece of software capable of autonomously reasoning, setting goals, and performing tasks on behalf of a user or another system. As the name suggests, AI agents have a level of agency to learn, adapt, and make decisions independently. This means they can improve their behavior and, over time, choose their own actions to achieve specific goals or outcomes.\n\nAI agents work by following a perceive, reason, act, reflect (PRAR) cycle, which allows them to:\n\n* **Perceive:** Observe the environment, including user input, system state, tools, and memory, to understand the current context and constraints of the task.\n* **Reason:** Plan, make decisions, and select actions using a large language model (LLM) or hybrid logic.\n* **Act:** Execute actions like calling tools, updating memory, or triggering workflows.\n* **Reflect:** Evaluate the outcome of previous actions and adjust future decisions, plans, or prompts to improve results.\n\nAI agents rely on the natural language processing capabilities of large language models, but unlike traditional LLMs and AI chatbots, they don’t require continuous user input to perform tasks. Agents are proactive, working autonomously to achieve a goal based on a specified set of rules and parameters.\n\n## What is an agentic framework?\n\nAn agentic framework provides the infrastructure needed to [build, run, and control AI agents](https://lp.jetbrains.com/pycharm-for-ai-engineers/) at scale. Most modern frameworks offer three core capabilities:\n\n* **Orchestration:** Controls how agents are sequenced, coordinated, or allowed to collaborate.\n* **Tools:** Define how agents interact with external systems like APIs or databases.\n* **Memory:** Sets out how agents retain and retrieve information across steps or sessions.\n\nWhile it’s possible to build an agent without a framework, they’re vital in ensuring agents are reliable, scalable, and safe.\n\nAgentic frameworks help turn experimental agent builds into maintainable software by facilitating:\n\n* **Multi-agent coordination:** When multiple agents communicate to plan, work together, and specialize in different areas of a task.\n* **Human-in-the-loop (HITL) checkpoints:** Intentional pause points where a human can review what an agent is about to do.\n* **Observability, control, and reproducibility:** The ability to see what an agent is doing, guide agent behavior, or re-run an agent and receive the same results.\n\n## Core orchestration paradigms\n\nBefore comparing individual frameworks, it’s important to understand how they operate. Let’s look at the three most commonly used orchestration models in 2026.\n\n### Graph-based orchestration\n\nGraph-based orchestration provides maximum control by organizing agents and tools as nodes in a directed graph. Instead of letting an agent freely decide what to do next, the flow that agents are allowed to follow is clearly defined.\n\n#### Strengths\n\n* **More deterministic control:** Predictable behavior is critical for production systems that require reliable results.\n* **Easier debugging:** Pinpoint exactly which node failed thanks to clear checkpoints and boundaries.\n* **Production-grade reliability:** This approach is ideal for customer-facing applications, enterprise systems, or regulated environments.\n\n#### Limitations\n\n* **More upfront design:** The workflow must be defined in advance, which slows initial development.\n* **Less “emergent” behavior:** Agents are constrained by the graph, leaving less room for experimentation and creativity.\n\n### Role-based orchestration\n\nRole-based orchestration is most effective when simplicity is a priority. Agents are assigned specific roles, such as “Planner”, “Researcher”, or “Builder”, and collaborate by sending messages to one another.\n\n#### Strengths\n\n* **Intuitive mental model:** This type of operation is easy to understand because it effectively mirrors how human teams work.\n* **Rapid prototyping:** Minimal setup is required, allowing more time to explore outcomes.\n\n#### Limitations\n\n* **Harder-to-constrain behavior:** Because agents have the freedom to decide what to do next, it’s difficult to enforce strict execution paths.\n* **Limited determinism:** The same input can yield different outcomes, making it tricky to reproduce results and achieve consistency.\n\n### Chain-based orchestration\n\nChain-based orchestration, also known as adaptive orchestration, arguably offers the greatest flexibility. Agents in this model operate in dynamic chains or loops, deciding the next step autonomously.\n\n#### Strengths\n\n* **Flexible workflows:** Agents are not constrained to a pre-defined path and can freely explore different strategies.\n* **Suitability for creative tasks:** This approach is ideal for research, discovery, and experimentation, as agents can iteratively explore ideas, pivot strategies, and adapt their approach.\n\n#### Limitations\n\n* **Less predictability:** Testing and debugging are more challenging because execution paths are harder to reproduce and trace.\n* **More difficult governance at scale:** This unpredictability grows as tasks become more complex.\n\n## Best agentic frameworks for your projects\n\nNow that we’re familiar with the key orchestration paradigms of agentic frameworks, it’s time to compare some of the most popular frameworks on the market in 2026. Below, we evaluate each framework’s performance against our key comparison criteria:\n\n* Primary orchestration model.\n* Multi-agent support.\n* Memory capabilities.\n* Human-in-the-loop (HITL) support.\n* Best-fit applications.\n\n|  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- |\n| **Framework** | **Orchestration model** | **Multi-agent support** | **Memory capabilities** | **HITL support** | **Best used for** |\n| **LangChain** | Chain-based | Partial | Moderate | Limited to moderate | Rapid LLM app development |\n| **LangGraph** | Graph-based | Yes | Strong | Strong | Production-grade agent workflows |\n| **LlamaIndex** | Retrieval-centric | Limited | Strong | Moderate | Knowledge-heavy agents |\n| **Haystack** | Pipeline-based/modular | Moderate | Strong | Moderate | Production RAG and context-heavy AI systems |\n| **AutoGen** | Role-based | Strong | Moderate | Limited | Conversational multi-agent systems |\n| **CrewAI** | Role-based | Strong | Light | Limited | Task-oriented agent teams |\n| **Semantic Kernel** | Planner-based | Moderate | Moderate | Strong | Enterprise AI |\n| **smolagents** | Minimalist | Limited | Light | Minimal | Lightweight experiments |\n| **OpenAI Agents SDK** | Graph-based | Yes | Managed | Strong | Hosted agent applications |\n| **Phidata** | Agent-centric | Limited to moderate | Strong | Moderate | Data and tool-heavy agents |\n\nLet’s take a closer look at the strengths and weaknesses of each framework, along with the applications they’re most suited to.\n\n### LangChain\n\n* **Core design:** Chain-based orchestration.\n* **Philosophy:** Developer velocity and flexibility.\n\nLaunched in 2022, [LangChain](https://www.langchain.com/) is one of the most widely adopted frameworks due to its broad ecosystem of integrations. It serves as an accessible interface for nearly any LLM and is an ideal starting point for enthusiasts or startups looking to explore agentic AI. While not strictly “agent-first”, it provides the building blocks for agentic behavior.\n\nLangChain provides less control than other frameworks, but it’s still a fantastic entry point into agentic systems, especially for projects where speed and creativity take precedence over enforcing strict workflows.\n\n#### Strengths\n\n* Huge ecosystem.\n* Easy tool integration.\n* Rapid prototyping.\n\n#### Limitations\n\n* Less control than graph-based systems.\n* Agent logic that can be difficult to understand as it grows in complexity.\n\n#### Best applications\n\n* Prototyping of agentic features.\n* Tool-augmented chatbots.\n* LLM-powered backend services.\n\nIf you want to go beyond the basics, read our [*LangChain Python Tutorial: A Complete Guide for 2026*](https://blog.jetbrains.com/pycharm/2026/02/langchain-tutorial-2026/). It takes a deeper look at what LangChain offers and walks through real-world use cases for building AI agents in Python.\n\n### LangGraph\n\n* **Core design:** Graph-based orchestration.\n* **Philosophy:** Explicit control over agent behavior.\n\n[LangGraph](https://www.langchain.com/langgraph) has emerged as the leading standard for production-grade agent systems. Built on top of LangChain, it replaces implicit chains with explicit graphs, providing strict control over workflows and excellent HITL support via interrupts.\n\nWhile the graph structure itself can actually make debugging easier by clearly mapping how agents and tools interact, LangGraph does come with a learning curve. Much of this complexity comes from designing the graph and managing explicit state between nodes. Once you understand these concepts, the framework becomes a powerful option for building predictable and controllable agent systems.\n\n#### Strengths\n\n* Deterministic workflows.\n* Native state management.\n* Excellent HITL support via interrupts.\n* Suitability for regulated or mission-critical systems.\n\n#### Limitations\n\n* Higher upfront design effort.\n* Steeper learning curve due to explicit graph and state management.\n* Reduced flexibility for open-ended tasks.\n\n#### Best applications\n\n* Autonomous customer support systems.\n* AI-driven DevOps workflows.\n* Multi-step decision engines.\n\n### LlamaIndex\n\n* **Core design:** Retrieval-centric orchestration.\n* **Philosophy:** Data-first agents.\n\n[LlamaIndex](https://www.llamaindex.ai/) is a Python framework designed to help AI systems understand, store, and retrieve information from large amounts of documents and data.\n\nRather than starting with agents and adding data later, LlamaIndex takes the opposite approach – it starts with data and then builds agent behavior around it. This is why it is often described as data-first or retrieval-centric.\n\nBecause it operates in this way, LlamaIndex excels at indexing, memory, and retrieval, making it ideal for building agents whose intelligence depends on accessing the right information rather than executing complex actions.\n\n#### Strengths\n\n* Advanced document indexing.\n* Strong long-term memory patterns.\n\n#### Limitations\n\n* Limited suitability for complex, action-heavy orchestration.\n* Limited support for multi-agent orchestration.\n\n#### Best applications\n\n* Research assistants.\n* Knowledge base agents.\n* Enterprise document intelligence.\n\n### Haystack\n\n* Core design: Modular pipeline orchestration.\n* Philosophy: Context engineering and production-ready AI systems.\n\n[Haystack](https://haystack.deepset.ai/) is an open-source AI orchestration framework created by deepset for building production-ready AI agents, retrieval-augmented generation (RAG) systems, and multimodal applications.\n\nInstead of focusing purely on agent behavior, Haystack structures applications as explicit pipelines composed of retrievers, routers, memory layers, tools, evaluators, and generators. This modular architecture gives you control over how information flows through a system, allowing each component to be tested and improved independently.\n\nHaystack is particularly strong in applications where the quality of retrieved information determines the quality of the model’s output. Its design also makes it well-suited for enterprise environments that require transparency and reliability in production systems.\n\n#### Strengths\n\n* Highly modular pipeline architecture.\n* Excellent support for RAG and document processing.\n\n* Strong ecosystem, particularly in search and RAG-focused enterprise use cases.\n* Flexible integrations with models and vector databases.\n\n#### Limitations\n\n* More infrastructure and setup than lightweight frameworks.\n* Less focus on emergent multi-agent collaboration.\n\n#### Best applications\n\n* Retrieval-augmented generation (RAG) systems.\n* Enterprise document intelligence.\n* Data-heavy AI applications.\n* Production AI pipelines that require strong context control.\n\n### AutoGen\n\n* **Core design:** Role-based multi-agent collaboration.\n* **Philosophy:** Conversation-driven autonomy.\n\n[AutoGen](https://www.microsoft.com/en-us/research/project/autogen/), an open-source Microsoft framework, popularized the idea of agents collaborating through structured conversation, organizing systems as teams of agents, each with its own specific role. Unlike in other frameworks, there’s no central controller enforcing a strict execution path – the collaboration itself drives progress.\n\nThis approach makes AutoGen ideal for exploratory, creative, and research-driven multi-agent systems, at the cost of predictability, HITL, and strict execution control.\n\n#### Strengths\n\n* Natural multi-agent interaction.\n* Minimal orchestration overhead.\n* Suitability for emergent problem-solving.\n\n#### Limitations\n\n* Limited execution control.\n* Weak HITL support.\n\n#### Best applications\n\n* Coding agents.\n* Brainstorming systems.\n* AI research experiments.\n\n### CrewAI\n\n* **Core design:** Role-based task delegation.\n* **Philosophy:** Teams of specialized agents.\n\n[CrewAI](https://www.crewai.com/) is centered around building simple, structured multi-agent systems. It is similar to AutoGen, modeling AI agents as members of a “crew” where each agent has a clearly defined role. The goal is to make multi-agent systems approachable, even if you are new to agentic AI.\n\nCrewAI prioritizes simplicity and speed over deep memory and production controls, making it easy to learn and a strong option for prototypes and small teams. However, its limited toolset for observability, HITL, and error handling at scale makes it less suited for larger systems.\n\n#### Strengths\n\n* Very approachable API.\n* Clear role separation.\n* Fast setup.\n\n#### Limitations\n\n* Lightweight memory.\n* Limited production controls.\n\n#### Best applications\n\n* Content pipelines.\n* Market research automation.\n* Simple workflow agents.\n\n### Semantic Kernel\n\n* **Core design:** Planner-based orchestration.\n* **Philosophy:** Enterprise-grade AI integration.\n\n[Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/overview/) is another open-source Microsoft framework, designed for building AI-powered applications that integrate with existing enterprise systems.\n\nIt was created with production concerns in mind from the start, emphasizing governance, safety, observability, and human oversight. Rather than maximizing agent autonomy, it focuses on making AI predictable, controllable, and auditable.\n\nBy combining structured workflows with LLM reasoning, it trades flexibility and emergent behavior for trust, safety, and operational reliability.\n\n#### Strengths\n\n* Strong HITL support.\n* Enterprise-friendly architecture.\n* Good observability.\n\n#### Limitations\n\n* Heavier upfront structure.\n* Less flexibility for open-ended autonomy.\n* Steeper learning curve.\n\n#### Best applications\n\n* Internal enterprise tools.\n* AI copilots.\n* Business process automation.\n\n### smolagents\n\n* **Core design:** Minimalist chain-based.\n* **Philosophy:** Simplicity over scale.\n\n[smolagents](https://huggingface.co/docs/smolagents/en/index) is a bare-bones framework designed to make agentic AI as straightforward and transparent as possible. It prioritizes simple, readable code that makes it easy to understand how an agent works without needing to learn a large framework.\n\nsmolagents aims to make agent behavior accessible and easy to experiment with by keeping abstractions minimal and logic transparent. It offers first-class support for code-based and tool-calling agents, broad model and tool compatibility, and lightweight CLI utilities, while intentionally trading large-scale orchestration and production features for simplicity and clarity.\n\n#### Strengths\n\n* Extremely lightweight design.\n* High degree of transparency.\n* Fast experimentation.\n\n#### Limitations\n\n* Limited suitability for scaling\n* Minimal production features.\n\n#### Best applications\n\n* Educational projects.\n* Proofs of concept.\n* Lightweight local agents.\n\n### OpenAI Agents SDK\n\n* **Core design:** Managed workflow-driven orchestration (often graph-based).\n* **Philosophy:** Hosted, production-ready agents.\n\nThanks to ChatGPT’s explosion in popularity, we’ve all heard of OpenAI. The [Agents SDK](https://developers.openai.com/api/docs/guides/agents-sdk/) is the company’s effort to provide a managed platform for building and running agents without having to maintain your own orchestration infrastructure.\n\nRather than assembling agents from scratch, you define agent behavior and workflows, while OpenAI provides orchestration, memory management, monitoring, and safety controls. This makes the Agents SDK particularly attractive for teams that want production-ready agents quickly.\n\n#### Strengths\n\n* Minimal infrastructure burden.\n* Built-in safety and observability.\n* Strong multi-agent support.\n\n#### Limitations\n\n* Reduced customization and control.\n* Limited suitability for experimental research.\n\n#### Best applications\n\n* SaaS agent features.\n* Customer-facing autonomous systems.\n* Teams prioritizing speed over customization.\n\n### Phidata\n\n* **Core design:** Agent-centric, tool-heavy.\n* **Philosophy:** Practical agents for real-world data tasks.\n\n[Phidata](https://docs.phidata.com/introduction) is designed for building practical, tool-driven AI agents that operate on real-world data.\n\nRather than focusing on abstract orchestration patterns, Phidata centers the agent around direct interaction with systems such as APIs, databases, and internal services.\n\nIts design reflects the fact that many agents spend most of their time fetching, transforming, and acting on data.\n\n#### Strengths\n\n* Strong tool integration.\n* Suitability for data-centric workflows.\n\n#### Limitations\n\n* Less emphasis on orchestration.\n* Limited multi-agent capabilities.\n\n#### Best applications\n\n* Data analysis agents.\n* Finance and ops automation.\n* Tool-driven decision systems.\n\n## Choosing the right framework\n\nNow that you’re familiar with many of the most popular frameworks in 2026, it’s time to choose the right one for your project. Let’s take a look at some of the key use cases, along with the frameworks that fit them best.\n\n|  |  |  |\n| --- | --- | --- |\n| **Orchestration model** | **Where to use** | **Recommended frameworks** |\n| Graph-based | Projects involving complex branching logic and requiring high levels of reliability, auditability, and control. | LangGraph, OpenAI Agents SDK |\n| Role-based | Projects involving rapid development and intuitive design that benefit from emergent collaboration between agents. | AutoGen, CrewAI |\n| Chain-based | Projects requiring maximum flexibility, where agents need to adapt dynamically and determine next steps autonomously. | LangChain |\n| Retrieval-based | Projects where deep, reliable access to knowledge matters more than high levels of autonomy. | LlamaIndex, Haystack |\n| Enterprise-oriented | Projects where strong governance and human-in-the-loop processes are non-negotiable requirements. | Semantic Kernel |\n| Lightweight | Rapid prototyping, educational use, and simple local agents where transparency and control matter more than orchestration complexity. | smolagents |\n| Tool-centric | Building production agents that primarily interact with APIs, databases, and external systems rather than complex multi-step orchestration. | Phidata |\n\nIn 2026, agentic frameworks have evolved from experimental tools into foundational infrastructure for many applications. The key decision is no longer whether to use agents, but how much control, autonomy, and governance your systems require.",
+      "tags": [
+        "Agent框架",
+        "技术分析"
+      ],
+      "score": 80,
+      "summary": "JetBrains评述2026年主流Agent框架及比较。",
+      "fetched_at": "2026-06-02T22:02:15.227303+08:00"
+    },
+    {
+      "title": "We’ve signed a first-of-its-kind agreement with Voltus to create a smart capacity solution for the grid.",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/sustainability/voltus-agreement/",
+      "published": "2026-06-02T21:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_voltus_social.max-600x600.format-webp.webp)Google and Voltus signed an agreement to create a smart energy capacity solution for the grid.",
+      "tags": [
+        "能源",
+        "Google",
+        "协议"
+      ],
+      "score": 70,
+      "summary": "Google与Voltus签署智能能源容量协议。",
+      "fetched_at": "2026-06-02T22:02:15.227364+08:00"
+    },
+    {
+      "title": "不是说你辞职了一个人干，就叫一人公司。\n\n很多人的一人公司，说白了就是接点活。\n\n有活就干，没活就慌。\n\n一开始的一人公司，就是个没有底薪的兼职。\n\n但慢慢的，你开始有了产品。不用纯靠时间赚钱了。\n\n再慢慢的，你有了客户，有了渠道，有了粉丝。你搭建了一个可以自运转的系统。\n\n这个系统可能有很多人、很多合作方，但以你一个人为节点。\n\n到这个时候，才真正成为一人公司。\n\n然后你可以选择一直小而美，自由…",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA4NTM2MTQzOA==&mid=2650672862&idx=1&sn=e1be5b7250ef69ed26d8c47def91ccbb",
+      "published": "2026-06-02T20:20:00+08:00",
+      "source": "古典古少侠",
+      "content": "古典古少侠 2026-06-02 20:20 北京\n\n不是说你辞职了一个人干，就叫一人公司。\n\n很多人的一人公司，说白了就是接点活。\n\n有活就干，没活就慌。\n\n一开始的一人公司，就是个没有底薪的兼职。\n\n但慢慢的，你开始有了产品。不用纯靠时间赚钱了。\n\n再慢慢的，你有了客户，有了渠道，有了粉丝。你搭建了一个可以自运转的系统。\n\n这个系统可能有很多人、很多合作方，但以你一个人为节点。\n\n到这个时候，才真正成为一人公司。\n\n然后你可以选择一直小而美，自由逍遥地做下去。\n\n也可以选择拉人、放量，把它做大。\n\n但在你真的有一套自运转的系统之前，一人公司，就是一个没底薪的兼职。\n\n大多数人卡在哪呢？\n\n有经验，但不知道怎么变成一个可以反复卖的东西。\n\n我研究个人发展20年，2016年全网第一个提出超级个体这个概念。我写的《拆掉思维里的墙》，影响超过3000万人。\n\n过去3年，我和团队陪跑了2000多个知识工作者，帮他们走通了从经验到变现的第一步。\n\n现在，我把这套方法浓缩进3天，我亲自直播带练。\n\n3天时间，带走一个属于你的商业系统。\n\n第一天，用AI盘点你的优势，把你一直忽略的值钱经验挖出来。\n\n第二天，用万能产品模型，找到一个有人愿意买单的产品切口。\n\n第三天，我现场演示怎么用AI帮你写文案、做产品，跑通第一个变现闭环。\n\n全程闭门直播，我亲自指导。\n\n只要19块9。一杯奶茶钱。\n\n前50个报名的，再送你一份《高势能朋友圈实操手册》，拿到就能用。\n\n点击链接，我们课上见。\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=8cdeab97&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA4NTM2MTQzOA%3D%3D%26mid%3D2650672862%26idx%3D1%26sn%3De1be5b7250ef69ed26d8c47def91ccbb)",
+      "tags": [
+        "广告",
+        "个人成长"
+      ],
+      "score": 20,
+      "summary": "古典古少侠推广一人公司课程。",
+      "fetched_at": "2026-06-02T22:02:15.227420+08:00"
+    },
+    {
+      "title": "101 不抱怨的世界｜抱怨上瘾的人，早就给自己写好了失败的剧本",
+      "link": "https://www.xiaoyuzhoufm.com/episode/6a1e563cac7bdb080c349e73",
+      "published": "2026-06-02T21:00:00+08:00",
+      "source": "自习室 STUDY ROOM",
+      "content": "![](https://image.xyzcdn.net/FhmHCAzrNsc1kpVzVyWWESZh1JfW.jpeg)\n\n你有没有过这样的时刻：一边吐槽工作，一边又不去改变？嘴上说着“我不行”，心里却希望别人来夸你？和同事一起骂公司，骂完之后更累了？\n\n别急着对号入座，我们不是说你“爱抱怨”，只是在提醒你：抱怨可能换了一张你认不出的脸，悄悄长进了你的日常里。\n\n这期节目，我们想跟你一起聊聊：人为什么宁可抱怨，也不去解决问题？生活中到底藏着多少种“隐形抱怨”？抱怨和建设性批评，本质上差在哪儿？以及，怎么样才能戒掉抱怨？\n\n希望这能帮你撕掉看不见的抱怨面具，陪你从“受害者”慢慢往“建设者”走一走。听完你不会立刻变成圣人，但你至少会知道：下一次想抱怨之前，自己还有别的选择。\n\n## 🌟Highlights（\\*为引用）\n\n* 人不愿意面对自己本可以改变，却一直没有改变的事实。**\\***\n* 抱怨有一种隐蔽的好处，就是让你保住自尊心；但它也有严重的代价，就是你将一事无成。\n* 抱怨会奖励爱抱怨的人。\n* 如果你说一件事“不可能”，你真正想说的是“我不想做”。\n* 善于找借口的人，很少能做好其他事情。\\*\n* 抱怨者看到眼前的烂摊子会问why？而建设者会想象一个未曾出现过的美好景象，然后问why not？\\*\n\n00:03:20 敢不敢停下来问问自己：你是不是那个每天抱怨，但从不改变的人？\n\n00:06:29 人为什么会一直抱怨，却不去解决问题？因为改变意味着承担责任！\n\n00:18:21 你以为自己从不抱怨？比大声抱怨更可怕的，是连你自己都没意识到的“隐形抱怨”。\n\n00:46:55 难道所有的负面想法都不能表达吗？“抱怨”和建设性的批评的本质区别在哪儿？\n\n00:48:58 戒掉抱怨的行动指南——我们到底能做什么？\n\n01:05:44 本期阅读推荐。\n\n## 📕本期阅读推荐\n\n* 1,2,3...Infinity 从一到无穷大 - George Gamow\n* 时间的秩序 - Carlo Rovelli\n\n————————\n\n感谢大家对自习室的关注与喜爱！！\n\n我们的slogan是：进步是最性感的事 ~\n\n来信投稿箱：[www.wjx.cn](https://www.wjx.cn/vm/YdCgJe0.aspx#)\n\n每期对应的学习资料 👇\n\n【视频播客】\n\n[小红书](https://www.xiaohongshu.com/user/profile/5d1d95a4000000001101f486?xhsshare=CopyLink&appuid=5a688e5411be10138ba23592&apptime=1728842186)、[B站](https://space.bilibili.com/3546660682598507?spm_id_from=333.337.0.0)、[YouTube](https://www.youtube.com/@STUDYROOM666)、[微博](https://weibo.com/u/7897647330)、[抖音](https://v.douyin.com/iB764kVB/%204@2.com)\n\n【音频平台】\n\n[苹果播客](https://podcasts.apple.com/cn/podcast/%E8%87%AA%E4%B9%A0%E5%AE%A4-study-room/id1726135306)、[喜马拉](https://xima.tv/1_hQB3as?_sonic=0)、[网易云音乐](http://163cn.tv/x9j1pId)、[Spotify](https://open.spotify.com/show/5LaFVMlI6xBQvTf67HFW2n?si=dC8TwF15T2CDo0iIyFV0UA)、[豆瓣](https://www.douban.com/doubanapp/dispatch?uri=/podcast/36860858/&dt_dapp=1)\n\n【合作】\n\n商务联系 studyroom@fit4life.world",
+      "tags": [
+        "播客",
+        "心理学"
+      ],
+      "score": 10,
+      "summary": "播客讨论抱怨心理学与戒除方法。",
+      "fetched_at": "2026-06-02T22:02:15.227473+08:00"
+    },
+    {
+      "title": "We’re expanding Project Glasswing. We’ve extended access to Claude Mythos Preview to approximately 1...",
+      "link": "https://x.com/AnthropicAI/status/2061796327986454883",
+      "published": "2026-06-02T21:05:25+08:00",
+      "source": "Anthropic(@AnthropicAI)",
+      "content": "We’re expanding Project Glasswing. We’ve extended access to Claude Mythos Preview to approximately 150 additional organizations, based in more than fifteen countries.  \n  \nRead more about this expansion and our future plans for Project Glasswing: [anthropic.com/news/expanding…](https://www.anthropic.com/news/expanding-project-glasswing)\n\n💬89🔄92❤️761👀36800📊163",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "Project Glasswing"
+      ],
+      "score": 92,
+      "summary": "Anthropic将Claude Mythos Preview扩展至150+组织。",
+      "fetched_at": "2026-06-02T22:02:15.227525+08:00"
+    },
+    {
+      "title": "设计挺好看的👇",
+      "link": "https://x.com/dingyi/status/2061788147894390793",
+      "published": "2026-06-02T20:32:55+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "设计挺好看的👇\n\n![大鬼](https://pbs.twimg.com/profile_images/1684784619013713921/LAwB8iHB_normal.jpg)\n\n大鬼@yesLeo\n\n我做了一个“不算卡路里”的饮食记录 App。  \n因为我自己真的被卡路里折腾得放弃过几次。  \n以前每次想认真控制体重，都会从记录卡路里开始。 查热量、估算克数、改数据，纠结估算得准不准，哪家的食物库更全，结果越想精确，越坚持不下去。  \n  \n但我又确实想记录好好吃饭这件事。  \n  \n老婆做的菜，每一顿都想好好留下来。  \n某些吃的很清淡、健康的日子，照片攒在一起看非常有成就感。谁不喜欢哪个认真生活的自己呢。  \n偶尔和朋友聚会，吃了一顿快乐的放纵餐。第二天体重涨了。可看到照片后，反而没那么焦虑了。  \n  \n体重上涨不是“我又失败了”，只是“昨天那顿太快乐了”  \n  \n所以我做了「饭卡卡 Yumgo」。  \n  \n它不是一个算卡路里的 App。  \n你只需要拍照记录每一顿饭，把它变成一张张食物邮票。  \n顺手记下饱腹感、清爽感，就这么简单。  \n  \n里面还有一只叫 Yumgo 的小海鸥。  \n它背着薯条挎包望着远方，它有点馋，也有点嘴碎。不会教你怎么吃，只会在你记录每一顿饭的时候，探头出来插两句话。  \n  \n我想做的，是一种轻一点的饮食记录方式。  \n记录不是为了控制生活，  \n而是用更轻、更温柔的方式，看见自己的饮食、体重和生活。  \n  \n让体重管理不再那么焦虑,  \n也让每一顿普通的饭，都变得值得被记住。  \n  \nbtw：感谢老婆做了那么多好吃的饭菜🥹\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061768311659253760/vid/avc1/1080x1192/hUsefCxNeBzCeDfQ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/yesLeo/status/2061768379682415084/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/yesLeo/status/2061768379682415084)\n\n💬2🔄0❤️7👀729📊2",
+      "tags": [
+        "设计",
+        "App"
+      ],
+      "score": 15,
+      "summary": "用户评价饮食记录App设计好看。",
+      "fetched_at": "2026-06-02T22:02:15.227618+08:00"
+    },
+    {
+      "title": "YouMind 在很多场景下（写文章、配图、做 PPT 等），貌似已经比 Manus 的结果要更好了。同时 YouMind iOS 端的精灵（虾），非常便捷，基本上可以全程陪伴创作者的全流程。\n\n更让...",
+      "link": "https://x.com/lifesinger/status/2061788873894797578",
+      "published": "2026-06-02T20:35:48+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "YouMind 在很多场景下（写文章、配图、做 PPT 等），貌似已经比 Manus 的结果要更好了。同时 YouMind iOS 端的精灵（虾），非常便捷，基本上可以全程陪伴创作者的全流程。  \n  \n更让我觉得不可思议的是，最近没怎么做运营，但流量一直在涨。同时产研团队争论越激烈的时候，用户付费就越积极。搞得我都想组队去参加奇葩说的预选赛了（不知道还在不在，不在的话，也可以参加葬爱咸鱼的新奇葩说）。  \n  \n神奇的经历。如果你不信，可以访问 [youmind.com](http://youmind.com)，付费后，试一下。很抱歉免费版没啥功能，因为免费的总是最贵的。目前还没这个资金去玩转免费试用。\n\n💬1🔄0❤️4👀230📊2",
+      "tags": [
+        "YouMind",
+        "Manus",
+        "对比"
+      ],
+      "score": 65,
+      "summary": "玉伯比较YouMind与Manus，认为YouMind在某些场景更优。",
+      "fetched_at": "2026-06-02T22:02:15.227679+08:00"
+    },
+    {
+      "title": "进入陌生仓库时不想花 15 分钟翻 README、目录树和 manifest 文件，希望一条命令就告诉你这是什么、怎么跑、从哪开始读。\n\nhttps://t.co/dogicsc2D1",
+      "link": "https://x.com/geekbb/status/2061799996626731458",
+      "published": "2026-06-02T21:20:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "进入陌生仓库时不想花 15 分钟翻 README、目录树和 manifest 文件，希望一条命令就告诉你这是什么、怎么跑、从哪开始读。  \n  \n[github.com/mansoor-mamnoo…](https://github.com/mansoor-mamnoon/codeglance)\n\n![Tweet Image](https://pbs.twimg.com/media/HJzukguaoAA_aD5.png)\n\n💬0🔄0❤️0👀354",
+      "tags": [
+        "工具",
+        "代码"
+      ],
+      "score": 50,
+      "summary": "推荐codeglance工具，快速了解陌生仓库。",
+      "fetched_at": "2026-06-02T22:02:15.227733+08:00"
+    },
+    {
+      "title": "https://t.co/PooZOiuPRZ",
+      "link": "https://x.com/thisisgrantlee/status/2061794909955277284",
+      "published": "2026-06-02T20:59:47+08:00",
+      "source": "Grant Lee(@thisisgrantlee)",
+      "content": "[x.com/i/article/2061…](http://x.com/i/article/2061785538726686720)\n\n💬0🔄0❤️0👀69",
+      "tags": [
+        "链接"
+      ],
+      "score": 5,
+      "summary": "无内容，仅链接。",
+      "fetched_at": "2026-06-02T22:02:15.227783+08:00"
+    },
+    {
+      "title": "We have doubled the amount of total storage on @huggingface in the past five months.\n\nAt this rate, ...",
+      "link": "https://x.com/julien_c/status/2061791189221650463",
+      "published": "2026-06-02T20:45:00+08:00",
+      "source": "Julien Chaumond(@julien_c)",
+      "content": "We have doubled the amount of total storage on [@huggingface](https://x.com/huggingface) in the past five months.  \n  \nAt this rate, we will cross 1 Exabyte before the end of the year 🔥\n\n💬9🔄6❤️74👀4354📊19",
+      "tags": [
+        "Huggingface",
+        "存储"
+      ],
+      "score": 75,
+      "summary": "Huggingface存储五个月翻倍，年底前将突破1EB。",
+      "fetched_at": "2026-06-02T22:02:15.227832+08:00"
+    },
+    {
+      "title": "If you want to be successful, you need high standards.\n\nThe quality of your work, the quality of the...",
+      "link": "https://x.com/thejustinwelsh/status/2061796742757052528",
+      "published": "2026-06-02T21:07:04+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "If you want to be successful, you need high standards.  \n  \nThe quality of your work, the quality of the people you hang around, and how you treat your own mind and body.  \n  \nWhatever you decide to tolerate, you'll end up producing. Make sure you set that bar high.\n\n💬41🔄4❤️72👀1910📊43",
+      "tags": [
+        "鸡汤"
+      ],
+      "score": 5,
+      "summary": "成功需要高标准。",
+      "fetched_at": "2026-06-02T22:02:15.227880+08:00"
+    },
+    {
+      "title": "When you're early in your career and life, be a \"yes\" person.\n\nYes, I'll do that work. Yes, I'll mov...",
+      "link": "https://x.com/thejustinwelsh/status/2061780388977008782",
+      "published": "2026-06-02T20:02:05+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "When you're early in your career and life, be a \"yes\" person.  \n  \nYes, I'll do that work. Yes, I'll move there. Yes, I'll take on that responsibility.  \n  \nIt's so easy to leapfrog everyone because the average person wants to do their stuff and go home. Do the opposite, and you'll likely be wealthy and respected.\n\n💬64🔄3❤️89👀2642📊60",
+      "tags": [
+        "鸡汤"
+      ],
+      "score": 5,
+      "summary": "早期要勇于说“是”。",
+      "fetched_at": "2026-06-02T22:02:15.227928+08:00"
+    },
+    {
+      "title": "Get started today: https://t.co/E21mhMoxE4",
+      "link": "https://x.com/LangChain/status/2061795500488016015",
+      "published": "2026-06-02T21:02:08+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Get started today: [langchain.com/langsmith/engi…](https://www.langchain.com/langsmith/engine)\n\n💬0🔄0❤️2👀635📊1",
+      "tags": [
+        "LangChain",
+        "Agent开发"
+      ],
+      "score": 75,
+      "summary": "LangChain推出LangSmith Engine，自动化Agent开发周期。",
+      "fetched_at": "2026-06-02T22:02:15.227976+08:00"
+    },
+    {
+      "title": "The agent development lifecycle has been manual for too long.\n\nWe’re building a future where it runs...",
+      "link": "https://x.com/LangChain/status/2061795499280150694",
+      "published": "2026-06-02T21:02:07+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "The agent development lifecycle has been manual for too long.  \n  \nWe’re building a future where it runs continuously, without manual triggers.  \n  \nWhere well-understood issue types resolve without human review.  \n  \nWhere your harnesses get smarter about your agents over time.  \n  \nLangSmith Engine is just the beginning.\n\n[Your browser does not support the video tag.](https://video.twimg.com/ext_tw_video/2061795415289143296/pu/vid/avc1/1280x720/HF5m5ETrQZLYrWIW.mp4?tag=12)\n\n[🔗 View on Twitter](https://x.com/LangChain/status/2061795499280150694/video/1)\n\n💬5🔄0❤️11👀1025📊6",
+      "tags": [
+        "LangChain",
+        "Agent开发"
+      ],
+      "score": 75,
+      "summary": "LangChain介绍LangSmith Engine实现持续Agent开发。",
+      "fetched_at": "2026-06-02T22:02:15.228024+08:00"
+    },
+    {
+      "title": "k-ID is giving every developer the ability to code with confidence, knowing they have a global legal...",
+      "link": "https://x.com/ManusAI/status/2061780249587671317",
+      "published": "2026-06-02T20:01:32+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "k-ID is giving every developer the ability to code with confidence, knowing they have a global legal team right inside their workspace.  \n  \nKieran didn't build k-ID to be a compliance product. He built it because he looked at his own kid and decided the internet needed to be safer for every child.  \n  \nFull story:  \n[manus.im/blog/k-id-cust…](https://manus.im/blog/k-id-customer-story)\n\n💬0🔄0❤️4👀1330📊1",
+      "tags": [
+        "Manus",
+        "合规"
+      ],
+      "score": 70,
+      "summary": "ManusAI展示k-ID合规引擎集成案例。",
+      "fetched_at": "2026-06-02T22:02:15.228071+08:00"
+    },
+    {
+      "title": "They just launched Neimo, their compliance engine, as a connector inside Manus. 197 countries. 3,000...",
+      "link": "https://x.com/ManusAI/status/2061780236874748210",
+      "published": "2026-06-02T20:01:29+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "They just launched Neimo, their compliance engine, as a connector inside Manus. 197 countries. 3,000+ regulatory sources. Every US state.  \n  \nAny developer can ask \"what are the rules for launching in Australia?\" and get a sourced legal briefing in minutes. Kieran calls it having a lawyer in your pocket.\n\n💬1🔄0❤️2👀1349📊1",
+      "tags": [
+        "Manus",
+        "合规"
+      ],
+      "score": 70,
+      "summary": "ManusAI推出Neimo合规引擎连接器。",
+      "fetched_at": "2026-06-02T22:02:15.228120+08:00"
+    },
+    {
+      "title": "Kieran Donovan is a father, a lawyer, and a founder. He raised over $50 million to make the internet...",
+      "link": "https://x.com/ManusAI/status/2061780167257698337",
+      "published": "2026-06-02T20:01:12+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "Kieran Donovan is a father, a lawyer, and a founder. He raised over $50 million to make the internet a safer place for children.  \n  \nNearly a billion kids play games online. Most platforms verify age with a pop-up that asks \"are you over 13?\" with no way of checking.\n\n![Tweet Image](https://pbs.twimg.com/media/HJzqIdBXgAALK1U.jpg)\n\n💬5🔄3❤️33👀5295📊8",
+      "tags": [
+        "Manus",
+        "创始人故事"
+      ],
+      "score": 70,
+      "summary": "ManusAI分享k-ID创始人Kieran Donovan打造儿童安全互联网的故事。",
+      "fetched_at": "2026-06-02T22:02:15.228167+08:00"
+    },
+    {
+      "title": "Create your own Slides 👉 https://t.co/CIR0iT4g3T",
+      "link": "https://x.com/Skywork_ai/status/2061801854485602799",
+      "published": "2026-06-02T21:27:23+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Create your own Slides 👉[skywork.ai](http://skywork.ai)T\n\n💬0🔄0❤️0👀21",
+      "tags": [
+        "Skywork",
+        "幻灯片"
+      ],
+      "score": 70,
+      "summary": "Skywork支持Nano Banana生成幻灯片编辑。",
+      "fetched_at": "2026-06-02T22:02:15.228214+08:00"
+    },
+    {
+      "title": "Nano Banana generated slides are now fully editable on Skywork!",
+      "link": "https://x.com/Skywork_ai/status/2061801852061319181",
+      "published": "2026-06-02T21:27:22+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Nano Banana generated slides are now fully editable on Skywork!\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061800411074560000/vid/avc1/1920x1080/wtmmolwYqWEHx43P.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Skywork_ai/status/2061801852061319181/video/1)\n\n💬1🔄0❤️1👀30📊1",
+      "tags": [
+        "Skywork",
+        "幻灯片"
+      ],
+      "score": 70,
+      "summary": "Skywork上的Nano Banana幻灯片现已可编辑。",
+      "fetched_at": "2026-06-02T22:02:15.228261+08:00"
+    },
+    {
+      "title": "查了下 AI ，这个 OPC 居然完全是国内提出来的概念，我还以为是舶来词呢，从 个体户 到 超级个体 到 一人公司 再到 OPC，炒的天翻地覆，口号换了一个又一个，课卖了一套又一套，满地都是宏大叙事...",
+      "link": "https://x.com/vikingmute/status/2061797097268203931",
+      "published": "2026-06-02T21:08:28+08:00",
+      "source": "Viking(@vikingmute)",
+      "content": "查了下 AI ，这个 OPC 居然完全是国内提出来的概念，我还以为是舶来词呢，从 个体户 到 超级个体 到 一人公司 再到 OPC，炒的天翻地覆，口号换了一个又一个，课卖了一套又一套，满地都是宏大叙事，各种“我朋友通过几个 Agents 发财了的故事”，这是给中年失业一个完美的称号和安慰剂。\n\n💬0🔄0❤️0👀28",
+      "tags": [
+        "评论"
+      ],
+      "score": 10,
+      "summary": "批评国内炒作OPC概念。",
+      "fetched_at": "2026-06-02T22:02:15.228307+08:00"
+    },
+    {
+      "title": "「当软件编写成本趋近于零时，我发现自己对野心的追求已超越一切。那种不可理喻、不可阻挡的野心。」\n\n这句话来自投资人 Mike Vernal（前 Facebook VP、前红杉合伙人）写的一篇文章，他的...",
+      "link": "https://x.com/oran_ge/status/2061794131014496394",
+      "published": "2026-06-02T20:56:41+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "「当软件编写成本趋近于零时，我发现自己对野心的追求已超越一切。那种不可理喻、不可阻挡的野心。」  \n  \n这句话来自投资人 Mike Vernal（前 Facebook VP、前红杉合伙人）写的一篇文章，他的文章里说  \n  \n软件的\"三段式剧本\"已经过时了，在剧变时代最重要的直接进入深水区的野心（Unreasonable, unrelenting ambition）。  \n  \n旧剧本是这样的：  \n  \n第一幕：找一个楔子（wedge），切一个细分市场，做到几千万 ARR，花 3-5 年  \n第二幕：从单品扩展成套件（suite），交叉销售，做到一亿 ARR，又花 3-5 年  \n第三幕：变成平台，替掉底层系统  \n他说这个剧本死了，因为：  \n  \nAI 让写软件的成本趋近于零。  \n以前你只能单线程推进，先搞定第一幕再想第二幕。现在 Cursor、Clay、Harvey、Lovable 这些公司两年就从 0 到一亿 ARR。  \n时间窗口压缩了，你没有慢慢来的余裕了。  \n  \n他的新结论：  \n  \n别找楔子了，直接跳到深水区。一开始就做整件事。  \n他举了 Cursor 的例子：当初种子轮的时候 Cursor 就说要直接替掉 VS Code，他觉得疯了（VS Code 刚统一了市场你就要替？）。  \n结果他错了。现在回头看，替掉 VS Code 反而都不够大胆。  \n  \n「当软件编写成本趋近于零时，我发现自己对野心的追求已超越一切。那种不可理喻、不可阻挡的野心。  \n  \n三段式剧本已经过时。在剧变时代依赖楔子策略未免过于保守。  \n  \n要我说，既然决定放手一搏，不如直接赌上全部身家。」\n\n![Mike Vernal](https://pbs.twimg.com/profile_images/1876725988853501952/12vP8jdr_normal.jpg)\n\nMike Vernal@mvernal\n\n[x.com/i/article/2061…](http://x.com/i/article/2061520512174768128)\n\n[🔗 View Quoted Tweet](https://x.com/mvernal/status/2061522713433583738)\n\n💬1🔄2❤️6👀2129📊3",
+      "tags": [
+        "AI",
+        "创业"
+      ],
+      "score": 68,
+      "summary": "投资人Mike Vernal认为AI降低软件成本，创业者应直接追求大野心。",
+      "fetched_at": "2026-06-02T22:02:15.228354+08:00"
+    },
+    {
+      "title": "小红书一个月涨了一万粉，离谱啊，现在三万了",
+      "link": "https://x.com/op7418/status/2061786484341182591",
+      "published": "2026-06-02T20:26:18+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "小红书一个月涨了一万粉，离谱啊，现在三万了\n\n![Tweet Image](https://pbs.twimg.com/media/HJzv2U1agAAm5rg.jpg)\n\n💬60🔄0❤️76👀7834📊56",
+      "tags": [
+        "个人动态"
+      ],
+      "score": 5,
+      "summary": "小红书一个月涨粉一万。",
+      "fetched_at": "2026-06-02T22:02:15.228401+08:00"
+    },
+    {
+      "title": "Presentation: The Human Toll of Incidents & Ways To Mitigate It",
+      "link": "https://www.infoq.com/presentations/incident-response-mitigate/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-02T20:50:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/presentations/incident-response-mitigate/en/mediumimage/kyle-lexmond-medium-1779869148329.jpg)\n\nKyle Lexmond explains how to handle the high-pressure environment of severe production outages. He discusses the critical distinction between mitigation and root-cause resolution, sharing personal experiences from harrowing incident rooms. He shares valuable operational strategies on overcoming cognitive overload, establishing blameless cultures, and optimizing systems for faster recovery.\n\n*By Kyle Lexmond*",
+      "tags": [
+        "事件响应",
+        "软件工程"
+      ],
+      "score": 40,
+      "summary": "演讲讨论生产事故中的人为因素和缓解方法。",
+      "fetched_at": "2026-06-02T22:02:15.228448+08:00"
     }
   ]
 }
