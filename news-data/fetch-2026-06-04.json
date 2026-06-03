@@ -1,0 +1,443 @@
+{
+  "meta": {
+    "date": "2026-06-03"
+  },
+  "entries": [
+    {
+      "title": "Align your architecture backlog with Tech Roadmap Prioritization (TRP)",
+      "link": "https://aws.amazon.com/blogs/architecture/align-your-architecture-backlog-with-tech-roadmap-prioritization-trp/",
+      "published": "2026-06-04T02:08:51+08:00",
+      "source": "AWS Architecture Blog",
+      "content": "What do the organizations that succeed at digital transformation have in common? They align business and technical stakeholders around a shared plan before writing a single line of code. Yet [research from McKinsey](https://www.mckinsey.com/capabilities/transformation/our-insights/perspectives-on-transformation) shows that 70 percent of transformations fail. Stakeholder misalignment and the inability to scale initiatives beyond initial pilots are patterns we see repeatedly across these failures. Before you [architect your workloads](https://aws.amazon.com/architecture/well-architected/), your team must agree on which ones deserve focus first.\n\nIn this post, we show you how to run a one-hour prioritization session with your stakeholders, plot competing initiatives on a shared matrix by cost and impact and turn the result into an actionable architecture backlog – using a framework called Tech Roadmap Prioritization (TRP).\n\n## The architect’s challenge\n\nYou’re facilitating alignment between five competing initiatives, but your organization only has capacity to execute two. Who decides? Without structure, decisions default to political influence or recency bias. High-value work stalls while low-impact projects consume resources.\n\nConsider this scenario: your organization has competing initiatives such as a new product launch, application modernization, sales expansion, and security upgrades. Business and technical leaders each hold different priorities, share no view of tradeoffs, and have no shared way to decide what gets done first.\n\nDevelopers work story backlogs. Support teams work ticket queues. As an architect, your backlog is the set of prioritized initiatives your organization needs to execute, and TRP is how you build it with your stakeholders.\n\n## The TRP framework\n\nIn approximately one hour, you bring business and technical owners into the same room and build a shared roadmap together. At every stage of your [cloud journey](https://aws.amazon.com/cloud-adoption-framework/), you face competing workloads that require your team’s attention. TRP gives you a repeatable way to decide which ones come first. You produce a single visual artifact: a modified [prioritization matrix](https://sps.columbia.edu/sites/default/files/2023-08/Eisenhower%20Matrix.pdf) adapted for architecture roadmapping that plots your initiatives by cost and complexity against business impact.\n\nThe initiatives that you surface in TRP feed directly into the [AWS Cloud Adoption Framework](https://aws.amazon.com/cloud-adoption-framework/) (AWS CAF) Envision phase, where you can connect business goals to enabling technologies and evaluate initiatives across the CAF’s six perspectives. TRP gives you the starting artifact and AWS CAF gives you the structured analysis that follows.\n\n## Why a visual roadmap?\n\nYou track your technology initiatives across spreadsheets, slide decks, and hallway conversations. Your business leaders frame urgency in revenue terms. Your technical leaders frame it in risk terms. No single artifact exists where both can view every initiative, its relative priority, and the reasoning behind it. TRP produces that artifact. One hour, one room, one artifact. You plot each initiative on a matrix where position alone communicates priority, and the conversation shifts from “my initiative matters more” to “where does this land relative to everything else?”\n\n## The TRP matrix\n\n![Tech Roadmap Prioritization matrix plotting initiatives by cost on the x-axis and business impact on the y-axis, with bubble size showing strategic importance and color showing Modernize, Optimize, or Monetize strategy](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2026/06/02/ARCHBLOG-1360-1.png)\n\nYou represent each initiative as a numbered bubble. The numbers are identifiers, not a priority ranking. Priority is determined by position on the matrix, which you read using five visual cues:\n\n* **X-axis position:** Cost and complexity of the initiative (low to high).\n* **Y-axis position:** Potential benefits and business impact (low to high).\n* **Bubble size:** Strategic importance to the organization (small = low, large = high).\n* **Bubble color:** Strategy type based on the [Modernize, Optimize, Monetize (MOM) framework](https://www.youtube.com/watch?v=4PMR6UrVl7U). Healthy cloud architectures balance all three: yellow = Modernize (improve what exists), blue = Optimize (reduce cost or increase efficiency), green = Monetize (generate new revenue).\n* **Position on the matrix:** Where a bubble lands reveals its priority. Upper-left = strategic quick wins (high impact, low cost). Upper-right = strategic transformations (high impact, high cost). Lower-left = tactical quick wins. Lower-right = questionable initiatives that should wait.\n\n## What each position tells you to do\n\nAfter you plot your initiatives, position on the matrix tells you more than priority. It tells you what kind of work comes next.\n\n**Upper-left: Strategic quick wins.** High impact, low cost. You execute these now. Assign an owner, set a delivery date, and get moving. These build momentum and demonstrate early value to your stakeholders.\n\n**Upper-right: Strategic transformations.** High impact, high cost. Look at a large blue bubble here, like initiative 1 (Migration to SaaS) in the sample. This delivers high value but carries significant risk. You don’t commit resources to this on day one. You de-risk it first. Run a proof of concept. Schedule [workshops](https://aws.amazon.com/training/) to close skill gaps. Identify the complexity drivers and investment requirements, then remove them before you scale. Your job as the facilitator is to define the path from “we want this” to “we’re ready to build this.” For initiatives requiring skills your organization lacks, engage [AWS Partners](https://aws.amazon.com/partners/) to de-risk and accelerate the work.\n\n**Lower-left: Tactical quick wins.** Low impact, low cost. Delegate or batch these small wins together. They won’t move the needle on their own, but they clear the backlog and free up attention for the strategic work above.\n\n**Lower-right: Questionable initiatives.** Low impact, high cost. You park these. They stay visible on the matrix so stakeholders know they haven’t been forgotten, but you don’t invest in them until the business case changes. If someone pushes for one of these, you point to the matrix and ask what moves off the board to make room.\n\nYour architecture decisions start here. Each quadrant demands a different response, and the matrix gives you the shared language to explain why.\n\nLook at initiative 2 in the sample, Cost Optimization. It sits in the upper-left as a large yellow bubble: high impact, low cost, high strategic importance, optimization strategy. That is your first move. Initiative 1 (Migration to SaaS) ranks second: high impact but high cost, meaning you de-risk it before committing. You read every initiative the same way, and the full priority order emerges from the diagram itself.\n\nNow that you know how to read the matrix, here’s how to run the session that creates it.\n\n## How to run a one-hour roadmap session\n\nYou are the facilitator, not a participant, not a decision-maker. The decisions belong to the business and technical owners in the room. Your role is to keep the group moving, protect the scope, and ensure every voice is heard. TRP isn’t a substitute for capacity planning, project sequencing, or backlog management – those follow TRP and are handled by project management, product owners, and technical owners. What TRP produces is the shared prioritization artifact that informs all of those downstream functions.\n\nYou’re answering four questions per initiative, relative to one another. That is the entire scope. Keep the group focused on relative positioning, not detailed analysis. Target 60 minutes. For larger groups, budget 90. The hour works when you protect the scope.\n\n### 1. Get the right people in the room\n\nInvite people who can make decisions and commit resources. Bring your CTO, VP of Engineering, product leaders, and line-of-business owners. If you don’t have access to those people, find the person who does. That’s your sponsor up your chain of command. Seat business owners and technical owners at the same table. Whether your organization has dedicated roles for each or one person wears multiple hats, the key is getting the people who understand the business priorities and the people who understand the technical complexity into the same conversation.\n\n### 2. Bring the set of initiatives\n\nGather your list of competing initiatives before the session. Aim for 5–15. Too few and the exercise feels trivial, too many and you won’t finish in an hour. Pull from your existing project proposals, strategic plans, customer requests, and technical debt backlog. Write a name and a one-sentence description for each one that everyone in the room can understand.\n\n### 3. Ask the four questions\n\nWalk through each initiative and ask four questions:\n\n1. **How big is it?** Skip detailed estimates. Size it relative to the others. Is this a quarter-long effort or a multi-year program? Is it cost, complexity, or something your team has never attempted? Plot it on the x-axis accordingly.\n2. **How important is it?** Determine where it sits in your organization’s strategic priorities. Does it directly impact initiatives from the board or company owners? Does it enable new technical capabilities? Identify who sponsors it and why. Set the bubble size based on the answer.\n3. **How much impact will it have?** Name the business outcome it drives: [revenue growth, cost reduction, risk mitigation, or customer retention](https://aws.amazon.com/executive-insights/content/realizing-business-value-with-aws/). Place it on the y-axis based on the group’s assessment.\n4. **Does it modernize, optimize, or monetize?** Assign the bubble color and check your portfolio balance. If every initiative targets optimization, you may be missing growth opportunities. If everything targets monetization, technical debt may be piling up.\n\nKeep these questions high-level on purpose. TRP is qualitative by design. You’re calibrating relative priority, not producing detailed estimates. Focus on alignment, not solutioning. Save the *how* for after the group agrees on the *what* and the *why*.\n\n### 4. Dos and don’ts\n\nThe following patterns are drawn from facilitation observations across TRP sessions run with AWS customers since its creation. They’re specific to what goes wrong (and right) in this particular conversation.\n\n**Do:**\n\n* **Establish your role at the start.** Open with: “I’m here as a facilitator. My job is to help you reach a shared view – the decisions are yours.” This prevents the group from deferring to you and keeps accountability where it belongs.\n* **Surface the “someone else’s problem” initiatives.** Each team knows what matters to them but assumes another team owns the overlap. TRP puts both sides in the same room and forces them to name where their work ends and the other’s begins.\n* **Break the “everything is number one” cluster.** Teams that struggle to prioritize will plot every initiative in the same spot. When you see clustering, force relative comparison: no two initiatives can occupy the same position on the matrix.\n* **Watch for portfolio imbalance.** If every initiative maps to a single color, name it. An all-blue portfolio means no one is investing in growth. A healthy roadmap balances modernization, optimization, and monetization.\n* **Redirect from “what it is” to “what it does.”** Teams describe initiatives as technologies: “migrate our database,” “upgrade our instances.” Redirect to the business outcome. You can’t plot an initiative on the matrix until the group agrees on what it accomplishes.\n\n**Don’t:**\n\n* **Let the group solution.** The most common failure mode in TRP is the group diving into architecture details mid-session. The moment someone says “well, for initiative 3 we’d need to refactor the data layer,” pull them back: “We’re deciding what matters, not how to build it. Let’s place it on the matrix first.”\n* **Skip preparation.** The second most common failure: walking in without a pre-populated list of initiatives. You will spend the hour defining them instead of prioritizing them. Even a rough list of five initiatives with one-sentence descriptions is enough to start.\n* **Ignore missing data.** If nobody can estimate cost or impact for an initiative, flag it. That gap tells you something: you can’t prioritize what you can’t size. These are the initiatives that need a discovery conversation before they can be placed.\n\n### 5. Close with next steps\n\nAssign the number one priority a point person and set specific dates for next steps. Repeat for each initiative in priority order. Every initiative on the matrix should leave the session with an owner and a next action, even if that action is “revisit in Q3.”\n\n## After the session\n\nTreat the matrix as a living document, not an annual artifact. A formal review cadence of at least once per year is a floor, not a target. The real question is: what triggers an out-of-cycle review? Based on patterns across TRP engagements, the answer is any of the following:\n\n* A major strategic shift – new leadership, a market pivot, an acquisition.\n* A failed or stalled initiative that changes the cost or complexity picture.\n* A significant budget change that reorders what’s feasible.\n* A new initiative that clearly belongs in the upper-left quadrant and displaces existing priorities.\n* A completed initiative that frees capacity and opens room to pull forward work from the upper-right.\n\nWhen any of these occur, call a TRP session. The matrix is the mechanism for keeping your architecture decisions aligned with a business that doesn’t stand still.\n\nAs your prioritized initiatives break down into [epics and themes](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-product-development/features-delivery.html), use the matrix to drive your architecture decision-making throughout the year. Share it with executives, delivery teams, and partners. Before TRP, you justified priorities in meetings and emails that nobody could find later. After TRP, you have a single artifact that documents what was decided, why, and in what order.\n\n## Conclusion\n\nSince its creation, TRP has been run with AWS customers of all sizes across industries. That volume is the source of the practitioner patterns in this post, not just a credibility number. Customers consistently surface 4–7 initiatives they hadn’t previously articulated or prioritized as a group. That finding alone is worth one hour of your time.\n\nFor example, [Zinnia](https://zinnia.com/en/news/zinnia-announces-major-cloud-migration-milestone-to-support-processing-of-over-55-percent-of-digital-annuity-sales-in-us), a leading insurance technology company that processes over 55 percent of digital annuity sales in the U.S., used TRP to prioritize the most critical workloads in their migration to AWS. By identifying their core order entry platform, AnnuityNet, as the highest-impact initiative, they focused resources there first before tackling their data warehouse and commission systems. Within 16 months, Zinnia completed the migration and now processes over 55 percent of digital annuity sales in the U.S. on AWS infrastructure.\n\nThe biggest risk in architecture isn’t the technology. It’s that your team isn’t on the same page. TRP gives you a repeatable way to fix that in one hour. Gather your stakeholders, bring your initiatives, ask the four questions, and walk out with a shared roadmap. If you want facilitation support, [reach out to your AWS account team](https://aws.amazon.com/contact-us/). For deeper guidance on the workloads you prioritize, explore the [AWS Architecture Center](https://aws.amazon.com/architecture/).\n\n---\n\n## About the authors",
+      "tags": [
+        "架构",
+        "技术路线图"
+      ],
+      "score": 70,
+      "summary": "AWS博客介绍TRP框架，用于对齐架构积压与技术路线图，非AI主题。",
+      "fetched_at": "2026-06-04T03:48:45.249265+08:00"
+    },
+    {
+      "title": "Fundamental’s Large Tabular Model NEXUS is now available on Amazon SageMaker JumpStart",
+      "link": "https://aws.amazon.com/blogs/machine-learning/fundamentals-large-tabular-model-nexus-is-now-available-on-amazon-sagemaker-jumpstart/",
+      "published": "2026-06-04T01:55:37+08:00",
+      "source": "AWS Machine Learning Blog",
+      "content": "Today, we’re announcing support for Fundamental’s NEXUS model on [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/ai/). With this launch, you can deploy a foundation model (FM) purpose-built for tabular data prediction. This model helps your enterprise generate accurate, deterministic predictions from structured data in days instead of months.\n\nIn this post, we show you how to get started with NEXUS on [Amazon SageMaker JumpStart](https://aws.amazon.com/sagemaker/ai/jumpstart/), walk through the deployment process, and demonstrate how to run predictions against your enterprise datasets.\n\n## What is NEXUS?\n\nNEXUS is a foundation model developed by [Fundamental](https://fundamental.tech/) and built for tabular data prediction. Large language models (LLMs) are designed for text, and traditional machine learning (ML) approaches require extensive feature engineering and model training. NEXUS takes a different approach. It’s pre-trained on billions of real-world prediction tasks across structured datasets, so it arrives already knowing how to find signal in your data.\n\nAs a Large Tabular Model, NEXUS is built for structured data analysis and offers these key innovations:\n\n* **Deterministic architecture** – Probabilistic LLMs might provide different answers to identical queries. NEXUS produces consistent, reproducible results for each individual prediction.\n* **Native tabular understanding** – Trained on billions of tables, NEXUS natively processes numbers, categories, dates, and unstructured text without manual feature engineering.\n* **Non-sequential reasoning** – Most AI models predict sequential data (for example, the next word or the next pixel). NEXUS analyzes multi-dimensional relationships in enterprise tables. For example, when predicting customer churn, NEXUS understands how multiple factors (transaction frequency, support tickets, and economic indicators) impact the likelihood of attrition.\n\n## Why existing approaches fall short\n\nThe most valuable enterprise data sits in tables such as spreadsheets, enterprise resource planning (ERP) systems, customer relationship management (CRM) systems, and relational databases. Many critical business decisions depend on predictions made against this data. However, today’s tools have significant limitations:\n\n* **Traditional ML** takes teams of data scientists 3–6 months to build, train, and deploy a model for a single use case. You face a constant trade-off between quality and quantity of predictions.\n* **LLMs** are non-deterministic, producing different answers on the same dataset. They lose numerical context during tokenization, which leads to inaccurate results on structured data and requires complex guardrails to mitigate these issues.\n\nNEXUS is architected for tabular data and provides advantages such as the following:\n\n* **Permutation invariance** – Recognizes that changing column order doesn’t change meaning, which differs from how transformers handle data.\n* **Billion-row capability** – Processes massive datasets without truncation or sampling.\n* **Cross-schema reasoning** – Connects related data across disparate tables automatically.\n* **Autonomous data cleaning** – Resolves incomplete entries (for example, NEXUS can still make predictions even when entries are missing).\n\n## How NEXUS works on Amazon SageMaker AI\n\nThe following figure illustrates the end-to-end flow for deploying and running predictions with NEXUS on SageMaker AI.\n\n![End-to-end architecture diagram showing the NEXUS deployment flow on Amazon SageMaker AI, including subscription on AWS Marketplace, endpoint deployment, SDK connection, data upload to Amazon S3, and prediction output.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-20964-1.png)\n\nNEXUS runs on a dedicated, single-tenant, network-isolated GPU instance within the SageMaker AI managed environment. The workflow consists of the following steps:\n\n1. **Subscribe and deploy** – Subscribe to the NEXUS model package on [AWS Marketplace](https://aws.amazon.com/marketplace), then deploy it as a SageMaker AI managed inference endpoint on an `ml.p5en.48xlarge` instance (8× NVIDIA H200 GPUs).\n2. **Install the SDK** – Install the Fundamental Python SDK and connect it to your SageMaker endpoint. The SDK provides a familiar scikit-learn compatible API with `NEXUSClassifier` and `NEXUSRegressor` estimators.\n3. **Upload data to Amazon S3** – The SDK serializes your tabular data and uploads it to an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket in your account.\n4. **Train a model** – Call `clf.fit(X_train, y_train)` to train. NEXUS handles data cleanup and feature engineering automatically, with no manual pipeline required.\n5. **Generate predictions** – Call `clf.predict(X_test)` for deterministic predictions or `clf.predict_proba(X_test)` for probability estimates. Results are stored back in your Amazon S3 bucket.\n\nYour data stays in your AWS environment throughout this process. The endpoint is network-isolated and single-tenant, which makes NEXUS suitable for enterprise workloads with sensitive data.\n\n## Get started with NEXUS on Amazon SageMaker AI\n\nTo get started, navigate to [Amazon SageMaker JumpStart](https://aws.amazon.com/sagemaker/ai/jumpstart/), search for *Fundamental NEXUS*, and choose from the following:\n\n* Base model (pre-trained on over 10B tabular rows).\n* Industry-specific variants (finance, healthcare, and manufacturing).\n\n![Amazon SageMaker JumpStart search results page showing the Fundamental NEXUS model listing.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-20964-2.png)\n\n![Amazon SageMaker JumpStart model details page for Fundamental NEXUS, showing model description and deployment options.](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/05/21/ML-20964-3.png)\n\n## Enterprise use cases transforming industries\n\nTabular data is the backbone of enterprise decision-making, from financial ledgers to patient records to supply chain logs. NEXUS is purpose-built for this data and helps you go from raw structured data to production-grade predictions without extensive feature engineering or model training. The following are a few representative use cases where NEXUS can create value.\n\n### Financial services\n\n* **Fraud detection** – Analyzes transaction patterns across millions of accounts.\n* **Credit risk modeling** – Processes loan portfolios with automated feature extraction.\n* **Regulatory compliance** – Extracts structured data from unstructured regulatory filings.\n\n### Healthcare\n\n* **Clinical trial matching** – Identifies eligible patients across electronic health record (EHR) systems.\n* **Drug discovery** – Analyzes biological assay data for compound screening.\n* **Patient risk stratification** – Predicts readmission risks using intensive care unit (ICU) time-series data.\n\n### Manufacturing and supply chain\n\n* **Predictive maintenance** – Forecasts equipment failures from sensor data.\n* **Demand forecasting** – Anticipates inventory needs across global distribution networks.\n* **Supplier risk analysis** – Evaluates vendor reliability using procurement history.\n\n### Retail and ecommerce\n\n* **Churn prediction** – Identifies at-risk customers by using purchase history and browsing behavior.\n* **Dynamic pricing** – Optimizes prices based on competitor data and inventory levels.\n* **Cart abandonment analysis** – Helps you understand why customers leave items in online carts.\n\n## Why choose NEXUS on Amazon SageMaker AI\n\nDeploying a model is only half the equation. The infrastructure you run it on determines how quickly you can move from experimentation to production. SageMaker AI provides a managed, secure, and scalable environment for running NEXUS at enterprise scale. Together, NEXUS and AWS reduce undifferentiated heavy lifting so your data scientists can focus on business outcomes rather than infrastructure management.\n\n* **Accelerated time-to-value** – Pre-built containers and scripts reduce deployment time.\n* **Cost efficiency** – The managed infrastructure of SageMaker AI reduces operational overhead.\n* **Scalability** – Automatically scales to petabyte-scale datasets.\n* **Compliance ready** – Meets GDPR, HIPAA, and SOC 2 requirements by default.\n* **Continuous learning** – Native integration with [Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) for model retraining.\n* **Multiplex support** – Supports multiple fit and predict operations on a single SageMaker AI endpoint, which removes the need for dedicated resources for each use case.\n\n## Strategic AWS partnership\n\nFundamental has entered a strategic partnership with AWS to accelerate enterprise adoption:\n\n* **Native integration** – Deploy NEXUS directly from AWS Marketplace.\n* **Secure infrastructure** – Runs on the AWS secure, compliant cloud environment.\n* **Enterprise support** – Dedicated AWS Solutions Architects for implementation guidance.\n\n## Next steps\n\nReady to transform your data-driven decisions?\n\n* [Contact the Fundamental team](https://fundamental.tech/contact#topsales) to learn more.\n* Try the [managed example notebook](https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples) in a JupyterLab space on Amazon SageMaker AI.\n\n## Conclusion\n\nIn this post, we showed how NEXUS model support on Amazon SageMaker AI helps you unlock new insights from your structured data assets. Whether you’re predicting equipment failures, optimizing supply chains, or detecting financial fraud, NEXUS provides deterministic, scalable capabilities for your enterprise prediction workloads.\n\nTo learn more, see the following resources:\n\n* [Fundamental NEXUS documentation](https://github.com/Fundamental-Technologies/fundamental-cookbook/tree/main/examples)\n* [Amazon SageMaker AI Developer Guide](https://docs.aws.amazon.com/sagemaker/latest/dg/what-is-sagemaker.html)\n\n---\n\n## About the authors\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/20964-a1-100x133.jpg)\n\n### Vivek Gangasani\n\nVivek is a Worldwide Leadfor Solutions Architecture, SageMaker Inference. He leads Solution Architecture, Technical Go-to-Market (GTM) and Outbound Product strategy for SageMaker Inference. He also helps enterprises and startups deploy and optimize a GenAI models and build AI workflows with SageMaker and GPUs. Currently, he is focused on developing strategies and content for optimizing inference performance and use-cases such as Agentic workflows, RAG, etc.\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/Hq-pic-100x100-1.png)\n\n### Hazim Qudah\n\nHazim is an AI/ML Specialist Solutions Architect at Amazon Web Services. He enjoys helping customers build and adopt AI/ML solutions using AWS technologies and best practices. Prior to his role at AWS, he spent many years in technology consulting with customers across many industries and geographies. In his free time, he enjoys running and playing with his dogs!\n\n![](https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/06/01/20964-a3-100x133.jpg)\n\n### Jimmy Shah\n\nJimmy is a Principal Specialist for SageMaker AI at AWS. He is part of the team that leads outbound product management and Technical Go-to-Market (GTM) strategy for SageMaker AI, with a focus on the financial services segment. Currently, he is focused on developing strategies and content for SLM fine-tuning and deployment, agentic AI, and inference optimization use cases.",
+      "tags": [
+        "NEXUS",
+        "SageMaker",
+        "表格模型"
+      ],
+      "score": 85,
+      "summary": "AWS宣布Fundamental的NEXUS表格基础模型在SageMaker JumpStart上可用。",
+      "fetched_at": "2026-06-04T03:48:45.249343+08:00"
+    },
+    {
+      "title": "🔬Scaling Past Informal AI - Carina Hong, Axiom Math",
+      "link": "https://www.latent.space/p/axiom",
+      "published": "2026-06-04T03:27:49+08:00",
+      "source": "Latent Space",
+      "content": "In 2025, seven-month-old startup [Axiom solved all 12 of the problems Putnam exam](https://axiommath.ai/territory/from-seeing-why-to-checking-everything) (scoring 8/12 in the time limit) a prestigious undergraduate math exam. The 12/12 score is better than the top undergraduates (110/120) and the closest AI system that reported a result (DeepSeek 103/120), although it is unclear what the people and other systems would have scored with more time. Nonetheless, the Putnam exam is legendary for its difficulty, with the median score typically being 0 or 1 points. Taken by itself, this seems like a minor feather in the cap of AI; one of a long series of accomplishments by AI systems in elite competitions with humans, starting with Deep Blue beating Kasparov.\n\nFast forward to mid-2026, and Claude Code and Codex are setting the world on fire. In 2024 Anthropic’s bet on code and enterprise looked like a more pragmatic niche play vs. OpenAI’s better models and massive consume scale. Today, Amodei’s all in bet on acceleration via code (images and video be damned) seems prescient.\n\nDespite Anthropic’s growing momentum, however, Axiom CEO Carina Hong sees coding ability as a necessary but not sufficient milestone on the path to AGI. Code arguably pushes the jagged frontier to the point of super intelligence in [some domains outside of coding](https://www.latent.space/p/lupsasca), but there are surprising gaps (link) that Carina believes will bottleneck AI progress. (Stats on math benchmarks).\n\n## The informal bottleneck\n\n“Verified AI” sounds like eating broccoli[1](https://www.latent.space/p/axiom#footnote-1) and paying taxes, but to Axiom it means something very different. “Verification to me is about scaling brilliance, compounding brilliance,” Carina told us.\n\nIt actually took a while for me to understand what she means by this (sounded like marketing-speak until it clicked). Carina brings up the legendary mathematician **Srinivasa Ramanujan** ([“The Man who knew Infinity”](https://en.wikipedia.org/wiki/The_Man_Who_Knew_Infinity)) to illustrate this point. When G.H. Hardy finally persuaded Ramanujan to formally prove theorems instead of relying on his (formidable) intuition, it reportedly improved his own capabilities. This is presumably because formally proving things forced Ramanujan to articulate the details in a way that open up new lines of thinking, etc. This is how you “compound” in math — building on solid rather than shaky foundations… also known as **Axioms**.\n\nBut formally proving things also allowed others to benefit from his intuition: the proofs are way of communicating an intuition and persuading others that the intuition is correct. This is scaling (more people use the result) and compounding (people can learn from and build on his work).\n\nThis is the core insight that lets us understand the approach Axiom is taking.\n\n## Verified Generation\n\nThere are two ways that Verified AI shows up: in training and in inference.\n\nBut a quick detour: to a first approximation, “Formal Verification” means [using type checkers](https://towardsdatascience.com/introduction-to-lean-for-programmers/) (like for TypeScript, C++ or Rust, but more capable) to verify mathematical proofs that are meticulously specified using a language like Lean[2](https://www.latent.space/p/axiom#footnote-2). It takes a lot of work to translate an “informal” proof (albeit one that most people would not remotely call “informal”) in to a Lean proof[3](https://www.latent.space/p/axiom#footnote-3). Axiom themselves have open sourced groundbreaking work with [AXLE](https://axle.axiommath.ai/) - their toolkit of interactive Lean applications for exploring, validating, and manipulating mathematical proofs.\n\nYou can imagine how this would be (very) useful during Reinforcement Learning: instead of relying on best guesses based on statistics (GRPO, RLHF, etc.), you can just verify the proof is correct using a Lean verifier. This is obviously a much stronger reward signal, akin to compiling code and testing it (which is what is typically done with RL on coding).\n\nThe catch: LLM are not (currently) very good at proving things with Lean.\n\nEnter Axiom: While they have not officially reported benchmark numbers besides the 12/12 Putnam result, Carina reports that they have achieved a very impressive 99% (187/189) ProofGen on [the Verina codegen benchmark](https://arxiv.org/html/2505.23135v1). This benchmark is to generate code *and* proof of correctness for a series of problems. For context, OpenAI o3 (the last known OpenAI run) achieved 4.9% on this benchmark.\n\nBased on the sparse benchmarking, it’s hard to say how the frontier labs are currently doing outside [the annual IMO milestones](https://www.latent.space/p/captaining-imo-gold-deep-think-on), but Carina suggests that they still are not training to generate Lean proofs directly, rather relying on informal proofs.\n\nTime will tell if the frontier labs’ current approaches will close this gap.\n\n## Scaling and compounding\n\nCarina’s Ramanujan analogy is pretty direct. Better proofs → better Lean generation → better RL. A stronger signal means higher sample efficiency and higher maximum performance. Great!\n\nScaling is pretty clear too: once I have proved something in Lean, the quality of the output is basically[4](https://www.latent.space/p/axiom#footnote-4) as high as if it came from a human, so my high quality training set has grown in a way that an informal rollout corpus cannot. I can trust my Lean proofs.\n\nCompounding is also clear: now all of future inference and training can build upon those proofs.\n\nOn the other hand, a model trained only using statistical signals like GRPO during RL lacks the sample efficiency, maximum performance and compounding corpus that a system that uses formal verification benefits from.\n\n## All roads lead to verification\n\nBroccoli and taxes notwithstanding, **verification** has shown up in a lot of our conversations. In the domain of physical systems, recall **[Applied Intuition](https://www.latent.space/p/appliedintuition)**:\n\n> *“I think [verifiability] is probably the hardest problem right now, because the as the models get better, it can be harder and harder to find the faults on the system. And so the problem of doing proper eval to find those faults, that problem also keeps getting harder as the models get better.”*\n\nIn theoretical physics, we recall **Alex Lupsasca**:\n\n> *“…now that we’re in this regime where you can just get ChatGPT to tackle thousands of questions at the same time, it will return proofs for a significant fraction of them. Now actually the onus is back on the humans to verify all the outputs. And so, yeah, as that becomes a bottleneck, I think formalizing math and automating verification will become more valuable.”*\n\nVerification is, in fact, the key differences between AI for science and AI for computation: in science you to have to actually test (verify) your hypothesis by performing physical experiments. Lab in the loop systems like [Radical AI](https://www.radical-ai.com/) and [Lila](https://www.lila.ai/) build around exactly this premise (we have recorded episodes with both of these teams and will release them soon!)\n\nAnd yes, formally verifying critical systems such as flight control, nuclear power plants and pacemakers is a growing focus as the software and hardware that run them becomes more complex.\n\nCarina believes so strongly that AGI *requires* verified generation that she makes the unqualified claim that “We do not believe there is any other possible future.”\n\n## Expensive to produce, cheap to verify\n\nLean proofs are hard generate, but they can be easily shown to be correct or incorrect. But how do you know that the proof you created maps correctly to the problem you care about? As Carina puts it: “Anything that can be specified can be proven. Humans are bad at specifying everything we want.”\n\nAre we now in the specification business? Check out the episode to hear Carina’s take, as well as:\n\n* Why hardware verification is a killer app\n* Details on the AXLE open API and recently released Discovery toolkit\n* The Erdos debacle\n* The OpenAI GPT-f diaspora\n\n## Full Video Podcast\n\n**Timestamps:**\n\n* **0:00** Intro: The $200M Series A and the Math Startup Thesis\n* **4:52** Verified AI: Scaling Brilliance, Not Fixing Lousiness\n* **13:42** Axiom’s System: Lean Data, RL, and the Putnam Perfect Score\n* **22:12** Mathematical Discovery — Before the Conjecture\n* **25:12** Rice’s Theorem, Incompleteness, and Practical Limits\n* **30:42** Code With Proof — The Verina Benchmark\n* **37:57** Proof Trees, Context Windows, and Scaling Limits\n* **43:57** Markets, Moat, and the Business Case ($1.6B valuation)\n* **55:27** Personal Origin Story: Oxford, UCL Gatsby, Stanford Law\n* **1:00:57** The Erdos Controversy and the Difficulty of Search\n* **1:06:02** AlphaZero for Math, Self-Improvement\n* **1:08:47** Startup Advantage and the OpenAI GPTF Thread\n* **1:13:17** Axle API — Open Infrastructure for Lean at Scale\n* **1:20:47** Collaboration, Polymath, and Human Attention as the Bottleneck\n* **1:22:21** Founding Story — Obsession, Law School, and Julie Zhuo\n* **1:26:17** The Bigger Vision — AGI, Science, and Transfer Learning\n* **1:35:02** Bottlenecks, Fragmentation, and the Field’s Future\n\n[1](https://www.latent.space/p/axiom#footnote-anchor-1)\n\nI actually love broccoli, but then again, I also believe strongly in Test Driven Development, so ¯\\*(ツ)*/¯\n\n[2](https://www.latent.space/p/axiom#footnote-anchor-2)\n\nFormal verification also includes model checking (TLA+, SPIN), SMT-based tools (Dafny, F\\*, Why3), and refinement-type systems (Liquid Haskell) — many of which don’t look much like “type checking a proof” from the user’s perspective even when there’s a similar logical core underneath. It also gets applied to software and hardware correctness, not only pure mathematics.\n\n[3](https://www.latent.space/p/axiom#footnote-anchor-3)\n\nThis is an understatement. Most theorems remain informal because formalization is so hard to do. There has been a great deal of effort to formalize the most important proofs, with mixed results.\n\n[4](https://www.latent.space/p/axiom#footnote-anchor-4)\n\nOne might argue that its a bit lower because the proof is in distribution for the LLM.",
+      "tags": [
+        "Axiom",
+        "数学推理",
+        "验证AI"
+      ],
+      "score": 85,
+      "summary": "Latent Space访谈Axiom CEO，讨论验证型AI和数学推理突破。",
+      "fetched_at": "2026-06-04T03:48:45.249403+08:00"
+    },
+    {
+      "title": "Don’t miss it!",
+      "link": "https://x.com/amasad/status/2062240846444110277",
+      "published": "2026-06-04T02:31:47+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "Don’t miss it!\n\n![tigris](https://pbs.twimg.com/profile_images/1651219383467819010/Nzehs3Df_normal.jpg)\n\ntigris@tigrisli\n\nspeaking ++ showing emotion alchemy at [@Replit](https://x.com/Replit) vibecon on June 17-18 in NYC! code! tech! art! and spike jonze!\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061501280908873728/vid/avc1/718x1280/xu6fdaXKwqgJxEtb.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/tigrisli/status/2061501352648245616/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/tigrisli/status/2061501352648245616)\n\n💬2🔄1❤️14👀3630📊3",
+      "tags": [
+        "Replit",
+        "活动"
+      ],
+      "score": 30,
+      "summary": "Amjad Masad转发Replit Vibecon活动，内容情绪化，低价值。",
+      "fetched_at": "2026-06-04T03:48:45.249456+08:00"
+    },
+    {
+      "title": "How well do the security community's techniques hold up against AI-enabled cyberattacks? \n\nWe examin...",
+      "link": "https://x.com/AnthropicAI/status/2062243425580367905",
+      "published": "2026-06-04T02:42:01+08:00",
+      "source": "Anthropic(@AnthropicAI)",
+      "content": "How well do the security community's techniques hold up against AI-enabled cyberattacks?   \n  \nWe examined 832 malicious accounts and mapped their activity onto a longstanding database of tactics and techniques used by threat actors.   \n  \nHere's what we learned:[anthropic.com/news/AI-enable…](https://www.anthropic.com/news/AI-enabled-cyber-threats-mitre-attack)\n\n💬32🔄19❤️123👀11025📊43",
+      "tags": [
+        "Anthropic",
+        "网络安全",
+        "AI攻击"
+      ],
+      "score": 85,
+      "summary": "Anthropic发布AI网络安全威胁研究，分析恶意账户并映射到MITRE ATT&CK。",
+      "fetched_at": "2026-06-04T03:48:45.249507+08:00"
+    },
+    {
+      "title": "For every like on this post, we will boot up 1 browser.",
+      "link": "https://x.com/browser_use/status/2062250964867019247",
+      "published": "2026-06-04T03:11:59+08:00",
+      "source": "Browser Use(@browser_use)",
+      "content": "For every like on this post, we will boot up 1 browser.\n\n![Browser Use](https://pbs.twimg.com/profile_images/2056516030974091264/Qb5CJOLu_normal.jpg)\n\nBrowser Use@browser\\_use\n\nHere's 25 browsers starting in less than 1 second  \n  \nEnjoy\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061972048554147840/vid/avc1/1864x1080/WpY4aVF9-tx65Lok.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/browser_use/status/2061972165667569706/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/browser_use/status/2061972165667569706)\n\n💬0🔄0❤️12👀299📊2",
+      "tags": [
+        "营销",
+        "浏览器"
+      ],
+      "score": 20,
+      "summary": "Browser Use发起点赞启动浏览器活动，低价值营销。",
+      "fetched_at": "2026-06-04T03:48:45.249557+08:00"
+    },
+    {
+      "title": "Lazy, huh?",
+      "link": "https://x.com/browser_use/status/2062248931044868291",
+      "published": "2026-06-04T03:03:54+08:00",
+      "source": "Browser Use(@browser_use)",
+      "content": "Lazy, huh?\n\n![Johannes Dittrich](https://pbs.twimg.com/profile_images/2048220331186544640/dB0Ltp4p_normal.jpg)\n\nJohannes Dittrich@mathisdittrich\n\nIf you are lazy, just use Browser Use Terminal (BUT).  \n  \nI made a tutorial, BUT added timestamps:  \n→ Uses Browser Harness + local chrome   \n→ Figures out how it works   \n→ Makes and confirms changes  \n  \nTry it 🔗⬇️\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062234038954491904/vid/avc1/1920x1080/q57hkb9_QxlmOOIv.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/mathisdittrich/status/2062237159176941628/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/mathisdittrich/status/2062237159176941628)\n\n💬0🔄0❤️5👀306📊1",
+      "tags": [
+        "教程",
+        "Browser Use"
+      ],
+      "score": 30,
+      "summary": "Browser Use转发他人使用终端教程，非官方，低价值。",
+      "fetched_at": "2026-06-04T03:48:45.249605+08:00"
+    },
+    {
+      "title": "https://t.co/Kt50ttQRMJ",
+      "link": "https://x.com/drfeifei/status/2062247238143996275",
+      "published": "2026-06-04T02:57:10+08:00",
+      "source": "Fei-Fei Li(@drfeifei)",
+      "content": "[x.com/i/article/2062…](http://x.com/i/article/2062244283940544512)\n\n💬4🔄14❤️52👀2520📊17",
+      "tags": [
+        "无实质内容"
+      ],
+      "score": 10,
+      "summary": "Fei-Fei Li推文仅含链接，内容缺失，低价值。",
+      "fetched_at": "2026-06-04T03:48:45.249652+08:00"
+    },
+    {
+      "title": "Fine-tuning to production inference is the gap where teams get stuck.\n\nAt #MSBuild today, our own Ro...",
+      "link": "https://x.com/FireworksAI_HQ/status/2062246170236452987",
+      "published": "2026-06-04T02:52:56+08:00",
+      "source": "Fireworks AI(@FireworksAI_HQ)",
+      "content": "Fine-tuning to production inference is the gap where teams get stuck.  \n  \nAt #MSBuild today, our own Rob Ferguson, [@danielhanchen](https://x.com/danielhanchen) ([@UnslothAI](https://x.com/UnslothAI)) and [@marksaroufim](https://x.com/marksaroufim) ([@coreautoai](https://x.com/coreautoai)) discuss: model customization tradeoffs, serving infrastructure decisions, and optimizing cost and latency at scale.  \n  \nRegister: [build.microsoft.com/en-US/sessions…](https://build.microsoft.com/en-US/sessions/BRK234?source=sessions)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6R4dqbYAAeXIc.jpg)\n\n💬0🔄0❤️0👀145",
+      "tags": [
+        "Fireworks AI",
+        "MSBuild",
+        "微调"
+      ],
+      "score": 75,
+      "summary": "Fireworks AI宣传MSBuild会议，讨论模型定制与推理优化。",
+      "fetched_at": "2026-06-04T03:48:45.249700+08:00"
+    },
+    {
+      "title": "Sam Altman swearing to tell the whole truth to the US Senate an hour or so before he lied his fanny ...",
+      "link": "https://x.com/GaryMarcus/status/2062235292074188808",
+      "published": "2026-06-04T02:09:42+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Sam Altman swearing to tell the whole truth to the US Senate an hour or so before he lied his fanny off about caring about artists and creators and wanting them to get a fair shake.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6IETbWQAAPYtG.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ6IESxXQAApW5w.jpg)\n\n![neil turkewitz](https://pbs.twimg.com/profile_images/1795520618713980929/djK25V2d_normal.jpg)\n\nneil turkewitz@neilturkewitz\n\nHey OpenAI, when are you going to do what [@sama](https://x.com/sama) told Congress was the right thing to do three years ago—to only use creative works to train AI models pursuant to freely & openly negotiated consent & fair compensation? How can an unfairly trained model ever be safe?  \n  \n[@GaryMarcus](https://x.com/GaryMarcus)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6CjR6XoAAY1CW.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/neilturkewitz/status/2062229226028175702)\n\n💬4🔄5❤️14👀2099📊5",
+      "tags": [
+        "Sam Altman",
+        "AI伦理",
+        "批评"
+      ],
+      "score": 70,
+      "summary": "Gary Marcus批评Sam Altman在参议院就创作者补偿问题上撒谎。",
+      "fetched_at": "2026-06-04T03:48:45.249747+08:00"
+    },
+    {
+      "title": "I was there, sitting next to Sam Altman in the US Senate, when he said this wonderful thing about ar...",
+      "link": "https://x.com/GaryMarcus/status/2062232783142175122",
+      "published": "2026-06-04T01:59:44+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "I was there, sitting next to Sam Altman in the US Senate, when he said this wonderful thing about artists and creators.   \n  \nIt was a beautiful statement.   \n  \nIn hindsight, though, I realized he was lying (under oath, no less). He didn’t mean any of it; he just tried to work the room.   \n  \nThat’s his M.O. And the world is poorer for it.\n\n![neil turkewitz](https://pbs.twimg.com/profile_images/1795520618713980929/djK25V2d_normal.jpg)\n\nneil turkewitz@neilturkewitz\n\nHey OpenAI, when are you going to do what [@sama](https://x.com/sama) told Congress was the right thing to do three years ago—to only use creative works to train AI models pursuant to freely & openly negotiated consent & fair compensation? How can an unfairly trained model ever be safe?  \n  \n[@GaryMarcus](https://x.com/GaryMarcus)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6CjR6XoAAY1CW.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/neilturkewitz/status/2062229226028175702)\n\n💬3🔄4❤️21👀2258📊5",
+      "tags": [
+        "Sam Altman",
+        "AI伦理"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus回顾参议院听证会，指责Altman关于艺术家的承诺是谎言。",
+      "fetched_at": "2026-06-04T03:48:45.249794+08:00"
+    },
+    {
+      "title": "Get started with LangSmith Engine today: https://t.co/E21mhMoxE4",
+      "link": "https://x.com/LangChain/status/2062254218996531703",
+      "published": "2026-06-04T03:24:55+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Get started with LangSmith Engine today: [langchain.com/langsmith/engi…](https://www.langchain.com/langsmith/engine)\n\n💬0🔄0❤️1👀402",
+      "tags": [
+        "LangSmith",
+        "评估",
+        "AI代理"
+      ],
+      "score": 80,
+      "summary": "LangChain发布LangSmith Engine，自动化系统问题检测。",
+      "fetched_at": "2026-06-04T03:48:45.249840+08:00"
+    },
+    {
+      "title": "With LangSmith Engine, systemic issues get surfaced automatically instead of getting buried in trace...",
+      "link": "https://x.com/LangChain/status/2062254217427869753",
+      "published": "2026-06-04T03:24:54+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "With LangSmith Engine, systemic issues get surfaced automatically instead of getting buried in traces.  \n  \n[@ollieelmgren](https://x.com/ollieelmgren) from [@ListenLabs](https://x.com/ListenLabs) on how LangSmith Engine changed the way his team evaluates their agents.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062253808604852224/vid/avc1/3840x2160/bttSCcRryDwzOmJ0.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/LangChain/status/2062254217427869753/video/1)\n\n💬1🔄0❤️1👀486📊1",
+      "tags": [
+        "LangSmith",
+        "代理评估"
+      ],
+      "score": 80,
+      "summary": "LangChain展示LangSmith Engine如何帮助团队评估代理。",
+      "fetched_at": "2026-06-04T03:48:45.249887+08:00"
+    },
+    {
+      "title": "LangSmith Fleet supports shareable skills, letting you equip agents across your team with knowledge ...",
+      "link": "https://x.com/LangChain/status/2062248188350746730",
+      "published": "2026-06-04T03:00:57+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "LangSmith Fleet supports shareable skills, letting you equip agents across your team with knowledge for specialized tasks.  \n  \nIn case you haven’t tried this feature yet, here’s a quick demo from [@caspar\\_br](https://x.com/caspar_br).  \n  \n[youtube.com/watch?v=AldL9C…](https://www.youtube.com/watch?v=AldL9C7Vimc)\n\n💬0🔄0❤️2👀1089",
+      "tags": [
+        "LangSmith",
+        "技能共享"
+      ],
+      "score": 80,
+      "summary": "LangChain介绍LangSmith Fleet的共享技能功能。",
+      "fetched_at": "2026-06-04T03:48:45.249984+08:00"
+    },
+    {
+      "title": "Managed Deep Agents = The best of both worlds.\n\nDeep Agents - Your open source harness\n\nLangSmith - ...",
+      "link": "https://x.com/LangChain/status/2062233090584453510",
+      "published": "2026-06-04T02:00:57+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Managed Deep Agents = The best of both worlds.  \n  \nDeep Agents - Your open source harness  \n  \nLangSmith - For durable execution, hosted context, sandbox-backed workflows, + observability\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6GET8WoAAtGdF.jpg)\n\n💬3🔄2❤️15👀1446📊6",
+      "tags": [
+        "Deep Agents",
+        "LangSmith",
+        "托管"
+      ],
+      "score": 80,
+      "summary": "LangChain宣传Managed Deep Agents结合开源与托管优势。",
+      "fetched_at": "2026-06-04T03:48:45.250065+08:00"
+    },
+    {
+      "title": "We have a winner of the Lenny's Newsletter x @Replit buildathon 🏆\n\nCongratulations @andrey_esipov o...",
+      "link": "https://x.com/lennysan/status/2062244343575187571",
+      "published": "2026-06-04T02:45:40+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "We have a winner of the Lenny's Newsletter x [@Replit](https://x.com/Replit) buildathon 🏆  \n  \nCongratulations [@andrey\\_esipov](https://x.com/andrey_esipov) on your mind-blowing project, Operators.  \n  \nY'all need to check this out:[operators--andreyyesipov.replit.app](https://operators--andreyyesipov.replit.app)f  \n  \nOperators is a Street Fighter II-inspired fighting game where every fighter is an operator from Lenny's Podcast. Every special move maps to a framework that the operator talks about on the show, linked to the episode and timestamp it came from.  \n  \nSo much craft and personality went into this project. Our team was genuinely laughing while testing it.   \n  \nCongrats Andrey!  \n  \nAnd congrats to the 100+ of you who entered the contest. This was a tough choice!  \n  \nA special mention of a few more projects that came in close behind:  \n+ Little Lenny's[littlelennys.replit.app](https://littlelennys.replit.app)M  \n+ Lenny's Diner[lennysdiner.replit.app](https://lennysdiner.replit.app)9  \n+ LennyOS[lennyos.replit.app](https://lennyos.replit.app)N  \n+ Oracle of Lenny[lenny-oracle.replit.app](https://lenny-oracle.replit.app)j  \n+ Pod-Squad[pod-squad.replit.app](https://pod-squad.replit.app)B  \n  \nThanks for playing! More fun excuses to build with AI to come.\n\n![Lenny Rachitsky](https://pbs.twimg.com/profile_images/1592990461517389824/iln8hi1f_normal.jpg)\n\nLenny Rachitsky@lennysan\n\nAnnouncing the Lenny's Newsletter x [@Replit](https://x.com/Replit) Buildathon  \n  \nBuild something awesome with my podcast and newsletter data using Replit, and win fabulous prizes:  \n🔸 1:1 career coaching session with [@amasad](https://x.com/amasad)   \n🔸 $5,000 in free Replit credits  \n🔸 A free year of Lenny's Newsletter  \n  \nThis is the excuse you've been waiting for to build with AI.  \n  \nLearn more and enter the thread below.   \n  \nP.S. The first 200 joiners get a free month of Replit Core.\n\n![Tweet Image](https://pbs.twimg.com/media/HHqNb4KasAABxGi.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/lennysan/status/2052108093522346276)\n\n💬1🔄3❤️12👀3545📊3",
+      "tags": [
+        "黑客马拉松",
+        "Replit"
+      ],
+      "score": 40,
+      "summary": "Lenny Rachitsky公布黑客马拉松获胜者，非AI新闻。",
+      "fetched_at": "2026-06-04T03:48:45.250117+08:00"
+    },
+    {
+      "title": "Connect your agent to @mixpanel MCP → query product analytics and surface insights for your team.",
+      "link": "https://x.com/NotionHQ/status/2062233349062803506",
+      "published": "2026-06-04T02:01:59+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Connect your agent to [@mixpanel](https://x.com/mixpanel) MCP → query product analytics and surface insights for your team.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6FIzxagAA7tcz.jpg)\n\n💬1🔄1❤️5👀1534📊2",
+      "tags": [
+        "Notion",
+        "MCP",
+        "Mixpanel"
+      ],
+      "score": 75,
+      "summary": "Notion推出Mixpanel MCP连接器，代理可查询产品分析。",
+      "fetched_at": "2026-06-04T03:48:45.250166+08:00"
+    },
+    {
+      "title": "Connect your agent to @MiroHQ MCP → create visuals and read boards, without leaving Notion.",
+      "link": "https://x.com/NotionHQ/status/2062233346294575250",
+      "published": "2026-06-04T02:01:58+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Connect your agent to [@MiroHQ](https://x.com/MiroHQ) MCP → create visuals and read boards, without leaving Notion.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6FFrdaUAAgH-l.jpg)\n\n💬1🔄1❤️7👀1640📊2",
+      "tags": [
+        "Notion",
+        "MCP",
+        "Miro"
+      ],
+      "score": 75,
+      "summary": "Notion推出Miro MCP连接器，代理可读取和创建可视化。",
+      "fetched_at": "2026-06-04T03:48:45.250213+08:00"
+    },
+    {
+      "title": "Custom Agents 🤝 @Box, @ClickHouseDB, @mercury, @MiroHQ, @mixpanel \n\n5 new MCP connectors = more too...",
+      "link": "https://x.com/NotionHQ/status/2062233334848336059",
+      "published": "2026-06-04T02:01:56+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "Custom Agents 🤝 [@Box](https://x.com/Box), [@ClickHouseDB](https://x.com/ClickHouseDB), [@mercury](https://x.com/mercury), [@MiroHQ](https://x.com/MiroHQ), [@mixpanel](https://x.com/mixpanel)   \n  \n5 new MCP connectors = more tools your agents can use:\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6Ey65aUAAxvIF.jpg)\n\n💬2🔄8❤️65👀4665📊11",
+      "tags": [
+        "Notion",
+        "MCP",
+        "Agent"
+      ],
+      "score": 80,
+      "summary": "Notion新增5个MCP连接器，扩展自定义代理能力。",
+      "fetched_at": "2026-06-04T03:48:45.250260+08:00"
+    },
+    {
+      "title": "It's time to fly.",
+      "link": "https://x.com/OpenAI/status/2062249312839434452",
+      "published": "2026-06-04T03:05:25+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "It's time to fly.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062241619131482112/vid/avc1/1920x1080/E45G_KV03jeeHCuz.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/OpenAI/status/2062249312839434452/video/1)\n\n💬111🔄48❤️493👀11350📊141",
+      "tags": [
+        "OpenAI",
+        "预告"
+      ],
+      "score": 60,
+      "summary": "OpenAI发布“Time to fly”视频，疑似产品预告，内容模糊。",
+      "fetched_at": "2026-06-04T03:48:45.250306+08:00"
+    },
+    {
+      "title": "So good to see an alternative this good from a HUGE company like @TencentAI_News\n\nYou can give it a ...",
+      "link": "https://x.com/itsPaulAi/status/2062245497775992983",
+      "published": "2026-06-04T02:50:15+08:00",
+      "source": "Paul Couvert(@itsPaulAi)",
+      "content": "So good to see an alternative this good from a HUGE company like [@TencentAI\\_News](https://x.com/TencentAI_News)  \n  \nYou can give it a try using their official website: [workbuddy.ai](http://workbuddy.ai)\n\n💬0🔄0❤️0👀324",
+      "tags": [
+        "腾讯",
+        "WorkBuddy",
+        "AI代理"
+      ],
+      "score": 60,
+      "summary": "Paul Couvert推荐腾讯WorkBuddy AI代理，非官方信息。",
+      "fetched_at": "2026-06-04T03:48:45.250352+08:00"
+    },
+    {
+      "title": "Most people in the West haven't heard of this AI agent yet. But it’s the no. 1 in China.\n\nTencent Wo...",
+      "link": "https://x.com/itsPaulAi/status/2062245384500678985",
+      "published": "2026-06-04T02:49:48+08:00",
+      "source": "Paul Couvert(@itsPaulAi)",
+      "content": "Most people in the West haven't heard of this AI agent yet. But it’s the no. 1 in China.  \n  \nTencent WorkBuddy has millions of users.  \n  \n- Local folders integrations  \n- 100s of built-in experts  \n- Coding and working modes  \n- Zero terminal, ready in seconds  \n  \nYou can even control it from your phone. From anywhere.  \n  \nThis is probably one of the most powerful app of this type. And now available globally.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062244675973500928/vid/avc1/1920x1080/d6nGe-_p3ChJvAIi.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/itsPaulAi/status/2062245384500678985/video/1)\n\n💬1🔄2❤️2👀428📊2",
+      "tags": [
+        "腾讯",
+        "WorkBuddy",
+        "AI代理"
+      ],
+      "score": 60,
+      "summary": "Paul Couvert介绍腾讯WorkBuddy功能，称其中国第一。",
+      "fetched_at": "2026-06-04T03:48:45.250397+08:00"
+    },
+    {
+      "title": "It's encouraging how the tech world has rallied round Ron Conway since he disclosed that he'd been d...",
+      "link": "https://x.com/paulg/status/2062240399406821835",
+      "published": "2026-06-04T02:30:00+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "It's encouraging how the tech world has rallied round Ron Conway since he disclosed that he'd been diagnosed with cancer. So many people are helping him in so many different ways. It's really making a difference.\n\n💬21🔄3❤️156👀11230📊28",
+      "tags": [
+        "Paul Graham",
+        "Ron Conway"
+      ],
+      "score": 30,
+      "summary": "Paul Graham提及Ron Conway患癌获支持，非AI主题。",
+      "fetched_at": "2026-06-04T03:48:45.250444+08:00"
+    },
+    {
+      "title": "Excited to partner with @Carahsoft! An important step for more of the public sector to have access t...",
+      "link": "https://x.com/ScottWu46/status/2062254276710461636",
+      "published": "2026-06-04T03:25:09+08:00",
+      "source": "Scott Wu(@ScottWu46)",
+      "content": "Excited to partner with [@Carahsoft](https://x.com/Carahsoft)! An important step for more of the public sector to have access to the same tools and technology that the private sector is adopting en masse today.\n\n![Carahsoft](https://pbs.twimg.com/profile_images/1129004575372009472/8-X01JHe_normal.png)\n\nCarahsoft@Carahsoft\n\nWe have partnered with [@Cognition](https://x.com/Cognition) to bring their AI coding platform, Devin, to the Public Sector. Together, we’re helping organizations modernize software development and accelerate secure AI adoption. Learn more: [carah.io/CognitionAIPR](https://carah.io/CognitionAIPR)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5BjpGWcAA75pO.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/Carahsoft/status/2062157762293895206)\n\n💬0🔄0❤️2👀235",
+      "tags": [
+        "Devin",
+        "Carahsoft",
+        "公共部门"
+      ],
+      "score": 80,
+      "summary": "Cognition CEO宣布Devin与Carahsoft合作，进入公共部门。",
+      "fetched_at": "2026-06-04T03:48:45.250490+08:00"
+    },
+    {
+      "title": "Martin Scorcese's AI storyboarding session with Black Forest Labs felt like a big moment for Hollywo...",
+      "link": "https://x.com/TheRundownAI/status/2062230785734697066",
+      "published": "2026-06-04T01:51:48+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Martin Scorcese's AI storyboarding session with Black Forest Labs felt like a big moment for Hollywood's tense relationship with the tech.   \n  \nBut not everyone is happy about it.   \n  \nSome quotes pulled by the BBC from people in the industry:   \n  \n\"He throws every single storyboard artist he's ever worked with under the bus, as he demolishes their livelihoods with models that are likely trained on the storyboard artist's same works.\"   \n  \n\"It takes literally seconds for me to storyboard a shot, there is absolutely no reason to need AI built on the stolen work of millions of artists to storyboard your vision, have some damn pride and respect your peers.\"\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6C1dAW8AAHm1c.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ6DVYUXwAA-qoo.png)\n\n![The Rundown AI](https://pbs.twimg.com/profile_images/1672707817197965312/zsxkJv_T_normal.jpg)\n\nThe Rundown AI@TheRundownAI\n\nLegendary filmmaker Martin Scorsese signed on last year as an adviser to Black Forest Labs, the German AI startup behind FLUX image models.  \n  \nOn Tuesday he went public, testing the tool on a single scene during preproduction.  \n  \nHis use is narrow: storyboarding only, complementing the same hand-drawn work he's done himself for 70 years. No generated actors, sets, or footage.  \n  \n\"Cinema is a young medium, only around 125 years old, so we have to be open to how it can evolve,\" he told the NYT.  \n  \nSee Scorcese's process in action, via [@bfl\\_ai](https://x.com/bfl_ai):\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061833103623045121/vid/avc1/1920x1080/mvEpJtVrxXUUrViY.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TheRundownAI/status/2061834880917357011/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/TheRundownAI/status/2061834880917357011)\n\n💬10🔄0❤️18👀2638📊8",
+      "tags": [
+        "Scorsese",
+        "Black Forest Labs",
+        "AI故事板"
+      ],
+      "score": 80,
+      "summary": "The Rundown报道Scorsese使用AI故事板引发的争议。",
+      "fetched_at": "2026-06-04T03:48:45.250538+08:00"
+    },
+    {
+      "title": "We’ve shipped a new release for the Antigravity IDE that significantly reduces cases of memory usage...",
+      "link": "https://x.com/_mohansolo/status/2062254895475138873",
+      "published": "2026-06-04T03:27:36+08:00",
+      "source": "Varun Mohan(@_mohansolo)",
+      "content": "We’ve shipped a new release for the Antigravity IDE that significantly reduces cases of memory usage blowing up. We’ve been making a huge push to improve performance and reliability. The feedback is very helpful, we’ll get to all of it!\n\n💬4🔄4❤️30👀583📊9",
+      "tags": [
+        "Antigravity IDE",
+        "更新"
+      ],
+      "score": 75,
+      "summary": "Antigravity IDE发布新版本，改善内存使用。",
+      "fetched_at": "2026-06-04T03:48:45.250584+08:00"
+    },
+    {
+      "title": "Wato (@watolabs) is building the collaboration layer for teams working with AI agents: shared knowle...",
+      "link": "https://x.com/ycombinator/status/2062232855879754137",
+      "published": "2026-06-04T02:00:01+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Wato ([@watolabs](https://x.com/watolabs)) is building the collaboration layer for teams working with AI agents: shared knowledge, cloud agents, automations, and permissioned tools across the AI subscriptions companies already use.  \n  \nCongrats on the launch, [@arihanxv](https://x.com/arihanxv) & [@rahulrejeev](https://x.com/rahulrejeev)!  \n  \n[ycombinator.com/launches/Qet-w…](https://www.ycombinator.com/launches/Qet-wato-a-shared-ai-workspace-for-teams)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062217836425359360/vid/avc1/1920x1080/w7KH_cTK53sIUIPf.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2062232855879754137/video/1)\n\n💬8🔄4❤️31👀4798📊11",
+      "tags": [
+        "Wato",
+        "AI协作",
+        "启动"
+      ],
+      "score": 80,
+      "summary": "Y Combinator宣布Wato启动，构建AI代理协作平台。",
+      "fetched_at": "2026-06-04T03:48:45.250630+08:00"
+    },
+    {
+      "title": "Routing and post-training open-source models won't only give you more accurate systems but also mean...",
+      "link": "https://x.com/ClementDelangue/status/2062248714945630632",
+      "published": "2026-06-04T03:03:03+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "Routing and post-training open-source models won't only give you more accurate systems but also meaningfully faster and cheaper systems as most companies are currently learning (in addition to giving you more control and privacy).  \n  \nThe idea that a \"frontier\" model (by frontier we mean is slightly more accurate on a few very limited benchmarks) will be better for all domains, all tasks, all setups just doesn't hold up! It's marketing for making you pay more!\n\n![Harvey](https://pbs.twimg.com/profile_images/1975966300171362304/-oiUwcpg_normal.jpg)\n\nHarvey@harvey\n\nWe partnered with [@FireworksAI\\_HQ](https://x.com/FireworksAI_HQ) to train open-source models for legal. Here's what we found:  \n  \n1) Hybrid legal agents can beat frontier models on quality and cost by routing selectively to a frontier advisor.  \n  \nWe tested a hybrid setup where GLM 5.1 served as the primary worker, routing tasks to Opus 4.7 as an advisor when needed.  \n  \nGLM invoked Opus sparingly, just 0.83 times per task on average.  \n  \nThe hybrid setup beat Opus on both quality and cost: 18% all-pass vs 14%, at $368 vs $954 across the same 100 tasks.  \n  \n2) Post-training can push open models to frontier-level legal performance.  \n  \nOn a 100-task slice of our Legal Agent Benchmark (LAB), SFT moved Kimi 2.6's all-pass rate from 11% to 15%, beating Opus' 14%.  \n  \nBut the cost gap was even more striking: $84 vs $954 across the same 100 tasks, or ~11x cheaper.  \n  \nWe're excited to continue working with [@FireworksAI\\_HQ](https://x.com/FireworksAI_HQ) on the next generation of open-source legal agents.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ53JSRaAAAWJc4.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ53fdLbIAAlEGL.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ53qLNbEAAPClQ.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/harvey/status/2062218656420167785)\n\n💬3🔄0❤️4👀193📊3",
+      "tags": [
+        "开源模型",
+        "路由",
+        "观点"
+      ],
+      "score": 70,
+      "summary": "Clement Delangue评论开源模型路由和微调的优势。",
+      "fetched_at": "2026-06-04T03:48:45.250677+08:00"
+    },
+    {
+      "title": ".@GoogleDeepMind's Gemma 4 - 12B is available on Ollama!  \n\nChat: \nollama run gemma4:12b-mlx\n\nHermes...",
+      "link": "https://x.com/ollama/status/2062250522598572345",
+      "published": "2026-06-04T03:10:14+08:00",
+      "source": "ollama(@ollama)",
+      "content": ".[@GoogleDeepMind](https://x.com/GoogleDeepMind)'s Gemma 4 - 12B is available on Ollama!   \n  \nChat:   \nollama run gemma4:12b-mlx  \n  \nHermes Agent:   \nollama launch hermes --model gemma4:12b-mlx  \n  \nClaude Code:   \nollama launch claude --model gemma4:12b-mlx  \n  \nand more 👇👇👇  \n  \n(Note, this currently works via MLX)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6U5Sha4AATXKd.jpg)\n\n💬2🔄0❤️6👀161📊3",
+      "tags": [
+        "Gemma 4",
+        "Ollama",
+        "MLX"
+      ],
+      "score": 85,
+      "summary": "Ollama宣布支持Google Gemma 4 12B模型，可通过MLX运行。",
+      "fetched_at": "2026-06-04T03:48:45.250723+08:00"
+    },
+    {
+      "title": "Model page: \n\nhttps://t.co/WD3DDuxEhx",
+      "link": "https://x.com/ollama/status/2062250524075000220",
+      "published": "2026-06-04T03:10:14+08:00",
+      "source": "ollama(@ollama)",
+      "content": "Model page:   \n  \n[ollama.com/library/gemma4](https://ollama.com/library/gemma4)\n\n💬0🔄0❤️2👀93",
+      "tags": [
+        "Gemma 4",
+        "Ollama"
+      ],
+      "score": 80,
+      "summary": "Ollama提供Gemma 4模型页面链接。",
+      "fetched_at": "2026-06-04T03:48:45.250769+08:00"
+    }
+  ]
+}
