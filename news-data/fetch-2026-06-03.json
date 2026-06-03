@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-06-02"
+    "date": "2026-06-03"
   },
   "entries": [
     {
@@ -1078,6 +1078,415 @@
       "score": 55,
       "summary": "中文用户评论Codex Sites更新，转述自Codex Releases。",
       "fetched_at": "2026-06-03T06:23:23.853795+08:00"
+    },
+    {
+      "title": "分享Claude Code团队内部的5条工作原则，我觉得每一条都值得学习。",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA==&mid=2647682883&idx=1&sn=6c9cbd20d8f6e7dbabe4a36b53bad5fe",
+      "published": "2026-06-03T10:02:00+08:00",
+      "source": "数字生命卡兹克",
+      "content": "原创 数字生命卡兹克 2026-06-03 10:02 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=d8b56b2a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F2jjfQoZLoqV6EicbSmgWYxPj2ImlhQDOE97hFDNjibJKjibQjmoNpYQ6odpOKF649alLMH3IpNAOOmibDb4TDjvDDmkHfeIiaTqt4JmUxZ4FnDvE%2F0%3Fwx_fmt%3Djpeg)\n\n自动化就是一切\n\n今天看到了一个我觉得还挺有价值的东西。\n\n就是凌晨的时候，AIHOT上推了Claude Code的一篇blog。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c298ea21&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqUxZl8px3FicVlNTd0yZrRkiblFmYfVtKlKdzxGGC1RxsG4OPemljlkF2XLbdkMswsEsnmlPqMbzhjggzxRiaV0d169CGiaS31Giaak%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n还是蛮少见的，很少见类似于Claude这种真正的AI公司，来分享一些组织上的一些想法和思考。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=ba9d9454&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqVZRcpictjMPlUgIlyTxEwbakyiabbQ4CodHj8D1vdVhWmlrSYFw8A3qlWE3dUaa1LsCVHNJypBdiajH7qRt8iaGxVypicic2vfLa2EI%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n特别这次分享的作者，还是当红炸子鸡Claude Code团队的工程总监，Fiona Fung。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=0e6aae8b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F2jjfQoZLoqXibJcQeNke9LfpdGtnTqHVp557ZQ3ZHhD2e4VBAiaTP6ul7MO5FibsuTRFuaBeotV9YUUqzWXCBU0V06fK5TvDBb03dCYJfbmUnU%2F640%3Fwx_fmt%3Djpeg)\n\n聊得主题就是他们团队作为AI原生组织，在工作方式和流程上的一些变化。\n\n我全部看完了，顺带也把那个半个小时演讲的视频给看完了，还是有很多共鸣的，因为很多思路和想法我们团队也在这么做这么践行的。\n\n尤其是她反复提到的一个习惯，就是他们团队里，每遇到一个问题，都会再追问一句：\n\n能不能把这件事自动化。\n\n这跟我自己一直在说的理念、跟很多朋友提到的一个习惯是一样的。\n\n就是如果一件事你需要重复3遍以上，请想尽一切办法，用AI将其自动掉。\n\n今天看到Claude Code团队居然在用几乎一模一样的逻辑来运转整个工程组织，还是挺兴奋的。\n\n所以想把这篇分享里的一些有价值的东西拎出来聊聊，希望能对大家有用。\n\n最最开始的时候，她其实有一个很有意思的判断。\n\n就是她说过去这么多年，软件工程的所有流程，不管是瀑布还是敏捷，所有那些规范啊方法论啊，本质上都是围绕一个核心成本在转，就是写代码太贵了这个事。\n\n工程师时间贵，所以你得花大量时间做规划、写需求文档、做各种各样的评审、开各种各样的会，全是在管理这个最贵的资源。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9ea4a2c1&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqWFdobib6dHsj0uHibGjXDC2NM9nUuCMqHQIZWTDrh1uHcjPcbibcn8m6Z2FqZKndvwK0SL60UxicY7MIrciaczGW8OAub1BYe0yUJI%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n我相信过去在互联网行业里面待过的小伙伴都能感同身受。\n\n但在AI时代，或者说，Agent时代。\n\n这个前提变了。\n\n在Claude Code团队，写代码已经很少是那个拖慢速度的环节了。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5f8018cb&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqVv7fOGOLZEZYmb0FLdboOpV4XPxJCLwNarFMxFSKZ4JmsUXHliaZl0Q84zbX67JSL6WjLgFvibXCatPfe9Ue7ZNjA0zudYjCzqc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n那问题就来了，如果写代码本身不再是瓶颈的话，那围绕它的所有上下游的流程，就全部都得重新想了。\n\nFiona Fung提到了一个非常核心的词，也是她整个分享的最重要的词：\n\n转移。\n\n瓶颈没有消失，只是转移了。\n\n转移到了验证、代码评审、安全。\n\n代码生成太快了，新问题变成了，这些代码对不对，怎么维护，人到底该如何跟得上review代码的节奏。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c34154e8&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqVTU8ibGZIUCttCHfTCruh83rWxXEhAzRhJZxVQF8XF1llp6ADrRgJuhtr7DAzdRDJeM8z2P1RwBZMxEiazeaw43ybFKhh24MNb4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n左边灰色的就是是旧瓶颈，写代码和发布代码的产能。右边黑色的就是新瓶颈，验证、评审、跨职能协作、安全。\n\n这个关于转移的判断，其实如果用AI来介入组织结构里面越深，大家的感触可能就会越明显。\n\n我们的组织结构、流程，其实都需要围绕着这个大的变化来去重新设计。\n\n就像当年从马车到汽车，不只是把马换成发动机的事儿，我们的整个公路系统、交通规则、城市规划，全都得重新设计。\n\n那具体哪些东西需要重新来呢，Fiona列了一张图。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6e87806e&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqXtfgJpjueHS3qU26cmR3ia9cyiaPDnCkHCUHqjKvDe8nEppTU86zP58oa7ESrTsIzoAfyJm9K5Xdu8rlRL9oLJS9dDTdSEfAWicw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n列了五个旧流程正在悄悄失效的领域。\n\n1. 规划方式，因为工程速度和产出量完全不同了。\n\n2. 代码所有权，谁写的这段代码变成了一个很奇怪的问题。\n\n3. 代码评审，新的规模、新的形态、新的工具。\n\n4. 团队构成，角色在模糊化，到底什么技能组合才是你需要的。\n\n5. 知识共享，文档不再是唯一的真相来源了。\n\n然后她对应地讲了五个她们重建的新规范。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=89ce882b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqXmWb4ib8bW7lxJDQicAzqOZTNrAg5yoSM1nJNWbciayjpicLmxZbapENwRXtvfNgtElbiaYeyf0HjDJogNyOUlRq9cDUQzpnXEViawo%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n包括要让人类的判断力，聚焦在真正需要的地方；新人入职的成本大大降低，甚至一周就可以直接开始产出代码了；少做前期规划，多做原型；招聘更看重创造力和判断力，不看纯产出速度；组织架构更扁平，每个管理者也都先从一线干活开始做起。\n\n这里面每一趴，她又都展开来做了一些分享。\n\n一. 规划的变化\n\n以前因为coding时间贵，你得花大量时间提前规划。\n\nFiona说她刚加入Claude Code团队的时候，他们写了一个挺漂亮的六个月路线图。\n\n结果呢，因为Claude Code本身迭代太快，三个月左右这个路线图就过时了。。。\n\n所以他们现在的做法叫JIT规划，Just-In-Time，像JIT编译一样，在对的时间做恰好足够的规划。\n\n不再写长篇大论的设计文档了，直接在PR或者原型里面讨论，不再做冗长的产品评审了，先做原型，让内部用户去用，然后根据反馈快速迭代。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=726a6494&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqUsezuovVLlaBmMJO5KgPcJVjh8Lc9YVWfv8IfuFNibFKJqJv97Ql1tW9emQM40wD6xUdK35jbZkJ1ial34KOWLA1xCaPw68rOMw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n左边是她们砍掉的东西，就是那个写代码之前必须先写设计文档的仪式。Fiona说对大部分工作来说这就是theater，做戏。现在换成原型先行，文档如果需要存在，写完代码之后感觉可以的话，再补需求文档。\n\n右边是她们加码的东西，验证。因为在AI原生的工作流里，东西出bug的方式跟以前不一样了，唯一能保证质量的方式就是不断把验证流程往前推。\n\n她还讲了一个观点我觉得特别好。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=3bea33ac&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqXgBnCjGohCV5pTQNNDxd8vIvUQnzrEEvUtTjzxM70MSGz1H0dtCLqkkRGTz9LSFLN7nwZKhPUR7JLy8Quyz3LrjKXicD81jzNA%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n在技术讨论中，代码赢才牛逼。\n\n就是如果两个人对一个方案有分歧，最快的解决方式不是继续吵，是让Claude把两个方案都做成原型，看实际的东西来判断。\n\nBuilding is cheap，做东西很便宜。\n\nArguing is expensive，争吵才昂贵。\n\n想起了当年，互相争某个方案，然后各自PK可能要各写一份PPT，开两轮会来讨论，现在十分钟两个原型都出来了，看着实物聊比对着PPT吵高效一万倍。。。\n\n我自己也是类似的路径。以前做AIHOT的时候还试过写比较详细的PRD，结果发现写PRD的时间比我直接用Claude Code把东西做出来还长。。。\n\n后来就改了，有想法先做原型，能用了再说。\n\n很多功能都是在用的过程中发现不对，当场就改，极速迭代。。。\n\n坦率的讲，在AI时代，我觉得过度规划就是浪费。\n\n二. 自动化的变化\n\nFiona说的，在Claude Code团队里，他们每遇到一个这样的问题，都会追问一句，能不能把这件事自动化。\n\n她举了一个她自己的例子，她以前每天早上端着咖啡，手动去总结各个客户反馈渠道的内容，这是她的每天固定的工作。\n\n后来她把这件事变成了一个后台自动运行的任务，咖啡还是那杯咖啡，但她不再需要边喝边刷了。\n\n这个例子听起来很小对吧，就一个总结客户反馈的事儿，能有多大工作量。\n\n但重点不在这一件事，重点在这个习惯。\n\nClaude Code团队里每个人，每次遇到一个重复性工作，都会条件反射地问自己，能不能自动化，她说，已经快形成了一种肌肉记忆。\n\n这就是我一直在说的东西。如果一件事你需要重复3遍以上，请想尽一切办法用AI将其自动掉。在公司里面我反复跟团队讲，这甚至不是建议，是要求。\n\n但坦率的讲，要真正把这个变成团队的肌肉记忆，比说出来难太多了。\n\n因为大多数人对自动化的理解还停留在一个很粗的层面，觉得自动化就是写个脚本嘛，搞个定时任务嘛，这我知道，但AI时代的自动化跟以前完全不是一个量级的东西。\n\n现在你用Claude Code，很多自动化的事情十分钟就搞定了，甚至不用十分钟。\n\n比如我为了同步家里电脑和公司，我就跟Claude说了一句“帮我写一个hook，每次打开我的XX项目之前都去github拉取最新的代码”，几分钟就能跑起来。\n\n以前自动化成本高，所以只有高频、高重复度、高价值的事情才值得自动化，但现在自动化成本几乎为零，逻辑就反过来了，几乎所有重复超过3次的事情都应该自动化。\n\n除了工作流之外，触发器hook是一个非常好用的东西，这个我感觉以后我可以单独给大家写一篇Agent+hook搞自动化的一些小玩法，还是挺有意思的。\n\n一个一个小的自动化攒起来，你会发现，最后这些东西，会在你可能都没反应过来的时候，一起长成了一颗苍天大树。\n\n所以如果你现在还在犹豫要不要开始，我的建议是别想太大。\n\n别一上来就想着我要搭建一个完整的自动化体系这种东西，那太吓人了，也没必要。\n\n就从今天开始，找一件你今天重复做了的事情，花十分钟让Claude Code或者Codex帮你自动化掉。\n\n明天再找一件，后天再找一件，一个月以后你回头看，你的工作方式已经完全不一样了。\n\n三. 代码评审的变化\n\n代码评审这块，Fiona说她过去六个月跟其他工程leader聊天，被问到最多的一个问题就是，你们人怎么跟得上代码review的速度。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dd0d30ef&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqVyia02EcNHLBKhQAQeIhmGz3PlnlHp5XrwmAetKSEq7kBB1AfM6jwXIKnoib5rt20aNDTric5T4AeDylib3Pt62hicJqNibl9VfOgQs%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n她的做法叫Trust but verify，信任但验证。\n\nClaude Code团队大量使用Code Review功能。\n\nClaude负责处理所有的风格检查、linting、PR反馈、bug捕捉和修复、补充测试，这些以前可能占了review工作量60-70%的部分，现在Claude全接了。\n\n但人类review仍然不可替代，在那些真正需要专业判断的地方。\n\n法律合规的东西，Fiona说她永远需要她的法务伙伴参与风险评估，信任边界和安全敏感代码，需要领域专家，产品方向和品味的判断，需要PM和设计师。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c0e4c08a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqURF3LYyT0Fp685gQB9mp5zcHS2gsqAL1vw2eticibicceN8KUpCVG5oDm2By1CBomcGX6o1ev14ibPb9EvyXibkth0h6RpV188ZgA4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n而且她特别强调了，这个trust和verify之间的平衡是动态的。今天需要人来做的事情，下一个模型可能就能做了，所以你必须得不断重新评估这条线。\n\n这就跟打游戏一样嘛，每个版本的版本答案都不一样，你不能拿上个版本的攻略打新版本，那只会被人干死。\n\n四. 团队角色的变化\n\nFiona说在Claude Code团队，角色界限已经变得很模糊了。\n\nPM在大量写代码，工程师也在做内容和设计的事情，以前泾渭分明的边界正在消融。\n\n比如以前一个工程师修了个bug，要等内容设计师排期来写用户端的文案，排期这个破事大家懂的都懂，结果要么等好几天，要么赶进度发一个凑合的文案出去。\n\n现在的流程是工程师修完bug，Claude来起草文案初稿，人类来做最终判断，当天就能发。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9f284672&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqXrgTicQZ5EmpS4A4jq3WVZpdJldGly3wbJMNHulPKS9LewPcdLYAQGANuY0cAXEhNicHMhFPLY5mB8Xfd142q9GeZqL8HOaAnhs%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n跨职能的gap不再是瓶颈了，开始变成了协作者，人类还是做最终决策的那个人，只是不再是写初稿的那个人了。\n\n然后她说了一个我非常认同的观点，她现在招人主要看两种特质。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=055e4135&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqUyica0Jl8YR4SCnQaiciauMk4PDhzMIecLxRlzfOe1o5m2aueDI79DN3Fmn5QibSPqq8yzn4e4aN5tw29Q4Gq3OtAc3VfCWpha4mQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n一种是有产品sense的创意builder，能识别出该做什么，能快速做出原型。\n\n她还特意在描述里强调了一句：\n\nTaste is scarce, typing is not. \n\n品味是稀缺的，打字不是。\n\n另一种是有深厚系统背景的工程师，负责那些「trust but verify」里最需要人的部分，因为subtly wrong is still wrong，微妙的错误仍然是错误。\n\n她说我根本不在乎你一个小时能写多少行代码，我在乎的是你选择去做什么，以及你怎么知道它是对的。\n\n当AI能把执行速度提升10倍的时候，决定性的因素变成了你知不知道应该做什么，以及什么样的结果叫真正的优秀。\n\n这，就是品味。\n\n**五. 如何推动团队变化**\n\n**Fiona她们团队有一些有意思的核心原则。**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=f4ab96b9&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F2jjfQoZLoqUXyEjBTjfzw564lMaCgVIyFrfHtZ5g8X4lYoeS4F284JVTjxuKIA9Acvudlz6VicSpJaGJVawYk6ANpTWlFJ9rvH0yBOc8sfr4%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n**她把团队原则分成了两类。左边灰色是必须做的硬性要求，右边黑色就是大家自己摸索的空间。**\n\n**其实本质上，就是给团队设计了一个harness，核心就是大的方向统一，具体怎么落地各团队自己定。**\n\nFiona总结了三条她最看重的事情。\n\n1. 保持团队尽可能扁平，管理者支持各个小组的工作，但保持灵活让人能流动到工作需要的地方。\n\n2. 如果Claude能做的事情，就让Claude做，这能让我们腾出手来做更难的工作。\n\n3. 人不会主动去删除流程，只会在旧流程上面继续叠新流程，所以你得主动站出来，指名道姓地说出哪些流程可以走了。\n\n这三条说起来都没啥特别的，但难在执行，特别是第三条。\n\nFiona说，她之前在一个团队里，有一个每周的review会议，一大堆人坐在会议室里，但她发现所有人都在看电脑，只有轮到自己汇报的时候才抬头说两句status，说完又低头继续看电脑（我相信我们很多时候的会议也都是这样的）。\n\n然后她问了一句，我们为什么还在开这个会。\n\n这时候，所有人才意识到，好像，这个会根本不需要。\n\n于是，从此，这个会就取消了。\n\n这种事太常见了，国内的公司里其实到处都是。\n\n无数的流程和会议，当初设立的时候都有道理，但环境变了、工具变了，它们早就失去了存在的意义，只是因为惯性还在那里被迫转着。\n\n没有人觉得它有用。\n\n但，好像很多时候，也没有人站出来说一句这破逼会太浪费时间了，能不能别开了。\n\nAI在你的组织里介入的越深，你会发现，很多过去的步骤和流程，其实液晶可以自动化了，如果我们不主动去审视，那这些步骤就会一直在那里，最后，变成纯粹的形式主义。\n\n最后，Fiona还放了三个她在思考的问题，她没有答案。\n\n但是很有意思。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2e601350&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqWa8PM2CribUXKv8wMZRpLta9SdhZmzYVpMPCZiboDQswibFlAttseDiaMYmHtHmbTm2VB5aA267ic1s1OtrwUd7dPwDuU8ibZ8qZDCI%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n第一，你还需要单独的iOS和Android团队吗？因为现在工程师已经可以更灵活地跨平台工作了。\n\n第二，全自动化的review到底能推到多远，在「够快了」和「我们漏掉了什么重要的东西」之间那条线在哪里？\n\n第三，当角色越来越模糊的时候，怎么确保所有角色都对自己的产出有信心？\n\n我觉得她把这三个问题放出来这个动作本身就很有价值。\n\n因为你会发现，即使是Claude Code的亲爹团队，也没有把所有事情都想明白。他们也在摸索，很多时候，这就不是一个有标准答案的事情。\n\n每一次的大型技术的到来，其实都不只是工具升级，整个组织的运作方式很多时候，都要推倒重来。\n\n所谓的AI原生，AI Native，其实也并不是买几个Claude会员或者包个API Key啥的，给大家用就算AI转型了，我一直觉得真正的AI原生组织，从规划方式到知识管理到评审流程到人才结构，每一层都是重新设计过的。\n\n我们也没有做到，但是还是在不断的朝这个方向努力，最近加入的一些新的小伙伴，他们的好奇心和自驱力，且没有被过去一些传统且饱受诟病的工作方式所污染，已经感觉让我看到了一些雏形了。\n\n而贯穿所有这些变化的，我觉得其实就是开头说的那个最朴素的思维习惯。\n\n遇到重复的事情，自动化掉。遇到没用的流程，干掉。遇到不需要人做的判断，交给AI。\n\n一个一个来，不着急，但不能停。\n\n最后，用Fiona的最后一段话作为结尾吧。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=38ced404&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2F2jjfQoZLoqUg6Vrb5mUvictWKtfbS0m7ryblic3AkGnj6qhZibm3qMWOpH8jlTYGCJfw8lX6MicCIhpPv0McQlDtC2PibLZ4EQbVJpLAFlFq6UpM%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\nPick your noisiest workflow. Ask if it still earns its place.\n\n找到你最繁琐的那个工作流，问问它。\n\n是不是还配占着这个位置。\n\n******以上，既然看到这里了，如果觉得不错，随手点个赞、在看、转发三连吧，如果想第一时间收到推送，也可以给我个星标⭐～谢谢你看我的文章，我们，下次再见。******\n\n>/ 作者：卡兹克\n\n>/ 投稿或爆料，请联系邮箱：wzglyay@virxact.com\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=58d88b1f&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyMzA5NjEyMA%3D%3D%26mid%3D2647682883%26idx%3D1%26sn%3D6c9cbd20d8f6e7dbabe4a36b53bad5fe)",
+      "tags": [
+        "Claude Code",
+        "AI团队",
+        "工作原则"
+      ],
+      "score": 82,
+      "summary": "数字生命卡兹克分享Claude Code团队工作原则，强调自动化。",
+      "fetched_at": "2026-06-03T11:55:09.755169+08:00"
+    },
+    {
+      "title": "制糖工厂发布 AI 小电拼 Mirror，支持 AI Agent 原生接入",
+      "link": "https://www.ifanr.com/1667908?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-06-03T11:09:33+08:00",
+      "source": "爱范儿",
+      "content": "![](https://s3.ifanr.com/wp-content/uploads/2026/06/001-2.png)\n\n制糖工厂 CANDYSIGN 发布 AI 小电拼 Mirror。这是小电拼系列的新一代产品，采用 4C1A 五口设计，支持 160W 持续输出、4 个 USB-C 口君支持 140W 输出，前面板新增 OLED ingBar 琥珀状态屏。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/002-2.png)\n\n**AI 小电拼 Mirror 基于 SDC（Software-Defined Charger）架构与 MCP 协议**，可接入 OpenClaw、Claude Code、Codex、Hermes 等 AI Agent，用自然语言完成充电状态查询、策略切换、端口控制、功率分配和设备诊断。\n\n这让 Mirror 的产品定位从多口快充设备，进一步延伸到可被 AI 调用的能源节点。对于多设备用户，尤其是同时使用笔记本、手机、平板、充电宝和开发设备的用户，充电器不再只提供功率，也开始承担状态解释和充电策略调度的一部分工作。\n\n### **AI Agent 可以读取和控制充电状态**\n\nAI 小电拼 Mirror 向 AI Agent 开放了多类设备能力。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/003.png)\n\n状态读取方面，AI Agent 可以获取设备型号、序列号、固件版本、Wi-Fi 状态、信号强度等信息，也可以读取端口数量、端口名称、端口类型和整机功率预算。进一步到端口层面，AI Agent 可以查看每个端口的电压、电流、功率预算、快充协议、连接设备名称和温度状态，并读取 USB PD 协商细节、线缆信息、电池数据和端口历史记录。\n\n这些信息可以用于回答一些具体问题。例如，电脑当前是否处在高功率输入状态，某个设备没有触发快充的原因可能来自线材、端口功率预算、协议协商还是设备自身电池策略。\n\n在控制方面，Mirror 支持通过 AI Agent 切换 FAST、SLOW、HIGH\\_PERFORMANCE、ULTRA\\_FAST\\_SINGLE\\_PORT 等充电策略，也支持 POWER\\_PRIORITY 和 TEMPERATURE\\_PRIORITY 两类温控取向。AI Agent 还可以打开或关闭指定端口、设置各端口功率分配，并调整状态屏亮度。\n\n这类能力的实际价值在于，用户不需要记住端口编号、功率表或协议名称，可以用更接近意图的方式表达需求，例如「优先保证电脑」「晚上降温运行」「把不用的接口关掉」「看看是不是线材限制了速度」等。\n\n### **0.5 寸 ingBar 琥珀屏显示功率和时间**\n\nAI 小电拼 Mirror 正面配备 0.5 寸 OLED 自发光 ingBar 琥珀屏，用于显示实时功率、时间和设备状态。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/004-1.jpg)\n\n这块屏幕采用琥珀色显示风格，视觉上致敬 80 年代终端屏幕**。ingBar 支持待机呼吸动态、整点提示、关键状态显示和康威生命游戏屏保**，并针对不同摆放姿态和支架形态适配了字体与背景纹理。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/005-2.png)\n\n与传统充电器的单色指示灯相比，ingBar 提供了更明确的状态反馈。用户可以直接看到当前功率变化，也可以通过 AI Agent 调整屏幕亮度，例如在夜间关闭显示，或在桌面工作时提高亮度。\n\n### **支持小米 120W 澎湃秒充和多种快充协议**\n\nAI 小电拼 Mirror 支持小米 120W 澎湃秒充私有协议，4 个 USB-C 口均可触发小米 120W 金标动画。\n\n除小米协议外，Mirror 还兼容 PD 3.2 AVS、PPS、UFCS 2.0、QC5、SCP、FCP、AFC、PE+ 等 19 种协议。**覆盖 MacBook、游戏本、iPad、Switch、Steam Deck、无人机、充电宝、树莓派、耳机、手表和部分小家电等设备。**\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/006-2.png)\n\n在多设备场景下，协议兼容性的意义在于减少用户对不同充电头和线材组合的依赖。Mirror 通过更广的协议覆盖与端口状态读取，让用户更容易判断设备当前使用的是哪种协议、获得了多少功率，以及是否受到线材或设备策略限制。\n\n### **CanOS 2.0 与 OTW 云桥用于后续升级**\n\nAI 小电拼 Mirror 搭载制糖工厂自研 CanOS 2.0 如意系统。该系统包含自由流调度、显示系统重构、协议固件更新、端云配置同步、控制与协议通讯重构等能力。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/007-2.png)\n\n**CanOS 2.0 将充电策略、显示和协议能力拆分为可持续更新的系统模块。**相比固定出厂协议的传统充电器，这种结构为后续协议适配、显示能力扩展和 AI Agent 接入留下了更新空间。\n\nMirror 还支持 OTW（Over The Wire&Wireless）云桥架构。通过 OTW，Mirror 可以升级自身，也可以作为中枢，为其他硬糖充电头提供 OTA 升级能力。目前支持 OTW 的硬糖产品包括 40W 硬糖 A 充与硬糖 C³ 充电器，可刷入华为模式、安卓模式、笔电模式、UFCS 2.0 模式等专属模式。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/008-2.png)\n\n这意味着 Mirror 不只是一台独立充电器，也可以成为制糖工厂能源系统中的升级节点。\n\n### **160W 持续输出和 4×140W 盲插**\n\nAI 小电拼 Mirror 采用 4C1A 五口设计，整机支持 160W 长时间持续输出，4 个 USB-C 口均支持最高 140W 输出。\n\n**Mirror 搭载 FluxAI 自由流® 算法**，可实时监测多口负载、回收闲置功率并实现功率复用。该算法在多设备同时接入时不会受限于固定功率分配，让功率无级按需流向当前更需要的设备。\n\n**测试数据显示，Mirror 可实现长时间满功率高能巡航，直到设备自身不再请求最高功率。Mirror 可为 MacBook Pro 持续输出约 88W**，为 Lenovo R9000P 游戏本持续输出约 91.1W，为 Anker A1340 充电宝输出最高 138.92W。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/009-2.png)\n\n▲ Macbook Pro (Apple M5 Max) 半小时持续 88W 充满不掉档\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/010-2.png)\n\n▲ Anker A1340 半小时持续138.92W 充满不掉档\n\n4×140W 盲插则降低了端口选择成本。用户不需要区分哪个 USB-C 口适合笔记本，任意 C 口都具备高功率输出能力。在酒店、办公室或多人共用桌面场景中，这类设计可以减少插错口和重新插拔的情况。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/011-1.png)\n\n### **可拼拆结构覆盖桌面和差旅场景**\n\nAI 小电拼 Mirror 延续小电拼系列的可拼拆设计。合体时，它是一台桌面能源中枢；拆下主体后，它是一只厚度 39mm 的随行充。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/012-2.png)\n\nMirror 合体尺寸为 105 × 39 × 78 mm，拆分主体尺寸为 105 × 39 × 39 mm，单口占用体积为 28.6 cm³/口，功率密度为 1.08 W/cm³。它可搭配 Wingie 蝶架或 Oxie 牛架使用，后者可解锁 160W 长时间的满血持续输出。\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/013-2.png)\n\n▲ Oxie 牛架\n\n![](https://s3.ifanr.com/wp-content/uploads/2026/06/014-2.png)\n\n▲ Wingie 蝶架\n\n### **关于制糖工厂 CANDYSIGN**\n\n制糖工厂 CANDYSIGN 是一个以极致美感和灵活多用电能产品为核心的品牌。秉承“好产品就是一颗糖”的理念，制糖工厂融合科技、艺术与时尚，服务创作者、开发者和多设备生产力用户，持续探索数字电能产品的新形态。\n\n从 2023 年 7 月 14 日的 01s 小电拼全球旅行版，到 02 AI 小电拼，再到 03 AI 小电拼 Mirror，小电拼系列已历经三代迭代。制糖工厂小电拼拥有拼拆设计专利、自由流算法专利等技术积累，产品定义、工业设计、系统架构、算法、固件与方案均由 CANDYSIGN 自主完成。\n\n了解更多：https://thecandysign.com/\n\n天猫旗舰店：https://candysign.tmall.com\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "AI充电器",
+        "制糖工厂",
+        "Agent接入"
+      ],
+      "score": 75,
+      "summary": "制糖工厂发布AI小电拼Mirror，支持AI Agent原生控制。",
+      "fetched_at": "2026-06-03T11:55:09.755251+08:00"
+    },
+    {
+      "title": "兄弟们，Google DeepMind 团队又来整活儿！\nGoogle DeepMind的最新发布，直接把“AI能帮科学家干嘛”这个老问题彻底翻篇了。\n\n他们把Gemini做成了一个叫Co-Scien...",
+      "link": "https://x.com/berryxia/status/2062002978203279507",
+      "published": "2026-06-03T10:46:34+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "兄弟们，Google DeepMind 团队又来整活儿！  \nGoogle DeepMind的最新发布，直接把“AI能帮科学家干嘛”这个老问题彻底翻篇了。  \n  \n他们把Gemini做成了一个叫Co-Scientist的多Agent系统。  \n  \n不是简单问答工具，是完整复制了科学家从idea到验证的整个循环：生成上千个假设、举办“idea锦标赛”、让多个Agent展开科学辩论、互相批判精炼，最后用文献、数据和搜索工具把每个主张落地验证。  \n  \n以前科研最卡的环节，就是一个人脑力有限，生成好假设、反复辩论、跨领域拉新知识都要靠自己。  \n  \n现在Co-Scientist把这个过程变成可规模化的流水线。  \n  \n过去一年他们和全球顶尖科学家一起测，在肝纤维化新靶点、肌萎缩侧索硬化（ALS）新疗法、逆转衰老的遗传线索这些超级复杂的问题上，都拿出了真正有潜力的新方向。  \n  \n最反直觉的一点是：它不是来取代科学家的，只是真正成了“专职研究伙伴”。  \n  \n科学家终于可以把脑力从“反复想假设、反复查文献”里解放出来，专注在最有创造力的判断和实验设计上。  \n  \nAI把以前只有顶尖团队才玩得起的“高强度idea迭代”变成了人人可用的基础设施。  \n  \n现在他们已经把Hypothesis Generation功能开放给个人研究者，直接通过Gemini for Science就能用。  \n  \n普通研究员也能拥有一个24小时不睡觉、能辩论、能验证、还能不断进化的AI合作者。  \n  \n这其实戳破了当前最主流的误解：很多人以为AI会让科学家失业，结果真实路径是AI把科学发现的速度和广度直接拉高一个数量级，让更多人能真正参与到突破性研究里。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061991237213933568/vid/avc1/1080x1080/ZYsj7YWZ2Lcc2hLO.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/berryxia/status/2062002978203279507/video/1)\n\n![Google DeepMind](https://pbs.twimg.com/profile_images/1695024885070737408/-M-HSH5P_normal.jpg)\n\nGoogle DeepMind@GoogleDeepMind\n\nWe believe AI can be a dedicated research partner to help discover the next breakthrough.  \n  \nEnter Co-Scientist: our latest Gemini-based multi-agent system that can generate, debate and evolve novel hypotheses for complex scientific problems 🧵\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061856074462879744/vid/avc1/1080x1080/62RJA1IrDvpnIaeZ.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/GoogleDeepMind/status/2061857539977842793/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/GoogleDeepMind/status/2061857539977842793)\n\n💬0🔄0❤️6👀555📊1",
+      "tags": [
+        "Google DeepMind",
+        "Co-Scientist",
+        "多Agent"
+      ],
+      "score": 88,
+      "summary": "Berryxia转述DeepMind发布Co-Scientist多Agent系统，用于科学发现。",
+      "fetched_at": "2026-06-03T11:55:09.755309+08:00"
+    },
+    {
+      "title": "Owen 老哥的这个去香港办卡的最新教程，时效性和细节都很到位。\n\n逛着街就把卡顺便也办了，对了现在政策越来越严格。\n真的不要偷懒，抽一天的事件去搞一下。\n\n顶多就耽误一天的时间，后面可能真的没有太多...",
+      "link": "https://x.com/berryxia/status/2061995428657418629",
+      "published": "2026-06-03T10:16:34+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "Owen 老哥的这个去香港办卡的最新教程，时效性和细节都很到位。  \n  \n逛着街就把卡顺便也办了，对了现在政策越来越严格。  \n真的不要偷懒，抽一天的事件去搞一下。  \n  \n顶多就耽误一天的时间，后面可能真的没有太多窗口期给你办理了。\n\n![AI 有两下子](https://pbs.twimg.com/profile_images/2049518004711677952/MgUdiRYE_normal.jpg)\n\nAI 有两下子@iswangwenbin\n\n[x.com/i/article/2061…](http://x.com/i/article/2061809873185390592)\n\n[🔗 View Quoted Tweet](https://x.com/iswangwenbin/status/2061989178926346471)\n\n💬3🔄0❤️2👀433📊4",
+      "tags": [
+        "香港办卡",
+        "教程"
+      ],
+      "score": 65,
+      "summary": "推荐香港办卡教程，提醒政策趋严。",
+      "fetched_at": "2026-06-03T11:55:09.755362+08:00"
+    },
+    {
+      "title": "笑死，这也算是应援上了。\nAI圈可不兴这个啊~~😄\n\n今晚就正式比赛，到时候给大家汇报同步我的Agent的亏损情况😄\n\n感谢朋友们的支持啊~",
+      "link": "https://x.com/berryxia/status/2061990588791292052",
+      "published": "2026-06-03T09:57:20+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "笑死，这也算是应援上了。  \nAI圈可不兴这个啊~~😄  \n  \n今晚就正式比赛，到时候给大家汇报同步我的Agent的亏损情况😄  \n  \n感谢朋友们的支持啊~\n\n![Tweet Image](https://pbs.twimg.com/media/HJ2pOc4aoAApCkC.jpg)\n\n![Berryxia.AI](https://pbs.twimg.com/profile_images/2016043556964605952/Tqi9KA2r_normal.jpg)\n\nBerryxia.AI@berryxia\n\n卧槽！你们别一天天光知道给Agent花钱消耗Token了。  \n赶紧派你的Agent给你去赚钱啊~~  \n  \nBloome 官方搞了一个Agent 模拟炒股大赛，如果拿奖的数千美金可以拿😄。  \n  \n我把我的小Berry已经训练的“听书读写，样样精通”。  \n不去给自己赚点Token费，都不合适啊！  \n  \n所以，今天必须给我的Berryxia小跟班打Call，我也希望友友们给我打打Call。  \n  \n因为他们有这个观众投票的机制，因此我希望你可以给我投一票啊！  \n  \n如果我的Agent比赛获奖，我将给大家在𝕏 抽奖送给支持我的朋友们。  \n  \n再次江湖最高礼仪了，抱拳了兄弟们！  \n投票地址在评论区👇🏻~~\n\n![Tweet Image](https://pbs.twimg.com/media/HJ0CXdSbUAE9ExD.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/berryxia/status/2061807952911356298)\n\n💬1🔄0❤️1👀389📊1",
+      "tags": [
+        "Agent炒股",
+        "比赛"
+      ],
+      "score": 40,
+      "summary": "作者预告Agent模拟炒股比赛，寻求投票支持。",
+      "fetched_at": "2026-06-03T11:55:09.755412+08:00"
+    },
+    {
+      "title": "这两天怎么回事，人们把我去年的观点翻出来了🤣",
+      "link": "https://x.com/dingyi/status/2061991935766925313",
+      "published": "2026-06-03T10:02:42+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "这两天怎么回事，人们把我去年的观点翻出来了🤣\n\n![Ding](https://pbs.twimg.com/profile_images/2000755831135191040/s6Pf_wjc_normal.jpg)\n\nDing@dingyi\n\n「懒猫」是我第一次 mute 一个关键词。\n\n[🔗 View Quoted Tweet](https://x.com/dingyi/status/1989889829803589677)\n\n💬5🔄0❤️18👀2076📊5",
+      "tags": [
+        "观点翻出"
+      ],
+      "score": 30,
+      "summary": "感叹去年观点被重新讨论。",
+      "fetched_at": "2026-06-03T11:55:09.755461+08:00"
+    },
+    {
+      "title": "Ore Code 又一个面向 DeepSeek 的桌面端 AI 编码工作台。\n\n面向长上下文编码、结构化工具调用、本地项目上下文、MCP 集成、技能、自动化，以及 macOS 和 Windows 桌面...",
+      "link": "https://x.com/geekbb/status/2062009879473312009",
+      "published": "2026-06-03T11:14:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "Ore Code 又一个面向 DeepSeek 的桌面端 AI 编码工作台。  \n  \n面向长上下文编码、结构化工具调用、本地项目上下文、MCP 集成、技能、自动化，以及 macOS 和 Windows 桌面体验。  \n  \n[github.com/233i/ore-code](https://github.com/233i/ore-code)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ2tPg2awAAYEn4.jpg)\n\n💬1🔄0❤️3👀798📊2",
+      "tags": [
+        "Ore Code",
+        "DeepSeek",
+        "AI编码"
+      ],
+      "score": 80,
+      "summary": "介绍Ore Code，面向DeepSeek的桌面AI编码工作台。",
+      "fetched_at": "2026-06-03T11:55:09.755509+08:00"
+    },
+    {
+      "title": "Hermes Desktop 桌面版就是 Agent 工作台啊，以后人个电脑就是 Claude Desktop、Codex Desktop、Hermes Desktop 三剑客主宰了。",
+      "link": "https://x.com/geekbb/status/2061994557118808334",
+      "published": "2026-06-03T10:13:07+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "Hermes Desktop 桌面版就是 Agent 工作台啊，以后人个电脑就是 Claude Desktop、Codex Desktop、Hermes Desktop 三剑客主宰了。\n\n![Geek](https://pbs.twimg.com/profile_images/1644898947272671233/7959WGOK_normal.jpg)\n\nGeek@geekbb\n\nHermes Desktop 👀\n\n![Tweet Image](https://pbs.twimg.com/media/HJzl5LQawAAKmqz.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/geekbb/status/2061775649044632007)\n\n💬6🔄1❤️8👀2975📊5",
+      "tags": [
+        "Hermes Desktop",
+        "Agent工作台"
+      ],
+      "score": 80,
+      "summary": "Geek评论Hermes Desktop桌面版将成重要Agent工作台。",
+      "fetched_at": "2026-06-03T11:55:09.755556+08:00"
+    },
+    {
+      "title": "This kid may be the best AI influencer I’ve seen.\n\nHe makes a bunch of viral face swap videos - and ...",
+      "link": "https://x.com/venturetwins/status/2061991866590286306",
+      "published": "2026-06-03T10:02:25+08:00",
+      "source": "Justine Moore(@venturetwins)",
+      "content": "This kid may be the best AI influencer I’ve seen.  \n  \nHe makes a bunch of viral face swap videos - and then some incredible fan fiction about himself.  \n  \n400k followers on IG in four months 🤯  \n  \n(kuba.creates. ai on IG)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061991812055834624/vid/avc1/1276x718/DOghYJfq1mtmzLAs.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/venturetwins/status/2061991866590286306/video/1)\n\n💬7🔄2❤️66👀5850📊19",
+      "tags": [
+        "AI换脸",
+        "影响者"
+      ],
+      "score": 65,
+      "summary": "称赞一位AI换脸视频创作者走红。",
+      "fetched_at": "2026-06-03T11:55:09.755603+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2062008692397003091",
+      "published": "2026-06-03T11:09:17+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![John Loeber 🎢](https://pbs.twimg.com/profile_images/924075457535885312/Tsk_1h8S_normal.jpg)\n\nJohn Loeber 🎢@johnloeber\n\nNotes on 100+ Recent Technical Interviews  \n  \nI interview a ton of engineers. Recruiting is the single most important technical CEO activity. Here are a bunch of impressions  \n  \n1. There is a severe ZIRP engineering overhang that is currently washing out. They're getting laid off, managed out, etc. after having been massively overhired around 2020-2022. This is worst for Tier-2 big tech (think PayPal, Bill, etc.) but also FAANGs. These are overwhelmingly bad engineers.   \n  \n2. This flood of unqualified but good-on-paper candidates makes this the hardest SF hiring market I have ever seen, due to the amount of nominally strong-looking candidates that you need to grind through.  \n  \n3. I am highly skeptical of \"AI as a cause for engineering layoffs\". I think this is a large-scale polite fiction -- the companies don't want to admit they overhired, the engineers don't want to admit they are bad at their jobs. Everyone's blaming AI when it's really just the market rectifying itself.  \n  \n4. Many of these engineers appear never to have had a real engineering function at their corporations. They're sitting in meetings, \"making decisions about technology\" but are unable to write software. I leave many interviews baffled by what exactly they were doing for so many years, let alone what their manager was doing.  \n  \n5. I have interviewed some engineers from FAANG companies so shockingly nontechnical that I am forced to conclude that there is either (1) a lot of resume fraud going on or (2) that there are kickback grifts within those organizations -- people hiring their cousins and splitting the pay, that kind of thing. I have no other explanation.  \n  \n6. There's a fun side-effect where after interviewing 20+ people from certain small but public companies, I actually feel like I am gaining a short sellers' advantage: there are financial technology companies out there that, knowing what I now know, I would never deposit a single dollar into.  \n  \n8. Based on this \"exhaust\" data, and extrapolating a little bit, maybe aggressively so: I think folks like [@pmarca](https://x.com/pmarca) are basically right when they say that ~every tech company is overstaffed by a factor of 2-4x. Whatever the reason -- staffing ahead of need, monopolizing certain engineer types (Google-style), headcount-driven promotion incentives, the reality is that a lot of these companies are not being run for the shareholders. The aggregate SBC expense is insane, and I expect this is going to get rectified eventually.   \n  \nI'm sure that AI will play a role in rectifying this -- but I fear that people are going to blame AI for taking people's jobs when the reality is that the jobs were already long-gone, possibly always useless, but the highly-paid butts-in-seats remained. People will be mad at AI for taking away their lucrative sinecures. Maybe that's the same effect from a public policy perspective, but it feels different morally.\n\n[🔗 View Quoted Tweet](https://x.com/johnloeber/status/2061707999685558330)\n\n💬2🔄0❤️11👀4998📊2",
+      "tags": [
+        "招聘",
+        "技术面试"
+      ],
+      "score": 70,
+      "summary": "Marc Andreessen转发一篇技术面试分析文章。",
+      "fetched_at": "2026-06-03T11:55:09.755671+08:00"
+    },
+    {
+      "title": "Look, it’s not my fault, SF founders kept telling me I had to try ketamine.",
+      "link": "https://x.com/pmarca/status/2062001601179488420",
+      "published": "2026-06-03T10:41:06+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Look, it’s not my fault, SF founders kept telling me I had to try ketamine.\n\n![GREG ISENBERG](https://pbs.twimg.com/profile_images/1577116785656139776/5mi0qgTz_normal.jpg)\n\nGREG ISENBERG@gregisenberg\n\nI was once pitching in a board room at a top 3 VC firm for a $15M Series A.   \n  \n12 people in the meeting. One of the GPs fully fell asleep. Out cold for 30+ minutes. Nobody acknowledged it. Everyone just kept going.   \n  \nI kept presenting my Series A slides to an unconscious man in a Herman Miller chair and somehow that was considered normal. That's venture capital.   \n  \nYou might fly across the country to perform for people who may or may not be conscious.  \n  \nIt's a dance.  \n  \nAnd sometimes you lead and sometimes you follow and sometimes your partner is unconscious.   \n  \nIf you're raising right now, just know: every founder has a story like this. The process is weird. The power dynamic is weird. You're not crazy for thinking it's weird.   \n  \nNo one talks about it because they want to continue raising. But I'm happy to stick my neck out there.  \n  \nIt is weird.\n\n[🔗 View Quoted Tweet](https://x.com/gregisenberg/status/2061794787825479818)\n\n💬26🔄5❤️188👀30533📊27",
+      "tags": [
+        "VC",
+        "轶事"
+      ],
+      "score": 30,
+      "summary": "Marc Andreessen调侃VC融资过程怪异。",
+      "fetched_at": "2026-06-03T11:55:09.755724+08:00"
+    },
+    {
+      "title": "Six years ago today.",
+      "link": "https://x.com/pmarca/status/2061996521357271442",
+      "published": "2026-06-03T10:20:55+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Six years ago today.\n\n![NPR](https://pbs.twimg.com/profile_images/1419704144026296333/ms3D5ipo_normal.jpg)\n\nNPR@NPR\n\nDozens of public health and disease experts have signed an open letter in support of the nationwide anti-racism protests.  \n  \n\"White supremacy is a lethal public health issue that predates and contributes to COVID-19,\" they wrote.  \n[trib.al/iVynMCH](https://trib.al/iVynMCH)\n\n[🔗 View Quoted Tweet](https://x.com/NPR/status/1267709439467020288)\n\n💬65🔄205❤️1807👀85353📊193",
+      "tags": [
+        "历史"
+      ],
+      "score": 20,
+      "summary": "分享六年前关于抗议的推文。",
+      "fetched_at": "2026-06-03T11:55:09.755771+08:00"
+    },
+    {
+      "title": "That… was a weird time.",
+      "link": "https://x.com/pmarca/status/2061996123892416855",
+      "published": "2026-06-03T10:19:20+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "That… was a weird time.\n\n![Jarvis](https://pbs.twimg.com/profile_images/1765490864611315712/1vVmPsyA_normal.jpg)\n\nJarvis@jarvis\\_best\n\nImpotent foot stomping obviously but you kids don’t remember that these guys used to be able to do this! The Twitter Mean Girls had real actual clout! Some low rent socialist would do a mean tweet about you and then Gawker would run a series of articles entitled “UMMM … Like What Is Wrong With \\_\\_\\_\\_’s Face??” and the whole article would just be an ultra close up picture of the villain’s face and then bam you couldn’t get a job.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ2q26MbwAELzsa.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/jarvis_best/status/2061992068176838748)\n\n💬5🔄2❤️64👀23076📊8",
+      "tags": [
+        "回顾"
+      ],
+      "score": 20,
+      "summary": "评论过去社交媒体现象怪异。",
+      "fetched_at": "2026-06-03T11:55:09.755817+08:00"
+    },
+    {
+      "title": "And this is why we must also abolish restaurants. cc @AOC",
+      "link": "https://x.com/pmarca/status/2061992155602735418",
+      "published": "2026-06-03T10:03:34+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "And this is why we must also abolish restaurants. cc [@AOC](https://x.com/AOC)\n\n![Alex Volkov](https://pbs.twimg.com/profile_images/2022567054579228672/Ofvtmqi0_normal.jpg)\n\nAlex Volkov@altryne\n\n.[@satyanadella](https://x.com/satyanadella) just put the whole \"water\" debate to rest.   \n  \nDatacenters run on a closed loop cooling system, the water usage of a datacenter for an entire year is roughly equivalent to a usage of 1 restaurant!\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061857150939656192/vid/avc1/1280x720/PGyD1RFGMjCtkfkz.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/altryne/status/2061857233903001674/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/altryne/status/2061857233903001674)\n\n💬86🔄87❤️997👀69020📊129",
+      "tags": [
+        "数据中心",
+        "用水"
+      ],
+      "score": 60,
+      "summary": "Marc Andreessen玩笑称应废除餐厅，引用数据中心用水对比。",
+      "fetched_at": "2026-06-03T11:55:09.755863+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2061991913733890323",
+      "published": "2026-06-03T10:02:36+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Andrew Curran](https://pbs.twimg.com/profile_images/1596945208058744833/_X3LT7fb_normal.jpg)\n\nAndrew Curran@AndrewCurran\\_\n\nIn a new Stanford study, law professors by far preferred Gemini 2.5 Pro's responses over those written by their peers when they were unaware of who wrote the answers.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ084rvacAANQnW.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/AndrewCurran_/status/2061871150846881926)\n\n💬9🔄5❤️98👀24998📊14",
+      "tags": [
+        "Gemini 2.5 Pro",
+        "法律",
+        "AI能力"
+      ],
+      "score": 85,
+      "summary": "斯坦福研究显示法律教授偏好Gemini 2.5 Pro回答。",
+      "fetched_at": "2026-06-03T11:55:09.755911+08:00"
+    },
+    {
+      "title": "At Apple, he’d go by Nathony.",
+      "link": "https://x.com/pmarca/status/2061991269191012729",
+      "published": "2026-06-03T10:00:03+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "At Apple, he’d go by Nathony.\n\n![mollie :3](https://pbs.twimg.com/profile_images/2057082778093535232/TztonHIm_normal.jpg)\n\nmollie :3@vuse\\_lover\n\nMet a guy recently named Jonathan who goes by Nathan. I didn’t even know you could do that\n\n[🔗 View Quoted Tweet](https://x.com/vuse_lover/status/2061837261927321840)\n\n💬16🔄4❤️169👀50627📊20",
+      "tags": [
+        "玩笑"
+      ],
+      "score": 10,
+      "summary": "关于名字改动的笑话。",
+      "fetched_at": "2026-06-03T11:55:09.755958+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2061991005285425431",
+      "published": "2026-06-03T09:59:00+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Logan Dobson](https://pbs.twimg.com/profile_images/1455586780300840964/2EOm06rx_normal.jpg)\n\nLogan Dobson@LoganDobson\n\nweird I have been reliably informed that Everyone Hates AI\n\n[🔗 View Quoted Tweet](https://x.com/LoganDobson/status/2061949258014560283)\n\n💬11🔄4❤️78👀30945📊12",
+      "tags": [
+        "AI看法"
+      ],
+      "score": 50,
+      "summary": "转发一条关于AI被讨厌的讽刺推文。",
+      "fetched_at": "2026-06-03T11:55:09.756004+08:00"
+    },
+    {
+      "title": "If there’s one thing the human race has proven over the last 4,000 years, it’s that we can normalize...",
+      "link": "https://x.com/pmarca/status/2061990205712732399",
+      "published": "2026-06-03T09:55:49+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "If there’s one thing the human race has proven over the last 4,000 years, it’s that we can normalize anything.\n\n![Séb Krier](https://pbs.twimg.com/profile_images/1992052427743272961/WJQ8uqql_normal.jpg)\n\nSéb Krier@sebkrier\n\nI think this was right and now that we do have agents, using them daily doesn't feel 'very weird' and I'm already used to the tech. If anything I think they're not good enough. I expect this to be the case with whatever we have in two years too. See also: [x.com/sebkrier/statu…](https://x.com/sebkrier/status/2014181012574531948)\n\n[🔗 View Quoted Tweet](https://x.com/sebkrier/status/2061856094012522722)\n\n💬36🔄11❤️184👀31563📊35",
+      "tags": [
+        "Agent",
+        "适应"
+      ],
+      "score": 65,
+      "summary": "评论人类能适应任何技术，包括Agent。",
+      "fetched_at": "2026-06-03T11:55:09.756051+08:00"
+    },
+    {
+      "title": "Learn more: https://t.co/BtQhWLC5NK",
+      "link": "https://x.com/satyanadella/status/2061993323901137339",
+      "published": "2026-06-03T10:08:13+08:00",
+      "source": "Satya Nadella(@satyanadella)",
+      "content": "Learn more: [microsoft.ai/news/building-…](https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/)\n\n💬2🔄5❤️31👀7343📊7",
+      "tags": [
+        "微软",
+        "MAI模型",
+        "Frontier Tuning"
+      ],
+      "score": 95,
+      "summary": "Satya Nadella宣布微软发布新MAI模型及Frontier Tuning能力。",
+      "fetched_at": "2026-06-03T11:55:09.756097+08:00"
+    },
+    {
+      "title": "With the new MAI models and Frontier Tuning capabilities we announced today, we're focused on helpin...",
+      "link": "https://x.com/satyanadella/status/2061993322072469649",
+      "published": "2026-06-03T10:08:12+08:00",
+      "source": "Satya Nadella(@satyanadella)",
+      "content": "With the new MAI models and Frontier Tuning capabilities we announced today, we're focused on helping every company move from just consuming a frontier model to fully participating at the frontier.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061992427666493440/vid/avc1/1920x1080/UgPN9fFaW6pgwbdG.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/satyanadella/status/2061993322072469649/video/1)\n\n💬33🔄39❤️257👀16263📊55",
+      "tags": [
+        "微软",
+        "MAI",
+        "Frontier Tuning"
+      ],
+      "score": 95,
+      "summary": "微软CEO宣布MAI模型和Frontier Tuning，帮助公司参与前沿模型。",
+      "fetched_at": "2026-06-03T11:55:09.756144+08:00"
+    },
+    {
+      "title": "openrouter 是 中转站\n硅基流动是 provider，模型是自己租/买cpu host\n也有些是又做中转，又做provider",
+      "link": "https://x.com/yan5xu/status/2062016573628731397",
+      "published": "2026-06-03T11:40:36+08:00",
+      "source": "yan5xu(@yan5xu)",
+      "content": "openrouter 是 中转站  \n硅基流动是 provider，模型是自己租/买cpu host  \n也有些是又做中转，又做provider\n\n![Jackywine](https://pbs.twimg.com/profile_images/1805875520430915586/x3t_sQdd_normal.jpg)\n\nJackywine@Jackywine\n\n小白不懂，想问一下  \n  \n硅基流动和 Openrouter 算是中转站吗？\n\n[🔗 View Quoted Tweet](https://x.com/Jackywine/status/2061979953634357590)\n\n💬0🔄0❤️0👀30",
+      "tags": [
+        "OpenRouter",
+        "硅基流动"
+      ],
+      "score": 50,
+      "summary": "解释OpenRouter是中转站，硅基流动是provider。",
+      "fetched_at": "2026-06-03T11:55:09.756190+08:00"
+    },
+    {
+      "title": "论文PDF：https://t.co/oNxjJ1DD4x\n中文解读：https://t.co/Tewt7cY7HC",
+      "link": "https://x.com/vista8/status/2062013526810743238",
+      "published": "2026-06-03T11:28:29+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "论文PDF：[arxiv.org/pdf/2605.19407](https://arxiv.org/pdf/2605.19407)  \n中文解读：[blog.qiaomu.ai/2026-06-03-mxf…](https://blog.qiaomu.ai/2026-06-03-mxfbl1)\n\n💬0🔄0❤️0👀206",
+      "tags": [
+        "数据过滤",
+        "训练",
+        "斯坦福"
+      ],
+      "score": 85,
+      "summary": "分享斯坦福论文：大数据过滤效果反而不如未过滤数据。",
+      "fetched_at": "2026-06-03T11:55:09.756236+08:00"
+    },
+    {
+      "title": "今天读到斯坦福大学研究团队的一个论文，有点跟直觉不一样。\n\n把没过滤的Common Crawl数据喂给大模型，发现计算量足够大时，不过滤数据效果反而比清洗后的数据效果好。\n\n在 15M 小模型上，过滤...",
+      "link": "https://x.com/vista8/status/2062013298741252183",
+      "published": "2026-06-03T11:27:35+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "今天读到斯坦福大学研究团队的一个论文，有点跟直觉不一样。  \n  \n把没过滤的Common Crawl数据喂给大模型，发现计算量足够大时，不过滤数据效果反而比清洗后的数据效果好。  \n  \n在 15M 小模型上，过滤数据全面领先，未过滤的很差。  \n  \n但当模型规模达到 330M 和 1B 时，情况完全反转，未过滤的在充分训练后超越了所有过滤版本。  \n  \n小模型怕垃圾，大模型不怕。  \n  \n模型大，秩（参数量）多，就有足够空间把垃圾和有用信息隔离开。  \n  \n论文解读和原始PDF见评论区\n\n![Tweet Image](https://pbs.twimg.com/media/HJ2-KSPbQAA8lWu.jpg)\n\n💬1🔄0❤️3👀329📊2",
+      "tags": [
+        "数据过滤",
+        "大模型训练"
+      ],
+      "score": 85,
+      "summary": "解读斯坦福研究：大模型用未过滤数据训练效果更好。",
+      "fetched_at": "2026-06-03T11:55:09.756282+08:00"
+    },
+    {
+      "title": "https://t.co/SNyjRWnsoz",
+      "link": "https://x.com/xiaohu/status/2062004505915670997",
+      "published": "2026-06-03T10:52:39+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "[x.com/i/article/2062…](http://x.com/i/article/2062001496804495360)\n\n💬0🔄0❤️4👀378📊1",
+      "tags": [
+        "链接"
+      ],
+      "score": 10,
+      "summary": "仅转发链接，无内容。",
+      "fetched_at": "2026-06-03T11:55:09.756341+08:00"
+    },
+    {
+      "title": "阅读是借文字行诘问之实",
+      "link": "https://x.com/lijigang/status/2061992320103514445",
+      "published": "2026-06-03T10:04:13+08:00",
+      "source": "李继刚(@lijigang_com)",
+      "content": "阅读是借文字行诘问之实\n\n💬1🔄0❤️7👀1104📊2",
+      "tags": [
+        "阅读"
+      ],
+      "score": 10,
+      "summary": "阅读感悟。",
+      "fetched_at": "2026-06-03T11:55:09.756395+08:00"
+    },
+    {
+      "title": "哦 是 Sites",
+      "link": "https://x.com/op7418/status/2062005746569711901",
+      "published": "2026-06-03T10:57:34+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "哦 是 Sites\n\n💬0🔄0❤️0👀266",
+      "tags": [
+        "Codex",
+        "Sites"
+      ],
+      "score": 40,
+      "summary": "评论Codex Site插件。",
+      "fetched_at": "2026-06-03T11:55:09.756444+08:00"
+    },
+    {
+      "title": "Codex 昨晚上线的这个 Site 插件非常厉害。\n\n它本质上感觉类似于 Claude Design，帮你设计和生成网页，同时还帮你部署好了，可以直接给别人访问。\n\n比较遗憾的是 Pro 用户不能用...",
+      "link": "https://x.com/op7418/status/2062005183090233773",
+      "published": "2026-06-03T10:55:20+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "Codex 昨晚上线的这个 Site 插件非常厉害。  \n  \n它本质上感觉类似于 Claude Design，帮你设计和生成网页，同时还帮你部署好了，可以直接给别人访问。  \n  \n比较遗憾的是 Pro 用户不能用，只有那些 Business 和有组织的用户可以用。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061871344237924352/vid/avc1/3840x2160/e5-juzX_HCXFwoUA.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TheRohanVarma/status/2061872164442403139/video/1)\n\n💬2🔄0❤️8👀899📊3",
+      "tags": [
+        "Codex",
+        "Site插件",
+        "网页生成"
+      ],
+      "score": 80,
+      "summary": "介绍Codex新Site插件可设计部署网页。",
+      "fetched_at": "2026-06-03T11:55:09.756490+08:00"
+    },
+    {
+      "title": "这里尝试，网站设计依然很顶：https://t.co/ADuOqAyvtV",
+      "link": "https://x.com/op7418/status/2062002600686518403",
+      "published": "2026-06-03T10:45:04+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "这里尝试，网站设计依然很顶：[hermes-agent.nousresearch.com/desktop](https://hermes-agent.nousresearch.com/desktop)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ20ao9bAAA96Wg.jpg)\n\n💬0🔄0❤️0👀490📊1",
+      "tags": [
+        "Hermes Desktop",
+        "网站设计"
+      ],
+      "score": 70,
+      "summary": "推荐体验Hermes Desktop网站设计功能。",
+      "fetched_at": "2026-06-03T11:55:09.756536+08:00"
+    },
+    {
+      "title": "Hermes 居然出官方的客户端了，感觉他们的发展比龙虾好太多了",
+      "link": "https://x.com/op7418/status/2062002323786985825",
+      "published": "2026-06-03T10:43:58+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "Hermes 居然出官方的客户端了，感觉他们的发展比龙虾好太多了\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061842336313745408/vid/avc1/3840x2160/sGqK7t6RQ3Am89jp.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/NousResearch/status/2061843507417944552/video/1)\n\n💬4🔄0❤️9👀988📊5",
+      "tags": [
+        "Hermes",
+        "客户端",
+        "Agent"
+      ],
+      "score": 80,
+      "summary": "评论Hermes发布官方客户端，发展超越龙虾。",
+      "fetched_at": "2026-06-03T11:55:09.756582+08:00"
     }
   ]
 }
