@@ -1697,6 +1697,438 @@
       "score": 10,
       "summary": "仅有链接转发，无有效信息。",
       "fetched_at": "2026-06-03T16:55:42.035259+08:00"
+    },
+    {
+      "title": "Direct Preference Optimization Beyond Chatbots",
+      "link": "https://huggingface.co/blog/Dharma-AI/direct-preference-optimization-beyond-chatbots",
+      "published": "2026-06-03T20:55:11+08:00",
+      "source": "Hugging Face Blog",
+      "content": "",
+      "tags": [
+        "DPO",
+        "RLHF",
+        "AI技术"
+      ],
+      "score": 85,
+      "summary": "探讨直接偏好优化在聊天机器人之外的应用。",
+      "fetched_at": "2026-06-03T22:29:07.909188+08:00"
+    },
+    {
+      "title": "IntelliJ IDEA 2025.3.6 Is Out!",
+      "link": "https://blog.jetbrains.com/idea/2026/06/intellij-idea-2025-3-6/",
+      "published": "2026-06-03T21:12:33+08:00",
+      "source": "The IntelliJ IDEA Blog",
+      "content": "IntelliJ IDEA 2025.3.6 is now available with the latest Oracle critical patch update for Java 21. The update includes the corresponding JetBrains Runtime changes and fixes the issue [[IDEA-389015](https://youtrack.jetbrains.com/issue/IDEA-389015/jbr25.0.3-resourcemanager.sketchImporter.ResourceFileGeneratorTest-throws-ComparisonFailure)], providing improved reliability and security.\n\nYou can update to this version from inside the IDE, using the [Toolbox App](https://www.jetbrains.com/toolbox-app/), or using snaps if you are a Ubuntu user. You can also download it from our [website](https://www.jetbrains.com/idea/download/).\n\nFor a comprehensive overview of the fixes, see the [release notes](https://youtrack.jetbrains.com/articles/IDEA-A-2100662688). If you spot any issues, let us know via the [issue tracker](https://youtrack.jetbrains.com/issues/IDEA).\n\nHappy developing!",
+      "tags": [
+        "IntelliJ IDEA",
+        "Java",
+        "IDE"
+      ],
+      "score": 70,
+      "summary": "IntelliJ IDEA 2025.3.6发布，包含Oracle关键补丁和Bug修复。",
+      "fetched_at": "2026-06-03T22:29:07.909307+08:00"
+    },
+    {
+      "title": "Alphabet investor presentation: June 2026",
+      "link": "https://blog.google/alphabet/investor-presentation-june-2026/",
+      "published": "2026-06-03T21:30:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Alphabet_Hero.max-600x600.format-webp.webp)Read the transcript of the presentation given by Sundar Pichai, CEO of Google and Alphabet, and Anat Ashkenazi, SVP and Chief Financial Officer.",
+      "tags": [
+        "Alphabet",
+        "投资者",
+        "财报"
+      ],
+      "score": 70,
+      "summary": "Alphabet发布2026年6月投资者演示文稿。",
+      "fetched_at": "2026-06-03T22:29:07.909410+08:00"
+    },
+    {
+      "title": "5 ways Google Search can level up your thrift and vintage shopping",
+      "link": "https://blog.google/products-and-platforms/products/search/thrifting-tips/",
+      "published": "2026-06-03T21:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Google_Thrifting_Header.max-600x600.format-webp.webp)Uncover second-hand scores with AI tools in Google Search and Shopping.",
+      "tags": [
+        "Google搜索",
+        "AI工具",
+        "购物"
+      ],
+      "score": 70,
+      "summary": "Google搜索提供5个AI辅助二手购物技巧。",
+      "fetched_at": "2026-06-03T22:29:07.909481+08:00"
+    },
+    {
+      "title": "15亿美元AI公司创始人：2026年决定胜负的思维转变丨Silicon Valley Girl",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzcxMDA5NTI0OA==&mid=2247487853&idx=1&sn=d6f1f9520f14013208298d3111393c96",
+      "published": "2026-06-03T20:52:00+08:00",
+      "source": "晚点再听LaterCast",
+      "content": "原创 Capihom 2026-06-03 20:52 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=4bf7058e&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FUNwPtic6UWKY2YSUOaUCQcB1EFNSK2X88CVLciaslmhIjM0XUIzMqsicWz1cj0qiaoajt7MM7cicf9nve9y8zDbQsEjmkgIopqYGia2gtRV0nZjKc%2F0%3Fwx_fmt%3Djpeg)\n\n全文约 3500 字，如果你现在没有时间，试试转成播客稍后再听\"能否比所有人都更在乎这件事？\"\"在 AI 时代，产品本身必须能跳出来，被注意到、被喜欢。\n\n我们每天为你更新硅谷最新的 AI 创业与科技播客总结，让你与前沿保持同频。全文约 3900 字，如果你现在没有时间，试试转成播客稍后再听晚点再听LaterCast\n\n\"如果你相信 AI 会产生巨大影响，就应该尽量靠近它。\"\n\n\"在 AI 时代，产品本身必须能跳出来，被注意到、被喜欢。\"\n\n\"你可以比大公司更在乎，因为它们必须在乎很多事情。\"\n\n本期采访的是 Granola CEO、联合创始人 Chris Pedregal。Granola 是一款 AI notepad，视频介绍里提到它 3 年做到 15 亿美元估值，闯进的却是一个早已拥挤的市场：Zoom、Google 和一批老牌 AI 会议记录工具都已经在做 notes。主持人开场就现场启动 Granola 来记录这次访谈，因为她的团队已经用了 6 个多月。Chris 的核心判断很适合今天的产品团队：AI 让软件更容易被做出来，也让平庸产品的噪音变得更大。小团队想赢，不能只问“大厂会不会也做”，要问自己能不能把一个高频、重要的工作场景做得比所有替代方案更让人愿意换。\n\n## AI 让门槛降低，也让平庸更多\n\n主持人一开始抛出的疑问很直接：到了 2026 年，人人都能 vibe code，小团队还有必要做垂直软件吗？Chris 没有给一个乐观口号。他说，AI 确实让建产品容易了，你不需要那么多人、那么多资源；同一枚硬币的另一面，是更多人都会尝试，市场会更拥挤。他拿数码摄影作类比：相机变得人人可用后，专业摄影师没有消失，普通照片变多了，真正好的照片仍然有价值。\n\n\"现在更容易做产品，更多人也在做；问题变成了，你能不能比所有人都更在乎。\"\n\n他看到 AI 公司突围的共同点很朴素：产品真的能用，体验比替代方案好。现在用户更愿意为细微的产品提升切换工具，也更敏感于自己每天使用的软件质量。**AI 创业的门槛降了，耐心和品味反而变得更稀缺。**代码生成可以帮你更快搭出第一版，但很难替你在一个细节上多打磨十遍。对用户来说，会议记录有没有抓住数字和日期、会后能不能立刻生成跟进邮件、笔记能否被自己掌控，这些细节每天都会被反复感受到。\n\n## 别急着公开发布\n\n传统创业建议常说，尽快发布、拿真实反馈、快速迭代。Chris 在 AI 时代给了一个反常识版本：他会在 private beta 或 closed beta 里多待一段时间，直到产品明显好过竞争对手。Granola 没有一开始就大张旗鼓公开发布。团队花了接近一年时间，把产品给少量用户用，看他们哪里卡住，再一点点修掉。\n\n\"如果我今天从零开始，我会在闭门测试里做，直到我确信产品明显好过竞争对手。\"\n\n他的理由很现实：外面已经有太多粗糙产品，公开亮相时“更好”本身就会成为差异化。早期他们看一两个用户使用，就能发现产品哪里不对。Granola 直到能让那批早期用户觉得“真的不错”，才决定公开发布，后面再用更大规模的反馈继续修。**AI 时代的速度，不只体现在更早上线，也体现在把糟糕体验更早暴露给自己。**闭门阶段并不慢，慢的是带着一个半成品进入市场后，被噪音淹没，还很难分辨用户到底因为哪一步离开。\n\n## 想战略，也要看用户眼睛亮不亮\n\nGranola 的点子也不是一开始就完整成型。Chris 说，选创业方向要同时做两件事：一边判断这个空间有没有大机会，会不会走到死胡同；一边把东西放到用户面前，看他们怎么反应。2022 年，他第一次接触 LLM，比 ChatGPT 发布早 8 到 9 个月，就判断这会改变工作和生产力工具。真正落到产品上时，团队尝试过多个方向，大多数原型用户都不关心，只有实时 notepad 让人眼睛亮起来。\n\n\"一旦你做出那个判断，就别总在抽象层面想太深，要跟着人们喜欢什么的气味走。\"\n\n主持人提到 Google 的产品测试方法：看用户眼睛有没有亮。Chris 也承认，Granola 早期高度依赖直觉和定性观察。很多人一开始装不上、用不起来，团队就盯着这些挫败感改。**战略判断决定你在哪个水域下船，用户反应决定你该往哪个方向划。**这比闭门写十页 PRD 更残酷，也更省时间。\n\n## 和大厂竞争，先选对格子\n\nGranola 上线时，AI notetaker 已经存在七八年，Zoom 和 Google 也都有会议记录功能。Chris 的观察是，很多工具只能做到边缘有用，没有真的完成用户期待的任务。Granola 也生成 notes，但它把自己设计成个人工具：用户可以控制、可以补自己的笔记、可以把会议信息变成后续行动。产品看起来在同一类目里，用户感受到的角色完全不同。\n\n\"如果体验只好 10%，用户也有足够理由切换。\"\n\n他给了一个 2×2 判断法：横轴看使用频率，纵轴看重要性。低频场景很难和 ChatGPT、Claude 或大厂工具竞争，用户会顺手去已有入口；高频场景才有机会形成习惯。高频还不够，最好是用户非常在乎体验质量的工作，例如会议、跟进、关系维护、决策材料整理。主持人提到 Google I/O 里类似 Whisper Flow 的能力，可以边说话边引用 Google Drive 和 Gmail 里的文件。Chris 的回答没有否认这种威胁，他只是把选择题拉回用户：如果用例足够高频、足够重要，体验好 10% 就可能让人换。会议就是这种场景，一天可能发生多次，错过一句承诺或一个日期都会影响后续协作。**小团队不该和大厂拼功能清单，要选一个用户每天都遇到、并且愿意为体验提升换工具的格子。**\n\n## 增长来自产品被同事带进公司\n\nGranola 的 B2B 路径模仿 Slack 和 Dropbox。先让公司里的一个人发现产品、喜欢产品、推荐给同事，工具在组织内部自然扩散；等到创始人、合规负责人、法务或安全负责人发现“大家都在用”，再转成企业付费、权限和数据治理。Chris 说，他们从一开始就知道会卖给公司，但早期只专注于做出人们真的想用、真的喜欢的东西。\n\n\"我们一开始只是想做出人们真的想要、真的喜欢的东西。\"\n\n他们第一次在 Twitter 发产品时，Chris 自己也没有多少粉丝。靠一个展示 notes 被自动补全的 GIF，Vercel 的 Guillermo Rauch 和 Matt Friedman 转发，第一天来了 500 个安装。更有意思的是，Granola 没有做旧式 AI notetaker 那种增长黑客：会议结束后强行把 notes 发给所有参会者，不管别人想不想收到。Chris 说，Granola 的工作是服务用户、给用户翅膀。**没有强增长回路，仍然能在拥挤市场里冒出来，说明用户在寻找更好的软件。**这种增长慢一点，却更干净，因为传播来自使用后的喜爱，而不是会议结束后的打扰。\n\n## 150 个早期用户，比总图表更诚实\n\n公开发布前，Granola 大约有 150 个活跃用户，主要是朋友和朋友的朋友。团队会先约一次电话，能线下就线下，不行就视频，让用户共享屏幕，从安装开始看他们如何使用 Granola，中间尽量不提示。三天后再约一次，让用户打开这几天用 Granola 记录的会议，一起回看哪些地方好、哪些地方差。Chris 说，这类定性观察信号最高，因为它直接暴露安装、理解、第一次使用和复用里的摩擦。\n\n\"每一行是一个用户，每一列是一天，你一眼就能看到使用模式。\"\n\n当产品开始有人持续使用后，他们用 dot plot 看留存：每行一个用户，每列一天，格子里填当天用了几场会议，用颜色深浅表示频率。总使用曲线只能告诉你累计有没有增长，dot plot 能看到某个人哪天突然形成习惯、哪群人用几次就掉了、谁隔了一段时间又回来。比如某个用户一开始只试一点，某天突然连着用了 5 场会议，之后变成习惯，团队就会追问：怎样让更多人经历那一天？**早期产品不缺大盘指标，缺的是能逼你看见具体人的工具。**\n\n## AI 先做 30 次点击的活\n\nChris 也分享了 Granola 内部的 AI stack。除了 Claude，他们有一个内部 Agent，叫 Nacho，连着公司几乎所有内部工具和数据源，可以在 Slack 里被调用。比如 Chris 觉得产品里某个行为奇怪，团队会让 Nacho 拉过去几个月的 analytics，看数据是否支持这个直觉；有人提出改按钮，Nacho 可以去和 Cursor 协作，准备一个变更。\n\n\"它做很多拉数据的活，做那些过去要点 30 下、打开三个工具、保存文件再上传的事。\"\n\nChris 很谨慎地区分了执行和决策。Nacho 会跑偏，团队会纠正它：“这不是我要的，你假设错了。”战略想法仍来自人，AI 执行查数、搬运、连接工具的工作。到了产品判断，Chris 仍然保留人类直觉：用户反馈可以交给 AI 聚类和分类，方便团队建立判断；至于产品灵魂、按钮放哪、体验给人的感觉，他仍认为那是创始人驱动的部分。主持人问有没有工作还没交给 AI，他提到“这个功能让我感觉如何”“另一个人会怎样体验”这类问题，仍要靠活生生的用户理解。**Granola 的内部 AI 没有替代创始人，它先接走了那些消耗注意力的机械步骤。**\n\n## 上下文才是 AI 助手的护城河\n\n主持人问有没有让 AI 变好用的 magic prompt。Chris 的回答很直：AI 需要足够多上下文。Granola 里有他 2000 到 2500 场会议记录，他可以让 Granola 看过去一个月的会议，写出几页关于自己、公司和产品的上下文，再粘到 ChatGPT 或 Claude 里，回答质量会立刻变好。普通 AI 只读十来段上下文，很难真的理解一个人和一家公司。\n\n\"如果 AI 有足够多上下文，你就能问它相当惊人的问题。\"\n\n他把理想中的 Granola 比作楼梯扶手：平时几乎不可见，摔倒时手一伸就在那里，能承住你的重量。未来的 AI chief of staff 也许不需要每次被明确指挥，它会观察会议、邮件、任务和语境，推断该在什么时候提醒、准备材料、更新链接。Chris 举了一个跟进邮件的设想：如果你常给对方发某个说明文档，后来换了新文档，AI 应该能从邮件里自己发现变化，下一次自动使用新链接。**好的 AI 助手不会总抢戏，它会在你需要时准确出现。**Granola 做会议记录，背后真正想积累的是连续、真实、动态的人和工作的上下文。谈到 AI 焦虑时，Chris 也把问题拉回控制感：无法控制的变化少想，能控制的部分是靠近 AI，把自己擅长的核心能力用 AI 放大。\n\n## 写在最后\n\nChris 最后的建议很克制：别被 Twitter 上的 FOMO 和“公司都由 Agent 运行了”冲昏头。你能控制的，是比任何人都更理解一个问题和一群用户。AI 会让变化更快，也会制造更多噪音。小团队真正能握住的，仍然是具体场景、具体用户和更好的产品体验。先把手里的问题看透，把用户的一天看细，再决定 AI 放在哪个步骤里，这比追逐每周的新概念更有胜算，也更能留下复利。长期看，用户会记住那份可靠。\n\n内容来源：\"$1.5B AI Founder: The Mindset Shift That Separates Winners in 2026\"丨Silicon Valley Girl\n\n原视频：<https://www.youtube.com/watch?v=U7apPfqHgvg>\n\n如果你喜欢深度好文，试试用小程序将不方便立刻阅读的文章转成播客，用「听」的方式，稍后阅读，不再错过好文章⇣\n\n⇣ 关注我，每天为你更新硅谷最新的 AI 创业／科技播客总结，让你与前沿保持同频 ⇣\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=9a556122&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzcxMDA5NTI0OA%3D%3D%26mid%3D2247487853%26idx%3D1%26sn%3Dd6f1f9520f14013208298d3111393c96)",
+      "tags": [
+        "AI创业",
+        "思维转变",
+        "Granola"
+      ],
+      "score": 80,
+      "summary": "Granola CEO Chris Pedregal分享AI时代产品思维与创业心得。",
+      "fetched_at": "2026-06-03T22:29:07.909547+08:00"
+    },
+    {
+      "title": "Kimi Work Beta 版邀你体验：你的工作，分我一半",
+      "link": "https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488492&idx=1&sn=f7a0013c095a20f7aaeac00eacec1c16",
+      "published": "2026-06-03T20:41:00+08:00",
+      "source": "月之暗面 Kimi",
+      "content": "原创 Kimi Work 2026-06-03 20:41 天津\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=39af0e2d&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fsz_mmecoa_jpg%2FxWvm6POT3icriahAbVQyB2xkAwKUAIibawDTUJyqibpUicXeCzJIspxI28nfPmwnYkkPzFR1iaahVYqdiauWhAm3PA0T7OYFD60ZvC8icGhCaicPomq0%2F0%3Fwx_fmt%3Djpeg)\n\n开始 Vibe Working\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b9e244d4&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fsz_mmecoa_png%2FxWvm6POT3icrk6DvDR9rd2zvhhbWBcggR15n2icKOIcE9YMLRP9ALVicZ3ibVhWfblpnCw1I77M3CgdUySgiaGcqIS6HcrVKl6V0pNKia84Zp2Np8%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n> \"Any sufficiently advanced technology is indistinguishable from magic.\"\n>\n> （任何足够先进的技术都与魔法无异。）\n>\n> 亚瑟·克拉克，《2001太空漫游》作者\n\n今天，我们邀请你体验 Kimi Work Beta 版。\n\n它是面向知识工作者的通用型本地 Agent，随 Kimi 最新测试版 Mac 和 Windows 客户端推出：\n\n* 它的内核是 Kimi Code，每天几十万程序员和 Kimi 全员在用的本地 Coding Agent，提供本地 Agent 基础能力，包括安装和使用技能（Skill）、运行定时任务等。\n* 它继承了在线版 Kimi Agent 的建站、PPT 等专业 Skills 和金融、科研、法律等专业数据库。\n* 它内置了能[像你一样使用浏览器的 Kimi WebBridge 方案](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488449&idx=1&sn=8f670f00b26eedc5de9ec6a66fc4aefa&scene=21#wechat_redirect)。\n\n最重要的是，它同样支持 Agent 集群，最高可以根据任务复杂度，自主创建包含 300 个子 Agent 的团队，帮你处理更复杂、耗时更久的任务。\n\nVibe Working，从 Kimi Work 开始：\n\n从 Coding Agent 到 Working Agent\n\nKimi Work 本质上是一次从 TUI 到 GUI、从 Coding Agent 到 Working Agent 的转变。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2ffabac9&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fmmecoa_png%2FxWvm6POT3icrdCDkpRh17rQcQybtyDFNCeQDgdQ9U6r7BKkXbhog86nKApZIeT6picRdGXuKxASiblZHqCK9NsbsMyynO0bqKoRTy3ZBibia356c%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n它把 Kimi Code 在工程场景中已经验证过的 Agent 能力，迁移到普通知识工作者熟悉的桌面交互里：用户不再需要打开终端、写命令、配置环境，只需要用自然语言描述目标，Kimi Work 就可以在你的电脑上拆解任务、并行执行、调用工具、使用浏览器、创建和整理文件夹，并交付文档、表格、PPT 等工作产物。\n\n更有意思的是，Kimi Work 自身是由 Kimi Code 深度参与写出来的。\n\n在开发过程中，Kimi 工程师使用 Kimi Code 等 Coding Agent 工具，一周内完成了 Beta 版的 Mac 和 Windows 客户端。开发过程中，累计产出超过 5 万行有效代码，其中 92% 由 AI 自主生成。\n\n这背后离不开 Kimi K2.6 模型的长程任务执行能力：支持 13 小时连续编码、300 个子 Agent 并行协作，以及 4000 余次自主工具调用。\n\n从 Vibe Coding 到 Vibe Working\n\nKimi Code 服务的是写代码的开发者，Kimi Work 服务的是每天被繁琐工作困住的知识工作者。\n\n前者把开发者从重复实现中释放出来，后者把知识工作者从信息搬运、文件整理、数据分析和报告生产中释放出来。\n\n让我们看看 Kimi Work，可以帮你做什么：\n\n📈 金融场景\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9ddea3e6&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fsz_mmecoa_png%2FxWvm6POT3ico1ycJOEmGELmkqdxRjBz6Ljnf0B87YrgR0Sw1DuLM3ftXkxpE9jOXee7kp05voIbHVHcs44JA4icNNWInAerHtjiblZ1Tra6hUo%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n让 Kimi Work 调研巴菲特近10年的持仓，总结出他的投资策略，并生成一个巴菲特投资skill。然后安装这个skill，用这个 skill 接入 Kimi 专业的财经数据源，来分析你的持仓和投资策略是否符合巴菲特的价值投资策略。\n\n工作流：调研 ▶ 生成 Skill ▶ 安装 skill ▶ 使用 skill  并调用 Kimi 专业金融数据源做分析\n\n---\n\n🧬 科研场景\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=af5dea14&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fmmecoa_png%2FxWvm6POT3icqTwRCrBphFKYAGdc48h6kiaPIDaSFPMDEm9cpoMCsSBSRxyDgrTSkEHl5yfuhgr1jfDkywhKm5iauAdMMQVEgEtq7mJSDdOSZFM%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n让 Kimi Work 化身城市计算研究员，帮你清洗你电脑上的仿真数据集，总结出核心的特征规律，并绘制出学术图表。然后根据这些清洗后的数据和图表，来辅助你完成论文。\n\n工作流：本地数据清洗 ▶ 图表绘制 ▶ 辅助完成论文\n\n---\n\n📁 办公场景\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=7ba0aa4d&u=https%3A%2F%2Fmmecoa.qpic.cn%2Fsz_mmecoa_png%2FxWvm6POT3ico3K4FPkQ49BEDYrrrMW3xbDClDJfGTdKe1iayiaMjQ7KYLdAnF0u1RLN2rQjWahzuKlRUUQyEp9sicNgo9nj51O1wWWxnhNss7Dc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n让 Kimi Work 读取电脑文件夹里的产品方案、工业设计原型图以及 GTM 方案，并调用 Kimi WebBridge 的能力，使用浏览器登录已经订阅的数据看板网站调研。通过深度调研市场大盘、出海法律法规、竞品生意现状，并结合自研看板分析 2,400+ 条用户评论，生成一份 128 页的跨境电商市场分析报告。然后让 Kimi Work 调用专用的 PPT Skill，将报告内容与本地设计原型一键转化为演示 PPT。\n\n工作流：本地文件读取 ▶ 本地浏览器查看订阅数据库 ▶ 深度报告生成 ▶ 调用 PPT Skill ▶ 客户方案输出\n\n邀你参与测试\n\nKimi Work 正以一天 N 版的速度迭代中。\n\n当前阶段的重点，是测试 Kimi Work 在任务拆解、多 Agent 并行、工具调用、浏览器操作、本地文件处理和长交付物生成等方面的能力边界与应用潜力。\n\n我们会根据内测用户的反馈，持续优化执行稳定性、交付质量和使用体验。如果你对 Kimi Work 探索和迭代的过程感兴趣，欢迎下载安装 Beta 版来体验。\n\n⬇️[Mac 版（需 Apple 芯片，MacOS 12 及以上系统）](https://appsupport.moonshot.cn/api/app/pkg/latest/macos/download)\n\n⬇️[Windows 版（ Windows 10 及以上系统）](https://appsupport.moonshot.cn/api/app/pkg/latest/windows/download)即将上线\n\n---\n\n```\n```\n最近更新\n\n和 Kimi 创始团队聊聊\n\nKimi WebBridge：让 AI 帮你操作浏览器\n\nKimi K2.6「Agent 集群」现已支持 300 个成员并行协作\n\nKimi K2.6 发布并开源，全面精进代码和 Agent 集群能力\n\n和 Kimi 一起投身 AGI，穿越成长周期\n\n服务全球1/5网站的Cloudflare选择Kimi K2.5，降低77%成本\n\nKimi 杨植麟「2026 中关村论坛」演讲全文（附视频）\n\nKimi API：用90%缓存命中率，把价格打到25%\n```\n```\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=428b7935&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzk0NDU1MDkyNg%3D%3D%26mid%3D2247488492%26idx%3D1%26sn%3Df7a0013c095a20f7aaeac00eacec1c16)",
+      "tags": [
+        "Kimi Work",
+        "Agent",
+        "月之暗面"
+      ],
+      "score": 90,
+      "summary": "Kimi Work Beta发布，面向知识工作者的桌面Agent，支持300个并行Agent。",
+      "fetched_at": "2026-06-03T22:29:07.909611+08:00"
+    },
+    {
+      "title": "Kimi Work：「赛博禅心，共发稿 887 篇」",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517696&idx=1&sn=137f678dfb4df706f75d877f1c9bdeec",
+      "published": "2026-06-03T21:11:00+08:00",
+      "source": "赛博禅心",
+      "content": "原创 金色传说大聪明 2026-06-03 21:11 上海\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=cecc111a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FjXSGuwJvpdgDxicnUFWsaO81zT83ibv66VQsHHEIhT6bulTvvjibvzCwlufhboxoQVfS1oahLdYbibXib1T0lhS7fQwjc6n4eibXN9E4wicdnM30ho%2F0%3Fwx_fmt%3Djpeg)\n\n【公众号数据导出】的脚本，在「阅读原文」\n\nKimi\n\n刚刚，[Kimi 发布了桌面端的 Kimi Work](https://mp.weixin.qq.com/s?__biz=Mzk0NDU1MDkyNg==&mid=2247488492&idx=1&sn=f7a0013c095a20f7aaeac00eacec1c16&scene=21#wechat_redirect)，定位「面向知识工作者的桌面 Agent 产品」，支持 300 个 Agent 并行工作\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=317174c6&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FjXSGuwJvpdg8TzRHIouyIXClABk5cGk8qcjNdzvChbLHWvgNvAUNbGatlcL0rC5eQdbWu490lXEaKX4O6VFhSiaMO4GDzWLD9bwRcaDoBJHs%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n核心能力包括：WebBridge 浏览器操控、同花顺/天眼查/iFind 等专业数据源接入、超长文本处理、设计感 PPT 生成、Skill 系统\n\n下载地址⬇️ Mac 版（需 Apple 芯片，MacOS 12 及以上系统）\n\n<https://appsupport.moonshot.cn/api/app/pkg/latest/macos/download>\n\nWIndows 听说已经在路上了，很快\n\n第一时间试了下，就是：**极好的数据抓取、分析、呈现 Agent**\n\nKimi Work，也是我用到的、唯一能抓到公众号后台数据的 Agent\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c3992d84&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FjXSGuwJvpdj6UwAMzGDx5OcricmSmMIY9PyIurI2YEGpBYTEPP6zEMSYfNsdTx5jsIzHK1XEY03fvsSXxW069GQpbmmkDgHoB3D3417ibgdOs%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n公众号的后台数据，是不太好导出的。所有信息也都是动态加载，试了 Claude、Codex、Atlas 等等一堆东西，都读不了，但 Kimi Work 可以\n\n不仅是公众号数据，各种数据它都能搞定，比如同花顺、天眼查、iFind、Yahoo Finance 这些金融数据源，抓完数据直接做分析和可视化，比如让他去做一份金融看板\n\n这是一个极好的数据抓取、分析、呈现 Agent，目前鲜有对手\n\n## 公众号全量数据抓取\n\n赛博禅心，此前一共发了多少篇文章？\n\nKimi Work：887 篇\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=dc57587f&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FjXSGuwJvpdiaibYzeLUliaw0f5laloTMOPWqmZp1sPv6xxGWcwmhf0M2NuKmdRHr2N2XhQsdnHwH1shiciaOsCACQ1iciaoVVnecn9mSAM8PnY5fNE%2F640%3Fwx_fmt%3Djpeg)\n\n这个需求，前段时间我在高铁上处理过：[Agent 时代，如何办公](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517129&idx=1&sn=4ea24babf28296b6205aa0ab7fcf3d78&scene=21#wechat_redirect)\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=148408de&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FjXSGuwJvpdjiakAwPd3ZDRsEhou3TOqmw5qFORQWiblCc128FehsysXibnTul03sibvrD0iabB3cDbfUeQxDrqIY8UDNLOagu8A9uME2Tlqvq0v8%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)](https://mp.weixin.qq.com/s?__biz=MzkzNDQxOTU2MQ==&mid=2247517129&idx=1&sn=4ea24babf28296b6205aa0ab7fcf3d78&scene=21#wechat_redirect)\n\n当时是用 Claude Code 写了一段 JS 脚本，然后通过 F12 在 console 里导出，花了半个多小时\n\n当时很多朋友找我要这个脚本，我也一一私信发了，这个脚本现在我也放在阅读原文里，有兴趣的可以自己拿，使用方法也在里面，不赘述了，点击「阅读原文」，能拿到这个\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8d7cde4d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FjXSGuwJvpdhCcxwOp4s3Av9G1MRGdhibibwJ2SMVdfK51JHtlspUtNcElhKOe0Uedic4AsREIGWuiblCrAdXTloRAkqHlCibLXicM5pkAp1KiaFymg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n但说实话，那个方法多多少少还是有门槛的，在搞脚本的过程中，是我挨个审查元素，告诉 claude code 每个信息在哪，然后才有了脚本；\n\n这个脚本呢，用的时候也不是很方便，也是得稍微懂一点前端和数据处理方向的知识\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=02fd7359&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FjXSGuwJvpdh64icDMbicib2U72Te5pn9zAoMPm5YLt7SbHazYu8UibRWIvy5x7g86PkSFfw1UwdLt2J0ELzMjibwsiaCLj5CibI6ickcwMS7WBlRymc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n但这些东西，却可以很简单的被 Kimi Work 搞定，大概就是一句话：\n\n打开：<https://mp.weixin.qq.com/...(公众号后台地址)，然后统计我的所有发布过的文章的阅读量...然后>逐页记录每篇文章的：发布日期、标题、阅读数、点赞数、在看数、分享数，做出一个可视化的网页，让我能够知道我发了哪些文章、总阅读数是多少等各种信息，要有表格\n\n如果有问题，就「你自己看着办，别问我」\n\n然后 Kimi 就开始工作了，操控着我的浏览器，我录了个屏幕\n\n最后，我就获得了这些东西\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=a8141a5a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FjXSGuwJvpdhLvicNUI0BcNM45noMbTskZibLKJcHUDYj22OfTiaZtECibuia9ydxvoSEuFJdG70sL3QmNKIfovz43F1ufmKkIsf1gh53JLhwjJvc%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n## Kimi Work 强在哪\n\n我觉得大概是两点吧：\n\n* 其一、这套 Agent 搭的还是很完整的，能够有效的知道怎么去定位元素\n* 其二、这个浏览器插件很不错，能被调用的很顺畅\n\n作为对比，Claude、Codex 以及“最好的 AI 浏览器” Altas 都不行\n\n比如这个，用 Claude in Chrome 打开公众号后台，右侧边栏会直接报错「Can't access this page」\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=173133ea&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FjXSGuwJvpdjOSMmkApVTAPJGxiau32RKCCdVHKicC7OAjP1DiaVmG7JyyNvPaIvNWcTiaQojXk383E5v6jZudWttaqWNEAKsjq4ZI2zA4ycaq48%2F640%3Ffrom%3Dappmsg)\n\nCodex 的 Chrome 插件也没读出来。可能是页面渲染方式的问题，微信公众号后台对这些工具来说都读不了\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=bdce456b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FjXSGuwJvpdg6EobrfibwGRrXKFUdISgGj5lVqEM3ZzLiat4Ax4NdibbnbqPmUDibXXtQX8RGG6MxXV5g2cjMeovBbibdqI2yCyliaIEtVQSd9A8tQ%2F640%3Ffrom%3Dappmsg)\n\nOpenAI 的浏览器 Altas 的也试了，返回「ChatGPT does not have access to the page content」，然后建议我把数据导出成 CSV 再发给它...哎...\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=36976b9e&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FjXSGuwJvpdhQnItUHQH2y3e1UJhUkBUNjGG9dNiaZSzDf4lql8mr094ajLB7dLUMic10gMytUHTgJXPOd7DTaEeTjsoWcvu91Y26Of9trvictU%2F640%3Ffrom%3Dappmsg)\n\n具体原因，可能是页面渲染方式的问题或者其他，但总之，微信公众号后台对这些工具来说都读不了\n\n而另一方面，Kimi Work 能读，成功的读到了，在过程中我是看着他思考的。在接到「帮我抓取公众号数据」这个任务后，就进行了以下的思考和操作\n\n* 觉得自己应该使用浏览器，看看这个页面是个什么情况\n* 发现这里的数据是动态加载的，尝试写代码解决\n* 发现通过接口的方式，获取的信息不全，于是模拟人去挨个打开页面\n* 定位到页面的每个元素，然后抓取里面的信息\n\n这些数据抓完了之后，它还做了做一套数据表格，可以互动的：\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=820f0b45&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FjXSGuwJvpdjE5d82k8Qb4AribBD4KRe0KxPPJO05R2qurgG3ASm0tbicDX1LwZcNeuic8Us7uOpZXdOM0tiathskqoicSsUky2nckhW8xicNMGDgk%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg)\n\n## 怎么用\n\n下载地址⬇️ Mac 版（需 Apple 芯片，MacOS 12 及以上系统） \n\n<https://appsupport.moonshot.cn/api/app/pkg/latest/macos/download>\n\n进去之后，可以切到 Work 模式，勾选右下角「K2.6 Agent 集群」\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b8a03217&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FjXSGuwJvpdiaMsU7w3TuZUSeWEy5qsibkXVibXGMydSxLgYlIoGsjYPacMAYg8fDCGtF69cibfsdomsXuTY9zy4F32OWOC56audatgAGt5xOd5w%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n如果你需要进行网页数据抓取，也可以安装 WebBridge\n\n地址：`kimi.com/zh-cn/features/webbridge`，装完重启桌面端就能用\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=c333fe10&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FjXSGuwJvpdjBOhdYL1dNXpnGxUlIkiaJGPHTlbR80OX15fkQyWUzb8Bpheq8K6WyuzBLHnnDJiabgw8z1O2EQTgE01ffKFm0wlO28NFbohX0k%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n在这里，最多 300 个 Agent 一起干活，大活一会儿就干完了，加上同花顺、天眼查这些数据源也都的原生接入了，**Kimi Work 这产品，还是很适合的数据场景的，反正抓取、整理、分析和呈现都好**\n\n还有，这个产品目前还是 beta 阶段，还可能会不稳定，但数据抓取能力还是非常可圈可点的\n\n就想着我前段时间，还在为高铁上搓脚本...只能说：这个时代，拼的就是干想、干做\n\n[阅读原文](https://docs.qq.com/document/DY01OdndhR3NZaWVO)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=30d9c1d1&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkzNDQxOTU2MQ%3D%3D%26mid%3D2247517696%26idx%3D1%26sn%3D137f678dfb4df706f75d877f1c9bdeec)",
+      "tags": [
+        "Kimi Work",
+        "Agent",
+        "实测"
+      ],
+      "score": 80,
+      "summary": "赛博禅心测评Kimi Work，称赞其在数据抓取和分析方面的能力。",
+      "fetched_at": "2026-06-03T22:29:07.909673+08:00"
+    },
+    {
+      "title": "从看懂世界到做对动作，卧安机器人OneModel 1.7用一条「隐式通路」打通了具身智能的关键断层",
+      "link": "https://www.qbitai.com/2026/06/428703.html",
+      "published": "2026-06-03T20:28:44+08:00",
+      "source": "量子位",
+      "content": "在潜在空间中完成信息传导",
+      "tags": [
+        "具身智能",
+        "OneModel",
+        "机器人"
+      ],
+      "score": 80,
+      "summary": "卧安机器人OneModel 1.7发布，通过隐式通路解决具身智能断层。",
+      "fetched_at": "2026-06-03T22:29:07.909733+08:00"
+    },
+    {
+      "title": "DMIT 好像彻底不行了，IPv4 的节点突然都挂了，官方还不让换节点。。。再一看日子，哦明天是 64",
+      "link": "https://x.com/dingyi/status/2062154025718710527",
+      "published": "2026-06-03T20:46:47+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "DMIT 好像彻底不行了，IPv4 的节点突然都挂了，官方还不让换节点。。。再一看日子，哦明天是 64\n\n![Tweet Image](https://pbs.twimg.com/media/HJ4-IIZa8AAZWLq.jpg)\n\n💬13🔄1❤️19👀4809📊14",
+      "tags": [
+        "DMIT",
+        "网络"
+      ],
+      "score": 30,
+      "summary": "用户吐槽DMIT IPv4节点故障且无法更换节点。",
+      "fetched_at": "2026-06-03T22:29:07.909792+08:00"
+    },
+    {
+      "title": "不用等 OpenAI 了",
+      "link": "https://x.com/lifesinger/status/2062160447135154543",
+      "published": "2026-06-03T21:12:18+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "不用等 OpenAI 了\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5D_YvbgAAJCDg.jpg)\n\n💬7🔄0❤️10👀2035📊8",
+      "tags": [
+        "OpenAI",
+        "AI"
+      ],
+      "score": 40,
+      "summary": "推文暗示不用等OpenAI，但内容不明确。",
+      "fetched_at": "2026-06-03T22:29:07.909850+08:00"
+    },
+    {
+      "title": "来 YouMind 一起赚钱\n这件事情正在发生",
+      "link": "https://x.com/lifesinger/status/2062157832620019736",
+      "published": "2026-06-03T21:01:54+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "来 YouMind 一起赚钱  \n这件事情正在发生\n\n![Nicolechan](https://pbs.twimg.com/profile_images/1980138155312304128/4C6tfjLW_normal.jpg)\n\nNicolechan@stark\\_nico99\n\n[x.com/i/article/2062…](http://x.com/i/article/2062121116655874048)\n\n[🔗 View Quoted Tweet](https://x.com/stark_nico99/status/2062132360603451768)\n\n💬1🔄1❤️5👀1015📊2",
+      "tags": [
+        "YouMind"
+      ],
+      "score": 20,
+      "summary": "推广YouMind招聘信息。",
+      "fetched_at": "2026-06-03T22:29:07.909908+08:00"
+    },
+    {
+      "title": "get out of jail free card to mint billions by inventing unauditable “losses”. \n\nfun for the whole cr...",
+      "link": "https://x.com/GaryMarcus/status/2062178232154427396",
+      "published": "2026-06-03T22:22:58+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "get out of jail free card to mint billions by inventing unauditable “losses”.   \n  \nfun for the whole crimin’ family.\n\n![Josh Mobley Music ⚡️](https://pbs.twimg.com/profile_images/1609748215905099776/uEb8A30j_normal.jpg)\n\nJosh Mobley Music ⚡️@joshmobleymusic\n\n[@GaryMarcus](https://x.com/GaryMarcus) Trump‘s family can now literally say that they lose billions every year and the taxpayer will have to pay them.\n\n[🔗 View Quoted Tweet](https://x.com/joshmobleymusic/status/2062176294863839652)\n\n💬0🔄1❤️3👀171📊1",
+      "tags": [
+        "政治"
+      ],
+      "score": 10,
+      "summary": "Gary Marcus评论特朗普家族利用亏损套现。",
+      "fetched_at": "2026-06-03T22:29:07.909965+08:00"
+    },
+    {
+      "title": "yes",
+      "link": "https://x.com/GaryMarcus/status/2062177964910075907",
+      "published": "2026-06-03T22:21:54+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "yes\n\n![🧚‍♀️🪄Emilie Syverson ✨](https://pbs.twimg.com/profile_images/1854666257041121292/9l7thOVv_normal.jpg)\n\n🧚‍♀️🪄Emilie Syverson ✨@emiliesyverson\n\n[@GaryMarcus](https://x.com/GaryMarcus) Like, is this based on ppl actually buying into Musk's truly unhinged pie-in-the-sky timelines for his fantastical sci-fi aspirations, which seem unlikely to even be technologically feasible in my lifetime?\n\n[🔗 View Quoted Tweet](https://x.com/emiliesyverson/status/2062176316930052123)\n\n💬0🔄0❤️0👀266",
+      "tags": [
+        "无价值"
+      ],
+      "score": 5,
+      "summary": "Gary Marcus简单回复“yes”。",
+      "fetched_at": "2026-06-03T22:29:07.910024+08:00"
+    },
+    {
+      "title": "No one. No one in their right mind.",
+      "link": "https://x.com/GaryMarcus/status/2062172541121335547",
+      "published": "2026-06-03T22:00:21+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "No one. No one in their right mind.\n\n![Dan O](https://pbs.twimg.com/profile_images/1498364038224433161/sGomJ-DT_normal.png)\n\nDan O'Dowd@RealDanODowd\n\nSpaceX is losing money hand over fist, nearly $5bn last year.  \n  \n[@SpaceX](https://x.com/SpaceX)’s only profitable business is Starlink, but its new satellites can only be launched by Starship, which the FAA has grounded, again.  \n  \nWho in their right mind thinks this meme stock of a company is worth $2tn?\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061997265217368064/vid/avc1/3840x2160/8bJoEjBWwMy7Nmhz.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/RealDanODowd/status/2061998098499678225/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/RealDanODowd/status/2061998098499678225)\n\n💬7🔄6❤️27👀1838📊8",
+      "tags": [
+        "SpaceX"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus否认SpaceX估值2万亿美元。",
+      "fetched_at": "2026-06-03T22:29:07.910083+08:00"
+    },
+    {
+      "title": "Staying in shape is the one investment that pays you back in every other area of your life.",
+      "link": "https://x.com/thejustinwelsh/status/2062159133529276441",
+      "published": "2026-06-03T21:07:05+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "Staying in shape is the one investment that pays you back in every other area of your life.\n\n💬47🔄4❤️105👀2956📊48",
+      "tags": [
+        "健身"
+      ],
+      "score": 10,
+      "summary": "Justin Welsh发表保持身材的励志言论。",
+      "fetched_at": "2026-06-03T22:29:07.910142+08:00"
+    },
+    {
+      "title": "@harvey We teamed up with @Harvey for a study measuring and designing efficient verifiers for legal ...",
+      "link": "https://x.com/LangChain/status/2062161163564044741",
+      "published": "2026-06-03T21:15:09+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "[@harvey](https://x.com/harvey) We teamed up with [@Harvey](https://x.com/Harvey) for a study measuring and designing efficient verifiers for legal agents.  \n  \nRead it here!  \n[langchain.com/blog/designing…](https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents)?\n\n💬1🔄0❤️1👀537📊1",
+      "tags": [
+        "LangChain",
+        "法律Agent",
+        "验证器"
+      ],
+      "score": 85,
+      "summary": "LangChain与Harvey合作研究高效法律Agent验证器。",
+      "fetched_at": "2026-06-03T22:29:07.910201+08:00"
+    },
+    {
+      "title": ".@Harvey’s LAB benchmark approaches verification like a human would.\n\nEvery task in a dataset has cr...",
+      "link": "https://x.com/LangChain/status/2062161160145654098",
+      "published": "2026-06-03T21:15:08+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": ".[@Harvey](https://x.com/Harvey)’s LAB benchmark approaches verification like a human would.  \n  \nEvery task in a dataset has criteria for the task to pass.  \n  \nLegal agents can have 50+, with each one having its own judge call.  \n  \nIt’s easy to audit, but can be expensive at scale.  \n  \nLangChain Labs teamed up with Harvey to see how we can make this more efficient.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5EpWuWYAApQaE.jpg)\n\n💬2🔄1❤️7👀678📊3",
+      "tags": [
+        "LangChain",
+        "法律Agent",
+        "验证器"
+      ],
+      "score": 85,
+      "summary": "介绍Harvey的LAB基准测试，模拟人工验证方式。",
+      "fetched_at": "2026-06-03T22:29:07.910260+08:00"
+    },
+    {
+      "title": "@harvey We also looked at two ways to run LLM-as-judge on a 50-criterion task:\n\n1️⃣ Per-criterion: 1...",
+      "link": "https://x.com/LangChain/status/2062161161856880866",
+      "published": "2026-06-03T21:15:08+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "[@harvey](https://x.com/harvey) We also looked at two ways to run LLM-as-judge on a 50-criterion task:  \n  \n1️⃣ Per-criterion: 1 judge call for each rubric requirement.  \n2️⃣ Batch: 1 judge call + label every rubric requirement at once  \n  \nSame rubric. Same output. 50x fewer API calls.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5EpSdWsAEK3SZ.jpg)\n\n💬2🔄0❤️1👀603📊2",
+      "tags": [
+        "LangChain",
+        "法律Agent",
+        "验证器"
+      ],
+      "score": 85,
+      "summary": "比较逐条与批量LLM评判方法，可减少50倍API调用。",
+      "fetched_at": "2026-06-03T22:29:07.910378+08:00"
+    },
+    {
+      "title": "At Interrupt, Carlos Pereira, Fellow and Chief Architect at @Cisco Customer Experience took the stag...",
+      "link": "https://x.com/LangChain/status/2062153895879602472",
+      "published": "2026-06-03T20:46:16+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "At Interrupt, Carlos Pereira, Fellow and Chief Architect at [@Cisco](https://x.com/Cisco) Customer Experience took the stage to share how his team built an AI teammate that supports their CX team. [lnkd.in/efzJyVft](https://lnkd.in/efzJyVft)  \n  \nWatch the full keynote to learn about the architectural decisions, lessons learned, and what it takes to run agents in production at enterprise scale.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062153783212118016/vid/avc1/1280x720/rYMyzZ2aUh8SmNBd.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/LangChain/status/2062153895879602472/video/1)\n\n💬2🔄0❤️3👀1323📊3",
+      "tags": [
+        "企业AI",
+        "Agent",
+        "Cisco"
+      ],
+      "score": 80,
+      "summary": "Cisco在Interrupt大会分享AI队友构建经验。",
+      "fetched_at": "2026-06-03T22:29:07.910451+08:00"
+    },
+    {
+      "title": "Experience the best of Interrupt: https://t.co/hL8WUWHbjG",
+      "link": "https://x.com/LangChain/status/2062153897670529323",
+      "published": "2026-06-03T20:46:16+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Experience the best of Interrupt: [interrupt.langchain.com/recordings](https://interrupt.langchain.com/recordings)\n\n💬1🔄1❤️1👀1049📊2",
+      "tags": [
+        "LangChain",
+        "Interrupt"
+      ],
+      "score": 80,
+      "summary": "LangChain提供Interrupt大会录制回放链接。",
+      "fetched_at": "2026-06-03T22:29:07.910515+08:00"
+    },
+    {
+      "title": "Set your first goal 👉 https://t.co/CIR0iT4g3T",
+      "link": "https://x.com/Skywork_ai/status/2062169695743262757",
+      "published": "2026-06-03T21:49:03+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Set your first goal 👉[skywork.ai](http://skywork.ai)T\n\n💬0🔄0❤️0👀5",
+      "tags": [
+        "Skywork",
+        "Goal Mode",
+        "AI"
+      ],
+      "score": 80,
+      "summary": "Skywork推出Goal Mode，用户设定目标后AI持续工作直至完成。",
+      "fetched_at": "2026-06-03T22:29:07.910577+08:00"
+    },
+    {
+      "title": "Introducing Goal Mode in Skywork.   \n\nSet the outcome you want. In Goal Mode, Skywork keeps working ...",
+      "link": "https://x.com/Skywork_ai/status/2062169692304027967",
+      "published": "2026-06-03T21:49:02+08:00",
+      "source": "Skywork(@Skywork_ai)",
+      "content": "Introducing Goal Mode in Skywork.   \n  \nSet the outcome you want. In Goal Mode, Skywork keeps working toward it across turns—planning, executing, checking progress— until the condition is met.\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJ5MT5cbUAA6Br3.jpg)](https://video.twimg.com/tweet_video/HJ5MT5cbUAA6Br3.mp4)\n\n💬1🔄0❤️0👀17📊1",
+      "tags": [
+        "Skywork",
+        "Goal Mode",
+        "AI"
+      ],
+      "score": 80,
+      "summary": "介绍Skywork Goal Mode的功能：持续规划、执行、检查进度。",
+      "fetched_at": "2026-06-03T22:29:07.910638+08:00"
+    },
+    {
+      "title": "🎉 Mole for Mac 1.6.2 is live at  https://t.co/0FjCebOm6h\n\nA small Mac companion, 263 GB cleaned on ...",
+      "link": "https://x.com/HiTw93/status/2062164018392088652",
+      "published": "2026-06-03T21:26:29+08:00",
+      "source": "Tw93(@HiTw93)",
+      "content": "🎉 Mole for Mac 1.6.2 is live at [mole.fit](http://mole.fit)h  \n  \nA small Mac companion, 263 GB cleaned on my machine, New in this release:  \n  \n◦ Keep Screen On keeps your Mac awake from the menu bar  \n◦ Privacy alerts show camera or mic use in the menu bar  \n◦ Clean Screen locks input so you can wipe the display safely  \n◦ Software checks App Store, Homebrew, Sparkle and more  \n◦ Uninstall finds more leftovers with safer defaults  \n◦ Clean detects build, dist, target and node\\_modules for review  \n◦ Analyze scans faster with treemap drill-down  \n◦ 1.6.2 fixes Software freezes and blank uninstall lists  \n  \nEarly bird $9 once, 2 Macs, lifetime updates. Ends Jun 15.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5FWW8boAA3aq1.jpg)\n\n💬0🔄0❤️2👀312",
+      "tags": [
+        "Mole",
+        "Mac"
+      ],
+      "score": 60,
+      "summary": "Mole for Mac 1.6.2发布，新增屏幕常亮、隐私警报等功能。",
+      "fetched_at": "2026-06-03T22:29:07.910698+08:00"
+    },
+    {
+      "title": "这几天再研究桌面软件的自动更新，发现了这个 Velopack：https://t.co/GlDLpTeqQt\n专攻桌面应用的打包分发和更新，非常有趣，跨平台，Rust 编写速度很快，支持 C#、C++...",
+      "link": "https://x.com/vikingmute/status/2062160945909293171",
+      "published": "2026-06-03T21:14:17+08:00",
+      "source": "Viking(@vikingmute)",
+      "content": "这几天再研究桌面软件的自动更新，发现了这个 Velopack：[github.com/velopack/velop…](https://github.com/velopack/velopack)  \n专攻桌面应用的打包分发和更新，非常有趣，跨平台，Rust 编写速度很快，支持 C#、C++、Rust、JavaScript 等多种语言，提供统一的更新 API。  \n  \n还有一个 Delta 差分包，意思就是更新的时候只下载修改的部分，让更新速度更快。  \n  \n并且支持多种工具，什么Electron，Tauri 都支持的。这几天准备尝试玩玩看。不知道是否有朋友用过感觉怎么样？\n\n💬3🔄0❤️10👀936📊7",
+      "tags": [
+        "Velopack",
+        "桌面更新"
+      ],
+      "score": 60,
+      "summary": "介绍桌面应用自动更新框架Velopack，支持跨语言和差分包。",
+      "fetched_at": "2026-06-03T22:29:07.910761+08:00"
+    },
+    {
+      "title": "The next big social platform won't start with photos or videos. It will start with games.\n\nhttps://t...",
+      "link": "https://x.com/ycombinator/status/2062159880254034362",
+      "published": "2026-06-03T21:10:03+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "The next big social platform won't start with photos or videos. It will start with games.  \n  \n[Playabl.ai](http://Playabl.ai) is the TikTok for user-generated games: anyone can play, create, publish, and monetize.  \n  \nIn 5 days, they hit 1M organic plays across 3,000 games.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2061854066788171776/vid/avc1/1920x1080/vsePuRaKEbrowRFg.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2062159880254034362/video/1)\n\n💬23🔄10❤️195👀18464📊50",
+      "tags": [
+        "Playabl",
+        "游戏",
+        "UGC"
+      ],
+      "score": 70,
+      "summary": "Y Combinator推介Playabl.ai，用户生成游戏平台，5天达到100万次游玩。",
+      "fetched_at": "2026-06-03T22:29:07.910822+08:00"
+    },
+    {
+      "title": "Congrats on the launch, @hamzawy998, @omarmjarrah, and @sanadkiswani!\n\nhttps://t.co/ayIo22GnsX",
+      "link": "https://x.com/ycombinator/status/2062159882250596690",
+      "published": "2026-06-03T21:10:03+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Congrats on the launch, [@hamzawy998](https://x.com/hamzawy998), [@omarmjarrah](https://x.com/omarmjarrah), and [@sanadkiswani](https://x.com/sanadkiswani)!  \n  \n[ycombinator.com/launches/QeI-p…](https://www.ycombinator.com/launches/QeI-playabl-ai-tiktok-for-user-generated-games)\n\n💬1🔄1❤️6👀3363📊2",
+      "tags": [
+        "Playabl",
+        "游戏",
+        "UGC"
+      ],
+      "score": 70,
+      "summary": "祝贺Playabl.ai在Y Combinator发布。",
+      "fetched_at": "2026-06-03T22:29:07.910882+08:00"
+    },
+    {
+      "title": "看到一篇文章，有用户吐槽 Harmes Agent 预装了 100 多个 skills，出发点是为了开箱即用，但是注册太多 skills 污染了上下文，影响了工具调用命中率（即使使用了渐进式披露的形式...",
+      "link": "https://x.com/idoubicc/status/2062152804014436508",
+      "published": "2026-06-03T20:41:56+08:00",
+      "source": "idoubi(@idoubicc)",
+      "content": "看到一篇文章，有用户吐槽 Harmes Agent 预装了 100 多个 skills，出发点是为了开箱即用，但是注册太多 skills 污染了上下文，影响了工具调用命中率（即使使用了渐进式披露的形式）  \n  \nFastClaw 预装的 skills 只有三个：  \n  \n1. camoufox-cli  \n2. find-skills  \n3. skill-creator  \n  \n设计思路很简单，我认为一个能自主决策，自我进化的 Agent，应该可以发现自身的不足，根据任务类型动态补充技能，并通过自我迭代，把技能沉淀下来，不断适应各类复杂的任务。  \n  \n有一个观点叫做：模型之外都是 Harnes。给 Agent 预装 skills 属于 Harnes 工程的一种，目的是为了让模型的输出通过工具调用收敛到一个更符合预期的结果。  \n  \n模型是马，Harnes 是马具，给千里马和给普通马，装的马具应该是不一样的，Harnes 工程需要适应模型的进步。秉持少即是多的原则，我给 FastClaw 只预装了三个 skills👇  \n  \n1. find-skills 让 Agent 在不能直接处理任务请求时，自动搜索并安装可用的 skills，这里对接的 skills 市场是 skills .sh，主要考量是这个市场有做安全审计和下载量统计，可以通过排行来查找高质量的 skills  \n  \n2. skill-creator 让 Agent 在通过 find-skills 没有找到合适的 skills 时，能自己创建一个 skills 来处理任务请求。使用完后沉淀到用户的 skills 目录，可以在后续的任务复用  \n  \n3. camoufox-cli 是为 Camoufox 这一 Agent 浏览器而制作的命令行工具，由 [@benn\\_huang](https://x.com/benn_huang) 开发与维护，适用于各类浏览器操作场景，比如爬取网页内容、截图之类  \n  \n在这三个 skills 的配合下，Agent 在部分常见任务下的工作表现良好，交付质量高。  \n  \n---  \n  \n当然，预装常用 skills 也有其合理性。毕竟 Agent 对 skills 的自动发现、安装、创造，非常依赖模型的智能程度，意图识别很关键，能找到或创建合适的 skills 来处理任务，有一定的抽卡概率。而系统内置，由管理员提前做了筛选和配置，模型只要能选对就可以了。  \n  \n大道至简，FastClaw 选择内置最少的必要技能，其余的交给模型自由发挥，在 deepseek-v4-flash 跑了一段时间，效果还可以。  \n  \n还有哪些你觉得必须要内置的 skills？\n\n![Tweet Image](https://pbs.twimg.com/media/HJ4WUQpaMAEcEkw.jpg)\n\n💬2🔄2❤️23👀2713📊10",
+      "tags": [
+        "Agent",
+        "Skills",
+        "FastClaw"
+      ],
+      "score": 80,
+      "summary": "idoubi讨论Agent预装Skills的取舍，介绍FastClaw仅预装三个核心Skills。",
+      "fetched_at": "2026-06-03T22:29:07.910941+08:00"
+    },
+    {
+      "title": "Codex 小技巧：一台电脑远程指挥另一台写代码\n\n如果你多台电脑都安装了 Codex，且登录ChatGPT账号。\n\n可以在设置 -&gt; 连接 -&gt; 控制其他设备，添加其他电脑。\n\n这样设置...",
+      "link": "https://x.com/vista8/status/2062167253911511418",
+      "published": "2026-06-03T21:39:21+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "Codex 小技巧：一台电脑远程指挥另一台写代码  \n  \n如果你多台电脑都安装了 Codex，且登录ChatGPT账号。  \n  \n可以在设置 -> 连接 -> 控制其他设备，添加其他电脑。  \n  \n这样设置后，本机创建项目时，能选添加远程项目。  \n  \n比如远程控制家里电脑中的Codex工作。\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5Im93WIAEL_D8.jpg)\n\n💬3🔄0❤️4👀366📊3",
+      "tags": [
+        "Codex",
+        "远程开发"
+      ],
+      "score": 70,
+      "summary": "分享Codex远程控制其他电脑写代码的技巧。",
+      "fetched_at": "2026-06-03T22:29:07.911002+08:00"
+    },
+    {
+      "title": "@Teknium @_HermesAgent PR for localization, please review\n\nhttps://t.co/Iiu6vK7w9G",
+      "link": "https://x.com/dotey/status/2062171470013329913",
+      "published": "2026-06-03T21:56:06+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "[@Teknium](https://x.com/Teknium)[@\\_HermesAgent](https://x.com/_HermesAgent) PR for localization, please review  \n  \n[github.com/NousResearch/h…](https://github.com/NousResearch/hermes-agent/pull/38241)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5N_SJXUAA-vgc.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ5OA1NXcAAvf2x.jpg)\n\n💬0🔄0❤️0👀1190📊1",
+      "tags": [
+        "HermesAgent",
+        "i18n"
+      ],
+      "score": 60,
+      "summary": "宝玉为Hermes Agent提交本地化PR。",
+      "fetched_at": "2026-06-03T22:29:07.911061+08:00"
+    },
+    {
+      "title": "说一下，抖音和小红书现在对于纯 AI 内容是比较严格的。\n\n 然后如果你是创作类的内容，你自己做了一些东西，或者你用 vibe Coding 了一些原创的一些东西来展示的话，他们就会有一些扶持。",
+      "link": "https://x.com/op7418/status/2062167781538508880",
+      "published": "2026-06-03T21:41:27+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "说一下，抖音和小红书现在对于纯 AI 内容是比较严格的。  \n  \n 然后如果你是创作类的内容，你自己做了一些东西，或者你用 vibe Coding 了一些原创的一些东西来展示的话，他们就会有一些扶持。\n\n💬1🔄1❤️3👀718📊2",
+      "tags": [
+        "AI内容",
+        "平台政策"
+      ],
+      "score": 70,
+      "summary": "歸藏指出抖音和小红书对纯AI内容严格，扶持原创创作内容。",
+      "fetched_at": "2026-06-03T22:29:07.911121+08:00"
     }
   ]
 }
