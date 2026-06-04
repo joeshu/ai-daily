@@ -1,0 +1,996 @@
+{
+  "meta": {
+    "date": "2026-06-04"
+  },
+  "entries": [
+    {
+      "title": "The Path of a Request: A Tour of Modern Web Architecture",
+      "link": "https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern",
+      "published": "2026-06-04T23:31:29+08:00",
+      "source": "ByteByteGo Newsletter",
+      "content": "A web page loads in under a second. In that second, a single user request may have passed through roughly ten distinct systems on its way to and from the database. The page feels fast because of how those systems are arranged. Each layer absorbs as much traffic as it can before passing the rest along. Taken together, the layers form a funnel, with most traffic handled long before it reaches the bottom.\n\nUnderstanding what each layer does to narrow that funnel can lead to a better grasp of each component of a modern web stack.\n\nIn this article, we follow the journey of a web request one hop at a time. At each stop, we ask two questions. What is this layer doing, and what trade-off is it making? The journey starts before the request has fully left the browser, and latency is spent at every hop.\n\n[![](https://substackcdn.com/image/fetch/$s_!7d4Q!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd486fdf8-79de-429b-b453-67a3af15caed_2250x2624.png)](https://substackcdn.com/image/fetch/$s_!7d4Q!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd486fdf8-79de-429b-b453-67a3af15caed_2250x2624.png)\n\n## DNS\n\n[Read more](https://blog.bytebytego.com/p/the-path-of-a-request-a-tour-of-modern)",
+      "tags": [
+        "Web架构",
+        "教程"
+      ],
+      "score": 65,
+      "summary": "详解现代Web架构中请求的路径及各层功能。",
+      "fetched_at": "2026-06-05T00:55:28.249253+08:00"
+    },
+    {
+      "title": "我知道的所有 Agentic Engineering 技巧（2026 年 6 月）",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723225&idx=1&sn=57bb170ee4b5438114f9b0ac28581428",
+      "published": "2026-06-04T23:26:00+08:00",
+      "source": "Datawhale",
+      "content": "原创 Datawhale 2026-06-04 23:26 浙江\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=7b292abc&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FzW6S9vt0cSibyLRfsVBlkBCjnGBSibeFuDjJ61ibXArK1qjyFLDqjyfY2saY5DSbhNj4qkE2kyAn3uJSBjJen531ItuoRUTwxd5VXwIrTPzHWI%2F0%3Fwx_fmt%3Djpeg)\n\n# Datawhale干货  ******作者：Matt Van Horn， 整理：Datawhale******\n\n三个月前，Matt Van Horn 的《我知道的所有 Claude Code 技巧》在 X 上爆火。就在刚刚，他发布的新帖《Every Agentic Engineering Hack I Know》也很快被超 60 万人观看。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8332e1d7&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FzW6S9vt0cS9caic1zSYUzBlrx90CiaAU8ZqgVJN5KALm700B0ToyksebdfDCBLn9NRl5MMQoLBvRHUIAA63A4xPr3y72XLu7SMz9AmrLyJRsI%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n他是一位连续创业者，今年发布了 last30days（2.7 万星）、Printing Press（4000+ 星），并成为了一些最大开源项目的顶级贡献者：Python、Go、GStack 和 Paperclip。\n\n*而这一身经验，他最后都浓缩成了关于 Agentic Engineering 的 *22 条心得。**\n\n在保留其中可复用的命令、工具名、场景和原意的情况下，我们进行了如下整理：\n\n## 一、先规划，再动手\n\n### 01｜有想法，先 `/ce-plan`，不要直接开干\n\n脑子里冒出一个想法，第一反应：`/ce-plan` 生成 `plan.md`。它接什么上下文都行：\n\n* GitHub issue 链接直接贴进去；\n* 终端报错，`Cmd+Shift+4` 截图，`Ctrl+V` 粘进去；\n* 设计稿、Slack 讨论串、产品脑暴图，也都能喂进去；\n* 如果想法还很模糊，先用 `/ce-brainstorm`把问题聊清楚，再进 `/ce-plan`。\n\n把模糊想法先外化成一个计划文件，再往下走。\n\n### 02｜`plan.md` 是给 agent 看的，自己扫一眼标题就够\n\n原文里直接说：**\"Plans are for agents, you silly human.\"**\n\n`plan.md` 逼 agent 先 research、先承诺方案、写清 acceptance criteria，然后别偷懒，真的把它做完。他还给过一个比喻：**\"The plan is the leash.\"** 没计划的 agent 容易抄近路、提前停工；有计划才能按完整交付往下做。\n\n实际操作就是：看一眼标题，直接 `/ce-work`。真有不懂的地方，在会话里追问 `TLDR?`、`eli5 this plan`，或者“等一下，为什么选这个方案？”\n\n### **03｜不限于写代码，重度脑力工作也用同一条 loop**\n\n`/ce-plan` 和 `/ce-work` 用在非工程类工作上同样顺手：\n\n* 战略文档；\n* 产品 spec；\n* 竞品分析；\n* board update；\n* 复杂讨论后的整理与提案。\n\n做法是：先别直接写最终文档，先让 agent 规划这件事需要哪些输入、哪些角度、先做什么研究、怎么组织输出。复杂问题先降成可执行的 planning problem。\n\n## 二、怎么把活高效喂给 agent\n\n### **04｜语音做主输入**\n\n`voice-to-LLM` 和传统语音转文字不一样：对面是大模型，能靠上下文把你含糊、重说、卡壳的部分补回来。\n\n配置参考：\n\n* Mac 上用 `Monologue` 或 `Wispr Flow`；\n* 手机上直接用 Apple 自带听写，因为 iOS 来回切 App 太慢；\n* 办公桌上配一个鹅颈麦。\n\n### 05｜同时开 4 到 6 个 `cmux` 会话\n\n日常状态：\n\n* 一个在写 plan；\n* 一个在按另一个 plan build；\n* 一个在跑 `last30days` 做研究；\n* 一个在修刚测出来的 bug。\n\n一个窗口里的 `/ce-plan` 在研究时，切到另一个窗口 `/ce-work`；第二个在执行，又把第三个 bug 塞进去。整个变成多线程调度 agent。\n\n### **06｜新终端标签页默认直达 Claude Code**\n\n一个新 tab 打开后如果还要 `cd`、手敲 `claude`，启动 agent session 的成本还是高。做法是把终端默认入口改掉，新 tab 一开就是 Claude Code。Ghostty 下可以通过 launcher 脚本把新窗口的默认命令直接接到 Claude Code。文件夹层级基本可以不依赖了，因为 agent 会自己找项目。\n\n### **07｜远程控制 + 邮箱入口**\n\n在 `~/.claude/settings.json` 里加上：\n\n```\n\"remoteControlAtStartup\": true\n```\n\n电脑上开的 session，手机 Claude App 也能接着看、接着控。人在外面排队，家里 Mac 上的任务还在跑，掏手机就能继续接管同一个上下文。\n\n再给 Claude Code 配一个邮箱（用的是 `AgentMail`），给这个邮箱发邮件就等于给 agent 新开了一个任务入口。\n\n### **08｜跳过权限确认**\n\n同时跑 6 个 agent 会话，不可能一个个去点\"允许修改\"\"允许执行命令\"。Claude 配置里直接打开：\n\n* defaultMode: bypassPermissions\n* skipDangerousModePermissionPrompt: true\n\n再配上 `WebSearch`、`WebFetch`、`Bash`、`Read`、`Write`、`Edit` 的 allow 列表。原文里他的说法是：**\"Maybe. I say YOLO. It's my computer. GitHub is there if I break everything.\"**\n\n### **09｜Claude 管 plan，Codex 管 build**\n\n三种交接方式：\n\n1. Codex IDE extension：任务发过去，结果应用回来；\n\n2. `/ce-work --codex`：在 Compound Engineering 的 loop 里委托给 Codex；\n\n3. Printing Press 的 Codex 模式：prompt 结尾加 `codex`。\n\n参数偏好：\n\n* Codex：`reasoning xhigh`，`fast mode on`；\n* Claude Code：`reasoning xhigh`，`fast mode off`。\n\n## 三、agent 强不强，看你喂了多少上下文\n\n### 10｜`/ce-plan`之前，先跑一遍 `/last30days`\n\n这是 Matt 自己的开源项目，用法是：先研究，再计划。\n\n例子：在 Vercel 的 agent-browser 和 Playwright 之间做选择，他没先读文档，直接跑：\n\n```\n/last30days Vercel agent browser vs Playwright\n```\n\n几分钟内 Reddit、X、YouTube、HN 等平台的讨论被并行抓回来。结果是 agent-browser 每次调用吃掉的上下文更少，而 Playwright 光工具定义就灌进去几千 token。再把这批结果喂给 `/ce-plan integrate agent-browser`，做出来的 plan 直接站在社区最近 30 天的真实经验上。\n\n`last30days` 会并行搜索 Reddit、X、YouTube、TikTok、Instagram、HN、Polymarket、GitHub 和整个 Web。使用时机：选库之前、做 feature 之前、见合伙人之前、写文章之前。\n\n### **11｜会议别自己总结，原始 transcript 直接扔进去**\n\n和候选人吃午饭聊了 90 分钟，有产品、有吃的、有孩子，中间夹着产品想法。`Granola` 全程录音。结束后不整理，直接把完整 raw transcript 扔进 Claude Code：\n\n```\n/ce-plan turn this into a product proposal\n```\n\n不要先\"替模型总结一遍\"。原始对话里的跑题、停顿、插科打诨，模型会自己判断哪些留下、哪些忽略。说法是：Granola 原始记录 + 当前代码库 + 之前所有战略文档一起喂进去，那份 proposal 当晚就能发出。\n\n### **12｜同时跑多个 agent 时，你负责给信号**\n\n原文标题叫 **Human Signal**：agent 提供产量，人提供品味、方向和 react-and-redirect。要做的是不断给出反馈：\n\n* \"第二版更接近了，但把第一版的语言拿回来\"\n* \"先处理最大的风险\"\n* \"这一段太长了\"\n* \"这个方向不对，换个角度\"\n\n原文原话：**agents supply volume, you supply taste.**\n\n### **13｜视频也走同一条 loop**\n\n用 `HyperFrames`：先写 HTML/脚本，再让 agent 渲染成 MP4。\n\n* 一个项目一个文件夹；\n* 里面一个 `script.md`；\n* 每一幕、动效、字幕节奏都写清楚；\n* 交给 agent 生成最终 composition 和视频。\n\n做过 `Granola CLI` demo、`Agent Cookie` launch video 之类的内容。小技巧：GIF 上传到 catbox，在 GitHub PR、README 和 issue 里渲染都很好。\n\n### **14｜笔记做成 agent 的知识库**\n\nplan 越做越好，是因为 agent 一直能读到过去的计划、会议、留下的判断。\n\n可用的工具：\n\n* Bear + Bear CLI：十年笔记、会议、半成型想法、决策记录，可读写；\n* Obsidian：生态很深；\n* gbrain：跨机器、跨 agent 同步；\n* supermemory：agent memory layer。\n\n核心动作：找一个带 CLI 或 API 的笔记系统，让 agent 能读进去。本质是 Personal RAG。\n\n### **15｜\"随时随地工作\"背后是一台 Mac mini 和几台远程机器**\n\n不是手机上看一眼通知的那种 remote，是把整台工作台带上。\n\n* Mosh 抗差网，Wi-Fi 不稳或漫游时比普通 SSH 稳得多；\n* tmux 抗断线，飞机上断网 20 分钟连回来接着干；\n* Hermes、OpenClaw 做更自治的远程工作；\n* Agent Cookie 在主力 Mac 和 Mac mini 之间同步 cookies 和 `.env`。\n\n从欧洲回程的飞机上就是这么一路把 feature 发完的。\n\n## 四、让 agent 走出终端，接管真实工作\n\n### 16｜`plan.md` 给 agent 看，`Proof` 给同事看。\n\n`plan.md` 在终端里好用，直接拿给同事看不顺手。把 `plan.md` 或 spec 丢进 `Proof`，生成一个链接：\n\n* 同事像看文档一样看；\n* 可以做 inline comment；\n* 评论能再流回 agent loop。\n\n比把 Markdown 粘到 Slack 里强。\n\n### **17｜任何做超过两次的事，写成 skill**\n\n原文：**Anything I do more than twice, I turn into a skill.**\n\n不建议从零写 skill。直接对 agent 说：\n\n```\nlook at the Compound Engineering skill and help me make one like this for [X]\n```\n\n让它先读一个跑通的 skill，再照着 scaffold 你的版本。一次性 workflow 变成 agent 能长期复用的命令。\n\n### **18｜开源贡献放进同一条 loop**\n\n已有数百个 PR 被合并进不同开源项目，做的都是正经功能。涉及的项目包括 Python、Go、OpenCV、Vercel Agent Browser、OpenClaw 等。在一些项目的贡献者榜单里排名靠前：Compound Engineering / Superpowers / Emdash #3，GStack / Paperclip #4，Vercel Agent Browser #6，Camoufox #2。\n\n做法：先找一个自己每天真的在用的工具，发现真实缺口，用 `/ce-plan + /ce-work` 补掉。\n\n两个社交方面的建议：\n\n* 去项目的 Discord 里出现，PR 只是进门，关系才是留下来的原因；\n* 在 X 上花 1-3 美元/月订阅你尊重的人。他订阅 `@garrytan`、`@jason`、`@teknium`，给 `@garrytan` 发带 PR 的帖子时，因为自己是付费订阅者，对方会收到特殊通知。\n\n### **19｜M5 Max + 64GB RAM 也扛不住**\n\n之前两年旧的 laptop 被跑废：6 个 Claude 会话 + Codex 全天挂着。升级到 M5 Max、64GB RAM，还是被打爆。全新机器电池状态下最夸张只撑一个小时。应对：\n\n* 到处背一个 Anker battery brick；\n* Tesla 里常备 Anker 车载充电器；\n* `sudo pmset -a disablesleep 1，直接不让机器休眠。`\n\n### **20｜Printing Press：给真实世界服务做一层 CLI**\n\n很多服务只在网页里手动点点点，把这些动作包装成 agent 能直接调用的 CLI。这个项目叫 `Printing Press`，现在是独立项目 `@ppressdev`。\n\n难点在认证。agent 光知道服务没用，得带着你的登录态去操作。配套组件是 **Agent Cookie**：把真实浏览器的 session 交给 CLI，让 agent 直接带着登录态行动。\n\n能处理的不只是 GitHub issue 和代码库，还包括生活和工作服务，比如给 Tesla 预热这种。原文的判断是：工作方式会不会变，很大程度取决于能不能把自己每天在用的服务印成 agent 可调用的接口。\n\n## 五、最后两条提醒\n\n### **21｜Agent 很容易上瘾。**\n\n原文这一节标题就叫 **AI Psychosis**。原话是 agent 没让人少干活，身边几乎所有人都在比过去任何时候更拼命。\n\n他把这套 loop 形容成反馈极快的视频游戏：你说一句，东西就长出来；改一句，结果又更好。原话：**\"Building with agents is the greatest video game ever made.\"**\n\n风险不是做出来的东西没人用，而是沉浸在 build 的兴奋里，把身边的人和真正重要的关系弄丢了。建议：休息，出门，和爱的人说话，做一点真的有人想要的东西——哪怕那个\"人\"只有你自己。\n\n### **22｜这篇文章本身就是这么写出来的**\n\n一个 Markdown 文件：\n\n* Claude Code 跑在 `cmux` 里；\n* 对着 `Monologue` 用语音说：\"把 no-IDE 的开头再进化一下\"\"让 don't-read-the-plan 那一节更 spicy 一点\"\"把 Tesla 和 Instacart 那个故事加进去\"；\n* agent 负责改写，他负责反应；\n* last30days 提供最近材料；\n* `Proof给别人 review。`\n\n最后补了一句：这次甚至没用 Zed，已经不用 IDE 了，也不敲代码。只剩下：**Talk, plan, build。**\n\n地点不限：桌前、沙发上、车里、足球场边。\n\n## 写在最后：看完这 22 条，先记住 5 件事\n\n第一，Agentic Engineering 把 `research → plan → build → review` 变成了默认流水线。\n\n**第二，拉开差距的往往是上下文。** 截图、issue、Slack 讨论、原始会议录音、过去十年的笔记，这些东西能稳定流进 agent，效果会完全不一样。\n\n**第三，人的位置在上移。**做的越来越像调度：给信号、给判断、给品味、给取舍。\n\n**第四，agent 一旦拿到远程控制、邮箱入口、登录态和真实服务接口，就从代码助手变成执行层。**\n\n**第五，越能 build，越要小心 build 带来的成瘾感。**\n\n这 22 条拆成了可照着做的动作：该怎么开头、该开什么窗口、该把什么上下文喂进去、该在哪一步让人接管、以及什么时候该停下来。\n\n**原文地址：<https://x.com/mvanhorn/status/2061877533885473181>**\n\n![图片](https://mp.weixin.qq.com/s?__biz=MzIyNjM2MzQyNg==&mid=2247723225&idx=1&sn=57bb170ee4b5438114f9b0ac28581428)\n\n**一起“**点****赞”****三连**↓**\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=07bb9edd&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzIyNjM2MzQyNg%3D%3D%26mid%3D2247723225%26idx%3D1%26sn%3D57bb170ee4b5438114f9b0ac28581428)",
+      "tags": [
+        "Agent",
+        "技巧"
+      ],
+      "score": 80,
+      "summary": "总结了22条Agentic Engineering心得，包括先规划后动手等实用技巧。",
+      "fetched_at": "2026-06-05T00:55:28.249332+08:00"
+    },
+    {
+      "title": "What's new for Managed Service for Apache Spark clusters",
+      "link": "https://cloud.google.com/blog/products/data-analytics/enhancements-to-managed-service-for-apache-spark-clusters/",
+      "published": "2026-06-05T00:00:00+08:00",
+      "source": "Google Cloud Blog",
+      "content": "At Google Cloud, our goal is to let you run large-scale analytical and data science workloads with maximum efficiency so you can process big data pipelines, machine learning, and ETL tasks. \n\nWe recently announced that the Dataproc service is now [Managed Service for Apache Spark](https://cloud.google.com/products/managed-service-for-apache-spark), reflecting our deep integration with the [Agentic Data Cloud](https://cloud.google.com/data-cloud).\n\nTo support the diverse architectural needs of today’s modern data teams, we offer the service in two distinct deployment modes: serverless and managed clusters. The serverless deployment mode completely abstracts infrastructure management for ephemeral or ad-hoc jobs, while the managed clusters deployment mode is designed for teams that require fine-grained infrastructure customization, persistent environments, long-running stateful processing, or native integration with custom Compute Engine hardware configurations.\n\nWhen it comes to managed cluster deployments, we’ve re-imagined the experience from the ground up, focusing on three core pillars: making Spark **faster** by supercharging execution speeds, **easier** to run by maximizing resource obtainability and reducing operational overhead, and **smarter** by embedding AI directly into the development and operational lifecycle. \n\nThis blog post focuses specifically on what we announced at Google Cloud Next ‘26 for the Managed Spark clusters deployment mode: providing enhanced flexibility to fine-tune performance and cost through native execution engine, smarter scaling policies, and Gemini-powered extensions. For the latest of the serverless deployment mode, check out [this blog](https://cloud.google.com/blog/products/data-analytics/serverless-managed-service-for-apache-spark-runtime-3-0-features?e=48754805).\n\n### **Faster, with the Lightning Engine native execution engine**\n\nArguably the biggest update for Managed Spark clusters is [Lightning Engine](https://cloud.google.com/dataproc/docs/guides/lightning-engine), which introduces massive performance gains for Spark DataFrame/Dataset APIs and heavy Spark SQL queries. Powered by a native, C++ vectorized execution engine built on Velox and Gluten, with specialized internal enhancements, Lightning Engine bypasses JVM execution bottlenecks by compiling query plans into native instructions optimized for SIMD (Single Instruction, Multiple Data) vectorization.\n\nThis native execution engine delivers:\n\n* **Up to 4.9x faster performance** than standard open-source Spark\n* **up to 2x the price-performance** over the leading high-speed Spark alternative\n\nCrucially, taking advantage of these performance gains doesn’t require any code changes to your existing Spark applications. Because your jobs complete faster, you directly reduce your aggregate Compute Engine runtime hours and overall spend.\n\nTo enable Lightning Engine on your managed clusters, simply specify the Lightning Engine option when you’re creating a cluster.\n\n[The new way to use Spark: Intelligent, automated, and lightning fast](https://youtube.com/watch?v=2uYC821jtEk)\n\n#### Learn technical details and hear Lowe’s experience with Lightning Engine\n\n### **Easier: Maximize resource obtainability via Flexible VMs**\n\nTemporary localized shortages of a specific machine type can stall cluster creation or interrupt autoscaling. To dramatically improve cluster resilience against capacity constraints, [Flexible VMs](https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/flexible-vms) for Managed Spark clusters are now generally available. \n\nFlexible VMs allow you to define up to ten ranked machine types for your master, primary, and secondary worker nodes. Managed Service for Apache Spark pairs this preference with automated regional zone placement, dynamically scanning the entire region to fulfill your capacity requests using the best available hardware layout. This helps ensure your pipelines spin up predictably, drastically reducing resource availability errors, and maximizing your ability to capture cost-effective Spot VM capacity during periods of peak demand.\n\n![2](https://storage.googleapis.com/gweb-cloudblog-publish/images/2_vPfgVT7.max-1000x1000.jpg)\n\n### **Easier: Zero-scale clusters and scheduled stops**\n\nTo give you better fiscal control over persistent and developmental environments, we recently announced the general availability of two highly requested FinOps features: [zero-scale clusters](https://docs.cloud.google.com/dataproc/docs/guides/create-zero-scale-cluster) and [cluster scheduled stops](https://docs.cloud.google.com/dataproc/docs/concepts/configuring-clusters/scheduled-stop).\n\n* **Zero-scale clusters**: You can now provision environments that use exclusively secondary workers (Spot VMs), enabling the cluster to automatically scale down to absolutely zero worker nodes when no processing is active, leaving only the master node online to preserve metadata.\n* **Cluster scheduled stops**: This feature lets you configure automated cluster shutdown policies based on specific idle-time limits or a precise future timestamp.\n\nBecause these features are natively integrated, they reduce the operational friction of having to delete and reconstruct your environment, while you can stop paying for idle compute overhead during nights and weekends.\n\n### **Smarter: Managed Service for Apache Spark MCP Server**\n\nTo bridge the gap between generative AI and data engineering, we launched the [Model Context Protocol (MCP) server for Managed Service for Apache Spark](https://docs.cloud.google.com/dataproc/docs/guides/use-dataproc-mcp). This open-standard integration allows LLMs and AI assistants to securely and dynamically interact with your Managed Spark clusters using natural language.\n\nBy utilizing the MCP server, your AI agents can securely connect to your data platform under existing IAM permissions. This allows agents to perform cluster-based operations, such as creating a cluster, submitting a job, or adjusting an autoscaling policy, directly from your AI application. \n\n### **Smarter: Accelerating AI with the Data Agent Kit**\n\nThe [Google Cloud Data Agent Kit](https://docs.cloud.google.com/data-cloud-extension) extension allows data scientists, engineers, and developers to manage their entire data workload lifecycle directly within their preferred development environment. We rolled out native support for this extension on Managed Spark clusters, enabling teams to seamlessly build and deploy specialized Data Agents for code generation and data wrangling.\n\n![3](https://storage.googleapis.com/gweb-cloudblog-publish/images/3_nOOSIdE.max-1000x1000.jpg)\n\nDevelopers can choose to use [Antigravity 2.0](https://antigravity.google/blog/introducing-google-antigravity-2-0), Google's standalone, agentic development platform or bring these agentic capabilities into their preferred IDE including VS Code, Claude Code, or Codex via the Data Agent Kit extensions and plugins. By pairing this streamlined workflow with the raw processing power of managed clusters, these intelligent agents can securely execute complex workflows directly over petabyte-scale data lakes. Specifically, the Data Agent Kit enables developers to:\n\n* **Build and orchestrate pipelines:** Author multi-node data pipelines and generate comprehensive code documentation using natural language.\n* **Perform real-time debugging:** Leverage Gemini Cloud Assist to sift through executor logs, pinpoint root causes of job failures, and recommend actionable fixes.\n* **Easily connect to Spark resources:** Instantly attach to serverless Spark runtimes or managed clusters without manual network configuration or local Spark installations.\n* **Streamline Git and CI/CD management:** Commit, merge, and deploy code directly from your IDE of choice, triggering automated testing and deployment pipelines without friction.\n\n### **Smarter: Next-generation Lakehouse**\n\nWe recently launched [Lakehouse](https://docs.cloud.google.com/lakehouse/docs/introduction), which delivers read/write interoperability between engines like Managed Service for Apache Spark and BigQuery. By leveraging the [Lakehouse runtime catalog](https://docs.cloud.google.com/lakehouse/docs/about-lakehouse-catalogs) as a unified, serverless metadata layer, it removes data silos and the need for complex translation layers. This agentic-first approach allows organizations to process open formats directly from Google Cloud Storage, or even query remote AWS datasets using the newly introduced [cross-cloud Lakehouse](https://docs.cloud.google.com/lakehouse/docs/about-cross-cloud-lakehouse), all while maintaining a single source of truth for security and governance.\n\nFor customers utilizing Managed Spark clusters, this integration unlocks several powerful new capabilities. Data teams can now accelerate their most demanding ETL and data science workloads by up to 4.9x using the optimized Lightning Engine.\n\n![4](https://storage.googleapis.com/gweb-cloudblog-publish/images/4_ywa0kAz.max-1000x1000.png)\n\n### **Next-gen runtimes: Cluster Image 3.0 with Spark 4.1**\n\nKeeping pace with the open-source ecosystem, we rolled out [Cluster Image 3.0](https://docs.cloud.google.com/dataproc/docs/release-notes#May_03_2026) in preview, built with Apache Spark 4.1 and that features an upgraded default Java runtime, Java 21. Spark 4.1 introduces a set of core open-source capabilities, including real-time mode for structured streaming. This enables your Spark environment to support real-time streaming with continuous, sub-second latency processing.\n\n### **Get started today**\n\nThese updates are live and ready to use today in Managed Spark clusters! You can enable these new features directly through the Google Cloud console or via the `gcloud` CLI.\n\nTo spin up a new Managed Cluster and natively unlocking the performance of **Lightning Engine,** run the following command in your terminal:\n\ncode\\_block\n:   <ListValue: [StructValue([('code', 'gcloud dataproc clusters create my-optimized-cluster \\\\\\r\\n --region=us-central1 \\\\\\r\\n --image-version=2.3 \\\\\\r\\n --engine=lightning \\\\'), ('language', ''), ('caption', <wagtail.rich\\_text.RichText object at 0x7f6b204b5670>)])]>\n\nAlternatively, navigate to the [Managed Service for Apache Spark page in the console](https://console.cloud.google.com/dataproc), click Create cluster, and select ‘Enable Lightning Engine’ under the cluster configuration settings to automatically activate Lightning Engine for your Spark jobs. \n\nWe look forward to hearing about the environments you build and run as Managed Service for Apache Spark clusters!",
+      "tags": [
+        "Spark",
+        "谷歌云"
+      ],
+      "score": 70,
+      "summary": "Google Cloud更新Managed Spark集群，提升性能与AI集成。",
+      "fetched_at": "2026-06-05T00:55:28.249392+08:00"
+    },
+    {
+      "title": "Quoting Emanuel Maiberg, 404 Media",
+      "link": "https://simonwillison.net/2026/Jun/4/a-slightly-different-version/#atom-everything",
+      "published": "2026-06-05T00:38:29+08:00",
+      "source": "Simon Willison's Weblog",
+      "content": "> After this story was published Google's spokesperson reached out and asked us to publish a slightly different version of that statement. The new statement no longer stated that \"it's critical that we maintain humans in the loop.\"\n\n— [Emanuel Maiberg, 404 Media](https://www.404media.co/google-employees-internally-share-memes-about-how-its-ai-sucks/), Google Employees Internally Share Memes About How Its AI Sucks\n\nTags: [ai-ethics](https://simonwillison.net/tags/ai-ethics), [journalism](https://simonwillison.net/tags/journalism), [ai](https://simonwillison.net/tags/ai), [google](https://simonwillison.net/tags/google)",
+      "tags": [
+        "谷歌",
+        "AI伦理"
+      ],
+      "score": 65,
+      "summary": "谷歌发言人修改声明，不再强调人类参与AI系统。",
+      "fetched_at": "2026-06-05T00:55:28.249444+08:00"
+    },
+    {
+      "title": "GitHub Universe is back: All together now, in the agentic era",
+      "link": "https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era/",
+      "published": "2026-06-05T00:00:00+08:00",
+      "source": "The GitHub Blog",
+      "content": "If you’ve been following all the AI agent conversations and wondering what’s useful versus what’s just noise, you’re not alone. There are ideas everywhere. What’s challenging is finding the time and a practical path from cool demos to workflows that make your day easier. GitHub Universe bridges that gap.\n\nUniverse is our flagship event for developers and the teams who support them—builders, maintainers, security practitioners, technical leaders, and partners—coming together for two days of learning, product exploration, and collaboration. One reason to come to Universe is the packed agenda. But perhaps the most crucial reason is the energy: the magic of what happens when you’re in the same room with people who speak your language and have solved (or are currently solving) the same problems as you.\n\n[Register now](https://githubuniverse.com/?utm_source=Blog&utm_medium=GitHub&utm_campaign=launch_seb_uni_26)\n\n## Universe 2026: All together now, in the agentic era\n\nSoftware development has always been deeply collaborative. Today, that collaboration goes beyond just people, extending to tools, integrations, and agents in one unified workflow.\n\n[GitHub Universe](https://githubuniverse.com/?utm_source=Blog&utm_medium=GitHub&utm_campaign=launch_seb_uni_26) is where that workflow clicks into place: where builders become orchestrators and ideas shaping the industry show up in unexpected places.\n\nThroughout the two days, you’ll attend exciting keynotes, panels, and sessions. Though some of the most valuable moments may just happen in between: a hallway conversation that saves you a week of trial and error, a live demo that sparks inspiration, a workshop where you get time with a workflow you can apply to a project, and a quick chat over really good donuts that turns into a future collaboration.\n\nYou’ll leave with practical examples, new approaches, and friends you can follow up with when you’re back in the day-to-day.\n\n## What’s new this year\n\nWe’re evolving the Universe experience based on what attendees loved last year, making it easier to learn, connect, and take action.\n\n* **A new format for Ship & Tell sessions**: A fast-paced lightning talk experience where the developer community shares what they’ve built, with time for Q&A.\n* **Speaker After Parties**: Deeper conversations in GitHub Central, where you can ask about the work behind the talks.\n* **Discussions Lounge (powered by Braindate)**: Attendees can suggest topics and lead small-group discussions for an easy way to tap into the collective knowledge in the room.\n* **The Open Source Zone is now The Source**: A bigger open source presence with more projects, and better ways to meet the people behind them.\n\n## Look back at Universe\n\nWant a feel for the in-person energy? Last year, Universe brought the fun in all directions: giant inflatable flowers, robot cotton-candy machines, hackable badges, and a Makerspace where you could build your own Octolamp.\n\nAnd that was only last year. Imagine what we have planned for 2026.\n\n## Ready to join us?\n\nSuper Early Bird passes are available now at our best price of the year. You can even bring your whole team: Save an extra 20% when you buy four or more passes.\n\nRegister before prices go up on July 9.\n\n[Get Super Early Bird passes](https://githubuniverse.com/?utm_source=Blog&utm_medium=GitHub&utm_campaign=launch_seb_uni_26)\n\n## Additional resources\n\n* Need help convincing your manager? [Use our customizable email template](https://githubuniverse.com/registration/convince-your-boss.pdf).\n* Want to stay updated as speakers and sessions are announced? [Sign up](https://reg.githubuniverse.com/flow/github/universe26/getnotified/form/reggetnotified).\n* Curious what the experience is like? [Explore last year’s highlights](https://www.youtube.com/playlist?list=PL0lo9MOBetEFKNlPHNouEmVeYeyoyGTXC).\n\nThe post [GitHub Universe is back: All together now, in the agentic era](https://github.blog/news-insights/company-news/github-universe-is-back-all-together-now-in-the-agentic-era/) appeared first on [The GitHub Blog](https://github.blog).",
+      "tags": [
+        "GitHub",
+        "Agent",
+        "大会"
+      ],
+      "score": 75,
+      "summary": "GitHub Universe 2026回归，聚焦AI agent时代与开发者协作。",
+      "fetched_at": "2026-06-05T00:55:28.249495+08:00"
+    },
+    {
+      "title": "Kaggle is making AI benchmark creation effortless",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/build-kaggle--benchmarks-locally/",
+      "published": "2026-06-05T00:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Kaggle_is_making_AI_benchmark_H.max-600x600.format-webp.webp)Today, we’re launching local development for Kaggle Benchmarks.",
+      "tags": [
+        "Kaggle",
+        "基准测试"
+      ],
+      "score": 80,
+      "summary": "Kaggle推出本地开发功能，简化AI基准测试创建。",
+      "fetched_at": "2026-06-05T00:55:28.249543+08:00"
+    },
+    {
+      "title": "A new profile to help publishers and creators highlight their work on Search",
+      "link": "https://blog.google/products-and-platforms/products/search/a-new-profile-to-help-publishers-and-creators-highlight-their-work-on-search/",
+      "published": "2026-06-05T00:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Search_Profile_Launch_hero_gmeP.max-600x600.format-webp.webp)We’re introducing a new, dedicated space for creators, publishers and brands.",
+      "tags": [
+        "搜索",
+        "创作者"
+      ],
+      "score": 60,
+      "summary": "谷歌推出新搜索个人资料功能，帮助发布者和创作者展示作品。",
+      "fetched_at": "2026-06-05T00:55:28.249589+08:00"
+    },
+    {
+      "title": "Industry leaders share new perspectives on generative media for startups",
+      "link": "https://blog.google/company-news/outreach-and-initiatives/entrepreneurs/future-of-ai/",
+      "published": "2026-06-05T00:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Future_of_AI_hero.max-600x600.format-webp.webp)We’re sharing our findings in Google for Startups’ latest report, the Future of AI: Perspectives on generative media for startups.",
+      "tags": [
+        "生成式媒体",
+        "创业"
+      ],
+      "score": 75,
+      "summary": "Google发布报告，分享行业领袖对初创公司生成式媒体的观点。",
+      "fetched_at": "2026-06-05T00:55:28.249638+08:00"
+    },
+    {
+      "title": "AI research is a series of next-step decisions. We looked at sessions where a human researcher took ...",
+      "link": "https://x.com/AnthropicAI/status/2062568870872003021",
+      "published": "2026-06-05T00:15:14+08:00",
+      "source": "Anthropic(@AnthropicAI)",
+      "content": "AI research is a series of next-step decisions. We looked at sessions where a human researcher took a wrong turn, showed Claude the session up to that point, and asked it what to do next. Mythos Preview improved on humans 64% of the time—up from 22% in 2024.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-2h70acAAmFX-.jpg)\n\n💬1🔄1❤️17👀2437📊2",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "递归自我改进"
+      ],
+      "score": 95,
+      "summary": "Anthropic数据显示Claude加速AI开发，可能走向递归自我改进。",
+      "fetched_at": "2026-06-05T00:55:28.249709+08:00"
+    },
+    {
+      "title": "None of this guarantees recursive self-improvement is on the horizon. It’s not yet clear that Claude...",
+      "link": "https://x.com/AnthropicAI/status/2062568873321513443",
+      "published": "2026-06-05T00:15:14+08:00",
+      "source": "Anthropic(@AnthropicAI)",
+      "content": "None of this guarantees recursive self-improvement is on the horizon. It’s not yet clear that Claude is capable of research judgment—of choosing the right problems to work on.  \n  \nBut if these trends continue, AI systems designing and building their own successors is plausible. This could revolutionize society—medicine, technology, the economy—for the better. But it may also compound alignment issues and ultimately lead to loss of control.  \n  \nThe Anthropic Institute (in collaboration with external stakeholders) will conduct research to think through the implications of increasingly powerful, potentially self-improving systems—and how to create the ability for the world to make deliberate choices about the future development of the technology.  \n  \nRead the full post: [anthropic.com/institute/recu…](https://www.anthropic.com/institute/recursive-self-improvement)\n\n💬1🔄1❤️18👀2074📊3",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "递归自我改进"
+      ],
+      "score": 95,
+      "summary": "Anthropic讨论递归自我改进的潜在影响和风险。",
+      "fetched_at": "2026-06-05T00:55:28.249757+08:00"
+    },
+    {
+      "title": "Our internal data shows Claude is accelerating AI development—a possible path to recursive self-impr...",
+      "link": "https://x.com/AnthropicAI/status/2062568862479208923",
+      "published": "2026-06-05T00:15:12+08:00",
+      "source": "Anthropic(@AnthropicAI)",
+      "content": "Our internal data shows Claude is accelerating AI development—a possible path to recursive self-improvement, or AI autonomously building a more capable successor.  \n  \nIt’s happening faster than we thought, and the implications deserve greater attention. [anthropic.com/institute/recu…](https://www.anthropic.com/institute/recursive-self-improvement)\n\n💬30🔄30❤️267👀6971📊61",
+      "tags": [
+        "Anthropic",
+        "Claude",
+        "递归自我改进"
+      ],
+      "score": 95,
+      "summary": "Anthropic称Claude加速AI发展，可能通向递归自我改进。",
+      "fetched_at": "2026-06-05T00:55:28.249803+08:00"
+    },
+    {
+      "title": "We’re bringing all connectors required to spin up and run a business from scratch inside Perplexity ...",
+      "link": "https://x.com/AravSrinivas/status/2062548410478334091",
+      "published": "2026-06-04T22:53:56+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "We’re bringing all connectors required to spin up and run a business from scratch inside Perplexity Computer. It’s going to be possible for anyone with an idea and a small team of high agency people to build fast growing valuable companies faster than ever before with Computer.\n\n![Perplexity](https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_normal.jpg)\n\nPerplexity@perplexity\\_ai\n\nPerplexity Computer is for growing businesses.  \n  \nComputer connects to 400+ tools for every type of company, including Intuit QuickBooks, Vercel, Shopify, Canva, and more.  \n  \nLearn more about how people are using Computer for their business:  \n[perplexity.ai/enterprise/use…](https://www.perplexity.ai/enterprise/use-cases/growing-businesses)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062221346072051713/vid/avc1/1280x720/BaBdp9gq-sHz9hml.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/perplexity_ai/status/2062221423104704753/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/perplexity_ai/status/2062221423104704753)\n\n💬18🔄11❤️118👀13435📊25",
+      "tags": [
+        "Perplexity",
+        "工具集成",
+        "创业"
+      ],
+      "score": 80,
+      "summary": "Perplexity Computer集成400+工具，支持从零开始创业。",
+      "fetched_at": "2026-06-05T00:55:28.249850+08:00"
+    },
+    {
+      "title": "From The Problem Solvers, our series featuring founders taking on hard problems with Claude: https:/...",
+      "link": "https://x.com/claudeai/status/2062558335358927317",
+      "published": "2026-06-04T23:33:22+08:00",
+      "source": "Claude(@claudeai)",
+      "content": "From The Problem Solvers, our series featuring founders taking on hard problems with Claude: [claude.com/problem-solvers](https://claude.com/problem-solvers)\n\n💬6🔄1❤️24👀14009📊8",
+      "tags": [
+        "Claude",
+        "创业"
+      ],
+      "score": 70,
+      "summary": "Claude推出问题解决者系列视频，展示创始人使用Claude。",
+      "fetched_at": "2026-06-05T00:55:28.249896+08:00"
+    },
+    {
+      "title": "Anton Osika (@antonosika) is the co-founder and CEO of @lovable, where anyone can build software thr...",
+      "link": "https://x.com/claudeai/status/2062558332695556378",
+      "published": "2026-06-04T23:33:21+08:00",
+      "source": "Claude(@claudeai)",
+      "content": "Anton Osika ([@antonosika](https://x.com/antonosika)) is the co-founder and CEO of [@lovable](https://x.com/lovable), where anyone can build software through conversation.  \n  \nHis working thesis: the most underrated moat in AI is trust, and earning it takes craft, care, and obsession.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062557522163122176/vid/avc1/1920x1080/NClsYdtpIAa68C44.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/claudeai/status/2062558332695556378/video/1)\n\n💬82🔄37❤️514👀37220📊121",
+      "tags": [
+        "Claude",
+        "Lovable",
+        "信任"
+      ],
+      "score": 70,
+      "summary": "Claude采访Lovable创始人，强调信任是AI护城河。",
+      "fetched_at": "2026-06-05T00:55:28.249942+08:00"
+    },
+    {
+      "title": "You stay in control of costs. \n\nWhen assist mode is enabled, the agent asks for your approval before...",
+      "link": "https://x.com/ElevenLabs/status/2062563985656832138",
+      "published": "2026-06-04T23:55:49+08:00",
+      "source": "ElevenLabs(@elevenlabsio)",
+      "content": "You stay in control of costs.   \n  \nWhen assist mode is enabled, the agent asks for your approval before running expensive operations.   \n  \nIt also works in the background - close the tab and come back to a completed workflow.\n\n💬1🔄0❤️0👀162📊1",
+      "tags": [
+        "ElevenLabs",
+        "Agent",
+        "音频"
+      ],
+      "score": 80,
+      "summary": "ElevenLabs Flows Agent支持成本控制和后台运行。",
+      "fetched_at": "2026-06-05T00:55:28.249988+08:00"
+    },
+    {
+      "title": "Try Flows Agent in ElevenCreative today. https://t.co/h4NxM4Vo6x",
+      "link": "https://x.com/ElevenLabs/status/2062563986478895259",
+      "published": "2026-06-04T23:55:49+08:00",
+      "source": "ElevenLabs(@elevenlabsio)",
+      "content": "Try Flows Agent in ElevenCreative today. [elevenlabs.io/app/flows](http://elevenlabs.io/app/flows)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-y7f8WwAAgU3A.jpg)\n\n💬0🔄0❤️0👀158",
+      "tags": [
+        "ElevenLabs",
+        "Agent",
+        "音频"
+      ],
+      "score": 80,
+      "summary": "ElevenLabs发布Flows Agent，可自动构建音频工作流。",
+      "fetched_at": "2026-06-05T00:55:28.250034+08:00"
+    },
+    {
+      "title": "Introducing Flows Agent in ElevenCreative. \n\nDescribe what you want to create and the agent builds y...",
+      "link": "https://x.com/ElevenLabs/status/2062563982452408526",
+      "published": "2026-06-04T23:55:48+08:00",
+      "source": "ElevenLabs(@elevenlabsio)",
+      "content": "Introducing Flows Agent in ElevenCreative.   \n  \nDescribe what you want to create and the agent builds your entire workflow - selecting models, creating nodes, wiring connections, and running the generations.\n\n[Your browser does not support the video tag.](https://video.twimg.com/ext_tw_video/2062563892904042496/pu/vid/avc1/1280x720/zm-XNu8JkNW9NDhO.mp4?tag=12)\n\n[🔗 View on Twitter](https://x.com/ElevenLabs/status/2062563982452408526/video/1)\n\n💬1🔄0❤️15👀373📊3",
+      "tags": [
+        "ElevenLabs",
+        "Agent",
+        "音频"
+      ],
+      "score": 80,
+      "summary": "ElevenLabs推出Flows Agent，描述需求即可自动生成工作流。",
+      "fetched_at": "2026-06-05T00:55:28.250080+08:00"
+    },
+    {
+      "title": "Check Designs: Keep every file synced to your design system with\n\n→ Variable &amp; style suggestions...",
+      "link": "https://x.com/figma/status/2062569805102850420",
+      "published": "2026-06-05T00:18:56+08:00",
+      "source": "Figma(@figma)",
+      "content": "Check Designs: Keep every file synced to your design system with  \n  \n→ Variable & style suggestions  \n→ Color contrast suggestions  \n→ Library mismatch detection  \n→ Detached component detection\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062566856087728128/vid/avc1/1920x1080/TVLmgLWTDRvRnKU3.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/figma/status/2062569805102850420/video/1)\n\n💬3🔄5❤️49👀1252📊11",
+      "tags": [
+        "Figma",
+        "设计系统"
+      ],
+      "score": 65,
+      "summary": "Figma推出Check Designs，帮助同步设计系统变量和样式。",
+      "fetched_at": "2026-06-05T00:55:28.250126+08:00"
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Ultra is on Fireworks, day zero.\n\nNemotron Ultra is an open model for frontier rea...",
+      "link": "https://x.com/FireworksAI_HQ/status/2062568688201646321",
+      "published": "2026-06-05T00:14:30+08:00",
+      "source": "Fireworks AI(@FireworksAI_HQ)",
+      "content": "NVIDIA Nemotron 3 Ultra is on Fireworks, day zero.  \n  \nNemotron Ultra is an open model for frontier reasoning and orchestration in long-running autonomous agents.  \n  \nThink use cases like coding agents, deep research, and complex enterprise workflows.  \n  \nRead on: [fireworks.ai/blog/nemotron-…](https://fireworks.ai/blog/nemotron-3-ultra)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-1orwbgAAUBIo.jpg)\n\n💬0🔄0❤️7👀124📊1",
+      "tags": [
+        "Nemotron",
+        "Fireworks",
+        "开源模型"
+      ],
+      "score": 80,
+      "summary": "Fireworks AI上线NVIDIA Nemotron 3 Ultra，专为长运行agent优化。",
+      "fetched_at": "2026-06-05T00:55:28.250172+08:00"
+    },
+    {
+      "title": "Offering @kevinroose $100,000 bet that no domain-general AI system can do this before his book comes...",
+      "link": "https://x.com/GaryMarcus/status/2062574525339066719",
+      "published": "2026-06-05T00:37:42+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Offering [@kevinroose](https://x.com/kevinroose) $100,000 bet that no domain-general AI system can do this before his book comes out.   \n  \n(mimicking walkthroughs doesn’t count.)\n\n![Gary Marcus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus@GaryMarcus\n\nOffering a “damn, I’m truly impressed” award, for the first person or team to build a domain-general AI system that can play [@baldursgate3](https://x.com/baldursgate3), start to finish.   \n  \nWill make the prize especially sweet if you manage this decade.\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJ-0NxQbkAAxt3k.jpg)](https://video.twimg.com/tweet_video/HJ-0NxQbkAAxt3k.mp4)\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2062565309832429825)\n\n💬0🔄0❤️0👀1",
+      "tags": [
+        "Gary Marcus",
+        "AGI",
+        "打赌"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus向记者发出10万美元赌注，挑战AI完成游戏。",
+      "fetched_at": "2026-06-05T00:55:28.250219+08:00"
+    },
+    {
+      "title": "ps no fair just mimicing walkthroughs.",
+      "link": "https://x.com/GaryMarcus/status/2062574273538273645",
+      "published": "2026-06-05T00:36:42+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "ps no fair just mimicing walkthroughs.\n\n💬0🔄0❤️0👀77",
+      "tags": [
+        "Gary Marcus",
+        "AGI"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus补充赌注规则，不允许模仿攻略。",
+      "fetched_at": "2026-06-05T00:55:28.250265+08:00"
+    },
+    {
+      "title": "If you get taken for a ride on SpaceX blame hype guys like this, who don’t even mention that Goldman...",
+      "link": "https://x.com/GaryMarcus/status/2062572236704456767",
+      "published": "2026-06-05T00:28:36+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "If you get taken for a ride on SpaceX blame hype guys like this, who don’t even mention that Goldman is the lead left on the deal.\n\n![*Walter Bloomberg](https://pbs.twimg.com/profile_images/1282648991348527104/A8HCjqZk_normal.jpg)\n\n\\*Walter Bloomberg@DeItaone\n\nGOLDMAN SEES SPACEX AI REVENUE EXPLODING TO $322B BY 2030  \n  \nGoldman Sachs projects SpaceX AI revenue rising from $3.2B in 2025 to $322B by 2030, a ~100x increase, forming the core justification for its $1.78T IPO valuation. Total revenue is forecast to reach $474B, with Starlink at $144B and rockets at $8.3B.   \n  \nAI segment growth is tied to aggressive market assumptions despite current losses and execution concerns around xAI. Overall EBITDA is seen surging to $352B by 2030.\n\n[🔗 View Quoted Tweet](https://x.com/DeItaone/status/2062548404459147736)\n\n💬4🔄2❤️14👀861📊4",
+      "tags": [
+        "Gary Marcus",
+        "SpaceX",
+        "批评"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus批评高盛对SpaceX AI收入的预测。",
+      "fetched_at": "2026-06-05T00:55:28.250311+08:00"
+    },
+    {
+      "title": "Is this too much to ask of AGI? \n\nOf course not.\n\nCan any current AI do this?\n\nOf course not.",
+      "link": "https://x.com/GaryMarcus/status/2062571804993159514",
+      "published": "2026-06-05T00:26:53+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Is this too much to ask of AGI?   \n  \nOf course not.  \n  \nCan any current AI do this?  \n  \nOf course not.\n\n![Gary Marcus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus@GaryMarcus\n\nOffering a “damn, I’m truly impressed” award, for the first person or team to build a domain-general AI system that can play [@baldursgate3](https://x.com/baldursgate3), start to finish.   \n  \nWill make the prize especially sweet if you manage this decade.\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJ-0NxQbkAAxt3k.jpg)](https://video.twimg.com/tweet_video/HJ-0NxQbkAAxt3k.mp4)\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2062565309832429825)\n\n💬3🔄0❤️4👀687📊2",
+      "tags": [
+        "Gary Marcus",
+        "AGI"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus认为当前AI无法达到AGI水平。",
+      "fetched_at": "2026-06-05T00:55:28.250358+08:00"
+    },
+    {
+      "title": "if you had 100k to invest in OpenAI and/or Anthropic IPOs which would you go for?",
+      "link": "https://x.com/GaryMarcus/status/2062569993255202818",
+      "published": "2026-06-05T00:19:41+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "if you had 100k to invest in OpenAI and/or Anthropic IPOs which would you go for?\n\n💬15🔄1❤️5👀1235📊13",
+      "tags": [
+        "Gary Marcus",
+        "投资"
+      ],
+      "score": 60,
+      "summary": "Gary Marcus提问OpenAI和Anthropic IPO投资选择。",
+      "fetched_at": "2026-06-05T00:55:28.250404+08:00"
+    },
+    {
+      "title": "Incredible. Goldman Sachs is the lead left on the SpaceX IPO, and somehow @ft fails to mention this ...",
+      "link": "https://x.com/GaryMarcus/status/2062567453432160617",
+      "published": "2026-06-05T00:09:36+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Incredible. Goldman Sachs is the lead left on the SpaceX IPO, and somehow [@ft](https://x.com/ft) fails to mention this in the headline below 🤦‍♂️\n\n![Financial Times](https://pbs.twimg.com/profile_images/931156393108885504/EqEMtLhM_normal.jpg)\n\nFinancial Times@FT\n\nGoldman Sachs expects SpaceX’s AI revenue to surge 100 times by 2030 [ft.trib.al/psRqF2H](https://ft.trib.al/psRqF2H)\n\n[🔗 View Quoted Tweet](https://x.com/FT/status/2062549761517846558)\n\n💬4🔄9❤️51👀3488📊8",
+      "tags": [
+        "Gary Marcus",
+        "SpaceX"
+      ],
+      "score": 60,
+      "summary": "Gary Marcus指金融时报未披露高盛在SpaceX IPO中的角色。",
+      "fetched_at": "2026-06-05T00:55:28.250450+08:00"
+    },
+    {
+      "title": "Offering a “damn, I’m truly impressed” award, for the first person or team to build a domain-general...",
+      "link": "https://x.com/GaryMarcus/status/2062565309832429825",
+      "published": "2026-06-05T00:01:05+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Offering a “damn, I’m truly impressed” award, for the first person or team to build a domain-general AI system that can play [@baldursgate3](https://x.com/baldursgate3), start to finish.   \n  \nWill make the prize especially sweet if you manage this decade.\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HJ-0NxQbkAAxt3k.jpg)](https://video.twimg.com/tweet_video/HJ-0NxQbkAAxt3k.mp4)\n\n💬2🔄0❤️8👀2213📊3",
+      "tags": [
+        "Gary Marcus",
+        "AGI"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus悬赏奖励能通关博德之门3的AI系统。",
+      "fetched_at": "2026-06-05T00:55:28.250496+08:00"
+    },
+    {
+      "title": "vibe coding meme of the day, via @emanuelmaiberg @404mediaco",
+      "link": "https://x.com/GaryMarcus/status/2062561434761085125",
+      "published": "2026-06-04T23:45:41+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "vibe coding meme of the day, via [@emanuelmaiberg](https://x.com/emanuelmaiberg)[@404mediaco](https://x.com/404mediaco)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-wsd8aQAAeUct.jpg)\n\n💬5🔄1❤️20👀1615📊6",
+      "tags": [
+        "Gary Marcus",
+        "meme"
+      ],
+      "score": 50,
+      "summary": "Gary Marcus分享关于vibe coding的meme。",
+      "fetched_at": "2026-06-05T00:55:28.250542+08:00"
+    },
+    {
+      "title": "英伟达的大模型总是感觉差口气，不知道什么时候才能支棱起来。",
+      "link": "https://x.com/geekbb/status/2062554941013766513",
+      "published": "2026-06-04T23:19:53+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "英伟达的大模型总是感觉差口气，不知道什么时候才能支棱起来。\n\n![NVIDIA](https://pbs.twimg.com/profile_images/1828904711124078593/SRvCZSfQ_normal.jpg)\n\nNVIDIA@nvidia\n\nIntroducing NVIDIA Nemotron 3 Ultra.  \n  \nA frontier smart open model built for long-running agents that need to plan, reason, use tools and keep working across complex coding, research and enterprise workflows.  \n  \nUp to 5x faster inference and up to 30% lower cost for agentic tasks.  \n  \nLearn more: [nvda.ws/4x9nGps](https://nvda.ws/4x9nGps)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062522264004775936/vid/avc1/1280x720/ZzHQmYIF7cR-j_gb.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/nvidia/status/2062522316672667770/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/nvidia/status/2062522316672667770)\n\n💬6🔄0❤️2👀1498📊4",
+      "tags": [
+        "评论"
+      ],
+      "score": 30,
+      "summary": "用户评论英伟达大模型表现不足。",
+      "fetched_at": "2026-06-05T00:55:28.250589+08:00"
+    },
+    {
+      "title": "Our team is at CVPR 2026 if you want to come say hi :)",
+      "link": "https://x.com/jerryjliu0/status/2062568325742477676",
+      "published": "2026-06-05T00:13:04+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "Our team is at CVPR 2026 if you want to come say hi :)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-27YgbAAAhcy7.jpg)\n\n![Jerry Liu](https://pbs.twimg.com/profile_images/1283610285031460864/1Q4zYhtb_normal.jpg)\n\nJerry Liu@jerryjliu0\n\nWe're presenting ParseBench at CVPR 2026!   \n  \nParseBench is the most comprehensive document understanding benchmark for VLMs.   \n✅ It contains 2k pages of real-world enterprise documents  \n✅ It has comprehensive evaluation metrics around tables, charts, visual grounding, semantic formatting, and content faithfulness  \n  \nThe core goal is measuring whether models can semantically interpret a document in the right way, without having models overfit to our precise benchmark.   \n  \nParsing 100% of PDFs to 100% accuracy is the final boss for document OCR.   \nIn general, the latest frontier models have been tuned for coding, math, and scientific reasoning as opposed to precise visual understanding; hope more benchmarks that these will encourage overall progress towards solving this problem!   \n  \nPoster is below. If you want to learn more come check out our site or 30-page ArXiv paper:   \n  \nParseBench: [parsebench.ai](https://www.parsebench.ai/)  \nArXiv: [arxiv.org/abs/2604.08538](https://arxiv.org/abs/2604.08538)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-ZI1ub0AEexIj.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/jerryjliu0/status/2062535626491412621)\n\n💬2🔄0❤️4👀214📊2",
+      "tags": [
+        "ParseBench",
+        "文档理解",
+        "CVPR"
+      ],
+      "score": 70,
+      "summary": "LlamaIndex团队在CVPR展示ParseBench文档理解基准。",
+      "fetched_at": "2026-06-05T00:55:28.250636+08:00"
+    },
+    {
+      "title": "Agents are only as good as the context you give them. The job of a harness is to get the model the r...",
+      "link": "https://x.com/LangChain/status/2062565386583773596",
+      "published": "2026-06-05T00:01:23+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Agents are only as good as the context you give them. The job of a harness is to get the model the right context at the right time for a given task.  \n  \nHere’s a guide from [@sydneyrunkle](https://x.com/sydneyrunkle) on how to build a bespoke harness for your use case. [langchain.com/blog/how-to-bu…](https://www.langchain.com/blog/how-to-build-a-custom-agent-harness)\n\n💬4🔄1❤️11👀858📊6",
+      "tags": [
+        "LangChain",
+        "Agent",
+        "Harness"
+      ],
+      "score": 75,
+      "summary": "LangChain发布构建自定义Agent harness指南。",
+      "fetched_at": "2026-06-05T00:55:28.250699+08:00"
+    },
+    {
+      "title": "We are also excited to continue our investment in open source technologies, including the recent lau...",
+      "link": "https://x.com/LangChain/status/2062552643730391312",
+      "published": "2026-06-04T23:10:45+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "We are also excited to continue our investment in open source technologies, including the recent launch of OpenMDW-1.1: [linuxfoundation.org/press/linux-fo…](https://www.linuxfoundation.org/press/linux-foundation-releases-openmdw-1.1-nvidia-adopts-openmdw-for-cosmos-isaac-gr00t-ising-and-nemotron-ai-model-families)\n\n💬1🔄0❤️1👀987📊1",
+      "tags": [
+        "LangChain",
+        "开源",
+        "OpenMDW"
+      ],
+      "score": 70,
+      "summary": "LangChain支持OpenMDW 1.1和NVIDIA Nemotron。",
+      "fetched_at": "2026-06-05T00:55:28.250748+08:00"
+    },
+    {
+      "title": "LangChain supports @NVIDIA Nemotron 3 Ultra out of the box, with Day 0 support for Deep Agents.\n\nAs ...",
+      "link": "https://x.com/LangChain/status/2062552548804854175",
+      "published": "2026-06-04T23:10:22+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "LangChain supports [@NVIDIA](https://x.com/NVIDIA) Nemotron 3 Ultra out of the box, with Day 0 support for Deep Agents.  \n  \nAs a member of the Nemotron Coalition, we are excited to work with NVIDIA to make it even easier and more accessible to share and build on top of open models.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-nqPHXYAAjq0W.jpg)\n\n![NVIDIA AI](https://pbs.twimg.com/profile_images/2055340743552831488/me-KUIug_normal.png)\n\nNVIDIA AI@NVIDIAAI\n\nToday we're shipping Nemotron 3 Ultra.  \n  \nA 550B MoE frontier-intelligence open model built for long-running agents.  \n  \nIt delivers 5x faster inference and lowers the cost of complex agentic tasks by up to 30% versus other open frontier models.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062521048722018305/vid/avc1/1280x720/LmRK48h09CffEoHn.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/NVIDIAAI/status/2062521325076299981/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/NVIDIAAI/status/2062521325076299981)\n\n💬5🔄6❤️22👀3293📊6",
+      "tags": [
+        "LangChain",
+        "Nemotron",
+        "Agent"
+      ],
+      "score": 75,
+      "summary": "LangChain宣布支持NVIDIA Nemotron 3 Ultra，提供Day 0支持。",
+      "fetched_at": "2026-06-05T00:55:28.250796+08:00"
+    },
+    {
+      "title": "In our LangChain Labs study with @Harvey, we looked at how to measure efficiency across verifier des...",
+      "link": "https://x.com/LangChain/status/2062550324577988915",
+      "published": "2026-06-04T23:01:32+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "In our LangChain Labs study with [@Harvey](https://x.com/Harvey), we looked at how to measure efficiency across verifier designs.  \n  \nWe benchmarked 5 setups against Sonnet per-criterion as the reference.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-mlwwXcAAZXzp.jpg)\n\n💬2🔄0❤️16👀1744📊3",
+      "tags": [
+        "LangChain",
+        "验证器",
+        "法律"
+      ],
+      "score": 75,
+      "summary": "LangChain与Harvey研究法律代理中验证器效率。",
+      "fetched_at": "2026-06-05T00:55:28.250842+08:00"
+    },
+    {
+      "title": "@harvey Read our full study: https://t.co/imximoYooo?",
+      "link": "https://x.com/LangChain/status/2062550326343774324",
+      "published": "2026-06-04T23:01:32+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "[@harvey](https://x.com/harvey) Read our full study: [langchain.com/blog/designing…](https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents)?\n\n💬1🔄0❤️5👀1334📊2",
+      "tags": [
+        "LangChain",
+        "验证器",
+        "法律"
+      ],
+      "score": 75,
+      "summary": "LangChain分享与Harvey合作的验证器研究全文。",
+      "fetched_at": "2026-06-05T00:55:28.250887+08:00"
+    },
+    {
+      "title": "Most AI pipelines are only as good as the data we provide them with, and that usually means PDFs or ...",
+      "link": "https://x.com/llama_index/status/2062567059402137722",
+      "published": "2026-06-05T00:08:02+08:00",
+      "source": "LlamaIndex 🦙(@llama_index)",
+      "content": "Most AI pipelines are only as good as the data we provide them with, and that usually means PDFs or other unstructured documents.  \n  \nContracts, invoices, reports... All have special layout, language, and context mixed together, and getting reliable structured data out of them is still one of the hardest unsolved problems in enterprise AI.  \n  \nParse-Flow is an open-source project we built to tackle this head-on. It puts four document processing primitives at the center of a visual workflow designer:  \n  \n📄 Parse — clean markdown and text from raw documents  \n🔍️ Classify — assign documents to user-defined categories  \n✂️ Split — segment documents into typed chunks  \n🪏 Extract — pull structured JSON against a schema  \n  \nYou drag steps onto a canvas, drop in a document, and watch events stream back as the pipeline runs. Under the hood it's powered by a LlamaAgents workflow that walks your flow one step at a time, making every transition observable and every failure a first-class value.  \n  \n📚️ Full write-up on the architecture he[llamaindex.ai/blog/designing…](https://www.llamaindex.ai/blog/designing-a-visual-document-intelligence-workflow-with-llamaparse?utm_medium=socials&utm_source=twitter&utm_campaign=2026-jun-)wGnX  \n👩‍💻 Source [github.com/run-llama/pars…](http://github.com/run-llama/parse-flow)7vXt9i\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-1z1pWsAATgL-.jpg)\n\n💬1🔄1❤️4👀334📊2",
+      "tags": [
+        "LlamaIndex",
+        "文档提取",
+        "开源"
+      ],
+      "score": 78,
+      "summary": "LlamaIndex发布Parse-Flow，可视化文档智能工作流工具。",
+      "fetched_at": "2026-06-05T00:55:28.250933+08:00"
+    },
+    {
+      "title": "@Shopify Read the blog here:\nhttps://t.co/FxD7fB697C",
+      "link": "https://x.com/ManusAI/status/2062551197223919690",
+      "published": "2026-06-04T23:05:00+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "[@Shopify](https://x.com/Shopify) Read the blog here:  \n[manus.im/blog/manus-sho…](https://manus.im/blog/manus-shopify-connector)\n\n💬0🔄0❤️2👀1074📊1",
+      "tags": [
+        "Manus",
+        "Shopify",
+        "电商"
+      ],
+      "score": 80,
+      "summary": "Manus AI集成Shopify，可通过聊天管理电商业务。",
+      "fetched_at": "2026-06-05T00:55:28.250978+08:00"
+    },
+    {
+      "title": "Grow: Manus reads your real sales data and turns it into campaigns. Slow movers, repeat buyers, hero...",
+      "link": "https://x.com/ManusAI/status/2062551185228280020",
+      "published": "2026-06-04T23:04:57+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "Grow: Manus reads your real sales data and turns it into campaigns. Slow movers, repeat buyers, hero collections — it briefs itself off your numbers, not vibes.  \n  \nTry:  \n\"Use my Shopify data to find the three slowest-moving products and create four ad creatives around them, each with its own promo code.\"\n\n💬1🔄0❤️1👀1121📊1",
+      "tags": [
+        "Manus",
+        "Shopify",
+        "电商"
+      ],
+      "score": 80,
+      "summary": "Manus AI利用Shopify销售数据自动生成营销活动。",
+      "fetched_at": "2026-06-05T00:55:28.251025+08:00"
+    },
+    {
+      "title": "Introducing @Shopify on Manus. \n\nLaunch a store, manage your catalog, and run campaigns — all from o...",
+      "link": "https://x.com/ManusAI/status/2062551159030649103",
+      "published": "2026-06-04T23:04:51+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "Introducing [@Shopify](https://x.com/Shopify) on Manus.   \n  \nLaunch a store, manage your catalog, and run campaigns — all from one chat.   \n  \nManus builds the storefront. Shopify handles checkout, payments, and fulfillment.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062551074083405824/vid/avc1/1280x720/xPwjbx2nRaMBiNsU.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/ManusAI/status/2062551159030649103/video/1)\n\n💬7🔄5❤️74👀5778📊20",
+      "tags": [
+        "Manus",
+        "Shopify",
+        "电商"
+      ],
+      "score": 80,
+      "summary": "Manus AI与Shopify合作，支持一站式开店管理。",
+      "fetched_at": "2026-06-05T00:55:28.251070+08:00"
+    },
+    {
+      "title": "With the same multi-vector model, and the same dataset, nDCG@10 can drop from 0.701 to 0.109 — rough...",
+      "link": "https://x.com/milvusio/status/2062559250015273251",
+      "published": "2026-06-04T23:37:00+08:00",
+      "source": "Milvus(@milvusio)",
+      "content": "With the same multi-vector model, and the same dataset, nDCG[@10](https://x.com/10) can drop from 0.701 to 0.109 — roughly a 6x gap. Why? It's because you changed the approximate retrieval strategy.  \n 𝗜𝗻 𝗺𝘂𝗹𝘁𝗶-𝘃𝗲𝗰𝘁𝗼𝗿 𝗿𝗲𝘁𝗿𝗶𝗲𝘃𝗮𝗹, 𝗽𝗶𝗰𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝘄𝗿𝗼𝗻𝗴 𝘀𝘁𝗿𝗮𝘁𝗲𝗴𝘆 𝗰𝗮𝗻 𝗰𝗼𝘀𝘁 𝘆𝗼𝘂 𝗺𝗼𝗿𝗲 𝘁𝗵𝗮𝗻 𝗽𝗶𝗰𝗸𝗶𝗻𝗴 𝘁𝗵𝗲 𝘄𝗿𝗼𝗻𝗴 𝗺𝗼𝗱𝗲𝗹.  \n  \nMulti-vector models like ColBERT turn every token in a document into its own vector. You can't just load millions of token vectors into an ANN index and search, because the score that matters is document-level MaxSim — for each query token, find its closest token in the document, then sum. 𝗦𝗼 𝗲𝘃𝗲𝗿𝘆 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵 𝗿𝘂𝗻𝘀 𝗶𝗻 𝘁𝘄𝗼 𝘀𝘁𝗮𝗴𝗲𝘀: 𝗮𝗻 𝗮𝗽𝗽𝗿𝗼𝘅𝗶𝗺𝗮𝘁𝗲 𝘀𝗲𝗮𝗿𝗰𝗵 𝗽𝗶𝗰𝗸𝘀 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗲 𝗱𝗼𝗰𝘂𝗺𝗲𝗻𝘁𝘀 𝗳𝗶𝗿𝘀𝘁, 𝘁𝗵𝗲𝗻 𝗲𝘅𝗮𝗰𝘁 𝗠𝗮𝘅𝗦𝗶𝗺 𝗿𝗲-𝗿𝗮𝗻𝗸𝘀 𝘁𝗵𝗲𝗺. 𝗧𝗵𝗲 𝘀𝘁𝗿𝗮𝘁𝗲𝗴𝗶𝗲𝘀 𝗼𝗻𝗹𝘆 𝗱𝗶𝗳𝗳𝗲𝗿 𝗶𝗻 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝗱𝗼 𝘁𝗵𝗮𝘁 𝗳𝗶𝗿𝘀𝘁 𝘀𝘁𝗲𝗽.  \n  \n𝗪𝗲 𝘁𝗲𝘀𝘁𝗲𝗱 𝘁𝗵𝗿𝗲𝗲: 𝗧𝗼𝗸𝗲𝗻𝗔𝗡𝗡 (𝗶𝗻𝗱𝗲𝘅 𝗲𝘃𝗲𝗿𝘆 𝘁𝗼𝗸𝗲𝗻 𝘃𝗲𝗰𝘁𝗼𝗿 𝗱𝗶𝗿𝗲𝗰𝘁𝗹𝘆), 𝗠𝗨𝗩𝗘𝗥𝗔 (𝗿𝗮𝗻𝗱𝗼𝗺-𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝗶𝗼𝗻 𝗰𝗼𝗺𝗽𝗿𝗲𝘀𝘀𝗶𝗼𝗻), 𝗟𝗘𝗠𝗨𝗥 (𝘁𝗿𝗮𝗶𝗻 𝗮𝗻 𝗠𝗟𝗣 𝘁𝗼 𝗰𝗼𝗺𝗽𝗿𝗲𝘀𝘀).  \nOn LoTTE, with Jina-ColBERT-v2 held fixed:  \n📈 TokenANN — nDCG[@10](https://x.com/10) = 0.701  \n📉 LEMUR — nDCG[@10](https://x.com/10) = 0.109  \n  \nThe only thing that changed is the first-stage approximation. For scale: moving from a plain dense model up to this multi-vector one lifted the exact score from 0.611 to 0.722 on the same data. The loss from the wrong strategy was bigger than the gain from the better model.  \n  \n𝗪𝗵𝘆? 𝗔 𝘀𝘁𝗿𝗼𝗻𝗴 𝗽𝗿𝗲𝗱𝗶𝗰𝘁𝗼𝗿 𝗶𝘀 𝗲𝗺𝗯𝗲𝗱𝗱𝗶𝗻𝗴-𝘀𝗽𝗮𝗰𝗲 𝘀𝗲𝗽𝗮𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆 — 𝘄𝗵𝗲𝘁𝗵𝗲𝗿 𝗮 𝗺𝗼𝗱𝗲𝗹'𝘀 𝘁𝗼𝗸𝗲𝗻 𝘃𝗲𝗰𝘁𝗼𝗿𝘀 𝘀𝗶𝘁 𝗳𝗮𝗿 𝗮𝗽𝗮𝗿𝘁 𝗼𝗿 𝗽𝗶𝗹𝗲 𝘁𝗼𝗴𝗲𝘁𝗵𝗲𝗿.  \n𝗙𝗼𝗿 𝘀𝗽𝗿𝗲𝗮𝗱 𝗼𝘂𝘁 (𝗝𝗶𝗻𝗮): each token is a precise probe, so TokenANN and MUVERA land on the right document tokens. LEMUR, though, risks collapsing on long-tailed data.   \n𝗙𝗼𝗿 𝗰𝗹𝘂𝘀𝘁𝗲𝗿𝗲𝗱 (𝗔𝗻𝘀𝘄𝗲𝗿𝗔𝗜): one query token pulls back a crowd of close-but-irrelevant tokens, so TokenANN and MUVERA produce weak candidates. LEMUR is the one that still works.  \n  \n𝗬𝗼𝘂 𝗰𝗮𝗻 𝗺𝗲𝗮𝘀𝘂𝗿𝗲 𝘀𝗲𝗽𝗮𝗿𝗮𝗯𝗶𝗹𝗶𝘁𝘆 𝗯𝗲𝗳𝗼𝗿𝗲 𝗰𝗼𝗺𝗺𝗶𝘁𝘁𝗶𝗻𝗴. Sample a few hundred token vectors, treat each as a query, and take the standard deviation of their MaxSim scores across documents. Jina sits at 0.157; AnswerAI at 0.050 — at 0.050, nearly every document scores the same, so relevant and irrelevant blur. Recall tracks it: Jina's TokenANN holds Math R[@100](https://x.com/100) of 68.5–88.5% across the four datasets, AnswerAI's 44.6–65.5%.  \n  \n𝗦𝗼 𝗯𝗲𝗳𝗼𝗿𝗲 𝘁𝘂𝗻𝗶𝗻𝗴 𝗮𝗻𝘆𝘁𝗵𝗶𝗻𝗴:   \n→ Wide spread (closer to 0.15): start with TokenANN or MUVERA   \n→ Tight spread (closer to 0.05): start with LEMUR  \n𝗧𝗵𝗲 𝗺𝗼𝗱𝗲𝗹 𝗶𝘀 𝗼𝗻𝗹𝘆 𝗵𝗮𝗹𝗳 𝘁𝗵𝗲 𝗱𝗲𝗰𝗶𝘀𝗶𝗼𝗻. 𝗣𝗮𝗶𝗿 𝗶𝘁 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 𝘄𝗿𝗼𝗻𝗴 𝘀𝘁𝗿𝗮𝘁𝗲𝗴𝘆, 𝗮𝗻𝗱 𝘁𝗵𝗲 𝗯𝗲𝘀𝘁 𝗺𝗼𝗱𝗲𝗹 𝗰𝗮𝗻'𝘁 𝗺𝗮𝗸𝗲 𝘂𝗽 𝘁𝗵𝗲 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝗰𝗲.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ9qC9EacAAazWv.jpg)\n\n💬0🔄0❤️0👀27",
+      "tags": [
+        "Milvus",
+        "向量检索",
+        "ColBERT"
+      ],
+      "score": 80,
+      "summary": "Milvus分析多向量检索中近似策略对性能的巨大影响。",
+      "fetched_at": "2026-06-05T00:55:28.251115+08:00"
+    },
+    {
+      "title": "A chess club named after the weakest piece on the board. “For new and experienced players, in that o...",
+      "link": "https://x.com/NotionHQ/status/2062568886546125230",
+      "published": "2026-06-05T00:15:17+08:00",
+      "source": "Notion(@NotionHQ)",
+      "content": "A chess club named after the weakest piece on the board. “For new and experienced players, in that order.”  \n  \nPawn Chess Club started with one spontaneous chat over drinks that turned into their first event. Now they’re running pop-ups for strangers who want to learn, friends who want to play, and a community that keeps getting bigger.  \n  \nA Notion-powered side quest that turned into something more ♟️\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062568491761426432/vid/avc1/2560x1440/AsbXmy7JC8lBfrIE.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/NotionHQ/status/2062568886546125230/video/1)\n\n💬2🔄0❤️5👀914📊3",
+      "tags": [
+        "Notion",
+        "社区"
+      ],
+      "score": 30,
+      "summary": "Notion讲述象棋俱乐部使用Notion组织活动。",
+      "fetched_at": "2026-06-05T00:55:28.251161+08:00"
+    },
+    {
+      "title": "new skills repo from deepmind to speed up agentic scientific workflows\n\nhttps://t.co/BwpWjX3jN1",
+      "link": "https://x.com/patloeber/status/2062559874030948591",
+      "published": "2026-06-04T23:39:29+08:00",
+      "source": "Patrick Loeber(@patloeber)",
+      "content": "new skills repo from deepmind to speed up agentic scientific workflows  \n  \n[github.com/google-deepmin…](https://github.com/google-deepmind/science-skills)\n\n💬0🔄0❤️5👀294📊2",
+      "tags": [
+        "DeepMind",
+        "科学工作流"
+      ],
+      "score": 70,
+      "summary": "DeepMind发布science-skills仓库，加速agentic科学工作流。",
+      "fetched_at": "2026-06-05T00:55:28.251207+08:00"
+    },
+    {
+      "title": "And the benchmarks look promising:\n\nIt's competitive with models 2x larger... while being cheaper an...",
+      "link": "https://x.com/itsPaulAi/status/2062560041446912433",
+      "published": "2026-06-04T23:40:09+08:00",
+      "source": "Paul Couvert(@itsPaulAi)",
+      "content": "And the benchmarks look promising:  \n  \nIt's competitive with models 2x larger... while being cheaper and faster!  \n  \nBtw the model isn't only \"open weights\", but they've also published the data and recipies!  \n  \nHugging Face link: [huggingface.co/nvidia/NVIDIA-…](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-NVFP4)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-u1aVbcAAnkok.jpg)\n\n💬0🔄0❤️2👀626📊1",
+      "tags": [
+        "Nemotron",
+        "开源"
+      ],
+      "score": 80,
+      "summary": "KOL介绍NVIDIA Nemotron 3 Ultra性能与开源特性。",
+      "fetched_at": "2026-06-05T00:55:28.251252+08:00"
+    },
+    {
+      "title": "Nvidia has just released a REALLY powerful open AI model 🔥\n\nNemotron 3 Ultra is tailor-made for age...",
+      "link": "https://x.com/itsPaulAi/status/2062558952710451357",
+      "published": "2026-06-04T23:35:49+08:00",
+      "source": "Paul Couvert(@itsPaulAi)",
+      "content": "Nvidia has just released a REALLY powerful open AI model 🔥  \n  \nNemotron 3 Ultra is tailor-made for agentic tasks and coding while being:  \n  \n- 5x faster than other models  \n- Up to 30% cheaper  \n- Available on Hugging Face  \n  \nPerfect for large codebases, Hermes Agent and more!\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062521048722018305/vid/avc1/1280x720/LmRK48h09CffEoHn.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/NVIDIAAI/status/2062521325076299981/video/1)\n\n💬1🔄0❤️8👀969📊2",
+      "tags": [
+        "Nemotron",
+        "开源"
+      ],
+      "score": 80,
+      "summary": "KOL称赞NVIDIA Nemotron 3 Ultra为强大的开源AI模型。",
+      "fetched_at": "2026-06-05T00:55:28.251299+08:00"
+    },
+    {
+      "title": "Today we're launching the Main Street AI Accelerator with the U.S. Small Business Administration.\n\nW...",
+      "link": "https://x.com/perplexity_ai/status/2062556000394379710",
+      "published": "2026-06-04T23:24:05+08:00",
+      "source": "Perplexity(@perplexity_ai)",
+      "content": "Today we're launching the Main Street AI Accelerator with the U.S. Small Business Administration.  \n  \nWe're committing $25M in Computer credits, $250 each for up to 100,000 eligible companies, in honor of America's 250th anniversary.  \n  \nLearn more: [main-street-ai-accelerator.pplx.app](https://main-street-ai-accelerator.pplx.app/)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-rv96b0AAXk0d.jpg)\n\n💬23🔄10❤️139👀12930📊38",
+      "tags": [
+        "Perplexity",
+        "小企业",
+        "AI加速器"
+      ],
+      "score": 82,
+      "summary": "Perplexity与SBA合作，投入2500万美元为小企业提供AI credits。",
+      "fetched_at": "2026-06-05T00:55:28.251345+08:00"
+    },
+    {
+      "title": "What if you could just tell a robot what to do?\n\nSandhya Subramani from @awscloud is bringing a live...",
+      "link": "https://x.com/qdrant_engine/status/2062549952161817074",
+      "published": "2026-06-04T23:00:03+08:00",
+      "source": "Qdrant(@qdrant_engine)",
+      "content": "What if you could just tell a robot what to do?  \n  \nSandhya Subramani from [@awscloud](https://x.com/awscloud) is bringing a live robot demo to Vector Space Day to show exactly that. She'll introduce an open-source agentic framework that exposes physical hardware as programmable agent tools, with a hybrid architecture that keeps low-latency control on the edge and delegates the hard reasoning to the cloud.  \n  \nEmbodied AI, made accessible. June 11 at The Midway, SF. Get your ticket at [luma.com/vsd-sf](http://luma.com/vsd-sf)\n\n![Tweet Image](https://pbs.twimg.com/media/HJk-rklbkAAcuBa.jpg)\n\n💬2🔄0❤️1👀73📊2",
+      "tags": [
+        "Qdrant",
+        "机器人",
+        "活动"
+      ],
+      "score": 65,
+      "summary": "Qdrant将举办Vector Space Day，展示可编程机器人agent。",
+      "fetched_at": "2026-06-05T00:55:28.251391+08:00"
+    },
+    {
+      "title": "Build Your Business Live https://t.co/lQg7qUTEdm",
+      "link": "https://x.com/Replit/status/2062564940452696410",
+      "published": "2026-06-04T23:59:37+08:00",
+      "source": "Replit ⠕(@Replit)",
+      "content": "Build Your Business Live [x.com/i/broadcasts/1…](https://x.com/i/broadcasts/1qGoNNngZkyKv)\n\n💬0🔄2❤️7👀883📊1",
+      "tags": [
+        "Replit",
+        "直播"
+      ],
+      "score": 60,
+      "summary": "Replit举办Build Your Business Live直播活动。",
+      "fetched_at": "2026-06-05T00:55:28.251437+08:00"
+    },
+    {
+      "title": "The same:\n\nStripe\nGhostty\nGoogle Workspace\nGoogle Analytics\nGitHub\nhttps://t.co/sniRM0z8Fb\nhttps://t...",
+      "link": "https://x.com/shl/status/2062550799897489748",
+      "published": "2026-06-04T23:03:25+08:00",
+      "source": "Sahil Lavingia(@shl)",
+      "content": "The same:  \n  \nStripe  \nGhostty  \nGoogle Workspace  \nGoogle Analytics  \nGitHub  \n[Helper.ai](http://Helper.ai)[Flexile.com](http://Flexile.com)  \nQuickBooks Online  \nMetabase  \nAWS  \nVercel  \nSentry  \nPingdom  \nPayPal  \nHeroku\n\n💬4🔄0❤️13👀1556📊5",
+      "tags": [
+        "个人工具"
+      ],
+      "score": 50,
+      "summary": "创业者分享其使用的工具栈列表。",
+      "fetched_at": "2026-06-05T00:55:28.251483+08:00"
+    },
+    {
+      "title": "Stack updates:\n\nTeams → Telegram\nClaude Code → Codex\nOpenClaw → Hermes\nStripe Corporate Card → Ramp",
+      "link": "https://x.com/shl/status/2062548940243845306",
+      "published": "2026-06-04T22:56:02+08:00",
+      "source": "Sahil Lavingia(@shl)",
+      "content": "Stack updates:  \n  \nTeams → Telegram  \nClaude Code → Codex  \nOpenClaw → Hermes  \nStripe Corporate Card → Ramp\n\n💬14🔄2❤️144👀8133📊32",
+      "tags": [
+        "个人工具"
+      ],
+      "score": 50,
+      "summary": "创业者更新其工具栈，包括Claude Code到Codex等。",
+      "fetched_at": "2026-06-05T00:55:28.251529+08:00"
+    },
+    {
+      "title": "张小龙其实说的比较对的一面在于，“食税阶层”对于一个从小做题的人来说，是一条不错的选择。不是人人都要去市场经济里面试错，不是人人都能承受股市或者创业这种风险。在传统中国社会士大夫（姑且这么称吧）阶层一...",
+      "link": "https://x.com/feltanimalworld/status/2062551985702760882",
+      "published": "2026-06-04T23:08:08+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "张小龙其实说的比较对的一面在于，“食税阶层”对于一个从小做题的人来说，是一条不错的选择。不是人人都要去市场经济里面试错，不是人人都能承受股市或者创业这种风险。在传统中国社会士大夫（姑且这么称吧）阶层一定会有一部分延续下去。今天就是那一部分选择做题上人大哲院然后考公。也是一条路。\n\n💬2🔄0❤️9👀506📊3",
+      "tags": [
+        "其他"
+      ],
+      "score": 0,
+      "summary": "关于职业选择的讨论。",
+      "fetched_at": "2026-06-05T00:55:28.251575+08:00"
+    },
+    {
+      "title": "iRobot co-founder Colin Angle, whose company sold over 50M Roombas, recently introduced his new vent...",
+      "link": "https://x.com/TheRundownAI/status/2062567770554798238",
+      "published": "2026-06-05T00:10:51+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "iRobot co-founder Colin Angle, whose company sold over 50M Roombas, recently introduced his new venture, Familiar Machines & Magic.  \n  \nIts first product is a furry, bear-like quadruped robot with 23 motorized joints, a touch-sensitive coat, cameras, and microphones.  \n  \nThe robot communicates through expressive movements rather than speech.  \n  \nA custom onboard AI gives it personality and memory while keeping user data off the cloud.  \n  \nBeyond companionship, it also aims to reinforce healthy routines, like limiting screen time.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062567079337680896/vid/avc1/1080x1920/1MTI8PSQL3gn8qhq.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/TheRundownAI/status/2062567770554798238/video/1)\n\n💬3🔄0❤️1👀582📊3",
+      "tags": [
+        "机器人",
+        "iRobot"
+      ],
+      "score": 75,
+      "summary": "iRobot联合创始人推出毛绒熊机器人，具有情感交互功能。",
+      "fetched_at": "2026-06-05T00:55:28.251621+08:00"
+    },
+    {
+      "title": "Tune in: https://t.co/iwpxotdd5t",
+      "link": "https://x.com/ycombinator/status/2062553676577955915",
+      "published": "2026-06-04T23:14:51+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Tune in: [youtu.be/fQmlML9Lay4](https://youtu.be/fQmlML9Lay4)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-oe01a4AE_biq.jpg)\n\n💬1🔄0❤️4👀2722📊2",
+      "tags": [
+        "YC",
+        "创业"
+      ],
+      "score": 65,
+      "summary": "Y Combinator新系列Full Stack探讨AI代理工作流程。",
+      "fetched_at": "2026-06-05T00:55:28.251680+08:00"
+    },
+    {
+      "title": "In the first episode of our new series Full Stack, @conductor_build CEO and co-founder @charlieholtz...",
+      "link": "https://x.com/ycombinator/status/2062553673717420516",
+      "published": "2026-06-04T23:14:50+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "In the first episode of our new series Full Stack, [@conductor\\_build](https://x.com/conductor_build) CEO and co-founder [@charlieholtz](https://x.com/charlieholtz) takes us into the details of how he sets up his workflow for coding and managing AI agents.  \n  \n00:00 – Building Conductor With Conductor  \n 01:05 – Managing a Team of Coding Agents  \n 02:39 – Do You Still Write Code?  \n 04:17 – Charlie's AI Stack and Setup  \n 05:48 – “Slop-free” Zones  \n 07:25 – Don’t Let the AI Be Your Architect  \n 09:15 – The Future of Cloud Workspaces  \n 10:40 – Claude vs Codex  \n 12:01 – Tokenmaxxing  \n 14:17 – The Future of Human–AI Collaboration  \n 15:07 – \"Code Is Becoming Sawdust\"\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062551831235215360/vid/avc1/3840x2160/kbgq_0Xi5gT-d1UA.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2062553673717420516/video/1)\n\n💬19🔄12❤️160👀14727📊52",
+      "tags": [
+        "YC",
+        "创业"
+      ],
+      "score": 65,
+      "summary": "YC发布Full Stack系列，Conductor创始人演示AI代理工作流。",
+      "fetched_at": "2026-06-05T00:55:28.251729+08:00"
+    },
+    {
+      "title": ".@pmarca: \"Everywhere we go, people want to talk about tech, they want to learn about tech.\"\n\n\"When ...",
+      "link": "https://x.com/a16z/status/2062570136805294241",
+      "published": "2026-06-05T00:20:15+08:00",
+      "source": "a16z(@a16z)",
+      "content": ".[@pmarca](https://x.com/pmarca): \"Everywhere we go, people want to talk about tech, they want to learn about tech.\"  \n  \n\"When Ben wrote his book and went on a tour, it didn't matter what country he went to, thousands of kids show up and they want to learn how to do this.\"  \n  \n\"Global knowledge is way up. Global enthusiasm is way up. Relevance to societies is way up.\"  \n  \n\"There's human capital everywhere... The startup process is a way to especially get smart young people to kind of do ambitious things.\"\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062570069687934977/vid/avc1/1280x720/31f1LNV88YJlEjeg.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/a16z/status/2062570136805294241/video/1)\n\n![a16z](https://pbs.twimg.com/profile_images/1919488160125616128/QAZXTMEj_normal.png)\n\na16z@a16z\n\n[x.com/i/article/1803…](http://x.com/i/article/1803846907972014080)\n\n[🔗 View Quoted Tweet](https://x.com/a16z/status/2062530581158920402)\n\n💬1🔄0❤️9👀1612📊2",
+      "tags": [
+        "a16z",
+        "科技投资"
+      ],
+      "score": 70,
+      "summary": "a16z合伙人Marc Andreessen分享全球科技热情高涨观点。",
+      "fetched_at": "2026-06-05T00:55:28.251776+08:00"
+    },
+    {
+      "title": "here they are btw https://t.co/2ZeOpUitdW",
+      "link": "https://x.com/ClementDelangue/status/2062550443499082108",
+      "published": "2026-06-04T23:02:00+08:00",
+      "source": "clem 🤗(@ClementDelangue)",
+      "content": "here they are btw [huggingface.co/datasets/clem/…](https://huggingface.co/datasets/clem/nanoclaw-traces)\n\n💬0🔄1❤️3👀1343📊1",
+      "tags": [
+        "HuggingFace",
+        "数据集"
+      ],
+      "score": 70,
+      "summary": "Hugging Face CEO分享nanoclaw-traces数据集。",
+      "fetched_at": "2026-06-05T00:55:28.251822+08:00"
+    },
+    {
+      "title": "This is too good to keep to myself. I will be sharing more on how I am using dynamic workflows and h...",
+      "link": "https://x.com/omarsar0/status/2062564083220480094",
+      "published": "2026-06-04T23:56:12+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "This is too good to keep to myself. I will be sharing more on how I am using dynamic workflows and how and why I built my own version of it:  \n [academy.dair.ai/events/cmpzo9k…](https://academy.dair.ai/events/cmpzo9kk3000g04lgsgf5io3z)\n\n💬0🔄1❤️12👀906📊3",
+      "tags": [
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 75,
+      "summary": "开发者将分享如何构建动态工作流和agent协调器。",
+      "fetched_at": "2026-06-05T00:55:28.251869+08:00"
+    },
+    {
+      "title": "During the process of reverse-engineering dynamic workflows for my agent orchestrator (what you see ...",
+      "link": "https://x.com/omarsar0/status/2062558631350911324",
+      "published": "2026-06-04T23:34:32+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "During the process of reverse-engineering dynamic workflows for my agent orchestrator (what you see in the clip), it suddenly hit me how important it is to own the orchestrator and harness.   \n  \nThis might be the first instance/proof, as far as I know, of dynamic workflows effectively working outside the Claude Code ecosystem.  \n  \nI believe Codex and other coding agents will soon realize that this primitive (like agent skills) needs to live in their ecosystem as well.  \n  \nI don't need to wait for them. I have tested it with my version of dynamic workflows, and Codex works great with this. Pi also works amazingly well. But what you see on the clip is an experimental nano-like ([@karpathy](https://x.com/karpathy) style) coding agent I built for [@dair\\_ai](https://x.com/dair_ai). This means that even the simplest of agents can leverage this primitive.\n\n💬1🔄0❤️5👀1426📊3",
+      "tags": [
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 75,
+      "summary": "开发者逆向工程动态工作流，实现在Claude Code外运行。",
+      "fetched_at": "2026-06-05T00:55:28.251915+08:00"
+    },
+    {
+      "title": "I am hooked on Dynamic Workflows!\n\nThe idea of generating harnesses on the fly is so compelling that...",
+      "link": "https://x.com/omarsar0/status/2062553527730540611",
+      "published": "2026-06-04T23:14:16+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "I am hooked on Dynamic Workflows!  \n  \nThe idea of generating harnesses on the fly is so compelling that I reverse-engineered it for my agent orchestrator.  \n  \nAnd then I built a monitoring dashboard (as an HTML artifact) to track tasks, metrics, and reports.  \n  \nI can now use and monitor dynamic workflows in my agent orchestrator with coding agents like Claude Code, Codex, Pi, and even my own custom-built [@dair\\_ai](https://x.com/dair_ai) agent.  \n  \nThis is clearly the future of working with agents to accomplish complex, long-running tasks.  \n  \nSome use cases I'm having success with:  \n  \n- Branching deep research tasks (with verification)  \n- Parallel deep research tasks  \n- Session mining of all my agent sessions  \n- Bug hunting  \n- Triaging  \n- Fact-checking  \n- LLM councils  \n- AI simulations  \n- Data synthesis  \n- Evals generation  \n... and many others  \n  \nDynamic workflows, like agent skills, feel like an important primitive to not only get the most out of agents but also incorporate dynamic behaviors and important components like cooperation and verification.  \n  \nThere is so much exploration ground here. The exciting part is that this is not limited to coding tasks; it extends to business use cases and many other technical domains like science and research.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062553464044134400/vid/avc1/1260x720/7_oIL9e2ID9IFjj9.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/omarsar0/status/2062553527730540611/video/1)\n\n💬9🔄9❤️72👀5425📊35",
+      "tags": [
+        "动态工作流",
+        "Agent"
+      ],
+      "score": 78,
+      "summary": "开发者构建动态工作流agent协调器，支持多种代理。",
+      "fetched_at": "2026-06-05T00:55:28.251961+08:00"
+    },
+    {
+      "title": "Check out our technical blog for the Agent Arena methodology + a deep dive into how people delegate,...",
+      "link": "https://x.com/arena/status/2062566769659912281",
+      "published": "2026-06-05T00:06:53+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Check out our technical blog for the Agent Arena methodology + a deep dive into how people delegate, correct, and steer agents: [arena.ai/blog/agent-are…](https://arena.ai/blog/agent-arena-methodology)\n\n💬1🔄1❤️7👀613📊2",
+      "tags": [
+        "Arena",
+        "Agent评估"
+      ],
+      "score": 85,
+      "summary": "Arena发布Agent Arena技术博客，解释评估方法论。",
+      "fetched_at": "2026-06-05T00:55:28.252006+08:00"
+    },
+    {
+      "title": "The full Agent Arena Leaderboard is here:  https://t.co/5PhJhhhUYI",
+      "link": "https://x.com/arena/status/2062566771660619942",
+      "published": "2026-06-05T00:06:53+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "The full Agent Arena Leaderboard is here: [arena.ai/leaderboard/ag…](http://arena.ai/leaderboard/agent)\n\n💬1🔄0❤️6👀573📊2",
+      "tags": [
+        "Arena",
+        "Agent评估",
+        "排行榜"
+      ],
+      "score": 85,
+      "summary": "Arena发布Agent Arena完整排行榜。",
+      "fetched_at": "2026-06-05T00:55:28.252052+08:00"
+    },
+    {
+      "title": "Introducing Agent Arena: real-world agentic evals at scale.\n\nHow do you evaluate agents doing actual...",
+      "link": "https://x.com/arena/status/2062566749418233981",
+      "published": "2026-06-05T00:06:48+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Introducing Agent Arena: real-world agentic evals at scale.  \n  \nHow do you evaluate agents doing actual work? We measure millions of live sessions where real users accomplish real tasks.  \n  \nOn Arena, models now get web search, filesystem, and terminal tools to complete complex workflows: writing code, creating slide deck, researching the web, building apps, and analyzing documents.  \n  \nEvery session produces rich signals. Users iterate with the agent turn-by-turn: approving, editing, correcting, praise or expressing frustration. The environment gives feedback too: shell errors, tool failures, recovery attempts, and more.  \n  \nOur leaderboard measures each model's agentic performance using causal inference across five signals: task success, steerability, error recovery, user praise vs. complaint, and tool hallucination.  \n  \nThis leaderboard snapshot is built from 300K+ tasks, 2M+ tool calls, and 40M lines of code by agents.  \n  \nTop labs in Agent Arena:  \n- #1[@OpenAI](https://x.com/OpenAI): GPT-5.5 (High)  \n- #2[@AnthropicAI](https://x.com/AnthropicAI): Claude-Opus-4.7 (Thinking)  \n- #3[@Zai\\_org](https://x.com/Zai_org): GLM-5.1  \n- #4[@GoogleDeepMind](https://x.com/GoogleDeepMind): Gemini-3.1-Pro  \n- #5[@Kimi\\_Moonshot](https://x.com/Kimi_Moonshot): Kimi-K2.6  \n  \nMore analysis in the thread, with the full technical blog below.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-0PJPawAAmsul.jpg)\n\n![Arena.ai](https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_normal.jpg)\n\nArena.ai@arena\n\nIntroducing Agent Mode: Agentic AI is now measured in the Arena.  \n  \nAgent Mode can do deep research, create reports, generate images, build websites, debug code, and more.  \n  \nIt completes more complex tasks by using tools like web search, bash in a sandbox environment, image generation, file writing, and asking follow-up questions.  \n  \nFrontier models are waiting for you in Agent Mode to take on real-world tasks. GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro, and top open models. Test them yourself.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062553501016948737/vid/avc1/1920x1080/rtk6TFcogB5k5eVR.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/arena/status/2062565126600114484/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/arena/status/2062565126600114484)\n\n💬5🔄11❤️64👀4529📊13",
+      "tags": [
+        "Arena",
+        "Agent评估",
+        "排行榜"
+      ],
+      "score": 85,
+      "summary": "Arena推出Agent Arena，基于300K+任务评估agent性能。",
+      "fetched_at": "2026-06-05T00:55:28.252098+08:00"
+    },
+    {
+      "title": "Read more about Agent Mode, dig into the FAQ, and get a preview of what we've learned so far on our ...",
+      "link": "https://x.com/arena/status/2062565130165182946",
+      "published": "2026-06-05T00:00:22+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Read more about Agent Mode, dig into the FAQ, and get a preview of what we've learned so far on our blog at:  \n[arena.ai/blog/agent-mod…](https://arena.ai/blog/agent-mode/)\n\n💬1🔄0❤️11👀748📊2",
+      "tags": [
+        "Arena",
+        "Agent评估"
+      ],
+      "score": 85,
+      "summary": "Arena发布Agent Mode博客，介绍FAQ和学习成果。",
+      "fetched_at": "2026-06-05T00:55:28.252144+08:00"
+    },
+    {
+      "title": "Start evaluating agentic AI on Arena today with Agent Mode at: https://t.co/8ujN06t7FN",
+      "link": "https://x.com/arena/status/2062565131784163410",
+      "published": "2026-06-05T00:00:22+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Start evaluating agentic AI on Arena today with Agent Mode at: [arena.ai/agent](http://arena.ai/agent)\n\n💬0🔄1❤️9👀644📊1",
+      "tags": [
+        "Arena",
+        "Agent评估"
+      ],
+      "score": 85,
+      "summary": "Arena推出Agent Mode，可评估agentic AI。",
+      "fetched_at": "2026-06-05T00:55:28.252190+08:00"
+    },
+    {
+      "title": "Introducing Agent Mode: Agentic AI is now measured in the Arena.\n\nAgent Mode can do deep research, c...",
+      "link": "https://x.com/arena/status/2062565126600114484",
+      "published": "2026-06-05T00:00:21+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Introducing Agent Mode: Agentic AI is now measured in the Arena.  \n  \nAgent Mode can do deep research, create reports, generate images, build websites, debug code, and more.  \n  \nIt completes more complex tasks by using tools like web search, bash in a sandbox environment, image generation, file writing, and asking follow-up questions.  \n  \nFrontier models are waiting for you in Agent Mode to take on real-world tasks. GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro, and top open models. Test them yourself.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062553501016948737/vid/avc1/1920x1080/rtk6TFcogB5k5eVR.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/arena/status/2062565126600114484/video/1)\n\n💬5🔄11❤️67👀5172📊15",
+      "tags": [
+        "Arena",
+        "Agent评估"
+      ],
+      "score": 85,
+      "summary": "Arena推出Agent Mode，支持多种工具进行复杂任务评估。",
+      "fetched_at": "2026-06-05T00:55:28.252235+08:00"
+    },
+    {
+      "title": "今天被美国达人秀的中国机器人街舞刷屏了，给那帮老外看得一愣一愣的，整个表演确实没话说。但就在前一天，景区机器人刚把人家孩子踢了，看得我特别揪心。\n我还是那句话，表演归表演，产品归产品。技术终究是为应用...",
+      "link": "https://x.com/FuSheng_0306/status/2062562778402152468",
+      "published": "2026-06-04T23:51:01+08:00",
+      "source": "傅盛(@FuSheng_0306)",
+      "content": "今天被美国达人秀的中国机器人街舞刷屏了，给那帮老外看得一愣一愣的，整个表演确实没话说。但就在前一天，景区机器人刚把人家孩子踢了，看得我特别揪心。  \n我还是那句话，表演归表演，产品归产品。技术终究是为应用服务的，人形机器人离真正的商业化落地，还有很长的路要走。\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062562472494821376/vid/avc1/1080x1920/Gg4ph3M8iV1Z3h3t.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/FuSheng_0306/status/2062562778402152468/video/1)\n\n💬0🔄0❤️1👀255",
+      "tags": [
+        "机器人",
+        "安全"
+      ],
+      "score": 50,
+      "summary": "傅盛评论机器人表演成功但商业化落地仍远。",
+      "fetched_at": "2026-06-05T00:55:28.252281+08:00"
+    },
+    {
+      "title": "SpaceX IPO路演视频\n\n由SpaceX CFO Bret-Johnsen通过17分钟的视频详细阐述SpaceX的财务情况和愿景\n\nStarlink 现在 9600+ 颗在轨\n\n• 440 万(...",
+      "link": "https://x.com/xiaohu/status/2062560594784616566",
+      "published": "2026-06-04T23:42:20+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "SpaceX IPO路演视频  \n  \n由SpaceX CFO Bret-Johnsen通过17分钟的视频详细阐述SpaceX的财务情况和愿景  \n  \nStarlink 现在 9600+ 颗在轨  \n  \n• 440 万(24 底)→ 890 万(25 底)→ 1030 万(Q1)  \n• 一年翻倍，覆盖 164 国 30 亿人  \n• 直连手机已经覆盖 19 亿人（覆盖不等于使用）  \n  \n手里有全球最大的一体化超算中心 Colossus 2，下一步，把 AI 数据中心整个搬上太空轨道  \n  \n去年营收 190 亿，同比增长30%  \n正向 EBITDA 78 亿  \n  \n• Q1 单季营收就 50 亿  \n• 未来毛利率瞄 70%、净利率奔 45%  \n• 可触达市场算到 28 万亿美元\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062556002659262464/vid/avc1/1280x720/gCs00KSANOJ3HkuF.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/xiaohu/status/2062560594784616566/video/1)\n\n💬0🔄0❤️6👀1057📊2",
+      "tags": [
+        "SpaceX",
+        "IPO"
+      ],
+      "score": 30,
+      "summary": "SpaceX CFO在路演中介绍财务和卫星网络进展。",
+      "fetched_at": "2026-06-05T00:55:28.252328+08:00"
+    },
+    {
+      "title": "详情：https://t.co/wI2cSBZobV",
+      "link": "https://x.com/op7418/status/2062567543076987098",
+      "published": "2026-06-05T00:09:57+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "详情：[github.com/op7418/CodePil…](https://github.com/op7418/CodePilot/releases/tag/v0.55.0)\n\n💬0🔄0❤️0👀615",
+      "tags": [
+        "CodePilot",
+        "更新"
+      ],
+      "score": 70,
+      "summary": "CodePilot v0.55.0正式版发布，支持多执行引擎。",
+      "fetched_at": "2026-06-05T00:55:28.252376+08:00"
+    },
+    {
+      "title": "CodePilot v0.55.0 正式版已经更新！\n\n重构完成的正式版：\n\n多执行引擎（Claude Code / 自建 Native / OpenAI Codex）、上下文用量可视化、Codex ...",
+      "link": "https://x.com/op7418/status/2062567442568933720",
+      "published": "2026-06-05T00:09:33+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "CodePilot v0.55.0 正式版已经更新！  \n  \n重构完成的正式版：  \n  \n多执行引擎（Claude Code / 自建 Native / OpenAI Codex）、上下文用量可视化、Codex 账号原生能力全部落地为稳定版，并集中修复了 macOS 视觉与托盘、Windows 安装与交互、服务商型号映射等内测反馈问题。  \n  \n🆕新增功能  \n  \n多执行引擎，可整体切换也可按会话切换 — 同一个应用里支持 Anthropic Claude Code、CodePilot 自建 Native、OpenAI Codex 三种执行引擎；可以设全局默认，也能在单个对话的输入框下方临时切换，互不影响。  \n  \n上下文用量可视化 — 聊天里能实时看到本次对话占用了多少上下文、还剩多少，并按来源（系统提示 / 工作区规则 / 技能 / 记忆 / 工具 / MCP）分解，长对话不再\"用着用着突然被截断也不知道为什么\"。  \n  \nOpenAI Codex 账号原生能力打通 — 用 Codex 账号登录后，助理记忆、Widget 可视化、定时任务 + 到点通知、Dashboard、CLI 工具这些内置能力在 Codex 引擎下也能用；接不了的能力会如实标注为不支持，而不是假装可用。\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-2JuvaYAAKRT8.jpg)\n\n💬5🔄0❤️9👀1486📊6",
+      "tags": [
+        "CodePilot",
+        "编码助手"
+      ],
+      "score": 70,
+      "summary": "CodePilot v0.55.0重构完成，新增多引擎和上下文可视化。",
+      "fetched_at": "2026-06-05T00:55:28.252422+08:00"
+    },
+    {
+      "title": "即览的新版已经上传，各位可以去 TestFlight 里面更新新版了。\n\n本次更新内容：\n1. 修复了一堆 Bug\n2. 同时支持了 iOS 17 和 iOS 18 系统",
+      "link": "https://x.com/op7418/status/2062563287225733565",
+      "published": "2026-06-04T23:53:02+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "即览的新版已经上传，各位可以去 TestFlight 里面更新新版了。  \n  \n本次更新内容：  \n1. 修复了一堆 Bug  \n2. 同时支持了 iOS 17 和 iOS 18 系统\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-yPNnaMAAj5KB.jpg)\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n[x.com/i/article/2062…](http://x.com/i/article/2062359856376610816)\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2062361524367401461)\n\n💬3🔄0❤️5👀2554📊3",
+      "tags": [
+        "即览",
+        "更新"
+      ],
+      "score": 30,
+      "summary": "即览App更新，修复bug并支持iOS 17/18。",
+      "fetched_at": "2026-06-05T00:55:28.252469+08:00"
+    },
+    {
+      "title": "说一下 guizang PPT Skills 还会继续更新啊。\n\n得益于最近的几个赞助，可以找时间去更新第三套主题了，依旧非常惊艳。\n\n同时，在小红书那个图文卡片部分积累的好经验，也会用到 PPT S...",
+      "link": "https://x.com/op7418/status/2062558698107797562",
+      "published": "2026-06-04T23:34:48+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "说一下 guizang PPT Skills 还会继续更新啊。  \n  \n得益于最近的几个赞助，可以找时间去更新第三套主题了，依旧非常惊艳。  \n  \n同时，在小红书那个图文卡片部分积累的好经验，也会用到 PPT Skills 的新版里面。\n\n![歸藏(guizang.ai)](https://pbs.twimg.com/profile_images/1636981205504786434/xDl77JIw_normal.jpg)\n\n歸藏(guizang.ai)@op7418\n\n[x.com/i/article/2053…](http://x.com/i/article/2053655813877870592)\n\n[🔗 View Quoted Tweet](https://x.com/op7418/status/2053657613460771142)\n\n💬9🔄1❤️17👀3093📊10",
+      "tags": [
+        "PPT",
+        "技能"
+      ],
+      "score": 50,
+      "summary": "开发者表示将更新guizang PPT Skills主题。",
+      "fetched_at": "2026-06-05T00:55:28.252515+08:00"
+    }
+  ]
+}
