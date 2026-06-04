@@ -1101,6 +1101,324 @@
       "score": 0,
       "summary": "",
       "fetched_at": "2026-06-04T16:21:16.990657+08:00"
+    },
+    {
+      "title": "Coding 能力，正在颠覆大模型的估值逻辑",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=1&sn=43551adf687698d0a088ef6022adf98d",
+      "published": "2026-06-04T19:07:00+08:00",
+      "source": "AI科技评论",
+      "content": "原创 幸丽娟 马晓宁 2026-06-04 19:07 广东\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=0f52a885&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafPjR6ia1UVXyibKoTNG8Dx2oyCRdxlrdkUKkZ4sF7pIAlnYRfkmh2ZbZleDfepok4Umsb4LvmdTRN7icVpHCeVOS6OpB7ZcoDMNO4%2F0%3Fwx_fmt%3Djpeg)\n\n谁的 Coding 能力越强，谁就越值钱。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=4573dd9d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafNxq57Yo3FIIicPUAlsrYUJ7YWMD8TsHKcgS4ZEGW8Vq7wJahss1Z8ucLWnYPe5PutoTxWXAOohV4CalpCZzTMDcT70YwyGveBY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n谁的 Coding 能力越强，谁就越值钱。\n\n    作者丨幸丽娟、马晓宁\n\n    编辑丨马晓宁\n\n****![](https://wechat2rss.bestblogs.dev/img-proxy/?k=404aa831&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FcNFA8C0uVPuQzlZAjS66ZEYbDkdc0DAaC7AvbxPrUmFpdQ5eozPic4tSVCN0YvwfgRX5AIqSHKx8mic2s2a0DjoQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=1&sn=43551adf687698d0a088ef6022adf98d)****\n\n大模型赛道的估值逻辑，正在被一个变量粗暴重构。\n\n它不是参数，不是月活，不是多模态，是你能不能做好Coding。\n\n把四家中国大模型公司的数据拉出来，这条线清晰得不需要统计检验：\n\nCoding 能力突出的 DeepSeek 正在洽谈国内 AI 公司史上最大单笔融资 70 亿美元，估值或达 590亿美元。\n\n月之暗面在 Kimi K2.5 把 Coding 能力拉满之后，20 天收入超 2025 全年，ARR 3 个月冲到 2 亿美元，半年内四轮融资合计超 39 亿美元，估值飙到 200 亿美元。\n\n智谱 GLM-5 拿下 SWE-bench Verified 开源模型榜首，MaaS 平台 ARR 同比暴涨 60 倍，GLM-5.1 发布时在 SWE-bench Pro 登顶全球第一，港股市值一度触及 8800 亿港元。\n\nMiniMax 此前最不\"Coding\"，港股上市首日市值突破 1000 亿港元，后期增长弹性较低。\n\n中国市场的变化令人咋舌，但真正把这件事钉进全球资本市场信仰体系的，是 Anthropic。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=e46207b0&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FXqAicMdcoiafMWc85u0zrxa1TKKyFOLialIN7HZcLdJwe27K2a1IRYn7hlphhiaMoTXibxOmgMktSBQrExBicG10FVtIqSLsoxm775WVsJxjFGN24%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n5 月 28 日，Anthropic 完成 650 亿美元H轮融资，估值达 9650 亿美元，正式超越 OpenAI 的 8520 亿美元，坐上全球 AI 估值第一的宝座。\n\n2025年底，Anthropic 的 ARR 仅为 90亿美元，还不到 OpenAI 同期 200 亿美元的一半。仅仅五个月后，它的ARR飙升至 470 亿美元，将 OpenAI 的 250 亿美元甩出一个身位。2026 年 Q1单季营收 48 亿，Q2 预计破百亿并有望首次实现盈利，若 Q2 盈利兑现，Anthropic 将成为了全球首个赚钱的 AI 独角兽。\n\n它做对了什么？答案是 Claude Code。\n\n今年2月，Claude Opus 4.6 和 Sonnet 4.6 先后发布，100 万 Token 上下文窗口加上多 Agent 并行协作能力，把端到端全栈 Coding 重构变成了流水线操作。Sonnet 4.6 用六成的成本逼近 Opus 的编程能力，让 Claude Code 从\"编程辅助工具\"变成了真正可规模化部署的“生产力基础设施”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=1958d23e&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafNtuickAzPJPx5ajJd4eftCM7bN0LTJDWdGTSqfpgVGDG5Ht4WJCmuNrfwFN2DoPLB2ic8VPBeV5IlUZDa8icE3akM0TyxaQhOPV0%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\nClaude Opus 4.6和Sonnet 4.6基准表现对比图\n\n截至 2026 年 2 月，仅 Claude Code 一条产品线，就单独贡献了 25 亿美元 ARR。\n\n4 月 Ramp 报告显示，在企业端付费率上，Anthropic 以 34.4% 完成对 OpenAI  32.3% 的反超，而且是在综合成本更高、甚至主动限速的情况下赢的。\n\n这意味着什么？OpenAI 有 ChatGPT 的近十亿周活跃用户，有全球最强的 C 端品牌，有一整套多模态产品矩阵。但它输给了一个专注做 Coding 的公司。它不是输在用户量上，而是输在 Coding 执行能力上。\n\nCoding 远非大模型的一个应用场景，它就是大模型的原生能力形态。Chat 只是皮肤， Coding 执行才是肌肉。\n\n这件事年初在中国也被证实了。“龙虾”应用的爆发，第一次让人看到 AI 能从接收需求到产出可运行 Coding ，完成端到端的执行闭环。推理能力是基础，但决定能不能落地的，是 Coding 生成和调试。\n\n这个认知一旦确立，整个行业的叙事框架就塌了。过去大模型公司都在找 PMF，找下一个杀手级应用，在不确定中烧钱试错。现在不需要找了：历史上最大的软件需求，就是写软件本身。\n\n对于大模型公司而言，你可以不做龙虾，可以不讲故事，你只需要把 Coding 做到最强，然后作为基础设施向无数“龙虾”类应用和企业工作流输出 API。谁能写好 Coding ，谁就是水电煤，谁就是生态链条里最具话语权的王者。\n\nAnthropic 把这个逻辑跑到了极致。ARR 从 90亿 到 470 亿，只用了五个月；从不到 OpenAI 的一半到反超，只用了四个月。估值翻 2.5 倍，只用了三个月。\n\n资本市场的信号再清楚不过：Coding 能力已经不再是一项技术指标，它就是估值的最核心驱动因子。\n\n落后者也没在等。三天前，MiniMax 扔出了 M3，SWE-bench Pro 上超越 GPT-5.5，逼近 Claude Opus 4.7，同步推出 Coding 智能体 MiniMax Code。一个曾经离\"Coding\"最远的中国公司，现在打出了它最有力的一拳。这说明所有人都看懂了这场牌局，而且追起来并不慢。\n\n各大模型厂商 Coding 能力、估值/市值对比表\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6ecf7903&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafMA39co6zBQkWxIIn7rdIg8fhTMZvyhkbpo4bwh6N1XGex3MHA5DxFThLRHo5nrYYbyBFUwY6l98cfUaKddiaLibqZArW0ICLiaWk%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n模型迭代曲线还远未走平。DeepSeek、Kimi、智谱GLM、MiniMax、Anthropic、OpenAI，一切努力最终指向同一个终点。\n\nCoding 跑分越高，API 调用量越大，收入增长越快，估值越贵。过去你可以差异化，走 C 端流量，做政企私有化，现在这些只是从 Coding 能力这个主干上分岔出去的枝。主干不够粗，一切都不够牢固。\n\n牌桌上的规则从来没有像现在这样残酷，也从来没有像现在这样简单。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=f6a166db&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafNGHibf9f3FQEiaN6eEpZw1AiaHoa2Krz4JXPjyOt9ueibGXZgMt7oESU0k2DRtjFsu66k0VgB8RzCV14poBrJTzV6ibWBcnhFja24I%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=6f92fb51&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafOZnYOCjowITdic8cg9RG8SwlOzblkhQlROsNnxIX6mZ5KAcIUAK0va4rQ84pDoficS7v86pZibxcGqqSqTwhial7S7YicdebVKI85Q%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n//\n\n推荐阅读\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b08f7e34&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafMvLy7MeGKvOxZiazWgAX22eQ4pIicp2oJeUDYJMqvAE7Achm7LbsIvkXzogEOiav8KX1wQJn0nQWycmhLHkxajI4icuRdbU2qx4WU%2F640%3Fwx_fmt%3Djpeg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=1&sn=43551adf687698d0a088ef6022adf98d)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735640&idx=1&sn=0bea80b893941d18f516eed7e9adc6bb&scene=21#wechat_redirect)\n\n[独家实拍｜苏昊旗下机器人全球首次亮相，苏度科技惊艳 ICRA 2026](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735640&idx=1&sn=0bea80b893941d18f516eed7e9adc6bb&scene=21#wechat_redirect)\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=4ab2c93a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafM8icfUxoIkQKtkVASqY2MicEkII5JX40NiaNOUpyNDEgydN4FbicX7LPSfxgIjstCCmlulWicPdzFLNPcVnqu3GVDibdU7beaf235jc%2F640%3Fwx_fmt%3Djpeg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=1&sn=43551adf687698d0a088ef6022adf98d)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67&scene=21#wechat_redirect)\n\n[起底智元机器人，谁在推动一个庞然大物向前](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67&scene=21#wechat_redirect)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=b13de454&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FcNFA8C0uVPusibW6wG0uwrGsBm5wRQGYHfGXHyoN2u91kCPSsjKxekxiaUcRXvRhulDiafoQ1QBYh7dRSvHI0UJbg%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg%26wxfrom%3D5%26wx_lazy%3D1%26wx_co%3D1%26tp%3Dwebp)\n\n# 未经「AI科技评论」授权，严禁以任何方式在网页、论坛、社区进行转载！ 公众号转载请先在「AI科技评论」后台留言取得授权，转载时需标注来源并插入本公众号名片。\n\n[阅读原文](https://www.leiphone.com/)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=26612a60&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5ODEzMjIyMA%3D%3D%26mid%3D2247735943%26idx%3D1%26sn%3D43551adf687698d0a088ef6022adf98d)",
+      "tags": [
+        "大模型估值",
+        "Coding能力",
+        "AI趋势"
+      ],
+      "score": 85,
+      "summary": "分析Coding能力成为大模型公司估值核心，Anthropic、DeepSeek等案例。",
+      "fetched_at": "2026-06-04T20:45:11.524997+08:00"
+    },
+    {
+      "title": "慕尼黑工大 Johannes Betz 教授：时速300公里的自动驾驶超车 ｜ ICRA 2026",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=2&sn=8403d6223e81a1237d5cf80d8dcf1948",
+      "published": "2026-06-04T19:07:00+08:00",
+      "source": "AI科技评论",
+      "content": "原创 陈淑瑜 2026-06-04 19:07 广东\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=1c6aa016&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafN6UBW6wxIicWA9O4AlTl1EudPiaVAkzoHx30v75roVYiaSC4gAhFsz8dkxxMpvXzPItHCx9AtbBlGekIve7CT3s5RWQKjlE5nkDE%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=0d683723&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafPw6JHDewjl4JgiaLd3wGPePlfbZTibx6DPswiaA8wu5XcRsCUCbtKicC7sLkE9b7lib5DFUCyYqzEQIcYpc31Im2iaxn9gklBa6JeqM%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n大多数AI赛车研究停留在仿真里，这辆车是真的在赛道上撞过。\n\n    作者丨陈淑瑜\n\n    编辑丨岑   峰\n\n****![](https://wechat2rss.bestblogs.dev/img-proxy/?k=404aa831&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FcNFA8C0uVPuQzlZAjS66ZEYbDkdc0DAaC7AvbxPrUmFpdQ5eozPic4tSVCN0YvwfgRX5AIqSHKx8mic2s2a0DjoQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=2&sn=8403d6223e81a1237d5cf80d8dcf1948)****\n\n2026年6月2日，在ICRA 2026大会上，慕尼黑工业大学（TUM）自动驾驶实验室负责人Johannes Betz发表了题为“Autonomous Vehicles & Navigation ”的演讲，系统回顾了过去八、九年其团队在自动驾驶赛车领域的研究历程与核心洞察。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8a13df3c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafM5ia7QYLlBwrIYvjqwxjYFexribVnppvd1vpmvdIyQBEQqQPUiaI7zlYAcgCtSwX8fGiaJLXcTBQGRQmZqUSQc1ibwDnLfAAzPpqoA%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\nJohannes Betz开篇即抛出一个尖锐的问题：为什么要研究自动驾驶赛车？他的回答直指机器人学的一个根本困境：赛车天然集成了多变环境、高速交互与极小容错空间三个极致要素，构成了完美的研究沙盒。\n\n在此基础上，他的团队选择了一条与主流“端到端强化学习”截然不同的技术路径：一套经典的生产级感知-规划-控制管线，辅以“一个博士生一个算法”的管理哲学，确保每个模块拥有完全的技术所有权和极致的工程深度。\n\n在软件架构层面，Betz提炼出四条硬核教训：\n\n第一，多传感器融合（GPS+激光雷达+毫米波雷达）是高速定位的基石，尤其是在GPS信号拒止的真实战场环境中；\n\n第二，三维状态估计是捕捉漂移、侧偏角等极限动力学的前提，缺此则一切免谈；\n\n第三，全局-局部双层规划架构，结合博弈论实现多车交互预测，是赛车能够自主决策超车时机的关键——他展示了一段在阿布扎比亚斯码头赛道上完成的并排超车视频，全程自动驾驶，十次中有九次成功；\n\n第四，当经典管线跑通之后，真正的挑战来到了“如何比人类更快”。\n\n为此，Betz 团队耗时三年，逆向工程了人类赛车手的行为模式，开发出名为APEX的“人类启发的主动驾驶智能”系统。\n\nAPEX的核心逻辑是：人类通过视觉、触觉、听觉感知极限，再凭借记忆持续调整轨迹来逼近极限，而非死守一条固定的最优基线。这套系统在与梅赛德斯-AMG的合作测试中，以2.6秒的优势击败了奔驰测试车手，又以1秒优势战胜了前DTM赛车手本·施奈德。然而在面对目前F1车手锦标赛排名第二的乔治·拉塞尔时，APEX每圈慢了约1.5秒。\n\n演讲的最后一课出人意料地跳出了技术范畴：如果你想赢，关键在于合适的团队和人。他的团队已经用两次联赛冠军验证了这一判断。\n\n以下是Johannes Betz在ICRA 2026大会发表的演讲精编稿，雷峰网在现场报道，并基于原英文演讲内容进行了不改原意的翻译编辑：\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**01**\n\n## ******为什么是赛车？******\n\n趁会场还在陆续进场，我想了解一下在座有多少人对赛车运动感兴趣？有谁关注赛车运动的收入模式？\n\n好吧，举手的人不算多，但我认为现在很多人开始对赛车运动产生好奇，因为Netflix在推广方面做得非常出色。\n\n像所有令人热血沸腾的事物一样，美国人热爱赛车，也为此有所担忧。你所看到的一切都是高阻力的对抗。这个视频中唯一看不到的东西，是背后的价值。但你所看到的一切，完全是在自动驾驶状态下完成的。\n\n这场十五分钟的简短演讲涵盖我过去八、九年的研究。我也欢迎大家来了解从逆向自动驾驶赛车运动中汲取的经验教训，学习如何在极限状态下操控自动驾驶车辆。接下来的十五分钟，我将带大家走一段路程，分享一些经验教训。如果你们有兴趣涉足这类研究方向，也许将来能派上用场。\n\n但你需要回答的第一个问题就是：我为什么要做这个？既然本来也没人来找我们做自动驾驶赛车。那为什么还要把它放到赛道上呢？\n\n其实，从研究的角度来看，这是一个相当不错的研究设定。\n\n首先，看左边的赛车。对于一辆赛车来说，每次去到不同的赛道，都需要调整设置，无论是天气变化、空气动力学设计的更新，车手也需要适应这些变化。\n\n第二点，看中间的影像。比如在Raidillon弯道以250公里时速超车，你从左侧切到右侧，需要很高的预测安全性，因为你并不知道对手会做什么。\n\n第三点，在右侧，你看到的是消费者车辆在摩纳哥行驶。摩纳哥非常特殊，因为那里的容错空间极小。如果你观察一辆车，你会感受到它对极限的逼近。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=bcfce9ae&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafOcwCZRVNDibIWtmNpJZ9N8YcrHb7CflHl4TtLguSZqyVcibReicZUc7qTywibBdMfiaxGf827zxXRbvia9K8cuCkTtL6lLD7Q9XBc0U%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n所以当你把这些因素结合起来，就有了一个很好的研究设定，而这正是过去几年研究者们一直在做的事情。\n\n我记得Davide Scaramuzza有一个很棒的Keynote教程，他们基本上证明了无人机可以比人类飞得更快。Sony AI团队也展示了在赛道上比人类更快，但仅限于仿真环境。还有一些研究者说车做得很快，但仅限于单车，只优化控制器。还有一些人，如果去看全尺寸赛道，那些公路赛级别的比赛，他们有一定的研究成果，但问题是，这些成果能否真正泛化？\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5f6f1c1d&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafPaPu0YTfL398YXnrdAnBbnkuweQLlPGCbcd7Fk1MkEMcElltaZzlnEUZvEa0FwdLlEST9icylPOw0SuibAZiauHbAkSoffM14ZHM%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n所以我们有这些研究者。但目前还没有人在真实赛道赛车的高速行驶中证明自己比人类更快，并且在多车交互的场景下做到这一点。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**02**\n\n## ******感知-规划-控制：300公里时速下的软件架构******\n\n这就是我们设立了自动驾驶经济赛车联赛的原因。\n\n在这个联赛中，组织方把各支队伍召集在一起，发放一辆自动驾驶赛车。这辆自动驾驶赛车本质上是一辆经典的方程式赛车，装配了激光雷达、毫米波雷达、摄像头、车载控制计算机，以及实现自动驾驶所需的一切设备。\n\n这辆车交到了我和我的团队手中，我们面临的挑战是为它开发软件。\n\n我们面对的第一个大问题是：什么样的软件才是正确的软件，能让这辆车跑到时速300公里，既精准又稳健？这个问题不好回答。因为简单的答案可能是：用强化学习，它会自己学会。但这个答案太简略了。\n\n为什么我们需要一套非常稳健的软件架构？因为在驾驶一辆价值百万美元的车以300公里时速行驶时，每一个错误都会导致撞车。所以我们决定采用经典的生产级感知-规划-控制管线。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=74927ca7&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafN0jXVfJpERicQ0fOI1JvJzwUxg5ZLNr1UDn2ibjhVcQj3OWpbjiaxOvyLt8b27UlBxOeUia3xbbwv0j6m9TeesMj6xbNIKiadAiavMY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n所以我们决定采用经典的生产级感知-规划-控制管线。\n\n首先，当然是集成传感器，需要全面的传感器感知。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=00eaa38e&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafO2MeOMsPu8XLkiaAmmeFS4eakjlHXZoShqTnDID4GaNrC19KOpCGemIxQ6RhdKrZeo8xAj8ZpS2WSqUdpzEMdC69IR5ss8D4oY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n第二，让车辆实现定位和物体检测。第三，非常关键的是做好物体预测，尤其是交互预测。第四，将信息输入运动规划器，这基本上是赛车软件架构的核心。最后，控制车辆。\n\n这就是从技术角度看我们软件的奥秘所在。同时，从管理角度看也是如此。我和另外两个实验室共同运营这个团队。我们决定采取“一个博士生一个算法”的管理理念。这基本上带来了算法的完全所有权，学生们会全力以赴，因为他们不仅要做出好的算法，还需要把所有东西组合在一起。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**03**\n\n## ******四条技术教训******\n\n**第一课：多传感器定位是高速赛车的基础。**\n\n现在让我们深入到软件架构中，稍微解释一下我们做了什么。首先，当然需要定位。我们是怎么做的？对我们来说，多传感器融合是绝对关键。你看到的是，GPS、激光雷达和毫米波雷达需要全部协同工作，才能实现稳健的定位。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=147d4510&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafNvcrpYaqaVBkkmu0JvvYtbcagMZV64KvvgWyAUU3Gs5dDwzeRyp2J3MVM18BndpFsHGLUwtAEUpzicMCGFOe4a3hjLWaiaZhqP4%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n我们在阿布扎比行驶时，由于以色列战事的影响，遭遇了GPS信号拒止的情况。一直都没有差分GPS信号。你必须进行融合。\n\n所以我们的第一个教训：多传感器定位是高速赛车的基础。\n\n**第二课：三维状态估计不可或缺。**\n\n赛车具有非常特殊的行为动力学。当赛车进入弯道倾斜路段，遇到小坡度，然后开始漂移。你在这里看到的是所谓的侧偏角，这是特殊的车辆动力学，需要通过三维状态估计来捕捉完整的动力学特性。\n\n这是第二个教训。没有这一点，就行不通。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8a2a04aa&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafPCXAOjD2AUeW8zicX8jpqsBya0aTfTfctq4G5MBKOdIx3A2LcyukUwicYdjGhcanQEbRxcJZAjqu2D6ejib8TbHDBuF8ibbG1ibuko%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n**第三课：全局规划和局部规划**\n\n从定位来到规划部分。在我们的方案中，我们决定把问题拆分为全局规划和局部规划。\n\n全局规划对我们来说是一个优化问题，实际上是一个最小圈时问题，或者说最优控制问题，它要运行完整的车辆行为动力学，包括非线性轮胎动力学、弹簧、减震器、空气动力学，你需要的一切。\n\n非常重要的一点是，我们需要离线预先计算，同时也要在车上在线运行，因为实际情况会发生变化。如果赛车偏离了最优路径，它需要重新计算一条新路径。这正是人类赛车手的工作方式。\n\n为了展示这个效果，我带来了一段短视频。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=88617e8f&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafP6IJhmPdAuVxiboQnSbGEVWW6zylcOwoNHsicBBibHdNJqSwXeJ48hdEuISp9Qia38rQS6iaAxktP08AVeaR1s5miaOZMNuIfr5VuiaQ%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n这段视频展示的是我们的赛车在阿布扎比亚斯码头赛道上的行驶情况。你可以看到赛车正在沿着最优赛道时间行驶。你还能看到轮胎数值，轮胎在升温、刹车的状态，纵向和横向的加速度。你基本上可以看到一切，而且系统能够对其加以控制。\n\n此外，你会注意到一个特别之处。在座的赛车运动爱好者可能会老实告诉我，这看起来并不最优。**为什么不充分利用弯道？为什么离赛道外侧那么远？**\n\n答案是我们在尝试跟踪一条最优基线，但同时也需要一定的安全余量，以防赛车出现转向过度或转向不足。这是一个我们也需要解决的问题。\n\n但你在这里已经看到，这在后直道上达到了250公里每小时。这基本上是我们用这辆车在这条赛道上达到的最快速度。\n\n但是，赛车并不是你独自一人在赛道上就能完成的运动。赛车的本质就是与他人竞技。所以下一步我们需要一个局部运动规划器。我们决定采用基于采样的运动规划。这意味着我们的赛车在Frenet坐标系中沿纵向和横向采样轨迹，然后通过代价函数结合长距离递归可行性进行评估。我们的计算范围是100米。\n\n**第四课：带交互的长距离运动规划**\n\n最后，也是最有意思的部分，我们需要结合博弈论来实现交互。这就是系统在线计算最优轨迹的方式。\n\n现在你看到的视频是我们的赛车在同一条赛道上，但前方有一辆红色的对手车。你基本上能看到正在计算的轨迹。请注意，因为现在我们的赛车需要自行决定什么时候是超车的好时机，以及如何超车。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5fd15a5f&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafP7F02Be0tSqgicSIBRibJA5qR1Nxnib53icGer2WAYnAf4sd13MPvzZFZ0Mh21rarHPhYuGHY0J30AVEg2bKzH0gpCJ2CECpMeVibM%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n现在仔细看。我们的赛车在五号弯向赛道外侧稍稍移动。然后开始切回内侧。因为现在我们的赛车正在后直道上加速，并决定执行超车动作。\n\n因为超车动作当然需要一点时间。我们的局部规划器决定恰好在这个弯道执行超车。于是出现了一个并排紧贴的超车动作。你所看到的一切，完全是自动驾驶完成的。\n\n为了再次展示这一点，这里还有一段视频，很好地捕捉到了这个行为。我还要说的是，因为我们身处研究社区，这个动作十次中有九次能成功，第十次很可能导致撞车。\n\n所以第四课：带交互的长距离运动规划是关键。没有它，你的赛车永远不会有这样的动作，永远无法进行交互，也永远无法超越其他车辆。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**04**\n\n## ******APEX：人类启发的主动驾驶智能******\n\n说到目前为止，这些内容很多人已经知道了——经典的感知-规划-控制。但我们真正想做的是比人类更快。\n\n谁能比真正的人类冠军更快呢？我们从无人机竞速领域已经知道这一点。没错。或者说，从AlphaGo下围棋、IBM Watson、深蓝下国际象棋，我们都知道这一点。\n\n唯一的问题是，在汽车驾驶领域，我们不是在和一个超级人类对话，我们是在和众多超级人类对话。因为这些人从很小的时候就在学习如何驾驶赛车了。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=e3b4f868&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafPkCo8A8ptCyjp38urxru8NibarDkjjMo4jXxJzGuGOCuoWh5k882ak3uIBfibaCDs5KQAqtTMKibsYQFos6wWUibwz2xt0GxoFUCY%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n举个例子，路易斯·汉密尔顿不仅是一位七届世界冠军，他四十岁了仍然在F1赛场上竞技。所以你要战胜的是经验。\n\n因此，我和我的一位博士生花了三年时间，来破译人类究竟是如何把赛车开得那么快的。\n\n你看到的是我们的最新研究，叫做“人类启发的主动驾驶智能”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=3a007edc&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafPaz8CfHuKIpTSJfp9lJLCWhXsmSyC20iakBFIEycvehxKOQzpWNbCsF5gDuia8YGGwzgZVmHnBOvwj9ib3BJBHjJIdjiaAHCHrf4Y%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n我们发现，人类首先通过视觉、触觉和听觉来感知极限。然后通过记忆和不断调整轨迹来逼近极限。这一点非常新颖。因为通常大家会认为有一条最优基线，跟踪它就行了。但是当动力学发生变化、偏离基线时，你必须改变轨迹。\n\n我们把所有这些整合到一个叫APEX的软件中。你现在看到的这个软件，不属于运动规划器，也不属于控制器。如我所说，这是一个新颖的软件，把所有这些要素组合在一起。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8ac6c230&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafNFaibnnl29pmvQ8YgvKcnibLt2QuLEQoTrdYlCBVkUOgA5S7yHvUYaBhc6HWp43mU9ibCLicgXxnBsNRTdWTCI2djdD4DQ0ff7zEE%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n为了证明它确实有效，我们把它部署到一辆研究车上，这是与梅赛德斯-AMG合作的成果。你现在看到的，特别是你现在听到的，和你之前看到的都不太一样。\n\n现在，你听到了轮胎的声音。只有在软件实时自适应调整的情况下，这种轮胎声才会出现。每一个弯道、每一个弯角、每一圈，这辆车都在变得越来越快，直到达到APEX的顶点，软件与车辆动力学合二为一，实现了这样的圈速。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**05**\n\n## ******人与机器的对决******\n\n现在只剩下一个问题：我们能用这辆车比真正的人类更快吗？**我想说，我们可以。**\n\n因为我们发现，橙色标注的这位是梅赛德斯的一位测试车手。这个人每天都在驾驶赛车。我们比他快了2.6秒。所以我们的软件战胜了人类。\n\n但他是测试车手。所以我们也邀请了蓝色标注的这位。很多人可能不认识他，你可以搜索一下。他叫本·施奈德，曾是德国DTM赛车手，也是梅赛德斯的测试车手。我们让他坐进车里，我们比他快了一秒。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=182a7267&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafNXcMTjlnUyumbzjYyOFaS2ojwIObkRrZ2ticMv8bwS7qKARQ1jKZSGjMRicPnjm3fza0WhbM1G0CsjkO24Vxl6dZD41n3lYPzB4%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n所以基本上，我们能用这辆车战胜人类。\n\n但当然，我们想和最强的车手较量。于是我们邀请了一位**叫乔治·拉塞尔**的人。他目前排在F1车手锦标赛的第二位。\n\n很遗憾，我们比他慢。但这没关系。这就是研究。瞄准目标去尝试，虽然没有实现。乔治·拉塞尔比我们每圈快大约1.5秒，这背后有几个原因和经验教训。\n\n关键原因在于，他的手动驾驶操作得比我们更快一点。他的反应时间，尤其是在复合弯道中，比我们更优。\n\n但我想用一张图来结束这次演讲。\n\n你在绿色区域看到的，都是我们的赛车比乔治更快的赛段。这意味着，我们知道如何在赛道的多个部分击败他。但我们还有很多需要弄清楚的地方。\n\n站在这里，我实际上不是站在巨人的肩膀上，而是站在我团队的肩膀上。因为我之前没有告诉大家的是，我们这个团队实际上赢得了两次比赛。\n\n所以最后一课，不是技术层面的。如果你想赢，关键在于合适的团队和人。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**06**\n\n## ******Q&A 问答环节******\n\n**听众提问：** 你之前展示了真实赛道上的视频，但在优化系统的过程中我们没有看到超车动作。你是否考虑了其他车手的决策行为？他们不只是动态障碍物，也有自己的决策。\n\n**Johannes Betz：** 是的，完全正确。我必须诚实地说，赛车运动中总是有规则。在这种情况中，比如另一辆车必须保持在赛道外侧、对方不能突然切到我们前面，诸如此类的情况。如果他们失去了弯心权，对方车辆就会这么做。\n\n类似的问题，我相信有很多聪明人在研究，交互主要来自我们的预测模型，用于预判其他车辆的行为。\n\n实际上，在某些时刻这还挺容易的，因为赛道上空间不大。你总是可以假设对方车辆在跑一条赛车线。\n\n但是交互，比如对方车辆向左或向右移动时，当然需要建模，而这会影响我们的运动规划器。否则赛车就不会做出回应。\n\n**听众提问：** 我看到你提到了APEX，我知道也有其他人在做相关研究。我想了解一下你们的学习机制是什么？是强化学习，还是什么概念？它是如何与控制算法互动的？\n\n**Johannes Betz：**其他人也在用类似的方法。但对我们来说，目标是超越人类，我记得Dominic在早上的演讲中说过这一点，他在另一场关于无人机竞速的演讲中也提到过。复制人类，然后超越。这正是我们试图弄清楚的事情。\n\n所以我们建模的基础是：**首先，理解人类如何处理，将其捕捉为软件，然后超越。**\n\n具体来说，各个组件从简单的启发式方法开始，捕捉轮胎状态，捕捉动力学，然后纳入学习部分。这可以从简单的机器学习开始。我们也在尝试用强化学习做实验。我认为这是一个很好的方向。\n\n但目前，我们采用的是简单的建模方式，将所有要素组合在一起，然后得出一个KPI，让我们的车能够更快地行驶。\n\n所以我会说，我们的方法是逆向工程。了解人类是如何做到的，然后用机器人学社区所拥有的技术，让赛车真正地去执行。\n\n**听众提问：** 你提到多传感器融合对你们的系统至关重要。要实现精确的多传感器融合，就需要多传感器标定。我想问你的是，你们在赛车上的标定方法是怎样的？\n\n**Johannes Betz：** 我们有一个工程团队专门处理各种标定工作。我们不做在线标定，这非常重要。所有标定都是离线、提前完成的，传感器到传感器之间的标定。对我们来说，这种准备工作足以在赛道上进行比赛。\n\n我们当然也需要多次重新标定赛车，特别是刚出厂时悬挂系统非常僵硬。但我们在标定方面没有遇到太多问题。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**07**\n\n## ******去哪看 ICRA 核心******\n\n## ********【演讲/论文】详解？********\n\n为了让国内的研发者、创业者与投资人能够毫无时差地掌握本届 ICRA 2026 的完整干货，雷峰网已全面上线【ICRA 2026 深度专区】。\n\n专区不仅全面收录了重磅论文的工程化解读、专家前沿演讲，更将持续更新前方记者的第一手会议动态。\n\n扫描下方二维码，或点击「阅读原文」关注专区。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=af51ea22&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafPy47rdoxllBdptk1QrWBngNvyWkCfia2FDqoic61aJ5vaBPIRFx34rshkicFFISNopSzPhVueMUqfvZc6vzKsLFD0azrCib4Ua9Uk%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n与全球 8000 名顶尖大脑同步呼吸，抢先透视具身智能的下一个五年！\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=d0ca13a1&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafO0q4tBruw8fcESUvjE57I5ZWOnMYyIDPICm8yS00sicERGFPGINbj0ic8Xd61Wd5Lia6G6kNLlE5xf78Vb9pYIxTLUPU2Vk80fl0%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\n//\n\n推荐阅读\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=1113a623&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafMMSnZNMIvKQlIqUUsIBibQybr1HKsiaDeofZLTBrfibbxoPVZ5OEg1y6PldVKpnGTNiaiaickhFEDfDTgibbcsgCoKnVBv1Mx7VsC5Tw%2F640%3Fwx_fmt%3Djpeg)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735131&idx=2&sn=95dbaba4860ace49c53eda6628551a8b&scene=21#wechat_redirect)\n\n[寻找 AI 的「第三语言」：中间表示如何打通多模态鸿沟 ｜ CVPR 2026](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735131&idx=2&sn=95dbaba4860ace49c53eda6628551a8b&scene=21#wechat_redirect)\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=a750f33c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafM4Dv0CB2Wnusyn2wULGFXI4dHUNOfgrtTicBKT4q3EfJ9k9OIWSnEPlbTbpnaic3NH0dgTqRh8ZWwwWfW6r9P4tyZYxCXGvpiaEI%2F640%3Fwx_fmt%3Djpeg)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247734800&idx=2&sn=29e797546b6d4ff94a8559fc1bfc252f&scene=21#wechat_redirect)\n\n[CVPR 2026 四篇论文透视：大厂如何靠「算法瘦身」对抗算力涨价？](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247734800&idx=2&sn=29e797546b6d4ff94a8559fc1bfc252f&scene=21#wechat_redirect)\n\n# 未经「AI科技评论」授权，严禁以任何方式在网页、论坛、社区进行转载！ 公众号转载请先在「AI科技评论」后台留言取得授权，转载时需标注来源并插入本公众号名片。\n\n[阅读原文](https://www.leiphone.com/special/492/202604/69e84179d5132.html)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=f49d289e&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5ODEzMjIyMA%3D%3D%26mid%3D2247735943%26idx%3D2%26sn%3D8403d6223e81a1237d5cf80d8dcf1948)",
+      "tags": [
+        "自动驾驶",
+        "ICRA",
+        "AI赛车"
+      ],
+      "score": 75,
+      "summary": "慕尼黑工大在ICRA展示时速300公里自动驾驶超车系统。",
+      "fetched_at": "2026-06-04T20:45:11.525087+08:00"
+    },
+    {
+      "title": "Agent 安全进入运行时：AgentDoG 1.5 如何在最终交付前拦住风险",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1",
+      "published": "2026-06-04T19:07:00+08:00",
+      "source": "AI科技评论",
+      "content": "AI科技评论 2026-06-04 19:07 广东\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=82ed0770&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FXqAicMdcoiafPmHKLRy31XsqeDLcNrTOf01F7Ab3Ibr5AubI4Lm98It3P6J2QPfe1DvO2Bl5eDv1FlUcobEsv2AY0WQrfPn4JCpNqibQGVpiakE%2F0%3Fwx_fmt%3Djpeg)\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=2a13b851&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafPmFDibcdTGRYcXnHubGqavAVV97YEVQibWDaMvCsN6XY2nbTI7eKYFCPMnXicb0vzAUrqzctfmbRKxUL74prnNNyCA38WlPdjkMI%2F640%3Fwx_fmt%3Djpeg%26from%3Dappmsg)\n\nAgent 安全正在从“看一条轨迹是否安全”，进一步走向“在运行时阻止 unsafe final delivery”。\n\n****![](https://wechat2rss.bestblogs.dev/img-proxy/?k=404aa831&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FcNFA8C0uVPuQzlZAjS66ZEYbDkdc0DAaC7AvbxPrUmFpdQ5eozPic4tSVCN0YvwfgRX5AIqSHKx8mic2s2a0DjoQ%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)****\n\n当 Agent 开始自主调用工具、连续执行多步任务，安全风险就不再只藏在一句 prompt 里。\n\n它可能先读一段看似正常的环境信息，再根据工具反馈继续规划；也可能在多轮上下文里逐渐偏离用户原本意图，造成不可逆的后果；还有一些风险，最终回复看起来并不刺眼，但真正的问题早已出现在中间某次工具调用、某个审批边界、某段被误信的运行时反馈里。\n\n所以，Agent 安全不能只做离线评测。\n\n更关键的问题是：当 Agent 正在真实系统里运行时，我们能不能在最终结果交付之前，及时发现并拦住风险？\n\nAgentDoG 1.5 这篇工作最值得关注的地方，正是在这里。它不仅提出了轻量级、可扩展的 Agent 安全对齐框架，还把轨迹级安全诊断模型部署成 online runtime guardrail，在 Agent 最终回复发出前，对完整执行轨迹做实时安全审计。\n\n换句话说，Agent 安全正在从“看一条轨迹是否安全”，进一步走向“在运行时阻止 unsafe final delivery”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9ee2875a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2FXqAicMdcoiafNPObvbHUMjpAp05u8NQGQ4bXN1B0OJ5uBnIS0TJUIDLFZPccutYv6IArsfSiayrHusWrYwgD1MLRfuECzHpjWRYvffjMR9VAko%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n论文标题：\n\nAgentDoG 1.5: A Lightweight and Scalable Alignment Framework for AI Agent Safety and Security\n\n研究团队：\n\n上海人工智能实验室\n\nGithub：<https://github.com/AI45Lab/AgentDoG>\n\nHugging Face：<https://huggingface.co/papers/2605.29801>\n\n<https://huggingface.co/collections/AI45Research/agentdog1.5>\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=49869ebd&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafOiakf9DwSKNprDu7SqicQmvdvsASN1KwaqKGiag1Z23PZRXWUl4p6mDBnBoEcjv5sDdbAr73G7dnxEqDKCswFAaprfZgGexm8wKw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**01**\n\n## ******先看最接近真实部署的一步：运行时 guardrail******\n\n在真实 Agent 系统中，风险往往不是静态出现的。\n\n用户输入可能是安全的，但工具描述里可能藏着注入；前几步工具调用可能都正常，但后续环境反馈可能把 Agent 带向错误动作；最终回复可能只是“任务已完成”，但背后可能已经发生了敏感信息泄露、权限边界绕过，或者对危险操作的错误确认。\n\n这也是为什么论文把 AgentDoG 1.5 部署为在线 guardrail 时，并没有只检查用户输入，也没有只检查最终回复文本，而是选择审计完整执行轨迹。\n\n它关注的问题不是“这句话能不能发”，而是“这条轨迹走到这里，最终结果还能不能交付”。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=bcc6a29b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafNyB4yRdpAY4n2YYVB0sLxxrce4ia92lKHRCqWZGibqRvBbaM3ib06NtcQwhXI6paBruiaiakrKLFcgPJ1o0lWXhIMx0WxAzlXT3NOg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n**▎Pre-Reply：在最终回复发出前审计整条轨迹**\n\nAgentDoG 1.5 的在线 guardrail 采用了一个很实际的拦截点：Pre-Reply。\n\n也就是 Agent 已经完成多步执行，准备把最终回复交付给用户或下游系统之前，系统暂时 hold 住最终回复草稿，把完整执行轨迹交给 AgentDoG 1.5 判断。\n\n如果轨迹安全，最终回复放行。\n\n如果轨迹不安全，最终回复在交付前被阻断或替换。\n\n这个设计背后有一个很现实的工程取舍：如果每次工具调用后都做一次完整 guardrail 检查，长任务里的几十次、上百次 serial tool calls 会不断叠加延迟，用户体验和系统吞吐都会受到影响。\n\nPre-Reply 则是多数 Agent 框架都天然存在的交付节点。它接入成本低、兼容性强，而且能在最终结果真正触达用户之前，利用完整上下文做一次关键审计。\n\n这不是事后复盘，而是运行时最后一道防线。\n\n**▎在线 guardrail pipeline 怎么工作？**\n\n论文中的 online guardrail pipeline 可以拆成三个部分。\n\n第一步，Agent 正常执行任务。\n\n用户通过运行时界面与 Agent 交互，Agent 继续调用工具、访问文件、读取网页资源或连接外部环境。系统通过 proxy 镜像运行时事件流，不改变 Agent 原有执行语义。\n\n第二步，轨迹格式化与在线审计。\n\ntrajectory formatter 持续收集运行事件，包括用户输入、历史上下文、工具调用、工具返回、观察结果、动作、中间思考以及最终回复草稿，并把它们整理成 AgentDoG 1.5 可以判断的 trajectory-level representation。\n\n到最终回复交付点时，AgentDoG 1.5 基于完整轨迹返回 guardrail judgment：安全轨迹放行，不安全轨迹阻断。\n\n第三步，运行时监控 dashboard。\n\n系统记录事件流、重构后的执行历史、guardrail 判断结果和延迟信息。这样开发者不仅知道某条回复被拦截了，还能追溯风险来自哪一步、Agent 为什么失败、对应哪些运行时事件。\n\n这让 guardrail 不只是一个黑盒分类器，而是一层可观测、可审计、可调试的运行时安全基础设施。\n\n**▎实验结果：unsafe final delivery 明显下降**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=802736b2&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafNJYib7kzLRUMCueV62bicnY6ia1L1lbkXPHh5VL7KicLTbnXGmVV6KeVQPFYIoRDhJibHMFHRnUdhxXdBky1MJ2kaKE9OULK0VVibIs%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n论文在 OpenClaw 环境中评估 Pre-Reply guardrail，目标 Agent 使用 GLM-5.1。评估重点不是离线分类准确率，而是最终交付给用户的 unsafe response 是否减少。\n\n在 ClawSafety 上，没有 guardrail 时 ASR 为 56.25%。\n\nAgentDoG 1.5-0.8B 将其降到 25.00%，AgentDoG 1.5-4B 进一步降到 18.75%。\n\n在 AgentHazard 的 Prompt Intelligence Theft 风险上，没有 guardrail 时 ASR 为 41.92%。\n\nAgentDoG 1.5-0.8B 降到 29.23%，AgentDoG 1.5-4B 降到 26.92%。相比之下，Qwen3Guard-Gen-4B 和 Llama-Guard-3-8B 在这个设置下没有降低残余 unsafe final-delivery rate。\n\n在 CIK-Bench 的 final-reply-preventable cases 中，没有 guardrail 时 ASR 为 94.29%。\n\nAgentDoG 1.5-4B 将其降到 42.86%，接近 Llama-Guard-3-8B 的 40.00%。\n\n同时，AgentDoG 1.5 的 TTFT 保持在亚秒级，TPOT 也处在每 token 几百分之一秒量级。因为这笔成本只发生在最终交付点，而不是每次工具调用之后，所以它具备实际部署意义。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**02**\n\n## ******为什么 AgentDoG 1.5 能做这件事？******\n\nAgentDoG 1.5 能做在线安全护栏，并不是因为简单加了一个“安全分类器”，而是因为它前面的几项更新，共同补齐了运行时防护需要的能力。\n\n**▎面向真实 Agent 的安全评测家族**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=9e8174b0&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafMDQzqy9p2zdGmHV1cSE58x1xqhveV8PtN2pGSvK75wts8cNwUrmaCsILk10zEvSr1ZjWm2AdWnrehibUwl5C0jdRiaMkHv01iaYo%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\nAgentDoG 1.5 在原有三维风险分类法基础上，新增了代码智能体和 OpenClaw 场景下的风险类型，并扩展出对应评测集。\n\n基础评测集包含 1,000 条完整执行轨迹，OpenClaw 和代码智能体场景各包含 500 条轨迹。它们覆盖了会话、审批、工具、技能、消息路由、外部动作、代码仓库、命令执行、补丁修改、依赖和工具协议等执行证据。\n\n这样一来，模型评估的不只是最终回复是否安全，而是能围绕 Agent 的完整执行过程，判断风险从哪里来、Agent 在哪一步失败、最后可能造成什么现实后果。\n\n**▎轻量轨迹级安全诊断模型**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=25cd9664&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafO5C2EJdSOINWZ47HQvtrx91ibJmTrlZicU7c8OWibLsliaY4AUDn4MYknKGVtVzicn0iaGG9BHUia9tyva8Vef4mb2IrLtGFibFbK9go8%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n论文通过专用数据引擎和数据净化方法，只用约 1k 条高价值样本训练出 AgentDoG 1.5。\n\n数据构造覆盖 15 类风险来源、21 类失败模式、11 类现实危害，并扩展到 5,973 个工具与 MCP 服务。模型参数覆盖 0.8B、2B、4B、8B 等规模，其中 AgentDoG 1.5-4B-U 在基础轨迹评测上达到 78.4% 准确率 / 77.7% F1，在代码智能体和 OpenClaw 场景上分别达到 84.4% 和 87.6% 准确率。数据净化阶段，AgentDoG 1.5 通过影响函数估计每条样本是否真正有助于模型学习“识别并拦截危险轨迹”，筛除冗余、弱相关或可能干扰安全判断的样本，最终仅保留约 1k 条高价值训练数据。\n\n**轻量化很关键，因为在线安全护栏不能太慢，也不能太贵。一个足够小、足够强的轨迹诊断模型，才有可能真正进入 Agent 的运行时路径。**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=19ed538c&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafPGSGbic7uaVmDg4WoGquAjSjvRRPemXYqeGxNTB0X7eJUX0GVHLWnLJIX8RnDAP9UnrQ7yeuec1KgAia8Cn6kGRPaaRalQKUs1c%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n**▎低成本智能体安全训练环境**\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=b4e01315&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafOmPSE2rKfYaheYtyDJ74f2xjNr1ibwBDQic8F2y0tibaXLtt7MDTicFHCHo46CIzbh78O1zaH53NbXUm2x6nflxhTBJNItwMQFvDw%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\nAgentDoG 1.5 还构建了专用的智能体安全 SFT 与 RL 训练环境，用轻量化模拟替代高成本的 Docker 级环境，将内存开销和启动延迟降低到约 1/100，标准 8 核机器即可支持 10,000+ 并发智能体环境。\n\n这套环境让安全训练不再只依赖昂贵、低并发的真实执行环境，而是可以更高效地生成安全轨迹、过滤 SFT 数据，并在 RL 阶段提供可扩展的奖励建模基础。\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=127c91b2&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_png%2FXqAicMdcoiafOowib1rEgianZLJTszibib2oTZej3mlkXDrvwWAibibbyn2XsAPVDRtm8KAo1iagVkre6tHjcoIU4Z00TKhwdKRHRu27u2JopUBNxZEg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n在 SFT 阶段，AgentDoG 1.5 作为轨迹级验证器筛选数据，最终得到 28,705 条高质量安全轨迹；加入这些过滤数据训练后，AgentHarm 有害得分从 57.49% 降到 20.32%，函数调用准确率仍保持在 81.12%。在 RL 阶段，AgentDoG 1.5 进一步作为外部安全评审模型提供奖励信号，结合 SFT 与 RL 后，AgentHarm 拒答率达到 77.27%，AgentSafetyBench 安全率达到 59.32%。\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=6dbc1c31&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_gif%2FcNFA8C0uVPsftdZPOcWcnkWugp5Shs2EFib7ZU93GBp4DqVXhrOBCQKQzxcyAIzj1mUKiawHRm6xD4obGgROJm7Q%2F640%3Fwx_fmt%3Dgif%26from%3Dappmsg%26tp%3Dwebp%26wxfrom%3D5%26wx_lazy%3D1)\n\n**03**\n\n## ******结语******\n\nAgent 越来越像一个真正的执行系统。\n\n它会读上下文、调用工具、维护状态、跨应用行动，并把结果交付给用户或下游系统。到了这一步，安全评测必须看完整轨迹，安全防护也必须进入运行时。\n\nAgentDoG 1.5 给出的答案是：用轻量轨迹级诊断模型，在最终回复交付前做在线 guardrail。\n\n这可能会成为下一阶段 Agent 安全部署的核心问题：\n\n一个 Agent 不只是能不能完成任务，而是能不能在真实运行时边界里，被持续、低成本、可解释地监督。\n\n//\n\n推荐阅读\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=4ab2c93a&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafM8icfUxoIkQKtkVASqY2MicEkII5JX40NiaNOUpyNDEgydN4FbicX7LPSfxgIjstCCmlulWicPdzFLNPcVnqu3GVDibdU7beaf235jc%2F640%3Fwx_fmt%3Djpeg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67&scene=21#wechat_redirect)\n\n[起底智元机器人，谁在推动一个庞然大物向前](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732291&idx=1&sn=0e63747ddc961570e65c3b6c6ffb5a67&scene=21#wechat_redirect)\n\n[![](https://wechat2rss.bestblogs.dev/img-proxy/?k=05bc073b&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2FXqAicMdcoiafMkjk8SsFiaxthkEXhJnDfogKysnOplxicWAeiaCLfLgybZbbV65ZAzaAke7U0aibgYej9NQDFYNpMaHvJuK2VibE3MExhiaaruS75Q4%2F640%3Fwx_fmt%3Djpeg)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)![](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247735943&idx=3&sn=e6ad090c795f49770792e3706e4619f1)](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732966&idx=1&sn=1f01e25a2c1e4f4802d62f89ff3aff16&scene=21#wechat_redirect)\n\n[达闼科技陨落一周年：具身独角兽的消亡史](https://mp.weixin.qq.com/s?__biz=MzA5ODEzMjIyMA==&mid=2247732966&idx=1&sn=1f01e25a2c1e4f4802d62f89ff3aff16&scene=21#wechat_redirect)\n\n![图片](https://wechat2rss.bestblogs.dev/img-proxy/?k=b13de454&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_jpg%2FcNFA8C0uVPusibW6wG0uwrGsBm5wRQGYHfGXHyoN2u91kCPSsjKxekxiaUcRXvRhulDiafoQ1QBYh7dRSvHI0UJbg%2F640%3Fwx_fmt%3Dother%26from%3Dappmsg%26wxfrom%3D5%26wx_lazy%3D1%26wx_co%3D1%26tp%3Dwebp)\n\n# 未经「AI科技评论」授权，严禁以任何方式在网页、论坛、社区进行转载！ 公众号转载请先在「AI科技评论」后台留言取得授权，转载时需标注来源并插入本公众号名片。\n\n[阅读原文](https://www.leiphone.com/)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=009104c6&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzA5ODEzMjIyMA%3D%3D%26mid%3D2247735943%26idx%3D3%26sn%3De6ad090c795f49770792e3706e4619f1)",
+      "tags": [
+        "Agent安全",
+        "运行时防护",
+        "AgentDoG"
+      ],
+      "score": 82,
+      "summary": "AgentDoG 1.5提出运行时安全审计框架，在最终交付前拦截风险。",
+      "fetched_at": "2026-06-04T20:45:11.525164+08:00"
+    },
+    {
+      "title": "EVA-Bench Data 2.0: 3 Domains, 121 Tools, 213 Scenarios",
+      "link": "https://huggingface.co/blog/ServiceNow-AI/eva-bench-data",
+      "published": "2026-06-04T20:24:58+08:00",
+      "source": "Hugging Face Blog",
+      "content": "",
+      "tags": [
+        "EVA-Bench",
+        "工具评测",
+        "AI基准"
+      ],
+      "score": 75,
+      "summary": "EVA-Bench Data 2.0发布，覆盖3领域121工具213场景。",
+      "fetched_at": "2026-06-04T20:45:11.525235+08:00"
+    },
+    {
+      "title": "Task-Seeded Synthetic Q&A Generation for Nemotron Pretraining",
+      "link": "https://huggingface.co/blog/nvidia/task-seeded-sdg",
+      "published": "2026-06-04T19:24:53+08:00",
+      "source": "Hugging Face Blog",
+      "content": "",
+      "tags": [
+        "Nemotron",
+        "合成数据",
+        "预训练"
+      ],
+      "score": 85,
+      "summary": "NVIDIA提出任务种子合成Q&A方法用于Nemotron预训练。",
+      "fetched_at": "2026-06-04T20:45:11.525303+08:00"
+    },
+    {
+      "title": "AI制药的两套账本",
+      "link": "https://mp.weixin.qq.com/s?__biz=MzkyNTY1MjE2OA==&mid=2247493767&idx=1&sn=7eac23af3daecc5af1d0799c0fd5f4e9",
+      "published": "2026-06-04T19:00:00+08:00",
+      "source": "乌鸦智能说",
+      "content": "原创 硅基君 2026-06-04 19:00 北京\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=31dd6e58&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fmmbiz_jpg%2F598Tr639EmMOh2dyXgqc4Cg3f2WZKl8HIibXGfTfyfvsJ0uQIk8fpj2qMjgKjhhKdMuvtnXBjP9QsGDsQmMD3NqH3FHau3mZsoKMtib6zH11s%2F0%3Fwx_fmt%3Djpeg)\n\n别再用Biotech给AI制药估值了\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=5b88ac46&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F598Tr639EmMRMxCuYibK6jQzSSIVn68mrg4MfOI5ick7quiaQKJE4nvLwyFXqny91mvat54iaq1x0K9dvIG4G7XO4HQJjfSgho9pBFn2icJxluNg%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n今年以来关注AI制药行业的人，会发现一组很有趣的数字：18.39 VS 150-200——这是两家AI制药公司在一二级市场得到的估值，单位是亿美元。这背后是两套完全不同的定价体系。\n\n在一级市场上，Isomorphic Labs拿下了21亿美元融资，刷新了全球 AI 制药领域的单笔融资纪录，也把自身估值提高到约150亿至200亿美元。而在二级市场，Recursion最新市值只有18.39亿美元。\n\n向前一步，估值相差一个数量级。如此差距逻辑何在？未来是否会拉平？诞生于AI算法，成长于药研落地，又要回到AI应用拓展的TechBio们，正在给出自己的答案。\n\n********/ 01 /********\n\n**Biotech迈向TechBio，一家AI制药公司的自我进化**\n\n近期，英矽智能宣布和沙特阿美的合作取得进展，发布协同研发的Sanity Pipeline系统，这是一个流程化的新材料AI验证“流水线”，一旦模式跑通，可以利用专有数据，复用到各个细分领域，成为广义上的科研基础设施。\n\n此前，公司先后与微软（Microsoft）、谷歌（Google）、亚马逊（AWS）等全球科技巨头达成合作，在获得算力、云平台、模型能力支持的同时，不断强化其AI叙事体系。\n\n过去几年，在很多人眼里，英矽智能更像一家披着AI外衣的Biotech公司。虽然长期强调算法与模型能力，但真正被市场关注的，始终还是它的药物管线数量、临床推进速度，以及药物在验证阶段的数据表现，这也构成了英矽智能最初的估值逻辑。\n\n在飞速落地30款候选药物、获得13封IND批件之后，这家公司开始回归“初心”，凭借AI原生优势输出AI平台、科研基础设施和行业标准，夯实TechBio的定位标签 。\n\n今年1月，英矽智能正式推出MMAI Gym模型训练框架，随后以其为中心构建完整的生态系统。3月，MMAI Gym完成首个合作案例，整合Liquid AI 液态模型优势发布轻量科研基础模型。\n\n4 月，MMAI Gym 整合了面向科学研究与药物发现的Benchmark排行榜门户，以AI训练能力为核心的基础设施生态系统开始成形，然后迅速驱动和美国Human Longevity的合作，瞄准万亿规模的长寿研究市场，目标是“业内首个人类衰老大型基础模型”。\n\n这背后的核心逻辑，其实是在争夺 AI 制药底层基础设施的话语权。当产品从模型和工具变成训练能力本身，一家公司就真正融入了行业的主动脉。当创新的时间单位从年变成分钟，谁能够定义评估标准，谁就更容易在行业生态里掌握更高的话语权。\n\n****/ 02 /****\n\n**从卷管线到讲AI，回归“初心”乃生存之道**\n\n从药物管线到AI平台，甚至行业基础设施的转变，折射出了AI制药企业在资本市场不同生命周期里的生存之道。\n\n在一级市场阶段，所有自我认知为AI制药的公司，都想证明AI真的能够做药，依靠管线进展、临床数据和研发能力，去吸引那些真正懂制药、也愿意为研发确定性买单的传统医药基金。\n\n但上市之后，市场环境开始发生变化。尤其是在港股市场，传统 Biotech 长期面临估值压制，药企标签往往意味着高失败率、长周期、持续烧钱，以及较强的不确定性。AI 公司对应的，则是另一套资本逻辑：高毛利、轻资产、平台生态扩张、软件规模化，以及更高的成长溢价。\n\n某种程度上，这也是整个AI制药行业正在经历的一次自我进化。随着模型能力逐渐拉近，未来竞争可能会越来越转向平台生态、数据体系、科研工作流，以及行业标准本身。\n\n今年 5 月，由 Google DeepMind 孵化的 Isomorphic Labs 宣布完成 21 亿美元 B 轮融资，由 Thrive Capital 领投，Google 及主权基金跟投，公司估值被推高至约 150 亿至 200 亿美元。这笔融资刷新了全球 AI 制药领域的单笔融资纪录。\n\n比起融资规模，更值得注意的是一级市场估值逻辑。截至目前，Isomorphic Labs 仍然缺少成熟临床管线。换句话说，投资人给予高估值的核心锚点，仅仅是AlphaFold所建立的科研影响力，以及Alphabet提供的算力、模型与生态能力。资本真正购买的，本质上是一种面向未来的技术期权。\n\n而另一边的英矽智能，则恰好处于另一种典型状态。它是最早在人类患者群体中完成AI 药物药效概念验证（PoC）的公司之一，可以说已经回答了“AI能否真正参与药物研发”的终极之问。但由于身处当前流动性相对有限、偏保守的港股医药板块，市场往往会下意识剥离其科技属性，转而使用 Biotech 的框架进行定价，导致其AI板块跨界赋能潜力被忽视。\n\n这两家代表性公司的冰与火，恰好呈现了AI 制药行业在一二级市场明显的“估值错位”:一级市场愿意为“AI 改变生命科学”支付科技溢价；二级市场却仍然更多按照传统药企的方式计算风险。\n\n****/ 03 /****\n\n**估值分歧背后，是重构逻辑的机会**\n\n但从长期看，这种估值差距终究会被拉平。逻辑有两点：\n\n一方面，越来越多二级市场的AI制药公司，开始主动强化自身的AI属性。除了英矽智能之外，今年年初，活跃于美股市场的 Recursion 也宣布了与英伟达的合作，并通过开源模型、数据平台与生态输出，不断强调自身的 AI 基础设施能力。\n\n另一方面，一级市场持续抬高的估值锚点，也终究会反向影响二级市场。当一级市场不断用更高估值去定义 AI 制药的科技属性时，越来越多科技资本最终也会开始寻找二级市场对应的映射资产。\n\n随着越来越多公司开始强化平台、模型与生态能力，始于资本错配的估值错位必然不会长期存在。真正引领变革的行业玩家，正在“业绩确定性”与“科技高溢价”的交汇点上，迎来新一轮价值重估。\n\n文/阿奇\n\n*PS：**如果你也在寻找投资AI资产的机会，欢迎扫码加入我们的交流群。*\n\n![](https://wechat2rss.bestblogs.dev/img-proxy/?k=8333c4e3&u=https%3A%2F%2Fmmbiz.qpic.cn%2Fsz_mmbiz_png%2F598Tr639EmPXqeIt1JxGObLJE7cTIRS5j8xgB4pQibxP9NMa5VAaa4pcDmlPNFv3smXpWTxBHbgqGyN3Yj4IALyd4wUWbGPfU3icCF2oxqpD0%2F640%3Fwx_fmt%3Dpng%26from%3Dappmsg)\n\n[跳转微信打开](https://wechat2rss.bestblogs.dev/link-proxy/?k=449d4cc6&r=1&u=https%3A%2F%2Fmp.weixin.qq.com%2Fs%3F__biz%3DMzkyNTY1MjE2OA%3D%3D%26mid%3D2247493767%26idx%3D1%26sn%3D7eac23af3daecc5af1d0799c0fd5f4e9)",
+      "tags": [
+        "AI制药",
+        "估值",
+        "TechBio"
+      ],
+      "score": 75,
+      "summary": "分析AI制药公司估值逻辑，一级市场与二级市场差异。",
+      "fetched_at": "2026-06-04T20:45:11.525368+08:00"
+    },
+    {
+      "title": "CVPR 2026，英伟达特斯拉Waymo一块听中国公司讲物理AI",
+      "link": "https://www.qbitai.com/2026/06/429130.html",
+      "published": "2026-06-04T19:56:35+08:00",
+      "source": "量子位",
+      "content": "率先实现物理AI闭环飞轮",
+      "tags": [
+        "物理AI",
+        "CVPR",
+        "自动驾驶"
+      ],
+      "score": 78,
+      "summary": "CVPR 2026上中国公司展示物理AI闭环飞轮。",
+      "fetched_at": "2026-06-04T20:45:11.525433+08:00"
+    },
+    {
+      "title": "把下面这段话复制给Codex即可：\n\nhttps://t.co/iwCMe4Dys0 帮我安装这个，接入飞书",
+      "link": "https://x.com/PMbackttfuture/status/2062488909729190027",
+      "published": "2026-06-04T18:57:29+08:00",
+      "source": "AI产品黄叔(@PMbackttfuture)",
+      "content": "把下面这段话复制给Codex即可：  \n  \n[github.com/zarazhangrui/l…](https://github.com/zarazhangrui/lark-coding-agent-bridge) 帮我安装这个，接入飞书\n\n💬0🔄0❤️1👀103📊1",
+      "tags": [
+        "Codex",
+        "飞书",
+        "集成"
+      ],
+      "score": 65,
+      "summary": "将Codex接入飞书实现自动化工作流。",
+      "fetched_at": "2026-06-04T20:45:11.525496+08:00"
+    },
+    {
+      "title": "最近Codex很火\n我就把它接入到飞书里了\n\n非常丝滑\n飞书里的链接、文件、会议记录，可以直接丢给 Codex了\n/new chat (+你希望聊的话题) 还能自动拉群\n\n特别适合base飞书的个人和...",
+      "link": "https://x.com/PMbackttfuture/status/2062488834055585861",
+      "published": "2026-06-04T18:57:11+08:00",
+      "source": "AI产品黄叔(@PMbackttfuture)",
+      "content": "最近Codex很火  \n我就把它接入到飞书里了  \n  \n非常丝滑  \n飞书里的链接、文件、会议记录，可以直接丢给 Codex了  \n/new chat (+你希望聊的话题) 还能自动拉群  \n  \n特别适合base飞书的个人和企业  \n我知道亦仁是Codex+飞书重度用户  \n前面给他说  \n  \n没想到他说已经用上了，很不错！  \n  \n一句话就能完成配对（放评论区）  \n还是[@zarazhangrui](https://x.com/zarazhangrui) 的作品  \n点赞！\n\n![Tweet Image](https://pbs.twimg.com/media/HJ9t0VcW4AA3yv4.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ9t00oXcAA1tMW.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ9t2OpWkAAexB1.jpg)![Tweet Image](https://pbs.twimg.com/media/HJ9t3V1WsAA7b83.jpg)\n\n💬1🔄0❤️1👀291📊2",
+      "tags": [
+        "Codex",
+        "飞书",
+        "集成"
+      ],
+      "score": 65,
+      "summary": "Codex接入飞书，可处理链接、文件、会议记录。",
+      "fetched_at": "2026-06-04T20:45:11.525560+08:00"
+    },
+    {
+      "title": "Expert call transcripts now inside Perplexity Computer for deep financial research and analysis",
+      "link": "https://x.com/AravSrinivas/status/2062508810737238417",
+      "published": "2026-06-04T20:16:34+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "Expert call transcripts now inside Perplexity Computer for deep financial research and analysis\n\n![Jeff Grimes](https://pbs.twimg.com/profile_images/1615440606456864769/FgBZT7uE_normal.jpg)\n\nJeff Grimes@jeffgrimes9\n\nThe Guidepoint MCP is now available in Perplexity Computer, allowing Guidepoint customers to integrate 100,000+ expert interview transcripts into their finance AI workflows, with traceable citations back to the original transcript.\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6VsAHa4AAEy_u.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/jeffgrimes9/status/2062250883686228246)\n\n💬6🔄0❤️15👀2484📊6",
+      "tags": [
+        "Perplexity",
+        "金融研究",
+        "专家访谈"
+      ],
+      "score": 82,
+      "summary": "Perplexity Computer集成专家访谈转录用于金融研究。",
+      "fetched_at": "2026-06-04T20:45:11.525653+08:00"
+    },
+    {
+      "title": "https://t.co/dfElkSyLVy",
+      "link": "https://x.com/AravSrinivas/status/2062486362969006197",
+      "published": "2026-06-04T18:47:22+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "[perplexity.ai/hub/products/c…](https://www.perplexity.ai/hub/products/computer-for-windows)\n\n💬0🔄0❤️9👀3158📊1",
+      "tags": [
+        "Perplexity",
+        "Windows",
+        "AI电脑"
+      ],
+      "score": 80,
+      "summary": "Perplexity Computer即将登陆Windows。",
+      "fetched_at": "2026-06-04T20:45:11.525728+08:00"
+    },
+    {
+      "title": "Computer on all Windows machines soon",
+      "link": "https://x.com/AravSrinivas/status/2062486252990128293",
+      "published": "2026-06-04T18:46:56+08:00",
+      "source": "Aravind Srinivas(@AravSrinivas)",
+      "content": "Computer on all Windows machines soon\n\n![Perplexity](https://pbs.twimg.com/profile_images/2009310641165660160/XArF3_Ib_normal.jpg)\n\nPerplexity@perplexity\\_ai\n\nPersonal Computer is coming to Windows.  \n  \nPersonal Computer for Windows runs on your machine and orchestrates across the apps and files you use every day.  \n  \nWe'll roll out first to paying Max and Enterprise Max subscribers on the waitlist.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062188976086376448/vid/avc1/1280x720/hak0c-MaLBoHumJl.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/perplexity_ai/status/2062189045728596080/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/perplexity_ai/status/2062189045728596080)\n\n💬7🔄8❤️117👀12183📊16",
+      "tags": [
+        "Perplexity",
+        "Windows",
+        "AI Agent"
+      ],
+      "score": 85,
+      "summary": "Perplexity Personal Computer正式面向Windows推出。",
+      "fetched_at": "2026-06-04T20:45:11.525800+08:00"
+    },
+    {
+      "title": "😂",
+      "link": "https://x.com/dingyi/status/2062505663188914203",
+      "published": "2026-06-04T20:04:04+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "😂\n\n![老鬼](https://pbs.twimg.com/profile_images/2051505299123818496/CPkiQdO6_normal.jpg)\n\n老鬼@laogui\n\n你们在设计 APP 图标的时候，考虑过一个 40 多岁老男人的感受吗？😂 [@libapi\\_](https://x.com/libapi_)[@yetone](https://x.com/yetone)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ5ACCTboAAWFD7.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/laogui/status/2062156091174297730)\n\n💬0🔄0❤️1👀432",
+      "tags": [
+        "调侃"
+      ],
+      "score": 30,
+      "summary": "用户吐槽APP图标设计不考虑中年用户感受。",
+      "fetched_at": "2026-06-04T20:45:11.525872+08:00"
+    },
+    {
+      "title": "@turingou 赞助点不。收购后，可以直接给你 10% 股份。",
+      "link": "https://x.com/lifesinger/status/2062513732136440191",
+      "published": "2026-06-04T20:36:08+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "[@turingou](https://x.com/turingou) 赞助点不。收购后，可以直接给你 10% 股份。\n\n💬1🔄0❤️0👀19📊1",
+      "tags": [
+        "玩笑"
+      ],
+      "score": 20,
+      "summary": "用户表示只要资金够就收购OpenAI。",
+      "fetched_at": "2026-06-04T20:45:11.525932+08:00"
+    },
+    {
+      "title": "只要大家给我足够多的钱\n我就有百分百信心\n去收购 OpenAI\n真的只差钱了\n\n@sama",
+      "link": "https://x.com/lifesinger/status/2062513369576571207",
+      "published": "2026-06-04T20:34:41+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "只要大家给我足够多的钱  \n我就有百分百信心  \n去收购 OpenAI  \n真的只差钱了  \n  \n[@sama](https://x.com/sama)\n\n💬1🔄0❤️2👀55📊1",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-06-04T20:45:11.525994+08:00"
+    },
+    {
+      "title": "YouMind 的一个用户的使用手记\n有点小感动\n\n真想为他免单\n如果此推点赞过千\n就送这位老师一年 Max 会员",
+      "link": "https://x.com/lifesinger/status/2062508984331051305",
+      "published": "2026-06-04T20:17:16+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "YouMind 的一个用户的使用手记  \n有点小感动  \n  \n真想为他免单  \n如果此推点赞过千  \n就送这位老师一年 Max 会员\n\n![kkkkkw](https://pbs.twimg.com/profile_images/2062476586809741312/JDGtFxx__normal.jpg)\n\nkkkkkw@kkkkkw191524\n\n[x.com/i/article/2062…](http://x.com/i/article/2062479600522039296)\n\n[🔗 View Quoted Tweet](https://x.com/kkkkkw191524/status/2062479667186344044)\n\n💬2🔄0❤️8👀565📊3",
+      "tags": [
+        "YouMind",
+        "用户反馈"
+      ],
+      "score": 65,
+      "summary": "YouMind用户分享使用体验，创始人欲赠送会员。",
+      "fetched_at": "2026-06-04T20:45:11.526055+08:00"
+    },
+    {
+      "title": "这个实在太方便\n比 ChatGPT 方便\n比 Codex 方便\n比 Manus 方便\n马上去用",
+      "link": "https://x.com/lifesinger/status/2062490112769077475",
+      "published": "2026-06-04T19:02:16+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "这个实在太方便  \n比 ChatGPT 方便  \n比 Codex 方便  \n比 Manus 方便  \n马上去用\n\n![Nicolechan](https://pbs.twimg.com/profile_images/1980138155312304128/4C6tfjLW_normal.jpg)\n\nNicolechan@stark\\_nico99\n\n全网独家，YouMind全球首发X文章导入功能！  \n解决了X文章的一个超级大痛点  \n不知道大家写X文章的时候，会不会遇到这样的问题  \n从别的地方写好复制粘贴  \n结果图片不能粘贴，字符块也不能保留  \n都得自己手动一个个重新粘贴  \n  \nYouMind 黑科技彻底解决了这个卡点  \n每次至少为你节省10-30分钟的排版时间！  \n  \n至此，YouMind在X文章从创作到发布已经形成闭环  \n欢迎体验，欢迎留言\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062485666626506752/vid/avc1/3838x2160/0EsE7dD2VFdes8DW.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/stark_nico99/status/2062487151225496029/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/stark_nico99/status/2062487151225496029)\n\n💬3🔄0❤️7👀1172📊4",
+      "tags": [
+        "YouMind",
+        "X文章",
+        "导入"
+      ],
+      "score": 72,
+      "summary": "YouMind首发X文章导入功能，简化排版流程。",
+      "fetched_at": "2026-06-04T20:45:11.526116+08:00"
+    },
+    {
+      "title": "How to get ahead in life:\n\nDo what you said you would, when you said you would do it, even when you ...",
+      "link": "https://x.com/thejustinwelsh/status/2062505162803970135",
+      "published": "2026-06-04T20:02:04+08:00",
+      "source": "Justin Welsh(@thejustinwelsh)",
+      "content": "How to get ahead in life:  \n  \nDo what you said you would, when you said you would do it, even when you don't feel like it.\n\n💬34🔄4❤️50👀980📊33",
+      "tags": [
+        "人生建议"
+      ],
+      "score": 10,
+      "summary": "关于坚持承诺的人生建议。",
+      "fetched_at": "2026-06-04T20:45:11.526175+08:00"
+    },
+    {
+      "title": "The productivity of working 1 minute every 30 minutes for 16 hours (i.e. 32 minutes) steering agents...",
+      "link": "https://x.com/shl/status/2062506096711889199",
+      "published": "2026-06-04T20:05:47+08:00",
+      "source": "Sahil Lavingia(@shl)",
+      "content": "The productivity of working 1 minute every 30 minutes for 16 hours (i.e. 32 minutes) steering agents is much greater than working 8 hours a day (i.e. 480 minutes)\n\n💬3🔄0❤️9👀1089📊4",
+      "tags": [
+        "Agent生产力",
+        "工作方式"
+      ],
+      "score": 75,
+      "summary": "认为每30分钟工作1分钟指导Agent比传统工作8小时更高效。",
+      "fetched_at": "2026-06-04T20:45:11.526235+08:00"
+    },
+    {
+      "title": "今天 ListenHub 的AI 视频功能正式上线啦，人类用户和 Agent 现在都可以调用 ListenHub 的服务生成视频。\n\n目前已支持 HappyHorse、Seedance 2.0 等视频...",
+      "link": "https://x.com/oran_ge/status/2062511076529602908",
+      "published": "2026-06-04T20:25:34+08:00",
+      "source": "orange.ai(@oran_ge)",
+      "content": "今天 ListenHub 的AI 视频功能正式上线啦，人类用户和 Agent 现在都可以调用 ListenHub 的服务生成视频。  \n  \n目前已支持 HappyHorse、Seedance 2.0 等视频模型。  \n  \n输入一个想法，或使用参考图、参考视频，即可一键生成视频。  \n  \n人类使用：  \n  \nListenHub 官网： [listenhub.ai/zh/app/ai-video](https://listenhub.ai/zh/app/ai-video)  \n  \nAgent 使用：  \n  \nlistenhub-cli：[github.com/marswaveai/lis…](https://github.com/marswaveai/listenhub-cli)  \nskills： [github.com/marswaveai/ski…](https://github.com/marswaveai/skills)  \nopenapi： [listenhub.ai/docs/zh/openap…](https://listenhub.ai/docs/zh/openapi/api-reference/ai-video)\n\n![Tweet Image](https://pbs.twimg.com/media/HJ-C3C1aAAAlxb9.jpg)\n\n💬1🔄0❤️0👀179📊1",
+      "tags": [
+        "ListenHub",
+        "AI视频",
+        "Agent调用"
+      ],
+      "score": 75,
+      "summary": "ListenHub上线AI视频生成功能，支持Agent调用。",
+      "fetched_at": "2026-06-04T20:45:11.526294+08:00"
+    },
+    {
+      "title": "How Endava is redesigning software delivery around AI agents",
+      "link": "https://openai.com/index/endava-frontiers",
+      "published": "2026-06-04T20:00:00+08:00",
+      "source": "OpenAI News",
+      "content": "Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture across the enterprise.",
+      "tags": [
+        "AI Agent",
+        "软件交付",
+        "Endava"
+      ],
+      "score": 82,
+      "summary": "Endava利用AI Agent和Codex加速软件交付。",
+      "fetched_at": "2026-06-04T20:45:11.526353+08:00"
+    },
+    {
+      "title": "How a Culture of Data-Driven Conversations Can Support Platform Engineering",
+      "link": "https://www.infoq.com/news/2026/06/data-driven-platform-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-04T19:54:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/06/data-driven-platform-engineering/en/headerimage/generatedHeaderImage-1780255652688.jpg)\n\nTo provide SRE as a service, a team built a center of excellence, introducing Federated SREs and roles like production manager and technical tribe lead. They created a culture of data-driven conversations where SLOs and SLAs were democratised. Surviving growing cognitive load meant continuously simplifying architecture and embedding sovereignty and resilience into platform design decisions.\n\n*By Ben Linders*",
+      "tags": [
+        "平台工程",
+        "数据驱动",
+        "SRE"
+      ],
+      "score": 70,
+      "summary": "通过数据驱动对话支持平台工程实践。",
+      "fetched_at": "2026-06-04T20:45:11.526411+08:00"
     }
   ]
 }
