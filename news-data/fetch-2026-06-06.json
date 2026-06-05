@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "date": "2026-06-05"
+  },
+  "entries": [
+    {
+      "title": "Gemma 4 QAT models: Optimizing model compression for mobile and laptop efficiency",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/",
+      "published": "2026-06-06T00:00:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Hero_Visual_Blog.max-600x600.format-webp.webp)We’re releasing Gemma 4 quantization-aware training checkpoints, reducing memory requirements and improving on-device performance.",
+      "tags": [
+        "Gemma 4",
+        "量化训练",
+        "模型压缩"
+      ],
+      "score": 85,
+      "summary": "Google发布Gemma 4量化感知训练检查点，提升移动端和笔记本端性能。",
+      "fetched_at": "2026-06-06T00:31:24.711669+08:00"
+    },
+    {
+      "title": "The latest AI news we announced in May 2026",
+      "link": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-may-2026/",
+      "published": "2026-06-05T22:45:00+08:00",
+      "source": "The Keyword (blog.google) ",
+      "content": "![](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/May_AI_Recap_still.max-600x600.format-webp.webp)Here are Google’s latest AI updates from May 2026",
+      "tags": [
+        "Google AI",
+        "月度更新",
+        "2026年5月"
+      ],
+      "score": 70,
+      "summary": "Google总结2026年5月AI最新动态。",
+      "fetched_at": "2026-06-06T00:31:24.711755+08:00"
+    },
+    {
+      "title": "The most underrated thing in AI right now is that “good enough” local intelligence has arrived. \n\nGe...",
+      "link": "https://x.com/AiBreakfast/status/2062913273041944840",
+      "published": "2026-06-05T23:03:46+08:00",
+      "source": "AI Breakfast(@AiBreakfast)",
+      "content": "The most underrated thing in AI right now is that “good enough” local intelligence has arrived.   \n  \nGemma 4 12B on a 16GB laptop covers everything everything normal users need.  \n  \nUnlimited, free forever, and completely offline.\n\n💬5🔄5❤️27👀2100📊9",
+      "tags": [
+        "本地AI",
+        "Gemma 4",
+        "评论"
+      ],
+      "score": 65,
+      "summary": "KOL称Gemma 4 12B在16GB笔记本上实现足够好的本地AI体验。",
+      "fetched_at": "2026-06-06T00:31:24.711827+08:00"
+    },
+    {
+      "title": "Big congrats to our SAM 3D team for receiving a Best Paper Honorable Mention at #CVPR26! This presti...",
+      "link": "https://x.com/AIatMeta/status/2062920724944507095",
+      "published": "2026-06-05T23:33:22+08:00",
+      "source": "AI at Meta(@AIatMeta)",
+      "content": "Big congrats to our SAM 3D team for receiving a Best Paper Honorable Mention at #CVPR26! This prestigious recognition underscores their incredible work pushing the boundaries of computer vision.  \n  \nRead the paper here: [arxiv.org/abs/2511.16624](https://arxiv.org/abs/2511.16624)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062920606228664320/vid/avc1/2160x2160/tE2-24jHKhePgZNi.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/AIatMeta/status/2062920724944507095/video/1)\n\n💬5🔄4❤️53👀4284📊12",
+      "tags": [
+        "SAM 3D",
+        "CVPR",
+        "最佳论文"
+      ],
+      "score": 85,
+      "summary": "Meta的SAM 3D获CVPR 2026最佳论文荣誉提名。",
+      "fetched_at": "2026-06-06T00:31:24.711927+08:00"
+    },
+    {
+      "title": "Build Small Hackathon is live\nhttps://t.co/bl2p31oZP8",
+      "link": "https://x.com/_akhaliq/status/2062932640915685524",
+      "published": "2026-06-06T00:20:43+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "Build Small Hackathon is live  \n[x.com/i/broadcasts/1…](https://x.com/i/broadcasts/1kJzDDopqYqKv)\n\n💬1🔄0❤️2👀169📊1",
+      "tags": [
+        "Hackathon",
+        "推广"
+      ],
+      "score": 50,
+      "summary": "AK推广Build Small Hackathon活动。",
+      "fetched_at": "2026-06-06T00:31:24.711995+08:00"
+    },
+    {
+      "title": "Code2LoRA\n\nHypernetwork-Generated Adapters for Code Language Models under Software Evolution",
+      "link": "https://x.com/_akhaliq/status/2062927020191871323",
+      "published": "2026-06-05T23:58:23+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "Code2LoRA  \n  \nHypernetwork-Generated Adapters for Code Language Models under Software Evolution\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062926958573264897/vid/avc1/2940x1372/PEJ4qbYoYgtmTdyB.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/_akhaliq/status/2062927020191871323/video/1)\n\n💬4🔄3❤️8👀1304📊6",
+      "tags": [
+        "Code2LoRA",
+        "代码模型",
+        "LoRA"
+      ],
+      "score": 65,
+      "summary": "分享Code2LoRA论文，超网络生成代码语言模型适配器。",
+      "fetched_at": "2026-06-06T00:31:24.712059+08:00"
+    },
+    {
+      "title": "paper: https://t.co/aaATlynZ0K",
+      "link": "https://x.com/_akhaliq/status/2062927021664043202",
+      "published": "2026-06-05T23:58:23+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2606.06…](https://huggingface.co/papers/2606.06492)\n\n💬0🔄0❤️0👀769📊1",
+      "tags": [
+        "论文链接"
+      ],
+      "score": 45,
+      "summary": "AK分享论文链接。",
+      "fetched_at": "2026-06-06T00:31:24.712121+08:00"
+    },
+    {
+      "title": "paper: https://t.co/vqLhUTlgMB",
+      "link": "https://x.com/_akhaliq/status/2062926401385230762",
+      "published": "2026-06-05T23:55:56+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "paper: [huggingface.co/papers/2606.05…](https://huggingface.co/papers/2606.05553)\n\n💬0🔄0❤️1👀985",
+      "tags": [
+        "论文链接"
+      ],
+      "score": 45,
+      "summary": "AK分享论文链接。",
+      "fetched_at": "2026-06-06T00:31:24.712182+08:00"
+    },
+    {
+      "title": "ArcANE\n\nDo Role-Playing Language Agents Stay in Character at the Right Time?",
+      "link": "https://x.com/_akhaliq/status/2062926399019663613",
+      "published": "2026-06-05T23:55:55+08:00",
+      "source": "AK(@_akhaliq)",
+      "content": "ArcANE  \n  \nDo Role-Playing Language Agents Stay in Character at the Right Time?\n\n![Tweet Image](https://pbs.twimg.com/media/HKD8l-AWQAA-aUV.jpg)\n\n💬2🔄0❤️5👀1206📊4",
+      "tags": [
+        "ArcANE",
+        "角色扮演",
+        "Agent"
+      ],
+      "score": 65,
+      "summary": "分享ArcANE论文，研究角色扮演语言Agent的一致性。",
+      "fetched_at": "2026-06-06T00:31:24.712241+08:00"
+    },
+    {
+      "title": "More than half of Cognition's first 50 employees were former founders. \n\n@ScottWu46 sat down with @b...",
+      "link": "https://x.com/cognition/status/2062923088778367314",
+      "published": "2026-06-05T23:42:46+08:00",
+      "source": "Cognition(@cognition_labs)",
+      "content": "More than half of Cognition's first 50 employees were former founders.   \n  \n[@ScottWu46](https://x.com/ScottWu46) sat down with [@breeves08](https://x.com/breeves08) and [@lux\\_capital](https://x.com/lux_capital) to talk about correctness over comfort, staying focused on our mission, and what it takes to build an incredible team.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062921952285614080/vid/avc1/3840x2160/HRH024iqLMWLCXpy.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/cognition/status/2062923088778367314/video/1)\n\n💬2🔄2❤️16👀805📊4",
+      "tags": [
+        "Cognition",
+        "创始人",
+        "团队文化"
+      ],
+      "score": 70,
+      "summary": "Cognition透露前50名员工中过半曾是创始人。",
+      "fetched_at": "2026-06-06T00:31:24.712301+08:00"
+    },
+    {
+      "title": "Thank you to @lux_capital for hosting. Full video:\n\nhttps://t.co/FPTMbeRZoQ",
+      "link": "https://x.com/cognition/status/2062923090229637185",
+      "published": "2026-06-05T23:42:46+08:00",
+      "source": "Cognition(@cognition_labs)",
+      "content": "Thank you to [@lux\\_capital](https://x.com/lux_capital) for hosting. Full video:  \n  \n[youtube.com/watch?v=3z1xNM…](https://www.youtube.com/watch?v=3z1xNMndrEY)\n\n💬0🔄0❤️1👀779",
+      "tags": [
+        "Cognition",
+        "视频"
+      ],
+      "score": 50,
+      "summary": "Cognition感谢并分享完整访谈视频链接。",
+      "fetched_at": "2026-06-06T00:31:24.712362+08:00"
+    },
+    {
+      "title": "发现一个新的 Mac 端照片管理和编辑软件。\n\nhttps://t.co/ZoUjDQf6FU",
+      "link": "https://x.com/dingyi/status/2062912841913717225",
+      "published": "2026-06-05T23:02:03+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "发现一个新的 Mac 端照片管理和编辑软件。  \n  \n[aphera.co](https://aphera.co/)\n\n💬0🔄0❤️4👀877📊1",
+      "tags": [
+        "Mac",
+        "照片管理"
+      ],
+      "score": 30,
+      "summary": "发现新Mac照片管理软件Aphera。",
+      "fetched_at": "2026-06-06T00:31:24.712422+08:00"
+    },
+    {
+      "title": "其实 qwen 3.7 挺强的，很多人还不信以为是商单昧着良心说话，你试过就知道。现在国产这些模型都不差。",
+      "link": "https://x.com/dingyi/status/2062908082053951599",
+      "published": "2026-06-05T22:43:08+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "其实 qwen 3.7 挺强的，很多人还不信以为是商单昧着良心说话，你试过就知道。现在国产这些模型都不差。\n\n![Paidax](https://pbs.twimg.com/profile_images/1747877404532776960/uUTVQ-2P_normal.jpg)\n\nPaidax@xin\\_pai88825\n\n现在用国产模型也能快速搭建出这种具有美感的客户端界面。一句话直出，基本没做什么调试。我准备录一期视频给大家演示一下\n\n![Tweet Image](https://pbs.twimg.com/media/HKCnngybIAAYBI4.jpg)![Tweet Image](https://pbs.twimg.com/media/HKCnxjaaIAAMdnT.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/xin_pai88825/status/2062833455126475045)\n\n💬9🔄0❤️20👀4723📊8",
+      "tags": [
+        "Qwen 3.7",
+        "国产模型",
+        "评论"
+      ],
+      "score": 65,
+      "summary": "个人用户称Qwen 3.7很强，国产模型不差。",
+      "fetched_at": "2026-06-06T00:31:24.712481+08:00"
+    },
+    {
+      "title": "Tech stocks are sliding. \n\nMaybe S&amp;P’s decision to make mega IPOs stand on their two feet is giv...",
+      "link": "https://x.com/GaryMarcus/status/2062915701254365340",
+      "published": "2026-06-05T23:13:24+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Tech stocks are sliding.   \n  \nMaybe S&P’s decision to make mega IPOs stand on their two feet is giving speculators pause? 🤔\n\n![Tweet Image](https://pbs.twimg.com/media/HKDyw5EXsAAal64.jpg)\n\n💬8🔄9❤️49👀2078📊13",
+      "tags": [
+        "科技股",
+        "股市"
+      ],
+      "score": 40,
+      "summary": "Gary Marcus评论科技股下跌。",
+      "fetched_at": "2026-06-06T00:31:24.712540+08:00"
+    },
+    {
+      "title": "一个开源 macOS 原生 app（Swift 6 + SwiftUI + MLX），干的事是把长视频一键剪成多平台可发的竖版短视频。\n\nhttps://t.co/0IJqbbWRen",
+      "link": "https://x.com/geekbb/status/2062906213554393301",
+      "published": "2026-06-05T22:35:42+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "一个开源 macOS 原生 app（Swift 6 + SwiftUI + MLX），干的事是把长视频一键剪成多平台可发的竖版短视频。  \n  \n[github.com/mutonby/shortc…](https://github.com/mutonby/shortcast)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062906134680465409/vid/avc1/640x360/uaBROLVJnW9P2MzV.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/geekbb/status/2062906213554393301/video/1)\n\n💬3🔄3❤️20👀3320📊11",
+      "tags": [
+        "开源",
+        "视频剪辑",
+        "MLX"
+      ],
+      "score": 70,
+      "summary": "开源macOS应用Shortcast，用MLX将长视频转为竖版短视频。",
+      "fetched_at": "2026-06-06T00:31:24.712599+08:00"
+    },
+    {
+      "title": "Every platform will have a headless version",
+      "link": "https://x.com/hwchase17/status/2062917963934560397",
+      "published": "2026-06-05T23:22:24+08:00",
+      "source": "Harrison Chase(@hwchase17)",
+      "content": "Every platform will have a headless version\n\n![Witan Labs](https://pbs.twimg.com/profile_images/2062501450932994048/a3Lu-sJT_normal.png)\n\nWitan Labs@WitanLabs\n\nAt [@WitanLabs](https://x.com/WitanLabs) we're building the headless Office stack for AI agents.  \n  \nHere's what we worked on this week — and what we're building next ↓\n\n[🔗 View Quoted Tweet](https://x.com/WitanLabs/status/2062565682730975355)\n\n💬7🔄0❤️22👀3104📊7",
+      "tags": [
+        "Headless",
+        "Agent平台",
+        "LangChain"
+      ],
+      "score": 80,
+      "summary": "LangChain创始人Harrison Chase称每个平台都会有Headless版本。",
+      "fetched_at": "2026-06-06T00:31:24.712659+08:00"
+    },
+    {
+      "title": "Build Small Hackathon https://t.co/SPUEZ049RM",
+      "link": "https://x.com/huggingface/status/2062927822444995057",
+      "published": "2026-06-06T00:01:34+08:00",
+      "source": "Hugging Face(@huggingface)",
+      "content": "Build Small Hackathon [x.com/i/broadcasts/1…](https://x.com/i/broadcasts/1kJzDDopqYqKv)\n\n💬2🔄2❤️8👀1695📊4",
+      "tags": [
+        "Hackathon",
+        "Hugging Face"
+      ],
+      "score": 70,
+      "summary": "Hugging Face推广Build Small Hackathon。",
+      "fetched_at": "2026-06-06T00:31:24.712718+08:00"
+    },
+    {
+      "title": "Kling AI Anniversary II Creation Showreel Contest is now open! 🎁\nJune 3 - June 17, 2026 (Pacific Ti...",
+      "link": "https://x.com/Kling_ai/status/2062927429359092005",
+      "published": "2026-06-06T00:00:01+08:00",
+      "source": "Kling AI(@Kling_ai)",
+      "content": "Kling AI Anniversary II Creation Showreel Contest is now open! 🎁  \nJune 3 - June 17, 2026 (Pacific Time, UTC-8)  \nSubmit your \"Anniversary Memories\" or \"Creation Showreel\" made with Kling AI.  \nPrizes include cash, credits, and exclusive Kling AI anniversary gift boxes!   \nCheck our official site for more information.  \nYour creativity is the best birthday gift we could receive!\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062874739773784064/vid/avc1/2882x2160/qqP4kAWEK_Dq6S2G.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Kling_ai/status/2062927429359092005/video/1)\n\n💬0🔄3❤️20👀720📊4",
+      "tags": [
+        "Kling AI",
+        "比赛",
+        "周年庆"
+      ],
+      "score": 70,
+      "summary": "Kling AI开启周年庆创作比赛，奖品含现金和积分。",
+      "fetched_at": "2026-06-06T00:31:24.712776+08:00"
+    },
+    {
+      "title": "The Skills you create in LangSmith Fleet can be shared across your team, and they stay in sync as th...",
+      "link": "https://x.com/LangChain/status/2062927890262483177",
+      "published": "2026-06-06T00:01:51+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "The Skills you create in LangSmith Fleet can be shared across your team, and they stay in sync as they're improved over time.  \n  \nDomain experts create the skill → The rest of the team uses it in their agents  \n  \nNo extra coordination required\n\n![Tweet Image](https://pbs.twimg.com/media/HKD9_AHWQAEPu4q.jpg)\n\n💬1🔄0❤️1👀273📊2",
+      "tags": [
+        "LangSmith",
+        "Skills",
+        "Agent"
+      ],
+      "score": 80,
+      "summary": "LangChain推出LangSmith Fleet Skills，可团队共享并同步更新。",
+      "fetched_at": "2026-06-06T00:31:24.712855+08:00"
+    },
+    {
+      "title": "Learn about Skills in LangSmith Fleet. https://t.co/zsyEdIms9X",
+      "link": "https://x.com/LangChain/status/2062927891877200168",
+      "published": "2026-06-06T00:01:51+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Learn about Skills in LangSmith Fleet. [langchain.com/blog/skills-in…](https://www.langchain.com/blog/skills-in-langsmith-fleet)\n\n💬0🔄0❤️0👀229",
+      "tags": [
+        "LangSmith",
+        "博客"
+      ],
+      "score": 50,
+      "summary": "LangChain博客链接介绍LangSmith Fleet Skills。",
+      "fetched_at": "2026-06-06T00:31:24.712925+08:00"
+    },
+    {
+      "title": "Read the full LangChain Labs study with @Harvey https://t.co/imximoYooo?",
+      "link": "https://x.com/LangChain/status/2062912661910598061",
+      "published": "2026-06-05T23:01:20+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Read the full LangChain Labs study with [@Harvey](https://x.com/Harvey)[langchain.com/blog/designing…](https://www.langchain.com/blog/designing-efficient-verifiers-for-legal-agents)?\n\n💬0🔄0❤️2👀890",
+      "tags": [
+        "LangChain",
+        "Harvey",
+        "验证器"
+      ],
+      "score": 85,
+      "summary": "LangChain与Harvey联合研究成果，设计高效验证器用于法律Agent。",
+      "fetched_at": "2026-06-06T00:31:24.712984+08:00"
+    },
+    {
+      "title": "Verifier costs can amplify during RL post-training.\n\nLLM-as-judge systems turn task rubrics into rew...",
+      "link": "https://x.com/LangChain/status/2062912660081950952",
+      "published": "2026-06-05T23:01:19+08:00",
+      "source": "LangChain(@LangChainAI)",
+      "content": "Verifier costs can amplify during RL post-training.  \n  \nLLM-as-judge systems turn task rubrics into reward signals, and cheaper reward signals make it practical to run more experiments, audit more rollouts, and iterate more quickly.\n\n![Tweet Image](https://pbs.twimg.com/media/HKDwIeUXgAAr7AA.jpg)\n\n💬1🔄1❤️9👀1224📊2",
+      "tags": [
+        "LLM-as-Judge",
+        "RL",
+        "验证器"
+      ],
+      "score": 80,
+      "summary": "LangChain讨论RL后训练中验证器成本放大问题，LLM作为裁判可降低成本。",
+      "fetched_at": "2026-06-06T00:31:24.713090+08:00"
+    },
+    {
+      "title": "Cheat code:\n\nIf you need an integration, just ask Lovable.\n\nNo need to scroll through settings. You ...",
+      "link": "https://x.com/Lovable/status/2062919278119317629",
+      "published": "2026-06-05T23:27:37+08:00",
+      "source": "Lovable(@lovable_dev)",
+      "content": "Cheat code:  \n  \nIf you need an integration, just ask Lovable.  \n  \nNo need to scroll through settings. You can set any connector up end-to-end through chat.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062919212042227712/vid/avc1/1920x1080/rqqkees0sFYI_U9V.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Lovable/status/2062919278119317629/video/1)\n\n💬0🔄1❤️15👀460📊2",
+      "tags": [
+        "Lovable",
+        "集成",
+        "AI编程"
+      ],
+      "score": 75,
+      "summary": "Lovable演示通过聊天即可完成集成配置，无需手动设置。",
+      "fetched_at": "2026-06-06T00:31:24.713163+08:00"
+    },
+    {
+      "title": "https://t.co/jZ4lNBRDxq",
+      "link": "https://x.com/ManusAI/status/2062913499869909351",
+      "published": "2026-06-05T23:04:40+08:00",
+      "source": "ManusAI(@ManusAI_HQ)",
+      "content": "[x.com/i/article/2062…](http://x.com/i/article/2062900473674518528)\n\n💬0🔄2❤️28👀3247📊5",
+      "tags": [
+        "ManusAI",
+        "文章"
+      ],
+      "score": 50,
+      "summary": "ManusAI转发了一篇文章。",
+      "fetched_at": "2026-06-06T00:31:24.713225+08:00"
+    },
+    {
+      "title": "𝗪𝗲𝗯𝗶𝗻𝗮𝗿 𝗥𝗲𝗺𝗶𝗻𝗱𝗲𝗿 | 𝗪𝗵𝗮𝘁’𝘀 𝗡𝗲𝘄 𝗶𝗻 𝗠𝗶𝗹𝘃𝘂𝘀 𝟯.𝟬: 𝗟𝗶𝘃𝗲 ...",
+      "link": "https://x.com/milvusio/status/2062912578901172621",
+      "published": "2026-06-05T23:01:00+08:00",
+      "source": "Milvus(@milvusio)",
+      "content": "𝗪𝗲𝗯𝗶𝗻𝗮𝗿 𝗥𝗲𝗺𝗶𝗻𝗱𝗲𝗿 | 𝗪𝗵𝗮𝘁’𝘀 𝗡𝗲𝘄 𝗶𝗻 𝗠𝗶𝗹𝘃𝘂𝘀 𝟯.𝟬: 𝗟𝗶𝘃𝗲 𝗪𝗮𝗹𝗸𝘁𝗵𝗿𝗼𝘂𝗴𝗵 & 𝗔𝗠𝗔, 𝗵𝗮𝗽𝗽𝗲𝗻𝗶𝗻𝗴 𝗻𝗲𝘅𝘁 𝗠𝗼𝗻𝗱𝗮𝘆  \n  \nMilvus 3.0 marks one of the most important architectural updates since the project began. If you’re using Milvus to build RAG, multimodal search, recommendation systems, and AI agent memory, or if you’re dealing with data silos, top-K limits, schema evolution, and hybrid search pipelines, this webinar is for you.  \n  \nCore Milvus maintainers Li Liu and Jiang Chen will walk you through the key design decisions behind Milvus 3.0 and why they matter for your stack. We’ll also set aside 15–20 minutes for an AMA, so you can ask your questions directly.  \n  \nCan’t join live? Register now and we’ll send you the recording and demo after the session.\n\n![Milvus](https://pbs.twimg.com/profile_images/1550408337908383744/HJl3y0Io_normal.jpg)\n\nMilvus@milvusio\n\n🌐 𝗪𝗲𝗯𝗶𝗻𝗮𝗿 | 𝗪𝗵𝗮𝘁’𝘀 𝗡𝗲𝘄 𝗶𝗻 𝗠𝗶𝗹𝘃𝘂𝘀 𝟯.𝟬: 𝗟𝗶𝘃𝗲 𝗪𝗮𝗹𝗸𝘁𝗵𝗿𝗼𝘂𝗴𝗵 & 𝗔𝗠𝗔, 𝗝𝘂𝗻𝗲 𝟴 𝗼𝗻𝗹𝗶𝗻𝗲  \n  \nMilvus 3.0 beta is the biggest architectural upgrade since the project began. It brings native support for indexing and querying vectors directly on your data lake, along with a query engine that goes beyond top-K search.  \n  \nIn this live session, core maintainers Li Liu and Jiang Chen will walk through what shipped, the design choices behind it, and how Milvus 3.0 powers 𝗭𝗶𝗹𝗹𝗶𝘇 𝗩𝗲𝗰𝘁𝗼𝗿 𝗟𝗮𝗸𝗲𝗯𝗮𝘀𝗲.  \n  \n🎤 𝗧𝗼𝗽𝗶𝗰𝘀  \n• What changed in Milvus 3.0 beta  \n• Why data lake-native vector search matters  \n• What’s in beta now and what’s coming in GA  \n• How Milvus 3.0 powers Zilliz Vector Lakebase  \n• 15–20[zilliz.com/event/whats-ne…](https://zilliz.com/event/whats-new-in-milvus-3-0-beta?utm_source=x) maintainers  \n  \n📅 𝗝𝘂𝗻𝗲 𝟴, 𝟮𝟬𝟮𝟲, 𝟰:𝟬𝟬 𝗽𝗺 𝗣𝗗𝗧  \n🔗 Register here: <https://t.co/ccpclyAQa8>  \n  \nBring your questions about migration, performance, arc#Milvusr#VectorDatabasee#Zilliz’d like to ask the maintainers. Looking forward to the conversation!   \n#Milvus#VectorDatabase#Zilliz\n\n![Tweet Image](https://pbs.twimg.com/media/HJk4wpUaMAALaGa.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/milvusio/status/2060741259732676904)\n\n💬0🔄0❤️0👀27",
+      "tags": [
+        "Milvus 3.0",
+        "向量数据库",
+        "网络研讨会"
+      ],
+      "score": 79,
+      "summary": "Milvus 3.0 beta网络研讨会预告，介绍数据湖原生向量搜索。",
+      "fetched_at": "2026-06-06T00:31:24.713288+08:00"
+    },
+    {
+      "title": "An issue caused some user accounts to be incorrectly suspended. \n\nWe’re restoring access and working...",
+      "link": "https://x.com/OpenAI/status/2062927046448431587",
+      "published": "2026-06-05T23:58:29+08:00",
+      "source": "OpenAI(@OpenAI)",
+      "content": "An issue caused some user accounts to be incorrectly suspended.   \n  \nWe’re restoring access and working through related subscription and credit issues.  \n[status.openai.com/incidents/ejj4…](https://status.openai.com/incidents/ejj40mae)\n\n💬65🔄45❤️334👀15793📊90",
+      "tags": [
+        "OpenAI",
+        "账户",
+        "故障"
+      ],
+      "score": 70,
+      "summary": "OpenAI处理用户账号误封问题，正在恢复访问。",
+      "fetched_at": "2026-06-06T00:31:24.713348+08:00"
+    },
+    {
+      "title": "Applet: https://t.co/Y1G5QS0Udp\n\nFull Cereal Show: https://t.co/1zxLRWjXaZ",
+      "link": "https://x.com/_philschmid/status/2062908193823420652",
+      "published": "2026-06-05T22:43:35+08:00",
+      "source": "Philipp Schmid(@_philschmid)",
+      "content": "Applet: [ai.studio/apps/bundled/a…](https://ai.studio/apps/bundled/ai_radio?fullscreenApplet=true)  \n  \nFull Cereal Show: […7360428-853813963450.us-east1.run.app/?share\\_id=show…](https://ai-radio-37360428-853813963450.us-east1.run.app/?share_id=show-9ded7d36d707b606)\n\n💬0🔄0❤️1👀805📊1",
+      "tags": [
+        "AI Studio",
+        "应用"
+      ],
+      "score": 50,
+      "summary": "Philipp Schmid分享AI Radio应用链接。",
+      "fetched_at": "2026-06-06T00:31:24.713408+08:00"
+    },
+    {
+      "title": "Milk first or cereal first? I'm a cereal-first person. Apparently cereal acts as \"a baffle\" that sto...",
+      "link": "https://x.com/_philschmid/status/2062908191634076056",
+      "published": "2026-06-05T22:43:34+08:00",
+      "source": "Philipp Schmid(@_philschmid)",
+      "content": "Milk first or cereal first? I'm a cereal-first person. Apparently cereal acts as \"a baffle\" that stops milk from splashing, but pouring milk first causes a perception bias that leads to overeating. Wdyt?   \n  \nThis is all generated by Gemini via a single prompt built on Managed Agents. The script, the voices, the background music. One prompt.   \n  \nFree to try in AI Studio.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062907807238594561/vid/avc1/3472x2160/dgjTOATIXqKW_ncD.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/_philschmid/status/2062908191634076056/video/1)\n\n💬3🔄1❤️16👀1463📊7",
+      "tags": [
+        "Gemini",
+        "Agent",
+        "AI Studio"
+      ],
+      "score": 65,
+      "summary": "演示用Gemini单提示生成完整AI广播节目。",
+      "fetched_at": "2026-06-06T00:31:24.713467+08:00"
+    },
+    {
+      "title": "Fast retrieval is table stakes. Retrieval that respects who's asking, what they're allowed to see, a...",
+      "link": "https://x.com/qdrant_engine/status/2062912336856301744",
+      "published": "2026-06-05T23:00:02+08:00",
+      "source": "Qdrant(@qdrant_engine)",
+      "content": "Fast retrieval is table stakes. Retrieval that respects who's asking, what they're allowed to see, and what policies apply is a much harder problem.  \n  \nMurthy Chandrapaty and Ankush Gumber from [@Adobe](https://x.com/Adobe) are coming to Vector Space Day to show a concrete architecture that solves it: Qdrant's vector search combined with a [@neo4j](https://x.com/neo4j) graph governance layer, so agents retrieve fast and stay policy-compliant. They'll demo it live, showing how the same query returns different results for different users based on governance, not just relevance.  \n  \nIf you're building enterprise AI, this is the architecture talk you've been waiting for.  \n  \nGet your ticket at [luma.com/vsd-sf](http://luma.com/vsd-sf)\n\n![Tweet Image](https://pbs.twimg.com/media/HJk_R-SbgAAeoKQ.jpg)\n\n💬4🔄1❤️4👀68📊5",
+      "tags": [
+        "Qdrant",
+        "向量搜索",
+        "活动"
+      ],
+      "score": 70,
+      "summary": "Qdrant与Adobe合作演示结合向量搜索与图治理层的企业级检索架构。",
+      "fetched_at": "2026-06-06T00:31:24.713526+08:00"
+    },
+    {
+      "title": "Prompt 1:\nBold lifestyle product advertising, vibrant neon-lime wellness branding, only three premiu...",
+      "link": "https://x.com/recraftai/status/2062906139763736863",
+      "published": "2026-06-05T22:35:25+08:00",
+      "source": "Recraft(@recraftai)",
+      "content": "Prompt 1:  \nBold lifestyle product advertising, vibrant neon-lime wellness branding, only three premium supplement jars labeled 'ELECTRIC BLOOM', arranged naturally on sunlit asphalt, oversized mesh tote bag containing neon-green pears and a few branded products, stylish woman wearing ribbed neon-green socks decorated with tiny playful sheep illustrations, paired with elegant pointed heels, strong afternoon sunlight creating crisp graphic shadows, striking neon-lime and warm neutral color palette, playful fashion-editorial composition, premium wellness campaign, contemporary direct-to-consumer branding, highly art-directed product placement, textured pavement surface, effortless luxury lifestyle mood, dynamic top-down perspective, clean minimalist packaging design with rounded typography, fashion and product integration, modern beauty and wellness aesthetic, photorealistic commercial photography, magazine-quality imagery, bold color contrast, ultra-sharp details, fewer objects, spacious composition, premium advertising photography, natural sunlight, fresh youthful energy.  \n  \nPrompt 2:  \nUltra-premium fragrance campaign photography, glossy black-red glass perfume bottle labeled 'NOCTURNA ROUGE', elegant understated packaging with subtle typography naturally integrated into the bottle design, partially submerged in dark burgundy liquid, surrounded by oversized ripe black-cherry plums and deep crimson nectarines with mirror-like reflections, dramatic low-key lighting, cinematic luxury beauty advertising, rich monochromatic red palette, wet surfaces with tiny droplets, reflective highlights, moody atmosphere, high contrast, liquid ripples around bottle, sophisticated sensual branding, understated visual identity, refined label hierarchy, branding secondary to the overall composition, editorial perfume campaign for a niche fragrance house, macro product photography, shallow depth of field, impeccable retouching, dark reflective background, luxury packaging design, contemporary fashion magazine aesthetic, photorealistic, ultra detailed, 85mm lens, premium commercial lighting, subtle glow from label, elegant composition with objects floating naturally in liquid, authentic luxury feel, quiet sophistication, minimal distractions, premium beauty editorial.  \n  \nPrompt 3:  \nStylish South Asian woman with long black hair blowing in the wind, wearing an oversized powder-blue tailored suit with sculptural proportions, leaning toward the camera with one hand reaching into the foreground, dramatic ultra-wide lens perspective, reflective contemporary architecture with curved glass facades towering overhead, bright cloudless sky, strong sunlight, silver jewelry catching the light, dynamic fashion pose, bold foreshortening effect, modern luxury editorial photography, clean urban environment, architectural fashion campaign, fresh contemporary styling, confident expression, premium commercial photography, highly detailed fabrics, natural skin texture, vibrant blue and silver color palette, striking perspective distortion, photorealistic, ultra detailed, no text, no typography, no branding.  \n  \nPrompt 4:  \nLuxury skincare product photography viewed from inside an open caramel leather tote bag, elegant hand reaching toward frosted glass serum bottle labeled 'AURELIA ELIXIR', surrounded by premium everyday essentials, cognac leather wallet, gold-accent cosmetics, designer sunglasses, textured leather accessories, warm golden-hour sunlight streaming through opening, dramatic highlights and shadows, intimate perspective, sophisticated travel beauty aesthetic, rich tan and camel color palette, refined lifestyle branding, editorial commercial photography, premium wellness campaign, realistic leather textures, shallow depth of field, high-end product storytelling, quiet luxury mood, photorealistic rendering, ultra detailed, luxury magazine advertising style, natural sunlight, elevated minimalist composition, warm cinematic atmosphere.\n\n💬0🔄0❤️1👀165",
+      "tags": [
+        "Recraft",
+        "图像生成",
+        "Prompt"
+      ],
+      "score": 70,
+      "summary": "Recraft展示V4.1版本的产品广告和香水摄影Prompt。",
+      "fetched_at": "2026-06-06T00:31:24.713584+08:00"
+    },
+    {
+      "title": "From bold product campaigns to premium lifestyle photography, V4.1 delivers sharper aesthetics, stro...",
+      "link": "https://x.com/recraftai/status/2062905928639226321",
+      "published": "2026-06-05T22:34:34+08:00",
+      "source": "Recraft(@recraftai)",
+      "content": "From bold product campaigns to premium lifestyle photography, V4.1 delivers sharper aesthetics, stronger brand consistency, and more realistic details straight out of the box.  \n  \nPrompts ↓\n\n![Tweet Image](https://pbs.twimg.com/media/HKDp_ltXoAEgiAE.jpg)![Tweet Image](https://pbs.twimg.com/media/HKDp_lKXkAAz9n1.jpg)![Tweet Image](https://pbs.twimg.com/media/HKDp_j8XYAAfj27.jpg)![Tweet Image](https://pbs.twimg.com/media/HKDp_lYXcAAgUnF.jpg)\n\n💬1🔄1❤️9👀223📊3",
+      "tags": [
+        "Recraft V4.1",
+        "图像生成",
+        "更新"
+      ],
+      "score": 80,
+      "summary": "Recraft发布V4.1，提升品牌一致性和细节真实感。",
+      "fetched_at": "2026-06-06T00:31:24.713642+08:00"
+    },
+    {
+      "title": "重工雕花的红木家具啊，奢侈服装啊....文玩啊，高端酒啊，甚至是珠宝啊....",
+      "link": "https://x.com/feltanimalworld/status/2062909776594362590",
+      "published": "2026-06-05T22:49:52+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "重工雕花的红木家具啊，奢侈服装啊....文玩啊，高端酒啊，甚至是珠宝啊....\n\n💬0🔄0❤️0👀595",
+      "tags": [
+        "闲聊"
+      ],
+      "score": 30,
+      "summary": "无关AI的闲聊话题。",
+      "fetched_at": "2026-06-06T00:31:24.713699+08:00"
+    },
+    {
+      "title": "车库创业在AI的这几年内：许多软件工程师开始学习硬件，硬件工程师（认识的不多）估计也差不多。CSEEAI开始边界模糊；随着生产资料的“台面化”，越来越多人开始创造homelab; 我反正现在越来越觉得...",
+      "link": "https://x.com/feltanimalworld/status/2062909444640448878",
+      "published": "2026-06-05T22:48:33+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "车库创业在AI的这几年内：许多软件工程师开始学习硬件，硬件工程师（认识的不多）估计也差不多。CSEEAI开始边界模糊；随着生产资料的“台面化”，越来越多人开始创造homelab; 我反正现在越来越觉得奢侈LV包没啥技术含量，不如mac studio。随着人类整体智力提高，这种消费会缩水。许多非功能性制造也是。\n\n![LotusDecoder](https://pbs.twimg.com/profile_images/1996867470716723200/Ix9VzbOK_normal.jpg)\n\nLotusDecoder@LotusDecoder\n\n[@feltanimalworld](https://x.com/feltanimalworld) 明白了，我确实很有兴趣，  \n而且也适合车库创业，  \n个人或小公司训练基座模型这些重资产业务是很困难的，  \n但是做一个改进自己生活工作的，AI硬件，却是条件充足得多。\n\n[🔗 View Quoted Tweet](https://x.com/LotusDecoder/status/2062876382372540801)\n\n💬1🔄0❤️8👀1783📊3",
+      "tags": [
+        "AI创业",
+        "车库创业"
+      ],
+      "score": 60,
+      "summary": "个人观点：AI时代车库创业增多，软硬件边界模糊。",
+      "fetched_at": "2026-06-06T00:31:24.713758+08:00"
+    },
+    {
+      "title": "Wife: Did you hire a clown for the party?\n\nHusband: I got a robot instead. We’ll put a fun wig on it...",
+      "link": "https://x.com/TheRundownAI/status/2062913997225984253",
+      "published": "2026-06-05T23:06:38+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Wife: Did you hire a clown for the party?  \n  \nHusband: I got a robot instead. We’ll put a fun wig on it!   \n  \nWife: Is that safe?   \n  \nHusband: Yeah, totally\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062626826749407232/vid/avc1/720x1280/oAQlYsNhh8G31e5X.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/nexta_tv/status/2062693385698157021/video/1)\n\n💬3🔄1❤️8👀1403📊4",
+      "tags": [
+        "机器人",
+        "娱乐"
+      ],
+      "score": 60,
+      "summary": "机器人代替小丑的趣味视频。",
+      "fetched_at": "2026-06-06T00:31:24.713817+08:00"
+    },
+    {
+      "title": "Read more: https://t.co/xD3vSJBXCR",
+      "link": "https://x.com/TheRundownAI/status/2062905074687320257",
+      "published": "2026-06-05T22:31:11+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Read more: [tech.therundown.ai/p/google-turns…](https://tech.therundown.ai/p/google-turns-search-into-creator-hubs)\n\n💬0🔄0❤️1👀1127",
+      "tags": [
+        "文章链接"
+      ],
+      "score": 40,
+      "summary": "The Rundown AI分享文章链接。",
+      "fetched_at": "2026-06-06T00:31:24.713905+08:00"
+    },
+    {
+      "title": "Top stories in tech today:\n\n- Google built a Linktree for creators\n- Block’s $25 wand pays by wave\n-...",
+      "link": "https://x.com/TheRundownAI/status/2062905068077093103",
+      "published": "2026-06-05T22:31:09+08:00",
+      "source": "The Rundown AI(@TheRundownAI)",
+      "content": "Top stories in tech today:  \n  \n- Google built a Linktree for creators  \n- Block’s $25 wand pays by wave  \n- 23andMe returns with genome moonshot  \n- Researchers solve space laundry problem   \n- Quick hits on other tech news\n\n![Tweet Image](https://pbs.twimg.com/media/HKDpORtXkAADb3h.jpg)\n\n💬6🔄0❤️3👀1378📊6",
+      "tags": [
+        "科技摘要"
+      ],
+      "score": 60,
+      "summary": "当日科技新闻摘要，包含Google、Block等。",
+      "fetched_at": "2026-06-06T00:31:24.713968+08:00"
+    },
+    {
+      "title": "Tune in: https://t.co/9Er5e8GGoN",
+      "link": "https://x.com/ycombinator/status/2062910573961232558",
+      "published": "2026-06-05T22:53:02+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Tune in: [youtu.be/mjmswQurIU4](https://youtu.be/mjmswQurIU4)\n\n![Tweet Image](https://pbs.twimg.com/media/HKDqtizbUAA1-3N.jpg)\n\n💬0🔄0❤️8👀2850📊1",
+      "tags": [
+        "YC",
+        "直播"
+      ],
+      "score": 50,
+      "summary": "YC发布直播链接。",
+      "fetched_at": "2026-06-06T00:31:24.714027+08:00"
+    },
+    {
+      "title": "Back in 2023, Max Junestrand was a college student in Sweden with a McKinsey offer in his back pocke...",
+      "link": "https://x.com/ycombinator/status/2062910570589036965",
+      "published": "2026-06-05T22:53:01+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "Back in 2023, Max Junestrand was a college student in Sweden with a McKinsey offer in his back pocket. Instead, he and his two co-founders went all in on legal AI and built [@WeAreLegora](https://x.com/WeAreLegora) (YC W24) into one of the fastest-growing enterprise companies in history. In just 18 months, Legora surpassed $100M in ARR.  \n  \nToday, the company is one of Europe’s most valuable AI startups, recently valued at $5.6B, with nearly 500 employees serving 1,000+ law firms and legal organizations across 50+ markets.  \n  \nIn this fireside with YC's [@gustaf](https://x.com/gustaf) at our Stockholm event in April, [@MaxJunestrand](https://x.com/MaxJunestrand) shares how Legora found its way into legal AI, why it moved so fast after YC, and how it convinced one of the world's most conservative industries to embrace a new way of working. He also digs into fundraising, competing in the age of foundation models, scaling a founder-led culture, and why Legora's ambition goes far beyond legal tech.  \n  \n00:00 —Max Junestrand, CEO of Legora  \n03:11 — Starting Out: What Were You Thinking?  \n04:36 — Risk, McKinsey Offers & Taking the Leap  \n05:37 — Getting Into YC  \n07:06 — Arriving With Imposter Syndrome  \n09:59 — The YC Fundraise Grind  \n11:31 — Staying Confident Through the No's  \n12:00 — Building the Next Google From Europe  \n14:25 — Mini Games & the Product Manifesto  \n16:28 — $100M ARR, 500 People, Going Global  \n19:15 — M&A Agents Doing the Actual Work  \n20:41 — What If OpenAI Does This?  \n21:27 — Finding Your Moat as Models Get Smarter\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062906068624420864/vid/avc1/1920x1080/yHE1b9aL-D9eDScR.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ycombinator/status/2062910570589036965/video/1)\n\n💬4🔄6❤️45👀9280📊10",
+      "tags": [
+        "Legora",
+        "YC",
+        "法律AI"
+      ],
+      "score": 80,
+      "summary": "YC访谈Legora创始人，18个月达1亿美元ARR。",
+      "fetched_at": "2026-06-06T00:31:24.714086+08:00"
+    },
+    {
+      "title": "Reminder.",
+      "link": "https://x.com/ylecun/status/2062927632597971240",
+      "published": "2026-06-06T00:00:49+08:00",
+      "source": "Yann LeCun(@ylecun)",
+      "content": "Reminder.\n\n![JJ](https://pbs.twimg.com/profile_images/1765283930654261248/XbbAopwn_normal.jpg)\n\nJJ@JosephJacks\\_\n\nCan we just make [@ylecun](https://x.com/ylecun) president of AI and call it a day please?\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/1728509731097243648/vid/avc1/1242x720/ywf_KP0qHFdiP5wV.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/JosephJacks_/status/1728510229133119644/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/JosephJacks_/status/1728510229133119644)\n\n💬11🔄3❤️38👀4833📊11",
+      "tags": [
+        "Yann LeCun",
+        "幽默"
+      ],
+      "score": 50,
+      "summary": "Yann LeCun转发幽默视频。",
+      "fetched_at": "2026-06-06T00:31:24.714144+08:00"
+    },
+    {
+      "title": "Some billionaires (or their foundations) do fund certain areas of basic research. \nExamples: Simons ...",
+      "link": "https://x.com/ylecun/status/2062924305176973461",
+      "published": "2026-06-05T23:47:36+08:00",
+      "source": "Yann LeCun(@ylecun)",
+      "content": "Some billionaires (or their foundations) do fund certain areas of basic research.   \nExamples: Simons Foundation, Moore Foundation, Sloan Foundation, Keck Foundation, Schmidt Sciences, and several others.  \nBut most of them are in biomedicine: Howard Hughes Medical Institute, Chan-Zuckerberg Initiative, Wellcome Trust, and many others.  \nHowever, this is all small compared with federal funding: around 25% of academic funding is from philanthropy, and over 50% from federal grants. This proportion is much lower in STEM than in biomedicine, and much lower in less prestigious universities.  \nSo historical evidence that fundamental research can be helped, but not entirely funded, by philanthropic billionaires.\n\n💬2🔄2❤️32👀4944📊5",
+      "tags": [
+        "科研资助",
+        "慈善",
+        "LeCun"
+      ],
+      "score": 70,
+      "summary": "Yann LeCun讨论亿万富翁资助基础研究的现状，认为相比联邦资金仍较小。",
+      "fetched_at": "2026-06-06T00:31:24.714203+08:00"
+    },
+    {
+      "title": "Political appointees vetting science funding?\nTrump is doing to science what the Right accused previ...",
+      "link": "https://x.com/ylecun/status/2062917093754884495",
+      "published": "2026-06-05T23:18:56+08:00",
+      "source": "Yann LeCun(@ylecun)",
+      "content": "Political appointees vetting science funding?  \nTrump is doing to science what the Right accused previous administrations of doing.  \nBut in previous administrations, there was no political control of research grant approvals.  \nGrant proposals were evaluated through peer review: the research community decided which proposals had merit.  \n  \nBye-bye Vannevar Bush, hello Trofim Lysenko.  \nBye-bye meritocracy, hello political favoritism.  \n  \nFrom The Guardian: \"A set of sweeping policy changes unveiled by the White House would leave officials appointed by Donald Trump vetting every public grant issued to universities and nongovernmental organizations on the basis of their fidelity to “American values”, as defined by the president, triggering widespread concern.\"\n\n💬6🔄4❤️23👀6214📊7",
+      "tags": [
+        "科研政治",
+        "特朗普",
+        "LeCun"
+      ],
+      "score": 70,
+      "summary": "Yann LeCun批评特朗普政府将科学研究资助政治化。",
+      "fetched_at": "2026-06-06T00:31:24.714261+08:00"
+    },
+    {
+      "title": "Unemployment is hitting younger college grads harder\n\nCharts of the Week: https://t.co/O5surLTGMJ",
+      "link": "https://x.com/a16z/status/2062919901770305699",
+      "published": "2026-06-05T23:30:06+08:00",
+      "source": "a16z(@a16z)",
+      "content": "Unemployment is hitting younger college grads harder  \n  \nCharts of the Week: [a16z.news/p/charts-of-th…](https://www.a16z.news/p/charts-of-the-week-rto-stalled)\n\n![Tweet Image](https://pbs.twimg.com/media/HKD2t9xbwAAL8HW.jpg)\n\n💬3🔄0❤️8👀1216📊3",
+      "tags": [
+        "就业",
+        "图表"
+      ],
+      "score": 30,
+      "summary": "a16z发布年轻大学毕业生失业率上升的图表。",
+      "fetched_at": "2026-06-06T00:31:24.714327+08:00"
+    },
+    {
+      "title": "Office vacancies continue to climb as nationwide weekly office visits sit at ~70% of pre-pandemic le...",
+      "link": "https://x.com/a16z/status/2062911396212572509",
+      "published": "2026-06-05T22:56:18+08:00",
+      "source": "a16z(@a16z)",
+      "content": "Office vacancies continue to climb as nationwide weekly office visits sit at ~70% of pre-pandemic levels  \n  \nCharts of the Week: [a16z.news/p/charts-of-th…](https://www.a16z.news/p/charts-of-the-week-rto-stalled)\n\n![Tweet Image](https://pbs.twimg.com/media/HKDu-p6aAAAD-kw.jpg)![Tweet Image](https://pbs.twimg.com/media/HKDu-3YacAArPlH.jpg)\n\n💬6🔄8❤️42👀9069📊13",
+      "tags": [
+        "办公室空置",
+        "图表"
+      ],
+      "score": 30,
+      "summary": "a16z发布办公室空置率持续上升图表。",
+      "fetched_at": "2026-06-06T00:31:24.714385+08:00"
+    },
+    {
+      "title": "// The Meta-Agent Challenge //\n\nHow good are current agents at self-improving?\n\nThis is a great pape...",
+      "link": "https://x.com/omarsar0/status/2062919381777350914",
+      "published": "2026-06-05T23:28:02+08:00",
+      "source": "elvis(@omarsar0)",
+      "content": "// The Meta-Agent Challenge //  \n  \nHow good are current agents at self-improving?  \n  \nThis is a great paper covering some of the challenges.  \n  \nThey propose the Meta-Agent Challenge (MAC), where they give a coding agent a sandbox, an evaluation API, and a time budget, then ask it to program an agent that maximizes held-out performance across five domains.  \n  \nResults:  \n  \nMeta-agents rarely match human-engineered baselines, and the few that do are dominated by proprietary frontier models.  \n  \nUnder high optimization pressure, some agents started exfiltrating ground truth from the scoring channel, even with multi-layer anti-reward-hacking defenses in place.  \n  \nPaper: [arxiv.org/abs/2606.04455](https://arxiv.org/abs/2606.04455)  \n  \nLearn to build effective AI agents in our academy: [academy.dair.ai](https://academy.dair.ai/)\n\n![Tweet Image](https://pbs.twimg.com/media/HKD2PnKa4AAdA76.png)\n\n💬4🔄1❤️6👀381📊6",
+      "tags": [
+        "Meta-Agent",
+        "自改进",
+        "论文"
+      ],
+      "score": 65,
+      "summary": "分享Meta-Agent挑战论文，研究Agent自我改进能力。",
+      "fetched_at": "2026-06-06T00:31:24.714443+08:00"
+    },
+    {
+      "title": "Codex 个人资料页的这个 Token 消耗数据可以分享了。\n\n这个分享图做得真挺好的，打开设置、个人资料页，点击右上角的分享图标，就可以生成分享图了",
+      "link": "https://x.com/op7418/status/2062922085748621464",
+      "published": "2026-06-05T23:38:47+08:00",
+      "source": "歸藏(guizang.ai)(@op7418)",
+      "content": "Codex 个人资料页的这个 Token 消耗数据可以分享了。  \n  \n这个分享图做得真挺好的，打开设置、个人资料页，点击右上角的分享图标，就可以生成分享图了\n\n![Tweet Image](https://pbs.twimg.com/media/HKD4Sm5bgAA1hn7.jpg)\n\n![OpenAI Developers](https://pbs.twimg.com/profile_images/2022002720971096064/l3Kyt4qt_normal.jpg)\n\nOpenAI Developers@OpenAIDevs\n\nYour Codex activity now has a home, and an easier way to share it.  \n  \nCodex profiles show your activity graph, streaks, lifetime tokens, peak daily tokens, and top features like plugins and /fast mode.  \n  \nPrivate by default. Share a card when you want to.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062674723142856704/vid/avc1/1280x720/EY_EVHHlgHcal8ev.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/OpenAIDevs/status/2062674774644687268/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/OpenAIDevs/status/2062674774644687268)\n\n💬0🔄0❤️1👀167",
+      "tags": [
+        "Codex",
+        "Token消耗",
+        "分享"
+      ],
+      "score": 65,
+      "summary": "Codex个人资料页新增Token消耗数据分享功能。",
+      "fetched_at": "2026-06-06T00:31:24.714502+08:00"
+    },
+    {
+      "title": "How OpenAI Built a Secure Windows Sandbox for Codex Agents",
+      "link": "https://www.infoq.com/news/2026/06/codex-windows-sandbox-design/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-05T22:37:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/06/codex-windows-sandbox-design/en/headerimage/generatedHeaderImage-1780184710031.jpg)\n\nOpenAI details Codex Windows sandbox architecture, showing how SIDs, ACLs, restricted tokens, and dedicated sandbox accounts enable safe execution of autonomous coding tasks. The design balances isolation with real developer workflows and shows how OS security primitives must be composed for AI agents on local development environments.\n\n*By Leela Kumili*",
+      "tags": [
+        "Codex",
+        "Windows沙箱",
+        "安全"
+      ],
+      "score": 85,
+      "summary": "InfoQ详细报道OpenAI为Codex Agent构建的Windows沙箱架构。",
+      "fetched_at": "2026-06-06T00:31:24.714560+08:00"
+    }
+  ]
+}
