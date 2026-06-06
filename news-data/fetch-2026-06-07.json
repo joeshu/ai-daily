@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "date": "2026-06-06"
+  },
+  "entries": [
+    {
+      "title": "EP217: Latency vs Throughput vs Bandwidth",
+      "link": "https://blog.bytebytego.com/p/ep217-latency-vs-throughput-vs-bandwidth",
+      "published": "2026-06-06T23:30:33+08:00",
+      "source": "ByteByteGo Newsletter",
+      "content": "## [Map workflows, automate E2E tests, and ship faster with QA Wolf (Sponsored)](https://go.bytebytego.com/QAWolf_060626Headline)\n\n[![](https://substackcdn.com/image/fetch/$s_!_yQG!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fac7d0b87-f2eb-4e4c-bb77-b4f74c12a109_1200x628.png)](https://go.bytebytego.com/QAWolf_060626CTA)\n\n[QA Wolf’s](https://go.bytebytego.com/QAWolf_060626QAWolf) AI agent maps and tests your app’s most complex user flows.\n\nIt turns your prompts into real Playwright and Appium code that runs 12x faster and more reliably than other computer-use agents.\n\nWhat sets our AI apart:\n\n* Maps **200+ test cases in minutes** instead of weeks of manual planning.\n* Executes tests **12x faster** than computer-use agents.\n* Runs entire suites **100% parallel** with consistent results.\n* Produces open-source tests your team owns, with **zero vendor lock-in**.\n\n[Get started today](https://go.bytebytego.com/QAWolf_060626CTA)\n\n---\n\nThis week’s system design refresher:\n\n* CPU vs GPU vs TPU (Youtube video)\n* Latency vs Throughput vs Bandwidth\n* What is Google’s TPU?\n* 7 Permission Modes Every Claude Code User Should Know\n* Top AI Trends to Watch in 2026\n* We’re hiring at ByteByteGo\n\n---\n\n## CPU vs GPU vs TPU\n\n---\n\n## Latency vs Throughput vs Bandwidth\n\nEver wondered why your app feels slow even when the bandwidth looks fine? Latency, throughput, and bandwidth often get used interchangeably, but each one tells a different story about performance.\n\n[![](https://substackcdn.com/image/fetch/$s_!Y582!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b5057ba-3667-446b-9760-b726da1431f4_2484x3002.png)](https://substackcdn.com/image/fetch/$s_!Y582!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1b5057ba-3667-446b-9760-b726da1431f4_2484x3002.png)\n\nLatency is the delay. How long it takes for a single packet to travel from sender to receiver. If your ping shows 40 ms round-trip, that's latency.\n\nThroughput is the actual delivery rate. How much data is successfully transferred per second. If your download shows 62 Mbps, that’s throughput.\n\nBandwidth is the maximum capacity of the link. For example, a 100 Mbps connection is the upper limit under ideal conditions.\n\nThroughput is always less than bandwidth. Network congestion, packet loss, and protocol overhead all affect throughput, which is why you never actually hit the maximum bandwidth capacity in practice.\n\nSimilarly, low latency doesn't always mean high throughput. Small payloads, single connections, and tight window sizes can all keep throughput low, which is why fast responses don't guarantee you're sending a lot of data.\n\nAnother way to understand these three concepts: Bandwidth is the highway width. Throughput is the traffic flow. Latency is how long it takes a car to go from A to B.\n\nAll three matter, but they solve different problems.\n\nOver to you: How do you measure these metrics in a way that actually predicts when things will break?\n\n---\n\n## What is Google’s TPU?\n\nA TPU (Tensor Processing Unit) is Google’s custom AI chip, designed from scratch for the giant matrix multiplications that modern models live on. GPUs were built for graphics first.\n\n[![No alternative text description for this image](https://substackcdn.com/image/fetch/$s_!7PuH!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff822afe9-5c16-4d2d-8fa1-f32d03b9743e_1280x1643.jpeg \"No alternative text description for this image\")](https://substackcdn.com/image/fetch/$s_!7PuH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff822afe9-5c16-4d2d-8fa1-f32d03b9743e_1280x1643.jpeg)\n\nTPUs were built for deep learning from day one.\n\nAt Cloud Next ’26, Google unveiled its 8th generation, and for the first time it ships in two flavors. TPU 8t is built for training, where raw throughput wins. TPU 8i is built for inference, where latency and chip-to-chip speed matter most.\n\nBoth still share the same Axion CPUs, liquid cooling, and software stack, so code written for one runs on the other.\n\nThe diagram is a quick study guide to what’s the same, what’s different, and why, based on our understanding of published Google articles.\n\n---\n\n## 7 Permission Modes Every Claude Code User Should Know\n\n[![](https://substackcdn.com/image/fetch/$s_!bdjh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9c8ec17-676c-441a-9c97-d08f8eec804f_2484x3002.png)](https://substackcdn.com/image/fetch/$s_!bdjh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc9c8ec17-676c-441a-9c97-d08f8eec804f_2484x3002.png)\n\n1. plan: The model drafts a plan. Nothing executes until the user approves.\n2. default: Standard interactive use. Most tool calls require user approval.\n3. acceptEdits: Edits in the working directory are auto-approved. Other shell commands still prompt.\n4. auto: An ML classifier decides on requests that miss the fast path.\n5. dontAsk: No prompts shown. Deny rules are still enforced.\n6. bypassPermissions: Most prompts are skipped. Safety-critical guards still apply.\n7. bubble: A subagent escalates its permission request to the parent.\n\nOnly 5 modes are user-selectable. “auto” is gated by a feature flag, and “bubble” is internal.\n\nOver to you: Which mode do you reach for most, and what made you pick it?\n\n---\n\n## Top AI Trends to Watch in 2026\n\n2026 is already moving faster than anyone expected. Anthropic released Opus 4.7, OpenAI introduced GPT5.5-Codex, and open-source releases like Kimi K2.5 and GLM-5 showed impressive agentic performance.\n\n[![](https://substackcdn.com/image/fetch/$s_!G4Hk!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ac9f91d-6ad9-49c9-b593-97bacf7cf628_2508x3000.png)](https://substackcdn.com/image/fetch/$s_!G4Hk!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ac9f91d-6ad9-49c9-b593-97bacf7cf628_2508x3000.png)\n\nThese launches point to bigger trends. Here are the five categories to closely watch in 2026.\n\n**1. Efficient Reasoning:** RLVR-style training scales reasoning by auto-checking math and code. In 2026, expect more adaptive reasoning and extremely sparse architectures. Early signs include Gemini’s adaptive thinking and Qwen3.5’s sparse MoE architecture.\n\n**2. Persistent Agents:** Agents now plan in loops with tools and memory, not just chat. In 2026, expect always-on personal agents that live across days, have access to your files, and can complete tasks safely. OpenClaw is an early example of this direction.\n\n**3. Repo-Scale Coding:** Coding has moved from autocomplete to multi-file edits with tests, builds, and terminal tools. In 2026, expect agents that understand very large repos and can ship security-aware PRs by default.\n\n**4. Open-Weight Everywhere:** Open-weight models are now strong enough to compete with closed ones. In 2026, expect more of them to get leaner, agent-ready, and easier to deploy. Models like GLM5 and Kimi K2.5 are already pushing in this direction.\n\n**5. World Models + Physical AI:** Multimodal models have reached impressive quality across vision, image, and video generation. In 2026, expect these models to become the foundation for physical AI and world models, with early examples like Google Genie 3 and humanoid robots already pointing the way.\n\nOver to you: which shift do you think will change how teams build products the most in 2026?\n\n---\n\n## We’re hiring at ByteByteGo\n\nWe’re looking for multiple part-time instructors to teach AI and engineering cohort-based live courses.\n\nThis is a great fit if you love teaching, enjoy sharing what you know, and want a meaningful side thing alongside your main work.\n\nThe role has some upfront time investment to get familiar with the curriculum and prepare, but after that, it’s designed to be a limited commitment (2-5 hours bi-weekly). It offers stable income, good upside, and a chance to share your knowledge while working with ambitious learners.\n\n[![table](https://substackcdn.com/image/fetch/$s_!0fGb!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69da25b1-62d2-4921-9be9-93874d3ea577_1280x1581.jpeg \"table\")](https://substackcdn.com/image/fetch/$s_!0fGb!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69da25b1-62d2-4921-9be9-93874d3ea577_1280x1581.jpeg)\n\nWe’re especially looking for instructors in:\n\n* Building Production-Grade AI Systems\n* System Design\n* AI Security & LLM Red-Teaming\n* AI Evals Intensive\n* AI Cost Optimization\n* Agentic AI Coding\n* Build with Codex\n* AI for Engineering Leaders\n* AI Automation\n* Others, please suggest\n\nIdeal instructors are hands-on, clear communicators, and excited to teach.\n\nIf this sounds like you, email us at **[jobs@bytebytego.com](mailto:jobs@bytebytego.com)** with your background, the topics you’d be excited to teach, and any teaching, writing, or speaking samples.",
+      "tags": [
+        "系统设计",
+        "非AI主题"
+      ],
+      "score": 70,
+      "summary": "ByteByteGo 解释延迟、吞吐量和带宽的区别，属于技术基础知识。",
+      "fetched_at": "2026-06-07T01:13:10.199291+08:00"
+    },
+    {
+      "title": "Job Searcher",
+      "link": "https://huggingface.co/blog/build-small-hackathon/job-search-blog",
+      "published": "2026-06-06T23:36:51+08:00",
+      "source": "Hugging Face Blog",
+      "content": "",
+      "tags": [
+        "无内容"
+      ],
+      "score": 50,
+      "summary": "Hugging Face 博客内容缺失，无法评估价值。",
+      "fetched_at": "2026-06-07T01:13:10.199372+08:00"
+    },
+    {
+      "title": "OpenClaw hit 3,000 commits in a single day. 10 to 15 maintainers. All with day jobs.\n\n@vincent_koc (...",
+      "link": "https://x.com/aiDotEngineer/status/2063297363251511777",
+      "published": "2026-06-07T00:30:00+08:00",
+      "source": "AI Engineer(@aiDotEngineer)",
+      "content": "OpenClaw hit 3,000 commits in a single day. 10 to 15 maintainers. All with day jobs.  \n  \n[@vincent\\_koc](https://x.com/vincent_koc) (Chief Architect of OpenClaw) explains how the factory actually works.  \n[youtube.com/watch?v=pmoDeA…](https://www.youtube.com/watch?v=pmoDeA3RBZY)  \n  \nThe great refactor: 2 AM, Vincent and Peter at NVIDIA, 60 to 70 agents running between them. 2,700 commits. Close to a million lines changed. 82% of the core codebase touched. Plugin architecture shipped by morning.  \n  \nThe saving grace: overfitted unit tests AI code loves to generate. As long as they went green, they knew they were close.  \n  \nKnowing when your agent is bullshitting you is the skill nobody talks about.  \n  \n\"It doesn't sound off because of what it's doing. It sounds off because of how it's explaining itself to me. It's waffling.\"  \n  \n2025 was about token maxing. 2026 is about not wasting them.\n\n![Tweet Image](https://pbs.twimg.com/media/HKFnCJLXUAAJDGA.jpg)\n\n💬3🔄2❤️6👀421📊6",
+      "tags": [
+        "AI Agent",
+        "OpenClaw",
+        "代码重构"
+      ],
+      "score": 85,
+      "summary": "OpenClaw 单日 3000 次提交，10-15 位兼职维护者，利用 AI agent 完成大规模重构。",
+      "fetched_at": "2026-06-07T01:13:10.199435+08:00"
+    },
+    {
+      "title": "You only need 1 hour.\n\n1 hour of building. 1 hour of writing. 1 hour of lifting. 1 hour of studying....",
+      "link": "https://x.com/thedankoe/status/2063294390240772140",
+      "published": "2026-06-07T00:18:11+08:00",
+      "source": "DAN KOE(@thedankoe)",
+      "content": "You only need 1 hour.  \n  \n1 hour of building. 1 hour of writing. 1 hour of lifting. 1 hour of studying.  \n  \n1 hour of any form of bettering yourself, because it quickly compounds.  \n  \n1 hour feels like nothing until you look back 365 hours later and everything's changed.\n\n💬74🔄27❤️244👀5350📊98",
+      "tags": [
+        "自我提升"
+      ],
+      "score": 30,
+      "summary": "励志推文，强调每天一小时积累，非 AI 相关。",
+      "fetched_at": "2026-06-07T01:13:10.199489+08:00"
+    },
+    {
+      "title": "Crony socialism",
+      "link": "https://x.com/GaryMarcus/status/2063289902763331753",
+      "published": "2026-06-07T00:00:21+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Crony socialism\n\n![Garry Kasparov](https://pbs.twimg.com/profile_images/1004031810173579265/YrEIbzio_normal.jpg)\n\nGarry Kasparov@Kasparov63\n\nSmells like corruption and socialism, the hallmarks of the Trump administration.\n\n[🔗 View Quoted Tweet](https://x.com/Kasparov63/status/2063288151553020078)\n\n💬3🔄0❤️14👀1513📊3",
+      "tags": [
+        "政治"
+      ],
+      "score": 20,
+      "summary": "Gary Marcus 转发政治言论，非 AI 主题。",
+      "fetched_at": "2026-06-07T01:13:10.199541+08:00"
+    },
+    {
+      "title": "markdowner 是用 Tauri v2 + React + Rust 搓出来的 Markdown 编辑器，支持 WYSIWYG、源码和预览三种模式。\n\nhttps://t.co/uqOq8XO9...",
+      "link": "https://x.com/geekbb/status/2063278631317885086",
+      "published": "2026-06-06T23:15:34+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "markdowner 是用 Tauri v2 + React + Rust 搓出来的 Markdown 编辑器，支持 WYSIWYG、源码和预览三种模式。  \n  \n[github.com/channprj/markd…](https://github.com/channprj/markdowner)\n\n![Tweet Image](https://pbs.twimg.com/media/HKI84JbbYAAf_rS.jpg)\n\n💬1🔄2❤️1👀1556📊3",
+      "tags": [
+        "Markdown编辑器",
+        "开源工具"
+      ],
+      "score": 60,
+      "summary": "介绍 markdowner，一款基于 Tauri v2+React+Rust 的 Markdown 编辑器。",
+      "fetched_at": "2026-06-07T01:13:10.199590+08:00"
+    },
+    {
+      "title": "The product is the mission.",
+      "link": "https://x.com/naval/status/2063292550388298025",
+      "published": "2026-06-07T00:10:52+08:00",
+      "source": "Naval(@naval)",
+      "content": "The product is the mission.\n\n💬40🔄15❤️110👀2547📊42",
+      "tags": [
+        "非AI"
+      ],
+      "score": 10,
+      "summary": "Naval 简短名言，无具体信息。",
+      "fetched_at": "2026-06-07T01:13:10.199639+08:00"
+    },
+    {
+      "title": "Ok here's an example: \n\nI built a skill to post to various social media platforms. Some of them have...",
+      "link": "https://x.com/petergyang/status/2063288150089515394",
+      "published": "2026-06-06T23:53:23+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "Ok here's an example:   \n  \nI built a skill to post to various social media platforms. Some of them have no APIs (Substack Notes) and others have nuances (e.g., on LinkedIn posts it needs to remove the @ mention from the tags on X posts). On Threads (yes I still post there) it can only support max 500 characters.  \n  \nI brain dumped all this nuance to Codex and it figured it out and ran this using browser alone.\n\n💬1🔄0❤️4👀1120📊2",
+      "tags": [
+        "AI Agent",
+        "Codex",
+        "自动化"
+      ],
+      "score": 75,
+      "summary": "Peter Yang 用 Codex 构建跨平台发帖 AI agent，处理无 API 平台的细节。",
+      "fetched_at": "2026-06-07T01:13:10.199688+08:00"
+    },
+    {
+      "title": "Came up with a good weekend project to build a tool that'll be useful for all normies (including my ...",
+      "link": "https://x.com/petergyang/status/2063282128792739922",
+      "published": "2026-06-06T23:29:28+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "Came up with a good weekend project to build a tool that'll be useful for all normies (including my parents) not just AI pilled people.  \n  \nLet's see if I can finish it by tmr. Gonna use Compound Engineering for the 1st time [@kieranklaassen](https://x.com/kieranklaassen) ;)\n\n💬6🔄0❤️16👀1865📊7",
+      "tags": [
+        "项目规划"
+      ],
+      "score": 40,
+      "summary": "Peter Yang 计划周末构建 AI 工具，尚未完成。",
+      "fetched_at": "2026-06-07T01:13:10.199736+08:00"
+    },
+    {
+      "title": "Who are some women building amazing things with AI agents right now? \n\nI’d love to follow and learn ...",
+      "link": "https://x.com/petergyang/status/2063278080802873755",
+      "published": "2026-06-06T23:13:22+08:00",
+      "source": "Peter Yang(@petergyang)",
+      "content": "Who are some women building amazing things with AI agents right now?   \n  \nI’d love to follow and learn from more of them.\n\n💬12🔄0❤️22👀3635📊14",
+      "tags": [
+        "行业观察"
+      ],
+      "score": 30,
+      "summary": "Peter Yang 询问女性 AI agent 从业者推荐，无实质内容。",
+      "fetched_at": "2026-06-07T01:13:10.199783+08:00"
+    },
+    {
+      "title": "等你对结构的理解更深一步之后呢，能做的项目更多。木梁的承重力是强的（前提是你懂结构）。这个是我做的一套双层床+玩具存储。一间房有两套。顶部我还在做，打算全部做航模悬挂，中间我要搭一套玩具的电动轨道系统...",
+      "link": "https://x.com/feltanimalworld/status/2063292482704605480",
+      "published": "2026-06-07T00:10:36+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "等你对结构的理解更深一步之后呢，能做的项目更多。木梁的承重力是强的（前提是你懂结构）。这个是我做的一套双层床+玩具存储。一间房有两套。顶部我还在做，打算全部做航模悬挂，中间我要搭一套玩具的电动轨道系统。这些的骨架都是木方。而且不用在墙上打孔，容错率高。\n\n![Tweet Image](https://pbs.twimg.com/media/HKJJiMvWgAAuWQ6.jpg)\n\n💬0🔄0❤️0👀60",
+      "tags": [
+        "木工DIY"
+      ],
+      "score": 20,
+      "summary": "木工双层床制作分享，非 AI 相关。",
+      "fetched_at": "2026-06-07T01:13:10.199831+08:00"
+    },
+    {
+      "title": "3D打印帮你解决所有的小型元器件，小型工具和各种耗材的存储需求。要么用洞洞板，要么自己建模直接用嵌套件挂梁上。我的做法是，常用的上墙，多余的全部入纸箱。纸箱可以用条形码系统来管理。阿里巴巴买，便宜的很...",
+      "link": "https://x.com/feltanimalworld/status/2063289342236229728",
+      "published": "2026-06-06T23:58:07+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "3D打印帮你解决所有的小型元器件，小型工具和各种耗材的存储需求。要么用洞洞板，要么自己建模直接用嵌套件挂梁上。我的做法是，常用的上墙，多余的全部入纸箱。纸箱可以用条形码系统来管理。阿里巴巴买，便宜的很。至于如何管理，目前我也在探讨。AI应用可以告诉你大概这类耗材被你放在2号柜几号箱。\n\n💬0🔄0❤️2👀112",
+      "tags": [
+        "3D打印",
+        "存储管理"
+      ],
+      "score": 30,
+      "summary": "木工存储方案，提及 AI 管理耗材，但非核心。",
+      "fetched_at": "2026-06-07T01:13:10.199879+08:00"
+    },
+    {
+      "title": "台面下存储就可以使用纸箱和塑料箱。台面高是一个人正常站立电脑办公的高度，我的是4英尺+4英寸，是刚好木头原材料的一半+面板厚度。我身高168公分，长时间在这个台面使用电脑舒适度还可以。这个高度台面上方...",
+      "link": "https://x.com/feltanimalworld/status/2063287970124144937",
+      "published": "2026-06-06T23:52:40+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "台面下存储就可以使用纸箱和塑料箱。台面高是一个人正常站立电脑办公的高度，我的是4英尺+4英寸，是刚好木头原材料的一半+面板厚度。我身高168公分，长时间在这个台面使用电脑舒适度还可以。这个高度台面上方挂洞洞板和下面规划存储空间都刚好。椅子要买的话就只能买那种吧台高椅子。但是坐久了大腿疼\n\n💬0🔄0❤️2👀136",
+      "tags": [
+        "木工设计"
+      ],
+      "score": 20,
+      "summary": "分享木工台面高度设计经验。",
+      "fetched_at": "2026-06-07T01:13:10.199928+08:00"
+    },
+    {
+      "title": "按照这个范式，你整个homelab最好全部都是这种贴墙构造。然后根据你要上的设备调节这个台面的纵深。不要太宽。当你开始运作的时候，发现人，设备，各种重的东西全部需要中间很多位置辗转腾挪。所以你要是把家...",
+      "link": "https://x.com/feltanimalworld/status/2063286738533916966",
+      "published": "2026-06-06T23:47:47+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "按照这个范式，你整个homelab最好全部都是这种贴墙构造。然后根据你要上的设备调节这个台面的纵深。不要太宽。当你开始运作的时候，发现人，设备，各种重的东西全部需要中间很多位置辗转腾挪。所以你要是把家具在人需要绕道走的地方，会很烦。你有几面墙，就做几套这种。成本就是个木头钱。\n\n💬0🔄0❤️1👀64",
+      "tags": [
+        "木工布置"
+      ],
+      "score": 20,
+      "summary": "建议 homelab 贴墙构造，非 AI 相关。",
+      "fetched_at": "2026-06-07T01:13:10.199996+08:00"
+    },
+    {
+      "title": "木工如果买那种五金件做fastener, 强度是不够的。强度第一还是木头本木。45度支撑是无敌的。第二是你看那个钉位。做木工就算潦草做，也要切记钉子不能打“屁股钉”。最后才是你看到那种五金连接件，属于...",
+      "link": "https://x.com/feltanimalworld/status/2063285909273948262",
+      "published": "2026-06-06T23:44:29+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "木工如果买那种五金件做fastener, 强度是不够的。强度第一还是木头本木。45度支撑是无敌的。第二是你看那个钉位。做木工就算潦草做，也要切记钉子不能打“屁股钉”。最后才是你看到那种五金连接件，属于....附加的，本身没啥承重的效果。\n\n💬0🔄0❤️3👀350📊1",
+      "tags": [
+        "木工技巧"
+      ],
+      "score": 20,
+      "summary": "木工强度注意事项，非 AI 主题。",
+      "fetched_at": "2026-06-07T01:13:10.200050+08:00"
+    },
+    {
+      "title": "Homelab木工设计和施工上去之后发展无限。用北美标准4乘4和2乘4木方。喜欢洞洞板的可以用。真实电视65寸你可见这个跨度和木方梁的悬挂能力。小型元器件的存放全部上墙。直角用剩下的料做45度加固，如...",
+      "link": "https://x.com/feltanimalworld/status/2063285145193365784",
+      "published": "2026-06-06T23:41:27+08:00",
+      "source": "Susan STEM(@feltanimalworld)",
+      "content": "Homelab木工设计和施工上去之后发展无限。用北美标准4乘4和2乘4木方。喜欢洞洞板的可以用。真实电视65寸你可见这个跨度和木方梁的悬挂能力。小型元器件的存放全部上墙。直角用剩下的料做45度加固，如图。能保你大部分台面加工设备的防抖。显示器可上墙也可用架具。我家太乱了美化了一下，那只狗是我的\n\n![Tweet Image](https://pbs.twimg.com/media/HKJCAKkW4AAxXKc.jpg)![Tweet Image](https://pbs.twimg.com/media/HKJC5m5XkAA_fbI.jpg)\n\n![Bag9981](https://pbs.twimg.com/profile_images/1902999233936216064/VhIovh6o_normal.jpg)\n\nBag9981@bag99812\n\n[@feltanimalworld](https://x.com/feltanimalworld) 说的 Homelab 应该是这个了\n\n![Tweet Image](https://pbs.twimg.com/media/HKIYURmaMAErE5C.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/bag99812/status/2063238322634580262)\n\n💬6🔄0❤️8👀1100📊6",
+      "tags": [
+        "Homelab",
+        "木工"
+      ],
+      "score": 25,
+      "summary": "展示木工搭建的 homelab 环境，涉及显示器悬挂等。",
+      "fetched_at": "2026-06-07T01:13:10.200097+08:00"
+    },
+    {
+      "title": "To clarify more here: your source code and file contents never leave your machine. This is verifiabl...",
+      "link": "https://x.com/ycombinator/status/2063288081323897166",
+      "published": "2026-06-06T23:53:07+08:00",
+      "source": "Y Combinator(@ycombinator)",
+      "content": "To clarify more here: your source code and file contents never leave your machine. This is verifiable in the container.  \n  \nBut Paxel does upload derived data - narratives, prompt excerpts, file paths, commit metadata (all run through a credential redactor first) - to build your profile. If you want none of it, you can run --no-repo to opt out.  \n  \nFully documented here at [paxel.ycombinator.com/data-handling](http://paxel.ycombinator.com/data-handling)\n\n💬0🔄0❤️7👀1686📊1",
+      "tags": [
+        "AI工具",
+        "数据安全"
+      ],
+      "score": 75,
+      "summary": "YC 澄清 Paxel 数据隐私策略，代码不离机，仅上传元数据。",
+      "fetched_at": "2026-06-07T01:13:10.200143+08:00"
+    },
+    {
+      "title": ".@tylercowen on why AI creates more jobs than it destroys:\n\n\"One of the neatest properties of curren...",
+      "link": "https://x.com/a16z/status/2063282377254986195",
+      "published": "2026-06-06T23:30:27+08:00",
+      "source": "a16z(@a16z)",
+      "content": ".[@tylercowen](https://x.com/tylercowen) on why AI creates more jobs than it destroys:  \n  \n\"One of the neatest properties of current AI models is they allow a small number of individuals working with AI to really do a lot more work than was possible previously.\"  \n  \n\"This will mean more companies, more projects, more nonprofits, just more ventures.\"  \n  \n\"One area is generally energy, electricity, the grid... It's completely screwed up. It will take twenty years, thirty years, forty years to fix... The AIs cannot do that on their own.\"  \n  \n\"The biomedical sector and medical trials, there will be many, many, many more ideas to test. AIs will help with the testing, but I don't think pure testing by simulation will be possible anytime soon.\"  \n  \n\"Simply care for the elderly. There will be robots, personal companions. We have this already. But the elderly also will want human care. It wouldn't surprise me if in the future, fifteen, twenty percent of all jobs were elderly care.\"  \n  \n\"Luis Garicano had an excellent online essay. He referred to what he called 'messy jobs': jobs where it's hard to explain exactly what the job is, but on a given day you're doing eleven different things, and it requires coordination and figuring out what you ought to do next and getting other people to help you... There's a real future in messy jobs.\"  \n  \nTyler Cowen with [@dataWyatt](https://x.com/dataWyatt)\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2063282269012594688/vid/avc1/1280x720/YEtL_ymwsHOGAgkh.mp4?tag=14)\n\n[🔗 View on Twitter](https://x.com/a16z/status/2063282377254986195/video/1)\n\n![David George](https://pbs.twimg.com/profile_images/1643401155001847808/pTRplyO-_normal.jpg)\n\nDavid George@DavidGeorge83\n\n[x.com/i/article/2052…](http://x.com/i/article/2052046618393014272)\n\n[🔗 View Quoted Tweet](https://x.com/DavidGeorge83/status/2052052899115749692)\n\n💬11🔄9❤️65👀14721📊17",
+      "tags": [
+        "AI就业",
+        "观点"
+      ],
+      "score": 85,
+      "summary": "Tyler Cowen 认为 AI 创造更多岗位，包括能源、生物医药和老年护理。",
+      "fetched_at": "2026-06-07T01:13:10.200190+08:00"
+    },
+    {
+      "title": "Try out Agent Mode today to help measure and advance the frontier of AI: https://t.co/8ujN06t7FN",
+      "link": "https://x.com/arena/status/2063287702825677218",
+      "published": "2026-06-06T23:51:37+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Try out Agent Mode today to help measure and advance the frontier of AI: [arena.ai/agent](http://arena.ai/agent)\n\n💬0🔄0❤️1👀715",
+      "tags": [
+        "Agent Arena",
+        "AI评测"
+      ],
+      "score": 95,
+      "summary": "Arena.ai 推出 Agent Mode 以评估 AI agent 性能，开放试用。",
+      "fetched_at": "2026-06-07T01:13:10.200237+08:00"
+    },
+    {
+      "title": "Read the deep-dive on the Agent Arena leaderboard methodology.  \n\nOur leaderboard measures each mode...",
+      "link": "https://x.com/arena/status/2063287701454151924",
+      "published": "2026-06-06T23:51:36+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Read the deep-dive on the Agent Arena leaderboard methodology.   \n  \nOur leaderboard measures each model's agentic performance using causal inference across five signals: task success, steerability, error recovery, user praise vs. complaint, and tool hallucination.  \n  \n[arena.ai/blog/agent-are…](https://arena.ai/blog/agent-arena-methodology/)\n\n💬1🔄1❤️2👀1236📊1",
+      "tags": [
+        "Agent Arena",
+        "方法论"
+      ],
+      "score": 95,
+      "summary": "Arena.ai 详细解释 Agent Arena 排行榜方法，基于因果推断评估 agent 表现。",
+      "fetched_at": "2026-06-07T01:13:10.200284+08:00"
+    },
+    {
+      "title": "Have you tried out  Agent Mode yet? \n\nUse frontier AI agents to do your real work. Your sessions fee...",
+      "link": "https://x.com/arena/status/2063287698102882586",
+      "published": "2026-06-06T23:51:35+08:00",
+      "source": "lmarena.ai(@lmarena_ai)",
+      "content": "Have you tried out Agent Mode yet?   \n  \nUse frontier AI agents to do your real work. Your sessions feed the data that ranks them on the Agent Arena leaderboard.  \n  \nSee details in thread to learn more about Agent Mode and Agent Arena. 👇\n\n![Arena.ai](https://pbs.twimg.com/profile_images/2017015061454438400/iNKfXZ_I_normal.jpg)\n\nArena.ai@arena\n\nIntroducing Agent Mode: Agentic AI is now measured in the Arena.  \n  \nAgent Mode can do deep research, create reports, generate images, build websites, debug code, and more.  \n  \nIt completes more complex tasks by using tools like web search, bash in a sandbox environment, image generation, file writing, and asking follow-up questions.  \n  \nFrontier models are waiting for you in Agent Mode to take on real-world tasks. GPT-5.5, Claude Opus 4.7, Gemini 3.1 Pro, and top open models. Test them yourself.\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062553501016948737/vid/avc1/1920x1080/rtk6TFcogB5k5eVR.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/arena/status/2062565126600114484/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/arena/status/2062565126600114484)\n\n💬2🔄5❤️31👀2856📊5",
+      "tags": [
+        "Agent Mode",
+        "产品发布"
+      ],
+      "score": 95,
+      "summary": "Arena.ai 正式发布 Agent Mode，支持前沿模型完成复杂任务。",
+      "fetched_at": "2026-06-07T01:13:10.200330+08:00"
+    },
+    {
+      "title": "Claude Design 的小贴士很有意思：\n\n### 第一部分：产品设计心法\n\n1. 交互的本质\n- EN: A prototype nobody clicks is just a paintin...",
+      "link": "https://x.com/dotey/status/2063291945972060525",
+      "published": "2026-06-07T00:08:28+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Claude Design 的小贴士很有意思：  \n  \n### 第一部分：产品设计心法  \n  \n1. 交互的本质  \n- EN: A prototype nobody clicks is just a painting.  \n- CN: 没人点击交互的产品原型，充其量只是一幅画罢了。  \n  \n2. 设计的最高境界  \n- EN: The best design system is the one nobody notices.  \n- CN: 最好的设计系统，是自然到让人察觉不到它的存在。  \n  \n3. 字体搭配  \n- EN: You cannot unsee a bad font pairing. Choose carefully.  \n- CN: 糟糕的字体搭配一旦入眼，就再也忘不掉了。挑选时请务必慎重。  \n  \n4. 像素级克制  \n- EN: Every pixel argues for attention. Most should lose.  \n- CN: 屏幕上的每一个像素都在疯狂争夺用户的注意力，但绝大部分像素都应该学会“让步”。  \n  \n5. 发布的意义  \n- EN: The fastest way to finish a design is to ship it.  \n- CN: 完成一个设计的绝对捷径，就是把它发布上线。  \n  \n6. 留白的艺术  \n- EN: Whitespace is not empty. It is the silence between the notes.  \n- CN: 留白并不代表空洞。它是乐谱上音符之间那迷人的停顿。  \n  \n7. 色彩法则  \n- EN: If you need more than three colors, you have zero colors.  \n- CN: 如果你觉得需要三种以上的颜色才能把控画面，那说明你完全失去了对颜色的掌控。  \n  \n8. 核心规范  \n- EN: The user's mental model is the only spec that matters.  \n- CN: 用户的心理模型 (mental model)，才是唯一真正重要的产品规范。  \n  \n---  \n  \n### 第二部分：日常实用小妙招 (Info)  \n  \n9. 去除鞋底口香糖  \n- EN: Freeze gum with an ice cube for 2 minutes. It peels right off shoes.  \n- CN: 用冰块冷敷口香糖 2 分钟，就能把它从鞋底轻松撕下来。  \n  \n10. 清洁微波炉  \n- EN: Microwave a damp paper towel for 30 seconds. Crud wipes right off the inside.  \n- CN: 把湿纸巾放进微波炉里加热 30 秒。微波炉内壁的顽固污垢立刻就能一擦就掉。  \n  \n11. 拧开滑丝的螺丝  \n- EN: A rubber band over a stripped screw head gives enough grip to turn it.  \n- CN: 把一根橡皮筋垫在滑丝的螺丝头上，就能增加足够的摩擦力把它拧出来。  \n  \n12. 修复木家具划痕  \n- EN: Run walnuts over scratched wood furniture. The oils fill the scratches.  \n- CN: 拿核桃仁在被划伤的木质家具上摩擦。核桃的天然油脂会完美填补那些划痕。  \n  \n13. 面包保鲜秘诀  \n- EN: Store bread in the freezer. Toasting it from frozen tastes better than fresh.  \n- CN: 把面包存在冷冻室里。冷冻后再拿去烤，口感甚至比新鲜出炉的还要好。  \n  \n14. 砧板除味  \n- EN: Rub a wooden cutting board with lemon and salt to deodorize it completely.  \n- CN: 用柠檬和盐摩擦木质砧板，可以彻底去除难闻的异味。  \n  \n15. 防止沸水溢出  \n- EN: Put a wooden spoon across a boiling pot. It won't boil over.  \n- CN: 在沸腾的锅面上横放一把木勺，汤汁就不会溢出来了。  \n  \n16. 炒出蓬松鸡蛋  \n- EN: Adding a splash of water instead of milk makes fluffier eggs. Milk makes them dense.  \n- CN: 炒鸡蛋时加一点水而不是牛奶，煎出来的鸡蛋会更蓬松。加牛奶反而会让鸡蛋变紧实。  \n  \n---  \n  \n### 第三部分：Claude 操作与交互技巧  \n  \n17. 语音控制  \n- EN: Talk to Claude: tap ⌘G to start voice input, or hold Space in a comment to dictate.  \n- CN: 语音对话 Claude：按下 ⌘G 即可启动语音输入，或者在写评论时按住空格键直接口述。  \n  \n18. 智能识图  \n- EN: Drop images here — they auto-attach to your next message as context.  \n- CN: 直接把图片拖到这里——它们会自动附加到你的下一条消息中，作为上下文（Context，即帮助 AI 理解你意图的背景信息）使用。  \n  \n19. 快捷截图  \n- EN: ⌘V pastes screenshots straight from your clipboard into the chat view.  \n- CN: 按 ⌘V 可以将剪贴板里的截图直接粘贴到聊天界面中。  \n  \n20. 代码库读取  \n- EN: Mount a local folder from the Import menu — Claude reads your codebase live, no copying.  \n- CN: 从“导入”(Import) 菜单挂载本地文件夹——Claude 能实时读取你的代码库 (codebase)，再也不用你手动来回复制粘贴代码了。  \n  \n21. 导入专业知识  \n- EN: Attach skills or reference design systems from the Import menu.  \n- CN: 从“导入”菜单中添加特定技能，或者引入你需要参考的设计系统。  \n  \n22. 精准批注  \n- EN: Click \"Comment\" in the toolbar, then click any element to annotate it.  \n- CN: 点击工具栏上的“评论”(Comment)，然后点击界面上的任何元素，就可以给它添加批注了。  \n  \n23. 批量发送  \n- EN: Leave multiple comments before sending — they all batch into one message.  \n- CN: 你可以在发送前留下多条评论——它们会被打包合并成一条消息一起发给 Claude。  \n  \n24. 原地修改文本  \n- EN: Text edit mode lets you click text in the preview and rewrite it in-place.  \n- CN: 开启文本编辑模式后，你只需在预览区域点击文字，就能原地修改它。  \n  \n25. 输入框管理  \n- EN: Comments and text edits appear as chips in the composer. Remove any you don't want.  \n- CN: 你的评论和文本修改会变成输入框里的一块块小标签 (chips)。遇到不满意的，随时点叉删掉就行。  \n  \n26. 实时 UI 调试  \n- EN: Knobs mode lets you drag-adjust CSS values live — sizes, colors, spacing. Use a prompt to control the UI.  \n- CN: 在“旋钮模式”(Knobs mode) 下，你可以像拧收音机旋钮一样，通过拖拽来实时调整 CSS（层叠样式表，网页外观设计的代码语言）数值，比如大小、颜色和间距。你也可以直接用提示词 (prompt) 来控制用户界面 (UI)。  \n  \n27. 产品原型进化  \n- EN: \"Prototype\" starts at wireframes, moves to hi-fi, and ends as a working interactive app.  \n- CN: “原型”(Prototype) 功能带你走完产品设计的全流程：从简单的线框图开始，进化到高保真设计图，最终变成一个真正能点、能用的交互式应用。  \n  \n28. 生成演讲稿  \n- EN: Turn on speaker notes when creating decks to get a full presenter script.  \n- CN: 让 AI 帮你制作幻灯片 (decks) 时，记得打开“演讲者备注”(speaker notes)，这样你就能直接获得一份完整的演讲稿。  \n  \n29. 沉淀工作流  \n- EN: Ask Claude to \"save this as a template\" — it packages the workflow for reuse.  \n- CN: 告诉 Claude“把这个保存为模板”——它就会把这套工作流 (workflow) 打包，方便你下次直接复用。  \n  \n30. 多格式导出  \n- EN: The Share menu lets you export as PPTX, PDF, or a folder to give to Claude Code.  \n- CN: 通过“分享”(Share) 菜单，你可以把作品导出为 PPTX、PDF，或者打包成一个文件夹交给 Claude Code（Anthropic 推出的面向开发者的命令行 AI 编程助手）。  \n  \n31. 无缝对接开发  \n- EN: \"Handoff to Claude Code\" creates a dev-ready package with specs and structure. Download it, then tell Claude Code \"create this design.\"  \n- CN: “移交至 Claude Code”(Handoff to Claude Code) 功能会为你生成一个包含规范和结构的“开发就绪”数据包。下载它，然后直接告诉 Claude Code：“帮我把这个设计写成代码。”  \n  \n32. 切换模型大脑  \n- EN: Use the Gear next to the Send button to change model.  \n- CN: 点击发送按钮旁边的齿轮图标，即可随时切换不同的大语言模型 (LLM)。  \n  \n33. 原型内嵌 API  \n- EN: Claude can call the Claude API from inside your prototypes. No backend needed.  \n- CN: Claude 甚至可以直接在你的产品原型中调用 Claude API（应用程序编程接口，相当于连接 AI 大脑的通道）。完全不需要写任何后端代码！  \n  \n34. 网页语音交互  \n- EN: Ask Claude to use the Web Speech API for interactive voice input and output.  \n- CN: 试试让 Claude 调用 Web Speech API（浏览器内置的语音合成与识别接口），让你的网页直接实现可以对话的语音输入与输出。  \n  \n35. 手绘草图  \n- EN: The napkin sketch tool lets you draw freehand — great for rough layouts.  \n- CN: “餐巾纸草图”(napkin sketch) 工具允许你随心所欲地手绘涂鸦——非常适合用来勾勒粗略的排版布局。  \n  \n36. 捕获真实网页  \n- EN: Import → Web Capture lets you copy elements from real web pages and paste them to Claude.  \n- CN: 使用“导入”→“网页捕获”(Web Capture)，你可以直接从真实的网页上复制元素，然后原封不动地粘贴给 Claude。\n\n💬2🔄0❤️13👀1114📊5",
+      "tags": [
+        "设计原则",
+        "生活技巧"
+      ],
+      "score": 65,
+      "summary": "Claude Design 分享 16 条设计心法和生活小妙招，非 AI 核心新闻。",
+      "fetched_at": "2026-06-07T01:13:10.200377+08:00"
+    },
+    {
+      "title": "Vibe Coding 这个名字不好，容易联想成让 AI 生成垃圾代码。以后程序员无论是前端还是后端，无论你是编程高手还是小白，主流都是人指挥 AI 写代码。\n\n✅程序员的角色会变成 Tech Lea...",
+      "link": "https://x.com/dotey/status/2063282159259898162",
+      "published": "2026-06-06T23:29:35+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Vibe Coding 这个名字不好，容易联想成让 AI 生成垃圾代码。以后程序员无论是前端还是后端，无论你是编程高手还是小白，主流都是人指挥 AI 写代码。  \n  \n✅程序员的角色会变成 Tech Lead 这样的角色：分解任务、架构选型、代码审查和调试。至于写代码，会越来越少的手写。  \n  \n❌但不建议当老板的角色：我想要什么功能你给我实现，实现不了就开除。  \n  \n如果你还没有习惯指挥 AI 写代码，建议：  \n1. 开始适应指挥 AI 写代码而不是亲自写代码；  \n2. 用你能用到的最聪明的模型，不要省钱  \n3. 开始之前认真设计，至少复杂一点的用 Plan mode 讨论清楚设计，如果你对设计都不参与你对代码库无法了解未来还是会失控  \n4. 一次不要做太多，AI生成后要做审查，因为 AI 不会担责任，你还是责任主体  \n5. 刻意的做一些手写代码的练习，尽可能搞懂 AI 生成的代码\n\n![Tweet Image](https://pbs.twimg.com/media/HKJALe8XUAAaXLf.jpg)\n\n![Garfield Saves America](https://pbs.twimg.com/profile_images/1873012892397686784/gmQ9idvp_normal.jpg)\n\nGarfield Saves America@jerry\\_sun15795\n\n[@dotey](https://x.com/dotey) 世纪之问：现在吹弄Vibe Coding的都是前端狗？C# 和 Java等后端狗不屑于此？\n\n[🔗 View Quoted Tweet](https://x.com/jerry_sun15795/status/2063183191255511460)\n\n💬7🔄5❤️19👀4963📊8",
+      "tags": [
+        "AI编程",
+        "观点"
+      ],
+      "score": 75,
+      "summary": "宝玉论述 Vibe Coding 趋势，建议程序员转变角色为技术领导。",
+      "fetched_at": "2026-06-07T01:13:10.200425+08:00"
+    },
+    {
+      "title": "当时发这个 PR 的时候，只是实现了最基本的多语言，所以语言覆盖不够，还有很多是英文；另外设计上是参考颜色模式的选择，会有个隐含的问题：如果语言数量一多，就无法在一屏显示下了\n\n所以昨天花了不少时间做...",
+      "link": "https://x.com/dotey/status/2063277561266782661",
+      "published": "2026-06-06T23:11:19+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "当时发这个 PR 的时候，只是实现了最基本的多语言，所以语言覆盖不够，还有很多是英文；另外设计上是参考颜色模式的选择，会有个隐含的问题：如果语言数量一多，就无法在一屏显示下了  \n  \n所以昨天花了不少时间做了多语言的覆盖，基本上能找到的硬编码文字都换成了多语言；另外把语言选择换成了可以检索的 Dropdown List。  \n  \n现在 PR 已经被合并了，下个版本 Hermes Desktop 可以支持更多语言了，为了测试语言的支持，加上了完整的繁体中文和日文的支持。  \n  \n翻译主要借助于 Web 版的翻译和 AI 辅助的翻译，所以难免有错误，建议如果有错误可以自行提交 PR。\n\n![Tweet Image](https://pbs.twimg.com/media/HKI74dOWwAAoX8x.jpg)![Tweet Image](https://pbs.twimg.com/media/HKI7-qkXsAA-CHH.jpg)![Tweet Image](https://pbs.twimg.com/media/HKI8ASVXsAAtFGn.jpg)\n\n![宝玉](https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg)\n\n宝玉@dotey\n\n感谢 [@Teknium](https://x.com/Teknium) 合并了 PR，现在 Hermes Agent Desktop 支持中文了，还不够完整，会继续贡献 PR，以及修复一些因此带来的错误。\n\n![Tweet Image](https://pbs.twimg.com/media/HKET_PlWsAAWges.jpg)![Tweet Image](https://pbs.twimg.com/media/HKEUA0xWoAAwvH_.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/dotey/status/2062952453398466819)\n\n💬2🔄1❤️13👀5590📊3",
+      "tags": [
+        "开源贡献",
+        "Hermes Agent"
+      ],
+      "score": 70,
+      "summary": "宝玉为 Hermes Desktop 添加多语言支持，贡献 PR 已被合并。",
+      "fetched_at": "2026-06-07T01:13:10.200473+08:00"
+    },
+    {
+      "title": "为什么会有很多账号会使用AI天天在一些博主的推文下面回复\n\n他们使用AI生成和推文内容相关的评论\n\n几乎出现在各个博主下面\n\n感觉是买了某种服务，想命中X的算法或者引起博主注意关注他们\n\n但是那些生成...",
+      "link": "https://x.com/xiaohu/status/2063281028085809620",
+      "published": "2026-06-06T23:25:05+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "为什么会有很多账号会使用AI天天在一些博主的推文下面回复  \n  \n他们使用AI生成和推文内容相关的评论  \n  \n几乎出现在各个博主下面  \n  \n感觉是买了某种服务，想命中X的算法或者引起博主注意关注他们  \n  \n但是那些生成的评论内容太拙劣了🤣\n\n💬12🔄0❤️0👀1241📊10",
+      "tags": [
+        "AI滥用",
+        "观察"
+      ],
+      "score": 50,
+      "summary": "小互观察到有账号使用 AI 生成评论以吸引注意力，质量低。",
+      "fetched_at": "2026-06-07T01:13:10.200520+08:00"
+    }
+  ]
+}
