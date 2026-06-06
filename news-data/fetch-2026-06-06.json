@@ -1,6 +1,6 @@
 {
   "meta": {
-    "date": "2026-06-05"
+    "date": "2026-06-06"
   },
   "entries": [
     {
@@ -2233,6 +2233,204 @@
       "score": 0,
       "summary": "",
       "fetched_at": "2026-06-06T07:07:49.737330+08:00"
+    },
+    {
+      "title": "300 款车、450 亿美元订单：高通汽车芯片的中国棋局",
+      "link": "https://www.ifanr.com/1668242?utm_source=rss&utm_medium=rss&utm_campaign=",
+      "published": "2026-06-06T10:17:50+08:00",
+      "source": "爱范儿",
+      "content": "[![](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2382dda9b3e.png)](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2382dda9b3e.png)\n\n13 亿美元：这是高通汽车业务 2026 财年第二季度（截至 2026 年 3 月）的单季营收，同比增长 38%。\n\n年化算下来，高通从汽车上赚的钱已经超过 50 亿美元。高通 CEO 安蒙预计，到 2026 财年结束时，这个数字会突破 60 亿。\n\n要知道三年前，高通的汽车年营收还不到 20 亿美元。\n\n英伟达 2026 财年（截至 2026 年 1 月）全年汽车收入 23.49 亿美元，同比增长 39%。高通光一个季度就赚了英伟达大半年的量。当然，两家的计算口径不同，高通包含座舱、连接、ADAS 全栈，英伟达主要计入自动驾驶芯片和软件授权。\n\n**但趋势已经很清楚：在汽车芯片这条赛道上，高通正在拉开与多数对手的距离。**\n\n两天前，高通在无锡办了第四届汽车技术与合作峰会。60 多场演讲，70 多家供应商，50 多台展车。\n\n目前，高通正在与上汽大众深化合作，与卓驭科技联合发布下一代舱驾融合域控制器，和诚迈科技、斑马智能、德赛西威、中科创达等六家公司共同启动「车端人工智能 Claw 生态计划」。\n\n## 「智能体之年」，汽车芯片公司在说什么\n\n高通中国区董事长孟樸在主论坛上说了一句话：「2026 年是智能体之年。」\n\n这不是高通的独家说法。吉利副总裁李传海在 2026 年 5 月公开表达过类似判断：未来座舱不会有固定界面，不需要独立 APP，一个足够强大的 AI 智能体就能读懂用户需求。火山引擎在 2026 北京车展上也发布了 Agentic AI 架构方案。\n\n但「智能体」这个词在汽车行业里到底指什么？\n\n简单说，就是从「你问它答」变成「它替你做」。传统语音助手等你下指令，智能体会主动观察你的状态、判断你的需求、调用车上各种硬件和服务来执行。比如你上车时情绪低落，它不会问「你想听什么歌」，而是直接切到你常听的播放列表，调暗氛围灯，把导航设成回家路线。\n\n要实现这些，芯片端的要求很明确：AI 算力要够大，能跑端侧大模型；传感器数据要能跨域调用，摄像头、麦克风、雷达的信息要打通；推理要在本地完成，不能什么都扔到云端去排队。\n\n高通汽车事业群总经理 Nakul Duggal 在演讲中提到：智能体 AI 的构想在三到五年前还处于概念阶段，现在正逐步成为现实。他认为高通率先推动的舱驾融合架构，让统一的底层平台可以直接打通车内外传感器等硬件资源，智能体框架因此跑得更高效。\n\n这是一个合理的技术叙事，前提是芯片确实有能力撑住这些需求。\n\n[![高通汽车事业群总经理 Nakul Duggal](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2382eb99b7f.png)](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2382eb99b7f.png)\n\n## 三颗芯片，三个价位段\n\n高通目前面向汽车市场的核心产品线有三条，从定位到能力差异明显：\n\n**骁龙 8775（Ride Flex SoC）** 是行业里第一颗同时处理座舱交互和 ADAS 计算的单芯片方案。一颗芯片取代过去座舱域控和智驾域控两套系统，高通称系统级成本可降低约 20%。主攻 10 万到 20 万元区间的车型。\n\n8775 于 2023 年发布，到 2025 年底开始量产。目前已获 9 款车型定点，量产搭载的包括极狐阿尔法 T5、阿尔法 S5、东风日产 N6、别克昂科威 L7。峰会上展出的问道 V9 也基于这颗芯片。现场还开放了试乘，让参会者体验记忆泊车和城区 NOA 等功能。\n\n**骁龙 8397（座舱平台至尊版）** 在峰会展区的存在感最强。斑马智行用它跑了全模态端侧大模型 AutoOmni 的实车方案，中科创达推出了 AquaClaw 车载 AI 智能体，诚迈科技展示了「萤火 Claw」，在端侧实现类似 OpenClaw 的智能体助理体验。东软智行基于 8397 打造的端侧 AI 智能座舱域控产品，已获得多家头部车企定点。\n\n这些演示之所以成立，是因为 8397 和前代 8295 之间的跃升足够大。AI 算力从 30 TOPS 到 320 TOPS，接近 10 倍。CPU 和 GPU 性能提升 3 倍，采用了高通专为汽车定制的 Oryon CPU 架构。8295 时代端侧大模型只能跑 10 亿参数，8397 直接拉到 140 亿。\n\n**骁龙 8797（Ride 至尊版）** 是当前高通汽车芯片的天花板。单片算力 1280 TOPS，定位 30 万元以上高端车型，支持端到端 Transformer 算法和 VLA（视觉语言动作）模型。目前已获 18 个车型定点，10 款车型已经或正在量产。\n\n最具代表性的量产案例是理想 L9 Livis。这款车 5 月 15 日发布，售价 50.98 万元，搭载骁龙 8797 加两颗理想自研马赫 100 智驾芯片，官方宣称有效算力 2560 TOPS。座舱配了 29 英寸 6K 全景屏、48GB 座舱内存。\n\n峰会上，高通还与卓驭科技联合发布了基于 8797 的下一代舱驾融合域控制器。车联天下基于同一芯片打造的新一代域控也在展区亮相，通过中央计算与分布式边缘计算协同，为驾驶辅助、智能座舱和端侧 AI 应用提供统一计算基础。\n\n[![](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a238307eb68f.png)](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a238307eb68f.png)\n\n## 战场上不止高通一家\n\n高通在座舱芯片市场的份额据行业估计超过 70%，8295 几乎成了中高端车型的标配。但在 ADAS 和中央计算领域，竞争者并不少。\n\n英伟达 DRIVE Thor 单片算力 2000 TOPS，在规格上仍然领先。极氪是 Thor 上车最积极的车企，2026 款极氪 7X、9X 已量产搭载。英伟达与奔驰、蔚来等也有深度合作。在自动驾驶芯片市场，英伟达估计占据约 40% 的份额。\n\n联发科也在进入这个市场。Dimensity Auto CT-X1 是一颗 3nm 制程的座舱旗舰芯片，NPU 算力 46+ TOPS，支持 130 亿参数多模态大模型端侧部署，实测性能超 8295 约 30%。联发科还与英伟达合作开发下一代车用 SoC，首款合作芯片预计 2026 到 2027 年量产。\n\n国内供应商的动作同样密集。地平线在 2026 年发布了星空（Xingkong）系列芯片，BPU 算力高达 650 TOPS，定位中国首款舱驾融合智能体芯片。配套的整车智能体操作系统 KaKaClaw 一并推出。\n\n车企自研芯片的趋势也在加速。蔚来 2026 年初宣布全系换装自研神玑 NX9031 芯片，称单车成本降低 1 万元。小鹏推出图灵芯片，理想的马赫 100 已随 L9 Livis 量产。\n\n2025 年中国乘用车前装舱驾一体计算单元达 156 万台，同比增长近 50%。这个增速说明舱驾融合不再是概念验证，而是进入了规模化部署阶段。高通、英伟达、地平线、联发科都在争夺这块市场，技术路线和商业逻辑各有不同。\n\n[![](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2383189d83d.png)](https://s3.ifanr.com/wp-content/uploads/2026/06/img_6a2383189d83d.png)\n\n## 端侧大模型：从「能跑」到「好用」\n\n端侧大模型上车是 2026 年汽车 AI 的核心叙事之一。\n\n面壁智能的 SuperMate 是目前量产规模最大的方案。模型参数控制在 100 亿以下（MiniCPM 3.0 系列），已搭载在吉利、长安马自达等多款量产车型上。面壁智能 CEO 李大海预计 2026 年底搭载量达 30 万辆。这家公司拿到了 ASPICE L2 级评估，是国内首家获得该车规认证的大模型企业。\n\n地平线的征程 6 芯片平台上，座舱对话模型用了 28 亿参数，语音交互延迟低于 80 毫秒，断网状态下可连续交互 100 轮。自动驾驶使用 70 亿参数多模态感知模型，推理功耗控制在 12W 以内。\n\n工具链的选择对延迟影响很大。地平线的实测数据显示，从 PyTorch 切换到 SNPE 后，推理延迟从 300 毫秒降到 50 毫秒。\n\n高通的 8397 把端侧大模型的天花板推到了 140 亿参数。到了 140 亿参数，车载 AI 够得着多轮对话、多模态理解和任务规划，已经超出语音指令识别的范畴。\n\n但端侧模型和云端模型之间仍然存在能力差距。目前云端的旗舰模型参数量已达千亿甚至万亿级别。车上的 140 亿参数模型更像是一个「够用的本地助手」，复杂推理和知识密集型任务仍然需要云端协同。高通与谷歌合作，将 Gemini Enterprise for Automotive 的云端 AI 与端侧 Snapdragon 方案结合，就是为了弥补这个差距。\n\n## 汽车芯片的下半场\n\n从 2021 年到现在，骁龙数字底盘解决方案支持中国车企推出超过 300 款智能网联汽车。合作名单涵盖大众、宝马、奔驰、丰田、Stellantis、蔚来、理想、零跑、极氪、长城、奇瑞、东风。\n\n这些数字说明高通在汽车芯片领域的地位已经很稳固。但「稳固」和「不可替代」之间还有距离。\n\n车企自研芯片的动力很充分：降低成本、掌握数据、减少对单一供应商的依赖。蔚来、理想、小鹏都已经在这条路上走出了实质性的一步。联发科和地平线的产品逐渐成熟，也在给车企提供更多选择。\n\n高通的应对策略是把自己从芯片供应商升级为平台公司。覆盖座舱、ADAS 和连接全链路，硬件之上还叠了 AI 框架和开发工具，单芯片和中央计算两条路线都押。「车端人工智能 Claw 生态计划」联合六家企业一起推，也是在试图把生态做厚。\n\n安蒙在 Computex 上提出「计算连续体」的概念：AI 后台持续运行，随时感知、调度资源、做出响应。汽车是这个连续体中最重要的移动节点之一。\n\n这个构想能走多远，取决于两件事：端侧模型的能力爬坡有多快，以及车企自研芯片会走多远。\n\n从这场高通峰会来看，至少供应链这一端已经准备好了。\n\n**[爱范儿](https://www.ifanr.com/author/ifanr)**\n\n爱范儿，让未来触手可及。\n\n[邮箱](mailto:admin@ifanr.com)\n[7](https://www.ifanr.com/4)\n\n#欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+      "tags": [
+        "汽车芯片",
+        "高通"
+      ],
+      "score": 70,
+      "summary": "高通汽车业务营收增长，发布多款车规芯片，聚焦智能体AI。",
+      "fetched_at": "2026-06-06T10:56:06.940368+08:00"
+    },
+    {
+      "title": "Replit x Shopify!",
+      "link": "https://x.com/amasad/status/2063065480878063694",
+      "published": "2026-06-06T09:08:35+08:00",
+      "source": "Amjad Masad(@amasad)",
+      "content": "Replit x Shopify!\n\n![The New Stack](https://pbs.twimg.com/profile_images/650494844536647680/kxpz8kAv_normal.png)\n\nThe New Stack@thenewstack\n\nReplit adds a Shopify integration to its monetization stack, letting vibe coders launch a custom storefront in about ten minutes from the AI agent. [thenewstack.io/replit-shopify…](https://thenewstack.io/replit-shopify-storefront-integration/?taid=6a232ad7b189380001a041cc&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter)\n\n[🔗 View Quoted Tweet](https://x.com/thenewstack/status/2062987921859223875)\n\n💬9🔄3❤️37👀4527📊10",
+      "tags": [
+        "Replit",
+        "Shopify",
+        "AI集成"
+      ],
+      "score": 85,
+      "summary": "Replit CEO宣布与Shopify集成，AI agent可快速创建定制店铺。",
+      "fetched_at": "2026-06-06T10:56:06.940434+08:00"
+    },
+    {
+      "title": "100k special will be a totally new browser-use version",
+      "link": "https://x.com/browser_use/status/2063078049411903830",
+      "published": "2026-06-06T09:58:31+08:00",
+      "source": "Browser Use(@browser_use)",
+      "content": "100k special will be a totally new browser-use version\n\n![Tweet Image](https://pbs.twimg.com/media/HKGGZTFbkAAFnum.png)\n\n💬0🔄0❤️1👀37",
+      "tags": [
+        "Browser Use",
+        "版本更新"
+      ],
+      "score": 50,
+      "summary": "Browser Use官方预告将发布全新版本。",
+      "fetched_at": "2026-06-06T10:56:06.940481+08:00"
+    },
+    {
+      "title": "Elon, last year: Grok 5 has a 10% chance of becoming world’s first AGI.\n\nElon, this year: Never mind...",
+      "link": "https://x.com/GaryMarcus/status/2063064661558509659",
+      "published": "2026-06-06T09:05:19+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Elon, last year: Grok 5 has a 10% chance of becoming world’s first AGI.  \n  \nElon, this year: Never mind, we’re gonna be like CoreWeave, but bigger.\n\n![Elon Musk](https://pbs.twimg.com/profile_images/1936002956333080576/kqqe2iWO_normal.jpg)\n\nElon Musk@elonmusk\n\nMy estimate of the probability of Grok 5 achieving AGI is now at 10% and rising\n\n[🔗 View Quoted Tweet](https://x.com/elonmusk/status/1979431839824777673)\n\n💬3🔄4❤️18👀2260📊4",
+      "tags": [
+        "Grok 5",
+        "AGI",
+        "评论"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus评论马斯克对Grok 5 AGI概率预测的改变。",
+      "fetched_at": "2026-06-06T10:56:06.940523+08:00"
+    },
+    {
+      "title": "昨天 Nvidia-Nemotron-3-Ultra 把我 Hermes 里面的定时任务全部改成了一坨翔，今天我又用 DeepSeek V4 Pro 修复了，老黄赔我的钱！",
+      "link": "https://x.com/geekbb/status/2063068337144574141",
+      "published": "2026-06-06T09:19:56+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "昨天 Nvidia-Nemotron-3-Ultra 把我 Hermes 里面的定时任务全部改成了一坨翔，今天我又用 DeepSeek V4 Pro 修复了，老黄赔我的钱！\n\n![Tweet Image](https://pbs.twimg.com/media/HKF9fAZacAAHkkC.png)\n\n![Geek](https://pbs.twimg.com/profile_images/1644898947272671233/7959WGOK_normal.jpg)\n\nGeek@geekbb\n\nNvidia-Nemotron-3-Ultra 用了一天，只能说拉了一坨大的。\n\n[🔗 View Quoted Tweet](https://x.com/geekbb/status/2062855843591401643)\n\n💬1🔄1❤️6👀3196📊2",
+      "tags": [
+        "Nemotron",
+        "DeepSeek",
+        "个人吐槽"
+      ],
+      "score": 30,
+      "summary": "用户吐槽Nemotron-3-Ultra破坏定时任务，后用DeepSeek修复。",
+      "fetched_at": "2026-06-06T10:56:06.940564+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2063091415174033663",
+      "published": "2026-06-06T10:51:38+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Dominic Pino](https://pbs.twimg.com/profile_images/1994046465564381184/kGwkPtQ0_normal.jpg)\n\nDominic Pino@DominicJPino\n\n\"Buy, borrow, die\" is a neat theory for wealthy tax avoidance, but research shows that rich people don't actually use it.  \n  \n[@PostOpinions](https://x.com/PostOpinions)[washingtonpost.com/opinions/2026/…](https://www.washingtonpost.com/opinions/2026/06/05/ruben-gallego-tax-plan-is-premised-myth-buy-borrow-die/)\n\n[🔗 View Quoted Tweet](https://x.com/DominicJPino/status/2062913526075625894)\n\n💬0🔄0❤️0👀359",
+      "tags": [
+        "非AI"
+      ],
+      "score": 10,
+      "summary": "Andreessen评论税收文章，与AI无关。",
+      "fetched_at": "2026-06-06T10:56:06.940603+08:00"
+    },
+    {
+      "title": "Curiously enough I did office hours today with a startup that cuts companies' LLM token costs by opt...",
+      "link": "https://x.com/paulg/status/2063091245334044902",
+      "published": "2026-06-06T10:50:57+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "Curiously enough I did office hours today with a startup that cuts companies' LLM token costs by optimizing requests. They can cut costs by about half, which they split with the customer. So the TAM is a quarter of the model companies' corporate revenue. That's a big TAM!\n\n![Paul Graham](https://pbs.twimg.com/profile_images/1824002576/pg-railsconf_normal.jpg)\n\nPaul Graham@paulg\n\nIf big companies can't make a net return on their LLM token costs, that doesn't mean it's impossible to. In fact this is exactly what you'd expect to happen with a new technology. Incumbents can't use it well, and are replaced by upstarts who can.\n\n[🔗 View Quoted Tweet](https://x.com/paulg/status/2062888127405175064)\n\n💬8🔄0❤️26👀2481📊7",
+      "tags": [
+        "LLM成本",
+        "创业",
+        "Paul Graham"
+      ],
+      "score": 72,
+      "summary": "Paul Graham分享一家优化LLM token成本的创业公司，可节省一半费用。",
+      "fetched_at": "2026-06-06T10:56:06.940640+08:00"
+    },
+    {
+      "title": "This is an actual page on the White House web site. It reads like something written about a third wo...",
+      "link": "https://x.com/paulg/status/2063086788043026589",
+      "published": "2026-06-06T10:33:15+08:00",
+      "source": "Paul Graham(@paulg)",
+      "content": "This is an actual page on the White House web site. It reads like something written about a third world dictator. So embarrassing. I have not seen any branch of the federal government sink this low in my lifetime.\n\n![Tweet Image](https://pbs.twimg.com/media/HKGN3xMb0AANK7V.jpg)\n\n💬19🔄20❤️145👀6006📊31",
+      "tags": [
+        "非AI",
+        "政治"
+      ],
+      "score": 10,
+      "summary": "Paul Graham批评白宫网站内容，与AI无关。",
+      "fetched_at": "2026-06-06T10:56:06.940677+08:00"
+    },
+    {
+      "title": "Short fantastic reminder of how spot on Kurzweil was - written in 1999, predicting AGI before 2050 s...",
+      "link": "https://x.com/andrewchen/status/2063069222406967654",
+      "published": "2026-06-06T09:23:27+08:00",
+      "source": "andrew chen(@andrewchen)",
+      "content": "Short fantastic reminder of how spot on Kurzweil was - written in 1999, predicting AGI before 2050 simply extrapolating on Moore’s law versus neurons in the brain, before transformers and modern AI  \n  \nJust a ~2 hour short listen for folks who want a refresher from over 20 years ago\n\n![Tweet Image](https://pbs.twimg.com/media/HKF-hlcbIAA4ItD.jpg)\n\n💬4🔄0❤️13👀1587📊6",
+      "tags": [
+        "Kurzweil",
+        "AGI预测"
+      ],
+      "score": 55,
+      "summary": "Andrew Chen回顾Kurzweil 1999年AGI预测，认为其准确。",
+      "fetched_at": "2026-06-06T10:56:06.940715+08:00"
+    },
+    {
+      "title": "dreaming，chatgpt 的全新记忆机制，效果相当不错，赶紧去试试！\n\n之前的 ChatGPT 记忆机制，叫 saved memories，更多是被动的、稀疏的、容易过期的记忆。\n\n现在的 d...",
+      "link": "https://x.com/howie_serious/status/2063087450352943510",
+      "published": "2026-06-06T10:35:53+08:00",
+      "source": "howie.serious(@howie_serious)",
+      "content": "dreaming，chatgpt 的全新记忆机制，效果相当不错，赶紧去试试！  \n  \n之前的 ChatGPT 记忆机制，叫 saved memories，更多是被动的、稀疏的、容易过期的记忆。  \n  \n现在的 dreaming 机制，属于记忆架构的产品范式级别变化：更像人脑的记忆机制，是更主动、更可扩展的后台记忆合成系统。  \n  \n它会参考长期聊天历史，在后台自动整理出更鲜活、更相关、更连续的用户上下文。  \n  \n这套记忆机制，应该可以显著体现对话的效果。因为，每一次对话，ChatGPT 都记得你们过去聊了什么。🤣\n\n![Tweet Image](https://pbs.twimg.com/media/HKGN37SbsAAiQ1K.jpg)![Tweet Image](https://pbs.twimg.com/media/HKGN37YbYAAKPFh.jpg)![Tweet Image](https://pbs.twimg.com/media/HKGN37TbgAADFor.jpg)![Tweet Image](https://pbs.twimg.com/media/HKGN37KbUAA_T6G.jpg)\n\n![howie.serious](https://pbs.twimg.com/profile_images/738174666309652480/UgeKnQOm_normal.jpg)\n\nhowie.serious@howie\\_serious\n\nChatGPT 升级了记忆系统，叫 Dreaming  \n  \n👏👏👏  \n  \n人类的记忆也主要是在睡眠中巩固的。只有睡得好睡得香睡得饱，白天的短时记忆才会被有效巩固，从神经元放电活动变成基因表达多肽链折叠蛋白质合成，变成大脑的生物物理性结构改变。  \n  \n（家里小学生，一直都是 9 点半雷打不动上床睡觉。但听说很多小孩睡得很晚🤣）  \n  \nai 的记忆系统越来越好。codex 也是，基本上不用管，但记忆机制运作良好，没遇到过什么问题。[openai.com/index/chatgpt-…](https://openai.com/index/chatgpt-memory-dreaming/)kNSfq\n\n[🔗 View Quoted Tweet](https://x.com/howie_serious/status/2062703293999256050)\n\n💬1🔄1❤️0👀173📊1",
+      "tags": [
+        "ChatGPT",
+        "Dreaming",
+        "记忆机制"
+      ],
+      "score": 85,
+      "summary": "如何介绍ChatGPT新记忆机制Dreaming，可主动整理用户上下文。",
+      "fetched_at": "2026-06-06T10:56:06.940751+08:00"
+    },
+    {
+      "title": "我自己最近半年 X 收入和曝光的数据对比\n\n最近两次特别明显，上次曝光还行但收入很低，这次曝光更低收入确上涨了不少。。",
+      "link": "https://x.com/shao__meng/status/2063066758966325643",
+      "published": "2026-06-06T09:13:39+08:00",
+      "source": "meng shao(@shao__meng)",
+      "content": "我自己最近半年 X 收入和曝光的数据对比  \n  \n最近两次特别明显，上次曝光还行但收入很低，这次曝光更低收入确上涨了不少。。\n\n![Tweet Image](https://pbs.twimg.com/media/HKF8CCsbwAASAl7.jpg)\n\n💬0🔄0❤️0👀209",
+      "tags": [
+        "非AI"
+      ],
+      "score": 0,
+      "summary": "用户分享X平台收入与曝光数据对比，与AI无关。",
+      "fetched_at": "2026-06-06T10:56:06.940789+08:00"
+    },
+    {
+      "title": "我比你还惨，给几家 AI 公司做牛做马\n\n既怕 Token 不够用，又怕 Token 没用完！",
+      "link": "https://x.com/dotey/status/2063079705956237316",
+      "published": "2026-06-06T10:05:06+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "我比你还惨，给几家 AI 公司做牛做马  \n  \n既怕 Token 不够用，又怕 Token 没用完！\n\n![图拉鼎](https://pbs.twimg.com/profile_images/675270246509350912/lV9-F5ey_normal.jpg)\n\n图拉鼎@tualatrix\n\n我就是 OpenAI 的驴，每天起床先看看有没有余量 Token，有就开始消耗。\n\n[🔗 View Quoted Tweet](https://x.com/tualatrix/status/2063069013685698931)\n\n💬4🔄1❤️18👀4321📊4",
+      "tags": [
+        "非AI"
+      ],
+      "score": 20,
+      "summary": "宝玉吐槽AI公司Token消耗压力，情绪化内容。",
+      "fetched_at": "2026-06-06T10:56:06.940827+08:00"
+    },
+    {
+      "title": "其实我是在吐槽不是夸奖😢",
+      "link": "https://x.com/dotey/status/2063075618686689524",
+      "published": "2026-06-06T09:48:52+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "其实我是在吐槽不是夸奖😢\n\n💬0🔄0❤️7👀1872📊1",
+      "tags": [
+        "非AI"
+      ],
+      "score": 10,
+      "summary": "宝玉解释前一条推文为吐槽，无实质信息。",
+      "fetched_at": "2026-06-06T10:56:06.940864+08:00"
+    },
+    {
+      "title": "根据 SpaceX 公布的一份文件\n\nGoogle与其签订了一份协议，从 2026 年10月至 2029 年6月止，每月支付9.2 亿美元购买算力，具体包括大约 110,000 个 NVIDIA GP...",
+      "link": "https://x.com/xiaohu/status/2063082652157321281",
+      "published": "2026-06-06T10:16:49+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "根据 SpaceX 公布的一份文件  \n  \nGoogle与其签订了一份协议，从 2026 年10月至 2029 年6月止，每月支付9.2 亿美元购买算力，具体包括大约 110,000 个 NVIDIA GPU、CPU、内存以及其他组件。   \n  \n此前 Anthropic也向SpaceX 每月支付 12.5 亿美元购买算力...  \n  \n算下来每年有 260 亿美元的收入，躺赚啊...  \n  \n日了狗了，赚钱还是得看老马...\n\n![Tweet Image](https://pbs.twimg.com/media/HKGI1qMbMAAUFCo.jpg)\n\n💬3🔄0❤️3👀633📊3",
+      "tags": [
+        "算力",
+        "Google",
+        "SpaceX"
+      ],
+      "score": 82,
+      "summary": "小互爆料Google与SpaceX签每月9.2亿美元算力合同，含11万GPU。",
+      "fetched_at": "2026-06-06T10:56:06.940901+08:00"
     }
   ]
 }
