@@ -2584,6 +2584,92 @@
       "score": 0,
       "summary": "",
       "fetched_at": "2026-06-06T14:53:05.797897+08:00"
+    },
+    {
+      "title": "取消 Setapp 订阅后有几个必须的软件不能用了，上数码荔枝又买了一遍，正好赶上 618 促销。\n\nhttps://t.co/yqFCcw0mmS",
+      "link": "https://x.com/dingyi/status/2063184879681196491",
+      "published": "2026-06-06T17:03:02+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "取消 Setapp 订阅后有几个必须的软件不能用了，上数码荔枝又买了一遍，正好赶上 618 促销。  \n  \n[lizhi.shop/site/search\\_li…](https://lizhi.shop/site/search_list/category_id/64?cid=zrtlhcug&order_by=1)\n\n![Tweet Image](https://pbs.twimg.com/media/HKHntsbbMAAokmi.png)\n\n💬0🔄1❤️3👀1579📊1",
+      "tags": [
+        "软件购买",
+        "促销"
+      ],
+      "score": 40,
+      "summary": "用户取消Setapp订阅后重新购买软件，提及618促销。",
+      "fetched_at": "2026-06-06T18:04:57.322949+08:00"
+    },
+    {
+      "title": "把 PDF 教材转化为可交互的学习图谱和测量工具，帮助学生通过多种方式深度理解内容。\n\nhttps://t.co/17UI21PYSq",
+      "link": "https://x.com/geekbb/status/2063176818845188347",
+      "published": "2026-06-06T16:31:00+08:00",
+      "source": "Geek(@geekbb)",
+      "content": "把 PDF 教材转化为可交互的学习图谱和测量工具，帮助学生通过多种方式深度理解内容。  \n  \n[github.com/beltromatti/ge…](https://github.com/beltromatti/get-it)\n\n[![Animated GIF](https://pbs.twimg.com/tweet_video_thumb/HKGb60IbMAAgPKR.jpg)](https://video.twimg.com/tweet_video/HKGb60IbMAAgPKR.mp4)\n\n💬0🔄3❤️14👀1367📊5",
+      "tags": [
+        "PDF转化",
+        "学习工具"
+      ],
+      "score": 60,
+      "summary": "介绍将PDF教材转化为交互式学习图谱和测量工具的开源项目。",
+      "fetched_at": "2026-06-06T18:04:57.323024+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2063184005126865146",
+      "published": "2026-06-06T16:59:33+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Alice Smith](https://pbs.twimg.com/profile_images/1270261256054812673/L2aMmq5v_normal.jpg)\n\nAlice Smith@TheAliceSmith\n\nThe Labour Party wants to ban social media for under-16s in the UK.  \n  \nThe Labour Party wants to lower the voting age to 16 in the UK.  \n  \nWhy?  \n  \nThe Labour Party wants voters to have no access to information beyond state education before they vote.\n\n[🔗 View Quoted Tweet](https://x.com/TheAliceSmith/status/2062966219691479529)\n\n💬19🔄6❤️99👀8980📊18",
+      "tags": [
+        "政治评论",
+        "社交媒体"
+      ],
+      "score": 40,
+      "summary": "Marc Andreessen转发关于英国工党计划禁止16岁以下社交媒体并降低投票年龄的评论。",
+      "fetched_at": "2026-06-06T18:04:57.323083+08:00"
+    },
+    {
+      "title": "Interesting.",
+      "link": "https://x.com/pmarca/status/2063179832008356119",
+      "published": "2026-06-06T16:42:58+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Interesting.\n\n![Victor M](https://pbs.twimg.com/profile_images/1099983311101984768/p7dZK4S__normal.jpg)\n\nVictor M@victormustar\n\nBefore the week ends, let's acknowledge one of the most INSANE week ever for open AI, with 25+ notable open-weight drops across every modality:  \n  \n🧠 LLMs  \n  \n→ NVIDIA Nemotron 3 Ultra: 550B hybrid Mamba-MoE, only 55B active, 1M context, MMLU 89.1. NVFP4 variant claims ~5x throughput on Blackwell. First openly-weighted 550B hybrid Mamba-Transformer, closing the gap with frontier closed models.  \n  \n→ Google Gemma 4 12B: fully open dense any-to-any (text/image/audio/video), 256k context, encoder-free, 140+ languages, AIME 2026 at 77.5. Shipped with a 23-checkpoint QAT wave (mobile ONNX + MLX). Most deployable model of the week.  \n  \n→ StepFun Step-3.7-Flash: 198B sparse MoE VLM, ~11B active, SWE-Bench PRO 56.3. Apache 2.0.  \n  \n→ Liquid AI LFM2.5-8B-A1B: edge MoE, just 1.5B active, 128k ctx, MATH500 88.8, MLX-ready. Best on-device option this week.  \n  \n→ JetBrains Mellum2-12B-A2.5B-Thinking: their first open MoE, near-Qwen3-14B coding at 2.5B active. Apache 2.0.  \n  \n🎨 Image gen (the surprise of the week)  \n  \n→ Ideogram 4: their FIRST-EVER open weights. 9.3B flow-matching DiT trained from scratch. #2 overall behind GPT Image 2, top open-weight model on Design Arena + LMArena. Strongest open checkpoint for text-rich images, full stop. It has taste. Still can't believe this is open weights.  \n  \n🔊 Audio & Speech (a breakout week for open TTS, 4 labs shipped)  \n  \n→ Boson Higgs Audio v3 4B: 102 languages, 21 emotions, singing/whispering/shouting, sub-second TTFA.  \n→ RedNote dots.tts: the only fully continuous (no codec) open TTS pipeline, Apache 2.0.  \n→ Google Magenta RealTime 2: real-time music gen, <200ms latency, text+audio+MIDI. multimodalart ported it to PyTorch within hours with live ZeroGPU demos.  \n→ NVIDIA Nemotron-3.5 ASR: 600M streaming, 17x more concurrent streams vs Parakeet RNNT 1.1B.  \n  \n👁️ Vision & VLMs  \n  \n→ PaddleOCR-VL-1.6: SOTA document parsing at 1B params, Apache 2.0.  \n→ Baidu NAVA: 6.3B joint audio-video gen, best-in-class A/V sync, Apache 2.0.  \n  \n🎬 Video, 3D & World Models  \n  \n→ NVIDIA Cosmos3-Super: 64B omnimodal world model coupling action trajectories with video+audio gen, for Physical AI.  \n→ JD JoyAI-Echo: up to 5-min multi-shot text-to-video on LTX-2.3.  \n→ ByteDance Bernini-R + VAST TripoSplat (single-image-to-3D Gaussian splats, MIT).\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2063016485455327232/vid/avc1/1920x1080/vpoYnZdTfjWBx97f.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/victormustar/status/2063017894221591008/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/victormustar/status/2063017894221591008)\n\n💬17🔄3❤️76👀13513📊17",
+      "tags": [
+        "开源模型",
+        "一周总结",
+        "多模态"
+      ],
+      "score": 85,
+      "summary": "转发Victor M总结的当周多项重要开源AI模型发布，涵盖LLM、图像、音频等。",
+      "fetched_at": "2026-06-06T18:04:57.323138+08:00"
+    },
+    {
+      "title": "SMH the climate crisis is over, Greta has pivoted to Palestine, and the rest of us are panicking ove...",
+      "link": "https://x.com/pmarca/status/2063170748102103217",
+      "published": "2026-06-06T16:06:52+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "SMH the climate crisis is over, Greta has pivoted to Palestine, and the rest of us are panicking over datacenters. Do try to keep up.\n\n![Thomas Piketty](https://pbs.twimg.com/profile_images/668007222174203906/wfwiZZdR_normal.jpg)\n\nThomas Piketty@PikettyWIL\n\nThe world today is characterized by large-scale inequalities. And a climate crisis is looming over us.   \n  \nWe urgently need a new vision for global progress in the 21st Century. One that grounds human development and equality in planetary habitability.  \n  \nWhat would it take to achieve high prosperity and equality while remaining within planetary boundaries?   \n  \nThe World Inequality Lab is very excited to launch the #GlobalJusticeReport.  \n[1/7]\n\n![Tweet Image](https://pbs.twimg.com/media/HJ6fXhVXwAEULdM.png)\n\n[🔗 View Quoted Tweet](https://x.com/PikettyWIL/status/2062413194610508091)\n\n💬50🔄52❤️477👀22066📊68",
+      "tags": [
+        "气候危机",
+        "政治评论"
+      ],
+      "score": 40,
+      "summary": "Marc Andreessen讽刺气候危机话题转向，评论数据中心焦虑。",
+      "fetched_at": "2026-06-06T18:04:57.323190+08:00"
+    },
+    {
+      "title": ".@ArtificialAnalysis’ graph shows that MAI-Transcribe-1.5 is in a league of its own",
+      "link": "https://x.com/mustafasuleyman/status/2063170571966222383",
+      "published": "2026-06-06T16:06:10+08:00",
+      "source": "Mustafa Suleyman(@mustafasuleyman)",
+      "content": ".[@ArtificialAnalysis](https://x.com/ArtificialAnalysis)’ graph shows that MAI-Transcribe-1.5 is in a league of its own\n\n![Tweet Image](https://pbs.twimg.com/media/HKHarN-XIAAjHqH.jpg)\n\n💬17🔄6❤️120👀6151📊27",
+      "tags": [
+        "MAI-Transcribe",
+        "语音识别",
+        "性能领先"
+      ],
+      "score": 85,
+      "summary": "Mustafa Suleyman展示MAI-Transcribe-1.5在语音识别上的显著领先性能。",
+      "fetched_at": "2026-06-06T18:04:57.323241+08:00"
     }
   ]
 }
