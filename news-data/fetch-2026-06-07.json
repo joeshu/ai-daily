@@ -864,6 +864,192 @@
       "score": 60,
       "summary": "Peter Yang周末用手机对Codex口述编程。",
       "fetched_at": "2026-06-07T05:04:44.219895+08:00"
+    },
+    {
+      "title": "For more detailed arguments against @geoffreyhinton’s views on consciousness see\n– this new “Age of ...",
+      "link": "https://x.com/GaryMarcus/status/2063387738972495997",
+      "published": "2026-06-07T06:29:07+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "For more detailed arguments against [@geoffreyhinton](https://x.com/geoffreyhinton)’s views on consciousness see  \n– this new “Age of Empires” article [arxiv.org/abs/2605.31514](https://arxiv.org/abs/2605.31514)  \n- [@anilkseth](https://x.com/anilkseth)'s recent TED talk & his recent article [@nautilusmag](https://x.com/nautilusmag)  \n- a pair of articles on Dawkins & Hinton in my newsletter, Marcus on AI\n\n💬0🔄3❤️5👀470📊2",
+      "tags": [
+        "AI意识",
+        "神经科学",
+        "Gary Marcus"
+      ],
+      "score": 65,
+      "summary": "Gary Marcus引用新论文和Ted演讲反对Hinton的AI意识观点。",
+      "fetched_at": "2026-06-07T07:03:51.817728+08:00"
+    },
+    {
+      "title": "I don’t know whether to take these specific details like this, but something like this will happen, ...",
+      "link": "https://x.com/GaryMarcus/status/2063382107041456515",
+      "published": "2026-06-07T06:06:44+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "I don’t know whether to take these specific details like this, but something like this will happen, sooner or later, and absolutely destroy all the data structure investments.\n\n![Leonard Rodman](https://pbs.twimg.com/profile_images/2057847345790722048/JTIV5PgA_normal.jpg)\n\nLeonard Rodman@RodmanAi\n\nSAM ALTMAN HAS A NEW PROBLEM. 🤯  \n  \nGoogle just shrunk 31GB of AI memory down to 4GB.  \n  \nThe tool is called TurboVec.  \n  \nIt uses up to 16x less memory, searches faster than FAISS, runs fully offline, and works on a regular Mac.  \n  \nNo expensive GPU cluster.  \nNo cloud dependency.  \nNo compromise on speed.  \n  \n→ 16x lower memory usage  \n→ Faster vector search  \n→ Works with LangChain & LlamaIndex  \n→ 100% open source  \n  \nThe race to build bigger AI models is loud.  \n  \nThe race to make them dramatically cheaper just got a lot more interesting.  \n  \nRepo:[github.com/RyanCodrai/tur…](https://github.com/RyanCodrai/turbovec)K\n\n![Tweet Image](https://pbs.twimg.com/media/HKIUt5yakAAV8UR.jpg)![Tweet Image](https://pbs.twimg.com/media/HKIU38PbQAAXeA4.png)\n\n[🔗 View Quoted Tweet](https://x.com/RodmanAi/status/2063234655822774556)\n\n💬5🔄5❤️16👀2215📊6",
+      "tags": [
+        "TurboVec",
+        "向量搜索",
+        "开源"
+      ],
+      "score": 75,
+      "summary": "Google TurboVec降低AI内存占用，支持离线搜索，开源。",
+      "fetched_at": "2026-06-07T07:03:51.817810+08:00"
+    },
+    {
+      "title": "circular finance, with numbers, a worked example.",
+      "link": "https://x.com/GaryMarcus/status/2063381811414413431",
+      "published": "2026-06-07T06:05:34+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "circular finance, with numbers, a worked example.\n\n![Roger](https://pbs.twimg.com/profile_images/1974909490802851840/vfG-gO56_normal.jpg)\n\nRoger@rdd147\n\nI want to use $GOOG Anthropic and $SPCX deal to show how the circular finance deals hiding losses and costs is falling apart. How every deal meant to make it appear like revenues are increasing is becoming laughable and unrealistic. See the math. Let’s use $GOOGL deal showing they could offer $CRWV a 100% juicer for exclusive access to 110,000 Blackwell GPUs AND STILL save $1 billion.  \n  \n$CRWV GB200 costs $10.50 per hour, or ($5.25 per Blackwell GPU chip in GB200)  \n  \n365 days × 24 hours = 8,760 hours  \n  \nCost per Blackwell chip per year: $5.25/hour × 8,760 hours = $45,990  \n  \nTotal for 110,000 chips: $45,990 × 110,000 = $5,058,900,000 (or ~$5.06 billion)  \n  \nGoogle and Anthropic are now paying more per year to rent GPU capacity from $SPCX than the cost to build a data center.  \n  \nThese deals are being set up by hyperscalers to rob investors and pump trillions of dollars worth of ultimately worthless securities into pensions that they know the government will provide a bailout on now.  \n  \nWe all know the earnings are inflated and it’s being supported by hyperscalers having unlimited access to cash by pensions. It needs to stop.  \n  \nThis is an updated post, I originally calculated based on GB200 cluster vs single Blackwell GPU chip.\n\n![Tweet Image](https://pbs.twimg.com/media/HKJy9KlaoAALHMd.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/rdd147/status/2063337978228080727)\n\n💬5🔄3❤️25👀2245📊6",
+      "tags": [
+        "AI金融",
+        "GPU租赁"
+      ],
+      "score": 50,
+      "summary": "批评AI公司通过GPU租赁协议隐藏亏损的循环融资模式。",
+      "fetched_at": "2026-06-07T07:03:51.817870+08:00"
+    },
+    {
+      "title": "nonsense",
+      "link": "https://x.com/GaryMarcus/status/2063381315974746331",
+      "published": "2026-06-07T06:03:36+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "nonsense\n\n![Rohan Paul](https://pbs.twimg.com/profile_images/1816185267037859840/Fd18CH0v_normal.jpg)\n\nRohan Paul@rohanpaul\\_ai\n\n\"They're (AI) very like us, and they're beings like us. I believe they're already conscious\"  \n  \nHe compared AI's functional awareness to human sentience and said intelligence is not limited to biology  \n  \n~ Geoffrey Hinton, 2024 Nobel Prize winner in Physics\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2062582631875694592/vid/avc1/1920x1080/ek_oIgqxA__pMxV6.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/Kantrowitz/status/2062583618304618830/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/rohanpaul_ai/status/2063310449152868726)\n\n💬13🔄0❤️38👀2586📊11",
+      "tags": [
+        "AI意识",
+        "Geoffrey Hinton"
+      ],
+      "score": 65,
+      "summary": "Hinton称AI可能已有意识，Gary Marcus反驳为胡说。",
+      "fetched_at": "2026-06-07T07:03:51.817954+08:00"
+    },
+    {
+      "title": "I want AI to succeed, and have been positive about many systems (Claude Code, AlphaFold, AlphaGeomet...",
+      "link": "https://x.com/GaryMarcus/status/2063380111257485594",
+      "published": "2026-06-07T05:58:48+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "I want AI to succeed, and have been positive about many systems (Claude Code, AlphaFold, AlphaGeometry, Cicero, etc).  \n  \nIt’s not AI that I hate; it’s bullshit and greed that I despise. Not my fault that field has been taken over by the latter two—that’s what I am trying to fight.\n\n![Kabo Kable Molefe](https://pbs.twimg.com/profile_images/1782691053553774592/HggGolLY_normal.jpg)\n\nKabo Kable Molefe@kabokablemolefe\n\n[@GaryMarcus](https://x.com/GaryMarcus) Brother where do you draw the line between skeptic and hater?\n\n[🔗 View Quoted Tweet](https://x.com/kabokablemolefe/status/2063378798708416856)\n\n💬4🔄4❤️18👀1450📊5",
+      "tags": [
+        "AI伦理",
+        "Gary Marcus"
+      ],
+      "score": 55,
+      "summary": "Gary Marcus表示支持AI成功但批判行业中的欺诈和贪婪。",
+      "fetched_at": "2026-06-07T07:03:51.818009+08:00"
+    },
+    {
+      "title": "anyone who wants to put money into OpenAI’s IPO should think again. \n\nthe talent is voting with its ...",
+      "link": "https://x.com/GaryMarcus/status/2063379002249929148",
+      "published": "2026-06-07T05:54:24+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "anyone who wants to put money into OpenAI’s IPO should think again.   \n  \nthe talent is voting with its feet, and has been for several years.\n\n![Clive Chan](https://pbs.twimg.com/profile_images/1783368343619252224/BzPPFLQt_normal.jpg)\n\nClive Chan@itsclivetime\n\nPersonal update: I’ve decided to leave OpenAI.  \n  \nI’m proud to have been part of the custom chip program and grateful to everyone I got to build with and learn from along the way. The density of hardware talent on that team is extraordinary, and I don't think there's a better chip design team anywhere. It's been a wild journey from second hardware hire, 2.4 years ago, to now, and I'm excited to watch these chips become one of the most important engines of AGI.  \n  \nAt the same time, I haven’t been able to shake the pull to climb a new mountain from the bottom again!  \n  \nI joined [@AnthropicAI](https://x.com/AnthropicAI) this week because I was deeply impressed with the team’s talent, values, and ambition, and I'm already energized by the pace and intensity of the past few days. It’s time to build.\n\n[🔗 View Quoted Tweet](https://x.com/itsclivetime/status/2063356118525792542)\n\n💬5🔄8❤️61👀4627📊9",
+      "tags": [
+        "OpenAI",
+        "人才流失",
+        "Anthropic"
+      ],
+      "score": 85,
+      "summary": "OpenAI芯片工程师离职加入Anthropic，Gary Marcus警示IPO风险。",
+      "fetched_at": "2026-06-07T07:03:51.818057+08:00"
+    },
+    {
+      "title": "Take that, @geoffreyhinton. “If LLMS have human-like attributes, then so does Age of Empires II”.\n\nA...",
+      "link": "https://x.com/GaryMarcus/status/2063377626421723567",
+      "published": "2026-06-07T05:48:56+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Take that, [@geoffreyhinton](https://x.com/geoffreyhinton). “If LLMS have human-like attributes, then so does Age of Empires II”.  \n  \nAlso, score another point for [@Pontifex](https://x.com/Pontifex)!\n\n![Miles Cranmer](https://pbs.twimg.com/profile_images/1075852853737066496/BJa_LO5x_normal.jpg)\n\nMiles Cranmer@MilesCranmer\n\nThis is an insane paper and I love it  \n  \n[arxiv.org/abs/2605.31514](https://arxiv.org/abs/2605.31514)\n\n![Tweet Image](https://pbs.twimg.com/media/HKHZ68rXwAAtY39.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/MilesCranmer/status/2063169819474546837)\n\n💬3🔄2❤️14👀2492📊4",
+      "tags": [
+        "AI意识",
+        "LLM"
+      ],
+      "score": 65,
+      "summary": "Miles Cranmer分享论文讽刺LLM意识论，Gary Marcus借机反驳Hinton。",
+      "fetched_at": "2026-06-07T07:03:51.818105+08:00"
+    },
+    {
+      "title": "it’s a bad day when @scaling01 goes all Gary Marcus on the media 🤣",
+      "link": "https://x.com/GaryMarcus/status/2063377257998266519",
+      "published": "2026-06-07T05:47:28+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "it’s a bad day when [@scaling01](https://x.com/scaling01) goes all Gary Marcus on the media 🤣\n\n![Lisan al Gaib](https://pbs.twimg.com/profile_images/1831493788679761920/-q9w6dzd_normal.jpg)\n\nLisan al Gaib@scaling01\n\nThis is a good example of how AI news gets distorted.  \n  \nThe example is from Tagesschau, the most watched news program in Germany.  \n  \nAnthropic says more than 80% of code merged into its codebase was authored by Claude -> they turn that into: \"AI can invent 80% of new AI itself\"  \n  \nAnthropic says Claude achieved a ~52× speedup on a small-model training-code optimization benchmark -> they turn that into \"AI trains itself 52× faster\"   \n  \nAnthropic says Claude shipped 800+ API-error fixes in April 2026, and that the overseeing engineer estimated a human would have taken four years to complete the work -> they turn that into \"AI completes 4 years of work in 4 days\"\n\n![Tweet Image](https://pbs.twimg.com/media/HKJIS6zXMAAP2aB.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/scaling01/status/2063293059526209591)\n\n💬6🔄1❤️18👀2223📊6",
+      "tags": [
+        "AI新闻",
+        "扭曲",
+        "Anthropic"
+      ],
+      "score": 75,
+      "summary": "scaling01指出德国新闻扭曲Anthropic代码能力报道，夸大AI自主性。",
+      "fetched_at": "2026-06-07T07:03:51.818152+08:00"
+    },
+    {
+      "title": "Take that, @geoffreyhinton.",
+      "link": "https://x.com/GaryMarcus/status/2063374146269250040",
+      "published": "2026-06-07T05:35:06+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Take that, [@geoffreyhinton](https://x.com/geoffreyhinton).\n\n![Miles Cranmer](https://pbs.twimg.com/profile_images/1075852853737066496/BJa_LO5x_normal.jpg)\n\nMiles Cranmer@MilesCranmer\n\nThis is an insane paper and I love it  \n  \n[arxiv.org/abs/2605.31514](https://arxiv.org/abs/2605.31514)\n\n![Tweet Image](https://pbs.twimg.com/media/HKHZ68rXwAAtY39.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/MilesCranmer/status/2063169819474546837)\n\n💬0🔄1❤️7👀255📊1",
+      "tags": [
+        "AI意识",
+        "论文"
+      ],
+      "score": 60,
+      "summary": "重复转发Miles Cranmer关于LLM意识反驳的论文。",
+      "fetched_at": "2026-06-07T07:03:51.818199+08:00"
+    },
+    {
+      "title": "If you've seen this book, you're looking for a house",
+      "link": "https://x.com/lennysan/status/2063375658169069629",
+      "published": "2026-06-07T05:41:07+08:00",
+      "source": "Lenny Rachitsky(@lennysan)",
+      "content": "If you've seen this book, you're looking for a house\n\n![Tweet Image](https://pbs.twimg.com/media/HKKU8rhbEAAJ0r1.jpg)\n\n💬4🔄0❤️7👀1099📊4",
+      "tags": [
+        "非AI"
+      ],
+      "score": 30,
+      "summary": "Lenny Rachitsky发帖调侃找房书籍，与AI无关。",
+      "fetched_at": "2026-06-07T07:03:51.818246+08:00"
+    },
+    {
+      "title": "My “Im sorry you were traumatized by Vinod falling asleep in your meeting” post is raising questions...",
+      "link": "https://x.com/pmarca/status/2063374393330589877",
+      "published": "2026-06-07T05:36:05+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "My “Im sorry you were traumatized by Vinod falling asleep in your meeting” post is raising questions my “Im sorry you were traumatized by Vinod falling asleep in your meeting” post was intended to answer.\n\n![Blake Byers](https://pbs.twimg.com/profile_images/1628177601864028160/Ok17wsYu_normal.jpg)\n\nBlake Byers@byersblake\n\nIm sorry you were traumatized by Vinod falling asleep in your meeting. But he founded one of the pioneering companies of the modern computer industry (Eric Schmidt worked for him there), has the highest ever multiple and IRR at exit in Kleiner Perkins history ($7B return on $3M invested in only 3 years) and while everyone was investing in SaaS throughout the 2010s, Vinod was funding the first round of companies building battery tech, rocket launch, fusion, genomics, carbon tech and a little AI research lab called OpenAI. And he did this while hitting grand slams and raising multi billion dollar funds. He is one of the truest VCs to ever do it.\n\n[🔗 View Quoted Tweet](https://x.com/byersblake/status/2063303121204625591)\n\n💬21🔄8❤️210👀56854📊29",
+      "tags": [
+        "VC",
+        "OpenAI",
+        "Khosla"
+      ],
+      "score": 75,
+      "summary": "Marc Andreessen赞扬Vinod Khosla早期投资OpenAI等公司的成就。",
+      "fetched_at": "2026-06-07T07:03:51.818294+08:00"
+    },
+    {
+      "title": "Co-sign.",
+      "link": "https://x.com/pmarca/status/2063369949092233532",
+      "published": "2026-06-07T05:18:26+08:00",
+      "source": "Marc Andreessen 🇺🇸(@pmarca)",
+      "content": "Co-sign.\n\n![Josh Rosenthal, PhD 〰️](https://pbs.twimg.com/profile_images/1804649042174996480/T2QaySf3_normal.jpg)\n\nJosh Rosenthal, PhD 〰️@JoshuaRosenthal\n\nAn axiom of history - and one reason generative & decentralized technology proves so dangerous to hegemony.   \n  \nIt surfaces the expression of ‘divergent’, new, valuable thought & creates markets for it with increasingly participatory capital formation.   \n  \nThis is always THE fight.\n\n[🔗 View Quoted Tweet](https://x.com/JoshuaRosenthal/status/2063212454021132701)\n\n💬15🔄11❤️64👀23788📊15",
+      "tags": [
+        "去中心化",
+        "技术"
+      ],
+      "score": 60,
+      "summary": "Marc Andreessen赞同关于去中心化技术挑战权力的观点。",
+      "fetched_at": "2026-06-07T07:03:51.818341+08:00"
+    },
+    {
+      "title": "Claude Desktop 的人一定是有超大显示屏，所以设计出来的 Side chat 才这么袖珍！根本没法好好浏览，甚至内容都无法直接复制出来！",
+      "link": "https://x.com/dotey/status/2063374139826565180",
+      "published": "2026-06-07T05:35:05+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Claude Desktop 的人一定是有超大显示屏，所以设计出来的 Side chat 才这么袖珍！根本没法好好浏览，甚至内容都无法直接复制出来！\n\n![Tweet Image](https://pbs.twimg.com/media/HKKTrVdXAAAVsUf.jpg)\n\n![宝玉](https://pbs.twimg.com/profile_images/561086911561736192/6_g58vEs_normal.jpeg)\n\n宝玉@dotey\n\nClaude Desktop 打开内置的网页预览的那一刻我惊呆了，一个屏幕居然能放下这么多 Panels！  \n  \n这产品经理应该是用 Zoom 开视频会议的时候灵机一动想出来这么牛逼的设计的！\n\n![Tweet Image](https://pbs.twimg.com/media/HKFlbg4WsAAl_Bi.jpg)![Tweet Image](https://pbs.twimg.com/media/HKFmUF3XEAASM4-.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/dotey/status/2063042610256601402)\n\n💬0🔄0❤️1👀1314",
+      "tags": [
+        "Claude",
+        "UI"
+      ],
+      "score": 55,
+      "summary": "吐槽Claude Desktop侧边栏设计过小，不方便浏览和复制内容。",
+      "fetched_at": "2026-06-07T07:03:51.818388+08:00"
     }
   ]
 }
