@@ -2431,6 +2431,159 @@
       "score": 82,
       "summary": "小互爆料Google与SpaceX签每月9.2亿美元算力合同，含11万GPU。",
       "fetched_at": "2026-06-06T10:56:06.940901+08:00"
+    },
+    {
+      "title": "最近在教Codex\n大家纷纷吐槽Windows版简化了很多\n\n其实在过去一直呼吁有条件的尽量买Mac\n为啥AI应用都是Mac优先呢？\n\n查了下\n\n1. AI开发者自己就在用Mac\n那开发完测试当然Ma...",
+      "link": "https://x.com/PMbackttfuture/status/2063125753596695011",
+      "published": "2026-06-06T13:08:05+08:00",
+      "source": "AI产品黄叔(@PMbackttfuture)",
+      "content": "最近在教Codex  \n大家纷纷吐槽Windows版简化了很多  \n  \n其实在过去一直呼吁有条件的尽量买Mac  \n为啥AI应用都是Mac优先呢？  \n  \n查了下  \n  \n1. AI开发者自己就在用Mac  \n那开发完测试当然Mac最方便  \n  \n2. AI早期用户很多都是Mac  \n对创业公司，当然优先Mac  \n  \n3. Mac生态特别适合做AI助手  \n因为本身就需要：监听-理解-调用  \n比如Raycast、Rewind、Granola  \n都需要读取剪贴板、获取窗口内容、全局快捷键、OCR屏幕等等  \nMac提供了统一接口  \n  \nWindows有不同版本、不同驱动、各种权限，适配成本很高  \n  \n4. Apple M1后本地模型也能跑起来了  \n  \n5. Mac用户也确实更愿意付费  \n  \n当然AI现在进入了大众市场，所以也会有一些改变\n\n💬0🔄0❤️0👀120",
+      "tags": [
+        "AI应用",
+        "Mac优先"
+      ],
+      "score": 65,
+      "summary": "作者分析AI应用优先开发Mac的原因，包括开发者生态和系统优势。",
+      "fetched_at": "2026-06-06T14:53:05.797305+08:00"
+    },
+    {
+      "title": "卧槽！\n思路直接被打开了！\n\n从此Claude 和 Codex。\n联姻成功了…",
+      "link": "https://x.com/berryxia/status/2063122120348143768",
+      "published": "2026-06-06T12:53:39+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "卧槽！  \n思路直接被打开了！  \n  \n从此Claude 和 Codex。  \n联姻成功了…\n\n![铁锤人](https://pbs.twimg.com/profile_images/2005527237874089984/LyyR6wom_normal.jpg)\n\n铁锤人@lxfater\n\n我教你们咋Vibecoding！！！  \n  \n打开Codex，打开侧边栏，选择终端，输入Claude  \n  \n现在鱼和熊掌兼得了，Claude code规划，Codex干活！！\n\n![Tweet Image](https://pbs.twimg.com/media/HKGQMBXbMAAqYKR.jpg)\n\n[🔗 View Quoted Tweet](https://x.com/lxfater/status/2063089110265516450)\n\n💬0🔄0❤️1👀270",
+      "tags": [
+        "Codex",
+        "Claude",
+        "技巧"
+      ],
+      "score": 65,
+      "summary": "分享在Codex中调用Claude的方法，实现协同编程。",
+      "fetched_at": "2026-06-06T14:53:05.797390+08:00"
+    },
+    {
+      "title": "Anthropic 这篇文章的动画做得真牛逼啊。\n\nhttps://t.co/PCXf9iuaDX",
+      "link": "https://x.com/dingyi/status/2063138831197708519",
+      "published": "2026-06-06T14:00:03+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "Anthropic 这篇文章的动画做得真牛逼啊。  \n  \n[anthropic.com/institute/recu…](https://www.anthropic.com/institute/recursive-self-improvement)\n\n💬1🔄0❤️3👀525📊2",
+      "tags": [
+        "Anthropic",
+        "动画"
+      ],
+      "score": 50,
+      "summary": "称赞Anthropic文章的动画制作精良。",
+      "fetched_at": "2026-06-06T14:53:05.797452+08:00"
+    },
+    {
+      "title": "Chip Export rules: made China/Huawei stronger, accomplished relatively little.\n\nUSG stakes in US AI:...",
+      "link": "https://x.com/GaryMarcus/status/2063128152747209111",
+      "published": "2026-06-06T13:17:37+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "Chip Export rules: made China/Huawei stronger, accomplished relatively little.  \n  \nUSG stakes in US AI: will make Mistral and other “sovereign AI” efforts stronger, freak out the rest of the world, escalate tensions.\n\n💬4🔄1❤️9👀1279📊4",
+      "tags": [
+        "芯片出口",
+        "AI政策",
+        "观点"
+      ],
+      "score": 75,
+      "summary": "Gary Marcus评论芯片出口规则使中国变强，美国AI投资或引发国际紧张。",
+      "fetched_at": "2026-06-06T14:53:05.797506+08:00"
+    },
+    {
+      "title": "We live at a delicate, tragic moment in history, and greed and desperation is probably about to make...",
+      "link": "https://x.com/GaryMarcus/status/2063123661176111107",
+      "published": "2026-06-06T12:59:46+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "We live at a delicate, tragic moment in history, and greed and desperation is probably about to make it much worse.\n\n💬7🔄7❤️49👀2028📊13",
+      "tags": [
+        "情绪",
+        "评论"
+      ],
+      "score": 40,
+      "summary": "Gary Marcus感叹历史悲惨时刻，认为贪婪将使情况恶化。",
+      "fetched_at": "2026-06-06T14:53:05.797559+08:00"
+    },
+    {
+      "title": "You can’t let this happen, @DavidSacks, cc @elonmusk.\n\nIt’s WWWIII but with AI. Nobody wins.",
+      "link": "https://x.com/GaryMarcus/status/2063123351850365304",
+      "published": "2026-06-06T12:58:32+08:00",
+      "source": "Gary Marcus(@GaryMarcus)",
+      "content": "You can’t let this happen, [@DavidSacks](https://x.com/DavidSacks), cc [@elonmusk](https://x.com/elonmusk).  \n  \nIt’s WWWIII but with AI. Nobody wins.\n\n![Gary Marcus](https://pbs.twimg.com/profile_images/2048405471900606464/kPeRHI2z_normal.jpg)\n\nGary Marcus@GaryMarcus\n\n⚠️⚠️ Seismic shift ⚠️⚠️  \n  \nIt’s a good day to be Mistral.  \n  \nNobody is going to trust an American AI company that is partly owned by the US Government.   \n  \nJust the way the US doesn’t trust Huawei.  \n  \nAfter this meeting, everything is going to change.  \n  \nI don’t think either Washington or Silicon Valley has really thought this through.\n\n[🔗 View Quoted Tweet](https://x.com/GaryMarcus/status/2063119012461195624)\n\n💬4🔄5❤️16👀2665📊5",
+      "tags": [
+        "AI安全",
+        "观点"
+      ],
+      "score": 50,
+      "summary": "Gary Marcus警告美国AI投资可能导致类似第三次世界大战的AI冲突。",
+      "fetched_at": "2026-06-06T14:53:05.797610+08:00"
+    },
+    {
+      "title": "We're just so passionate about letting every Knicks fan know we parse PDFs",
+      "link": "https://x.com/jerryjliu0/status/2063132097771082179",
+      "published": "2026-06-06T13:33:17+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "We're just so passionate about letting every Knicks fan know we parse PDFs\n\n💬0🔄0❤️0👀138",
+      "tags": [
+        "调侃",
+        "PDF解析"
+      ],
+      "score": 40,
+      "summary": "LlamaIndex创始人调侃让尼克斯球迷知道他们能解析PDF。",
+      "fetched_at": "2026-06-06T14:53:05.797663+08:00"
+    },
+    {
+      "title": "Codex ad on the right side...\n\nwe lowkey should've done our OOH campaign in NYC 🙃\n\nKnicks in 5",
+      "link": "https://x.com/jerryjliu0/status/2063130666758459522",
+      "published": "2026-06-06T13:27:36+08:00",
+      "source": "Jerry Liu(@jerryjliu0)",
+      "content": "Codex ad on the right side...  \n  \nwe lowkey should've done our OOH campaign in NYC 🙃  \n  \nKnicks in 5\n\n![ESPN New York](https://pbs.twimg.com/profile_images/1780656251178811392/tlVX9g_X_normal.jpg)\n\nESPN New York@ESPNNewYork\n\nThe New York Knicks are flying home with a 2-0 lead.   \n  \n7th Avenue might not stop celebrating before they land. 🔥🎉\n\n[Your browser does not support the video tag.](https://video.twimg.com/amplify_video/2063104012195336192/vid/avc1/1080x1920/t0P2XuYRmHpowYN3.mp4?tag=27)\n\n[🔗 View on Twitter](https://x.com/ESPNNewYork/status/2063104142747287592/video/1)\n\n[🔗 View Quoted Tweet](https://x.com/ESPNNewYork/status/2063104142747287592)\n\n💬5🔄0❤️4👀384📊5",
+      "tags": [
+        "广告",
+        "Codex"
+      ],
+      "score": 40,
+      "summary": "Jerry Liu评论Codex在ESPN纽约的广告，认为应该做户外广告。",
+      "fetched_at": "2026-06-06T14:53:05.797713+08:00"
+    },
+    {
+      "title": "现在有一种矛盾\n就是做AI产品  不如做个Skill\n因为AI产品的后端得自己搞一遍\nSkill可以嫁接在codex claudecode上跑\n而且token还可以包月套餐\n突然觉得做ai tools...",
+      "link": "https://x.com/yangyi/status/2063122990041305348",
+      "published": "2026-06-06T12:57:06+08:00",
+      "source": "Yangyi(@Yangyixxxx)",
+      "content": "现在有一种矛盾  \n就是做AI产品 不如做个Skill  \n因为AI产品的后端得自己搞一遍  \nSkill可以嫁接在codex claudecode上跑  \n而且token还可以包月套餐  \n突然觉得做ai tools一点儿也不好用了\n\n💬0🔄0❤️2👀580",
+      "tags": [
+        "AI产品",
+        "Skill",
+        "趋势"
+      ],
+      "score": 65,
+      "summary": "作者认为做AI产品不如做Skill，可嫁接在Codex等上，且token包月。",
+      "fetched_at": "2026-06-06T14:53:05.797762+08:00"
+    },
+    {
+      "title": "好东西啊",
+      "link": "https://x.com/xiaohu/status/2063125171997917429",
+      "published": "2026-06-06T13:05:46+08:00",
+      "source": "小互(@imxiaohu)",
+      "content": "好东西啊\n\n![小小东](https://pbs.twimg.com/profile_images/2046072820095176704/QBve47KI_normal.jpg)\n\n小小东@xiaoxiaodong01\n\n[x.com/i/article/2063…](http://x.com/i/article/2063036194372648960)\n\n[🔗 View Quoted Tweet](https://x.com/xiaoxiaodong01/status/2063036876370632716)\n\n💬0🔄0❤️2👀698📊1",
+      "tags": [
+        "无内容"
+      ],
+      "score": 30,
+      "summary": "简单称赞“好东西”，无实质信息。",
+      "fetched_at": "2026-06-06T14:53:05.797844+08:00"
+    },
+    {
+      "title": "Cloudflare Identifies Query Planning Bottleneck in ClickHouse",
+      "link": "https://www.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-06T12:55:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/06/cloudflare-clickhouse-bottleneck/en/headerimage/generatedHeaderImage-1779253744444.jpg)\n\nCloudflare recently described how a slowdown in its billing pipeline was traced to contention inside the query planning stage of ClickHouse. The team profiled the bottleneck and patched ClickHouse to replace an exclusive lock with a shared lock, drop the per-query copy of the parts list, and improve part filtering.\n\n*By Renato Losio*",
+      "tags": [],
+      "score": 0,
+      "summary": "",
+      "fetched_at": "2026-06-06T14:53:05.797897+08:00"
     }
   ]
 }
