@@ -1348,6 +1348,86 @@
       "score": 70,
       "summary": "推出开源DynamoDB兼容适配器，支持PostgreSQL后端",
       "fetched_at": "2026-06-07T15:54:35.417639+08:00"
+    },
+    {
+      "title": "Her · हेर — a detective for your Claude Code sessions",
+      "link": "https://huggingface.co/blog/build-small-hackathon/her-blog",
+      "published": "2026-06-07T18:13:41+08:00",
+      "source": "Hugging Face Blog",
+      "content": "",
+      "tags": [
+        "AI工具",
+        "Claude"
+      ],
+      "score": 75,
+      "summary": "Hugging Face博客介绍Her工具，用于Claude Code会话的侦探式代理。",
+      "fetched_at": "2026-06-07T18:29:49.776160+08:00"
+    },
+    {
+      "title": "A new era for software testing",
+      "link": "http://antirez.com/news/168",
+      "published": "2026-06-07T17:46:06+08:00",
+      "source": "antirez",
+      "content": "Automatic programming dramatically speeds up writing software in certain use cases and in the right hands. In my experience the output does not reach the structural quality and economy of complexity of the best hand-written software. However, not all the software is stellar, and my feeling is that automatic programming surpasses most of the times (and if well managed) the quality of decently developed hand-written code.\n  \n  \nYet, there is a tradeoff between quality and time, in the case of writing new software with AI. This tradeoff in certain projects I developed can be brutal, that is, completing projects that may take many months in a few weeks. However, there are domains where LLMs simply open new strictly more powerful ways to automate processes, without any compromise on quality. One of those domains is software QA and testing.\n  \n  \nTraditionally software is tested using test suites that are composed of locally-scoped tests and integration tests (think of Redis: one thing is testing if SET foo 10 will be matched by GET foo => 10, another thing is testing if replication works in this case). And then by QA passes that are usually manually executed, and that can capture holes in the runnable test suite. It is a known fact that covering all the lines of the code does not mean covering all the possible states. Moreover integration testing is structurally hard: there are a number of timing issues, setups, and certain quality outputs that can only be visually inspected and not automatically checked that leave a lot of testing opportunities not really exploited because of time or logistic constraints.\n  \n  \nLLMs offer a new way to do QA on top of the existing testing methodologies. The idea is to create a markdown file where an AI agent is asked to work as a QA engineer, performing a number of manual testings on the new release. For instance, in the case of DwarfStar (an inference engine for open weights LLMs) I use the following approach. In the markdown file, the agent is asked to check what are the new commits on top of the already released version of the software project. Then the model is told a list of things that should be performed, like:\n  \n  \n- Check that distributed inference works across MacBook A and MacBook B, making sure the output is coherent, the inference works with all the GGUF files we have in both the machines, ...\n  \n- Make sure this release does not contain any speed regression.\n  \n  \nAnd so forth. Notably, in the speed regression part, I don't have to tell the agent what was the previous expected speed, as this is a moving target that changes with new releases and new optimizations. Similarly the integration test for distributed inference does not require many instructions, at the start of the file there are just SSH endpoints and the key to use, the paths, and so forth.\n  \n  \nThe agent is asked to check the long list of QA activities \\*especially\\* in light of the added commits, starting with an inspection of the changes and with the identification of what could be affected, so that the QA pass specializes trying to find specific regressions.\n  \n  \nIn the case of Redis Arrays, I used a similar methodology asking the agent to build a large array-based Redis application, to setup a production environment with replication and persistency, to simulate the usage of the application for days and with many users, checking if something was odd.\n  \n  \nTesting that uses these approaches may also move in the more psychological side of software quality, asking the agent to identify all the new features that may look surprising, not documented enough, or generally sloppy from the POV of the user. All things that needed to be executed manually before, and that most of the times were mostly skipped.\n  \n  \nI have the feeling that the introduction of automatic QA may raise the bar of quality for new releases of software, and maybe partially compensate for the lower quality of the code produced at high speed with the use of automatic programming.\n[Comments](http://antirez.com/news/168)",
+      "tags": [
+        "AI测试",
+        "软件质量"
+      ],
+      "score": 85,
+      "summary": "antirez探讨LLM在软件测试中的新应用，提升QA效率。",
+      "fetched_at": "2026-06-07T18:29:49.776258+08:00"
+    },
+    {
+      "title": "这个实践真有意思\n好开心看到 YouMind 对人的帮助",
+      "link": "https://x.com/lifesinger/status/2063565489687925013",
+      "published": "2026-06-07T18:15:26+08:00",
+      "source": "Frank Wang 玉伯(@lifesinger)",
+      "content": "这个实践真有意思  \n好开心看到 YouMind 对人的帮助\n\n![Musolsol.𝟎𝐱𝐔](https://pbs.twimg.com/profile_images/1920371796408147968/4G5QZcYR_normal.jpg)\n\nMusolsol.𝟎𝐱𝐔@MMMusol\n\n[x.com/i/article/2063…](http://x.com/i/article/2063186750256590848)\n\n[🔗 View Quoted Tweet](https://x.com/MMMusol/status/2063488828547944942)\n\n💬0🔄0❤️2👀163",
+      "tags": [
+        "低价值"
+      ],
+      "score": 30,
+      "summary": "玉伯转发对YouMind工具的正面感受，内容空洞。",
+      "fetched_at": "2026-06-07T18:29:49.776338+08:00"
+    },
+    {
+      "title": "现在最喜欢的 repo 和 skills 无非是 mattpocock 的 skills 合集，之前已经推荐过多次\nhttps://t.co/lg4xGT3ril\n\n这些 skills 真的是 Rea...",
+      "link": "https://x.com/vikingmute/status/2063542105679552803",
+      "published": "2026-06-07T16:42:31+08:00",
+      "source": "Viking(@vikingmute)",
+      "content": "现在最喜欢的 repo 和 skills 无非是 mattpocock 的 skills 合集，之前已经推荐过多次  \n[github.com/mattpocock/ski…](https://github.com/mattpocock/skills)  \n  \n这些 skills 真的是 Real Engineers 准备的，大多数 skills 都是非常简单的几句话，都是开发中的最真实的经验和干货，也是我学习他的编程思想的一个重要途径，无论是 /grill-me 或者是/caveman /zoom-out 或者是 /hand-off 都是我经常使用的。  \n  \n我也会看他 in-progress 的一些skills，了解他的一些新的想法，比如最近的 teach，我已经提前学习了一下，如果 github 也能 rss 订阅就好了，我可以把他的 commit 当文章学习了。\n\n💬2🔄5❤️29👀1730📊14",
+      "tags": [
+        "开发者工具"
+      ],
+      "score": 40,
+      "summary": "Viking推荐mattpocock的skills合集，侧重编程技巧。",
+      "fetched_at": "2026-06-07T18:29:49.776410+08:00"
+    },
+    {
+      "title": "Mac AppStore免费下载蓝牙管理器 Perculia：https://t.co/pMhkaZCv4O\nPerculia",
+      "link": "https://x.com/vista8/status/2063557105668505809",
+      "published": "2026-06-07T17:42:07+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "Mac AppStore免费下载蓝牙管理器 Perculia：[apps.apple.com/us/app/perculi…](https://apps.apple.com/us/app/perculia/id1462633284?l=zh-Hans-CN&mt=12)  \nPerculia\n\n💬0🔄0❤️1👀484",
+      "tags": [
+        "蓝牙工具"
+      ],
+      "score": 30,
+      "summary": "推荐Mac免费蓝牙管理器Perculia，非AI相关内容。",
+      "fetched_at": "2026-06-07T18:29:49.776479+08:00"
+    },
+    {
+      "title": "你是不是也经常苦恼，一堆蓝牙硬件，搞不清现在连的是哪个？\n\n本想蓝牙音箱播放，实际连的是 Airpods。\n本想用大疆 Mac mini 发射器收音，实际用的是笔记本。\n\n推荐个免费蓝牙管理工具：Pe...",
+      "link": "https://x.com/vista8/status/2063556949996962046",
+      "published": "2026-06-07T17:41:30+08:00",
+      "source": "向阳乔木(@vista8)",
+      "content": "你是不是也经常苦恼，一堆蓝牙硬件，搞不清现在连的是哪个？  \n  \n本想蓝牙音箱播放，实际连的是 Airpods。  \n本想用大疆 Mac mini 发射器收音，实际用的是笔记本。  \n  \n推荐个免费蓝牙管理工具：Perculia  \n  \n顶部Menu Bar，一键切换，解决这个小痛点。  \n  \n下载地址见评论区\n\n![Tweet Image](https://pbs.twimg.com/media/HKM4QiPboAAsVYa.jpg)![Tweet Image](https://pbs.twimg.com/media/HKM4pnxagAAiD0V.jpg)\n\n💬2🔄0❤️5👀1289📊3",
+      "tags": [
+        "蓝牙工具"
+      ],
+      "score": 30,
+      "summary": "推荐Mac蓝牙管理工具Perculia，解决设备切换痛点。",
+      "fetched_at": "2026-06-07T18:29:49.776546+08:00"
     }
   ]
 }
