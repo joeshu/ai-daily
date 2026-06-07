@@ -1265,6 +1265,89 @@
       "score": 55,
       "summary": "分享Claude Design的8条产品设计贴士。",
       "fetched_at": "2026-06-07T11:41:52.137796+08:00"
+    },
+    {
+      "title": "百万网红，价值千元的酱香饼秘方！免费公开😂\n刚看到一个博主去找人家买的1280 元买的配方！\n\n现在大环境不好，很多失业的人。\n不想搞“吉祥三宝、铁人三项”，又想赚点钱的可以看看这个配方！\n\n摆个小...",
+      "link": "https://x.com/berryxia/status/2063502853193502919",
+      "published": "2026-06-07T14:06:32+08:00",
+      "source": "Berryxia.AI(@berryxia)",
+      "content": "百万网红，价值千元的酱香饼秘方！免费公开😂  \n刚看到一个博主去找人家买的1280 元买的配方！  \n  \n现在大环境不好，很多失业的人。  \n不想搞“吉祥三宝、铁人三项”，又想赚点钱的可以看看这个配方！  \n  \n摆个小摊夜市啥的也不错，配方我觉得很简单可以自己去试试！  \n  \n配方如下👇\n\n![Tweet Image](https://pbs.twimg.com/media/HKMI5zKa8AA_4qK.jpg)\n\n💬1🔄0❤️0👀324📊2",
+      "tags": [
+        "非AI内容"
+      ],
+      "score": 10,
+      "summary": "分享酱香饼配方，非AI主题",
+      "fetched_at": "2026-06-07T15:54:35.417305+08:00"
+    },
+    {
+      "title": "面向 AI 智能体的未上市公司交易平台，定位为初创企业版 Robinhood，支持 OpenAI、Anthropic、SpaceX 等热门私有公司的合成市场交易，目前开放免费用户名预约排队。\n\n做成这...",
+      "link": "https://x.com/dingyi/status/2063501459149422940",
+      "published": "2026-06-07T14:01:00+08:00",
+      "source": "Ding(@dingyi)",
+      "content": "面向 AI 智能体的未上市公司交易平台，定位为初创企业版 Robinhood，支持 OpenAI、Anthropic、SpaceX 等热门私有公司的合成市场交易，目前开放免费用户名预约排队。  \n  \n做成这种风格我还以为是一个面向 00 后的社交应用呢。。。  \n  \n[trysoar.com/?ref=indigosal…](https://trysoar.com/?ref=indigosalmon150)\n\n💬3🔄0❤️2👀753📊3",
+      "tags": [
+        "AI智能体",
+        "交易平台"
+      ],
+      "score": 65,
+      "summary": "介绍面向AI智能体的未上市公司交易平台，支持OpenAI等，开放预约",
+      "fetched_at": "2026-06-07T15:54:35.417386+08:00"
+    },
+    {
+      "title": "ai making ai better recursively is an impressive idea but sometimes depressing as human researchers ...",
+      "link": "https://x.com/JustinLin610/status/2063518903930880132",
+      "published": "2026-06-07T15:10:19+08:00",
+      "source": "Junyang Lin(@JustinLin610)",
+      "content": "ai making ai better recursively is an impressive idea but sometimes depressing as human researchers seem to become less and less significant in this process. i do believe that there is great potential in this direction while human supervision will become more principled and higher-level. then imagination and vision matters more than ever.\n\n💬3🔄1❤️10👀995📊5",
+      "tags": [
+        "AI研究",
+        "人类地位"
+      ],
+      "score": 85,
+      "summary": "林俊阳谈AI递归改进使人类研究者作用减弱，想象力和愿景更重要",
+      "fetched_at": "2026-06-07T15:54:35.417446+08:00"
+    },
+    {
+      "title": "How do different model providers differ on cache hit rate and effective price?\n\nNow you can see real...",
+      "link": "https://x.com/OpenRouter/status/2063504950429147376",
+      "published": "2026-06-07T14:14:52+08:00",
+      "source": "OpenRouter(@OpenRouterAI)",
+      "content": "How do different model providers differ on cache hit rate and effective price?  \n  \nNow you can see real-time cache hit rate and historical traffic from the Pricing tab. Here's Opus 4.8: [openrouter.ai/anthropic/clau…](https://openrouter.ai/anthropic/claude-opus-4.8/pricing)\n\n![Tweet Image](https://pbs.twimg.com/media/HKMJ0NKXoAA5yfZ.jpg)![Tweet Image](https://pbs.twimg.com/media/HKMJ0NJXUAA7QjL.jpg)\n\n💬6🔄0❤️24👀1776📊7",
+      "tags": [
+        "缓存命中率",
+        "模型定价"
+      ],
+      "score": 75,
+      "summary": "OpenRouter推出实时缓存命中率与历史流量数据查看功能",
+      "fetched_at": "2026-06-07T15:54:35.417529+08:00"
+    },
+    {
+      "title": "Cursor 的 Composer 2.5 的效果",
+      "link": "https://x.com/dotey/status/2063514857949831523",
+      "published": "2026-06-07T14:54:15+08:00",
+      "source": "宝玉(@dotey)",
+      "content": "Cursor 的 Composer 2.5 的效果\n\n![Tweet Image](https://pbs.twimg.com/media/HKMTxUWW0AAyfe6.jpg)\n\n💬0🔄0❤️1👀1675📊1",
+      "tags": [
+        "Cursor",
+        "Composer 2.5"
+      ],
+      "score": 65,
+      "summary": "展示Cursor Composer 2.5效果",
+      "fetched_at": "2026-06-07T15:54:35.417588+08:00"
+    },
+    {
+      "title": "ExtendDB: Open Source Amazon DynamoDB Compatible Adapter with Pluggable Storage Backends",
+      "link": "https://www.infoq.com/news/2026/06/extenddb-dynamodb-adapter/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global",
+      "published": "2026-06-07T14:25:00+08:00",
+      "source": "Infoq",
+      "content": "![](https://res.infoq.com/news/2026/06/extenddb-dynamodb-adapter/en/headerimage/generatedHeaderImage-1779640650229.jpg)\n\nAWS recently announced ExtendDB, a DynamoDB-compatible adapter that lets developers use the DynamoDB API with different storage backends, starting with PostgreSQL. The project supports existing SDKs and tools without modification, giving teams greater flexibility to run DynamoDB-style workloads outside of native DynamoDB while maintaining compatibility with current applications and workflows.\n\n*By Renato Losio*",
+      "tags": [
+        "数据库",
+        "DynamoDB"
+      ],
+      "score": 70,
+      "summary": "推出开源DynamoDB兼容适配器，支持PostgreSQL后端",
+      "fetched_at": "2026-06-07T15:54:35.417639+08:00"
     }
   ]
 }
